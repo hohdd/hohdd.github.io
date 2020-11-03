@@ -32,7 +32,7 @@ draft: true
 
     {% include disclaimer-copyright.html %}
 
-    {% assign excludeArr = "Speaking,Vocabulary,Vocabulary_Builder,TOEIC,Supper_Simple_Sentence,Writing,Business_English,In_Actions" | split:"," %}
+    {% assign excludeArr = "TOPIC_1,TOPIC_2" | split:"," %}
 
     {% assign groups = serial.docs | group_by: "category" %}
     {% for group in groups %}
