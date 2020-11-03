@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="vi"><title>Cơ bản về PHP</title><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cùng tìm hiểu cơ bản về PHP"><meta name="author" content="Dong Ho"> <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex"><link rel="manifest" href="/assets/manifest.json"><link rel="amphtml" href="https://me.donghd.com/amp/articles/basic-php"><meta name="theme-color" content="#317EFB"/><link href="/assets/css/main.css" rel="stylesheet" media="all"><link rel="stylesheet" href="/assets/css/delay.css" media="none" onload="if(media!='all')media='all'"> <noscript><link rel="stylesheet" href="/assets/css/delay.css"></noscript><link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" /><link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"><body onload="documentReady()"><nav class="w3-sidebar w3-black w3-animate-opacity w3-xxlarge z-index-999" style="display:none;padding-top:100px;top:0px;" id="menuElm"><div class="w3-bar-block w3-center"><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/pages/about" title="About">About</a></h1><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/pages/authors" title="Teams">Teams</a></h1><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/pages/categories" title="Archives">Archives</a></h1><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/collections" title="Collections">Collections</a></h1></div></nav><div class="w3-top z-index-9999 w3-white" id="navbar"><div class="w3-bar w3-padding w3-card opacity-transition-hover w3-display-container" style="letter-spacing:4px;"><div class="w3-display-left w3-padding"> <a href="/" class="w3-bar-item">Mr.Winter</a></div><div class="w3-display-middle"></div><div class="w3-right" > <span class="material-icons w3-button" id="menuIcon" onclick="toggleMenu()" title="Menu">menu</span></div></div></div><div class="w3-content w3-panel w3-animate-opacity-slow" style="max-width:1100px"><main><div class="w3-padding-32"></div><article><h2>Cơ bản về PHP</h2><span class="opacity-transition-hover"> <span class="author"> <a href="/authors/dongho" class="hvr-float-shadow">Dong Ho</a> </span> <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 <span title="reading time">· about 17 mins read </span> · <span> <a href="/pages/categories#PHP" class="hvr-float-shadow">PHP</a> </span> </time> </span><div class="w3-section"><ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em"><li class="toc-entry toc-h2"><a href="#đặc-điểm" spy-toc="Đặc điểm">Đặc điểm</a><li class="toc-entry toc-h2"><a href="#oop" spy-toc="OOP">OOP</a><ul><li class="toc-entry toc-h3"><a href="#namespaces" spy-toc="Namespaces">Namespaces</a><li class="toc-entry toc-h3"><a href="#từ-khóa-namespace-và-hằng-số-__namespace__" spy-toc="Từ khóa “namespace” và hằng số “__NAMESPACE__”">Từ khóa “namespace” và hằng số “__NAMESPACE__”</a><li class="toc-entry toc-h3"><a href="#aliasingimporting-với-toán-tử-use" spy-toc="Aliasing/Importing với toán tử “use”">Aliasing/Importing với toán tử “use”</a><li class="toc-entry toc-h3"><a href="#importing-and-dynamic-names" spy-toc="Importing and dynamic names">Importing and dynamic names</a><li class="toc-entry toc-h3"><a href="#importing-and-fully-qualified-names" spy-toc="Importing and fully qualified names">Importing and fully qualified names</a><li class="toc-entry toc-h3"><a href="#classes-and-objects" spy-toc="Classes and Objects">Classes and Objects</a><li class="toc-entry toc-h3"><a href="#inheritance" spy-toc="Inheritance">Inheritance</a><li class="toc-entry toc-h3"><a href="#overriding-inherited-methods" spy-toc="Overriding Inherited Methods">Overriding Inherited Methods</a><li class="toc-entry toc-h3"><a href="#từ-khóa-final" spy-toc="Từ khóa “final”">Từ khóa “final”</a><li class="toc-entry toc-h3"><a href="#class-constants" spy-toc="Class Constants">Class Constants</a><li class="toc-entry toc-h3"><a href="#abstract-classes" spy-toc="Abstract Classes">Abstract Classes</a><li class="toc-entry toc-h3"><a href="#what-are-traits" spy-toc="What are Traits?">What are Traits?</a><li class="toc-entry toc-h3"><a href="#static-methods--properties" spy-toc="Static Methods &amp; Properties">Static Methods &amp; Properties</a></ul></ul><h2 id="đặc-điểm"> <a class="anchor" href="#%C4%91%E1%BA%B7c-%C4%91i%E1%BB%83m" aria-hidden="true" spy-title="Đặc điểm"><span class="octicon octicon-link"></span></a>Đặc điểm</h2><ul><li>Trong PHP, <strong>các từ khóa</strong> (ví dụ: if, other, while, echo, v.v.), các <strong>classes, functions</strong> cũng như các functions do người dùng định nghĩa sẽ <strong>không phân biệt chữ hoa chữ thường</strong>. Tuy nhiên, <strong>các tên biến</strong> thì lại <strong>có phân biệt hoa-thường</strong>.<li>Sử dụng dấu chấm phẩy (<code class="highlighter-rouge">;</code>) để kết thúc câu lệnh. String là tất cả ký tự nằm trong dấu nháy đơn hoặc nháy kép (kể cả ký tự kết thúc dòng, PHP sẽ coi kết thúc dòng là space)<li>Sử dụng dấu chấm (<code class="highlighter-rouge">.</code>) để nối chuỗi, dấu “<code class="highlighter-rouge">-&gt;</code>” để call function hoặc reference biến trong class.<li>Biến phải bắt đầu với ký tự <code class="highlighter-rouge">$</code>, tiếp đó là ký tự hoặc “underscore” (ko đc là số), ko đc chứa ký tự đặc biệt khác.<li>Có 3 phạm vi (<strong>scope</strong>) của biến:<ul><li> <strong>GLOBAL</strong>: khai báo và sử dụng ngoài function, ko sử dụng đc bên trong function. Muốn sử dụng bên trong phải sử dụng keyword “<code class="highlighter-rouge">global</code>” (trong function), hoặc dùng trực tiếp mảng <code class="highlighter-rouge">$GLOBALS['tên_biến']</code> (SupperGlobals)<li> <strong>LOCAL</strong>: khai báo và sử dụng bên trong function, ko sử dụng được bên ngoài function, giải phóng biến local sau khi function đã thực thi xong.<li> <strong>STATIC</strong>: là biến local được khai báo với từ khóa <code class="highlighter-rouge">static</code> để giữ biến đó không bị xóa (giải phóng) sau khi function thực thi xong.</ul><li> <code class="highlighter-rouge">echo</code> và <code class="highlighter-rouge">print</code> được sử dụng để in ra output, <code class="highlighter-rouge">print</code> nhận 1 argument và return 1 còn <code class="highlighter-rouge">echo</code> return void nhưng nhận nhiều argurments. Để in kiểm tra kiểu dữ liệu của biến ta sử dụng <code class="highlighter-rouge">var_dump($x)</code><li> <strong>Data Types</strong>: int(2147483647); float(2.147483647E+19); bool(true); array(3) { [0]=&gt; string(1) “a” [1]=&gt; int(1) [2]=&gt; bool(true) }; object(Animal)#1 (0) { }; NULL; Resource (a database call)<li> <strong>PHP Core</strong> có sẵn rất nhiều functions để <strong>xử lý chuỗi, biến (check type), Array, Date, Directory, Filesystem, Network, Stream…</strong> <a href="https://www.w3schools.com/php/php_ref_overview.asp" class="hvr-forward" rel="nofollow" target="_blank">PHP Reference</a><li> <strong>Constants</strong> (automatically global): <code class="highlighter-rouge">define(name, value, boolean-case-insensitive-default-is-false)</code><li> <strong>Operators</strong>: <strong>===</strong> (bằng và giống type); <strong>&lt;=&gt;</strong> (giống compare của java, trả về -1/0/1, PHP7); $x = expr1 <strong>??</strong> expr2 (nếu expr1 null thì lấy expr2)<ul><li><table><tbody><tr><td> <strong>Logical Operators</strong>: hỗ trợ cả (and, or, &amp;&amp;,<td> <td>)</table><li> <strong>String Operators</strong>: $txt1 <strong>.</strong> $txt2 (nối chuỗi); $txt1 <strong>.=</strong> $txt2 (append $txt1)<li> <strong>Array Operators</strong>: $x + $y; $x == $y (same key/value pairs); $x === $y (same key/value pairs + order + types); !=; &lt;&gt;; !==</ul><li> <strong>Global Variables</strong> (available in all scopes): <strong>$GLOBALS; $_SERVER; $_REQUEST; $_POST; $_GET; $_FILES; $_ENV; $_COOKIE; $_SESSION</strong><li> <strong>Form Handling</strong>: sử dụng <strong>$_GET</strong> và <strong>$_POST</strong> để lấy dữ liệu từ Client. Hãy nghĩ đến <strong>SECURITY</strong> khi người dùng tương tác<li> <strong>PHP Include Files</strong>: <code class="highlighter-rouge">include 'filename';</code> hoặc <code class="highlighter-rouge">require 'filename';</code> <strong>include</strong> vs. <strong>require</strong> khác nhau như thế nào? nếu file include không được tìm thấy thì <strong>include</strong> chỉ <em>WARNING</em> và vẫn thực thi tiếp script còn <strong>require thì sẽ stop script</strong> (ko thực thi những câu lệnh tiếp theo)<li> <strong>File Handling</strong>: Hãy cẩn thận khi xử lý file! Các lỗi thường gặp là: chỉnh sửa sai tệp, làm full ổ cứng với dữ liệu rác và xóa nội dung của tệp một cách tình cờ.<li> <strong>PHP Cookies</strong>: <code class="highlighter-rouge">setcookie(name*, value, expire, path, domain, secure, httponly);</code> Ví dụ: <code class="highlighter-rouge">setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");</code><li> <strong>PHP Sessions</strong>: <code class="highlighter-rouge">session_start();</code> sau đó sử dụng <code class="highlighter-rouge">$_SESSION["favcolor"]</code> và phải <code class="highlighter-rouge">session_unset()</code> + <code class="highlighter-rouge">session_destroy()</code><li>PHP and JSON: <code class="highlighter-rouge">json_encode()</code> để convert object to string json và <code class="highlighter-rouge">json_decode()</code> để convert string json to object</ul><h2 id="oop"> <a class="anchor" href="#oop" aria-hidden="true" spy-title="OOP"><span class="octicon octicon-link"></span></a>OOP</h2><h3 id="namespaces"> <a class="anchor" href="#namespaces" aria-hidden="true" spy-title="Namespaces"><span class="octicon octicon-link"></span></a>Namespaces</h3><ul><li> <strong>Namespaces</strong> để scope/đóng gói/bao đóng các <strong>classes</strong> (bao gồm <strong>abstracts</strong> và <strong>traits</strong>), <strong>interfaces</strong>, <strong>functions</strong> và <strong>constants</strong>. Nó giống như tên đường dẫn thư mục chứa file.<li>Namespaces không phân biệt chữ hoa chữ thường. Không được bắt đầu bằng PHP (ví dụ <code class="highlighter-rouge">PHP\Classes...</code>). Không được có dấu “<code class="highlighter-rouge">\</code>” ở đầu hoặc ở cuối.</ul><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="kn">namespace</span> <span class="nn">MyProject\Network</span><span class="p">;</span>
+
+<span class="k">const</span> <span class="no">CONNECT_OK</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Connection</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+<span class="k">function</span> <span class="nf">connect</span><span class="p">()</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><p>Sử dụng Namespaces giống như ta <strong>đang ở file này và refer đến một file khác</strong>, tùy vào vị trí file hiện tại và file refer mà có các cách khác nhau (đường dẫn tương đối, đường dẫn tuyệt đối).<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">declare</span><span class="p">(</span><span class="nx">encoding</span><span class="o">=</span><span class="s1">'UTF-8'</span><span class="p">);</span>
+<span class="kn">namespace</span> <span class="nn">MyProject</span> <span class="p">{</span>
+
+    <span class="k">const</span> <span class="no">CONNECT_OK</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="kd">class</span> <span class="nc">Connection</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+    <span class="k">function</span> <span class="nf">connect</span><span class="p">()</span> <span class="p">{</span> <span class="cm">/* ... */</span>  <span class="p">}</span>
+    <span class="k">static</span> <span class="k">function</span> <span class="nf">staticmethod</span><span class="p">()</span> <span class="p">{}</span>
+<span class="p">}</span>
+
+<span class="nx">namespace</span> <span class="p">{</span> <span class="c1">// global code</span>
+    <span class="nb">session_start</span><span class="p">();</span>
+
+    <span class="nv">$conFunc</span> <span class="o">=</span> <span class="nx">MyProject\connect</span><span class="p">();</span>
+    <span class="nx">MyProject</span><span class="o">::</span><span class="na">staticmethod</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><h3 id="từ-khóa-namespace-và-hằng-số-__namespace__"> <a class="anchor" href="#t%E1%BB%AB-kh%C3%B3a-namespace-v%C3%A0-h%E1%BA%B1ng-s%E1%BB%91-__namespace__" aria-hidden="true" spy-title="Từ khóa “namespace” và hằng số “__NAMESPACE__”"><span class="octicon octicon-link"></span></a>Từ khóa “namespace” và hằng số “<code class="highlighter-rouge">__NAMESPACE__</code>”</h3><p>Giá trị của <strong>__NAMESPACE__</strong> là một chuỗi chứa tên Namespace hiện tại. Là chuỗi rỗng nếu Global ko có Namespace.<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Sử dụng __NAMESPACE__ để tạo dynamic instance */
+<span class="cp">&lt;?php</span>
+<span class="kn">namespace</span> <span class="nn">MyProject</span><span class="p">;</span>
+
+<span class="k">function</span> <span class="nf">get</span><span class="p">(</span><span class="nv">$classname</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$target</span> <span class="o">=</span> <span class="k">__NAMESPACE__</span> <span class="o">.</span> <span class="s1">'\\'</span> <span class="o">.</span> <span class="nv">$classname</span><span class="p">;</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nv">$target</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Sử dụng từ khóa "namespace" */
+<span class="cp">&lt;?php</span>
+<span class="kn">namespace</span> <span class="nn">MyProject</span><span class="p">;</span> <span class="c1">// khai báo Namespace</span>
+
+<span class="nx">blah\mine</span><span class="p">();</span> <span class="c1">// calls function MyProject\blah\mine()</span>
+<span class="nx">namespace\blah\mine</span><span class="p">();</span> <span class="c1">// calls function MyProject\blah\mine()</span>
+
+<span class="nx">namespace\func</span><span class="p">();</span> <span class="c1">// calls function MyProject\func()</span>
+<span class="nx">namespace\sub\func</span><span class="p">();</span> <span class="c1">// calls function MyProject\sub\func()</span>
+<span class="nx">namespace\cname</span><span class="o">::</span><span class="na">method</span><span class="p">();</span> <span class="c1">// calls static method "method" of class MyProject\cname</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">namespace\sub\cname</span><span class="p">();</span> <span class="c1">// instantiates object of class MyProject\sub\cname</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="nx">namespace\CONSTANT_NAME</span><span class="p">;</span> <span class="c1">// assigns value of constant MyProject\CONSTANT_NAME to $b</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><h3 id="aliasingimporting-với-toán-tử-use"> <a class="anchor" href="#aliasingimporting-v%E1%BB%9Bi-to%C3%A1n-t%E1%BB%AD-use" aria-hidden="true" spy-title="Aliasing/Importing với toán tử “use”"><span class="octicon octicon-link"></span></a>Aliasing/Importing với toán tử “use”</h3><p>Có thể tạo 3 loại “alias” (cho “class name”, “interface name” và “namespace name”). PHP 5.6+ ta cũng có thể tạo “alias” cho “functions name” và “constants name”. Như vậy là có 5 loại “alias”.<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="kn">namespace</span> <span class="nn">foo</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nn">My\Full\Classname</span> <span class="k">as</span> <span class="n">Another</span><span class="p">;</span>
+
+<span class="c1">// this is the same as use My\Full\NSname as NSname</span>
+<span class="kn">use</span> <span class="nn">My\Full\NSname</span><span class="p">;</span>
+
+<span class="c1">// importing a global class</span>
+<span class="kn">use</span> <span class="nn">ArrayObject</span><span class="p">;</span>
+
+<span class="c1">// importing a function (PHP 5.6+)</span>
+<span class="kn">use</span> <span class="kn">function</span> <span class="nn">My\Full\functionName</span><span class="p">;</span>
+
+<span class="c1">// aliasing a function (PHP 5.6+)</span>
+<span class="kn">use</span> <span class="kn">function</span> <span class="nn">My\Full\functionName</span> <span class="k">as</span> <span class="n">func</span><span class="p">;</span>
+
+<span class="c1">// importing a constant (PHP 5.6+)</span>
+<span class="kn">use</span> <span class="kn">const</span> <span class="nn">My\Full\CONSTANT_NAME</span><span class="p">;</span>
+
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">namespace\Another</span><span class="p">;</span> <span class="c1">// instantiates object of class foo\Another</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Another</span><span class="p">;</span> <span class="c1">// instantiates object of class My\Full\Classname</span>
+<span class="nx">NSname\subns\func</span><span class="p">();</span> <span class="c1">// calls function My\Full\NSname\subns\func</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ArrayObject</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span> <span class="c1">// instantiates object of class ArrayObject</span>
+<span class="c1">// without the "use ArrayObject" we would instantiate an object of class foo\ArrayObject</span>
+<span class="nx">func</span><span class="p">();</span> <span class="c1">// calls function My\Full\functionName</span>
+<span class="k">echo</span> <span class="nb">CONSTANT</span><span class="p">;</span> <span class="c1">// echoes the value of My\Full\CONSTANT</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><h3 id="importing-and-dynamic-names"> <a class="anchor" href="#importing-and-dynamic-names" aria-hidden="true" spy-title="Importing and dynamic names"><span class="octicon octicon-link"></span></a>Importing and dynamic names</h3><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="kn">use</span> <span class="nn">My\Full\Classname</span> <span class="k">as</span> <span class="n">Another</span><span class="err">, My\Full\NSname</span><span class="p">;</span>
+
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Another</span><span class="p">;</span> <span class="c1">// instantiates object of class My\Full\Classname</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="s1">'Another'</span><span class="p">;</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nv">$a</span><span class="p">;</span>      <span class="c1">// instantiates object of class Another</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><h3 id="importing-and-fully-qualified-names"> <a class="anchor" href="#importing-and-fully-qualified-names" aria-hidden="true" spy-title="Importing and fully qualified names"><span class="octicon octicon-link"></span></a>Importing and fully qualified names</h3><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="kn">use</span> <span class="nn">My\Full\Classname</span> <span class="k">as</span> <span class="n">Another</span><span class="err">, My\Full\NSname</span><span class="p">;</span>
+
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Another</span><span class="p">;</span> <span class="c1">// instantiates object of class My\Full\Classname</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Another</span><span class="p">;</span> <span class="c1">// instantiates object of class Another</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Another\thing</span><span class="p">;</span> <span class="c1">// instantiates object of class My\Full\Classname\thing</span>
+<span class="nv">$obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Another\thing</span><span class="p">;</span> <span class="c1">// instantiates object of class Another\thing</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><h3 id="classes-and-objects"> <a class="anchor" href="#classes-and-objects" aria-hidden="true" spy-title="Classes and Objects"><span class="octicon octicon-link"></span></a>Classes and Objects</h3><p>Ví dụ bên dưới sẽ nói về Class, __construct và __destruct, Access Modifiers, Properties, Methods.<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="kn">namespace</span> <span class="nn">My\App</span><span class="p">;</span> <span class="c1">// khai báo namespace</span>
+<span class="kn">use</span> <span class="nn">My\Full\Classname</span> <span class="k">as</span> <span class="n">Another</span><span class="p">;</span> <span class="c1">// import &amp; Alias</span>
+
+<span class="cm">/* Định nghĩa class */</span>
+<span class="kd">class</span> <span class="nc">Fruit</span> <span class="p">{</span>
+    <span class="cd">/**
+    * Access Modifiers:
+    * public - properties và methods có thể access ở mọi nơi =&gt; đây là mặc định (nếu ko có)
+    * protected - properties và method có thể được access trong class và các class extends nó (lưu ý là BÊN TRONG)
+    * private - CHỈ có thể sử dụng trong class
+    **/</span>
+
+    <span class="c1">// Properties</span>
+    <span class="k">public</span> <span class="nv">$name</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$color</span><span class="p">;</span>
+
+    <span class="cd">/**
+    * Nếu bạn tạo một hàm __construct(), PHP sẽ tự động gọi hàm này khi bạn tạo một đối tượng từ một lớp.
+    * Không thể có nhiều __construct()
+    **/</span>
+    <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="cd">/**
+    * Nếu bạn tạo hàm __desturation(), PHP sẽ tự động gọi hàm này ở cuối tập lệnh. Hàm này ko có đối số.
+    **/</span>
+    <span class="k">function</span> <span class="nf">__destruct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"The fruit is </span><span class="si">{</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="si">}</span><span class="s2">."</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Methods</span>
+    <span class="k">function</span> <span class="nf">set_name</span><span class="p">(</span><span class="nv">$name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span> <span class="c1">// Từ khóa '$this' đề cập đến đối tượng hiện tại và chỉ có sẵn trong các phương thức.</span>
+    <span class="p">}</span>
+    <span class="k">function</span> <span class="nf">get_name</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">function</span> <span class="nf">set_color</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">color</span> <span class="o">=</span> <span class="nv">$color</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">function</span> <span class="nf">get_color</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">color</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$apple</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fruit</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span> <span class="c1">// __construct() ở trên yêu cầu truyền tham số</span>
+<span class="nv">$apple</span><span class="o">-&gt;</span><span class="na">set_name</span><span class="p">(</span><span class="s1">'Apple'</span><span class="p">);</span>
+<span class="nv">$apple</span><span class="o">-&gt;</span><span class="na">set_color</span><span class="p">(</span><span class="s1">'Red'</span><span class="p">);</span>
+<span class="k">echo</span> <span class="s2">"Name: "</span> <span class="o">.</span> <span class="nv">$apple</span><span class="o">-&gt;</span><span class="na">get_name</span><span class="p">();</span>
+<span class="k">echo</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s2">"Color: "</span> <span class="o">.</span>  <span class="nv">$apple</span><span class="o">-&gt;</span><span class="na">get_color</span><span class="p">();</span>
+<span class="k">echo</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$apple</span> <span class="k">instanceof</span> <span class="nx">Fruit</span><span class="p">);</span> <span class="c1">// Sử dụng "instanceof" để kiểm tra xem một đối tượng có thuộc về một lớp cụ thể không</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><h3 id="inheritance"> <a class="anchor" href="#inheritance" aria-hidden="true" spy-title="Inheritance"><span class="octicon octicon-link"></span></a>Inheritance</h3><p>Lớp con sẽ kế thừa tất cả các thuộc tính và phương thức <strong>public</strong> và <strong>protected</strong> từ lớp cha. Ngoài ra, nó có thể có các thuộc tính và phương thức riêng.<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Fruit</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="nv">$name</span><span class="p">;</span>
+  <span class="k">public</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">color</span> <span class="o">=</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">intro</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"The fruit is </span><span class="si">{</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="si">}</span><span class="s2"> and the color is </span><span class="si">{</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">color</span><span class="si">}</span><span class="s2">."</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Strawberry is inherited from Fruit</span>
+<span class="kd">class</span> <span class="nc">Strawberry</span> <span class="k">extends</span> <span class="nx">Fruit</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">message</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"Am I a fruit or a berry? "</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nv">$strawberry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Strawberry</span><span class="p">(</span><span class="s2">"Strawberry"</span><span class="p">,</span> <span class="s2">"red"</span><span class="p">);</span>
+<span class="nv">$strawberry</span><span class="o">-&gt;</span><span class="na">message</span><span class="p">();</span>
+<span class="nv">$strawberry</span><span class="o">-&gt;</span><span class="na">intro</span><span class="p">();</span> <span class="c1">// vì đang public nên call ở đây OK, nhưng nếu là protected thì sẽ ERROR! (phải call bên trong Strawberry)</span>
+</code></pre></div></div><h3 id="overriding-inherited-methods"> <a class="anchor" href="#overriding-inherited-methods" aria-hidden="true" spy-title="Overriding Inherited Methods"><span class="octicon octicon-link"></span></a>Overriding Inherited Methods</h3><p>Inherited methods có thể ghi đè các methods và contrutor ở child class.<h3 id="từ-khóa-final"> <a class="anchor" href="#t%E1%BB%AB-kh%C3%B3a-final" aria-hidden="true" spy-title="Từ khóa “final”"><span class="octicon octicon-link"></span></a>Từ khóa “final”</h3><p>Từ khóa <strong>final</strong> có thể được sử dụng để ngăn chặn kế thừa lớp (nếu dùng cho class) hoặc để ngăn chặn Overriding method (nếu dùng cho method).<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">final</span> <span class="kd">class</span> <span class="nc">Fruit</span> <span class="p">{</span>
+  <span class="c1">// some code</span>
+<span class="p">}</span>
+
+<span class="c1">// will result in error</span>
+<span class="kd">class</span> <span class="nc">Strawberry</span> <span class="k">extends</span> <span class="nx">Fruit</span> <span class="p">{</span>
+  <span class="c1">// some code</span>
+<span class="p">}</span>
+
+<span class="cd">/*************************************/</span>
+
+<span class="kd">class</span> <span class="nc">Fruit</span> <span class="p">{</span>
+  <span class="k">final</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">intro</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// some code</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Strawberry</span> <span class="k">extends</span> <span class="nx">Fruit</span> <span class="p">{</span>
+  <span class="c1">// will result in error</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">intro</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// some code</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div><h3 id="class-constants"> <a class="anchor" href="#class-constants" aria-hidden="true" spy-title="Class Constants"><span class="octicon octicon-link"></span></a>Class Constants</h3><p>Sử dụng từ khóa <strong>const</strong> để khai báo một <em>constant</em>. Sử dụng bằng <strong>Class::CONST_NAME</strong> hoặc <strong>self::CONST_NAME</strong> (<em>sử dụng trong class</em>)<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Goodbye</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="no">LEAVING_MESSAGE</span> <span class="o">=</span> <span class="s2">"Thank you for visiting!"</span><span class="p">;</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">byebye</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="kt">self</span><span class="o">::</span><span class="na">LEAVING_MESSAGE</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$goodbye</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Goodbye</span><span class="p">();</span>
+<span class="nv">$goodbye</span><span class="o">-&gt;</span><span class="na">byebye</span><span class="p">();</span>
+<span class="k">echo</span> <span class="s2">"&lt;br&gt;-------&lt;br&gt;"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">Goodbye</span><span class="o">::</span><span class="na">LEAVING_MESSAGE</span><span class="p">;</span>
+</code></pre></div></div><h3 id="abstract-classes"> <a class="anchor" href="#abstract-classes" aria-hidden="true" spy-title="Abstract Classes"><span class="octicon octicon-link"></span></a>Abstract Classes</h3><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">abstract</span> <span class="kd">class</span> <span class="nc">ParentClass</span> <span class="p">{</span>
+  <span class="k">abstract</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">someMethod1</span><span class="p">();</span>
+  <span class="k">abstract</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">someMethod2</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$color</span><span class="p">);</span>
+  <span class="k">abstract</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">someMethod3</span><span class="p">()</span> <span class="o">:</span> <span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Parent class</span>
+<span class="k">abstract</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="nv">$name</span><span class="p">;</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">abstract</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">intro</span><span class="p">()</span> <span class="o">:</span> <span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Child classes</span>
+<span class="kd">class</span> <span class="nc">Audi</span> <span class="k">extends</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">intro</span><span class="p">()</span> <span class="o">:</span> <span class="kt">string</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">"Choose German quality! I'm an </span><span class="nv">$this-&gt;name</span><span class="s2">!"</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">abstract</span> <span class="kd">class</span> <span class="nc">ParentClass</span> <span class="p">{</span>
+  <span class="c1">// Abstract method with an argument</span>
+  <span class="k">abstract</span> <span class="k">protected</span> <span class="k">function</span> <span class="nf">prefixName</span><span class="p">(</span><span class="nv">$name</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">ChildClass</span> <span class="k">extends</span> <span class="nx">ParentClass</span> <span class="p">{</span>
+  <span class="c1">// The child class may define optional arguments that are not in the parent's abstract method</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">prefixName</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$separator</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">,</span> <span class="nv">$greet</span> <span class="o">=</span> <span class="s2">"Dear"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$name</span> <span class="o">==</span> <span class="s2">"John Doe"</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$prefix</span> <span class="o">=</span> <span class="s2">"Mr"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nv">$name</span> <span class="o">==</span> <span class="s2">"Jane Doe"</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$prefix</span> <span class="o">=</span> <span class="s2">"Mrs"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nv">$prefix</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="s2">"</span><span class="si">{</span><span class="nv">$greet</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="nv">$prefix</span><span class="si">}{</span><span class="nv">$separator</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="nv">$name</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div><h3 id="what-are-traits"> <a class="anchor" href="#what-are-traits" aria-hidden="true" spy-title="What are Traits?"><span class="octicon octicon-link"></span></a>What are Traits?</h3><p>PHP chỉ hỗ trợ đơn kế thừa (một lớp con chỉ có thể kế thừa từ một cha mẹ duy nhất). Muốn “đa kế thừa” thì sử dụng “<strong>Traits</strong>”. <u>Lưu ý</u>: <strong>private</strong> và <strong>protected</strong> <em>access modifier</em> chỉ có thể call bên trong hàm “kế thừa” (sử dụng <strong>Traits</strong>). <code class="highlighter-rouge">CALL: $this-&gt;privateFunction()</code><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cd">/**
+* sử dụng từ khóa "trait" để định nghĩa một Trait
+**/</span>
+<span class="kd">trait</span> <span class="nc">TraitClass1</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">func11</span><span class="p">()</span> <span class="p">{</span> <span class="k">echo</span> <span class="s1">'func11() &lt;br&gt;'</span><span class="p">;</span> <span class="p">}</span>
+  <span class="k">protected</span> <span class="k">function</span> <span class="nf">func12</span><span class="p">()</span> <span class="p">{</span> <span class="k">echo</span> <span class="s1">'func12() &lt;br&gt;'</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">trait</span> <span class="nc">TraitClass2</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="k">function</span> <span class="nf">privateFunc</span><span class="p">()</span> <span class="p">{</span> <span class="k">echo</span> <span class="s1">'privateFunc() &lt;br&gt;'</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cd">/**
+* sử dụng từ khóa "use" để sử dụng Trait trong một class
+**/</span>
+<span class="kd">class</span> <span class="nc">ChildClass1</span> <span class="p">{</span>
+  <span class="kn">use</span> <span class="nn">TraitClass1</span><span class="p">;</span> <span class="c1">// extends (use) TraitClass1 để sử dụng func11 &amp; func12</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">ChildClass2</span> <span class="p">{</span>
+  <span class="kn">use</span> <span class="nn">TraitClass1</span><span class="err">, TraitClass2</span><span class="p">;</span> <span class="c1">// có thể extend (use) cả 2 Traits để sử dụng func11, func22 và privateFunc</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">check</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$this</span> <span class="o">-&gt;</span> <span class="na">privateFunc</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$child1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ChildClass1</span><span class="p">();</span>
+<span class="nv">$child1</span><span class="o">-&gt;</span><span class="na">func11</span><span class="p">();</span> <span class="c1">// OK vì public</span>
+<span class="nv">$child1</span><span class="o">-&gt;</span><span class="na">func12</span><span class="p">();</span> <span class="c1">// Error vì protected</span>
+<span class="k">echo</span> <span class="s1">'&lt;p&gt;~~~~~~~~~~~~~~~~~~~~~~&lt;/p&gt;'</span><span class="p">;</span>
+<span class="nv">$child2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ChildClass2</span><span class="p">();</span>
+<span class="nv">$child2</span><span class="o">-&gt;</span><span class="na">func11</span><span class="p">();</span> <span class="c1">// OK vì public</span>
+<span class="nv">$child2</span><span class="o">-&gt;</span><span class="na">func12</span><span class="p">();</span> <span class="c1">// Error vì protected</span>
+<span class="nv">$child2</span><span class="o">-&gt;</span><span class="na">privateFunc</span><span class="p">();</span> <span class="c1">// Error vì private</span>
+<span class="nv">$child2</span><span class="o">-&gt;</span><span class="na">check</span><span class="p">();</span> <span class="c1">// OK vì private nhưng đc call trong check() của ChildClass2</span>
+</code></pre></div></div><h3 id="static-methods--properties"> <a class="anchor" href="#static-methods--properties" aria-hidden="true" spy-title="Static Methods &amp; Properties"><span class="octicon octicon-link"></span></a>Static Methods &amp; Properties</h3><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Hi</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">"My Name"</span><span class="p">;</span> <span class="c1">// vì return value nên phải echo value đó ra</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">greeting</span> <span class="k">extends</span> <span class="nx">Hi</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="nv">$value</span> <span class="o">=</span> <span class="mf">3.14159</span><span class="p">;</span> <span class="c1">// một static property</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">welcome</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// một static function</span>
+    <span class="k">echo</span> <span class="s2">"Hello World!"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="k">parent</span><span class="o">::</span><span class="na">getName</span><span class="p">();</span> <span class="c1">// sử dụng từ khóa "parent" để caal hàm static của class cha</span>
+  <span class="p">}</span>
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">self</span><span class="o">::</span><span class="na">welcome</span><span class="p">();</span> <span class="c1">// sử dụng từ khóa "self"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Call static method</span>
+<span class="nx">GrEeTiNg</span><span class="o">::</span><span class="na">welcome</span><span class="p">();</span> <span class="c1">// namespace không phân biệt hoa-thường</span>
+<span class="c1">// Get static property</span>
+<span class="k">echo</span> <span class="nx">greeting</span><span class="o">::</span><span class="nv">$value</span><span class="p">;</span> <span class="c1">// MORE: self::$value; parent::$value;</span>
+</code></pre></div></div></div></article><div class="w3-padding-32 opacity-transition-hover"><div id="fb-root"></div><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=398245613894329"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script><div class="fb-like" data-href="https://me.donghd.com/articles/basic-php" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true">Loading...</div><div class="fb-comments" data-href="https://me.donghd.com/articles/basic-php" data-numposts="5" width="100%"></div></div></main><div id="tocMenu" class="tocMenu" onclick="toggleTOC()"><div class="progress-bar" id="progressBar"></div><div title="Table Of Content" class="w3-btn w3-border w3-border-blue w3-white"> Outline</div></div><div id="audioControlGroup" class="w3-animate-opacity"><p> <span class="material-icons w3-button w3-border w3-border-blue" onclick="audioControlMinus()" title="Minus">history</span> <span class="material-icons w3-button w3-border w3-border-blue" onclick="resetCurrentAudio()" title="Reset">cached</span><p> <span class="material-icons w3-button w3-border w3-border-blue" id="audioControlEl" onclick="audioControlPlayOrPause()" title="Play/Pause">play_arrow</span> <span class="material-icons w3-button w3-border w3-border-blue" onclick="onClickGotoCurrentAudio()" title="Go to Current Audio">arrow_right_alt</span><p> <span class="material-icons w3-button w3-border w3-border-blue" onclick="audioControlPlus()" title="Plus">update</span> <span class="material-icons w3-button w3-border w3-border-blue" onclick="skipCurrentAudioAndNext()" title="Next">skip_next</span><p> <span class="material-icons w3-button w3-border w3-border-blue" onclick="openMemo()" title="Your Note">create</span> <span class="material-icons w3-button w3-border w3-border-blue" onclick="onClickShowAudioControl()" title="Hide Audio Control">close</span><p> <span class="material-icons w3-button w3-border w3-border-blue" onclick="openAudioSettings()" title="Audio Settings">settings</span> <span class="material-icons w3-button w3-border w3-border-blue" onclick="gotoBottom()" title="Go to bottom">arrow_downward</span></div><link rel="stylesheet" href="/assets/css/quill.1.3.6.snow.css" media="none" onload="if(media!='all')media='all'"> <noscript><link rel="stylesheet" href="/assets/css/quill.1.3.6.snow.css"></noscript><div id="quillNote" class="w3-modal"><div class="w3-modal-content w3-card-4 w3-animate-top" style="max-width:600px"><header class="w3-container light-grey"> <span onclick="document.getElementById('quillNote').style.display='none'" class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span><h2>Your Memo</h2></header><div class="w3-container w3-section"><div id="quillNoteEditor"></div></div><div class="w3-container w3-light-grey w3-padding"> <button class="w3-button w3-right w3-white w3-border" onclick="onNoteSave()">Save</button></div></div></div><script src="/assets/js/quill.1.3.6.js" type="text/javascript" async></script> <script type="text/javascript"> function openMemo() { document.getElementById('audioSettings').style.display='none'; document.getElementById('quillNote').style.display = 'block'; } function onNoteSave() { window.localStorage.setItem('donghd.com.my.note', window.quillEditor.getHTML()); document.getElementById('quillNote').style.display = 'none'; } function loadMemo() { const memo = window.localStorage.getItem('donghd.com.my.note'); if (memo) { window.quillEditor.setHTML(memo); } } </script> <button onclick="topFunction()" title="Go to Top" id="scrollTopBtn" class="w3-btn w3-border w3-border-blue w3-white">Top</button><div id="zoomModal" class="w3-modal w3-center w3-animate-opacity" onclick="this.style.display='none'"> <img class="w3-modal-content w3-mobile w3-animate-zoom" style="width: 100%;" id="imgModal"></div><script type="text/javascript"> function openAudioControl() { } </script><footer class="w3-center w3-padding-16 dh-clear"></footer></div><script src="/assets/js/custom.js" type="text/javascript" async></script><link href="/assets/css/tango-highlight.css" rel="stylesheet" media="all">
