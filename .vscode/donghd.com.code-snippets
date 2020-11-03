@@ -1,0 +1,304 @@
+// {% comment %}{% raw %}
+// <!-- CHEAT SHEET -------------------------------------------------------------------
+// ### Kramdown: https://kramdown.gettalong.org/quickref.html
+// ### ---------
+// ### Typography: # H1 ## H2 ### H3 **bold text** *italicized text* > blockquote ~~Strikethrough~~
+// ### Nhúng mã `code` hoặc ```code```
+// ### Sử dụng class và style (style đặt sau cùng): **Kramdown**{: .w3-section .w3-margin-right #myId style="color: red"}
+// ### Chèn ảnh: ![TEXT](https://picsum.photos/640/360){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+// ### Chèn Link: [link](url){:.hvr-forward|hvr-float-shadow rel="nofollow" target="_blank"}
+// ### Hoặc chèn ảnh và link bằng tag:
+// ##### {% img "url" "TEXT" %}
+// ##### {% a in/out "url" "TEXT" %}
+// ### Table
+// | Head-1 | Head-2
+// |:-|:-:|-:
+// | Row **1** | Column *2*
+// | Column 1  | Row *2*
+// {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}
+// ##############################################################
+// ### Comments: {% comment %} .... {% endcomment %}
+// # Layout: "w3-container" căn lề trái phải (16px padding), "w3-section" căn trên dưới (16px margin), w3-margin-left, w3-margin-right
+// # Grid (placed inside w3-row/w3-content): w3-half/third/twothird/quarter/threequarter, w3-rest, w3-mobile, w3-image
+// # Reponsive hide (@small 601px; @large 992px): w3-hide-small, w3-hide-medium, w3-hide-large
+// # Floating: w3-left, w3-right
+// # Sử dụng alret: info/success/warning/danger + "QUOTE": <span class="material-icons w3-xxxlarge">format_quote</span>
+// # SUCCESS: <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">MESSAGE</div>
+// # WARNING: <div class="w3-card w3-leftbar w3-border-yellow w3-pale-yellow w3-panel w3-padding-16">MESSAGE</div>
+// # INFO: <div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">MESSAGE</div>
+// # DANGER: <div class="w3-card w3-leftbar w3-border-red w3-pale-red w3-panel w3-padding-16">MESSAGE</div>
+// ##### Hoặc dùng tag (only support HTML on line): {% msg success/warning/info/danger TEXT %}
+// # Hover.css (v2): hvr-forward, hvr-float-shadow, hvr-pulse-shrink
+// # https://mermaid-js.github.io/mermaid/#/flowchart
+// # <pre class="mermaid">graph LR/TB</pre>
+// # classDef yellow fill:#ffeb3b; classDef orange fill:#f96;  classDef green fill:#1ded1d;
+// # rect rgba(255, 0, 0, .1) ~ red / rect rgba(29, 171, 237, .1) ~ blue / rect rgba(0, 255, 0, .1) ~ green ... end
+// # https://mermaid-js.github.io/mermaid-live-editor
+// ------------------------------------------------------------------------------------>
+// {% endraw %}{% endcomment %}
+{
+	
+	"donghd.com part 7 template": {
+		"prefix": "dhpart7template",
+		"body": [
+			"<hr>",
+			"### SHORT_TITLE",
+			"",
+			"<div class=\"w3-row\">",
+			"  <div class=\"w3-col s6 w3-container\">",
+			"    <p>s1</p>",
+			"    <p>s2</p>",
+			"    <p>s3</p>",
+			"  </div>",
+			"  <div class=\"w3-col s6 w3-container\">",
+			"    <p>s1</p>",
+			"    <p>s2</p>",
+			"    <p>s3</p>",
+			"  </div>",
+			"</div>",
+			"",
+			"- (1): GIẢI THÍCH...",
+			"    - (A) forbid → cấm",
+			"    - (B) thank → cảm ơn",
+			"    - (C) caution → cảnh báo",
+			"    - (D) invite → mời"
+		],
+		"description": "donghd.com part 7 template"
+	},
+	"donghd.com part 6 template": {
+		"prefix": "dhpart6template",
+		"body": [
+			"<hr>",
+			"### SHORT_TITLE",
+			"",
+			"<div class=\"w3-row\">",
+			"  <div class=\"w3-col s6 w3-container\">",
+			"    <p>s1</p>",
+			"    <p>s2</p>",
+			"    <p>s3</p>",
+			"  </div>",
+			"  <div class=\"w3-col s6 w3-container\">",
+			"    <p>s1</p>",
+			"    <p>s2</p>",
+			"    <p>s3</p>",
+			"  </div>",
+			"</div>",
+			"",
+			"- (1): GIẢI THÍCH...",
+			"    - (A) forbid → cấm",
+			"    - (B) thank → cảm ơn",
+			"    - (C) caution → cảnh báo",
+			"    - (D) invite → mời"
+		],
+		"description": "donghd.com part 6 template"
+	},
+	"donghd.com underline text": {
+		"prefix": "dhunderline",
+		"body": [
+			"{% u TEXT %}"
+		],
+		"description": "donghd.com underline text"
+	},
+	"donghd.com liquid comment": {
+		"prefix": "dhcomment",
+		"body": [
+			"{% comment %} .... {% endcomment %}"
+		],
+		"description": "donghd.com liquid comment"
+	},
+	"donghd.com insert tooltip": {
+		"prefix": "dhtooltip",
+		"body": [
+			"{% tooltip hoverText [tooltipText] %}"
+		],
+		"description": "donghd.com insert tooltip"
+	},
+	"donghd.com highlighted text": {
+		"prefix": "dhmark",
+		"body": [
+			"{% mark HIGHLIGHTED_TEXT %}"
+		],
+		"description": "donghd.com highlighted text"
+	},
+	"donghd.com Strong text": {
+		"prefix": "dhstrong",
+		"body": [
+			"{% strong STRONG_TEXT %}"
+		],
+		"description": "donghd.com strong text"
+	},
+	"donghd.com insert an image": {
+		"prefix": "dhimg",
+		"body": [
+			"![TEXT](https://picsum.photos/640/360){:.w3-image.cursor-zoom onclick=\"onZoomImg(this)\"}"
+		],
+		"description": "donghd.com insert image"
+	},
+	"donghd.com insert a link": {
+		"prefix": "dhlink",
+		"body": [
+			"[link](url){:.hvr-forward|hvr-float-shadow rel=\"nofollow\" target=\"_blank\"}"
+		],
+		"description": "donghd.com insert a link"
+	},
+	"donghd.com insert a link by tag": {
+		"prefix": "dhtaglink",
+		"body": [
+			"{% a in/out \"url\" \"TEXT\" %}"
+		],
+		"description": "donghd.com insert a link by tag"
+	},
+	"donghd.com insert an image by tag": {
+		"prefix": "dhtagimage",
+		"body": [
+			"{% img \"url\" \"TEXT\" %}"
+		],
+		"description": "donghd.com insert an image by tag"
+	},
+	"donghd.com insert a table": {
+		"prefix": "dhtable",
+		"body": [
+			"| Head-1 | Head-2",
+			"|:-|:-:|-:",
+			"| Row **1** | Column *2*",
+			"| Column 1  | Row *2*",
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}"
+		],
+		"description": "donghd.com insert a table"
+	},
+	"donghd.com insert an alert message": {
+		"prefix": "dhmsg",
+		"body": [
+			"<div class=\"w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16\">MESSAGE</div>"
+		],
+		"description": "donghd.com insert an alert message"
+	},
+	"donghd.com insert an alert message by tag": {
+		"prefix": "dhtagmsg",
+		"body": [
+			"{% msg success/warning/info/danger TEXT %}"
+		],
+		"description": "donghd.com insert an alert message by tag"
+	},
+	"donghd.com 750 words template": {
+		"prefix": "dh750WordsTemplate",
+		"body": [
+			"<hr>",
+			"",
+			"[R]elational Words (từ liên quan/từ loại) [S]ynonyms (đồng nghĩa) [A]ntonyms (trái nghĩa) [C]onfusing Words (gây nhầm lẫn)",
+			"- **AAA**",
+			"- [S] BBB",
+			"- [A] BBB",
+			"- [C] BBB",
+			"- [R] BBB",
+			"",
+			"<div class=\"w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16\">GIAITHICH</div>",
+			"",
+			"|	EXAMPLE	|	VIETNAMESE",
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}"
+		],
+		"description": "donghd.com 750 words template"
+	},
+	"donghd.com simple table": {
+		"prefix": "dhsimpletable",
+		"body": [
+			"|	AAA	|	BBB	|	CCC",
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}"
+		],
+		"description": "donghd.com simple table"
+	},
+	"donghd.com insert an mp3 player": {
+		"prefix": "dhmp3",
+		"body": [
+			"{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/750-words/AAAA %}"
+		],
+		"description": "donghd.com insert an mp3 player"
+	},
+	"donghd.com hover classes": {
+		"prefix": "dhhover",
+		"body": [
+			"hvr-forward hvr-float-shadow hvr-pulse-shrink"
+		],
+		"description": "donghd.com hover classes"
+	},
+	"donghd.com w3 reference": {
+		"prefix": "dhw3reference",
+		"body": [
+			"- CĂN LỀ TRÁI PHẢI: \"w3-container\" căn lề trái phải (16px padding), \"w3-section\" căn trên dưới (16px margin), w3-margin-left, w3-margin-right",
+			"- GRID: (placed inside w3-row/w3-content): w3-half/third/twothird/quarter/threequarter, w3-rest, w3-mobile, w3-image",
+			"- RESPONSIVE",
+			"  + Responsive mobile media: w3-mobile",
+			"  + Responsive hide (@small 601px; @large 992px): w3-hide-small, w3-hide-medium, w3-hide-large",
+			"- FLOATING: w3-left, w3-right"
+		],
+		"description": "donghd.com w3 reference"
+	},
+	"donghd.com reference": {
+		"prefix": "dhreference",
+		"body": [
+			"*) Tools",
+			"- Test AMP: https://search.google.com/test/amp",
+			"- Free Icons: https://icons8.com/icons",
+			"- Free Images: https://unsplash.com/",
+			"- Lorem Picsum: https://picsum.photos/",
+			"- Snippet Generator: https://snippet-generator.app/",
+			"",
+			"*) Jekyll Plugins",
+			"- Jekyll Paginate V2: https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md",
+			"- https://github.com/toshimaru/jekyll-toc",
+			"- https://github.com/jekyll/jekyll-redirect-from",
+			"- https://github.com/lavas-project/jekyll-pwa",
+			"",
+			"*) Jekyll Docs",
+			"- Jekyll Quickstart: https://jekyllrb.com/docs/",
+			"- Kramdown Quick Reference: https://kramdown.gettalong.org/quickref.html",
+			"- Liquid for Designers: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers",
+			"",
+			"*) Jekyll Blogs",
+			"- https://jojozhuang.github.io/tutorial/",
+			"",
+			"*) Etc:",
+			"- https://cake23.de/suckerpunch.html",
+			""
+		],
+		"description": "donghd.com reference"
+	},
+	"donghd.com post template": {
+		"prefix": "dhPostTemplate",
+		"body": [
+			"---",
+			"# Tên file phải đúng định dạng \"YYYY-MM-DD-title.md\"",
+			"layout: post # collections",
+			"author_name: Dong Ho",
+			"draft: true # public or not",
+			"exclude: true # exclude on search",
+			"### SEO",
+			"title: CHANGE",
+			"description: CHANGE",
+			"robots: noindex, nofollow, follow, noarchive",
+			"",
+			"### HUMAN",
+			"header: CHANGE",
+			"coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400",
+			"effect: true # use img-sepia?",
+			"thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400",
+			"",
+			"### categories: mỗi category cách nhau bởi dấu cách!",
+			"# categories: Jekyll",
+			"### Table of content (TOC mặc định false), SKIP: <h1 class=\"no_toc\">Skip toc</h1> hoặc <div class=\"no_toc_section\">",
+			"toc: true",
+			"mermaid: false",
+			"highlight: false",
+			"amp: false",
+			"# collection: english # this for AMP related post",
+			"### category: dùng để group collection",
+			"# category: Grammar",
+			"",
+			"### Date nếu không có sẽ lấy từ tên file theo format \"YEAR-MONTH-DAY-title.md\"",
+			"date: 2019-06-13 22:26:14 +0700",
+			"### permalink: /url-ghi-de-mac-dinh # cân nhắc nếu muốn dùng!",
+			"---"
+		],
+		"description": "donghd.com post template"
+	},
+}
