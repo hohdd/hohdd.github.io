@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hello Jekyll! xây dựng website tĩnh với Jekyll.</title>
-    <link rel="canonical" href="https://me.donghd.com/articles/hello-jekyll" />
+    <title>Project Boost - Challenges</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/project-boost-challenges" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/articles/hello-jekyll",
-        "headline": "Hello Jekyll! xây dựng website tĩnh với Jekyll.",
-        "datePublished": "2017-06-13 22:26:14 +0700",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
+        "headline": "Project Boost - Challenges",
+        "datePublished": "2020-05-16 14:26:14 +0700",
         "dateModified": "2020-11-06 00:40:20 +0700",
-        "description": "Jekyll là một generator các file web tĩnh, sử dụng để tạo blog cá nhân, trang web của dự án, trang web của tổ chức. Jekyll được biết bằng Ruby bởi Tom Preston-Werner (GitHub's co-founder), nó được phân phối dưới giấy phép mã nguồn mở (open source MIT license).",
+        "description": "Project Boost - Challenges",
         
         "author": {
           "@type": "Person",
@@ -109,219 +109,69 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Hello Jekyll</h2>
+      <h2>Project Boost - Challenges</h2>
       <span class="author">
         
         
           <a href="/authors/dongho">Dong Ho</a>
         
       </span>
-      <time datetime="2017-06-13T22:26:14+07:00" class="by-line"> · 13 Jun 2017 
-      <span title="reading time">· about 6 mins read </span> · 
+      <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
+      <span title="reading time">· about 1 min read </span> · 
+      
+      <span>
+        
+        
+        <a href="/pages/categories#Project_Boost" class="hvr-float-shadow">Project_Boost</a>
+        
+        
+      </span>
       
       </time>
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h2"><a href="#1-setup" spy-toc="1. Setup">1. Setup</a></li>
-<li class="toc-entry toc-h2"><a href="#2-liquid" spy-toc="2. Liquid">2. Liquid</a></li>
-<li class="toc-entry toc-h2"><a href="#3-front-matter" spy-toc="3. Front Matter">3. Front Matter</a></li>
-<li class="toc-entry toc-h2"><a href="#4-layouts" spy-toc="4. Layouts">4. Layouts</a></li>
-<li class="toc-entry toc-h2"><a href="#5-includes" spy-toc="5. Includes">5. Includes</a></li>
-<li class="toc-entry toc-h2"><a href="#6-data-files" spy-toc="6. Data Files">6. Data Files</a></li>
-<li class="toc-entry toc-h2"><a href="#7-assets" spy-toc="7. Assets">7. Assets</a></li>
-<li class="toc-entry toc-h2"><a href="#8-blogging" spy-toc="8. Blogging">8. Blogging</a></li>
-<li class="toc-entry toc-h2"><a href="#9-collections" spy-toc="9. Collections">9. Collections</a></li>
-<li class="toc-entry toc-h2"><a href="#10-variables" spy-toc="10. Variables">10. Variables</a></li>
-<li class="toc-entry toc-h2"><a href="#11-deployment" spy-toc="11. Deployment">11. Deployment</a></li>
-<li class="toc-entry toc-h2"><a href="#12-usage" spy-toc="12. Usage">12. Usage</a></li>
-<li class="toc-entry toc-h2"><a href="#13-reference" spy-toc="13. Reference">13. Reference</a></li>
-</ul><p>Jekyll là một <code class="highlighter-rouge">generator</code> các file web tĩnh, sử dụng để tạo blog cá nhân, trang web của dự án, trang web của tổ chức. Jekyll được biết bằng Ruby bởi Tom Preston-Werner (GitHub’s co-founder), nó được phân phối dưới giấy phép mã nguồn mở (open source MIT license).</p>
-
-<p>Đặc điểm của website được tạo bởi Jekyll là bạn sẽ không cần phải có database, bạn chỉ cần viết các file HTML hoặc Markdown trực tiếp để phục vụ nội dung cho người xem, các nội dung là public và không có giá trị gì để lo lắng việc website có thể bị hack cả.</p>
-
-<p>Vì chỉ có các file HTML tĩnh nên server host cũng rất đơn giản, tốc độ website cực nhanh chạy nhanh. Khả năng tùy biến cho trang web cũng rất nhiều, bạn có thể nhúng comment, tìm kiếm, chat với người dùng, bán sản phẩm trên web của mình…</p>
-
-<p>Chỉ cần setup một khung website ban đầu và bắt đầu viết nội dung của bạn thôi.</p>
-
-<h2 id="1-setup">
-<a class="anchor" href="#1-setup" aria-hidden="true" spy-title="1. Setup"><span class="octicon octicon-link"></span></a>1. Setup</h2>
+<li class="toc-entry toc-h3"><a href="#challenge-1" spy-toc="Challenge 1">Challenge 1</a>
 <ul>
-  <li>
-    <p>Cài Ruby và Tools cần thiết để có thể “installing gems with native extensions” (RubyInstaller: Ruby+Devkit):</p>
-  </li>
-  <li>Check: <code class="highlighter-rouge">ruby -v</code>, <code class="highlighter-rouge">gem -v</code>, <code class="highlighter-rouge">gcc -v</code>, <code class="highlighter-rouge">g++ -v</code>, <code class="highlighter-rouge">make -v</code>
-</li>
-  <li>Cài Jekyll: <code class="highlighter-rouge">gem install jekyll bundler</code>
-</li>
-  <li>Tạo một Site: <code class="highlighter-rouge">jekyll new mySite</code>
-</li>
-  <li>Build: <code class="highlighter-rouge">jekyll build</code> =&gt; các file build ra sẽ nằm trong <code class="highlighter-rouge">_site</code>, đây là các static files phục vụ người xem.</li>
-  <li>Start web server: <code class="highlighter-rouge">jekyll serve</code> hoặc <code class="highlighter-rouge">bundle exec jekyll serve</code> =&gt;  http://localhost:4000</li>
+<li class="toc-entry toc-h4"><a href="#mục-tiêu" spy-toc="Mục tiêu">Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#setup" spy-toc="Setup">Setup</a></li>
 </ul>
+</li>
+</ul><h3 id="challenge-1">
+<a class="anchor" href="#challenge-1" aria-hidden="true" spy-title="Challenge 1"><span class="octicon octicon-link"></span></a>Challenge 1</h3>
 
-<div class="w3-card w3-leftbar w3-border-yellow w3-pale-yellow w3-panel w3-padding-16">
-    Nếu dùng Ubuntu trên windows 10 cài bằng câu lệnh sẽ nhanh hơn.
-</div>
+<h4 id="mục-tiêu">
+<a class="anchor" href="#m%E1%BB%A5c-ti%C3%AAu" aria-hidden="true" spy-title="Mục tiêu"><span class="octicon octicon-link"></span></a>Mục tiêu</h4>
 
 <ul>
-  <li>Bonus: làm việc với Ruby, Gem, Bundle
+  <li>Hiểu được các Tools để thay đổi các giá trị X (dài), Y (rộng/cao), Z (dầy)
     <ul>
-      <li>Listing installed GEMs: <code class="highlighter-rouge">gem list</code>, hoặc muốn xem trên browser thì chạy <code class="highlighter-rouge">gem server</code> =&gt; http://localhost:8808/</li>
-      <li>Cài đặt/Xóa một gem <code class="highlighter-rouge">gem install/uninstall jekyll</code>, nếu các gem nằm trong file <code class="highlighter-rouge">Gemfile</code> =&gt; <code class="highlighter-rouge">bundle install</code>
-</li>
+      <li>Hand (Q) -&gt; điều khiển góc nhìn của Screen (dùng chuột trái để move screen, giữ Alt để quay screen)</li>
+      <li>Move (W) -&gt; điều chỉnh vị trí (position) của GameObject. Thay đổi dài (X), rộng/cao (Y), dầy (Z)</li>
+      <li>Rotate (E) -&gt; điều chỉnh góc quay (rotation) của GameObject. Quay theo các trục X, Y, Z, hoặc quay cả 3 cùng lúc.</li>
+      <li>Scale (R) -&gt; điều chỉnh kích thước của GameObject (X:dài, Y:rộng/cao, Z:dầy)</li>
+    </ul>
+  </li>
+  <li>Hiểu được Position tính từ tâm giữa của GameObject, nghĩa là bề mặt [1,0,1] nằm cắt ngang chính giữa GameObject.</li>
+  <li>Hiểu được Directional Light: cường độ và màu sắc phụ thuộc vào hướng ánh sáng giống như các thời điểm mặt trời trong ngày, nó không phụ thuộc vào vị trí của nguồn sáng này.</li>
+  <li>Control được Screen:
+    <ul>
+      <li>Chọn (W) GameObject nhà nhấn F để frame nó vào giữa màn hình (kéo Screen đi chỗ khác trước khi nhấn F để đưa GameObject về trung tâm)</li>
+      <li>Sử dụng chế độ bay (fly) để nhìn tổng thể: giữ chuột phải + ASWS (điều hướng) + EQ (lên xuống) + Shifft để tăng tốc</li>
+      <li>Kết hợp: F &gt; Q &gt; Alt + mouse left</li>
     </ul>
   </li>
 </ul>
 
-<h2 id="2-liquid">
-<a class="anchor" href="#2-liquid" aria-hidden="true" spy-title="2. Liquid"><span class="octicon octicon-link"></span></a>2. Liquid</h2>
-<p>Liquid là “template language”: có 3 phần chính: <strong>objects, tags, filters</strong></p>
-
+<h4 id="setup">
+<a class="anchor" href="#setup" aria-hidden="true" spy-title="Setup"><span class="octicon octicon-link"></span></a>Setup</h4>
 <ul>
-  <li>
-<strong>Objects</strong>: <code class="highlighter-rouge">{{ page.title }}</code>
-</li>
-  <li>
-<strong>Tags</strong>: <code class="highlighter-rouge">{% if page.show_sidebar %} ...HTML... {% endif %}</code>
-</li>
-  <li>
-<strong>Filters</strong>: <code class="highlighter-rouge">{{ "hi" | capitalize }} hoặc {{ "Hello World!" | downcase }} ... {{ -17 | abs }} ... {{ article.published_at | date: "%a, %b %d, %y" }} ...</code>
-</li>
-</ul>
-
-<div class="w3-card w3-leftbar w3-border-yellow w3-pale-yellow w3-panel w3-padding-16">
-    Vì là template language nên có một số hạn chế, không thể dùng tùy tiện code ruby được.
-</div>
-
-<h2 id="3-front-matter">
-<a class="anchor" href="#3-front-matter" aria-hidden="true" spy-title="3. Front Matter"><span class="octicon octicon-link"></span></a>3. Front Matter</h2>
-<p>Front matter là một đoạn dạng YAML ở đầu mỗi page, mục đích là bổ sung thêm các biến để dùng, nó cũng để Jekyll kích hoạt xử lý liquid, vì vậy nếu ko khai báo biến thì vẫn phải có.</p>
-
-<h2 id="4-layouts">
-<a class="anchor" href="#4-layouts" aria-hidden="true" spy-title="4. Layouts"><span class="octicon octicon-link"></span></a>4. Layouts</h2>
-<p>Các file nằm trong <code class="highlighter-rouge">_layouts</code>: default.html (biến <code class="highlighter-rouge">content</code> đại diện cho content của page được gọi (.html | .md | .markdown)</p>
-
-<h2 id="5-includes">
-<a class="anchor" href="#5-includes" aria-hidden="true" spy-title="5. Includes"><span class="octicon octicon-link"></span></a>5. Includes</h2>
-<p>Các file nằm trong thư mục <code class="highlighter-rouge">_includes</code> =&gt; sử dụng ở layout như sau: <code class="highlighter-rouge">{% include navigation.html %}</code></p>
-
-<div class="w3-card w3-leftbar w3-border-yellow w3-pale-yellow w3-panel w3-padding-16">
-    Với Layouts và Includes, bạn sẽ dễ dang tùy biến và xây dựng bố cục theme cho website.
-</div>
-
-<h2 id="6-data-files">
-<a class="anchor" href="#6-data-files" aria-hidden="true" spy-title="6. Data Files"><span class="octicon octicon-link"></span></a>6. Data Files</h2>
-<p>Các file nằm trong thư mục <code class="highlighter-rouge">_data</code>, Jekyll sẽ load các file (YAML, JSON, CSV) trong thư mục này và đưa vào biến <code class="highlighter-rouge">site.data.&lt;tên_file&gt;</code></p>
-
-<p><strong>Ví dụ:</strong></p>
-<ul>
-  <li>
-    <p>Nội dung của một file <code class="highlighter-rouge">_data/navigation.yml</code> như sau</p>
-
-    <div class="language-yml highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Home</span>
-      <span class="s">link</span><span class="pi">:</span> <span class="s">/</span>
-  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">About</span>
-      <span class="s">link</span><span class="pi">:</span> <span class="s">/about.html</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Dùng file <code class="highlighter-rouge">navigation.yml</code> như sau</p>
-    <div class="language-liquid highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>  &lt;nav&gt;
-      <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">item</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">site.data.navigation</span><span class="w"> </span><span class="p">%}</span>
-      &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">link</span><span class="w"> </span><span class="p">}}</span>" <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">link</span><span class="w"> </span><span class="p">%}</span>style="color: red;"<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&gt;
-          <span class="p">{{</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>
-      &lt;/a&gt;
-      <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
-  &lt;/nav&gt;
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h2 id="7-assets">
-<a class="anchor" href="#7-assets" aria-hidden="true" spy-title="7. Assets"><span class="octicon octicon-link"></span></a>7. Assets</h2>
-<p>Nơi chứa các file: CSS, JS, images…</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── assets
-│   ├── css
-│   ├── images
-│   └── js
-</code></pre></div></div>
-<p>Các file SASS nằm trong thư mục <code class="highlighter-rouge">_sass/main.scss</code> =&gt; CSS khác (assets/css/styles.scss) dùng như sau: <code class="highlighter-rouge">@import "main";</code></p>
-
-<h2 id="8-blogging">
-<a class="anchor" href="#8-blogging" aria-hidden="true" spy-title="8. Blogging"><span class="octicon octicon-link"></span></a>8. Blogging</h2>
-<ul>
-  <li>Posts: các file markdown (.md) nằm trong <code class="highlighter-rouge">_posts</code> theo định dạng <code class="highlighter-rouge">YYYY-MM-DD-title.md</code> &gt; nội dung bắt đầu bằng “Front Matter” (YAML nằm giữa 2 dấu 3 gạch <code class="highlighter-rouge">---</code> ở trên cùng)</li>
-  <li>Sử dụng: <code class="highlighter-rouge">{{ site.posts }}, {{ post.url }}, {{post.excerpt}}</code> : <code class="highlighter-rouge">post.excerpt</code> là đoạn văn đầu tiên</li>
-  <li>Bonus (xem thêm mục <strong>Variables</strong> ở dưới): <code class="highlighter-rouge">{{ paginator | jsonify }}</code>, <code class="highlighter-rouge">{{ page }}</code>
-</li>
-</ul>
-
-<h2 id="9-collections">
-<a class="anchor" href="#9-collections" aria-hidden="true" spy-title="9. Collections"><span class="octicon octicon-link"></span></a>9. Collections</h2>
-<p>Collections là ý tưởng tốt để nhóm những bài viết liên quan hoặc members, talks, tutorials, serials…</p>
-
-<p>Định nghĩa collections trong <code class="highlighter-rouge">_config.yml</code> ở thư mục gốc.</p>
-
-<div class="w3-card w3-leftbar w3-border-yellow w3-pale-yellow w3-panel w3-padding-16">
-    Thay đổi cấu hình trong `_config.yml` thì phải build lại.
-</div>
-
-<p>Thêm Collections của bạn như sau (ví dụ ở đây mình sẽ group các pages lại với nhau trong thư mục <code class="highlighter-rouge">_pages</code>)</p>
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Collections</span>
-<span class="na">collections</span><span class="pi">:</span>
-  <span class="na">pages</span><span class="pi">:</span>
-    <span class="na">output</span><span class="pi">:</span> <span class="no">true</span>
-
-<span class="c1"># Default values</span>
-<span class="na">defaults</span><span class="pi">:</span>
-  <span class="pi">-</span>
-    <span class="na">scope</span><span class="pi">:</span>
-      <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
-      <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pages"</span>
-    <span class="na">values</span><span class="pi">:</span>
-      <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">page"</span>
-</code></pre></div></div>
-
-<p>Sau đó bạn có thể truy cập vào Documents (phải có <code class="highlighter-rouge">output: true</code>) của collections qua biến <code class="highlighter-rouge">site.pages</code></p>
-
-<p>Thêm thuộc tính cho biến collection trong <code class="highlighter-rouge">_config.yml</code>, lấy mảng collections trong <code class="highlighter-rouge">{{ site }}</code>, trong mỗi collection có <code class="highlighter-rouge">label, docs ...</code>, <code class="highlighter-rouge">docs</code> là mảng document gồm các thuộc tính <code class="highlighter-rouge">url, date, collection, content ...</code></p>
-
-<h2 id="10-variables">
-<a class="anchor" href="#10-variables" aria-hidden="true" spy-title="10. Variables"><span class="octicon octicon-link"></span></a>10. Variables</h2>
-<ul>
-  <li>Global Variables: <code class="highlighter-rouge">{{ site, page, layout, content, paginator }}</code>
-</li>
-  <li>Site Variables: <code class="highlighter-rouge">{{ site.time, site.pages, site.posts, site.related_posts, site.static_files, site.documents, site.url, site.[CONFIGURATION_DATA] ...  }}</code>
-</li>
-  <li>Page Variables: <code class="highlighter-rouge">{{ page.content, page.title, page.excerpt, page.url, page.date, page.id, page.next, page.previous ... }}</code>
-</li>
-  <li>Paginator: <code class="highlighter-rouge">{{ paginator.page, paginator.per_page, paginator.total_posts, paginator.total_pages, paginator.next_page, paginator.previous_page ... }}</code>
-</li>
-</ul>
-
-<h2 id="11-deployment">
-<a class="anchor" href="#11-deployment" aria-hidden="true" spy-title="11. Deployment"><span class="octicon octicon-link"></span></a>11. Deployment</h2>
-<p>Có thể sử dụng <strong>Apache HTTP Server</strong> hoặc <strong>Google Firebase</strong> để tự host những static file build ra. Hoặc bạn cũng có thể sử dụng <strong>Github Page</strong>, nó support sẵn <strong>Jekyll</strong>, tuy nhiên không phải versions và dependencies nào nó cũng support (<a href="https://pages.github.com/versions/" class="hvr-float-shadow" rel="nofollow" target="_blank">xem ở đây</a>), trong trường hợp đó thì bạn phải tự build và push thủ công hoặc tự động với <strong>Travis CI</strong>. <strong>Gitlab Page</strong> cũng là một lựa chọn tốt.</p>
-
-<p>Xem hướng dẫn sử dụng Jekyll với Github Page ở đây: <a href="https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll" class="hvr-forward" rel="nofollow" target="_blank">Setting up a GitHub Pages site with Jekyll</a></p>
-
-<h2 id="12-usage">
-<a class="anchor" href="#12-usage" aria-hidden="true" spy-title="12. Usage"><span class="octicon octicon-link"></span></a>12. Usage</h2>
-<ul>
-  <li>Khi viết bài có nhiều code có syntax của Liquid phải dùng <code class="highlighter-rouge">raw</code> và <code class="highlighter-rouge">endraw</code> để ko bị lỗi!</li>
-  <li>Có thể sử dụng cả HTML và Markdown syntax cùng một trang nhưng không được mix với nhau. Ví dụ sử dụng <code class="highlighter-rouge">&lt;div&gt; ... [markdown] ...&lt;/div&gt;</code> là toang.</li>
-</ul>
-
-<h2 id="13-reference">
-<a class="anchor" href="#13-reference" aria-hidden="true" spy-title="13. Reference"><span class="octicon octicon-link"></span></a>13. Reference</h2>
-<ul>
-  <li><a href="https://jekyllrb.com/docs/" class="hvr-forward" rel="nofollow" target="_blank">Jekyll Quickstart</a></li>
-  <li><a href="https://kramdown.gettalong.org/quickref.html" class="hvr-forward" rel="nofollow" target="_blank">Kramdown Quick Reference</a></li>
-  <li><a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" class="hvr-forward" rel="nofollow" target="_blank">Liquid for Designers</a></li>
-  <li><a href="https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md" class="hvr-forward" rel="nofollow" target="_blank">Jekyll Paginate V2</a></li>
+  <li>Tạo Launchpad ở vị trí trung tâm với kích thước 2,1,2</li>
+  <li>Tạo Terrian sao cho bề mặt trên nằm ở vị trí Y=0, với kích thước: 100,30,30</li>
+  <li>Tạo material cho Terrian</li>
+  <li>Điều chỉnh hướng của ánh sáng thích hợp và kéo nó ra chỗ khác (ko phụ thuộc vị trí)</li>
+  <li>Điều chỉnh camera ở vị trí thích hợp (kéo,quay…)</li>
+  <li>Everything in hierachy is “prefabbed”</li>
 </ul>
 
       </div>
