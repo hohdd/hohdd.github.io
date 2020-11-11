@@ -35,7 +35,6 @@ date: 2020-05-16 14:26:14 +0700
 ### Challenge 1
 
 #### Mục tiêu
-
 - Hiểu được các Tools để thay đổi các giá trị X (dài), Y (rộng/cao), Z (dầy)
 	- Hand (Q) -> điều khiển góc nhìn của Screen (dùng chuột trái để move screen, giữ Alt để quay screen)
 	- Move (W) -> điều chỉnh vị trí (position) của GameObject. Thay đổi dài (X), rộng/cao (Y), dầy (Z)
@@ -55,3 +54,32 @@ date: 2020-05-16 14:26:14 +0700
 - Điều chỉnh hướng của ánh sáng thích hợp và kéo nó ra chỗ khác (ko phụ thuộc vị trí)
 - Điều chỉnh camera ở vị trí thích hợp (kéo,quay...)
 - Everything in hierachy is "prefabbed"
+
+
+### Challenge 2
+
+#### Mục tiêu
+- Hiểu được group các phần nhỏ GameObject bằng một Empty Object.
+- Hiểu được Pivot (điểm quay ở 0.0.0) và Center (điểm quay ở giữa GameObject) khi ở chế độ Rotate (phím tắt Z)
+- Hiểu được phím tắt để snap (Ctrl + Shift + di chuyển)
+- Hiểu được phím tắt để bắt dính các góc cạnh (V = Vecter)
+- Khi sửa Position: x=0 và z=0 sẽ đưa Rocket về trung tâm của Launchpad (vì Launchpad ở Position 0.0.0)
+
+#### Setup
+- Tạo một tên Rocket
+
+### Challenge 3
+
+#### Mục tiêu
+- Hiểu Meshes (lưới thể tích và lưới đa giác), Mesh Renderer (render vật thể dựa vào Mesh). Định dạng file, va chạm, nội suy, bề mặt, ánh sáng phản chiếu...
+- Hiểu Box Collider (là khung màu xanh thể hiện danh giới phần va chạm); Compound Collider (kết hợp va chạm, ma trận va chạm...)
+- Hiểu Physic Material (được sử dụng để điều chỉnh ma sát và các hiệu ứng nảy của các đối tượng va chạm. Assets > Create > Physic Material). Ma sát (tĩnh và động). Bounciness (độ nảy)...
+- Hiểu Rigidbody (nhận lực và mô-men xoắn để làm cho các vật thể chuyển động giống thực tế), đây là một trong rất nhiều loại Physics Component (hành vi vật lý thuyết phục, thực tế)
+- Biết thêm Script Component, hàm Start() được call 1 lần khi start game, hàm Update() được call ở mọi frame (FPS)
+- Hiểu "cross platform input" (virtual input layer): Nó cho phép người chơi thay đổi các phím. Nó cho phép bạn triển khai trên thiết bị di động một cách dễ dàng
+- Biết câu lệnh debug: Print("Update")
+- Biết các xem thông số "Stats" khi ở Play mode (Audio, Graphics, Frame Per Second...)
+- Biết sự khác nhau giữa GetKey và GetKeyDown, khi xử lý Input nên dùng Input.GetAxis và Input.GetButton vì nó cho phép người dùng cấu hình phím.
+
+#### Setup
+- Thêm Rigbody cho Rocket
