@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-11-10 07:17:02 +0700",
+        "dateModified": "2020-11-12 00:39:09 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 1 min read </span> · 
+      <span title="reading time">· about 3 mins read </span> · 
       
       <span>
         
@@ -137,12 +137,23 @@
 <li class="toc-entry toc-h4"><a href="#setup" spy-toc="Setup">Setup</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h3"><a href="#challenge-2" spy-toc="Challenge 2">Challenge 2</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#mục-tiêu-1" spy-toc="Mục tiêu">Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#setup-1" spy-toc="Setup">Setup</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-3" spy-toc="Challenge 3">Challenge 3</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#mục-tiêu-2" spy-toc="Mục tiêu">Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#setup-2" spy-toc="Setup">Setup</a></li>
+</ul>
+</li>
 </ul><h3 id="challenge-1">
 <a class="anchor" href="#challenge-1" aria-hidden="true" spy-title="Challenge 1"><span class="octicon octicon-link"></span></a>Challenge 1</h3>
 
 <h4 id="mục-tiêu">
 <a class="anchor" href="#m%E1%BB%A5c-ti%C3%AAu" aria-hidden="true" spy-title="Mục tiêu"><span class="octicon octicon-link"></span></a>Mục tiêu</h4>
-
 <ul>
   <li>Hiểu được các Tools để thay đổi các giá trị X (dài), Y (rộng/cao), Z (dầy)
     <ul>
@@ -172,6 +183,48 @@
   <li>Điều chỉnh hướng của ánh sáng thích hợp và kéo nó ra chỗ khác (ko phụ thuộc vị trí)</li>
   <li>Điều chỉnh camera ở vị trí thích hợp (kéo,quay…)</li>
   <li>Everything in hierachy is “prefabbed”</li>
+</ul>
+
+<h3 id="challenge-2">
+<a class="anchor" href="#challenge-2" aria-hidden="true" spy-title="Challenge 2"><span class="octicon octicon-link"></span></a>Challenge 2</h3>
+
+<h4 id="mục-tiêu-1">
+<a class="anchor" href="#m%E1%BB%A5c-ti%C3%AAu-1" aria-hidden="true" spy-title="Mục tiêu"><span class="octicon octicon-link"></span></a>Mục tiêu</h4>
+<ul>
+  <li>Hiểu được group các phần nhỏ GameObject bằng một Empty Object.</li>
+  <li>Hiểu được Pivot (điểm quay ở 0.0.0) và Center (điểm quay ở giữa GameObject) khi ở chế độ Rotate (phím tắt Z)</li>
+  <li>Hiểu được phím tắt để snap (Ctrl + Shift + di chuyển)</li>
+  <li>Hiểu được phím tắt để bắt dính các góc cạnh (V = Vecter)</li>
+  <li>Khi sửa Position: x=0 và z=0 sẽ đưa Rocket về trung tâm của Launchpad (vì Launchpad ở Position 0.0.0)</li>
+</ul>
+
+<h4 id="setup-1">
+<a class="anchor" href="#setup-1" aria-hidden="true" spy-title="Setup"><span class="octicon octicon-link"></span></a>Setup</h4>
+<ul>
+  <li>Tạo một tên Rocket</li>
+</ul>
+
+<h3 id="challenge-3">
+<a class="anchor" href="#challenge-3" aria-hidden="true" spy-title="Challenge 3"><span class="octicon octicon-link"></span></a>Challenge 3</h3>
+
+<h4 id="mục-tiêu-2">
+<a class="anchor" href="#m%E1%BB%A5c-ti%C3%AAu-2" aria-hidden="true" spy-title="Mục tiêu"><span class="octicon octicon-link"></span></a>Mục tiêu</h4>
+<ul>
+  <li>Hiểu Meshes (lưới thể tích và lưới đa giác), Mesh Renderer (render vật thể dựa vào Mesh). Định dạng file, va chạm, nội suy, bề mặt, ánh sáng phản chiếu…</li>
+  <li>Hiểu Box Collider (là khung màu xanh thể hiện danh giới phần va chạm); Compound Collider (kết hợp va chạm, ma trận va chạm…)</li>
+  <li>Hiểu Physic Material (được sử dụng để điều chỉnh ma sát và các hiệu ứng nảy của các đối tượng va chạm. Assets &gt; Create &gt; Physic Material). Ma sát (tĩnh và động). Bounciness (độ nảy)…</li>
+  <li>Hiểu Rigidbody (nhận lực và mô-men xoắn để làm cho các vật thể chuyển động giống thực tế), đây là một trong rất nhiều loại Physics Component (hành vi vật lý thuyết phục, thực tế)</li>
+  <li>Biết thêm Script Component, hàm Start() được call 1 lần khi start game, hàm Update() được call ở mọi frame (FPS)</li>
+  <li>Hiểu “cross platform input” (virtual input layer): Nó cho phép người chơi thay đổi các phím. Nó cho phép bạn triển khai trên thiết bị di động một cách dễ dàng</li>
+  <li>Biết câu lệnh debug: Print(“Update”)</li>
+  <li>Biết các xem thông số “Stats” khi ở Play mode (Audio, Graphics, Frame Per Second…)</li>
+  <li>Biết sự khác nhau giữa GetKey và GetKeyDown, khi xử lý Input nên dùng Input.GetAxis và Input.GetButton vì nó cho phép người dùng cấu hình phím.</li>
+</ul>
+
+<h4 id="setup-2">
+<a class="anchor" href="#setup-2" aria-hidden="true" spy-title="Setup"><span class="octicon octicon-link"></span></a>Setup</h4>
+<ul>
+  <li>Thêm Rigbody cho Rocket</li>
 </ul>
 
       </div>
