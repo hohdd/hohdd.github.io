@@ -83,3 +83,22 @@ date: 2020-05-16 14:26:14 +0700
 
 #### Setup
 - Thêm Rigbody cho Rocket
+
+### Challenge 4
+
+#### Mục tiêu
+- Sử dụng GetComponent để lấy component Rigidbody khi start game, sử dụng Vector3.up shorthan
+- Điều chỉnh màu chế độ play mode: Edit > Reference > Color > General:Playmode tint
+- Biết chỗ xem và cấu hình các phím tắt (Shift+Space)
+- Biết quy tắc thuận tay (hiểu X, Y, Z
+	- X: trục ngang: trái là +, phải là -
+	- Y: trục đứng: trên là +, dưới là -
+	- Z: trục vuông góc màn hình: đi vào là +, đi ra (phía mình) là -
+- Phân biệt Rotate (xoay) và Force (đẩy)
+	- X: tâm xoay là X, đẩy theo hướng X (tùy + hay -)
+	- Y: tâm xoay là Y, đẩy theo hướng Y (tùy + hay -)
+	- Z: tâm xoay là Z, đẩy theo hướng Z (tùy + hay -)
+- Xử lý lỗi không autocomplete khi viết Script, nguyên nhân chưa có .Net Framework 4.6.1, lỗi cài đặt do đang pending restart.
+
+#### Setup
+- Viết Script để thêm lực đẩy (Force) cho Rocket
