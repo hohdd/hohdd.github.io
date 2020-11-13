@@ -44,7 +44,7 @@ date: 2020-05-16 14:26:14 +0700
 - Hiểu được Directional Light: cường độ và màu sắc phụ thuộc vào hướng ánh sáng giống như các thời điểm mặt trời trong ngày, nó không phụ thuộc vào vị trí của nguồn sáng này.
 - Control được Screen:
 	- Chọn (W) GameObject nhà nhấn F để frame nó vào giữa màn hình (kéo Screen đi chỗ khác trước khi nhấn F để đưa GameObject về trung tâm)
-	- Sử dụng chế độ bay (fly) để nhìn tổng thể: giữ chuột phải + ASWS (điều hướng) + EQ (lên xuống) + Shifft để tăng tốc
+	- Sử dụng chế độ bay (fly) để nhìn tổng thể: giữ chuột phải + AWSD (điều hướng) + EQ (lên xuống) + Shifft để tăng tốc
 	- Kết hợp: F > Q > Alt + mouse left
 
 #### Setup
@@ -77,9 +77,9 @@ date: 2020-05-16 14:26:14 +0700
 - Hiểu Rigidbody (nhận lực và mô-men xoắn để làm cho các vật thể chuyển động giống thực tế), đây là một trong rất nhiều loại Physics Component (hành vi vật lý thuyết phục, thực tế)
 - Biết thêm Script Component, hàm Start() được call 1 lần khi start game, hàm Update() được call ở mọi frame (FPS)
 - Hiểu "cross platform input" (virtual input layer): Nó cho phép người chơi thay đổi các phím. Nó cho phép bạn triển khai trên thiết bị di động một cách dễ dàng
-- Biết câu lệnh debug: Print("Update")
+- Có thể sử dụng câu lệnh debug: print("Update")
 - Biết các xem thông số "Stats" khi ở Play mode (Audio, Graphics, Frame Per Second...)
-- Biết sự khác nhau giữa GetKey và GetKeyDown, khi xử lý Input nên dùng Input.GetAxis và Input.GetButton vì nó cho phép người dùng cấu hình phím.
+- Biết sự khác nhau giữa GetKey và GetKeyDown, khi xử lý Input nên dùng Input.GetAxis và Input.GetButton vì nó cho phép người dùng cấu hình phím. Nếu dùng trực tiếp thì sử dụng "Input.GetKey(KeyCode.A)"
 
 #### Setup
 - Thêm Rigbody cho Rocket
@@ -89,16 +89,32 @@ date: 2020-05-16 14:26:14 +0700
 #### Mục tiêu
 - Sử dụng GetComponent để lấy component Rigidbody khi start game, sử dụng Vector3.up shorthan
 - Điều chỉnh màu chế độ play mode: Edit > Reference > Color > General:Playmode tint
-- Biết chỗ xem và cấu hình các phím tắt (Shift+Space)
-- Biết quy tắc thuận tay (hiểu X, Y, Z
+- Biết chỗ xem và cấu hình các phím tắt (Shift+Space): Edit > Reference > Keys
+- Biết quy tắc Left-handed và Right-handed: ngón cái là X (Red), ngón trỏ là Y (Green), ngón giữa là Z (Blue).
+	- Unity sử dụng Left-handed. Để xác định hướng quay của một trục (giá trị dương) thì chỉ việc đếm X>Y>Z>X>Y>Z...
+	- "Top" là ngửa lòng bàn tày lên và trỏ về phía mình, "Bottom" là úp lòng bản tay xuống và trỏ ra phía trước
+	- "Front" là lòng bàn tay hướng về phía mình, "Back" là mu bàn tay hướng về phía mình
+	- "Right" là ngón cái hướng về phía mình, ngược lại "Left" là ngón cái hướng xa phía mình
 	- X: trục ngang: trái là +, phải là -
 	- Y: trục đứng: trên là +, dưới là -
 	- Z: trục vuông góc màn hình: đi vào là +, đi ra (phía mình) là -
 - Phân biệt Rotate (xoay) và Force (đẩy)
-	- X: tâm xoay là X, đẩy theo hướng X (tùy + hay -)
-	- Y: tâm xoay là Y, đẩy theo hướng Y (tùy + hay -)
-	- Z: tâm xoay là Z, đẩy theo hướng Z (tùy + hay -)
+	- X: tâm xoay là X, đẩy theo hướng trục X
+	- Y: tâm xoay là Y, đẩy theo hướng trục Y
+	- Z: tâm xoay là Z, đẩy theo hướng trục Z
 - Xử lý lỗi không autocomplete khi viết Script, nguyên nhân chưa có .Net Framework 4.6.1, lỗi cài đặt do đang pending restart.
 
 #### Setup
 - Viết Script để thêm lực đẩy (Force) cho Rocket
+
+### Challenge 5
+
+#### Mục tiêu
+- Những thay đổi (thuộc tính) trong khi running "Play mode" nó sẽ biến mất khi stop running. Thay đổi code thì không bị mất (và có tác dụng luôn)
+- Khi trực tiếp xử lý chuyển động của một GameObject cần phải suy nghĩ về "Độc lập tốc độ khung hình" (Frame Rate Independence) = cùng một tốc độ trong các điều kiện FPS khác nhau.
+- "Audio Listener" luôn được thêm vào Camera chính theo mặc định. Mỗi cảnh chỉ có thể có một "Audio Listener". Cài đặt âm thanh của Project: Edit > Project Settings > Audio
+- Khi "Audio Listener" ở gần một "Audio Source" (một component thêm vào GameObject) người chơi sẽ nghe thấy nó với hiệu ứng giống trải nghiệm thật (to, nhỏ, vọng âm, độ vang...)
+
+#### Setup
+- Sử dụng "Time.deltaTime"
+- Thêm âm thanh
