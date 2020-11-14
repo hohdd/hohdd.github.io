@@ -34,6 +34,14 @@ date: 2020-05-16 14:26:14 +0700
 
 ### Challenge 1
 
+#### Setup
+- Tạo Launchpad ở vị trí trung tâm với kích thước 2,1,2
+- Tạo Terrian sao cho bề mặt trên nằm ở vị trí Y=0, với kích thước: 100,30,30
+- Tạo material cho Terrian
+- Điều chỉnh hướng của ánh sáng thích hợp và kéo nó ra chỗ khác (ko phụ thuộc vị trí)
+- Điều chỉnh camera ở vị trí thích hợp (kéo,quay...)
+- Everything in hierachy is "prefabbed"
+
 #### Mục tiêu
 - Hiểu được các Tools để thay đổi các giá trị X (dài), Y (rộng/cao), Z (dầy)
 	- Hand (Q) -> điều khiển góc nhìn của Screen (dùng chuột trái để move screen, giữ Alt để quay screen)
@@ -47,16 +55,10 @@ date: 2020-05-16 14:26:14 +0700
 	- Sử dụng chế độ bay (fly) để nhìn tổng thể: giữ chuột phải + AWSD (điều hướng) + EQ (lên xuống) + Shifft để tăng tốc
 	- Kết hợp: F > Q > Alt + mouse left
 
-#### Setup
-- Tạo Launchpad ở vị trí trung tâm với kích thước 2,1,2
-- Tạo Terrian sao cho bề mặt trên nằm ở vị trí Y=0, với kích thước: 100,30,30
-- Tạo material cho Terrian
-- Điều chỉnh hướng của ánh sáng thích hợp và kéo nó ra chỗ khác (ko phụ thuộc vị trí)
-- Điều chỉnh camera ở vị trí thích hợp (kéo,quay...)
-- Everything in hierachy is "prefabbed"
-
-
 ### Challenge 2
+
+#### Setup
+- Tạo một tên Rocket
 
 #### Mục tiêu
 - Hiểu được group các phần nhỏ GameObject bằng một Empty Object.
@@ -65,10 +67,10 @@ date: 2020-05-16 14:26:14 +0700
 - Hiểu được phím tắt để bắt dính các góc cạnh (V = Vecter)
 - Khi sửa Position: x=0 và z=0 sẽ đưa Rocket về trung tâm của Launchpad (vì Launchpad ở Position 0.0.0)
 
-#### Setup
-- Tạo một tên Rocket
-
 ### Challenge 3
+
+#### Setup
+- Thêm Rigbody cho Rocket
 
 #### Mục tiêu
 - Hiểu Meshes (lưới thể tích và lưới đa giác), Mesh Renderer (render vật thể dựa vào Mesh). Định dạng file, va chạm, nội suy, bề mặt, ánh sáng phản chiếu...
@@ -81,10 +83,10 @@ date: 2020-05-16 14:26:14 +0700
 - Biết các xem thông số "Stats" khi ở Play mode (Audio, Graphics, Frame Per Second...)
 - Biết sự khác nhau giữa GetKey và GetKeyDown, khi xử lý Input nên dùng Input.GetAxis và Input.GetButton vì nó cho phép người dùng cấu hình phím. Nếu dùng trực tiếp thì sử dụng "Input.GetKey(KeyCode.A)"
 
-#### Setup
-- Thêm Rigbody cho Rocket
-
 ### Challenge 4
+
+#### Setup
+- Viết Script để thêm lực đẩy (Force) cho Rocket
 
 #### Mục tiêu
 - Sử dụng GetComponent để lấy component Rigidbody khi start game, sử dụng Vector3.up shorthan
@@ -104,17 +106,32 @@ date: 2020-05-16 14:26:14 +0700
 	- Z: tâm xoay là Z, đẩy theo hướng trục Z
 - Xử lý lỗi không autocomplete khi viết Script, nguyên nhân chưa có .Net Framework 4.6.1, lỗi cài đặt do đang pending restart.
 
-#### Setup
-- Viết Script để thêm lực đẩy (Force) cho Rocket
-
 ### Challenge 5
+
+#### Setup
+- Sử dụng "Time.deltaTime"
+- Thêm component "Audio Source" cho Rocket, khi thrust thì play, không thì stop
+- Đóng băng Rocket chỉ fly (Position) trong mặt (1,1,0) và chỉ Rotate theo trục Z. Chỉ cho Rigidbody can thiệp Rotation khingười chơi Input
 
 #### Mục tiêu
 - Những thay đổi (thuộc tính) trong khi running "Play mode" nó sẽ biến mất khi stop running. Thay đổi code thì không bị mất (và có tác dụng luôn)
 - Khi trực tiếp xử lý chuyển động của một GameObject cần phải suy nghĩ về "Độc lập tốc độ khung hình" (Frame Rate Independence) = cùng một tốc độ trong các điều kiện FPS khác nhau.
 - "Audio Listener" luôn được thêm vào Camera chính theo mặc định. Mỗi cảnh chỉ có thể có một "Audio Listener". Cài đặt âm thanh của Project: Edit > Project Settings > Audio
 - Khi "Audio Listener" ở gần một "Audio Source" (một component thêm vào GameObject) người chơi sẽ nghe thấy nó với hiệu ứng giống trải nghiệm thật (to, nhỏ, vọng âm, độ vang...)
+- Để đóng băng Position & Rotation, tìm đến thuộc tính "Constraints" của "Rigidbody"
+- Xử lý [SerializeField] một biến để chỉ có thể thay đổi trong Inspector (các Scripts khác cũng không thể thay đổi).
+- Không khai báo biến trong hàm Update (hoặc hàm được call bởi Update) vì sẽ tạo vô số biến rác (làm ngốn ram)
+
+### Challenge 5
 
 #### Setup
-- Sử dụng "Time.deltaTime"
-- Thêm âm thanh
+- Sử dụng "Tags and Layers", sử dụng GameObject.Instantiate(...)
+- Xử lý va chạm với "void OnCollisionEnter(Collision collision)"
+
+#### Mục tiêu
+- "Tags and Layers" (Edit > Project Settings).
+- Một GameObject chỉ có thể có một Thẻ được gán cho nó. Sử dụng GameObject.FindWithTag("Respawn") để lấy GameObject cần reference.
+- Layers được sử dụng phổ biến nhất bởi Camera và Lights để điều khiển hiển thị bằng cách chọn "Culling Mark" (của Camera và Lights)
+- Khởi tạo một GameObject với Instantiate(respawnPrefab, respawn.transform.position, respawn.transform.rotation)
+- Mỗi va chạm (xem thêm ma trận va chạm) sẽ call OnCollisionEnter(). Rocket có 4 chân sẽ va chạm 4 lần với Launchpad
+- Sử dụng Switch-Case và "collision.gameObject.tag" để nhận biết đang va chạm với cái gì.
