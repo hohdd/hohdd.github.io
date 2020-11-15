@@ -122,7 +122,7 @@ date: 2020-05-16 14:26:14 +0700
 - Xử lý [SerializeField] một biến để chỉ có thể thay đổi trong Inspector (các Scripts khác cũng không thể thay đổi).
 - Không khai báo biến trong hàm Update (hoặc hàm được call bởi Update) vì sẽ tạo vô số biến rác (làm ngốn ram)
 
-### Challenge 5
+### Challenge 6
 
 #### Setup
 - Sử dụng "Tags and Layers", sử dụng GameObject.Instantiate(...)
@@ -135,3 +135,17 @@ date: 2020-05-16 14:26:14 +0700
 - Khởi tạo một GameObject với Instantiate(respawnPrefab, respawn.transform.position, respawn.transform.rotation)
 - Mỗi va chạm (xem thêm ma trận va chạm) sẽ call OnCollisionEnter(). Rocket có 4 chân sẽ va chạm 4 lần với Launchpad
 - Sử dụng Switch-Case và "collision.gameObject.tag" để nhận biết đang va chạm với cái gì.
+
+### Challenge 7
+
+#### Setup
+- Tìm hiểu các tài nguyên Unity DOTS (Unity Data-Oriented Technology Stack), Unity Game Architectures, Coding Standards...
+- Chỉnh lại Camera
+- Khám phá Prefab
+
+
+#### Mục tiêu
+- Tìm thấy cảm hứng & đam mê với các tài nguyên Unity DOTS (Unity Data-Oriented Technology Stack), Unity Game Architectures, Coding Standards...
+- Tìm thấy Diagram của MonoBehavious, biết về EC (Entity-Component) để tránh lộn xộn Spaghetti...
+- Menu: GameObject > Align With View (Ctrl+Shift+F)
+- Các GameObject sử dụng prefab giống như mở một file TEXT, hoặc là đã bị sửa hoặc không, khi save thì file ko bị sửa được sync, thông tin save sau sẽ ghi đề save trước.
