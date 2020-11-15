@@ -54,8 +54,8 @@ date: 2020-05-15 14:26:14 +0700
 |	He **asked where** he could find Lisa.	|	Câu **tường thuật cho câu hỏi**: He **asked where to find** Lisa.
 |	She **asked if** anybody saw Tom?	|	Câu **tường thuật** cho câu hỏi: Thêm từ if hoặc whether trước câu hỏi
 |	My mother **asked me whether** I had done my homework.	|	**Câu tường thuật** cho câu hỏi: Thêm từ if hoặc whether trước câu hỏi
-|	I **suggest that** he come to work on time.	|	**Bàng thái cách**: động từ ở mệnh đề sau sẽ chuyển về nguyên mẫu cho tất cả các ngôi.
-|	He **requested** Frank not come to the party.	|	Bàng thái cách: **động từ ở mệnh đề sau sẽ chuyển về nguyên mẫu cho tất cả các ngôi**.
+|	I **suggest that** he {% u come %} to work on time.	|	**Bàng thái cách**: động từ ở mệnh đề sau sẽ chuyển về nguyên mẫu cho tất cả các ngôi.
+|	He **requested** Frank not {% u come %} to the party.	|	Bàng thái cách: **động từ ở mệnh đề sau sẽ chuyển về nguyên mẫu cho tất cả các ngôi**.
 |	If it rains, we **might** cancel the trip.	|	ĐK 1:  [**If + thì hiện tại đơn**], [**will + động từ nguyên mẫu**] có thể thực sự xảy ra trong hiện tại hoặc tương lai.
 |	If **I were** you, I wouldn’t do that.	|	ĐK 2: [**If + thì quá khứ đơn**], [**would + động từ nguyên mẫu**] KHÔNG THỂ thực sự xảy ra trong hiện tại. **"were" dùng cho tất cả các ngôi**
 |	If I **had studied** harder, I **would have passed** the exam.	|	ĐK 3: [**If + thì quá khứ hoàn thành**], [**would + have + V3/V-ed**] ĐÃ KHÔNG xảy ra trong quá khứ.
