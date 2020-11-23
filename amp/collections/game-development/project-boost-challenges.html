@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-11-16 01:15:10 +0700",
+        "dateModified": "2020-11-24 01:24:32 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 7 mins read </span> · 
+      <span title="reading time">· about 10 mins read </span> · 
       
       <span>
         
@@ -171,6 +171,21 @@
 <ul>
 <li class="toc-entry toc-h4"><a href="#setup-6" spy-toc="Setup">Setup</a></li>
 <li class="toc-entry toc-h4"><a href="#mục-tiêu-6" spy-toc="Mục tiêu">Mục tiêu</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-8" spy-toc="Challenge 8">Challenge 8</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-9" spy-toc="Challenge 9">Challenge 9</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-1" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-10" spy-toc="Challenge 10">Challenge 10</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-2" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 </ul>
 </li>
 </ul><h3 id="challenge-1">
@@ -340,6 +355,8 @@
   <li>Tìm hiểu các tài nguyên Unity DOTS (Unity Data-Oriented Technology Stack), Unity Game Architectures, Coding Standards…</li>
   <li>Chỉnh lại Camera</li>
   <li>Khám phá Prefab</li>
+  <li>Có thể để AudioSource để play nhiều AudioClip</li>
+  <li>Sử dụng ParticleSystem</li>
 </ul>
 
 <h4 id="mục-tiêu-6">
@@ -349,6 +366,46 @@
   <li>Tìm thấy Diagram của MonoBehavious, biết về EC (Entity-Component) để tránh lộn xộn Spaghetti…</li>
   <li>Menu: GameObject &gt; Align With View (Ctrl+Shift+F)</li>
   <li>Các GameObject sử dụng prefab giống như mở một file TEXT, hoặc là đã bị sửa hoặc không, khi save thì file ko bị sửa được sync, thông tin save sau sẽ ghi đề save trước.</li>
+  <li>Có thể để AudioSource để play nhiều AudioClip bằng audioSource.PlayOneShot(audioClip_name). Rút kinh nghiệm đừng “tự bóp” mình (stop mà vẫn đòi play)</li>
+  <li>Sử dụng ParticleSystem reference đến một Prefab (particle) trong Scence, sử dụng Play và Stop để điều khiển. Particle có thể sử dụng để tạo nhiệu hiệu ứng Game.</li>
+</ul>
+
+<h3 id="challenge-8">
+<a class="anchor" href="#challenge-8" aria-hidden="true" spy-title="Challenge 8"><span class="octicon octicon-link"></span></a>Challenge 8</h3>
+
+<h4 id="setup--mục-tiêu">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Moving Platform Pattern: sử dụng “[DisallowMultipleComponent]” dùng cho class để ngăn 1 GameObject ko sử dụng Script nhiều lần.</li>
+  <li>Sử dụng “[Range(min,max)]” chỉ để debug xem ở Inspector giá trị thay đổi.</li>
+  <li>Sử dụng “Time.time” là thời gian seconds (float) từ lúc start game. Nhân 1 số với 1 vector3, cộng 2 vector3.</li>
+  <li>Khám phá https://learn.unity.com/ Unity Tips, Design, Art…</li>
+</ul>
+
+<h3 id="challenge-9">
+<a class="anchor" href="#challenge-9" aria-hidden="true" spy-title="Challenge 9"><span class="octicon octicon-link"></span></a>Challenge 9</h3>
+
+<h4 id="setup--mục-tiêu-1">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-1" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Thiết kế level là một nghệ thuật: hướng dẫn, thử thách, mục tiêu, trải nghiệm thú vị khiến người chơi quan tâm.</li>
+  <li>Thêm level lighting, tự Generate Lighting mỗi level. Khai thác sự độc đáo của Lighting để tăng trải nghiệm người dùng.</li>
+  <li>Khám phá Nested Prefab: Khi update parent thì prefab con sẽ không nhận được update, khi delete prefab ở Assets sẽ lỗi reference ở Hierarchy</li>
+  <li>Nâng cấp version Unity của project: tạo 1 project với version mới, copy thư mục Assets cũ sang thư mục project mới, generate lại Lighting. Test lại game.</li>
+  <li>Thay đổi điểm xoay của gameobject (change pivot point): sử dụng chế độ “Freeze Transform”, rồi chọn Children và kéo lên xuống phù hợp với EmptyObject</li>
+  <li>Thêm chức năng “hack” để test game (nhấn C để on/off collision, L để load next level)</li>
+  <li>Sử dụng “SendMessage” để call method của một GO khác, Send tới tất cả các Script (MonoBehaviour) của GO, hoặc “BroadcastMessage” với mọi children.</li>
+  <li>Khám phá “SceneManager”, lưu ý giữa “scence in build settings” và “scence loaded”.</li>
+</ul>
+
+<h3 id="challenge-10">
+<a class="anchor" href="#challenge-10" aria-hidden="true" spy-title="Challenge 10"><span class="octicon octicon-link"></span></a>Challenge 10</h3>
+
+<h4 id="setup--mục-tiêu-2">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-2" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Texture: có 2 loại Bump Map là Height Map (texture sử dụng tỷ lệ từ trắng đến đen cho biết độ cao) và Normal Map (texture sử dụng RGB để cho biết hướng X,Y,Z).</li>
+  <li>Tạo một Terrain và nghịch với texture (import từ store, paint texture, Edit Terrain Layers…) hiểu thuộc tính “Tilling Settings” (Size, Offset); Brush size và Opacity.</li>
 </ul>
 
       </div>
