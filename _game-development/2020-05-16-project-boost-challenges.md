@@ -142,6 +142,8 @@ date: 2020-05-16 14:26:14 +0700
 - Tìm hiểu các tài nguyên Unity DOTS (Unity Data-Oriented Technology Stack), Unity Game Architectures, Coding Standards...
 - Chỉnh lại Camera
 - Khám phá Prefab
+- Có thể để AudioSource để play nhiều AudioClip
+- Sử dụng ParticleSystem
 
 
 #### Mục tiêu
@@ -149,3 +151,31 @@ date: 2020-05-16 14:26:14 +0700
 - Tìm thấy Diagram của MonoBehavious, biết về EC (Entity-Component) để tránh lộn xộn Spaghetti...
 - Menu: GameObject > Align With View (Ctrl+Shift+F)
 - Các GameObject sử dụng prefab giống như mở một file TEXT, hoặc là đã bị sửa hoặc không, khi save thì file ko bị sửa được sync, thông tin save sau sẽ ghi đề save trước.
+- Có thể để AudioSource để play nhiều AudioClip bằng audioSource.PlayOneShot(audioClip_name). Rút kinh nghiệm đừng "tự bóp" mình (stop mà vẫn đòi play)
+- Sử dụng ParticleSystem reference đến một Prefab (particle) trong Scence, sử dụng Play và Stop để điều khiển. Particle có thể sử dụng để tạo nhiệu hiệu ứng Game.
+
+### Challenge 8
+
+#### Setup & Mục tiêu
+- Moving Platform Pattern: sử dụng "[DisallowMultipleComponent]" dùng cho class để ngăn 1 GameObject ko sử dụng Script nhiều lần.
+- Sử dụng "[Range(min,max)]" chỉ để debug xem ở Inspector giá trị thay đổi.
+- Sử dụng "Time.time" là thời gian seconds (float) từ lúc start game. Nhân 1 số với 1 vector3, cộng 2 vector3.
+- Khám phá https://learn.unity.com/ Unity Tips, Design, Art... 
+
+### Challenge 9
+
+#### Setup & Mục tiêu
+- Thiết kế level là một nghệ thuật: hướng dẫn, thử thách, mục tiêu, trải nghiệm thú vị khiến người chơi quan tâm.
+- Thêm level lighting, tự Generate Lighting mỗi level. Khai thác sự độc đáo của Lighting để tăng trải nghiệm người dùng.
+- Khám phá Nested Prefab: Khi update parent thì prefab con sẽ không nhận được update, khi delete prefab ở Assets sẽ lỗi reference ở Hierarchy
+- Nâng cấp version Unity của project: tạo 1 project với version mới, copy thư mục Assets cũ sang thư mục project mới, generate lại Lighting. Test lại game.
+- Thay đổi điểm xoay của gameobject (change pivot point): sử dụng chế độ "Freeze Transform", rồi chọn Children và kéo lên xuống phù hợp với EmptyObject
+- Thêm chức năng "hack" để test game (nhấn C để on/off collision, L để load next level)
+- Sử dụng "SendMessage" để call method của một GO khác, Send tới tất cả các Script (MonoBehaviour) của GO, hoặc "BroadcastMessage" với mọi children.
+- Khám phá "SceneManager", lưu ý giữa "scence in build settings" và "scence loaded".
+
+### Challenge 10
+
+#### Setup & Mục tiêu
+- Texture: có 2 loại Bump Map là Height Map (texture sử dụng tỷ lệ từ trắng đến đen cho biết độ cao) và Normal Map (texture sử dụng RGB để cho biết hướng X,Y,Z).
+- Tạo một Terrain và nghịch với texture (import từ store, paint texture, Edit Terrain Layers...) hiểu thuộc tính "Tilling Settings" (Size, Offset); Brush size và Opacity.
