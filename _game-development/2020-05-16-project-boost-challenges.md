@@ -177,5 +177,19 @@ date: 2020-05-16 14:26:14 +0700
 ### Challenge 10
 
 #### Setup & Mục tiêu
+- File ".unitypackage" tải về từ AssetStore được lưu ở "AppData\Roaming\Unity\Asset Store"
 - Texture: có 2 loại Bump Map là Height Map (texture sử dụng tỷ lệ từ trắng đến đen cho biết độ cao) và Normal Map (texture sử dụng RGB để cho biết hướng X,Y,Z).
 - Tạo một Terrain và nghịch với texture (import từ store, paint texture, Edit Terrain Layers...) hiểu thuộc tính "Tilling Settings" (Size, Offset); Brush size và Opacity.
+- Material quyết định bởi Shader (là những scripts chứa giải thuật tính tóa màu sắc của mỗi pixel được render)
+- Sky là một loại nền mà Camera vẽ trước khi nó kết xuất khung hình. Nó mang lại cảm giác về chiều sâu. Sky có thể chứa bất cứ thứ gì (mây, núi, tòa nhà...). Unity cũng có thể sử dụng Sky để tạo ra ánh sáng xung quanh trong Scence.
+- Skybox shaders (material) có các lựa chọn: 6 Sided, Cubemap, Panoramic.
+- Ambient Mode (Window > Rendering > Lighting Settings): Nếu ánh sáng không đổi thì dùng "Baked" => click "Generate Lighting" (không generate tự động)
+- Visual Effects Components (Add Component > Effects): có thể apply cho Camera, GO, light sources. Khám phá Halo, Lens Flare (Flare, Glare) và màu sắc "Directional light" từ "AllSkyFree"
+- Theme màu là gì? kết hợp Sky, color of Directional light, Ambient color (HDR color), SunGlow (Len Flares) để có màu ấn tượng.
+
+### Challenge 11
+
+#### Setup & Mục tiêu
+- Tạo một "Splash Scene", tại hàm Awake() sử dụng "DontDestroyOnLoad(gameObject)" để giữ nhạc không bị tắt (ở Play Mode có thể thấy Splash Scene không bị mất).
+- Sử dụng Legacy package "Standard Assets (for Unity 2018.4)" để learning (First Person Character Controller, Third Person Character Controller, Car Controller, Aircraft Controller, Particle Example Scene, Rollerball Controller, Camera Rigs, Cross Platform Input, AI Examples)
+- Attitude: Không thể biết và thành thạo tất cả, sử dụng công việc của người khác nếu có thể, ưu tiên xây dựng knowledge, biết nó có gì và đào sâu khi cần thiết.
