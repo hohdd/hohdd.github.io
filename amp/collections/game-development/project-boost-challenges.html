@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-11-24 01:24:32 +0700",
+        "dateModified": "2020-11-25 01:17:41 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 10 mins read </span> · 
+      <span title="reading time">· about 11 mins read </span> · 
       
       <span>
         
@@ -186,6 +186,11 @@
 <li class="toc-entry toc-h3"><a href="#challenge-10" spy-toc="Challenge 10">Challenge 10</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-2" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-11" spy-toc="Challenge 11">Challenge 11</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-3" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 </ul>
 </li>
 </ul><h3 id="challenge-1">
@@ -404,8 +409,26 @@
 <h4 id="setup--mục-tiêu-2">
 <a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-2" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
 <ul>
+  <li>File “.unitypackage” tải về từ AssetStore được lưu ở “AppData\Roaming\Unity\Asset Store”</li>
   <li>Texture: có 2 loại Bump Map là Height Map (texture sử dụng tỷ lệ từ trắng đến đen cho biết độ cao) và Normal Map (texture sử dụng RGB để cho biết hướng X,Y,Z).</li>
   <li>Tạo một Terrain và nghịch với texture (import từ store, paint texture, Edit Terrain Layers…) hiểu thuộc tính “Tilling Settings” (Size, Offset); Brush size và Opacity.</li>
+  <li>Material quyết định bởi Shader (là những scripts chứa giải thuật tính tóa màu sắc của mỗi pixel được render)</li>
+  <li>Sky là một loại nền mà Camera vẽ trước khi nó kết xuất khung hình. Nó mang lại cảm giác về chiều sâu. Sky có thể chứa bất cứ thứ gì (mây, núi, tòa nhà…). Unity cũng có thể sử dụng Sky để tạo ra ánh sáng xung quanh trong Scence.</li>
+  <li>Skybox shaders (material) có các lựa chọn: 6 Sided, Cubemap, Panoramic.</li>
+  <li>Ambient Mode (Window &gt; Rendering &gt; Lighting Settings): Nếu ánh sáng không đổi thì dùng “Baked” =&gt; click “Generate Lighting” (không generate tự động)</li>
+  <li>Visual Effects Components (Add Component &gt; Effects): có thể apply cho Camera, GO, light sources. Khám phá Halo, Lens Flare (Flare, Glare) và màu sắc “Directional light” từ “AllSkyFree”</li>
+  <li>Theme màu là gì? kết hợp Sky, color of Directional light, Ambient color (HDR color), SunGlow (Len Flares) để có màu ấn tượng.</li>
+</ul>
+
+<h3 id="challenge-11">
+<a class="anchor" href="#challenge-11" aria-hidden="true" spy-title="Challenge 11"><span class="octicon octicon-link"></span></a>Challenge 11</h3>
+
+<h4 id="setup--mục-tiêu-3">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-3" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Tạo một “Splash Scene”, tại hàm Awake() sử dụng “DontDestroyOnLoad(gameObject)” để giữ nhạc không bị tắt (ở Play Mode có thể thấy Splash Scene không bị mất).</li>
+  <li>Sử dụng Legacy package “Standard Assets (for Unity 2018.4)” để learning (First Person Character Controller, Third Person Character Controller, Car Controller, Aircraft Controller, Particle Example Scene, Rollerball Controller, Camera Rigs, Cross Platform Input, AI Examples)</li>
+  <li>Attitude: Không thể biết và thành thạo tất cả, sử dụng công việc của người khác nếu có thể, ưu tiên xây dựng knowledge, biết nó có gì và đào sâu khi cần thiết.</li>
 </ul>
 
       </div>
