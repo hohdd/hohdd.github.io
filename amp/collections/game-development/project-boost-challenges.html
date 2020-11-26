@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-11-25 01:17:41 +0700",
+        "dateModified": "2020-11-27 01:29:39 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 11 mins read </span> · 
+      <span title="reading time">· about 12 mins read </span> · 
       
       <span>
         
@@ -429,6 +429,11 @@
   <li>Tạo một “Splash Scene”, tại hàm Awake() sử dụng “DontDestroyOnLoad(gameObject)” để giữ nhạc không bị tắt (ở Play Mode có thể thấy Splash Scene không bị mất).</li>
   <li>Sử dụng Legacy package “Standard Assets (for Unity 2018.4)” để learning (First Person Character Controller, Third Person Character Controller, Car Controller, Aircraft Controller, Particle Example Scene, Rollerball Controller, Camera Rigs, Cross Platform Input, AI Examples)</li>
   <li>Attitude: Không thể biết và thành thạo tất cả, sử dụng công việc của người khác nếu có thể, ưu tiên xây dựng knowledge, biết nó có gì và đào sâu khi cần thiết.</li>
+  <li>Nếu bị hiện tượng chậm PC thì bắt Unity sử dụng OpenGL (một API render đồ họa độc lập nền tảng) thay vì Directx11 bằng cách thêm “-force-opengl” ở target chạy “Unity.exe”</li>
+  <li>Input.GetAxis (CrossPlatformInputManager): hiểu quả kết quả nằm giữa 0 và 1. độ tăng của nó phụ thuộc vào độ nhạy. Tốc độ giảm của nó phụ thuộc vào trọng lực. Khi di chuyển một GO luôn để ý tới độc lập khung hình (Time.deltaTime)</li>
+  <li>Chỉ định một Tooltip cho một Field ở Inspector với [Tooltip(“DESCRIPTION”)][SerializeField]</li>
+  <li>Sử dụng “clampedXPos = Mathf.Clamp(rawNewXPos, -xRange, xRange)” để giới hạn giá trị thay vì dùng IF. Trả về giá trị tùy vào rawNewXPos, bị chặn giữa min-max.</li>
+  <li>Nhớ Pitch, Yaw, Roll: “How to set Local Rotation” sử dụng “transform.localRotation = Quaternion.Euler(pitch, yaw, roll);”</li>
 </ul>
 
       </div>
