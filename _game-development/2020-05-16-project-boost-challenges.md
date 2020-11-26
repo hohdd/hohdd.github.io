@@ -193,3 +193,8 @@ date: 2020-05-16 14:26:14 +0700
 - Tạo một "Splash Scene", tại hàm Awake() sử dụng "DontDestroyOnLoad(gameObject)" để giữ nhạc không bị tắt (ở Play Mode có thể thấy Splash Scene không bị mất).
 - Sử dụng Legacy package "Standard Assets (for Unity 2018.4)" để learning (First Person Character Controller, Third Person Character Controller, Car Controller, Aircraft Controller, Particle Example Scene, Rollerball Controller, Camera Rigs, Cross Platform Input, AI Examples)
 - Attitude: Không thể biết và thành thạo tất cả, sử dụng công việc của người khác nếu có thể, ưu tiên xây dựng knowledge, biết nó có gì và đào sâu khi cần thiết.
+- Nếu bị hiện tượng chậm PC thì bắt Unity sử dụng OpenGL (một API render đồ họa độc lập nền tảng) thay vì Directx11 bằng cách thêm "-force-opengl" ở target chạy "Unity.exe"
+- Input.GetAxis (CrossPlatformInputManager): hiểu quả kết quả nằm giữa 0 và 1. độ tăng của nó phụ thuộc vào độ nhạy. Tốc độ giảm của nó phụ thuộc vào trọng lực. Khi di chuyển một GO luôn để ý tới độc lập khung hình (Time.deltaTime)
+- Chỉ định một Tooltip cho một Field ở Inspector với [Tooltip("DESCRIPTION")][SerializeField]
+- Sử dụng "clampedXPos = Mathf.Clamp(rawNewXPos, -xRange, xRange)" để giới hạn giá trị thay vì dùng IF. Trả về giá trị tùy vào rawNewXPos, bị chặn giữa min-max.
+- Nhớ Pitch, Yaw, Roll: "How to set Local Rotation" sử dụng "transform.localRotation = Quaternion.Euler(pitch, yaw, roll);"
