@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-11-27 01:29:39 +0700",
+        "dateModified": "2020-11-29 00:48:32 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 12 mins read </span> · 
+      <span title="reading time">· about 13 mins read </span> · 
       
       <span>
         
@@ -191,6 +191,11 @@
 <li class="toc-entry toc-h3"><a href="#challenge-11" spy-toc="Challenge 11">Challenge 11</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-3" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-12" spy-toc="Challenge 12">Challenge 12</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-4" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 </ul>
 </li>
 </ul><h3 id="challenge-1">
@@ -434,6 +439,23 @@
   <li>Chỉ định một Tooltip cho một Field ở Inspector với [Tooltip(“DESCRIPTION”)][SerializeField]</li>
   <li>Sử dụng “clampedXPos = Mathf.Clamp(rawNewXPos, -xRange, xRange)” để giới hạn giá trị thay vì dùng IF. Trả về giá trị tùy vào rawNewXPos, bị chặn giữa min-max.</li>
   <li>Nhớ Pitch, Yaw, Roll: “How to set Local Rotation” sử dụng “transform.localRotation = Quaternion.Euler(pitch, yaw, roll);”</li>
+</ul>
+
+<h3 id="challenge-12">
+<a class="anchor" href="#challenge-12" aria-hidden="true" spy-title="Challenge 12"><span class="octicon octicon-link"></span></a>Challenge 12</h3>
+
+<h4 id="setup--mục-tiêu-4">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-4" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>When to tune your game: Add feature =&gt; Fix bugs =&gt; Tune Gameplay =&gt; Playtest =&gt; Add feature…</li>
+  <li>Universal Render Pipeline (UDP) giúp tăng performance và support wide platform.</li>
+  <li>CameraController: tính offset giữa Camera và Player ở Start(), sau đó tại Update() thì assign lại position của camera = player + offset (chuyển vế đổi dấu).</li>
+  <li>Hàm Update() chạy trước khi rendering (có nhiều Update của nhiều GOs được call), phần lớn code viết ở đây. Hàm FixedUpdate() chỉ chạy trước khi tính toán “physical” (ko phải mọi frame).</li>
+  <li>Vì có nhiều Update của nhiều GOs được call, LateUpdate() được call khi hàm Update() cuối cùng đc gọi, nó phù hợp để tiếp tục xử lý với giá trị cuối cùng.</li>
+  <li>Unity cung cấp 4 loại project tương đương với 4 kiểu Renderer: Built-in Renderer (2D/3D), Post Processing Stack with the built-in renderer (3D with extras), High Definition RP (DX11), Universal Render Pipeline (URP).</li>
+  <li>“Is Trigger” phải được chọn thì mới có “OnTriggerEnter”; phân biệt “transform.Rotate(new Vector3(x, y, z))” (thêm lực góc quay Euler) và “transform.rotation = Quaternion.identity” (gán độ quay)</li>
+  <li>Thêm “Rigidbody” sẽ làm GO được thêm có tương tác “Physical” nếu không sẽ đứng im như “wall”; phân biệt “Text Mesh Pro” loại “3D Object” và “UI”</li>
+  <li>Lỗi xung đột InputSystem khi import TMP (có thêm EventSystem): Project Settings -&gt; Player -&gt; Active Input Handling : Both</li>
 </ul>
 
       </div>
