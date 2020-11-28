@@ -198,3 +198,16 @@ date: 2020-05-16 14:26:14 +0700
 - Chỉ định một Tooltip cho một Field ở Inspector với [Tooltip("DESCRIPTION")][SerializeField]
 - Sử dụng "clampedXPos = Mathf.Clamp(rawNewXPos, -xRange, xRange)" để giới hạn giá trị thay vì dùng IF. Trả về giá trị tùy vào rawNewXPos, bị chặn giữa min-max.
 - Nhớ Pitch, Yaw, Roll: "How to set Local Rotation" sử dụng "transform.localRotation = Quaternion.Euler(pitch, yaw, roll);"
+
+### Challenge 12
+
+#### Setup & Mục tiêu
+- When to tune your game: Add feature => Fix bugs => Tune Gameplay => Playtest => Add feature...
+- Universal Render Pipeline (UDP) giúp tăng performance và support wide platform.
+- CameraController: tính offset giữa Camera và Player ở Start(), sau đó tại Update() thì assign lại position của camera = player + offset (chuyển vế đổi dấu).
+- Hàm Update() chạy trước khi rendering (có nhiều Update của nhiều GOs được call), phần lớn code viết ở đây. Hàm FixedUpdate() chỉ chạy trước khi tính toán "physical" (ko phải mọi frame).
+- Vì có nhiều Update của nhiều GOs được call, LateUpdate() được call khi hàm Update() cuối cùng đc gọi, nó phù hợp để tiếp tục xử lý với giá trị cuối cùng.
+- Unity cung cấp 4 loại project tương đương với 4 kiểu Renderer: Built-in Renderer (2D/3D), Post Processing Stack with the built-in renderer (3D with extras), High Definition RP (DX11), Universal Render Pipeline (URP).
+- "Is Trigger" phải được chọn thì mới có "OnTriggerEnter"; phân biệt "transform.Rotate(new Vector3(x, y, z))" (thêm lực góc quay Euler) và "transform.rotation = Quaternion.identity" (gán độ quay)
+- Thêm "Rigidbody" sẽ làm GO được thêm có tương tác "Physical" nếu không sẽ đứng im như "wall"; phân biệt "Text Mesh Pro" loại "3D Object" và "UI"
+- Lỗi xung đột InputSystem khi import TMP (có thêm EventSystem): Project Settings -> Player -> Active Input Handling : Both
