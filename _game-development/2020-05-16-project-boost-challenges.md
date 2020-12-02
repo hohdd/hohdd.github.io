@@ -70,7 +70,7 @@ date: 2020-05-16 14:26:14 +0700
 ### Challenge 3
 
 #### Setup
-- Thêm Rigbody cho Rocket
+- Thêm Rigidbody cho Rocket
 
 #### Mục tiêu
 - Hiểu Meshes (lưới thể tích và lưới đa giác), Mesh Renderer (render vật thể dựa vào Mesh). Định dạng file, va chạm, nội suy, bề mặt, ánh sáng phản chiếu...
@@ -211,3 +211,23 @@ date: 2020-05-16 14:26:14 +0700
 - "Is Trigger" phải được chọn thì mới có "OnTriggerEnter"; phân biệt "transform.Rotate(new Vector3(x, y, z))" (thêm lực góc quay Euler) và "transform.rotation = Quaternion.identity" (gán độ quay)
 - Thêm "Rigidbody" sẽ làm GO được thêm có tương tác "Physical" nếu không sẽ đứng im như "wall"; phân biệt "Text Mesh Pro" loại "3D Object" và "UI"
 - Lỗi xung đột InputSystem khi import TMP (có thêm EventSystem): Project Settings -> Player -> Active Input Handling : Both
+
+### Challenge 13
+
+#### Setup & Mục tiêu
+- Keyword tìm doc của Particle System: "particle system main module"
+- Để thêm Script một lúc cho nhiều GO (Enemy) => giữ shift và chọn nhiều => thêm component script.
+- Particle System Collision: tick chọn "Collision" (bao gồm cả "SendMessage") và sử dụng "OnParticleCollision(GameObject other)" trên GO (target), GO phải bỏ "trigger" để ưu tiên "Collision"
+- Nếu cần phải theo dõi va chạm trên một GO chuyển động nhưng lại không muốn áp dụng Physical cho nó thì thêm Rigidbody và tích chọn "kinematic" (tuy nhiên ko tương tác với Particle System)
+- Sử dụng "primitive collider" để đơn giản tốn ít bộ nhớ xử lý nhất, nếu phải "Compound colliders" thì nên dùng Rigidbody dạng "kinematic" thay thế??? (bị lừa??)
+- Rigidbody vs BoxCollider: nêu "trigger" được chọn (một trong 2) thì sẽ ưu tiên "OnTriggerEnter" ngược lại sẽ là "OnCollisionEnter"
+- NÊN sử dụng "mesh colliders" cho Scene và compound primitive colliders cho GO
+- Compound colliders: là cách sử dụng các "Primitive collider" (Box Collider, Sphere Collider, Capsule Collider) cho GO để tạo hình gần đúng với Mesh Renderer.
+- Mesh colliders: là một Component có thể add vào GO, có thể chọn được Mesh của Renderer làm Mesh Collider, tuy nhiên sẽ tốn bộ nhớ để xử lý.
+- Static colliders: là những GO không có Rigidbody (tường, sàn...)
+- Dynamic colliders: là những Collider trên một GO có Rigidbody (ở top level ~ Empty Object)
+- Physic Material: để thể hiện tính vật lý của vật khi va chạm (độ nảy, ma sát trơn trượt...)
+- Triggers: trường hợp chỉ muốn phát hiện tiếp xúc và không thể hiện VA CHẠM thì dùng "Trigger" (đi xuyên nhau vì không có va chạm)
+- Collision callbacks for scripts: OnCollisionEnter > OnCollisionStay > OnCollisionExit tương tự cho OnTriggerEnter > OnTriggerStay > OnTriggerExit
+- Rigidbody HIT Static colliders: Static colliders sẽ đứng im (never move), Rigidbody sẽ được mô phỏng va chạm vật lý
+- Kinematic Rigidbody Collider: là một GO với Collider đính kèm "kinematic Rigidbody", chưa hiểu cách dùng lắm! VD: cánh cửa, on/off kinematic bằng script...
