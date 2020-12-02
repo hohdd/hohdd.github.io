@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-12-02 21:39:00 +0700",
+        "dateModified": "2020-12-03 01:14:54 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 13 mins read </span> · 
+      <span title="reading time">· about 15 mins read </span> · 
       
       <span>
         
@@ -198,6 +198,11 @@
 <li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-4" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h3"><a href="#challenge-13" spy-toc="Challenge 13">Challenge 13</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-5" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+</ul>
+</li>
 </ul><h3 id="challenge-1">
 <a class="anchor" href="#challenge-1" aria-hidden="true" spy-title="Challenge 1"><span class="octicon octicon-link"></span></a>Challenge 1</h3>
 
@@ -259,7 +264,7 @@
 <h4 id="setup-2">
 <a class="anchor" href="#setup-2" aria-hidden="true" spy-title="Setup"><span class="octicon octicon-link"></span></a>Setup</h4>
 <ul>
-  <li>Thêm Rigbody cho Rocket</li>
+  <li>Thêm Rigidbody cho Rocket</li>
 </ul>
 
 <h4 id="mục-tiêu-2">
@@ -456,6 +461,30 @@
   <li>“Is Trigger” phải được chọn thì mới có “OnTriggerEnter”; phân biệt “transform.Rotate(new Vector3(x, y, z))” (thêm lực góc quay Euler) và “transform.rotation = Quaternion.identity” (gán độ quay)</li>
   <li>Thêm “Rigidbody” sẽ làm GO được thêm có tương tác “Physical” nếu không sẽ đứng im như “wall”; phân biệt “Text Mesh Pro” loại “3D Object” và “UI”</li>
   <li>Lỗi xung đột InputSystem khi import TMP (có thêm EventSystem): Project Settings -&gt; Player -&gt; Active Input Handling : Both</li>
+</ul>
+
+<h3 id="challenge-13">
+<a class="anchor" href="#challenge-13" aria-hidden="true" spy-title="Challenge 13"><span class="octicon octicon-link"></span></a>Challenge 13</h3>
+
+<h4 id="setup--mục-tiêu-5">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-5" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Keyword tìm doc của Particle System: “particle system main module”</li>
+  <li>Để thêm Script một lúc cho nhiều GO (Enemy) =&gt; giữ shift và chọn nhiều =&gt; thêm component script.</li>
+  <li>Particle System Collision: tick chọn “Collision” (bao gồm cả “SendMessage”) và sử dụng “OnParticleCollision(GameObject other)” trên GO (target), GO phải bỏ “trigger” để ưu tiên “Collision”</li>
+  <li>Nếu cần phải theo dõi va chạm trên một GO chuyển động nhưng lại không muốn áp dụng Physical cho nó thì thêm Rigidbody và tích chọn “kinematic” (tuy nhiên ko tương tác với Particle System)</li>
+  <li>Sử dụng “primitive collider” để đơn giản tốn ít bộ nhớ xử lý nhất, nếu phải “Compound colliders” thì nên dùng Rigidbody dạng “kinematic” thay thế??? (bị lừa??)</li>
+  <li>Rigidbody vs BoxCollider: nêu “trigger” được chọn (một trong 2) thì sẽ ưu tiên “OnTriggerEnter” ngược lại sẽ là “OnCollisionEnter”</li>
+  <li>NÊN sử dụng “mesh colliders” cho Scene và compound primitive colliders cho GO</li>
+  <li>Compound colliders: là cách sử dụng các “Primitive collider” (Box Collider, Sphere Collider, Capsule Collider) cho GO để tạo hình gần đúng với Mesh Renderer.</li>
+  <li>Mesh colliders: là một Component có thể add vào GO, có thể chọn được Mesh của Renderer làm Mesh Collider, tuy nhiên sẽ tốn bộ nhớ để xử lý.</li>
+  <li>Static colliders: là những GO không có Rigidbody (tường, sàn…)</li>
+  <li>Dynamic colliders: là những Collider trên một GO có Rigidbody (ở top level ~ Empty Object)</li>
+  <li>Physic Material: để thể hiện tính vật lý của vật khi va chạm (độ nảy, ma sát trơn trượt…)</li>
+  <li>Triggers: trường hợp chỉ muốn phát hiện tiếp xúc và không thể hiện VA CHẠM thì dùng “Trigger” (đi xuyên nhau vì không có va chạm)</li>
+  <li>Collision callbacks for scripts: OnCollisionEnter &gt; OnCollisionStay &gt; OnCollisionExit tương tự cho OnTriggerEnter &gt; OnTriggerStay &gt; OnTriggerExit</li>
+  <li>Rigidbody HIT Static colliders: Static colliders sẽ đứng im (never move), Rigidbody sẽ được mô phỏng va chạm vật lý</li>
+  <li>Kinematic Rigidbody Collider: là một GO với Collider đính kèm “kinematic Rigidbody”, chưa hiểu cách dùng lắm! VD: cánh cửa, on/off kinematic bằng script…</li>
 </ul>
 
       </div>
