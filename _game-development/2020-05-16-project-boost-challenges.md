@@ -34,15 +34,7 @@ date: 2020-05-16 14:26:14 +0700
 
 ### Challenge 1
 
-#### Setup
-- Tạo Launchpad ở vị trí trung tâm với kích thước 2,1,2
-- Tạo Terrian sao cho bề mặt trên nằm ở vị trí Y=0, với kích thước: 100,30,30
-- Tạo material cho Terrian
-- Điều chỉnh hướng của ánh sáng thích hợp và kéo nó ra chỗ khác (ko phụ thuộc vị trí)
-- Điều chỉnh camera ở vị trí thích hợp (kéo,quay...)
-- Everything in hierachy is "prefabbed"
-
-#### Mục tiêu
+#### Setup & Mục tiêu
 - Hiểu được các Tools để thay đổi các giá trị X (dài), Y (rộng/cao), Z (dầy)
 	- Hand (Q) -> điều khiển góc nhìn của Screen (dùng chuột trái để move screen, giữ Alt để quay screen)
 	- Move (W) -> điều chỉnh vị trí (position) của GameObject. Thay đổi dài (X), rộng/cao (Y), dầy (Z)
@@ -57,22 +49,16 @@ date: 2020-05-16 14:26:14 +0700
 
 ### Challenge 2
 
-#### Setup
-- Tạo một tên Rocket
-
-#### Mục tiêu
+#### Setup & Mục tiêu
 - Hiểu được group các phần nhỏ GameObject bằng một Empty Object.
 - Hiểu được Pivot (điểm quay ở 0.0.0) và Center (điểm quay ở giữa GameObject) khi ở chế độ Rotate (phím tắt Z)
 - Hiểu được phím tắt để snap (Ctrl + Shift + di chuyển)
-- Hiểu được phím tắt để bắt dính các góc cạnh (V = Vecter)
+- Hiểu được phím tắt để bắt dính các góc cạnh (V = Vecter), chỉ có ở chế độ MOVE (W)
 - Khi sửa Position: x=0 và z=0 sẽ đưa Rocket về trung tâm của Launchpad (vì Launchpad ở Position 0.0.0)
 
 ### Challenge 3
 
-#### Setup
-- Thêm Rigidbody cho Rocket
-
-#### Mục tiêu
+#### Setup & Mục tiêu
 - Hiểu Meshes (lưới thể tích và lưới đa giác), Mesh Renderer (render vật thể dựa vào Mesh). Định dạng file, va chạm, nội suy, bề mặt, ánh sáng phản chiếu...
 - Hiểu Box Collider (là khung màu xanh thể hiện danh giới phần va chạm); Compound Collider (kết hợp va chạm, ma trận va chạm...)
 - Hiểu Physic Material (được sử dụng để điều chỉnh ma sát và các hiệu ứng nảy của các đối tượng va chạm. Assets > Create > Physic Material). Ma sát (tĩnh và động). Bounciness (độ nảy)...
@@ -85,10 +71,7 @@ date: 2020-05-16 14:26:14 +0700
 
 ### Challenge 4
 
-#### Setup
-- Viết Script để thêm lực đẩy (Force) cho Rocket
-
-#### Mục tiêu
+#### Setup & Mục tiêu
 - Sử dụng GetComponent để lấy component Rigidbody khi start game, sử dụng Vector3.up shorthan
 - Điều chỉnh màu chế độ play mode: Edit > Reference > Color > General:Playmode tint
 - Biết chỗ xem và cấu hình các phím tắt (Shift+Space): Edit > Reference > Keys
@@ -108,27 +91,18 @@ date: 2020-05-16 14:26:14 +0700
 
 ### Challenge 5
 
-#### Setup
-- Sử dụng "Time.deltaTime"
-- Thêm component "Audio Source" cho Rocket, khi thrust thì play, không thì stop
-- Đóng băng Rocket chỉ fly (Position) trong mặt (1,1,0) và chỉ Rotate theo trục Z. Chỉ cho Rigidbody can thiệp Rotation khingười chơi Input
-
-#### Mục tiêu
+#### Setup & Mục tiêu
 - Những thay đổi (thuộc tính) trong khi running "Play mode" nó sẽ biến mất khi stop running. Thay đổi code thì không bị mất (và có tác dụng luôn)
 - Khi trực tiếp xử lý chuyển động của một GameObject cần phải suy nghĩ về "Độc lập tốc độ khung hình" (Frame Rate Independence) = cùng một tốc độ trong các điều kiện FPS khác nhau.
 - "Audio Listener" luôn được thêm vào Camera chính theo mặc định. Mỗi cảnh chỉ có thể có một "Audio Listener". Cài đặt âm thanh của Project: Edit > Project Settings > Audio
 - Khi "Audio Listener" ở gần một "Audio Source" (một component thêm vào GameObject) người chơi sẽ nghe thấy nó với hiệu ứng giống trải nghiệm thật (to, nhỏ, vọng âm, độ vang...)
 - Để đóng băng Position & Rotation, tìm đến thuộc tính "Constraints" của "Rigidbody"
-- Xử lý [SerializeField] một biến để chỉ có thể thay đổi trong Inspector (các Scripts khác cũng không thể thay đổi).
-- Không khai báo biến trong hàm Update (hoặc hàm được call bởi Update) vì sẽ tạo vô số biến rác (làm ngốn ram)
+- Xử lý [SerializeField] trên một biến "private" để chỉ có thể thay đổi trong Inspector (các Scripts khác cũng không thể thay đổi).
+- Không khai báo biến trong hàm Update (hoặc hàm được call bởi Update) vì sẽ tạo vô số biến rác (làm ngốn ram). Phân làm 3 group biến: "public, private và SerializeField"
 
 ### Challenge 6
 
-#### Setup
-- Sử dụng "Tags and Layers", sử dụng GameObject.Instantiate(...)
-- Xử lý va chạm với "void OnCollisionEnter(Collision collision)"
-
-#### Mục tiêu
+#### Setup & Mục tiêu
 - "Tags and Layers" (Edit > Project Settings).
 - Một GameObject chỉ có thể có một Thẻ được gán cho nó. Sử dụng GameObject.FindWithTag("Respawn") để lấy GameObject cần reference.
 - Layers được sử dụng phổ biến nhất bởi Camera và Lights để điều khiển hiển thị bằng cách chọn "Culling Mark" (của Camera và Lights)
@@ -138,15 +112,7 @@ date: 2020-05-16 14:26:14 +0700
 
 ### Challenge 7
 
-#### Setup
-- Tìm hiểu các tài nguyên Unity DOTS (Unity Data-Oriented Technology Stack), Unity Game Architectures, Coding Standards...
-- Chỉnh lại Camera
-- Khám phá Prefab
-- Có thể để AudioSource để play nhiều AudioClip
-- Sử dụng ParticleSystem
-
-
-#### Mục tiêu
+#### Setup & Mục tiêu
 - Tìm thấy cảm hứng & đam mê với các tài nguyên Unity DOTS (Unity Data-Oriented Technology Stack), Unity Game Architectures, Coding Standards...
 - Tìm thấy Diagram của MonoBehavious, biết về EC (Entity-Component) để tránh lộn xộn Spaghetti...
 - Menu: GameObject > Align With View (Ctrl+Shift+F)
@@ -231,3 +197,40 @@ date: 2020-05-16 14:26:14 +0700
 - Collision callbacks for scripts: OnCollisionEnter > OnCollisionStay > OnCollisionExit tương tự cho OnTriggerEnter > OnTriggerStay > OnTriggerExit
 - Rigidbody HIT Static colliders: Static colliders sẽ đứng im (never move), Rigidbody sẽ được mô phỏng va chạm vật lý
 - Kinematic Rigidbody Collider: là một GO với Collider đính kèm "kinematic Rigidbody", chưa hiểu cách dùng lắm! VD: cánh cửa, on/off kinematic bằng script...
+
+### Challenge 14
+
+#### Setup & Mục tiêu
+- "Rect Transform" là phiên bản 2D của "Tranform". Rect Transform đại diện cho một hình chữ nhật mà một phần tử UI có thể được đặt bên trong.
+- Lưu ý những tính toán cập nhật của "RectTransform" được thực hiện ở cuối Frame để đảm bảo các thay đổi mới nhất. Nếu muốn cập nhật luôn thì call "Canvas.ForceUpdateCanvases()"
+- Unity UI là một Build-in package trong Unity (2D Sprite, AI, Android JNI, Animation, Asset Bundle, Audio, JSONSerialize, Particle System, Physics, Screen Capture, UI, UIElements, Unity UI, Unity Web Request, Unity Web Request Asset Bundle, Video...)
+- Canvas: là GO và các UI elements là children. Canvas sử dụng "EventSystem" để "Messaging System". UI thêm sau sẽ nằm trên UI trước (sửa order trong Hierarchy, hoặc dùng code với "SetSiblingIndex, SetAsFirstSibling...")
+- Render Modes:
+	1. Screen Space - Overlay: nếu size của screen thay đổi thì Canvas cũng tự động để phù hợp.
+	2. Screen Space - Camera: giống Overlay nhưng phụ thuộc "Perspective" của Camera (có thể bị biến dạng bởi "Field of View")
+	3. World Space: là "diegetic interface", Canvas là một phần của Scence do vậy được bố trí thủ công giống một GO trong "World".
+- Không thể sử dụng các Tools (Hand, Move, Rotate...) lên Canvas nhưng UI elements trong nó thì có thể
+- Anchors: là "layout concept" của "Rect Transforms", nó cho biết các Children sẽ transform như thế nào nếu Parents transform.
+- Visual Components: Text, Image, Raw Image, Mask... Panel, InputField, Dropdown, Scrollbar, Slider, Toggle, Button
+- TextMesh Pro: là sự thay thế cho các thành phần văn bản hiện có. Nó có thể hiển thị văn bản rõ ràng ở mọi kích thước và độ phân giải. Có TextMesh, hiệu ứng, Rich Text Tags... Được tối ưu hóa cho cả Mobile và PC.
+- Lưu ý cấu hình Canvas ("Canvas Scaler") khi Screen bị scale ("Scale With Screen Size" có vẻ ok). Canvas Scaler, Canvas Group, 
+
+#### Reference
+- [UI Reference](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIReference.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [Built-in packages](https://docs.unity3d.com/Manual/pack-build.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [UnityEvents](https://docs.unity3d.com/Manual/UnityEvents.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [Hướng dẫn sử dụng C# Delegate và Event](https://o7planning.org/vi/10591/huong-dan-csharp-delegate-va-event){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 15
+
+#### Setup & Mục tiêu
+- Từ Script này gọi Script kia (2 Script đc add vào 2 GO..."Find reference in scence"...) bằng cách "FindObjectOfType<ScoreBoard>()"
+- Thiết kế Level: "Where are we at?" 1.Core Gameplay (dodge & shoot)? 2.Reason to play (score)? 3.Đặc biệt phá cách? 4.Chart tiết tấu trò chơi? 5.What to look for? 6.Phần thưởng gì làm người chơi vui?
+- Thiết kế Level: dành nhiều tình cảm và sự quan tâm. Bố cục ENV phải hỗ trợ "Beat Chart". Nhất quán (hình ảnh + cách chơi) để hướng dẫn người chơi xuyên suốt. Nghệ thuật kể câu chuyện thông qua môi trường
+- Thiết kế Level: Giữ mọi thứ mới mẻ, tạo bất ngờ, niềm vui được tạo ra thông qua sự không chắc chắn, bắt người chơi vào và ra khỏi vùng an toàn của họ.
+- Thiết kế Level: Người chơi biết phải làm gì, nhưng không phải làm như thế nào. Trao quyền cho người chơi. Không thể dự đoán. Yếu tố bất ngờ. Yếu tố căng thẳng
+- Thiết kế Level: liên tục dạy cho người chơi điều gì đó mới mẻ. Họ có thể học và tiến bộ từng level.
+
+#### Reference
+- [Raph Koster là một nhà thiết kế trò chơi kỳ cựu đã được tín nhiệm về mặt chuyên môn](https://www.raphkoster.com/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Fun and Uncertainty](http://gamewhispering.com/fun-and-uncertainty/){:.hvr-forward rel="nofollow" target="_blank"}
