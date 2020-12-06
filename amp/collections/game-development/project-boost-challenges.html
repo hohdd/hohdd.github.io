@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-12-04 00:03:07 +0700",
+        "dateModified": "2020-12-06 23:29:05 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 18 mins read </span> · 
+      <span title="reading time">· about 21 mins read </span> · 
       
       <span>
         
@@ -206,6 +206,18 @@
 <ul>
 <li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-14" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 <li class="toc-entry toc-h4"><a href="#reference-1" spy-toc="Reference">Reference</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-16" spy-toc="Challenge 16">Challenge 16</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-15" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#reference-2" spy-toc="Reference">Reference</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-17" spy-toc="Challenge 17">Challenge 17</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-16" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#reference-3" spy-toc="Reference">Reference</a></li>
 </ul>
 </li>
 </ul><h3 id="challenge-1">
@@ -491,6 +503,59 @@
 <ul>
   <li><a href="https://www.raphkoster.com/" class="hvr-forward" rel="nofollow" target="_blank">Raph Koster là một nhà thiết kế trò chơi kỳ cựu đã được tín nhiệm về mặt chuyên môn</a></li>
   <li><a href="http://gamewhispering.com/fun-and-uncertainty/" class="hvr-forward" rel="nofollow" target="_blank">Fun and Uncertainty</a></li>
+</ul>
+
+<h3 id="challenge-16">
+<a class="anchor" href="#challenge-16" aria-hidden="true" spy-title="Challenge 16"><span class="octicon octicon-link"></span></a>Challenge 16</h3>
+
+<h4 id="setup--mục-tiêu-15">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-15" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Hãy nhớ: khi trò chơi diễn ra, game engine luôn thực hiện tính toán để hiển thị khung hình (Frame). Việc “SetActive” sẽ ngay lập tức ảnh hưởng đến GO đó trên toàn bộ khung hình về sau (toàn bộ Bullets biến mất…)</li>
+  <li>GOs, Components và cả những Modules của nó có thể được reference từ trong code và can thiệp các giá trị</li>
+  <li>“Best-first search” là một thuật toán tìm kiếm tối ưu hóa tìm kiếm theo chiều rộng bằng cách mở rộng nút hứa hẹn nhất được chọn theo một quy tắc nào đó. Ví dụ về các thuật toán tìm kiếm theo lựa chọn tốt nhất là “thuật toán Dijkstra” và giải thuật tìm kiếm A*.</li>
+  <li>“Thuật toán tìm kiếm trên đồ thị”: Giải thuật tìm kiếm A*, Tìm kiếm theo lựa chọn tốt nhất, Tìm kiếm hai chiều, Tìm kiếm theo chiều rộng, Tìm kiếm theo chiều sâu, Tìm kiếm độ sâu giới hạn, Thuật toán Floyd-Warshall, Tìm kiếm theo chiều sâu lặp tăng dần, Tìm kiếm chi phí đều.</li>
+  <li>Học gì thì học cũng phải biết được “Nguyên tắc cơ bản” (dựa trên cái gì mà người ta làm được như vậy?). Đừng lao vào một “thứ” rồi mắc kẹt với tất cả ưu nhược điểm của nó (học ở đây phải dùng được ở chỗ khác).</li>
+  <li>“Thuật toán Breadth First Search” (BFS – Tìm kiếm theo chiều sâu): Xét duyệt tất cả các đỉnh để trả về kết quả. Nếu số đỉnh là hữu hạn, thuật toán chắc chắn tìm ra kết quả. Mang tính chất vét cạn, mù quáng, duyệt tất cả đỉnh, không nên áp dụng nếu duyệt số đỉnh quá lớn.</li>
+  <li>Z-Fighting là hiện tượng trùng bề mặt của 2 GOs. Đổi tên project chỉ đơn giản là đổi tên folder rồi add lại folder từ UnityHub</li>
+  <li>[ExecuteInEditMode] dùng để đánh dấu một MonoBehaviour chỉ có tác dụng trong “Editor Mode”</li>
+  <li>Phân biệt TextMesh GO, TextMesh UI, TextMesh Component (cần được thêm riêng vào EmptyObject). TextMesh Pro sẽ bị Z-Fighting nếu thêm trên bề mặt</li>
+  <li>Khi thêm Text: có cần input (tương tác, Raycast Target) người dùng không? Text có cần hiệu ứng gì đặc biệt không (material )?</li>
+</ul>
+
+<h4 id="reference-2">
+<a class="anchor" href="#reference-2" aria-hidden="true" spy-title="Reference"><span class="octicon octicon-link"></span></a>Reference</h4>
+<ul>
+  <li><a href="http://paletton.com/" class="hvr-forward" rel="nofollow" target="_blank">The Color Scheme Designer</a></li>
+  <li><a href="https://artpuzzle.vn/" class="hvr-forward" rel="nofollow" target="_blank">Art Puzzle</a></li>
+  <li><a href="https://ephtracy.github.io/" class="hvr-forward" rel="nofollow" target="_blank">MagicaVoxel: A free lightweight GPU-based voxel art editor and interactive path tracing renderer</a></li>
+</ul>
+
+<h3 id="challenge-17">
+<a class="anchor" href="#challenge-17" aria-hidden="true" spy-title="Challenge 17"><span class="octicon octicon-link"></span></a>Challenge 17</h3>
+
+<h4 id="setup--mục-tiêu-16">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-16" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Có thể khóa (lock) inspector để kéo thả tạo reference (click vào icon khóa trên cùng bên phải)</li>
+  <li>Coroutines: Việc thực thi một “Coroutines” có thể bị tạm dừng tại bất kỳ thời điểm nào bằng cách sử dụng câu lệnh “yield”.</li>
+  <li>START Coroutines: public Coroutine StartCoroutine(IEnumerator routine);</li>
+  <li>STOP Coroutines: public void StopCoroutine(Coroutine routine / string methodName / IEnumerator routine);</li>
+  <li>YIELD: yield return new WaitForSeconds/WaitForFixedUpdate/WaitForSecondsRealtime(5); yield return new WaitForFixedUpdate(5);</li>
+  <li>“WaitUntil” Tạm dừng thực hiện “coroutine” cho đến khi “delegate evaluates” là true. yield return new WaitUntil(() =&gt; frame &gt;= 10);</li>
+  <li>Phải nghĩ đến “performance” khi xử lý các hàm ở “every frame”, xử lý hàm, khởi tạo đối tượng, khởi tạo biến…</li>
+  <li>Stop using GameObject.Find! code sẽ bị phụ thuộc vào “name, tag”, team sẽ sợ hãi khi thay đổi gì trong scence. Cách tiếp cận tốt là dùng “reference” kéo thả.</li>
+  <li>Trong nội bộ Prefrab có thể thêm Script + Assign reference children của Prefab vào Script</li>
+  <li>Tách Scripts thành các Component nhỏ nhất có thể và giữ nhiệm vụ duy nhất (nguyên lý SOLID)</li>
+  <li>Quay hướng Z về phía đối tượng “who.LookAt(What)”</li>
+</ul>
+
+<h4 id="reference-3">
+<a class="anchor" href="#reference-3" aria-hidden="true" spy-title="Reference"><span class="octicon octicon-link"></span></a>Reference</h4>
+<ul>
+  <li><a href="https://qiao.github.io/PathFinding.js/visual/" class="hvr-forward" rel="nofollow" target="_blank">Visual PathFinding.js</a></li>
+  <li><a href="https://www.redblobgames.com/pathfinding/a-star/introduction.html" class="hvr-forward" rel="nofollow" target="_blank">Introduction to the A* Algorithm</a></li>
+  <li><a href="https://explorabl.es/" class="hvr-forward" rel="nofollow" target="_blank">Play and Learning!</a></li>
 </ul>
 
       </div>
