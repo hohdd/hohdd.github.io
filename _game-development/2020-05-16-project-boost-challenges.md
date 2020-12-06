@@ -234,3 +234,42 @@ date: 2020-05-16 14:26:14 +0700
 #### Reference
 - [Raph Koster là một nhà thiết kế trò chơi kỳ cựu đã được tín nhiệm về mặt chuyên môn](https://www.raphkoster.com/){:.hvr-forward rel="nofollow" target="_blank"}
 - [Fun and Uncertainty](http://gamewhispering.com/fun-and-uncertainty/){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 16
+
+#### Setup & Mục tiêu
+- Hãy nhớ: khi trò chơi diễn ra, game engine luôn thực hiện tính toán để hiển thị khung hình (Frame). Việc "SetActive" sẽ ngay lập tức ảnh hưởng đến GO đó trên toàn bộ khung hình về sau (toàn bộ Bullets biến mất...)
+- GOs, Components và cả những Modules của nó có thể được reference từ trong code và can thiệp các giá trị
+- "Best-first search" là một thuật toán tìm kiếm tối ưu hóa tìm kiếm theo chiều rộng bằng cách mở rộng nút hứa hẹn nhất được chọn theo một quy tắc nào đó. Ví dụ về các thuật toán tìm kiếm theo lựa chọn tốt nhất là "thuật toán Dijkstra" và giải thuật tìm kiếm A*.
+- "Thuật toán tìm kiếm trên đồ thị": Giải thuật tìm kiếm A*, Tìm kiếm theo lựa chọn tốt nhất, Tìm kiếm hai chiều, Tìm kiếm theo chiều rộng, Tìm kiếm theo chiều sâu, Tìm kiếm độ sâu giới hạn, Thuật toán Floyd-Warshall, Tìm kiếm theo chiều sâu lặp tăng dần, Tìm kiếm chi phí đều.
+- Học gì thì học cũng phải biết được "Nguyên tắc cơ bản" (dựa trên cái gì mà người ta làm được như vậy?). Đừng lao vào một "thứ" rồi mắc kẹt với tất cả ưu nhược điểm của nó (học ở đây phải dùng được ở chỗ khác).
+- "Thuật toán Breadth First Search" (BFS – Tìm kiếm theo chiều sâu): Xét duyệt tất cả các đỉnh để trả về kết quả. Nếu số đỉnh là hữu hạn, thuật toán chắc chắn tìm ra kết quả. Mang tính chất vét cạn, mù quáng, duyệt tất cả đỉnh, không nên áp dụng nếu duyệt số đỉnh quá lớn.
+- Z-Fighting là hiện tượng trùng bề mặt của 2 GOs. Đổi tên project chỉ đơn giản là đổi tên folder rồi add lại folder từ UnityHub
+- [ExecuteInEditMode] dùng để đánh dấu một MonoBehaviour chỉ có tác dụng trong "Editor Mode"
+- Phân biệt TextMesh GO, TextMesh UI, TextMesh Component (cần được thêm riêng vào EmptyObject). TextMesh Pro sẽ bị Z-Fighting nếu thêm trên bề mặt
+- Khi thêm Text: có cần input (tương tác, Raycast Target) người dùng không? Text có cần hiệu ứng gì đặc biệt không (material )?
+
+#### Reference
+- [The Color Scheme Designer](http://paletton.com/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Art Puzzle](https://artpuzzle.vn/){:.hvr-forward rel="nofollow" target="_blank"}
+- [MagicaVoxel: A free lightweight GPU-based voxel art editor and interactive path tracing renderer](https://ephtracy.github.io/){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 17
+
+#### Setup & Mục tiêu
+- Có thể khóa (lock) inspector để kéo thả tạo reference (click vào icon khóa trên cùng bên phải)
+- Coroutines: Việc thực thi một "Coroutines" có thể bị tạm dừng tại bất kỳ thời điểm nào bằng cách sử dụng câu lệnh "yield".
+- START Coroutines: public Coroutine StartCoroutine(IEnumerator routine);
+- STOP Coroutines: public void StopCoroutine(Coroutine routine / string methodName / IEnumerator routine);
+- YIELD: yield return new WaitForSeconds/WaitForFixedUpdate/WaitForSecondsRealtime(5); yield return new WaitForFixedUpdate(5);
+- "WaitUntil" Tạm dừng thực hiện "coroutine" cho đến khi "delegate evaluates" là true. yield return new WaitUntil(() => frame >= 10);
+- Phải nghĩ đến "performance" khi xử lý các hàm ở "every frame", xử lý hàm, khởi tạo đối tượng, khởi tạo biến...
+- Stop using GameObject.Find! code sẽ bị phụ thuộc vào "name, tag", team sẽ sợ hãi khi thay đổi gì trong scence. Cách tiếp cận tốt là dùng "reference" kéo thả.
+- Trong nội bộ Prefrab có thể thêm Script + Assign reference children của Prefab vào Script
+- Tách Scripts thành các Component nhỏ nhất có thể và giữ nhiệm vụ duy nhất (nguyên lý SOLID)
+- Quay hướng Z về phía đối tượng "who.LookAt(What)"
+
+#### Reference
+- [Visual PathFinding.js](https://qiao.github.io/PathFinding.js/visual/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [Play and Learning!](https://explorabl.es/){:.hvr-forward rel="nofollow" target="_blank"}
