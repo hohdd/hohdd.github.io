@@ -273,3 +273,36 @@ date: 2020-05-16 14:26:14 +0700
 - [Visual PathFinding.js](https://qiao.github.io/PathFinding.js/visual/){:.hvr-forward rel="nofollow" target="_blank"}
 - [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html){:.hvr-forward rel="nofollow" target="_blank"}
 - [Play and Learning!](https://explorabl.es/){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 17
+
+#### Setup & Mục tiêu
+- Tính khoảng cách từ Enemy đến Tower bằng Vector3.Distance(enemyPosition, towerPosition). Kiểm tra nếu Enemy exist (IF) thì Shoot(module.emission = true) else Shoot(false)
+- Ngoài kéo thả reference GameObject ở inspector, ta có thể chỉ định luôn Component, Class (MonoBehaviour/Script) cũng sẽ reference đến GameObject attached Script/MonoBehaviour đó.
+- Detecting Mouse In 3D: MonoBehaviour.OnMouseOver() : Called every frame while the mouse is over the Collider. OnMouseEnter > OnMouseOver > OnMouseExit
+- Có thể Copy Component từ Child và Paste Component vào Parents
+- Viết code: giải thích/solution/overview > comments > functions/blocks code...
+- Navigate back to the last cursor position in Visual Studio: Ctrl+"-"; Ctrl+Shift+"-"
+- "Phân loại của Bloom":
+	- Kiến thức (Kể tên ba giống táo phổ biến): thuật ngữ, sự kiện cụ thể, quy ước, xu hướng và trình tự, phân loại, các nguyên tắc và khái quát, lý thuyết và cấu trúc
+	- Sự hiểu biết (Tóm tắt đặc điểm nhận dạng của táo Golden Delicious và táo Granny Smith): sự hiểu biết về các sự kiện và ý tưởng bằng cách sắp xếp, tóm tắt, dịch, khái quát hóa, đưa ra mô tả và nêu các ý chính.
+	- Ứng dụng (Liệu táo có ngăn ngừa được bệnh còi xương, một bệnh do thiếu vitamin C không?): giải quyết vấn đề trong các tình huống mới bằng cách áp dụng kiến ​​thức, sự kiện, kỹ thuật và quy tắc có được.
+	- Phân tích (So sánh và đối chiếu bốn cách phục vụ thức ăn làm từ táo và xem cách nào có lợi cho sức khỏe cao nhất): Phân tích các yếu tố, Phân tích các mối quan hệ, Phân tích tổ chức
+	- Tổng hợp (Chuyển đổi công thức "không lành mạnh" cho bánh táo thành công thức "lành mạnh" bằng cách thay thế lựa chọn nguyên liệu của bạn. Tranh luận về lợi ích sức khỏe của việc sử dụng các thành phần bạn chọn so với các thành phần ban đầu)
+	- Đánh giá (Loại táo nào tốt nhất để nướng bánh, và tại sao?): Phán quyết về bằng chứng nội bộ, Đánh giá về tiêu chí bên ngoài
+- "Khoa học hành động", "bậc thang của sự suy luận" (ladder of inference), "Tính cách người lớn", Know-how, "Tư duy bậc cao" (Higher-order thinking), Kim tự tháp DIKW (Data-Information-Knowlege-Wisdom)...
+- "Chu kỳ học tập":
+	- Kurt Lewin: 1.Lập kế hoạch 2.Hoạt động 3.Tìm hiểu sự thật, về kết quả của hành động
+	- Honey và Mumford: 1.Làm điều gì đó, có kinh nghiệm 2.Suy ngẫm về trải nghiệm 3.Đúc kết kinh nghiệm, phát triển lý thuyết 4.Lập kế hoạch cho các bước tiếp theo, để áp dụng hoặc kiểm tra lý thuyết
+- "Phong cách học tập": Học trực quan (hình ảnh, hình dạng), Học thính giác (lắng nghe, nhịp điệu), Học tập thể chất (vận động cơ thể, cử chỉ), Học tập quan sát (quan sát hành vi của người khác)
+
+#### Reference
+- [Bloom's taxonomy (Wiki)](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy){:.hvr-forward rel="nofollow" target="_blank"}
+- [Bloom's taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Chris Argyris](https://en.wikipedia.org/wiki/Chris_Argyris){:.hvr-forward rel="nofollow" target="_blank"}
+- [Know-how](https://en.wikipedia.org/wiki/Know-how){:.hvr-forward rel="nofollow" target="_blank"}
+- [Higher-order thinking](https://en.wikipedia.org/wiki/Higher-order_thinking){:.hvr-forward rel="nofollow" target="_blank"}
+- [Kim tự tháp DIKW](https://en.wikipedia.org/wiki/DIKW_pyramid){:.hvr-forward rel="nofollow" target="_blank"}
+- [Chu kỳ học tập](https://en.wikipedia.org/wiki/Learning_cycle){:.hvr-forward rel="nofollow" target="_blank"}
+- [Phong cách học tập](https://en.wikipedia.org/wiki/Learning_styles){:.hvr-forward rel="nofollow" target="_blank"}
+- [Observational learning](https://en.wikipedia.org/wiki/Observational_learning){:.hvr-forward rel="nofollow" target="_blank"}
