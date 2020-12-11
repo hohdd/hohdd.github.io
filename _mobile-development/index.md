@@ -12,12 +12,12 @@ draft: true
   </label>
   <div id="results-container" class="w3-card"></div>
 </div>
-<div id="inputCheat">
+<!-- <div id="inputCheat">
   <label>
 		<span class="dh-unnecessary">Tìm kiếm</span>
     <input type="text" id="search-input-cheat" placeholder="Search...">
   </label>
-</div>
+</div> -->
 
 <div class="w3-section">
   <!-- serials -->
