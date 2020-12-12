@@ -306,3 +306,40 @@ date: 2020-05-16 14:26:14 +0700
 - [Chu kỳ học tập](https://en.wikipedia.org/wiki/Learning_cycle){:.hvr-forward rel="nofollow" target="_blank"}
 - [Phong cách học tập](https://en.wikipedia.org/wiki/Learning_styles){:.hvr-forward rel="nofollow" target="_blank"}
 - [Observational learning](https://en.wikipedia.org/wiki/Observational_learning){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 18
+
+#### Setup & Mục tiêu
+- Code từng bước để tránh rối và tránh lỗi, sau khi control và verify được rồi thì tiếp tục bước tiếp theo.
+- Làm sao để group GOs sinh ra bằng Instantiate vào một parent (organization in Hierarchy): 1.thêm reference tranform của parent 2.gán newTower.transform.parent = towerParentTranform.
+- Post-processing (xử lý hậu kỳ): thêm hiệu ứng cho camera (Bloom, Color, Fog, Lens Distortion, Motion Blur, Vignette...)
+- Thêm Sound cho game (SFX): what is your game's theme/experience/tone? Phân biệt: Audio Listener, Audio Source, Audio Clip. Sử dụng AudioSource.PlayClipAtPoint(audioClip, Camera.main.tranform.position)
+- Sử dụng "Debug.Break()" để pause game. Khi fix bugs Unity cũng cần phải kiểm tra các settings nếu không chắc chắn.
+- "NavMesh Agent" là Component giúp tạo Character tìm đường (Path Finding, AI, Navigation) để di chuyển đến mục tiêu (Speed, Stopping distance, Auto Braking...), và né tránh trướng ngại vật (trên cao, dưới thấp, leo cầu thang)...
+- "Agent" là một hình trụ thẳng đứng có kích thước Radius và Height. Hình trụ chuyển động cùng với vật nhưng luôn đứng thẳng ngay cả khi vật tự quay. Hình dạng của hình trụ được sử dụng để phát hiện và ứng phó với các va chạm giữa Agent và chướng ngại vật khác.
+- Khi GameObject Điểm neo (anchor/center) không nằm ở đáy của hình trụ, bạn có thể sử dụng thuộc tính Base Offset để tính chênh lệch chiều cao (baseOffset = GO.Center - Agent.Bottom).
+- "Agent" sẽ luôn xoay mặt Z để hướng tới target.
+- Sử dụng "MonoBehaviour.OnDrawGizmosSelected()" để vẽ gizmo nếu đối tượng được chọn. Gizmos được sử dụng để debug trực quan hoặc hỗ trợ thiết lập trong chế độ Scene View.
+- "OnDrawGizmosSelected" có thể vẽ Cube, Sphere, WireCube, WireSphere, Mesh, Ray, Icon, Line, GUITexture, Frustum....
+
+#### Reference
+- [Circular buffer](https://en.wikipedia.org/wiki/Circular_buffer){:.hvr-forward rel="nofollow" target="_blank"}
+- [Post Processing Stack v2 overview (Built-in Render Pipeline)](https://docs.unity3d.com/Packages/com.unity.postprocessing@3.0/manual/index.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [Post-processing in the Universal Render Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@10.2/manual/integration-with-post-processing.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [Post-processing in the High Definition Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Post-Processing-Main.html){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 19
+
+#### Setup & Mục tiêu
+- "Physics.Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance)" Trả về true nếu tia giao nhau với Collider, ngược lại là false.
+- "Raycast" (+15 overloads) trả về "RaycastHit" chứa thông tin Collider đầu tiên phát hiện (ko tính Origin). Bạn có thể tùy chọn cung cấp một LayerMask, để lọc ra bất kỳ Collider nào mà bạn không muốn tạo ra va chạm.
+- Một Effect thường là EmptyObject chứa nhiều ParticleSystem và Scripts hoặc các Components khác (Light) để tạo hiệu ứng đặc biệt. Trường hợp này khi reference phải là GameObject.
+- Một GameObject dùng để Instantiate có thể lấy reference từ Assets (ko nhất thiết phải từ Hierarchy)
+- Animator component: Điều quan trọng là phải phân biệt giữa "Transitions" và "Blend Trees". Cả hai đều được sử dụng để tạo hoạt ảnh mượt mà, chúng được sử dụng cho các loại tình huống khác nhau.
+	- "Animator Component": gán các animations vào GameObject thông qua một "Animator Controller"
+	- "Animator Controller": tổ chức sắp xếp các "Animations" và "Transitions" (state machine)
+	- Animation: Specific pieces of motion
+	- Transition: rules to move from one state to another
+- "Animation Clips" (Animation tab) là khối xây dựng nhỏ nhất của hoạt ảnh trong Unity. Chúng đại diện cho một phần chuyển động riêng biệt, chẳng hạn như RunLeft, Jump hoặc Crawl và có thể được điều khiển và kết hợp theo nhiều cách khác nhau để tạo ra kết quả cuối cùng sống động.
+- "Avatar" (Avatar Mapping tab): Nếu GameObject là một nhân vật hình người (humanoid) với một định nghĩa Avatar, Avatar cũng phải được chỉ định (reference) trong Component này.
+- "Animator Controller": sử dụng "Parameters" (Float, Int, Bool, Trigger) để xử lý Conditions của Animations. GetComponent<Animator>().SetTrigger("move"). Hoặc SetBool/SetFloat/SetInteger để set giá trị cho biến Conditions.
