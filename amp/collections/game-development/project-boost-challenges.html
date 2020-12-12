@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/project-boost-challenges",
         "headline": "Project Boost - Challenges",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-12-11 20:23:30 +0700",
+        "dateModified": "2020-12-13 01:57:23 +0700",
         "description": "Project Boost - Challenges",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 24 mins read </span> · 
+      <span title="reading time">· about 28 mins read </span> · 
       
       <span>
         
@@ -224,6 +224,17 @@
 <ul>
 <li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-17" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 <li class="toc-entry toc-h4"><a href="#reference-4" spy-toc="Reference">Reference</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-18" spy-toc="Challenge 18">Challenge 18</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-18" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#reference-5" spy-toc="Reference">Reference</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-19" spy-toc="Challenge 19">Challenge 19</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-19" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 </ul>
 </li>
 </ul><h3 id="challenge-1">
@@ -608,6 +619,58 @@
   <li><a href="https://en.wikipedia.org/wiki/Learning_cycle" class="hvr-forward" rel="nofollow" target="_blank">Chu kỳ học tập</a></li>
   <li><a href="https://en.wikipedia.org/wiki/Learning_styles" class="hvr-forward" rel="nofollow" target="_blank">Phong cách học tập</a></li>
   <li><a href="https://en.wikipedia.org/wiki/Observational_learning" class="hvr-forward" rel="nofollow" target="_blank">Observational learning</a></li>
+</ul>
+
+<h3 id="challenge-18">
+<a class="anchor" href="#challenge-18" aria-hidden="true" spy-title="Challenge 18"><span class="octicon octicon-link"></span></a>Challenge 18</h3>
+
+<h4 id="setup--mục-tiêu-18">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-18" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Code từng bước để tránh rối và tránh lỗi, sau khi control và verify được rồi thì tiếp tục bước tiếp theo.</li>
+  <li>Làm sao để group GOs sinh ra bằng Instantiate vào một parent (organization in Hierarchy): 1.thêm reference tranform của parent 2.gán newTower.transform.parent = towerParentTranform.</li>
+  <li>Post-processing (xử lý hậu kỳ): thêm hiệu ứng cho camera (Bloom, Color, Fog, Lens Distortion, Motion Blur, Vignette…)</li>
+  <li>Thêm Sound cho game (SFX): what is your game’s theme/experience/tone? Phân biệt: Audio Listener, Audio Source, Audio Clip. Sử dụng AudioSource.PlayClipAtPoint(audioClip, Camera.main.tranform.position)</li>
+  <li>Sử dụng “Debug.Break()” để pause game. Khi fix bugs Unity cũng cần phải kiểm tra các settings nếu không chắc chắn.</li>
+  <li>“NavMesh Agent” là Component giúp tạo Character tìm đường (Path Finding, AI, Navigation) để di chuyển đến mục tiêu (Speed, Stopping distance, Auto Braking…), và né tránh trướng ngại vật (trên cao, dưới thấp, leo cầu thang)…</li>
+  <li>“Agent” là một hình trụ thẳng đứng có kích thước Radius và Height. Hình trụ chuyển động cùng với vật nhưng luôn đứng thẳng ngay cả khi vật tự quay. Hình dạng của hình trụ được sử dụng để phát hiện và ứng phó với các va chạm giữa Agent và chướng ngại vật khác.</li>
+  <li>Khi GameObject Điểm neo (anchor/center) không nằm ở đáy của hình trụ, bạn có thể sử dụng thuộc tính Base Offset để tính chênh lệch chiều cao (baseOffset = GO.Center - Agent.Bottom).</li>
+  <li>“Agent” sẽ luôn xoay mặt Z để hướng tới target.</li>
+  <li>Sử dụng “MonoBehaviour.OnDrawGizmosSelected()” để vẽ gizmo nếu đối tượng được chọn. Gizmos được sử dụng để debug trực quan hoặc hỗ trợ thiết lập trong chế độ Scene View.</li>
+  <li>“OnDrawGizmosSelected” có thể vẽ Cube, Sphere, WireCube, WireSphere, Mesh, Ray, Icon, Line, GUITexture, Frustum….</li>
+</ul>
+
+<h4 id="reference-5">
+<a class="anchor" href="#reference-5" aria-hidden="true" spy-title="Reference"><span class="octicon octicon-link"></span></a>Reference</h4>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Circular_buffer" class="hvr-forward" rel="nofollow" target="_blank">Circular buffer</a></li>
+  <li><a href="https://docs.unity3d.com/Packages/com.unity.postprocessing@3.0/manual/index.html" class="hvr-forward" rel="nofollow" target="_blank">Post Processing Stack v2 overview (Built-in Render Pipeline)</a></li>
+  <li><a href="https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@10.2/manual/integration-with-post-processing.html" class="hvr-forward" rel="nofollow" target="_blank">Post-processing in the Universal Render Pipeline (URP)</a></li>
+  <li><a href="https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Post-Processing-Main.html" class="hvr-forward" rel="nofollow" target="_blank">Post-processing in the High Definition Render Pipeline</a></li>
+</ul>
+
+<h3 id="challenge-19">
+<a class="anchor" href="#challenge-19" aria-hidden="true" spy-title="Challenge 19"><span class="octicon octicon-link"></span></a>Challenge 19</h3>
+
+<h4 id="setup--mục-tiêu-19">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-19" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>“Physics.Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance)” Trả về true nếu tia giao nhau với Collider, ngược lại là false.</li>
+  <li>“Raycast” (+15 overloads) trả về “RaycastHit” chứa thông tin Collider đầu tiên phát hiện (ko tính Origin). Bạn có thể tùy chọn cung cấp một LayerMask, để lọc ra bất kỳ Collider nào mà bạn không muốn tạo ra va chạm.</li>
+  <li>Một Effect thường là EmptyObject chứa nhiều ParticleSystem và Scripts hoặc các Components khác (Light) để tạo hiệu ứng đặc biệt. Trường hợp này khi reference phải là GameObject.</li>
+  <li>Một GameObject dùng để Instantiate có thể lấy reference từ Assets (ko nhất thiết phải từ Hierarchy)</li>
+  <li>Animator component: Điều quan trọng là phải phân biệt giữa “Transitions” và “Blend Trees”. Cả hai đều được sử dụng để tạo hoạt ảnh mượt mà, chúng được sử dụng cho các loại tình huống khác nhau.
+    <ul>
+      <li>“Animator Component”: gán các animations vào GameObject thông qua một “Animator Controller”</li>
+      <li>“Animator Controller”: tổ chức sắp xếp các “Animations” và “Transitions” (state machine)</li>
+      <li>Animation: Specific pieces of motion</li>
+      <li>Transition: rules to move from one state to another</li>
+    </ul>
+  </li>
+  <li>“Animation Clips” (Animation tab) là khối xây dựng nhỏ nhất của hoạt ảnh trong Unity. Chúng đại diện cho một phần chuyển động riêng biệt, chẳng hạn như RunLeft, Jump hoặc Crawl và có thể được điều khiển và kết hợp theo nhiều cách khác nhau để tạo ra kết quả cuối cùng sống động.</li>
+  <li>“Avatar” (Avatar Mapping tab): Nếu GameObject là một nhân vật hình người (humanoid) với một định nghĩa Avatar, Avatar cũng phải được chỉ định (reference) trong Component này.</li>
+  <li>“Animator Controller”: sử dụng “Parameters” (Float, Int, Bool, Trigger) để xử lý Conditions của Animations. GetComponent<animator>().SetTrigger("move"). Hoặc SetBool/SetFloat/SetInteger để set giá trị cho biến Conditions.</animator>
+</li>
 </ul>
 
       </div>
