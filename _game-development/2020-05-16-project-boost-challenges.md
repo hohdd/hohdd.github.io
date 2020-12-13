@@ -227,9 +227,9 @@ date: 2020-05-16 14:26:14 +0700
 - Từ Script này gọi Script kia (2 Script đc add vào 2 GO..."Find reference in scence"...) bằng cách "FindObjectOfType<ScoreBoard>()"
 - Thiết kế Level: "Where are we at?" 1.Core Gameplay (dodge & shoot)? 2.Reason to play (score)? 3.Đặc biệt phá cách? 4.Chart tiết tấu trò chơi? 5.What to look for? 6.Phần thưởng gì làm người chơi vui?
 - Thiết kế Level: dành nhiều tình cảm và sự quan tâm. Bố cục ENV phải hỗ trợ "Beat Chart". Nhất quán (hình ảnh + cách chơi) để hướng dẫn người chơi xuyên suốt. Nghệ thuật kể câu chuyện thông qua môi trường
-- Thiết kế Level: Giữ mọi thứ mới mẻ, tạo bất ngờ, niềm vui được tạo ra thông qua sự không chắc chắn, bắt người chơi vào và ra khỏi vùng an toàn của họ.
-- Thiết kế Level: Người chơi biết phải làm gì, nhưng không phải làm như thế nào. Trao quyền cho người chơi. Không thể dự đoán. Yếu tố bất ngờ. Yếu tố căng thẳng
-- Thiết kế Level: liên tục dạy cho người chơi điều gì đó mới mẻ. Họ có thể học và tiến bộ từng level.
+- Thiết kế Level: CẢM XÚC? Giữ mọi thứ mới mẻ, tạo bất ngờ, niềm vui được tạo ra thông qua sự không chắc chắn, bắt người chơi vào và ra khỏi vùng an toàn của họ.
+- Thiết kế Level: TỰ DO? Người chơi biết phải làm gì, nhưng không phải làm như thế nào. Trao quyền cho người chơi. Không thể dự đoán. Yếu tố bất ngờ. Yếu tố căng thẳng
+- Thiết kế Level: LÝ DO ĐỂ HỌ CHƠI? liên tục dạy cho người chơi điều gì đó mới mẻ. Họ có thể học và tiến bộ từng level.
 
 #### Reference
 - [Raph Koster là một nhà thiết kế trò chơi kỳ cựu đã được tín nhiệm về mặt chuyên môn](https://www.raphkoster.com/){:.hvr-forward rel="nofollow" target="_blank"}
@@ -265,7 +265,7 @@ date: 2020-05-16 14:26:14 +0700
 - "WaitUntil" Tạm dừng thực hiện "coroutine" cho đến khi "delegate evaluates" là true. yield return new WaitUntil(() => frame >= 10);
 - Phải nghĩ đến "performance" khi xử lý các hàm ở "every frame", xử lý hàm, khởi tạo đối tượng, khởi tạo biến...
 - Stop using GameObject.Find! code sẽ bị phụ thuộc vào "name, tag", team sẽ sợ hãi khi thay đổi gì trong scence. Cách tiếp cận tốt là dùng "reference" kéo thả.
-- Trong nội bộ Prefrab có thể thêm Script + Assign reference children của Prefab vào Script
+- Trong nội bộ Prefab có thể thêm Script + Assign reference children của Prefab vào Script
 - Tách Scripts thành các Component nhỏ nhất có thể và giữ nhiệm vụ duy nhất (nguyên lý SOLID)
 - Quay hướng Z về phía đối tượng "who.LookAt(What)"
 
@@ -343,3 +343,33 @@ date: 2020-05-16 14:26:14 +0700
 - "Animation Clips" (Animation tab) là khối xây dựng nhỏ nhất của hoạt ảnh trong Unity. Chúng đại diện cho một phần chuyển động riêng biệt, chẳng hạn như RunLeft, Jump hoặc Crawl và có thể được điều khiển và kết hợp theo nhiều cách khác nhau để tạo ra kết quả cuối cùng sống động.
 - "Avatar" (Avatar Mapping tab): Nếu GameObject là một nhân vật hình người (humanoid) với một định nghĩa Avatar, Avatar cũng phải được chỉ định (reference) trong Component này.
 - "Animator Controller": sử dụng "Parameters" (Float, Int, Bool, Trigger) để xử lý Conditions của Animations. GetComponent<Animator>().SetTrigger("move"). Hoặc SetBool/SetFloat/SetInteger để set giá trị cho biến Conditions.
+- "Using Animation Events" cho phép gọi các hàm (thêm đc nhiều Event) trong các Scripts (hàm ko private) được attached vào đối tượng tại các điểm được chỉ định trong dòng thời gian.
+- Việc kéo thả reference Player vào mỗi loại Enemy là không khôn ngoan, nên dùng "FindObjectOfType<T>()" để tìm player ở runtime theo "T" (một MonoBehaviour của Player).
+- "Rotate To Face Target":
+	- "Vector3.normalized": (target.position - tranform.position).normalized; Trả về vectơ có độ lớn là 1 (Read Only). Nếu Vector quá nhỏ normalized sẽ returned "zero vector". Vector hiện tại không đổi, chỉ Vector mới được trả về, nếu muốn "normalized" Vector hiện tại thì dùng hàm "Normalize(Vector3 value)".
+	- "Quaternion.LookRotation(Vector3 forward)": Creates a rotation with the specified forward and upwards directions.
+	- "Vector3.Slerp(Vector3 a, Vector3 b, float t)" Nội suy giữa a và b theo lượng t. Sự khác biệt giữa phép nội suy tuyến tính (hay còn gọi là "lerp") là các vectơ được coi là các hướng chứ không phải là các điểm trong không gian. Hướng của vectơ trả về được nội suy bởi góc và độ lớn của nó được nội suy giữa các độ lớn "FROM" và "TO".
+
+### Challenge 20
+
+#### Setup & Mục tiêu
+- "Game Over UI" thêm nhiều canvas, canvas sau đè canvas trước (Sort Order). Button "On Click" có thể reference đến một Object và call mọi method của GameObject đó.
+- "Time.timeScale" có thể được sử dụng cho các hiệu ứng chuyển động chậm. Tạm dừng game = 0, trở lại bình thường = 1
+- "Camera.main.fieldOfView" được sử dụng để tăng/giảm góc nhìn (súng ngắm...). Lưu ý mức độ "Sensitivity" của chuột (giống camera zoom lớn), nên giảm mức Sensivity.
+- "Transform" của một EmptyObject (parents/group) là một "Array" các Transform con bên trong nó. "tranform.childCount" là số lượng childrent của nó.
+- "UnityEngine.CoreModule" Cursor API (mouse pointer)
+	- "Cursor.visible": Xác định xem con trỏ phần cứng có hiển thị hay không.
+	- "Cursor.lockState": Xác định xem con trỏ phần cứng có bị khóa ở giữa khung nhìn, bị hạn chế trong cửa sổ hay không bị hạn chế ở tất cả.
+	- "CursorLockMode": Cursor.lockState = CursorLockMode.None;
+		- None: Hành vi con trỏ không được sửa đổi.
+		- Locked: Khóa con trỏ vào giữa cửa sổ trò chơi.
+		- Confined: Định cấu hình con trỏ vào cửa sổ trò chơi.
+- [System.Serializable] để sử dụng nó trong Inspector. Một Enum sẽ hiển thị ở Inspector dạng select dropdown.
+- MonoBehaviour.OnDisable(): hàm này được gọi khi "MonoBehaviour" bị "disable" (khác destroy)...Bug đang zoom mà chuyển weapon thì vẫn còn zoom.
+- Inspector ở chế độ xem "normal" chỉ hiển thị biến "public" hoặc [SerializeField] và [System.Serializable], chuyển sang chế độ xem "debug" sẽ xem được tất cả.
+- Có thể tạo Prefab từ EmptyObject...PickUp Framework...trigger khi Collided (a pickup), add Mesh to visualise it, add collider, create script with trigger, destroy pickup...
+- Ở Hierarchy có thể Duplicate prefabs (vẫn là prefab đó), ở Assets có thể tạo "biến thể" copy từ một prefab có sẵn và sửa đổi (được prefab khác)
+- "Prefab" lồng "Prefab": thay đổi ở parents không áp dụng cho inner prefab, nếu xóa inner prefab ở Asset thì inner prefab trở lại bình thường.
+- Mẹo thiết kế Level: thiết kế trên một ảnh > lấy ảnh đó làm background của một Quad > play thử để xem tỉ lệ
+- Chia nhỏ các level để một màn không quá rộng để tăng FPS (Frame Per Second)
+- So sánh 2 số thực trong C#: Mathf.Abs(floatA - floatB) <= Mathf.Epsilon;
