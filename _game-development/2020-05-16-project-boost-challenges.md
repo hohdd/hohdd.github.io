@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: Project Boost - Challenges
-description: Project Boost - Challenges
+title: Project Boost
+description: Project Boost
 
 ### HUMAN
-header: Project Boost - Challenges
+header: Project Boost
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
@@ -22,9 +22,9 @@ mermaid: false
 highlight: false # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Project_Boost # this for AMP related post
+collection: Unity # this for AMP related post
 ### category: dùng để group collection
-category: Project_Boost
+category: Unity
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-16 14:26:14 +0700
