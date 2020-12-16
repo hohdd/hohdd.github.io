@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-realistic-lighting",
         "headline": "Realistic lighting",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-12-15 23:44:24 +0700",
+        "dateModified": "2020-12-17 00:30:21 +0700",
         "description": "Realistic lighting",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 1 min read </span> · 
+      <span title="reading time">· about 4 mins read </span> · 
       
       <span>
         
@@ -135,6 +135,12 @@
 <ul>
 <li class="toc-entry toc-h4"><a href="#setup--mục-tiêu" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 <li class="toc-entry toc-h4"><a href="#reference" spy-toc="Reference">Reference</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-2" spy-toc="Challenge 2">Challenge 2</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-1" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#reference-1" spy-toc="Reference">Reference</a></li>
 </ul>
 </li>
 </ul><h3 id="challenge-1">
@@ -158,6 +164,58 @@
   <li><a href="https://www.thespruce.com/color-theory-in-landscape-design-2132147" class="hvr-forward" rel="nofollow" target="_blank">Using Basic Color Theory in Landscape and Garden Design</a></li>
   <li><a href="http://www.huevaluechroma.com/" class="hvr-forward" rel="nofollow" target="_blank">Các chiều của màu sắc</a></li>
   <li><a href="https://medium.com/@EightyLevel/7-tips-for-better-lighting-in-unity-686694892ece" class="hvr-forward" rel="nofollow" target="_blank">7 Tips For Better Lighting in Unity</a></li>
+</ul>
+
+<h3 id="challenge-2">
+<a class="anchor" href="#challenge-2" aria-hidden="true" spy-title="Challenge 2"><span class="octicon octicon-link"></span></a>Challenge 2</h3>
+
+<h4 id="setup--mục-tiêu-1">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-1" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Global illumination (GI: chiếu sáng toàn cầu), hay Indirect illumination (chiếu sáng gián tiếp), là một nhóm các thuật toán được sử dụng trong đồ họa máy tính 3D nhằm bổ sung ánh sáng chân thực hơn cho cảnh 3D.</li>
+  <li>Nếu các trục X,Y,Z của GO nhìn xiên xẹo và khi Rotation xong không thấy vòng tròn Gizmos trở về vị trí cũ thì tức là đang để chế độ “Global” Rotation.</li>
+  <li>Quá trình “Back-face culling” (xử lý mặt sau) xác định xem một đa giác của đối tượng đồ họa có hiển thị hay không. làm cho việc kết xuất các đối tượng nhanh hơn và hiệu quả hơn bằng cách giảm số lượng đa giác để chương trình vẽ.</li>
+  <li>Kỹ thuật “Clipping” (cắt) xác định xem đa giác có nằm trong trường nhìn của máy ảnh hay không (chọn lọc các Rendering trong một khu vực xác định - là vùng nhìn của Camera).</li>
+  <li>Kỹ thuật “Z-culling” còn gọi là “Occlusion Culling” (xử lý tắc) tương tự “Clipping”, nó cố gắng bỏ qua việc vẽ các đa giác bị che bởi các đa giác có thể nhìn thấy khác.</li>
+  <li>Render pipelines: Culling (xử lý) &gt; Rendering (kết xuất/tổng hợp hình ảnh) &gt; Post-processing (Xử lý hậu kỳ). Chọn “Render pipelines” khi bắt đầu, sự khác nhau về hiệu suất và phù hợp với các trò chơi, ứng dụng và nền tảng khác nhau.</li>
+  <li>Lights (Inspector): hiển thị các thuộc tính khác nhau trong Light Inspector tùy thuộc vào Render pipelines mà Dự án đang sử dụng.</li>
+  <li>Light settings
+    <ul>
+      <li>Types: Point lights, Spot lights, Directional lights, Area lights</li>
+      <li>Range: Xác định quãng đường ánh sáng phát ra từ tâm của vật thể truyền đi (Point and Spot lights only).</li>
+      <li>Spot Angle: Xác định góc (tính bằng độ) tại đáy của hình nón của “Spot light”.</li>
+      <li>Mode: chế độ sáng gồm Realtime, Baked, Mixed. Mỗi loại đều có những lợi ích và hạn chế riêng (VD: hiệu suất, khả năng can thiệp và thay đổi trong Script…)
+        <ul>
+          <li>Realtime: tính toán và cập nhật ánh sáng cho mọi khung hình trong Runtime.</li>
+          <li>Baked: tính toán trước độ chiếu sáng (tạo trước lightmap) và không đưa chúng vào bất kỳ tính toán chiếu sáng nào ở Runtime.</li>
+          <li>Mixed: thực hiện trước một số tính toán và một số tính toán trong Runtime.</li>
+        </ul>
+      </li>
+      <li>Intensity: cường độ sáng. Giá trị mặc định cho Directional light là 0,5. Giá trị mặc định cho Point, Spot, Area light là 1.</li>
+      <li>Indirect Multiplier: cường độ của ánh sáng gián tiếp. Nếu thấp hơn 1, ánh sáng bị dội lại sẽ mờ. Giá trị cao hơn 1 làm cho ánh sáng bật lại sáng hơn.</li>
+    </ul>
+  </li>
+  <li>Shadows
+    <ul>
+      <li>Shadow Type: Hard Shadows, Soft Shadows, or no shadows at all.</li>
+    </ul>
+  </li>
+  <li>Additional settings
+    <ul>
+      <li>Cookie: để tạo bóng hoặc chiếu sáng theo khuôn mẫu bằng cách sử dụng “Texture mask”</li>
+      <li>Draw Halo: tạo vầng sáng hào quang xung quanh nguồn sáng (thêm “Halo” component có tác dụng tương tự và có thể chọn được cả màu)</li>
+      <li>Flare: tương tự “Lens Flare” component, tạo một Lens Flare trong Assets với Flare Texture để dùng.</li>
+      <li>Render Mode (lighting): ảnh hưởng đến độ trung thực và hiệu suất của ánh sáng. Gồm các chế độ: Auto, Important, Not Important</li>
+      <li>Culling Mask: Sử dụng tùy chọn này để loại trừ có chọn lọc các nhóm đối tượng khỏi bị ảnh hưởng bởi Ánh sáng.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="reference-1">
+<a class="anchor" href="#reference-1" aria-hidden="true" spy-title="Reference"><span class="octicon octicon-link"></span></a>Reference</h4>
+<ul>
+  <li><a href="https://blogs.unity3d.com/es/2020/06/15/lighting-tips-for-mobile-game-development/" class="hvr-forward" rel="nofollow" target="_blank">Lighting tips for mobile game</a></li>
+  <li><a href="https://unity.com/how-to/advanced/optimize-lighting-mobile-games" class="hvr-forward" rel="nofollow" target="_blank">Tips to get 60 fps on low-end phones</a></li>
 </ul>
 
       </div>
