@@ -43,10 +43,40 @@ date: 2020-05-16 14:26:14 +0700
 - Hệ màu đối sánh Pantone (PMS): Màu của năm...; Hệ màu CMYK; Hệ màu RGB; Hệ màu tự nhiên (Natural Color System - NCS)
 - Các số L * a * b * cho phép thể hiện màu sắc chính xác nhất theo cách độc lập với thiết bị.
 
-
-
-
 #### Reference
 - [Using Basic Color Theory in Landscape and Garden Design](https://www.thespruce.com/color-theory-in-landscape-design-2132147){:.hvr-forward rel="nofollow" target="_blank"}
 - [Các chiều của màu sắc](http://www.huevaluechroma.com/){:.hvr-forward rel="nofollow" target="_blank"}
 - [7 Tips For Better Lighting in Unity](https://medium.com/@EightyLevel/7-tips-for-better-lighting-in-unity-686694892ece){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 2
+
+#### Setup & Mục tiêu
+- Global illumination (GI: chiếu sáng toàn cầu), hay Indirect illumination (chiếu sáng gián tiếp), là một nhóm các thuật toán được sử dụng trong đồ họa máy tính 3D nhằm bổ sung ánh sáng chân thực hơn cho cảnh 3D.
+- Nếu các trục X,Y,Z của GO nhìn xiên xẹo và khi Rotation xong không thấy vòng tròn Gizmos trở về vị trí cũ thì tức là đang để chế độ "Global" Rotation.
+- Quá trình "Back-face culling" (xử lý mặt sau) xác định xem một đa giác của đối tượng đồ họa có hiển thị hay không. làm cho việc kết xuất các đối tượng nhanh hơn và hiệu quả hơn bằng cách giảm số lượng đa giác để chương trình vẽ.
+- Kỹ thuật "Clipping" (cắt) xác định xem đa giác có nằm trong trường nhìn của máy ảnh hay không (chọn lọc các Rendering trong một khu vực xác định - là vùng nhìn của Camera).
+- Kỹ thuật "Z-culling" còn gọi là "Occlusion Culling" (xử lý tắc) tương tự "Clipping", nó cố gắng bỏ qua việc vẽ các đa giác bị che bởi các đa giác có thể nhìn thấy khác.
+- Render pipelines: Culling (xử lý) > Rendering (kết xuất/tổng hợp hình ảnh) > Post-processing (Xử lý hậu kỳ). Chọn "Render pipelines" khi bắt đầu, sự khác nhau về hiệu suất và phù hợp với các trò chơi, ứng dụng và nền tảng khác nhau.
+- Lights (Inspector): hiển thị các thuộc tính khác nhau trong Light Inspector tùy thuộc vào Render pipelines mà Dự án đang sử dụng.
+- Light settings
+	- Types: Point lights, Spot lights, Directional lights, Area lights
+	- Range: Xác định quãng đường ánh sáng phát ra từ tâm của vật thể truyền đi (Point and Spot lights only).
+	- Spot Angle: Xác định góc (tính bằng độ) tại đáy của hình nón của "Spot light".
+	- Mode: chế độ sáng gồm Realtime, Baked, Mixed. Mỗi loại đều có những lợi ích và hạn chế riêng (VD: hiệu suất, khả năng can thiệp và thay đổi trong Script...)
+		- Realtime: tính toán và cập nhật ánh sáng cho mọi khung hình trong Runtime.
+		- Baked: tính toán trước độ chiếu sáng (tạo trước lightmap) và không đưa chúng vào bất kỳ tính toán chiếu sáng nào ở Runtime.
+		- Mixed: thực hiện trước một số tính toán và một số tính toán trong Runtime.
+	- Intensity: cường độ sáng. Giá trị mặc định cho Directional light là 0,5. Giá trị mặc định cho Point, Spot, Area light là 1.
+	- Indirect Multiplier: cường độ của ánh sáng gián tiếp. Nếu thấp hơn 1, ánh sáng bị dội lại sẽ mờ. Giá trị cao hơn 1 làm cho ánh sáng bật lại sáng hơn.
+- Shadows
+	- Shadow Type: Hard Shadows, Soft Shadows, or no shadows at all.
+- Additional settings
+	- Cookie: để tạo bóng hoặc chiếu sáng theo khuôn mẫu bằng cách sử dụng "Texture mask"
+	- Draw Halo: tạo vầng sáng hào quang xung quanh nguồn sáng (thêm "Halo" component có tác dụng tương tự và có thể chọn được cả màu)
+	- Flare: tương tự "Lens Flare" component, tạo một Lens Flare trong Assets với Flare Texture để dùng.
+	- Render Mode (lighting): ảnh hưởng đến độ trung thực và hiệu suất của ánh sáng. Gồm các chế độ: Auto, Important, Not Important
+	- Culling Mask: Sử dụng tùy chọn này để loại trừ có chọn lọc các nhóm đối tượng khỏi bị ảnh hưởng bởi Ánh sáng.
+
+#### Reference
+- [Lighting tips for mobile game](https://blogs.unity3d.com/es/2020/06/15/lighting-tips-for-mobile-game-development/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Tips to get 60 fps on low-end phones](https://unity.com/how-to/advanced/optimize-lighting-mobile-games){:.hvr-forward rel="nofollow" target="_blank"}
