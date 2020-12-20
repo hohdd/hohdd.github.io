@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-realistic-lighting",
         "headline": "Realistic lighting",
         "datePublished": "2020-05-16 14:26:14 +0700",
-        "dateModified": "2020-12-17 00:30:21 +0700",
+        "dateModified": "2020-12-21 01:11:03 +0700",
         "description": "Realistic lighting",
         
         "author": {
@@ -117,7 +117,7 @@
         
       </span>
       <time datetime="2020-05-16T14:26:14+07:00" class="by-line"> · 16 May 2020 
-      <span title="reading time">· about 4 mins read </span> · 
+      <span title="reading time">· about 14 mins read </span> · 
       
       <span>
         
@@ -141,6 +141,12 @@
 <ul>
 <li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-1" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
 <li class="toc-entry toc-h4"><a href="#reference-1" spy-toc="Reference">Reference</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#challenge-3" spy-toc="Challenge 3">Challenge 3</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#setup--mục-tiêu-2" spy-toc="Setup &amp; Mục tiêu">Setup &amp; Mục tiêu</a></li>
+<li class="toc-entry toc-h4"><a href="#reference-2" spy-toc="Reference">Reference</a></li>
 </ul>
 </li>
 </ul><h3 id="challenge-1">
@@ -172,7 +178,6 @@
 <h4 id="setup--mục-tiêu-1">
 <a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-1" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
 <ul>
-  <li>Global illumination (GI: chiếu sáng toàn cầu), hay Indirect illumination (chiếu sáng gián tiếp), là một nhóm các thuật toán được sử dụng trong đồ họa máy tính 3D nhằm bổ sung ánh sáng chân thực hơn cho cảnh 3D.</li>
   <li>Nếu các trục X,Y,Z của GO nhìn xiên xẹo và khi Rotation xong không thấy vòng tròn Gizmos trở về vị trí cũ thì tức là đang để chế độ “Global” Rotation.</li>
   <li>Quá trình “Back-face culling” (xử lý mặt sau) xác định xem một đa giác của đối tượng đồ họa có hiển thị hay không. làm cho việc kết xuất các đối tượng nhanh hơn và hiệu quả hơn bằng cách giảm số lượng đa giác để chương trình vẽ.</li>
   <li>Kỹ thuật “Clipping” (cắt) xác định xem đa giác có nằm trong trường nhìn của máy ảnh hay không (chọn lọc các Rendering trong một khu vực xác định - là vùng nhìn của Camera).</li>
@@ -216,6 +221,79 @@
 <ul>
   <li><a href="https://blogs.unity3d.com/es/2020/06/15/lighting-tips-for-mobile-game-development/" class="hvr-forward" rel="nofollow" target="_blank">Lighting tips for mobile game</a></li>
   <li><a href="https://unity.com/how-to/advanced/optimize-lighting-mobile-games" class="hvr-forward" rel="nofollow" target="_blank">Tips to get 60 fps on low-end phones</a></li>
+</ul>
+
+<h3 id="challenge-3">
+<a class="anchor" href="#challenge-3" aria-hidden="true" spy-title="Challenge 3"><span class="octicon octicon-link"></span></a>Challenge 3</h3>
+
+<h4 id="setup--mục-tiêu-2">
+<a class="anchor" href="#setup--m%E1%BB%A5c-ti%C3%AAu-2" aria-hidden="true" spy-title="Setup &amp; Mục tiêu"><span class="octicon octicon-link"></span></a>Setup &amp; Mục tiêu</h4>
+<ul>
+  <li>Global illumination (GI: chiếu sáng toàn cầu), hay Indirect illumination (chiếu sáng gián tiếp), là một nhóm các thuật toán được sử dụng trong đồ họa máy tính 3D nhằm bổ sung ánh sáng chân thực hơn cho cảnh 3D.</li>
+  <li>Global illumination (Chiếu sáng toàn cầu) về mặt lý thuyết, phản xạ (Reflection), khúc xạ (Refractions) và bóng đổ (Shadows) đều là những ví dụ về chiếu sáng toàn cục. Tuy nhiên, trong thực tế, chỉ có mô phỏng của phản xạ xen kẽ khuếch tán (Diffuse reflection) hoặc tụ quang (Caustic) được gọi là chiếu sáng toàn cục.
+    <ul>
+      <li>Reflection (Phản xạ) trong đồ họa máy tính được sử dụng để mô phỏng các vật thể phản chiếu như gương và bề mặt sáng bóng.
+        <ul>
+          <li>Ray tracing (Dò tia) là một kỹ thuật Rendering để tạo ra một hình ảnh bằng cách truy tìm đường đi của ánh sáng dưới dạng các pixel trong mặt phẳng hình ảnh và mô phỏng các hiệu ứng khi nó gặp các đối tượng ảo. Kỹ thuật này có khả năng tạo ra độ chân thực hình ảnh cao, nhưng với chi phí tính toán lớn. Điều này làm cho việc dò tia phù hợp nhất cho các ứng dụng có thể chịu được thời gian kết xuất tương đối lâu. Nhìn chung kém phù hợp hơn với các ứng dụng thời gian thực như trò chơi điện tử , nơi tốc độ rất quan trọng trong việc hiển thị từng khung hình.</li>
+          <li>Path tracing (Theo dõi đường dẫn) là một dạng Dò tia có thể tạo ra bóng mờ, độ sâu trường ảnh (DOF), chuyển động mờ (Motion blur), tụ quang (Caustic), tắc nghẽn môi trường xung quanh (Ambient occlusion) và ánh sáng gián tiếp. Một số lượng lớn các tia phải được truy tìm để có được hình ảnh tham chiếu chất lượng cao mà không bị nhiễu.</li>
+          <li>Ray Casting (Đúc tia) về cơ bản, nó giống như Ray tracing (dò tia). Tia đơn giản là một đường thẳng trong không gian 3-D của mô hình máy ảnh. Hàng triệu tia có thể được tạo ra để hiển thị một khung hình duy nhất của một bộ phim hoạt hình.</li>
+        </ul>
+      </li>
+      <li>Các loại “Reflection”: Polished (bóng như gương), Blurry (Mờ), Metallic (Kim loại), Glossy (hiển thị điểm nổi bật từ nguồn sáng, nhưng không hiển thị phản chiếu rõ ràng từ vật thể). Phản xạ sàn ướt…</li>
+      <li>Refraction (Khúc xạ): là sự thay đổi hướng của sóng truyền từ môi trường này sang môi trường khác hoặc từ sự thay đổi dần dần trong môi trường. Các lăng kính và thấu kính quang học sử dụng sự khúc xạ để chuyển hướng ánh sáng…</li>
+      <li>Diffuse reflection (Phản xạ khuếch tán) ánh sáng tán xạ khuếch tán tạo nên hình ảnh của vật thể trong mắt người quan sát, ánh sáng phát ra được quay trở lại theo mọi hướng, ánh sáng khuếch tán được tạo ra tại mỗi mặt phân cách, thay vì một tia phản xạ đơn lẻ.</li>
+      <li>Caustic (Tụ quang): Tụ quang do một ly nước tạo ra, Tụ quang tạo bởi bề mặt nước…Sự tập trung ánh sáng, đặc biệt là ánh sáng mặt trời, có thể gây cháy. Tụ quang là một đường cong hoặc bề mặt mà mỗi tia sáng tiếp xúc với nhau , xác định ranh giới của một đường bao tia là đường cong của ánh sáng tập trung.</li>
+    </ul>
+  </li>
+  <li>Shadow mapping (Shadow mapping or shadowing projection = Lập bản đồ bóng hoặc chiếu bóng): Shadows được tạo ra bằng cách kiểm tra xem một pixel có thể nhìn thấy từ nguồn sáng hay không, bằng cách so sánh pixel đó với z-buffer hoặc “depth image” của chế độ xem nguồn sáng, được lưu trữ dưới dạng kết cấu (Texture).</li>
+  <li>Z-Buffering (bộ đệm độ sâu, độ xa) là quản lý tọa độ độ sâu hình ảnh trong đồ họa 3D. Có cấu trúc dữ liệu bên trong giống như một hình ảnh, cụ thể là một mảng 2d, với điểm khác biệt duy nhất là nó lưu trữ giá trị z cho mỗi pixel màn hình thay vì dữ liệu pixel.</li>
+  <li>Z-fighting (also called “stitching” = đường khâu) xảy ra khi hai Object có khoảng cách giống nhau đến Camera, điều này sẽ khiến chúng có các giá trị giống nhau trong bộ đệm z, z-buffer không thể phân biệt chính xác cái nào xa hơn cái nào.</li>
+  <li>Z-culling là loại bỏ pixel sớm dựa trên độ sâu, giúp tăng hiệu suất khi hiển thị các bề mặt ẩn là tốn kém. Làm cho nó có thể bỏ qua toàn bộ quá trình chiếu sáng và texturing một điểm ảnh đó sẽ không được nhìn thấy.</li>
+  <li>Z-order: đề cập đến thứ tự của các đối tượng dọc theo trục Z. là thứ tự của các đối tượng hai chiều chồng lên nhau.</li>
+  <li>Trong hình học tọa độ , X thường đề cập đến trục hoành (trái sang phải), Y đề cập đến trục tung (lên và xuống) và Z đề cập đến trục vuông góc với hai trục kia (tiến hoặc lùi).</li>
+  <li>Texture mapping: là một phương pháp xác định thông tin chi tiết , kết cấu bề mặt hoặc màu sắc tần số cao trên đồ họa hoặc mô hình 3D do máy tính tạo ra.
+    <ul>
+      <li>Depth map (Bản đồ độ sâu): là một hình ảnh hoặc kênh hình ảnh chứa thông tin liên quan đến khoảng cách bề mặt của các đối tượng cảnh từ một điểm nhìn. Thuật ngữ này liên quan đến và có thể tương tự như “depth buffer, Z-buffer, Z-buffering and Z-depth”.</li>
+      <li>Heightmap (or Heightfield - Bản đồ độ cao): là một hình ảnh mà mỗi pixel lưu trữ các giá trị, chẳng hạn như dữ liệu độ cao bề mặt , để hiển thị trong đồ họa máy tính 3D.</li>
+      <li>Bump mapping (Bản đồ lồi lõm): là một kỹ thuật ánh xạ kết cấu trong đồ họa máy tính để mô phỏng các vết lồi và nếp nhăn trên bề mặt của một vật thể.</li>
+      <li>Normal mapping (or Dot3 bump mapping = Bản đồ Pháp Tuyến): là công nghệ “texture mapping” được sử dụng để làm giả ánh sáng của các vết lồi và vết lõm - một cách triển khai của “Bump mapping”. Nó được sử dụng để thêm chi tiết mà không cần sử dụng thêm đa giác.
+        <ul>
+          <li>Normal mapping thường được lưu trữ dưới dạng ảnh RGB thông thường trong đó các thành phần RGB tương ứng với tọa độ X, Y và Z tương ứng của vector Pháp tuyến của bề mặt.</li>
+        </ul>
+      </li>
+      <li>Parallax mapping (Offset mapping or Virtual displacement mapping): Ánh xạ thị sai (còn được gọi là ánh xạ bù hoặc ánh xạ dịch chuyển ảo ) là sự cải tiến của kỹ thuật “Bump mapping” hoặc “Normal mapping” được áp dụng cho các kết cấu trong các ứng dụng kết xuất 3D như trò chơi điện tử.</li>
+      <li>Procedural texture (Kết cấu thủ tục): là một kết cấu được tạo ra bằng cách sử dụng mô tả toán học (tức là một thuật toán ) chứ không phải dữ liệu được lưu trữ trực tiếp. Ưu điểm của phương pháp này là chi phí lưu trữ thấp, độ phân giải texture không giới hạn và dễ dàng lập bản đồ texture. Những loại texture này thường được sử dụng để tạo texture cho các yếu tố tự nhiên như gỗ, đá cẩm thạch, đá granit, kim loại và các loại khác.</li>
+      <li>Displacement mapping (Ánh xạ dịch chuyển) là một kỹ thuật đồ họa máy tính thay thế trái ngược với Bump mapping, Normal mapping và Parallax mapping, sử dụng “Procedural texture” hoặc “Heightmap/Heightfield” để gây ra hiệu ứng trong đó vị trí hình học thực tế của các điểm trên bề mặt có kết cấu bị dịch chuyển.</li>
+      <li>Reflection mapping (or Environment mapping): là kỹ thuật Image-based lighting (IBL) để ước tính gần đúng sự xuất hiện của bề mặt phản chiếu bằng texture được tính toán trước.
+        <ul>
+          <li>Image-based lighting (Ánh sáng dựa trên hình ảnh): là một kỹ thuật Render 3D bao gồm việc ghi lại sự thể hiện đa hướng của thông tin ánh sáng trong thế giới thực dưới dạng hình ảnh. IBL thường sử dụng hình ảnh dải động cao (High-dynamic-range imaging) để có độ chân thực cao hơn, mặc dù điều này không phổ biến.</li>
+          <li>High-Dynamic-Range Imaging (HDRI) Hình ảnh dải động cao ( HDRI ) là một kỹ thuật được sử dụng trong hình ảnh và phim ảnh để tái tạo phạm vi độ sáng lớn hơn những gì có thể với hình ảnh kỹ thuật số hoặc kỹ thuật chụp ảnh tiêu chuẩn.</li>
+        </ul>
+      </li>
+      <li>Specularity (Đặc điểm/Tia): là sự xuất hiện trực quan của các phản xạ đặc trưng (Specular reflection). Nó thường được sử dụng trong đồ họa máy tính thời gian thực (Real-time computer graphics) và theo dõi tia (Ray tracing).
+        <ul>
+          <li>Specular reflection or Regular reflection (phản xạ đặc trưng): Sự phản xạ dạng tia , hay sự phản xạ thường xuyên , là sự phản xạ giống như gương của các sóng , chẳng hạn như ánh sáng , từ một bề mặt.</li>
+        </ul>
+      </li>
+      <li>Texture splatting (Tách hoạ tiết): là một phương pháp để kết hợp các Texture khác nhau. Nó hoạt động bằng cách áp dụng một alphamap (còn được gọi là “weightmap” hoặc “splat map”) cho các cấp cao hơn, do đó tiết lộ các lớp bên dưới nơi alphamap trong suốt một phần hoặc hoàn toàn.
+        <ul>
+          <li>Blend modes (or mixing modes = Chế độ hòa trộn): được sử dụng để xác định cách hai lớp được hòa trộn với nhau (Multiply, Overlay…)</li>
+          <li>Transparency (Độ trong suốt)</li>
+          <li>Alpha compositing (kết hợp alpha): là quá trình kết hợp một hình ảnh với nền để tạo ra vẻ ngoài trong suốt một phần hoặc toàn bộ.</li>
+        </ul>
+      </li>
+      <li>Vertex (Đỉnh): là một cấu trúc dữ liệu mô tả các thuộc tính nhất định, như vị trí của một điểm trong 2D hoặc 3D không gian, hoặc nhiều điểm trên một bề mặt.</li>
+      <li>…continue…</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="reference-2">
+<a class="anchor" href="#reference-2" aria-hidden="true" spy-title="Reference"><span class="octicon octicon-link"></span></a>Reference</h4>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best" class="hvr-forward" rel="nofollow" target="_blank">List of video games considered the best</a></li>
+  <li><a href="https://catlikecoding.com/unity/tutorials/movement/" class="hvr-forward" rel="nofollow" target="_blank">A series about controlling the movement of a character</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Glossary_of_computer_graphics" class="hvr-forward" rel="nofollow" target="_blank">Glossary of computer graphics</a></li>
 </ul>
 
       </div>
