@@ -274,7 +274,7 @@ date: 2020-05-16 14:26:14 +0700
 - [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html){:.hvr-forward rel="nofollow" target="_blank"}
 - [Play and Learning!](https://explorabl.es/){:.hvr-forward rel="nofollow" target="_blank"}
 
-### Challenge 17
+### Challenge 18
 
 #### Setup & Mục tiêu
 - Tính khoảng cách từ Enemy đến Tower bằng Vector3.Distance(enemyPosition, towerPosition). Kiểm tra nếu Enemy exist (IF) thì Shoot(module.emission = true) else Shoot(false)
@@ -307,7 +307,7 @@ date: 2020-05-16 14:26:14 +0700
 - [Phong cách học tập](https://en.wikipedia.org/wiki/Learning_styles){:.hvr-forward rel="nofollow" target="_blank"}
 - [Observational learning](https://en.wikipedia.org/wiki/Observational_learning){:.hvr-forward rel="nofollow" target="_blank"}
 
-### Challenge 18
+### Challenge 19
 
 #### Setup & Mục tiêu
 - Code từng bước để tránh rối và tránh lỗi, sau khi control và verify được rồi thì tiếp tục bước tiếp theo.
@@ -328,7 +328,7 @@ date: 2020-05-16 14:26:14 +0700
 - [Post-processing in the Universal Render Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@10.2/manual/integration-with-post-processing.html){:.hvr-forward rel="nofollow" target="_blank"}
 - [Post-processing in the High Definition Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Post-Processing-Main.html){:.hvr-forward rel="nofollow" target="_blank"}
 
-### Challenge 19
+### Challenge 20
 
 #### Setup & Mục tiêu
 - "Physics.Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance)" Trả về true nếu tia giao nhau với Collider, ngược lại là false.
@@ -350,7 +350,7 @@ date: 2020-05-16 14:26:14 +0700
 	- "Quaternion.LookRotation(Vector3 forward)": Creates a rotation with the specified forward and upwards directions.
 	- "Vector3.Slerp(Vector3 a, Vector3 b, float t)" Nội suy giữa a và b theo lượng t. Sự khác biệt giữa phép nội suy tuyến tính (hay còn gọi là "lerp") là các vectơ được coi là các hướng chứ không phải là các điểm trong không gian. Hướng của vectơ trả về được nội suy bởi góc và độ lớn của nó được nội suy giữa các độ lớn "FROM" và "TO".
 
-### Challenge 20
+### Challenge 21
 
 #### Setup & Mục tiêu
 - "Game Over UI" thêm nhiều canvas, canvas sau đè canvas trước (Sort Order). Button "On Click" có thể reference đến một Object và call mọi method của GameObject đó.

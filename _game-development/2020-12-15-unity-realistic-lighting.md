@@ -118,9 +118,74 @@ date: 2020-05-16 14:26:14 +0700
 		- Transparency (Độ trong suốt)
 		- Alpha compositing (kết hợp alpha): là quá trình kết hợp một hình ảnh với nền để tạo ra vẻ ngoài trong suốt một phần hoặc toàn bộ.
 	- Vertex (Đỉnh): là một cấu trúc dữ liệu mô tả các thuộc tính nhất định, như vị trí của một điểm trong 2D hoặc 3D không gian, hoặc nhiều điểm trên một bề mặt.
-	- ...continue...
 
 #### Reference
 - [List of video games considered the best](https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best){:.hvr-forward rel="nofollow" target="_blank"}
 - [A series about controlling the movement of a character](https://catlikecoding.com/unity/tutorials/movement/){:.hvr-forward rel="nofollow" target="_blank"}
 - [Glossary of computer graphics](https://en.wikipedia.org/wiki/Glossary_of_computer_graphics){:.hvr-forward rel="nofollow" target="_blank"}
+- [Glossary of video game terms](https://en.wikipedia.org/wiki/Glossary_of_video_game_terms){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 4
+
+#### Setup & Mục tiêu
+- Cg (short for C for Graphics) and High-Level Shading Language (HLSL): là hai tên được đặt cho một "ngôn ngữ tô bóng" (Shading language) do Nvidia và Microsoft phát triển. Cg/HLSL dựa trên ngôn ngữ lập trình C và mặc dù chúng có chung cú pháp cốt lõi, một số tính năng của C đã được sửa đổi và các kiểu dữ liệu mới được thêm vào để làm cho Cg/HLSL phù hợp hơn cho việc lập trình các "Graphics processing unit".
+- Graphics Processing Unit (GPU ~ xử lý đồ họa): là một mạch điện tử chuyên dụng được thiết kế để thao tác và thay đổi "memory" nhanh chóng nhằm đẩy nhanh quá trình tạo hình ảnh trong "frame bufer" được thiết kế để xuất ra thiết bị hiển thị
+- Graphics pipeline: Một Graphics pipeline có thể được chia thành ba phần chính: Application, Geometry và Rasterization
+	- Application: Bước này được thực thi bởi phần mềm trên bộ xử lý chính (CPU). Trong Game Engine hiện đại như Unity, lập trình viên hầu như chỉ xử lý bước Application và sử dụng ngôn ngữ cấp cao như C#, trái ngược với C hoặc C++. Scene với tất cả các nguyên thủy của nó, thường là hình tam giác, đường thẳng và điểm, sau đó được chuyển sang bước tiếp theo trong quy trình.
+	- Geometry: Bước này (với Geometry pipeline), chịu trách nhiệm cho phần lớn các hoạt động với đa giác và các đỉnh của chúng (với Vertex pipeline), có thể được chia thành năm công việc sau. Nó phụ thuộc vào việc triển khai cụ thể cách các nhiệm vụ này được tổ chức như các bước đường ống song song thực tế.
+		- PIPELINE: Object coordinates (Model & Camera transformation) > Camera coordinates > Lighting > Projection > Clipping coordinates > Clipping > Window-Viewport transformation > Device coordinates
+	- Định nghĩa:
+		- Hình tam giác là hình học nguyên thủy phổ biến nhất của đồ họa máy tính. Nó được xác định bởi ba đỉnh của nó và một vectơ pháp tuyến
+		- vectơ pháp tuyến dùng để chỉ mặt trước của tam giác và là một vectơ vuông góc với bề mặt.
+		- Hình tam giác có thể được cung cấp với một màu sắc hoặc một kết cấu (Texture được "dán" lên trên nó).
+		- Hình tam giác luôn tồn tại trên một mặt phẳng , do đó chúng được ưu tiên hơn hình chữ nhật.
+		- Hệ tọa độ thế giới: là hệ tọa độ trong đó thế giới ảo được tạo ra. Điều này cần đáp ứng một số điều kiện để toán học sau có thể dễ dàng áp dụng:
+			- Tất cả các trục đều có tỷ lệ như nhau; Đơn vị của hệ tọa độ; Vector đơn vị của hệ thống có tương ứng trong thực tế với một mét...
+			- Việc sử dụng hệ tọa độ thuận tay phải hay tay trái có thể được xác định bởi thư viện đồ họa sẽ được sử dụng.
+			- Các Object chứa trong Scene thường có hệ tọa độ đối tượng của riêng chúng (còn gọi là "model coordinate" hoặc "local coordinate"). Để gán các Object này vào "world coordinate" hoặc "global coordinate" của toàn bộ Scene, tọa độ đối tượng được chuyển đổi bằng các phương pháp tịnh tiến (translation), quay (rotation ) hoặc chia tỷ lệ (scaling). Điều này được thực hiện bằng cách nhân các ma trận biến đổi tương ứng.
+		- Camera Transformation: Ngoài các Object, Scene cũng xác định một Camera hoặc Viewer cho biết vị trí và hướng xem mà từ đó Scene sẽ được hiển thị.
+			- Để đơn giản hóa phép chiếu và cắt sau này, cảnh được chuyển đổi sao cho máy ảnh ở điểm gốc, nhìn dọc theo trục Z.
+			- Hệ tọa độ kết quả được gọi là hệ tọa độ máy ảnh (camera coordinate) và phép biến đổi được gọi là phép biến đổi máy ảnh (camera transformation) hoặc Phép biến đổi khung nhìn (View Transformation).
+			- Ma trận chế độ xem thường được xác định từ vị trí máy ảnh, điểm mục tiêu (nơi máy ảnh nhìn) và "vectơ hướng lên" ("lên" từ điểm nhìn của người xem).
+		- Projection (Phép chiếu): Để giới hạn số lượng đối tượng được hiển thị, hai mặt phẳng cắt bổ sung được sử dụng (near = Khoảng cách nhỏ nhất có thể nhìn thấy được; far = Khoảng cách xa nhất có thể nhìn thấy được)
+			- Trong bước dựng hình thực tế, ma trận chiếu (projection matrix) * ma trận máy ảnh (camera matrix) * ma trận thế giới (world matrix) được tính toán và cuối cùng áp dụng cho từng điểm.
+		- Lighting: Hệ số khuếch đại cho Texture được tính toán cho mỗi đỉnh (vertex) dựa trên nguồn sáng và đặc tính vật liệu liên quan đến tam giác tương ứng. Trong bước rasterization sau đó, các giá trị đỉnh của một tam giác được nội suy trên bề mặt của nó. Ánh sáng chung quanh (ambient light) được áp dụng cho tất cả các bề mặt.
+		- Clipping: Về mặt lý thuyết, có thể thực hiện các phương pháp chọn lọc khác như xử lý mặt sau (backface culling), làm giảm số lượng nguyên thủy được xem xét, có thể được thực thi trong bất kỳ bước nào của đường ống đồ họa.
+		- Window-Viewport transformation: Để xuất hình ảnh đến bất kỳ vùng đích (khung nhìn) nào của màn hình, phải áp dụng một phép biến đổi khác, phép chuyển đổi Cửa sổ-Chế độ xem (Window-Viewport transformation) phải được áp dụng.
+			- Đây là một sự shift (thay đổi), tiếp theo là scaling. Tọa độ kết quả là tọa độ vùng nhớ của thiết bị đầu ra.
+			- Viewport (khung nhìn) chứa 6 giá trị: chiều cao và chiều rộng của cửa sổ tính bằng pixel, góc trên bên trái của cửa sổ trong tọa độ cửa sổ (thường là 0, 0) và giá trị tối thiểu và tối đa cho Z (thường là 0 và 1).
+	- Rasterisation: chỉ đơn giản là quá trình tính toán ánh xạ từ hình học cảnh (scene geometry) sang pixel và không quy định một cách cụ thể để tính toán màu sắc của các pixel đó. Màu cụ thể của mỗi pixel được chỉ định bằng cách "shading" (đổ bóng: trong các GPU hiện đại hoàn toàn có thể lập trình được ~ shading language).
+		- Bước rasterisation là bước cuối cùng trước "fragment shader pipeline" (rằng tất cả primitives đã được rasterized). Trong bước này, các đoạn rời rạc được tạo ra từ các primitives liên tục.
+		- Trong giai đoạn này các "grid points" được gọi là các "fragments". Mỗi fragments tương ứng với một pixel trong "frame buffer" và điều này tương ứng với một pixel của màn hình. Chúng có thể được tô màu (và có thể được chiếu sáng).
+		- Để ngăn chặn việc người dùng thấy dấu hiệu dần dần của các primitives, bộ đệm kép diễn ra. Rasterisation được thực hiện trong một vùng bộ nhớ đặc biệt. Khi hình ảnh đã được Rasterisation hoàn toàn, nó sẽ được sao chép vào vùng hiển thị của bộ nhớ hình ảnh.
+	- Inverse: Tất cả các ma trận được sử dụng đều là "Invertible matrix/nonsingular/nondegenerate/invertible" và do đó có thể đảo ngược.
+		- Phép nghịch đảo được yêu cầu để tính toán lại tọa độ thế giới từ tọa độ màn hình - ví dụ: để xác định từ vị trí con trỏ chuột của đối tượng được nhấp. Tuy nhiên, vì màn hình và chuột chỉ có hai chiều nên thứ ba vẫn chưa rõ. Do đó, một tia được chiếu tại vị trí con trỏ vào thế giới và sau đó giao của tia này với các đa giác trong thế giới được xác định.
+
+#### Reference
+- [Graphics pipeline (hình học, tọa độ, camera, phép chiếu, ánh sáng, viewport...](https://en.wikipedia.org/wiki/Graphics_pipeline){:.hvr-forward rel="nofollow" target="_blank"}
+- [Computer graphics: Concepts and principles](https://en.wikipedia.org/wiki/Computer_graphics#Concepts_and_principles){:.hvr-forward rel="nofollow" target="_blank"}
+- [Transformation matrix](https://en.wikipedia.org/wiki/Transformation_matrix){:.hvr-forward rel="nofollow" target="_blank"}
+- [Rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix){:.hvr-forward rel="nofollow" target="_blank"}
+- [Đại số tuyến tính](https://en.wikipedia.org/wiki/Linear_algebra){:.hvr-forward rel="nofollow" target="_blank"}
+- [Phép nhân ma trận](https://en.wikipedia.org/wiki/Matrix_multiplication){:.hvr-forward rel="nofollow" target="_blank"}
+- [Dot product (tích vô hướng)](https://en.wikipedia.org/wiki/Dot_product){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 5
+
+#### Setup & Mục tiêu
+- Point light: Inverse-square law (Luật nghịch đảo bình phương) nói rằng một vật lý định lượng là tỉ lệ nghịch với bình phương của khoảng cách từ nguồn đó đại lượng vật lí. Nguyên nhân cơ bản của điều này có thể được hiểu là sự pha loãng hình học tương ứng với bức xạ nguồn điểm vào không gian ba chiều.
+- Tại sao mọi bộ phim đều có màu cam và xanh dương: Có vẻ hợp lý rằng, bất kể nó có nguồn gốc từ lý thuyết màu sắc hay không, màu cam và xanh lam hiện đã đạt đến mức “quy ước”. Dù tốt hơn hay tệ hơn, hãy tô màu phim của bạn theo cách này khiến nó thực sự giống một bộ phim.
+- Three-point lighting: Bằng cách sử dụng ba vị trí riêng biệt, nhiếp ảnh gia có thể chiếu sáng đối tượng của ảnh (chẳng hạn như một người) theo ý muốn, đồng thời kiểm soát (hoặc loại bỏ hoàn toàn) bóng đổ và bóng đổ do ánh sáng trực tiếp tạo ra.
+	- Key light: là ánh sáng đầu tiên và thường quan trọng nhất. Mục đích của đèn chính là làm nổi bật hình thức và kích thước của đối tượng nhưng không bắt buộc (hiệu ứng "Hình bóng" đơn màu - Silhouette)
+		- Key light có thể là "cứng" (tập trung) hoặc "mềm" (khuếch tán), và tùy thuộc vào thiết lập mong muốn có thể được đặt ở các góc khác nhau so (30-60 độ) với đối tượng và Camera (0 độ).
+		- Ngoài góc ngang, Key light có thể được đặt cao hoặc thấp tạo ra các hiệu ứng khác nhau (kinh dị, hài...). Vị trí thẳng đứng phổ biến nhất là ở góc 30° (tức là hơi cao hơn đường mắt, mũi không được đổ bóng lên môi).
+	- Fill light: có thể được sử dụng để giảm độ tương phản của cảnh.
+		- Lighting ratio (Tỷ lệ chiếu sáng): là tỷ lệ giữa Key light (K) và Fill light (F), tùy thuộc vào tỷ lệ sẽ có được các mức tương phản khác nhau.
+	- Backlight (rim, hair, or shoulder light) giúp tạo cho đối tượng một viền ánh sáng, giúp tách đối tượng khỏi hậu cảnh và làm nổi bật các đường viền.
+- Four-point lighting (Chiếu sáng bốn điểm): Ánh sáng nền được đặt phía sau (các) chủ thể, trên cao hoặc thấp so với mặt đất. nó chiếu sáng các yếu tố hậu cảnh, chẳng hạn như tường hoặc phong cảnh ngoài trời. Kỹ thuật này có thể được sử dụng để loại bỏ bóng đổ bởi các yếu tố tiền cảnh lên hậu cảnh hoặc để thu hút nhiều sự chú ý hơn đến hậu cảnh.
+
+#### Reference
+- [Tại sao mọi bộ phim đều có màu cam và xanh dương](https://priceonomics.com/why-every-movie-looks-sort-of-orange-and-blue/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Three Point Lighting - Đại học Washington](https://courses.cs.washington.edu/courses/cse458/05au/reading/3point_lighting.pdf){:.hvr-forward rel="nofollow" target="_blank"}
+- [Color Hex Color Codes](https://www.color-hex.com/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Understand what colors mean](https://www.canva.com/learn/choose-right-colors-brand/){:.hvr-forward rel="nofollow" target="_blank"}
