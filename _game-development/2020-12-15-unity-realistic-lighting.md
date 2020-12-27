@@ -189,3 +189,81 @@ date: 2020-05-16 14:26:14 +0700
 - [Three Point Lighting - Đại học Washington](https://courses.cs.washington.edu/courses/cse458/05au/reading/3point_lighting.pdf){:.hvr-forward rel="nofollow" target="_blank"}
 - [Color Hex Color Codes](https://www.color-hex.com/){:.hvr-forward rel="nofollow" target="_blank"}
 - [Understand what colors mean](https://www.canva.com/learn/choose-right-colors-brand/){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 6
+
+#### Setup & Mục tiêu
+- Keyword (from CRYENGINE Tech Trailer): Realtime Volumetric Fog, Fully Dynamic Lighting, Vegetation Touch Bending, Object-based Motion Blur, Mesh & Terrain Blending, Accurate Sunlight Shafts, Physically Simulated Ropes, Full Body IK Ragdoll...
+- Shaders in CRYENGINE: Eye Shader, Glass Shader, Hair Shader, HumanSkin Shader, Particles Shader, ReferenceImage Shader, Vegetation Shader, Water Shader, WaterVolume Shader
+- Substance3d: Inspiring content and intelligent tools to create and apply materials for 3D
+- SideFX: Houdini - Houdini is a 3D procedural software for modeling, rigging, animation, VFX, look development, lighting and rendering in film, TV, advertising and video game ...
+- Make ASSETS yourself: Shaders, Particle System => Marketplace => Unity, Unreal engine, Cocos2D engine
+- Make 3D Model yourself: "Complete Game Character", "Realistic Character Modeling", "Character Art School" (đi theo luồng kiến thức), The Ultimate 2D Game Character Design and Animate in Photoshop"... "Advanced Particle VFX in Unity and After Effects"... (kết hợp tool + game ~ tool phục vụ cho game development)
+- What next? "Rigging, Character Modeling, Animation, VFX"... "What you'll learn", "About Instructor"... "Behind The Heretic: Meet the Devs"... "Book of the Dead: Making of blog series"...
+- Enlighten: một công cụ của Japan mang đến khả năng chiếu sáng toàn cầu theo thời gian thực trên tất cả các nền tảng.
+- Silicon Studio: Game engine & Middleware, Online Solution, Contents, Game app & Social game, Creators agent...
+	- Công nghệ: Cung cấp các giải pháp trực tuyến để phát triển trò chơi. Đối tác của AWS
+	- Nhân lực: dịch vụ nhân sự cho các mảng Web, Game, Flim
+	- Lịch sử: ban đầu là chi nhánh của SGI Nhật Bản > ký thỏa thuận liên minh kinh doanh với Vicarious Visions > Ra mắt các sản phẩm Game + Dịch vụ liên quan.
+- Game online: Xếp hạng, matching, shop, Lobby (visual lobby, simple lobby), DB request, Đấu giá, bảng thông báo, chat, Messaging, Login authentication, hệ thống nhiệm vụ & missions, Máy chủ trò chơi, Clan & party, trang viên chiến, hắc bạch đại chiến, Đi quyết & Dungeon, events...
+
+#### Reference
+- [Marvelous Designer is the best solution for making, editing and reusing 3D clothes.](https://www.marvelousdesigner.com/product/overview){:.hvr-forward rel="nofollow" target="_blank"}
+- [Wrap changes the way you process 3D-scan data](https://www.russian3dscanner.com/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Autodesk MotionBuilder: 3D character animation software](https://www.autodesk.com/products/motionbuilder/overview){:.hvr-forward rel="nofollow" target="_blank"}
+- [CRYENGINE: 5% royalty applies when you ship your project. Your first $5K annual revenue per project is royalty-free.](https://www.cryengine.com/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Inspiring content and intelligent tools to create and apply materials for 3D](https://www.substance3d.com/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Silicon Studio](https://www.siliconstudio.co.jp/corporate/){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 7
+
+#### Setup & Mục tiêu
+- The Courtyard: các tính năng GI theo thời gian thực được tính toán trước trong Unity 5. Tất cả các tính toán ánh sáng được thực hiện không đồng bộ trên các CPU worker threads.
+- Việc xử lý ánh sáng không mất nhiều thời gian. Điều mất thời gian là tạo ra hình học (geometry), kết cấu (textures), hiệu ứng (effects) và âm thanh (sound).
+- Tesseract cung cấp một engine mã nguồn mở độc đáo bắt nguồn từ công nghệ Cube 2: Sauerbraten nhưng với các kỹ thuật dựng hình hiện đại được nâng cấp.
+- Umbra, Penumbra and Antumbra: là 3 phần riêng biệt của shadow tạo ra bởi nguồn sáng (Sun) sau khi tác động lên một đối tượng (Earth). VD: Umbra & Penumbra tạo bởi 2 nguồn sáng lên một đối tượng. VD: Umbra, Penumbra, Antumbra được hình thành qua cửa sổ và cửa chớp. VD: Umbra của trái đất được thấy trong nguyệt thực một phần...
+	- Umbra: là vùng đen mà ở bên trong sẽ không thấy được nguồn sáng (đối tượng che hoàn toàn nguồn sáng)
+	- Penumbra: là vùng "nửa tối" (đối tượng chỉ che được 1 phần nguồn sáng)
+	- Antumbra: là vùng giao của 2 vùng nửa tối, đứng trong đó sẽ thấy 1 phần tối (do đối tượng che đi nằm ở "chính giữa" nguồn sáng) và 1 phần sáng (viền sáng, nguồn sáng to hơn đối tượng)
+- UV mapping: là quá trình mô hình hóa 3D, chiếu hình ảnh 2D lên bề mặt của 3D để tạo "Texture mapping". Các chữ cái "U" và "V" biểu thị các trục của 2D vì "X", "Y", "Z" đã được sử dụng để biểu thị các trục của 3D, trong khi "W" (thêm vào trong XYZ) được sử dụng để tính toán các phép quay "quaternion".
+- "Unity Platformer Kit": Bộ công cụ Unity giúp làm game nhanh chóng. VD: "Corgi Engine", "MMFeedbacks", 
+- PROTOTYPE
+	- Prototyping team montreal: 1 year, from 1-5 people, 30 projects, 1 day to 2 weeks per project, from 1 to 5 prototypes per project.
+	- Why we prototype? Evaluate fun/feasibility/appeal, Sell the idea to others, Reduce risk, experiment, Serendipity
+	- How we measure success? Team's self evaluation, internal playtests, external playtests, open beta, per project metrics
+	- 10 Tips:
+		- Pick the right scope: No need to prototype everything
+		- Where do you want to experiment?
+		- What do you want to demonstrate?
+		- Focus on the unknown: don't prototype things that already work, Identify core features, What's unique to your game? Not just gameplay, but also art, sound, and more.
+		- Keep things separated: Three Stack: Gameplay (cubes/blockout); Art (key art, concept, characters, animations...); Meta.
+		- Embrace failure: Kill ideas early, Learn from your mistakes, Rebound from them.
+		- Fake it til you make it: strive for "good enough", Reuse material as much as you can, Determine the minimum effort required.
+		- Move fast and fix things: Solid foundations will allow you to iterate faster, Prepare for experiments, Separate structure and functionality from look and feel.
+		- Pick the right tools:
+			- Main tool: Game engine, photoshop, powerpoint, after effects, pen and paper...
+			- Toolbox: Houdini, Jenkins, Github, MMTools...
+		- Make it awesome: Focus on that core feature the player does all the time, Put the effort in where it will have the most impact.
+		- Test often and test correctly: Have random people play it, Let them figure out what's fun or not, Internal & external playtests & open beta
+		- Have fun: Create a game you're proud of, Speak up, Show your work.
+	- More tips: Avoid procedural, Test on real devices, Keep things simple.
+	- More Unity: Asset Store, Cinemachine, Odin, Amplify Shader, Effectcore's VFX packs
+	- More tools: Magica Voxel/Oculus Medium, Asset Forge, The Noun Project/game-icons.net, Bfxr, Asesprite
+- Case Study:
+	- Day 1: Movement: quick iterations to get the feeling right, Grid based movement that doesn't feel clunky, Tons of options to play with: speed, acceleration, deceleration, auto move, direction queue, and more.
+	- Day 2: Collisions & Camera: Raycast based collision detection, Reuse of pre-created blocks to build the modular grid, Cinemachine for the camera
+	- Day 3: AI: A* from the Asset Store, Custom tweaks to fit the grid movement controller.
+	- Day 4: Abilities: Tested phasing, teleport and jump, Settled for jump after a few user tests, Modular ability system, ready for more.
+	- Day 5: Coins: Basic highscore system, Automatic coin generation (works whatever the grid), Easy to tweak rewards and positions
+	- Day 6: Controls: Three alternate control modes to pick from, Customizable dead zones, gravity etc, Also supports keyboard/gamepad for testing purposes (and switch port)
+	- Day 7: More abilities: Adding a new ability is super fast, Custom inspectors for game designers.
+	- Day 8: Mockup: Mix of free stuff from the asset store, previous projects and new quick and dirty blocks, Fast lighting setup
+	- MicroInteractions: Communicating feedback or result of action: Vibration when you turn your phone to mute, Pull to refresh, Twitter's heart...
+- Key takeaways: Pick the right scope, Make it awesome, Iterate quickly and test frequently
+
+#### Reference
+- [The Courtyard: Awesome Realtime GI on desktops and consoles](https://blogs.unity3d.com/2015/11/05/awesome-realtime-gi-on-desktops-and-consoles/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Tesseract: game bắn súng và tự tạo địa hình](http://tesseract.gg/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Chiếu sáng toàn cầu trong Unity 5](https://blogs.unity3d.com/2014/09/18/global-illumination-in-unity-5/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Best Practices for fast game design in Unity](https://www.youtube.com/watch?v=NU29QKag8a0){:.hvr-forward rel="nofollow" target="_blank"}
+- [Free Template KIT](http://unityassetcollection.com/category/templates/page/7/){:.hvr-forward rel="nofollow" target="_blank"}
