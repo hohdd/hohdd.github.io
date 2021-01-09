@@ -249,7 +249,7 @@ date: 2020-05-16 14:26:14 +0700
 	- More tips: Avoid procedural, Test on real devices, Keep things simple.
 	- More Unity: Asset Store, Cinemachine, Odin, Amplify Shader, Effectcore's VFX packs
 	- More tools: Magica Voxel/Oculus Medium, Asset Forge, The Noun Project/game-icons.net, Bfxr, Asesprite
-- Case Study:
+- Case Study
 	- Day 1: Movement: quick iterations to get the feeling right, Grid based movement that doesn't feel clunky, Tons of options to play with: speed, acceleration, deceleration, auto move, direction queue, and more.
 	- Day 2: Collisions & Camera: Raycast based collision detection, Reuse of pre-created blocks to build the modular grid, Cinemachine for the camera
 	- Day 3: AI: A* from the Asset Store, Custom tweaks to fit the grid movement controller.
@@ -267,3 +267,15 @@ date: 2020-05-16 14:26:14 +0700
 - [Chiếu sáng toàn cầu trong Unity 5](https://blogs.unity3d.com/2014/09/18/global-illumination-in-unity-5/){:.hvr-forward rel="nofollow" target="_blank"}
 - [Best Practices for fast game design in Unity](https://www.youtube.com/watch?v=NU29QKag8a0){:.hvr-forward rel="nofollow" target="_blank"}
 - [Free Template KIT](http://unityassetcollection.com/category/templates/page/7/){:.hvr-forward rel="nofollow" target="_blank"}
+
+### Challenge 8
+
+#### Setup & Mục tiêu
+- Ambient occlusion (hiện tượng che khuất môi trường xung quanh): là một kỹ thuật shading and rendering được sử dụng để tính toán mức độ phơi sáng của từng điểm trong cảnh với ánh sáng xung quanh. Ví dụ, bên trong của một cái ống thường bị che khuất nhiều hơn (và do đó tối hơn) so với các bề mặt bên ngoài lộ ra và trở nên tối hơn khi đi sâu vào bên trong ống.
+- Screen space ambient occlusion (SSAO): giống như thêm "image inverted đen trắng" làm nổi bật phần gấp khúc...
+- Light Probes: trong môi trường ánh sáng Baked (để tăng performance) đối với những Object di chuyển, sử dụng "Light probes" để áp dụng ánh sáng (thông tin lấy từ Baked) cho Object chuyển động.
+
+#### Reference
+- [Material charts](https://docs.unity3d.com/Manual/StandardShaderMaterialCharts.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [Using Light probes in Unity 3D](http://gyanendushekhar.com/2020/02/16/using-light-probes-in-unity-3d/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Gyanendu Shekhar's Blog](http://gyanendushekhar.com/unity/){:.hvr-forward rel="nofollow" target="_blank"}
