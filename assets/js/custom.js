@@ -2,7 +2,7 @@
 function documentReady() {
   try {
     openAudioControl();
-  } catch (error) {}
+  } catch (error) { }
   var tocnavElm = document.getElementsByClassName("toc-nav")[0];
   if (tocnavElm) {
     tocnavElm.addEventListener('click', () => {
@@ -11,13 +11,13 @@ function documentReady() {
   }
   try {
     mermaid.initialize({
-      startOnLoad:true,
-      flowchart:{
-        useMaxWidth:true,
-        htmlLabels:true
+      startOnLoad: true,
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true
       }
     });
-  } catch (error) {}
+  } catch (error) { }
   applyEventsForAudios();
   try {
     window.quillEditor = new Quill('#quillNoteEditor', {
@@ -31,29 +31,29 @@ function documentReady() {
       return window.quillEditor.root.innerHTML;
     };
     loadMemo();
-  } catch (error) {}
+  } catch (error) { }
 }
 
 // Open and close Menu
 function toggleMenu() {
-    if (document.getElementById("menuElm").style.display === "block") {
-        document.getElementById("menuIcon").innerHTML = "menu";
-        document.getElementById("menuElm").style.display = "none";
-    } else {
-        document.getElementById("menuIcon").innerHTML = "close";
-        document.getElementById("menuElm").style.width = "100%";
-        document.getElementById("menuElm").style.display = "block";
-    }
+  if (document.getElementById("menuElm").style.display === "block") {
+    document.getElementById("menuIcon").innerHTML = "menu";
+    document.getElementById("menuElm").style.display = "none";
+  } else {
+    document.getElementById("menuIcon").innerHTML = "close";
+    document.getElementById("menuElm").style.width = "100%";
+    document.getElementById("menuElm").style.display = "block";
+  }
 }
 
 function toggleTOC() {
   var tocnavElement = document.getElementsByClassName("toc-nav")[0];
   if (tocnavElement) {
     if (tocnavElement.style.display === "block") {
-        tocnavElement.style.display = "none";
+      tocnavElement.style.display = "none";
     } else {
-        tocnavElement.style.display = "block";
-        tocnavElement.style.top = "0px";
+      tocnavElement.style.display = "block";
+      tocnavElement.style.top = "0px";
     }
   }
 }
@@ -153,7 +153,7 @@ function onClickApplyAs() {
       asRandom.checked = false;
     }
   }
-  document.getElementById('audioSettings').style.display='none';
+  document.getElementById('audioSettings').style.display = 'none';
 }
 
 function applyEventsForAudios() {
@@ -162,7 +162,7 @@ function applyEventsForAudios() {
     window.audioList = audios;
     window.audiosLength = audios.length;
     for (let i = 0; i < audios.length; i++) {
-      if (! window.addedEventListenerFlag) {
+      if (!window.addedEventListenerFlag) {
         // ended
         audios.item(i).addEventListener('ended', () => {
           console.log('audio ended =>', i);
@@ -217,7 +217,7 @@ function handleAudioEnd(audios, currentIndex, audiosLength) {
   window.currentAudioPlaying.play();
 }
 
-function isOdd(num) { return num % 2;}
+function isOdd(num) { return num % 2; }
 
 /**
  * Ưu tiên Repeat > Auto Next > Random
@@ -234,12 +234,12 @@ function getNextAudio(currentIndex, audiosLength) {
     // check ItemToItem (even or odd) here
     if (document.getElementById('asPlayItemToItem').checked) {
       if (document.getElementById('asEvenOrOdd').value === 'odd') {
-        if ( isOdd(nextIndex) ) {
+        if (isOdd(nextIndex)) {
           return nextIndex;
         }
         return getNextAudio(nextIndex, audiosLength);
       } else {
-        if ( ! isOdd(nextIndex) ) {
+        if (!isOdd(nextIndex)) {
           return nextIndex;
         }
         return getNextAudio(nextIndex, audiosLength);
@@ -260,20 +260,20 @@ function randomIndex(min, max) {
 function onClickGotoCurrentAudio() {
   if (window.currentAudioPlaying) {
     window.currentAudioPlaying.scrollIntoView();
-    document.getElementById('audioSettings').style.display='none';
+    document.getElementById('audioSettings').style.display = 'none';
   }
 }
 
 function onClickShowAudioControl() {
   if (document.getElementById("audioControlGroup")) {
-    if (! window.audioControlIsShow) {
+    if (!window.audioControlIsShow) {
       document.getElementById("audioControlGroup").style.display = "block";
       window.audioControlIsShow = true;
     } else {
       document.getElementById("audioControlGroup").style.display = "none";
       window.audioControlIsShow = false;
     }
-    document.getElementById('audioSettings').style.display='none';
+    document.getElementById('audioSettings').style.display = 'none';
   }
 }
 function audioControlPlayOrPause() {
@@ -339,31 +339,49 @@ function say(m) {
   speechSynthesis.speak(msg);
 }
 
+// tabs in articles
+function openTab(volumeTxt, activateTxt, deactivateTxt) {
+  try {
+    var activateId = activateTxt + '-' + volumeTxt;
+    var deactivateId = deactivateTxt + '-' + volumeTxt;
+
+    document.getElementById(deactivateId).style.display = "none";
+    document.getElementById(deactivateId + '-tab').className = document.getElementById(deactivateId + '-tab').className.replace(" w3-red", "");
+    document.getElementById(activateId + '-tab').className = document.getElementById(activateId + '-tab').className.replace(" w3-red", "");
+
+    document.getElementById(activateId).style.display = "block";
+    document.getElementById(activateId + '-tab').className += " w3-red";
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
 // BEGIN Konami Code
 // var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 var pattern = ['w', 'w', 's', 's', 'a', 'd', 'a', 'd', 'e', 'r'];
 var current = 0;
 
 var keyHandler = function (event) {
-	// If the key isn't in the pattern, or isn't the current key in the pattern, reset
-	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
-		current = 0;
-		return;
-	}
+  // If the key isn't in the pattern, or isn't the current key in the pattern, reset
+  if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+    current = 0;
+    return;
+  }
 
-	// Update how much of the pattern is complete
-	current++;
+  // Update how much of the pattern is complete
+  current++;
 
-	// If complete, action and reset
-	if (pattern.length === current) {
+  // If complete, action and reset
+  if (pattern.length === current) {
     current = 0;
     try {
       for (let item of document.getElementsByClassName('konamiHide')) {
         item.style.display = 'initial';
       }
       document.getElementById('inputCheat').style.display = 'none';
-    } catch (error) {}
-	}
+    } catch (error) { }
+  }
 
 };
 
