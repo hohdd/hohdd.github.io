@@ -96,6 +96,9 @@ ul > a {
   z-index: 10;
   overflow: scroll;
 }
+.overflow-scroll {
+  overflow: scroll;
+}
 .toc-nav::-webkit-scrollbar {
   width: 0px;
 }

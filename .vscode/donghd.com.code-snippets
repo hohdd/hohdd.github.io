@@ -37,7 +37,65 @@
 // ------------------------------------------------------------------------------------>
 // {% endraw %}{% endcomment %}
 {
-	
+	"donghd.com 4000 english words": {
+		"prefix": "dh4k-words",
+		"body": [
+			"",
+			"### Word List",
+			"",
+			"{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/4k-words/volume-1/4k-essential-volume1-01-01.mp3 %}",
+			"",
+			"| **WORD** [*TYPE*] {% u MEANING%}. | MeaningTranslateMore",
+			"| MeaningSentence  | TransMeaningSentence",
+			"| Example | TransExample",
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}",
+			"",
+			"| **WORD** [*TYPE*] {% u MEANING%}. | MeaningTranslateMore",
+			"| MeaningSentence  | TransMeaningSentence",
+			"| Example | TransExample",
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}",
+			"",
+			"| **WORD** [*TYPE*] {% u MEANING%}. | MeaningTranslateMore",
+			"| MeaningSentence  | TransMeaningSentence",
+			"| Example | TransExample",
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}",
+			"",
+			"### Story",
+			"",
+			"{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/4k-words/volume-1/4k-essential-volume1-01-02.mp3 %}",
+			"",
+			"<div class=\"w3-bar w3-light-gray\">",
+			"    <button id=\"story-v1-01-tab\" class=\"w3-bar-item w3-button w3-red\" onclick=\"openTab('v1-01', 'story','trans')\">Story</button>",
+			"    <button id=\"trans-v1-01-tab\" class=\"w3-bar-item w3-button       \" onclick=\"openTab('v1-01','trans', 'story')\">Google Translate</button>",
+			"</div>",
+			"",
+			"<div id=\"story-v1-01\" class=\"w3-container w3-border overflow-scroll\">",
+			"<pre>",
+			"STORY",
+			"</pre>",
+			"</div>",
+			"",
+			"<div id=\"trans-v1-01\" class=\"w3-container w3-border overflow-scroll\" style=\"display:none\">",
+			"<pre>",
+			"TRANSLATE",
+			"</pre>",
+			"</div>",
+			""
+		],
+		"description": "donghd.com 4000 english words"
+	},
+	"donghd.com 4000 english words (word list item)": {
+		"prefix": "dhwords-list-item-4k",
+		"body": [
+			"",
+			"| **WORD** [*TYPE*] {% u MEANING%}. | MeaningTranslateMore",
+			"| MeaningSentence  | TransMeaningSentence",
+			"| Example | TransExample",
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}",
+			""
+		],
+		"description": "donghd.com 4000 english words (word list item)"
+	},
 	"donghd.com part 7 template": {
 		"prefix": "dhpart7template",
 		"body": [
