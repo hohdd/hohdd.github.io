@@ -46,7 +46,7 @@ module Jekyll
         end
       end
       def render(context)
-        "<img src=\"#{@url}\" alt=\"#{@text}\" class=\"w3-image cursor-zoom\" onclick=\"onZoomImg(this)\">"
+        "<img src=\"#{@url}\" title=\"#{@text}\" class=\"w3-image cursor-zoom\" onclick=\"onZoomImg(this)\">"
       end
     end
     

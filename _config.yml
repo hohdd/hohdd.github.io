@@ -53,6 +53,16 @@ collections:
     # thumbnail: "/path/to/image.jpg"
     title: "Mobile Development"
     description: "Tổng hợp các ghi chép trên con đường chinh phục Mobile Development :D"
+  japanese:
+    output: true
+    # "isSerial" và "show" để filter
+    isSerial: true
+    show: true
+    # phải có "/collections/" vì đã được hardcore URL trong "categories" và đường dẫn đến "search.json" trong INDEX
+    permalink: /collections/japanese/:title
+    # thumbnail: "/path/to/image.jpg"
+    title: "Learning Japanese"
+    description: "Tổng hợp các ghi chép trên con đường chinh phục tiếng Nhật :)"
   # END serials
 
 # Plugins
