@@ -19,8 +19,8 @@ mermaid: false
 highlight: false
 amp: true
 audioSetting: true # có menu để setting audio or not
-category: Speaking
-collection: Speaking
+category: Other
+collection: Other
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2019-06-13 22:26:14 +0700
 ### permalink: /url-ghi-de-mac-dinh # cân nhắc nếu muốn dùng!

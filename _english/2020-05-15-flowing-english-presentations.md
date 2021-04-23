@@ -22,9 +22,9 @@ mermaid: false
 highlight: false # để thêm màu mè cho <pre> CODE </pre>
 amp: true
 audioSetting: true # có menu để setting audio or not
-collection: Speaking # this for AMP related post
+collection: Other # this for AMP related post
 ### category: dùng để group collection
-category: Speaking
+category: Other
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700

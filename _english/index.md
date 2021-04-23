@@ -42,7 +42,7 @@ draft: true
         <ul class="w3-ul">
         {% for doc in group.items %}
           {% if doc.draft != true %}
-          <a href="{{ site.baseurl }}{{doc.url}}" class="hvr-forward"><li><span></span>{{doc.title}} · {{ doc.content | reading_time }}</li></a>
+          <a href="{{ site.baseurl }}{{doc.url}}" class="hvr-forward"><li><span></span>{{doc.title}} · {{ doc.content | reading_time }} {% if doc.is_new %}<span class="w3-tag w3-blue">New!</span>{% endif %}{% if doc.is_hot %}<span class="w3-tag w3-red">HOT!</span>{% endif %}{% if doc.is_update %}<span class="w3-tag w3-green">Update!</span>{% endif %}</li></a>
           {% endif %}
         {% endfor %}
         </ul>

@@ -1,6 +1,7 @@
 ---
 layout: collections
 author_name: Dong Ho
+is_hot: true
 draft: false # public or not
 sticky: false # sticky or not
 exclude: false # exclude on search

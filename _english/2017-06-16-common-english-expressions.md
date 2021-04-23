@@ -1,6 +1,7 @@
 ---
 layout: collections
 author_name: Dong Ho
+is_hot: true
 ### Chế độ hiển thị (bài viết nháp mặc định false)
 draft: false
 ### SEO
