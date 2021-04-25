@@ -56,9 +56,9 @@ layout: default
       {% if doc.category == page.category %}
       <!-- {{ doc.date | date_to_string }} -->
         {% if doc != page and doc.draft != true %}
-        <a href="{{ site.baseurl }}{{doc.url}}" class="hvr-forward"><li><span></span>{{doc.title}} · {{ doc.content | reading_time }}</li></a>
+        <a href="{{ site.baseurl }}{{doc.url}}" class="hvr-forward"><li><span></span>{{doc.title}} · {{ doc.content | reading_time }} {% if doc.is_new %}<span class="w3-tag w3-blue">New!</span>{% endif %}{% if doc.is_hot %}<span class="w3-tag w3-red">HOT!</span>{% endif %}{% if doc.is_update %}<span class="w3-tag w3-green">Update!</span>{% endif %}</li></a>
         {% else %}
-        <li><span></span>→ {{doc.title}} · {{ doc.content | reading_time }}</li>
+        <li><span></span>→ {{doc.title}} · {{ doc.content | reading_time }} {% if doc.is_new %}<span class="w3-tag w3-blue">New!</span>{% endif %}{% if doc.is_hot %}<span class="w3-tag w3-red">HOT!</span>{% endif %}{% if doc.is_update %}<span class="w3-tag w3-green">Update!</span>{% endif %}</li>
         {% endif %}
       {% endif %}
     {% endif %}
@@ -90,6 +90,10 @@ layout: default
 	})();
 </script>
 
+<!-- [Q]uiz with selected text -->
+{% include quiz-with-selected-text.html %}
+
+{% comment %}
 <!-- FB -->
 <div class="w3-padding-32 opacity-transition-hover">
   {% if page.draft != true %}
@@ -105,3 +109,4 @@ layout: default
     <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" width="100%"></div>
   {% endif %}
 </div>
+{% endcomment %}

@@ -356,6 +356,21 @@ function openTab(volumeTxt, activateTxt, deactivateTxt) {
   }
 }
 
+function getSelectionText() {
+  var text = "";
+  var activeEl = document.activeElement;
+  var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
+  if (
+    (activeElTagName == "textarea") || (activeElTagName == "input" &&
+    /^(?:text|search|password|tel|url)$/i.test(activeEl.type)) &&
+    (typeof activeEl.selectionStart == "number")
+  ) {
+      text = activeEl.value.slice(activeEl.selectionStart, activeEl.selectionEnd);
+  } else if (window.getSelection) {
+      text = window.getSelection().toString();
+  }
+  return text;
+}
 
 // BEGIN Konami Code
 // var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
@@ -363,6 +378,21 @@ var pattern = ['w', 'w', 's', 's', 'a', 'd', 'a', 'd', 'e', 'r'];
 var current = 0;
 
 var keyHandler = function (event) {
+  // BEGIN - if [Q]uery
+  if (['q', 'Q'].indexOf(event.key) >= 0) {
+    var selectedTxt = getSelectionText();
+    if (!selectedTxt) {
+      console.log('Empty....');
+    } else {
+      try {
+        performQuiz(selectedTxt);
+      } catch (error) {
+        console.log(error);        
+      }
+    }
+  }
+  // END - if [Q]uery
+
   // If the key isn't in the pattern, or isn't the current key in the pattern, reset
   if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
     current = 0;

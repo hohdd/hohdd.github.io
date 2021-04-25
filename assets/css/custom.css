@@ -166,6 +166,10 @@ ul > a {
   cursor: zoom-in;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
