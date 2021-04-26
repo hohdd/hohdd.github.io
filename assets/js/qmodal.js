@@ -5,6 +5,7 @@ function performQuiz(selectedTxt) {
 
     /* handle quiz */
     qModalHandleQuiz();
+    resetTotoList();
 
     /* handle check typing: qModalTxtAreaOnkeyup() */
 
@@ -90,6 +91,13 @@ function clearFormTextArea() {
     document.getElementById("qModalSentenceEmpty").innerHTML = '';
     document.getElementById("qModalSentencePice").innerHTML = '';
     document.getElementById('sentenceTypeAreaId').value = '';
+}
+function resetTotoList() {
+    try {
+        document.getElementById('myUL').childNodes.forEach((el) => { el.classList.remove("checked"); });
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 /* https://www.w3schools.com/html/horse.mp3 */
