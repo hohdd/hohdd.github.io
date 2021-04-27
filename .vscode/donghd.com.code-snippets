@@ -268,7 +268,7 @@
 	"donghd.com insert an mp3 player": {
 		"prefix": "dhmp3",
 		"body": [
-			"{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/750-words/AAAA %}"
+			"{% mp3 /assets/audio/jp/mina/bai01/AAAAAA.mp3 %}"
 		],
 		"description": "donghd.com insert an mp3 player"
 	},
