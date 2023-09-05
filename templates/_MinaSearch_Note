@@ -1,0 +1,100 @@
+searchResultTemplate (còn phải xử lý tiếp cho các pattern khác thêm vào)
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_grid_six_col&stacked=h
+https://codebeautify.org/minify-html
+-----
+STYLE:
+/* for span_container 01-10 */
+/* for container 01-10 */
+/* for row_container 01-06 */
+-----
+<div class="w3-container w3-display-container w3-hover-light-gray span_container_01">
+  <button class="w3-button w3-circle w3-ripple w3-teal w3-display-topright" onclick="addToTop(this, this.parentElement)">+</button>
+  <p>
+    <!-- 1-20 -->
+    <span class="span_container_01 w3-badge {badge_color}"><span class="span_result_01">{badge_txt}</span></span>
+    <span class="span_container_11">&nbsp;[Bài <span class="span_result_11">{lesson_id}</span>]&nbsp;</span><!-- all -->
+    <span class="span_container_12 w3-text-purple">[<span class="span_result_12">{name}</span>]</span><!-- Ngữ pháp -->
+    <span class="span_container_02 w3-text-purple">[<span class="span_result_02">{mean}</span>] <span class="span_container_10">[<span class="span_result_10">{type}</span>]</span></span>
+    <span class="span_container_09 w3-text-purple">[<span class="span_result_09">{vietnamese}</span>]</span><!-- getReference -->
+    <span class="span_container_03">&nbsp;<span class="span_result_03 w3-text-red">{tei}</span>&nbsp;</span>
+    <span class="span_container_11">&nbsp;<span class="span_result_11 w3-text-red">{japanese}</span>&nbsp;</span><!-- getReference -->
+    <span class="span_container_04">&nbsp;<span class="span_result_04 w3-text-red">{hiragana}</span>&nbsp;</span><!-- từ vựng -->
+    <span class="span_container_05">(<span class="span_result_05 w3-text-red">{roumaji}</span>)</span>
+    <span class="span_container_06">&nbsp;[<span class="span_result_06">{jishokei}</span>]&nbsp;</span>
+    <span class="span_container_07">&nbsp;[<span class="span_result_07">{kanji}</span>]&nbsp;</span><!-- từ vựng -->
+    <span class="span_container_08">&nbsp;[<i><span class="span_result_08">{cn_mean}</span></i>]&nbsp;</span><!-- từ vựng -->
+  </p>
+  <!-- 1-11 -->
+  <p class="container_01">Ý Định: <span class="result_01">{igoukei}</span></p>
+  <p class="container_02">Mệnh Lệnh: <span class="result_02">{meireikei}</span></p>
+  <p class="container_03">Sai Khiến: <span class="result_03">{shiekikei}</span></p>
+  <p class="container_04">Cấm Chỉ: <span class="result_04">{kinshikei}</span></p>
+  <p class="container_05">Note: <span class="result_05">{note}</span></p><!-- getReference -->
+  <p class="container_06"><span class="result_06">{content}</span></p><!-- Ngữ pháp -->
+  <p class="container_07"><span class="result_07">{reibun}</span></p><!-- Reibun -->
+  <p class="container_08"><span class="result_08">{vi_mean}</span></p><!-- Reibun -->
+  <p class="container_09"><span class="result_09">{pinyin}</span></p><!-- 1k giao tiếp -->
+  <div class="w3-row">
+    <!-- row_m2: 1-10 -->
+    <!-- 6 cột: Thể động từ -->
+    <div class="w3-col m2 w3-center w3-pale-red row_m2_01">
+      <p>Thể 「て」</p>
+      <p class="row_m2_result_01">{tekei}</p>
+    </div>
+    <div class="w3-col m2 w3-center w3-pale-yellow row_m2_02">
+      <p>Thể 「た」</p>
+      <p class="row_m2_result_02">{takei}</p>
+    </div>
+    <div class="w3-col m2 w3-center w3-pale-blue row_m2_03">
+      <p>Thể 「ない」</p>
+      <p class="row_m2_result_03">{naikei}</p>
+    </div>
+    <div class="w3-col m2 w3-center w3-pale-yellow row_m2_04">
+      <p>Thể 「Khả Năng」</p>
+      <p class="row_m2_result_04">{kanokei}</p>
+    </div>
+    <div class="w3-col m2 w3-center w3-pale-green row_m2_05">
+      <p>Thể 「Điều Kiện」</p>
+      <p class="row_m2_result_05">{jokenkei}</p>
+    </div>
+    <div class="w3-col m2 w3-center w3-pale-red row_m2_06">
+      <p>Thể 「Bị Động」</p>
+      <p class="row_m2_result_06">{ukeimikei}</p>
+    </div>
+
+    <!-- row_s4: 1-10 -->
+    <!-- row_s6: 1-10 -->
+    <!-- 3 cột: Tự/Tha Động từ -->
+    <div class="w3-col s6 w3-center w3-pale-red row_s6_01">
+      <p>「Tự:自動詞」[S (N)] + が + 自動詞</p>
+      <p class="row_s6_result_01">{jidoushi}</p>
+      <p class="row_s6_02"><span class="row_s6_result_02">{roumaji}</span></p>
+      <p class="row_s6_03"><span class="row_s6_result_03">{ji_mean}</span></p>
+    </div>
+    <div class="w3-col s6 w3-center w3-pale-green row_s6_06">
+      <p>「Tha:他動詞」[S (N)] + は + [O (N)] + を + 他動詞</p>
+      <p class="row_s6_result_06">{tadoushi}</p>
+      <p class="row_s6_07"><span class="row_s6_result_07">{troumaji}</span></p>
+      <p class="row_s6_08"><span class="row_s6_result_08">{ta_mean}</span></p>
+    </div>
+  </div>
+</div>
+<!-- ----- -->
+Nội dung Badget   "badge_txt" -> thêm sau khi tiền xử lý JSON xong
+Màu nền Badget   "badge_color" -> thêm sau khi tiền xử lý JSON xong
+3. あるきます		"tei"
+Romaji        "roumaji"
+Tiếng việt		"mean"
+Phân loại		"type"
+Thể từ điển		"jishokei"
+Thể 「て」			"tekei"
+Thể 「た」			"takei"
+Thể 「ない」		"naikei"
+Thể Khả Năng	"kanokei"
+Thể Ý Định		"igoukei"
+Thể Mệnh Lệnh	"meireikei"
+Thể Sai Khiên	"shiekikei"
+Thể Cấm Chỉ		"kinshikei"
+Thể Điều Kiện	"jokenkei"
+Thể Bị Động		"ukeimikei"
+<!-- ----- -->

@@ -22,6 +22,8 @@ collections:
     output: true
   authors:
     output: true
+  tools:
+    output: true
   # BEGIN serials
   game-development:
     output: true

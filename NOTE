@@ -1,6 +1,6 @@
 *) Getting start
 ---
-1. RubyInstaller: Ruby+Devkit
+1. RubyInstaller: Ruby+Devkit 2.7.8-1
 2. Remove Gemfile.lock and run "bundle install"
 3. Check local site "jekyll serve" hoặc "bundle exec jekyll serve"
 
@@ -9,6 +9,11 @@
 1. Working on [develop] branch
 2. check local site
 3. run build-and-deploy.sh
+
+*) Thêm một Tool
+---
+1. clone 1 file trong thư mục "_tools" và điền các thông tin tool_name, icon, description
+2. xây dựng nội dung cho file vừa tạo
 
 *) Tạo một Serial
 ---

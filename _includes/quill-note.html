@@ -8,7 +8,7 @@
         <header class="w3-container light-grey"> 
          <span onclick="document.getElementById('quillNote').style.display='none'" 
          class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-         <h2>Your Memo</h2>
+         <h2>Memo</h2>
         </header>
 
         <div class="w3-container w3-section">
@@ -33,12 +33,14 @@
     }
     
     function onNoteSave() {
-        window.localStorage.setItem('donghd.com.my.note', window.quillEditor.getHTML());
+        const pathKey = window.location.pathname;
+        window.localStorage.setItem(pathKey, window.quillEditor.getHTML());
         document.getElementById('quillNote').style.display = 'none';
     }
 
     function loadMemo() {
-        const memo = window.localStorage.getItem('donghd.com.my.note');
+        const pathKey = window.location.pathname;
+        const memo = window.localStorage.getItem(pathKey);
         if (memo) {
             window.quillEditor.setHTML(memo);
         }

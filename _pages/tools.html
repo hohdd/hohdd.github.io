@@ -1,0 +1,20 @@
+---
+layout: page
+title: Tools
+description: Tools
+robots: NOINDEX, NOFOLLOW
+show: true
+# info
+titleLink: Tools
+---
+<ul class="w3-ul">
+  {% for tool in site.tools %}
+    <li class="w3-bar">
+      <img src="{% if tool.icon %}{{ tool.icon }}{% else %}/assets/img/tools/tools.jpg{% endif %}" class="w3-bar-item w3-circle w3-hide-small" style="width:150px">
+      <div class="w3-bar-item">
+        <a href="{{ tool.url }}"><h2><span class="hvr-forward">{{ tool.tool_name }}</span></h2></a>
+        {% if tool.description %}<h5>{{ tool.description }}</h5>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
