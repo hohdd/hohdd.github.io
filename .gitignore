@@ -5,3 +5,5 @@ temp/
 .jekyll-cache/
 .jekyll-metadata
 .sonarlint
+_Gemfile.lock
+Gemfile.lock_
