@@ -6,7 +6,7 @@ robots: NOINDEX, FOLLOW
 show: true
 ---
 <!-- search -->
-<div id="search-container">
+<div id="search-container" class="konamiHide">
   <label>
 		<span class="dh-unnecessary">Tìm kiếm</span>
     <input type="text" id="search-input" placeholder="Search...">
@@ -22,7 +22,7 @@ show: true
 
 {% include disclaimer-copyright.html %}
 
-<div class="w3-row">
+<div class="w3-row konamiHide">
 {% for category in site.categories %}
   <div class="w3-col s6 w3-mobile opacity-transition-hover">
     {% capture category_name %}{{ category | first }}{% endcapture %}

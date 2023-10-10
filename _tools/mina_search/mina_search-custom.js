@@ -1,5 +1,32 @@
 !(function () {
     "use strict";
+    
+    var settingsMatching = {
+        "Chia thể": "ChiaThe_check",
+        "Tự/Tha ĐT": "TuThaDT_check",
+        "Từ vựng Mina": "TuVungMina_check",
+        "Tham khảo": "ThamKhao_check",
+        "Ngữ pháp": "NguPhap_check",
+        "Reibun": "Reibun_check",
+        "Giao tiếp": "GiaoTiep_check",
+    }
+    function updateResultsView() {
+        const resultDivs = document.getElementById('results-container');
+        for (const result of resultDivs.children) {
+        const span_result_01 = result.getElementsByClassName('span_result_01');
+        if (span_result_01) {
+            const idCheckboxStr = settingsMatching[span_result_01[0].textContent];
+            if (idCheckboxStr) {
+            if (document.getElementById(idCheckboxStr).checked) {
+                result.style.display = 'block';
+            } else {
+                result.style.display = 'none';
+            }
+            }
+        }
+        }
+    }
+
     var f = {
         load: function w(t, e) {
             var n = (function r() {
@@ -130,7 +157,7 @@
                 return m.template.replace(m.pattern, function (t, e) {
                     var n = m.middleware(e, r[e], m.template);
                     // return void 0 !== n ? n : r[e] || t;
-                    return void 0 !== n ? n : r[e] || ''; // fix Null still show
+                    return void 0 !== n ? n : r[e] || ''; // DongHD fix Null still show
                 });
             },
             setOptions: function C(t) {
@@ -218,6 +245,8 @@
                     var n = t.length;
                     if (0 === n) return a(o.noResultsText);
                     for (var r = 0; r < n; r++) (t[r].query = e), a(h.compile(t[r]));
+                    console.log("DongHD: finished searching...");
+                    updateResultsView();
                 })(l.search(t), t));
         }
         function s(t) {

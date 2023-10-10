@@ -10,6 +10,9 @@
 2. check local site
 3. run build-and-deploy.sh
 
+*) Apply Konami
+1. đánh dấu class="konamiHide"
+
 *) Thêm một Tool
 ---
 1. clone 1 file trong thư mục "_tools" và điền các thông tin tool_name, icon, description

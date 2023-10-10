@@ -5,8 +5,9 @@ robots: NOINDEX, NOFOLLOW
 author_name: Dong Ho
 avatar: "/assets/img/avatar/dongho.jpg"
 position: Software Developer
-short_description: I have been programming professionally since the beginning of 2017, but my keenness for coding has been born much earlier.
-quote: Always start with WHY, not HOW.
+short_description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cum dolor asperiores iusto ab possimus repellendus totam expedita dolore fuga. Amet harum dolor, blanditiis velit reprehenderit laborum distinctio cum illo.
+# quote: Always start with WHY, not HOW.
+quote: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cum dolor asperiores iusto ab possimus repellendus totam expedita dolore fuga. Amet harum dolor, blanditiis velit reprehenderit laborum distinctio cum illo.
 ---
 <div class="w3-mobile">
     <h1>{{ page.author_name }}</h1>

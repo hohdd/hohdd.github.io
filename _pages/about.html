@@ -17,17 +17,21 @@ show: true
 </style>
 <div class="w3-row" id="about-grid">
     <div class="w3-col w3-container w3-mobile" style="width:35%">
-        <img src="/assets/img/dongho.jpg" class="w3-round w3-circle" style="width: 100%;" alt="Đông Hồ">
+        <img src="/assets/img/dongho.jpg" class="w3-round w3-circle" style="width: 100%;" alt="Đông Hồ" onclick="removeHat()">
     </div>
     <div class="w3-col w3-mobile" style="width:65%">
         <div class="w3-section">
-            <h2>About</h2>
+            <h2 onclick="removeHat()">About</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cum dolor asperiores iusto ab possimus repellendus totam expedita dolore fuga. Amet harum dolor, blanditiis velit reprehenderit laborum distinctio cum illo.
+            {% comment %}
             I have been programming professionally since the beginning of 2016, but my keenness for coding has been born
             much earlier. Having a particular interest in the JVM ecosystem and web development, I am mostly focusing on
             technologies related to Java and JavaScript. Although, I do not limit myself only to these and keep an open
             mind
             to new ideas and trends.
+            {% endcomment %}
         </div>
+        {% comment %}
         <div class="w3-section">
             <form
                 action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeEjbLZPym3VOr-oAEIQfVtNvOGtnz93t6VyrS4GyycbzPYuQ/formResponse"
@@ -59,6 +63,7 @@ show: true
                 </div>
             </form>
         </div>
+        {% endcomment %}
     </div>
 </div>
 <script>

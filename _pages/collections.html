@@ -7,7 +7,7 @@ show: true
 permalink: /collections
 ---
 <!-- search -->
-<div id="search-container">
+<div id="search-container" class="konamiHide">
   <label>
 		<span class="dh-unnecessary">Tìm kiếm</span>
     <input type="text" id="search-input" placeholder="Search...">
@@ -20,7 +20,12 @@ permalink: /collections
 {% if serials.size > 0 %}
 <div class="w3-padding-16"></div>
 <h2>Collections</h2>
-<ul class="w3-ul w3-card">
+
+{% include disclaimer-not-updated.html %}
+
+{% include disclaimer-copyright.html %}
+
+<ul class="w3-ul w3-card konamiHide">
   {% for serial in serials %}
   <li class="w3-bar">
     {% if serial.thumbnail %}<img src="{{ serial.thumbnail }}" class="w3-bar-item w3-hide-small" style="width:150px">{% endif %}

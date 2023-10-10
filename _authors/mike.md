@@ -4,7 +4,7 @@ robots: NOINDEX, NOFOLLOW
 # info
 author_name: Mike Doe
 avatar: "/assets/img/avatar/mike.png"
-position: Web Designer
+position: Designer
 short_description: Mike has been eating fruit since he was baby.
 quote: 
 ---
