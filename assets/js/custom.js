@@ -32,6 +32,11 @@ function documentReady() {
     };
     loadMemo();
   } catch (error) { }
+  try {
+    if (window.localStorage.getItem('KNM_donghd')) {
+      showKNM();
+    }
+  } catch (error) { }
 }
 
 // Open and close Menu
@@ -374,7 +379,8 @@ function getSelectionText() {
 
 // BEGIN Konami Code
 // var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-var pattern = ['w', 'w', 's', 's', 'a', 'd', 'a', 'd', 'e', 'r'];
+// var pattern = ['w', 'w', 's', 's', 'a', 'd', 'a', 'd', 'e', 'r'];
+var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'x', 'o'];
 var current = 0;
 
 var keyHandler = function (event) {
@@ -406,14 +412,23 @@ var keyHandler = function (event) {
   if (pattern.length === current) {
     current = 0;
     try {
-      for (let item of document.getElementsByClassName('konamiHide')) {
-        item.style.display = 'initial';
-      }
-      document.getElementById('inputCheat').style.display = 'none';
+      showKNM();
+      window.localStorage.setItem('KNM_donghd', true);
     } catch (error) { }
   }
 
 };
+
+function showKNM() {
+  for (let item of document.getElementsByClassName('konamiHide')) {
+    item.style.display = 'initial';
+  }
+  document.getElementById('hat').style.display = 'initial';
+}
+function removeHat() {
+  window.localStorage.setItem('KNM_donghd', '');
+  document.getElementById('hat').style.display = 'none';
+}
 
 // Listen for keydown events
 document.addEventListener('keydown', keyHandler, false);

@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/tools/mina_search",
         "headline": "Mina_search",
         
-        "dateModified": "2023-09-07 12:55:37 +0700",
+        "dateModified": "2023-10-10 23:41:27 +0700",
         "description": "Minano Nihongo Search",
         
       }
@@ -102,7 +102,7 @@
         
       </span>
       <time datetime="" class="by-line"> ·  
-      <span title="reading time">· about 6 mins read </span> · 
+      <span title="reading time">· about 7 mins read </span> · 
       
       <span>
         
@@ -354,6 +354,18 @@
 </style>
 
 <script>
+  var settingsMatching2 = {
+      "Chia thể": "ChiaThe_check",
+      "Tự/Tha ĐT": "TuThaDT_check",
+      "Từ vựng Mina": "TuVungMina_check",
+      "Tham khảo": "ThamKhao_check",
+      "Ngữ pháp": "NguPhap_check",
+      "Reibun": "Reibun_check",
+      "Giao tiếp": "GiaoTiep_check",
+  }
+</script>
+
+<script>
   function addToTop(thisDiv, parentDiv) {
     thisDiv.remove();
     document.getElementById("added-results-container").appendChild(parentDiv);
@@ -399,20 +411,29 @@
 
 <!-- search -->
 <div id="search-container">
+<div class="input_settings w3-padding">
+  <label><input id="ChiaThe_check" class="w3-check" type="checkbox" onchange="onchangeInputSettings('ChiaThe_check', this)" />&nbsp;<span class="w3-yellow">Chia thể</span></label>
+  <label><input id="TuThaDT_check" class="w3-check" type="checkbox" onchange="onchangeInputSettings('TuThaDT_check', this)" />&nbsp;<span class="w3-green">Tự/Tha ĐT</span></label>
+  <label><input id="TuVungMina_check" class="w3-check" type="checkbox" onchange="onchangeInputSettings('TuVungMina_check', this)" />&nbsp;<span class="w3-pale-yellow">Từ vựng Mina</span></label>
+  <label><input id="ThamKhao_check" class="w3-check" type="checkbox" onchange="onchangeInputSettings('ThamKhao_check', this)" />&nbsp;<span class="w3-pale-blue">Tham khảo</span></label>
+  <label><input id="NguPhap_check" class="w3-check" type="checkbox" onchange="onchangeInputSettings('NguPhap_check', this)" />&nbsp;<span class="w3-purple">Ngữ pháp</span></label>
+  <label><input id="Reibun_check" class="w3-check" type="checkbox" onchange="onchangeInputSettings('Reibun_check', this)" />&nbsp;<span class="w3-teal">Reibun</span></label>
+  <label><input id="GiaoTiep_check" class="w3-check" type="checkbox" onchange="onchangeInputSettings('GiaoTiep_check', this)" />&nbsp;<span class="w3-indigo">Giao tiếp</span></label>
+</div>
 	<label>
-		<input type="text" class="w3-card-4 w3-yellow" id="search-input" placeholder="Minano Nihongo Search..." />
+		<input type="text" class="w3-card-4" id="search-input" placeholder="Minano Nihongo Search..." />
 	</label>
 	<div id="results-container" class="w3-card"></div>
 </div>
-<script src="/assets/js/mina_search-custom.js" type="text/javascript"></script>
+<script src="/tools/mina_search/mina_search-custom.js" type="text/javascript"></script>
 
 <script>
 	(function() {
 		JSearch({
 			searchInput: document.getElementById('search-input'),
 			resultsContainer: document.getElementById('results-container'),
-			json: '/search/data/MinaSearch_mergeAllGet.json',
-      limit: 10
+			json: '/tools/mina_search/MinaSearch_mergeAllGet.json',
+      limit: 25
 		})
 	})();
 </script>
@@ -453,6 +474,60 @@
 
 <script>
   loadSaved();
+
+  function checkInitInputSettings() {
+    if (!window.input_settings) {
+      window.input_settings = {
+        ChiaThe_check: true,
+        TuThaDT_check: true,
+        TuVungMina_check: true,
+        ThamKhao_check: true,
+        NguPhap_check: true,
+        Reibun_check: true,
+        GiaoTiep_check: true,
+      }
+    }
+  }
+  function loadInputSettings() {
+    window.input_settings = JSON.parse(localStorage.getItem("DongHD_input_settings_mina_search"));
+    checkInitInputSettings();
+    updateInputSettingCheckbox();
+  }
+  function updateInputSettingCheckbox() {
+    document.getElementById('ChiaThe_check').checked = window.input_settings['ChiaThe_check'];
+    document.getElementById('TuThaDT_check').checked = window.input_settings['TuThaDT_check'];
+    document.getElementById('TuVungMina_check').checked = window.input_settings['TuVungMina_check'];
+    document.getElementById('ThamKhao_check').checked = window.input_settings['ThamKhao_check'];
+    document.getElementById('NguPhap_check').checked = window.input_settings['NguPhap_check'];
+    document.getElementById('Reibun_check').checked = window.input_settings['Reibun_check'];
+    document.getElementById('GiaoTiep_check').checked = window.input_settings['GiaoTiep_check'];
+  }
+  
+  function updateResultsView2() {
+      const resultDivs = document.getElementById('results-container');
+      for (const result of resultDivs.children) {
+      const span_result_01 = result.getElementsByClassName('span_result_01');
+      if (span_result_01) {
+          const idCheckboxStr = settingsMatching2[span_result_01[0].textContent];
+          if (idCheckboxStr) {
+          if (document.getElementById(idCheckboxStr).checked) {
+              result.style.display = 'block';
+          } else {
+              result.style.display = 'none';
+          }
+          }
+      }
+      }
+  }
+  function onchangeInputSettings(keyStr, checkboxDiv) {
+    checkInitInputSettings();
+    saveInputSettingsToStorage();
+    updateResultsView2();
+  }
+  function saveInputSettingsToStorage() {
+    localStorage.setItem("DongHD_input_settings_mina_search", JSON.stringify(window.input_settings));
+  }
+  loadInputSettings();
 </script>
 
 <!-- memo -->

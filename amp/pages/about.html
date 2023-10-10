@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/pages/about",
         "headline": "About",
         
-        "dateModified": "2023-09-07 12:55:37 +0700",
+        "dateModified": "2023-10-10 23:41:27 +0700",
         "description": "I have been programming professionally since the beginning of 2017.",
         
       }
@@ -124,46 +124,15 @@
 
 <div class="w3-row" id="about-grid">
     <div class="w3-col w3-container w3-mobile" style="width:35%">
-        <img src="/assets/img/dongho.jpg" class="w3-round w3-circle" style="width: 100%;" alt="Đông Hồ" />
+        <img src="/assets/img/dongho.jpg" class="w3-round w3-circle" style="width: 100%;" alt="Đông Hồ" onclick="removeHat()" />
     </div>
     <div class="w3-col w3-mobile" style="width:65%">
         <div class="w3-section">
-            <h2>About</h2>
-            I have been programming professionally since the beginning of 2016, but my keenness for coding has been born
-            much earlier. Having a particular interest in the JVM ecosystem and web development, I am mostly focusing on
-            technologies related to Java and JavaScript. Although, I do not limit myself only to these and keep an open
-            mind
-            to new ideas and trends.
+            <h2 onclick="removeHat()">About</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cum dolor asperiores iusto ab possimus repellendus totam expedita dolore fuga. Amet harum dolor, blanditiis velit reprehenderit laborum distinctio cum illo.
+            
         </div>
-        <div class="w3-section">
-            <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeEjbLZPym3VOr-oAEIQfVtNvOGtnz93t6VyrS4GyycbzPYuQ/formResponse" method="post" target="_blank" onsubmit="onSubmitForm(this); return false;">
-                <h2>Contact</h2>
-                <div class="w3-row">
-                    <div class="w3-col" style="width: 50%;">
-                        <label>Full Name:</label>
-                        <input class="w3-input" type="text" name="entry.2005620554" required="" />
-                    </div>
-                    <div class="w3-col" style="width: 50%;">
-                        <label>Email:</label>
-                        <input class="w3-input" type="email" name="entry.1045781291" required="" />
-                    </div>
-                </div>
-                <div class="w3-section">
-                    <label>Content:</label>
-                    <textarea class="w3-input" name="entry.839337160" required=""></textarea>
-                </div>
-                <div class="w3-section">
-                    <p style="font-size:small;">Please drag the image back and forth between the two rectangles to enable the submit button.</p>
-                    
-                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <img src="/assets/img/im-not-a-robot.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" />
-                    </div>
-                    
-                    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                    <input class="w3-btn w3-indigo" type="submit" value="Send" id="btn-submit" disabled="" />
-                </div>
-            </form>
-        </div>
+        
     </div>
 </div>
 <script>
