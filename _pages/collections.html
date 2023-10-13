@@ -19,11 +19,13 @@ permalink: /collections
 {% assign serials = site.collections | where: 'isSerial', true | where: 'show', true %}
 {% if serials.size > 0 %}
 <div class="w3-padding-16"></div>
-<h2>Collections</h2>
-
-{% include disclaimer-not-updated.html %}
-
-{% include disclaimer-copyright.html %}
+<div class="w3-animate-top">
+  <h2>Collections</h2>
+  
+  {% include disclaimer-not-updated.html %}
+  
+  {% include disclaimer-copyright.html %}
+</div>
 
 <ul class="w3-ul w3-card konamiHide">
   {% for serial in serials %}

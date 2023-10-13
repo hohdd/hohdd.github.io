@@ -16,11 +16,13 @@ show: true
 
 <!-- archives -->
 <div class="w3-padding-16"></div>
-<h2>Archives</h2>
-
-{% include disclaimer-not-updated.html %}
-
-{% include disclaimer-copyright.html %}
+<div class="w3-animate-top">
+  <h2>Archives</h2>
+  
+  {% include disclaimer-not-updated.html %}
+  
+  {% include disclaimer-copyright.html %}
+</div>
 
 <div class="w3-row konamiHide">
 {% for category in site.categories %}
