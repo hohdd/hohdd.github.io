@@ -3,7 +3,7 @@ layout: default
 robots: NOINDEX, NOFOLLOW
 # info
 tool_name: Writing
-icon: "/assets/img/tools/edit_256x256.png"
+icon: "/assets/img/tools/edit_256x256_2.png"
 description: Writing
 konami: true
 ---

@@ -212,6 +212,12 @@ ul > a {
   }
 }
 
+blockquote {
+  border-left: 4px solid #e5e5e5;
+  color: #999;
+  margin: 14px 0;
+  padding: 0 16px;
+}
 .konamiHide {
   display: none;
 }

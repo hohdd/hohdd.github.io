@@ -11,6 +11,7 @@ secondMenuIcon: folder_special
 secondMenuHandler: settingToolHandler()
 ---
 <!-- https://pdfobject.com/pdf/sample-3pp.pdf -->
+<!-- https://codepen.io/justinchmura/pen/PZzBOP/ -->
 <link rel="stylesheet" href="/tools/reading/reading.css" />
 <script src="/tools/reading/pdfobject.min.js"></script>
 
