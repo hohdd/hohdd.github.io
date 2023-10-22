@@ -82,4 +82,5 @@ Hướng dẫn: http://doc.wox.one/en/plugin/csharp_plugin.html
     - Xóa "bin" + "obj", clearn và build lại project/solution
     - Off P.T.Run trước khi build tránh lỗi copy
     - Cần chạy thử vì khi build thì ok nhưng khi Run thì gặp lỗi (không thể load được Assembly thư viện DLL)
+    - File .resx (design/text mode) để thêm các tài nguyên có sẵn để sử dụng (được đóng gói kèm vào app). VD: string, txt file, image, icon, audio, files...
 - Develop Plugin: cơ bản là làm việc trên "Main.cs" với 2 hàm "Init" và "Query"
