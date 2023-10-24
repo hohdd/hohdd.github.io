@@ -85,3 +85,18 @@ Hướng dẫn: http://doc.wox.one/en/plugin/csharp_plugin.html
     - File .resx (design/text mode) để thêm các tài nguyên có sẵn (embeded) để sử dụng (được đóng gói kèm vào app). VD: string, txt file, image, icon, audio, files...
     - Sử dụng file settings (app.dll.config) cho phép người dùng có thể thay đổi cấu hình (scope user). Trong code có thể sử dụng "Properties.Settings.Default.Save()" để lưu file cấu hình.
 - Develop Plugin: cơ bản là làm việc trên "Main.cs" với 2 hàm "Init" và "Query"
+
+## Develop Office Add-ins (HTML, CSS, JavaScript across platforms, not COM and VSTO)
+- Hướng dẫn: https://learn.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins
+- Script Lab: https://learn.microsoft.com/en-us/office/dev/add-ins/overview/explore-with-script-lab
+- Deploy and publish: https://learn.microsoft.com/en-us/office/dev/add-ins/publish/publish
+- Quick Started:
+    + Đơn giản: tạo 1 file manifest.xml > Open Office on the web > Manage My Add-in (có thể upload, tài khoản cty không có quyền này)...
+    + Chế độ Develop:
+        1. Cài "Yeoman generator" (npm install -g yo generator-office)
+        2. Có Yeoman rồi thì tạo add-in project (yo office)
+        3. Có base rồi thì tiến hành chỉnh sửa:
+            - có hot-reload
+            - sử dụng VSC cài đặt thêm "Microsoft Edge Tools" để debug (Run & Debug của VSC, launch.json) 
+            - mở "Browser DevTools" + "Edge DevTols Browser" để screencast và sử dụng "Console"...
+        4. Tutorial step-by-step ở đây: https://learn.microsoft.com/en-us/office/dev/add-ins/tutorials/excel-tutorial
