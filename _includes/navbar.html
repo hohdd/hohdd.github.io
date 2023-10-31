@@ -10,6 +10,9 @@
         </div>
 
         <div class="w3-right" >
+            {% if page.quickNote %}
+            <span class="material-icons w3-button" onclick="openMemo()">create</span>
+            {% endif%}
             {% if page.secondMenu %}
             <span class="material-icons w3-button" onclick="{% if page.secondMenuHandler %}{{ page.secondMenuHandler }}{% else %}secondMenuHandler(){% endif %}">{% if page.secondMenuIcon %}{{ page.secondMenuIcon }}{% else %}settings{% endif %}</span>
             {% endif%}

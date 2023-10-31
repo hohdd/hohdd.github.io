@@ -28,7 +28,11 @@
 <!-- Initialize Quill editor -->
 <script type="text/javascript">
     function openMemo() {
-        document.getElementById('audioSettings').style.display='none';
+        try {
+            document.getElementById('audioSettings').style.display='none';
+        } catch (error) {
+            console.log(error);            
+        }
         document.getElementById('quillNote').style.display = 'block';
     }
     

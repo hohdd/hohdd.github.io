@@ -9,6 +9,7 @@ konami: true
 secondMenu: true
 secondMenuIcon: folder_special
 secondMenuHandler: settingToolHandler()
+quickNote: true
 ---
 <!-- https://pdfobject.com/pdf/sample-3pp.pdf -->
 <!-- https://codepen.io/justinchmura/pen/PZzBOP/ -->
@@ -17,7 +18,7 @@ secondMenuHandler: settingToolHandler()
 
 <div id="pdfContainer"></div>
 
-<p style="z-index: 10000;position: absolute;bottom: 0;right: 0;">
+<p style="z-index: 10000;position: absolute;bottom: 0;right: 0; scale: 0.6;">
     <audio id="audio" controls="" style="float: right;"></audio><br>
     <button id="noteDiv" onclick="onClickNoteDiv()">[PDF_takeNoteContent]</button>
     <button id="count" disabled>0</button>
@@ -29,7 +30,7 @@ secondMenuHandler: settingToolHandler()
     <button onclick="apply(3)">3</button>
 </p>
 
-<p style="z-index: 10000;position: absolute;bottom: 0;">
+<p style="z-index: 10000;position: absolute;bottom: 0; scale: 0.6;">
     <button onclick="document.getElementById('selectFileInput').click()">File</button>
     <input type="file" id="selectFileInput" onchange="loadFile(event)" style="display:none">
     <input class="w3-check w3-margin-top" type="checkbox" id="repeatCheck" checked>

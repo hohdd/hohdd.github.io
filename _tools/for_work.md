@@ -20,7 +20,7 @@ secondMenu: false
 * Text Extractor: Win+Shift+T
 * Always On Top (monitor): Win+Ctrl+T
 * Color Picker: Win+Shift+C
-* Fancyzones: giữ Shift khi Drag windows
+* Fancyzones (WIN+Shift+`): giữ Shift khi Drag windows
 * File LockSearch (tìm process đang sử dụng): click chuột phải lên file.
 * Mouse Utilities: double Left-Ctrl, Highlighter: Win+Shit+H
 * Paste as Plain Text: Win+Ctrl+Alt+V (thêm Win+Alt)
@@ -100,3 +100,39 @@ Hướng dẫn: http://doc.wox.one/en/plugin/csharp_plugin.html
             - sử dụng VSC cài đặt thêm "Microsoft Edge Tools" để debug (Run & Debug của VSC, launch.json) 
             - mở "Browser DevTools" + "Edge DevTols Browser" để screencast và sử dụng "Console"...
         4. Tutorial step-by-step ở đây: https://learn.microsoft.com/en-us/office/dev/add-ins/tutorials/excel-tutorial
+        5. Hãy nhìn nhận Office Javascript API cung cấp OOP của Office thật (Excel, Word, PowerPoint, Outlook, OneNote, Project, Access) để tự động hóa/lập trình bằng code.
+
+### Cấu trúc thông tin Office tổng quan (đơn giản) như sau:
+- info: { host: Excel | Word..., platform: PC | Mac | OfficeOnline | iOS | Android... }
+- context: Workbook, Application, Runtime
+    - Workbook:
+        + properties: Excel.DocumentProperties (the workbook properties, such as: author, company, title...)
+        + string: name (the workbook name)
+        + names: Excel.NamedItemCollection (a collection of workbook-scoped named items)
+        + worksheets: Excel.WorksheetCollection (a collection of worksheets associated with the workbook)
+        + tables: Excel.TableCollection (a collection of tables associated with the workbook)
+        + comments: Excel.CommentCollection (a collection of comments associated with the workbook)
+        + functions: Excel.Functions (a collection of worksheet functions that can be used for computation)
+        + styles: Excel.StyleCollection (a collection of styles associated with the workbook)
+        + boolean: readOnly? isDirty? autoSave?...
+        + ...v.v.
+        + Excel.Worksheet:
+            - charts: Excel.ChartCollection (a collection of charts that are part of the worksheet)
+            - comments: Excel.CommentCollection (a collection of all the Comments objects on the worksheet)
+            - pageLayout: Excel.PageLayout (`PageLayout` object of the worksheet: blackAndWhite, headerMargin, footerMargin, orientation, zoom...)
+            - ...v.v. shapes, tables... id, name, position, standardWidth, tabColor, visibility...
+        + Excel.Table:
+            - columns: Excel.TableColumnCollection (a collection of all the columns in the table)
+            - rows: Excel.TableRowCollection (a collection of all the rows in the table)
+            - sort: Excel.TableSort (the sorting for the table)
+            - style: string (the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style can also be specified.)
+            - ...v.v.
+
+- Một Collection sẽ có các phương thức sau: getCount(), add(<key>)/getItem(<key>)...
+- Một Object sẽ có các function thực hiện các tác vụ như:
+    + getRange(): Excel.Range (a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.)
+    + ...
+
+### Office Add-ins JavaScript API reference
+- Class > Properties > Methods > Details + Examples
+- Tất cả có ở đây: https://learn.microsoft.com/en-us/javascript/api/overview?view=common-js-preview
