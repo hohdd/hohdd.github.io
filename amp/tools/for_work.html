@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/tools/for_work",
         "headline": "For_work",
         
-        "dateModified": "2023-10-21 22:53:59 +0700",
+        "dateModified": "2023-10-31 22:42:30 +0700",
         "description": "For Work",
         
       }
@@ -102,7 +102,7 @@
         
       </span>
       <time datetime="" class="by-line"> ·  
-      <span title="reading time">· about 4 mins read </span> · 
+      <span title="reading time">· about 7 mins read </span> · 
       
       <span>
         
@@ -119,6 +119,12 @@
 <li class="toc-entry toc-h1"><a href="#my-tools" spy-toc="My Tools">My Tools</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#pt-run-plugin-donghdtools" spy-toc="PT Run Plugin (DongHDTools)">PT Run Plugin (DongHDTools)</a></li>
+<li class="toc-entry toc-h2"><a href="#develop-office-add-ins-html-css-javascript-across-platforms-not-com-and-vsto" spy-toc="Develop Office Add-ins (HTML, CSS, JavaScript across platforms, not COM and VSTO)">Develop Office Add-ins (HTML, CSS, JavaScript across platforms, not COM and VSTO)</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cấu-trúc-thông-tin-office-tổng-quan-đơn-giản-như-sau" spy-toc="Cấu trúc thông tin Office tổng quan (đơn giản) như sau:">Cấu trúc thông tin Office tổng quan (đơn giản) như sau:</a></li>
+<li class="toc-entry toc-h3"><a href="#office-add-ins-javascript-api-reference" spy-toc="Office Add-ins JavaScript API reference">Office Add-ins JavaScript API reference</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><h1 id="microsoft-powertoys-utilities-to-customize-windows">
@@ -136,7 +142,7 @@
     <li>Text Extractor: Win+Shift+T</li>
     <li>Always On Top (monitor): Win+Ctrl+T</li>
     <li>Color Picker: Win+Shift+C</li>
-    <li>Fancyzones: giữ Shift khi Drag windows</li>
+    <li>Fancyzones (WIN+Shift+`): giữ Shift khi Drag windows</li>
     <li>File LockSearch (tìm process đang sử dụng): click chuột phải lên file.</li>
     <li>Mouse Utilities: double Left-Ctrl, Highlighter: Win+Shit+H</li>
     <li>Paste as Plain Text: Win+Ctrl+Alt+V (thêm Win+Alt)</li>
@@ -237,9 +243,108 @@
       <li>Xóa “bin” + “obj”, clearn và build lại project/solution</li>
       <li>Off P.T.Run trước khi build tránh lỗi copy</li>
       <li>Cần chạy thử vì khi build thì ok nhưng khi Run thì gặp lỗi (không thể load được Assembly thư viện DLL)</li>
+      <li>File .resx (design/text mode) để thêm các tài nguyên có sẵn (embeded) để sử dụng (được đóng gói kèm vào app). VD: string, txt file, image, icon, audio, files…</li>
+      <li>Sử dụng file settings (app.dll.config) cho phép người dùng có thể thay đổi cấu hình (scope user). Trong code có thể sử dụng “Properties.Settings.Default.Save()” để lưu file cấu hình.</li>
     </ul>
   </li>
   <li>Develop Plugin: cơ bản là làm việc trên “Main.cs” với 2 hàm “Init” và “Query”</li>
+</ul>
+
+<h2 id="develop-office-add-ins-html-css-javascript-across-platforms-not-com-and-vsto">
+<a class="anchor" href="#develop-office-add-ins-html-css-javascript-across-platforms-not-com-and-vsto" aria-hidden="true" spy-title="Develop Office Add-ins (HTML, CSS, JavaScript across platforms, not COM and VSTO)"><span class="octicon octicon-link"></span></a>Develop Office Add-ins (HTML, CSS, JavaScript across platforms, not COM and VSTO)</h2>
+<ul>
+  <li>Hướng dẫn: https://learn.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins</li>
+  <li>Script Lab: https://learn.microsoft.com/en-us/office/dev/add-ins/overview/explore-with-script-lab</li>
+  <li>Deploy and publish: https://learn.microsoft.com/en-us/office/dev/add-ins/publish/publish</li>
+  <li>Quick Started:
+    <ul>
+      <li>Đơn giản: tạo 1 file manifest.xml &gt; Open Office on the web &gt; Manage My Add-in (có thể upload, tài khoản cty không có quyền này)…</li>
+      <li>Chế độ Develop:
+        <ol>
+          <li>Cài “Yeoman generator” (npm install -g yo generator-office)</li>
+          <li>Có Yeoman rồi thì tạo add-in project (yo office)</li>
+          <li>Có base rồi thì tiến hành chỉnh sửa:
+            <ul>
+              <li>có hot-reload</li>
+              <li>sử dụng VSC cài đặt thêm “Microsoft Edge Tools” để debug (Run &amp; Debug của VSC, launch.json)</li>
+              <li>mở “Browser DevTools” + “Edge DevTols Browser” để screencast và sử dụng “Console”…</li>
+            </ul>
+          </li>
+          <li>Tutorial step-by-step ở đây: https://learn.microsoft.com/en-us/office/dev/add-ins/tutorials/excel-tutorial</li>
+          <li>Hãy nhìn nhận Office Javascript API cung cấp OOP của Office thật (Excel, Word, PowerPoint, Outlook, OneNote, Project, Access) để tự động hóa/lập trình bằng code.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="cấu-trúc-thông-tin-office-tổng-quan-đơn-giản-như-sau">
+<a class="anchor" href="#c%E1%BA%A5u-tr%C3%BAc-th%C3%B4ng-tin-office-t%E1%BB%95ng-quan-%C4%91%C6%A1n-gi%E1%BA%A3n-nh%C6%B0-sau" aria-hidden="true" spy-title="Cấu trúc thông tin Office tổng quan (đơn giản) như sau:"><span class="octicon octicon-link"></span></a>Cấu trúc thông tin Office tổng quan (đơn giản) như sau:</h3>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>info: { host: Excel</td>
+          <td>Word…, platform: PC</td>
+          <td>Mac</td>
+          <td>OfficeOnline</td>
+          <td>iOS</td>
+          <td>Android… }</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>context: Workbook, Application, Runtime
+    <ul>
+      <li>Workbook:
+        <ul>
+          <li>properties: Excel.DocumentProperties (the workbook properties, such as: author, company, title…)</li>
+          <li>string: name (the workbook name)</li>
+          <li>names: Excel.NamedItemCollection (a collection of workbook-scoped named items)</li>
+          <li>worksheets: Excel.WorksheetCollection (a collection of worksheets associated with the workbook)</li>
+          <li>tables: Excel.TableCollection (a collection of tables associated with the workbook)</li>
+          <li>comments: Excel.CommentCollection (a collection of comments associated with the workbook)</li>
+          <li>functions: Excel.Functions (a collection of worksheet functions that can be used for computation)</li>
+          <li>styles: Excel.StyleCollection (a collection of styles associated with the workbook)</li>
+          <li>boolean: readOnly? isDirty? autoSave?…</li>
+          <li>…v.v.</li>
+          <li>Excel.Worksheet:
+            <ul>
+              <li>charts: Excel.ChartCollection (a collection of charts that are part of the worksheet)</li>
+              <li>comments: Excel.CommentCollection (a collection of all the Comments objects on the worksheet)</li>
+              <li>pageLayout: Excel.PageLayout (<code class="highlighter-rouge">PageLayout</code> object of the worksheet: blackAndWhite, headerMargin, footerMargin, orientation, zoom…)</li>
+              <li>…v.v. shapes, tables… id, name, position, standardWidth, tabColor, visibility…</li>
+            </ul>
+          </li>
+          <li>Excel.Table:
+            <ul>
+              <li>columns: Excel.TableColumnCollection (a collection of all the columns in the table)</li>
+              <li>rows: Excel.TableRowCollection (a collection of all the rows in the table)</li>
+              <li>sort: Excel.TableSort (the sorting for the table)</li>
+              <li>style: string (the table style. Possible values are: “TableStyleLight1” through “TableStyleLight21”, “TableStyleMedium1” through “TableStyleMedium28”, “TableStyleDark1” through “TableStyleDark11”. A custom user-defined style can also be specified.)</li>
+              <li>…v.v.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Một Collection sẽ có các phương thức sau: getCount(), add(<key>)/getItem(<key>)...</key></key>
+</li>
+  <li>Một Object sẽ có các function thực hiện các tác vụ như:
+    <ul>
+      <li>getRange(): Excel.Range (a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.)</li>
+      <li>…</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="office-add-ins-javascript-api-reference">
+<a class="anchor" href="#office-add-ins-javascript-api-reference" aria-hidden="true" spy-title="Office Add-ins JavaScript API reference"><span class="octicon octicon-link"></span></a>Office Add-ins JavaScript API reference</h3>
+<ul>
+  <li>Class &gt; Properties &gt; Methods &gt; Details + Examples</li>
+  <li>Tất cả có ở đây: https://learn.microsoft.com/en-us/javascript/api/overview?view=common-js-preview</li>
 </ul>
 
       </div>

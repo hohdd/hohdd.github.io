@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/tools/mina_search",
         "headline": "Mina_search",
         
-        "dateModified": "2023-10-21 22:53:59 +0700",
+        "dateModified": "2023-10-31 22:42:30 +0700",
         "description": "Minano Nihongo Search",
         
       }
@@ -561,7 +561,11 @@
 <!-- Initialize Quill editor -->
 <script type="text/javascript">
     function openMemo() {
-        document.getElementById('audioSettings').style.display='none';
+        try {
+            document.getElementById('audioSettings').style.display='none';
+        } catch (error) {
+            console.log(error);            
+        }
         document.getElementById('quillNote').style.display = 'block';
     }
     

@@ -2,7 +2,9 @@
 function documentReady() {
   try {
     openAudioControl();
-  } catch (error) { }
+  } catch (error) {
+    console.log(error);
+  }
   var tocnavElm = document.getElementsByClassName("toc-nav")[0];
   if (tocnavElm) {
     tocnavElm.addEventListener('click', () => {
@@ -17,7 +19,9 @@ function documentReady() {
         htmlLabels: true
       }
     });
-  } catch (error) { }
+  } catch (error) {
+    console.log(error);
+  }
   applyEventsForAudios();
   try {
     window.quillEditor = new Quill('#quillNoteEditor', {
@@ -31,12 +35,16 @@ function documentReady() {
       return window.quillEditor.root.innerHTML;
     };
     loadMemo();
-  } catch (error) { }
+  } catch (error) {
+    console.log(error);
+  }
   try {
     if (window.localStorage.getItem('KNM_donghd')) {
       showKNM();
     }
-  } catch (error) { }
+  } catch (error) { 
+    console.log(error);
+  }
 }
 
 // Open and close Menu
@@ -433,3 +441,12 @@ function removeHat() {
 // Listen for keydown events
 document.addEventListener('keydown', keyHandler, false);
 // END Konami Code
+
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") {
+    documentReady();
+  }
+}
+function _documentReady_() {
+  // now using 'document.onreadystatechange'
+}

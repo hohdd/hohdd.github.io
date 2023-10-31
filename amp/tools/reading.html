@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/tools/reading",
         "headline": "Reading",
         
-        "dateModified": "2023-10-21 22:53:59 +0700",
+        "dateModified": "2023-10-31 22:42:30 +0700",
         "description": "Reading",
         
       }
@@ -120,7 +120,7 @@
 
 <div id="pdfContainer"></div>
 
-<p style="z-index: 10000;position: absolute;bottom: 0;right: 0;">
+<p style="z-index: 10000;position: absolute;bottom: 0;right: 0; scale: 0.6;">
     <audio id="audio" controls="" style="float: right;"></audio><br />
     <button id="noteDiv" onclick="onClickNoteDiv()">[PDF_takeNoteContent]</button>
     <button id="count" disabled="">0</button>
@@ -132,7 +132,7 @@
     <button onclick="apply(3)">3</button>
 </p>
 
-<p style="z-index: 10000;position: absolute;bottom: 0;">
+<p style="z-index: 10000;position: absolute;bottom: 0; scale: 0.6;">
     <button onclick="document.getElementById('selectFileInput').click()">File</button>
     <input type="file" id="selectFileInput" onchange="loadFile(event)" style="display:none" />
     <input class="w3-check w3-margin-top" type="checkbox" id="repeatCheck" checked="" />
