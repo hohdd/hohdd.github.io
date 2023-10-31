@@ -17,7 +17,7 @@ show: true
 </style>
 <div class="w3-row" id="about-grid">
     <div class="w3-col w3-container w3-mobile" style="width:35%">
-        <img src="/assets/img/dongho.jpg" class="w3-round w3-circle w3-animate-left" style="width: 100%;" alt="Đông Hồ" onclick="removeHat()">
+        <img src="/assets/img/dongho.jpg" class="w3-round w3-circle w3-animate-left" style="width: 100%;" alt="Đông Hồ" onclick="checkDebounceCount()">
     </div>
     <div class="w3-col w3-mobile" style="width:65%">
         <div class="w3-section opacity-transition-hover w3-animate-top">
@@ -85,5 +85,23 @@ show: true
         var data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
         document.getElementById('btn-submit').disabled = false;
+    }
+    function checkDebounceCount() {
+        if (window.debounceCount) {
+            ++window.debounceCount;
+        } else {
+            window.debounceCount = 1;
+        }
+
+        if (window.debounceTimmer) {
+            clearTimeout(window.debounceTimmer);
+        }
+        window.debounceTimmer = setTimeout(() => {
+            if (window.debounceCount > 10) {
+                showKNMMobile();
+            } else {
+                window.debounceCount = 1;
+            }
+        }, 1000);
     }
 </script>
