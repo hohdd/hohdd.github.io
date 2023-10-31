@@ -2,6 +2,7 @@
 echo ""
 echo "----------- [$(date +'%d-%m-%Y %H:%M:%S')] -----------"
 echo "Are you sure to build now?"
+echo "IMPORTANT!!!!! checking if 'bundle exec jekyll build' OR 'jekyll build' works..."
 echo "Press any key to continue (ESC key to quit)..."
 echo ""
 read -r -n1 key
@@ -12,7 +13,8 @@ fi
 # remove old _site
 rm -rf _site
 # build new version
-bundle exec jekyll build
+# bundle exec jekyll build
+jekyll build
 # checkout master and get lastest
 git checkout master
 git pull origin master
