@@ -426,7 +426,10 @@ var keyHandler = function (event) {
   }
 
 };
-
+function showKNMMobile() {
+  showKNM();
+  window.localStorage.setItem('KNM_donghd', true);
+}
 function showKNM() {
   for (let item of document.getElementsByClassName('konamiHide')) {
     item.style.display = 'initial';
