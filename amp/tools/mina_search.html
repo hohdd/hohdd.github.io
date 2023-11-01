@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/tools/mina_search",
         "headline": "Mina_search",
         
-        "dateModified": "2023-11-01 22:14:22 +0700",
+        "dateModified": "2023-11-01 23:31:15 +0700",
         "description": "Minano Nihongo Search",
         
       }
@@ -452,6 +452,8 @@
 	<div id="results-container" class="w3-card"></div>
 </div>
 <script src="/tools/mina_search/mina_search-custom.js" type="text/javascript"></script>
+
+<script src="/tools/mina_search/mina_js.js" type="text/javascript"></script>
 
 <script>
 	(function() {
@@ -2245,6 +2247,7 @@
 </div>
     </div>
   </div>
+  <!--- <span class="material-icons w3-button" onclick="toggleContentForChallenge()" style="z-index: 100000;position: absolute;bottom: 0px;left: 0px;">gamepad</span> --->
 </div>
 
 <script>
@@ -2341,7 +2344,7 @@
         } catch (error) {
             console.log(error);            
         }
-        document.getElementById('quillNote').style.display = 'block';
+        toggleElmDisplay(document.getElementById('quillNote'));
     }
     
     function onNoteSave() {
