@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-getting-start",
         "headline": "Unity Getting Start",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-10-31 23:12:37 +0700",
+        "dateModified": "2023-11-01 22:14:22 +0700",
         "description": "Unity Getting Start",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 12 mins read </span> · 
+      <span title="reading time">· about 15 mins read </span> · 
       
       <span>
         
@@ -364,6 +364,44 @@
               <li>Reflection Probe: Bao gồm GameObject này khi tính toán trước dữ liệu cho Reflection Probe có thuộc tính Type được đặt thành Baked (Lighting).</li>
             </ul>
           </li>
+        </ul>
+      </li>
+      <li>Save your work:
+        <ul>
+          <li>Scene changes: Nếu bạn thêm, di chuyển hoặc xóa GameObject. Nếu bạn thay đổi các tham số của GameObject trong Inspector.</li>
+          <li>Project-wide changes: Những thay đổi trên toàn dự án trong Unity áp dụng cho toàn bộ dự án của bạn chứ không phải cho một Scence cụ thể.
+            <ul>
+              <li>Project Settings: các file được lưu trong thư mục “Library”, Input &gt; InputManager.asset, Tags And Layers &gt; TagManager.asset, Player &gt; ProjectSettings.asset…</li>
+              <li>Build Settings: Unity lưu các thay đổi đối với Cài đặt bản dựng trong thư mục “Library” dưới dạng EditorBuildSettings.asset.</li>
+              <li>Changed assets: (Lưu ý) Một số loại nội dung có nút “Apply” trong “Inspector”. Unity sẽ không lưu những thứ này trừ khi bạn chọn “Apply”.</li>
+              <li>Dirty assets: các tệp trên đĩa của bạn đã được sửa đổi trong phần mềm nhưng chưa được lưu.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Prefabs: Hệ thống Prefab của Unity cho phép bạn tạo, định cấu hình và lưu trữ GameObject hoàn chỉnh với tất cả các thành phần, giá trị thuộc tính và GameObject con của nó dưới dạng Nội dung có thể tái sử dụng.
+    <ul>
+      <li>Creating Prefabs: Để tạo assets Prefab, hãy kéo GameObject từ Hierarchy vào Project window (Quá trình này cũng biến GameObject ban đầu thành một Prefab instance). Các Prefab instance hiển thị trong Hierarchy với text blue và GameObject gốc của Prefab được hiển thị bằng biểu tượng Prefab hình khối blue.</li>
+      <li>Creating Prefab instances: có thể tạo các phiên bản của Prefab bằng cách kéo Prefab Assets từ chế Project view to Hierarchy or Scene view. (cũng có thể tạo các Prefabs instance trong runtime bằng Scripting)</li>
+      <li>Replacing existing prefabs: có thể thay thế Prefab bằng cách kéo GameObject mới từ Hierarchy và thả nó lên trên Prefab hiện có trong Project window. (Lưu ý: Unity matching theo “NAME”, do đó phải đảm bảo tất cả GameObject trong Prefab đều có tên duy nhất)</li>
+      <li>Instance overrides:
+        <ul>
+          <li>cho phép tạo các biến thể giữa các Prefab instance, trong khi vẫn liên kết các instance đó với cùng một Asset Prefab.</li>
+          <li>Lưu ý: chỉ có thể overrides properties, thêm và xóa components, không thể xóa một phần của Prefab (GameObject/Nest Prefab), thay vì xóa thì có thể deactivate vì deactivate là property override.</li>
+          <li>Trong Inspector, phần override instance được hiển thị với Text Name được in đậm và có đường màu xanh lam ở lề trái. Ngoài ra trên Hierarchy và Inspector cũng có badges +- khi Prefab Instnace Override có Add/Remove components.</li>
+          <li>Overridden Property Value luôn được ưu tiên hơn Value từ Asset Prefab và nó cũng không ảnh hưởng gì tới Asset Prefab gốc</li>
+          <li>Alignment (Position, Rotation, Width, Height, Margins…) không được tính là Prefab Override vì thông thường bạn sẽ muốn các Prefab Instance ở các vị trí và góc quay khác nhau.</li>
+        </ul>
+      </li>
+      <li>Editing a Prefab via its instances&lt;/br&gt;<img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsInspectorControls1.png" alt="alt">
+        <ul>
+          <li>Applying: để áp dụng các Overrides của instance hiện tại vào Asset Prefab</li>
+          <li>Reverting: để loại bỏ tất cả các Overrides để về giá trị Prefab gốc&lt;/br&gt;<img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdown1.png" alt="alt">
+</li>
+          <li>có thể click vào một mục của Overrides Drop-down để kiểm tra override đó&lt;/br&gt;<img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdownCompareComponent1.png" alt="alt">
+</li>
         </ul>
       </li>
     </ul>
