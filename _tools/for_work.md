@@ -2,6 +2,7 @@
 layout: tool
 robots: NOINDEX, NOFOLLOW
 # info
+priority: 4
 tool_name: For Work
 icon: "/assets/img/tools/for_work.png"
 description: For Work

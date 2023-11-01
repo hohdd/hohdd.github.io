@@ -88,33 +88,43 @@ const defaultIds = ['4000_es_1', '4000_es_2', '4000_es_3', '4000_es_4', '4000_es
 const defaultFiles = {
     '4000_es_1': {
         id: '4000_es_1',
-        name: '4000 essential tập 1',
+        name: '[EN] 4000 essential tập 1',
         path: '/tools/reading/files/4000_es_1.pdf'
     },
     '4000_es_2': {
         id: '4000_es_2',
-        name: '4000 essential tập 2',
+        name: '[EN] 4000 essential tập 2',
         path: '/tools/reading/files/4000_es_2.pdf'
     },
     '4000_es_3': {
         id: '4000_es_3',
-        name: '4000 essential tập 3',
+        name: '[EN] 4000 essential tập 3',
         path: '/tools/reading/files/4000_es_3.pdf'
     },
     '4000_es_4': {
         id: '4000_es_4',
-        name: '4000 essential tập 4',
+        name: '[EN] 4000 essential tập 4',
         path: '/tools/reading/files/4000_es_4.pdf'
     },
     '4000_es_5': {
         id: '4000_es_5',
-        name: '4000 essential tập 5',
+        name: '[EN] 4000 essential tập 5',
         path: '/tools/reading/files/4000_es_5.pdf'
     },
     '4000_es_6': {
         id: '4000_es_6',
-        name: '4000 essential tập 6',
+        name: '[EN] 4000 essential tập 6',
         path: '/tools/reading/files/4000_es_6.pdf'
+    },
+    '560HanTuCoBan': {
+        id: '560HanTuCoBan',
+        name: '[JA] 560 Hán tự cơ bản (Kanji)',
+        path: '/tools/reading/files/560HanTuCoBan.pdf'
+    },
+    '400_Ess_CNeasy': {
+        id: '400_Ess_CNeasy',
+        name: '[JA] Chineasy - Quickly learn 400 essential charactors!',
+        path: '/tools/reading/files/400_Ess_CNeasy.pdf'
     },
 }
 window.currentFileId = window.localStorage.getItem('Reading_currentFileId');

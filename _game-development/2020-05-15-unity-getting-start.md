@@ -162,6 +162,27 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 			+ Navigation Static: Bao gồm GameObject khi tính toán trước dữ liệu điều hướng (Navigation and Pathfinding).
 			+ Off Mesh Link Generation: Cố gắng tạo Liên kết OffMesh bắt đầu từ GameObject này khi tính toán trước dữ liệu điều hướng (Navigation and Pathfinding). Xem thêm: https://docs.unity3d.com/2021.3/Documentation/Manual/nav-BuildingOffMeshLinksAutomatically.html
 			+ Reflection Probe: Bao gồm GameObject này khi tính toán trước dữ liệu cho Reflection Probe có thuộc tính Type được đặt thành Baked (Lighting).
+	+ Save your work:
+		- Scene changes: Nếu bạn thêm, di chuyển hoặc xóa GameObject. Nếu bạn thay đổi các tham số của GameObject trong Inspector.
+		- Project-wide changes: Những thay đổi trên toàn dự án trong Unity áp dụng cho toàn bộ dự án của bạn chứ không phải cho một Scence cụ thể.
+			+ Project Settings: các file được lưu trong thư mục "Library", Input > InputManager.asset, Tags And Layers > TagManager.asset, Player > ProjectSettings.asset...
+			+ Build Settings: Unity lưu các thay đổi đối với Cài đặt bản dựng trong thư mục "Library" dưới dạng EditorBuildSettings.asset.
+			+ Changed assets: (Lưu ý) Một số loại nội dung có nút "Apply" trong "Inspector". Unity sẽ không lưu những thứ này trừ khi bạn chọn "Apply".
+			+ Dirty assets: các tệp trên đĩa của bạn đã được sửa đổi trong phần mềm nhưng chưa được lưu.
+- Prefabs: Hệ thống Prefab của Unity cho phép bạn tạo, định cấu hình và lưu trữ GameObject hoàn chỉnh với tất cả các thành phần, giá trị thuộc tính và GameObject con của nó dưới dạng Nội dung có thể tái sử dụng.
+	+ Creating Prefabs: Để tạo assets Prefab, hãy kéo GameObject từ Hierarchy vào Project window (Quá trình này cũng biến GameObject ban đầu thành một Prefab instance). Các Prefab instance hiển thị trong Hierarchy với text blue và GameObject gốc của Prefab được hiển thị bằng biểu tượng Prefab hình khối blue.
+	+ Creating Prefab instances: có thể tạo các phiên bản của Prefab bằng cách kéo Prefab Assets từ chế Project view to Hierarchy or Scene view. (cũng có thể tạo các Prefabs instance trong runtime bằng Scripting)
+	+ Replacing existing prefabs: có thể thay thế Prefab bằng cách kéo GameObject mới từ Hierarchy và thả nó lên trên Prefab hiện có trong Project window. (Lưu ý: Unity matching theo "NAME", do đó phải đảm bảo tất cả GameObject trong Prefab đều có tên duy nhất)
+	+ Instance overrides:
+		- cho phép tạo các biến thể giữa các Prefab instance, trong khi vẫn liên kết các instance đó với cùng một Asset Prefab.
+		- Lưu ý: chỉ có thể overrides properties, thêm và xóa components, không thể xóa một phần của Prefab (GameObject/Nest Prefab), thay vì xóa thì có thể deactivate vì deactivate là property override.
+		- Trong Inspector, phần override instance được hiển thị với Text Name được in đậm và có đường màu xanh lam ở lề trái. Ngoài ra trên Hierarchy và Inspector cũng có badges +- khi Prefab Instnace Override có Add/Remove components.
+		- Overridden Property Value luôn được ưu tiên hơn Value từ Asset Prefab và nó cũng không ảnh hưởng gì tới Asset Prefab gốc
+		- Alignment (Position, Rotation, Width, Height, Margins...) không được tính là Prefab Override vì thông thường bạn sẽ muốn các Prefab Instance ở các vị trí và góc quay khác nhau.
+	+ Editing a Prefab via its instances</br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsInspectorControls1.png)
+		- Applying: để áp dụng các Overrides của instance hiện tại vào Asset Prefab
+		- Reverting: để loại bỏ tất cả các Overrides để về giá trị Prefab gốc</br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdown1.png)
+		- có thể click vào một mục của Overrides Drop-down để kiểm tra override đó</br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdownCompareComponent1.png)
 
 ## Scripting
 

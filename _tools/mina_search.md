@@ -2,11 +2,35 @@
 layout: tool
 robots: NOINDEX, NOFOLLOW
 # info
+priority: 2
 tool_name: Minano Nihongo
 icon: "/assets/img/tools/mina_search.png"
 description: Minano Nihongo Search
 konami: true
+quickNote: true
+secondMenu: true
+secondMenuIcon: close
+secondMenuHandler: closeAllModal()
 ---
+<script>
+  function closeAllModal() {
+    try {
+      document.getElementById('quillNote').style.display = 'none';
+    } catch (error) {}
+    try {
+      document.getElementById('savedModal').style.display='none';
+    } catch (error) {}
+    try {
+      document.getElementById('hiraganaModal').style.display='none';
+    } catch (error) {}
+    try {
+      document.getElementById('katakanaModal').style.display='none';
+    } catch (error) {}
+    try {
+      document.getElementById('boThu214Modal').style.display='none';
+    } catch (error) {}
+  }
+</script>
 <style>
   /* for container 01-11 */
   .container_01:has(.result_01:empty) {
@@ -239,8 +263,13 @@ konami: true
     background-color: #f44336;
   }
 
-  #Note {
+  #BoThu {
     top: 400px;
+    background-color: #3f51b5
+  }
+
+  #Note {
+    top: 460px;
     background-color: #555
   }
   .material-icons {
@@ -291,6 +320,7 @@ konami: true
   <a href="#" id="Saved" onclick="document.getElementById('savedModal').style.display='block'">Saved<span class="material-icons">bookmark</span></a>
   <a href="#" id="Hiragana" onclick="document.getElementById('hiraganaModal').style.display='block'">Hiragana<span class="material-icons">H</span></a>
   <a href="#" id="Katakana" onclick="document.getElementById('katakanaModal').style.display='block'">Katakana<span class="material-icons">K</span></a>
+  <a href="#" id="BoThu" onclick="document.getElementById('boThu214Modal').style.display='block'">Bộ Thủ<span class="material-icons">B</span></a>
   <a href="#" id="Note" onclick="document.getElementById('quillNote').style.display = 'block'">Note<span class="material-icons">edit</span></a>
 </div>
 
@@ -350,7 +380,7 @@ konami: true
       <h2 style="font-size: small;">Hiragana</h2>
     </header>
     <div class="w3-container">
-    <table class="w3-table w3-hoverable w3-card-4 w3-section"><tbody><tr><td>a</td><td><img src="/assets/img/jp-gana/a.gif" alt="あ a" class="w3-image"></td><td><img src="/assets/img/jp-gana/i.gif" alt="い i" class="w3-image"></td><td><img src="/assets/img/jp-gana/u.gif" alt="う u" class="w3-image"></td><td><img src="/assets/img/jp-gana/e.gif" alt="え e" class="w3-image"></td><td><img src="/assets/img/jp-gana/o.gif" alt="お o" class="w3-image"></td></tr><tr><td>ka</td><td><img src="/assets/img/jp-gana/ka.gif" alt="か ka" class="w3-image"></td><td><img src="/assets/img/jp-gana/ki.gif" alt="き ki" class="w3-image"></td><td><img src="/assets/img/jp-gana/ku.gif" alt="く ku" class="w3-image"></td><td><img src="/assets/img/jp-gana/ke.gif" alt="け ke" class="w3-image"></td><td><img src="/assets/img/jp-gana/ko.gif" alt="こ ko" class="w3-image"></td></tr><tr><td>sa</td><td><img src="/assets/img/jp-gana/sa.gif" alt="さ sa" class="w3-image"></td><td><img src="/assets/img/jp-gana/shi.gif" alt="し shi" class="w3-image"></td><td><img src="/assets/img/jp-gana/su.gif" alt="す su" class="w3-image"></td><td><img src="/assets/img/jp-gana/se.gif" alt="せ se" class="w3-image"></td><td><img src="/assets/img/jp-gana/so.gif" alt="そ so" class="w3-image"></td></tr><tr><td>ta</td><td><img src="/assets/img/jp-gana/ta.gif" alt="た ta" class="w3-image"></td><td><img src="/assets/img/jp-gana/chi.gif" alt="ち chi" class="w3-image"></td><td><img src="/assets/img/jp-gana/tsu.gif" alt="つ tsu" class="w3-image"></td><td><img src="/assets/img/jp-gana/te.gif" alt="て te" class="w3-image"></td><td><img src="/assets/img/jp-gana/to.gif" alt="と to" class="w3-image"></td></tr><tr><td>na</td><td><img src="/assets/img/jp-gana/na.gif" alt="な na" class="w3-image"></td><td><img src="/assets/img/jp-gana/ni.gif" alt="に ni" class="w3-image"></td><td><img src="/assets/img/jp-gana/nu.gif" alt="ぬ nu" class="w3-image"></td><td><img src="/assets/img/jp-gana/ne.gif" alt="ね ne" class="w3-image"></td><td><img src="/assets/img/jp-gana/no.gif" alt="の no" class="w3-image"></td></tr><tr><td>ha</td><td><img src="/assets/img/jp-gana/ha.gif" alt="は ha" class="w3-image"></td><td><img src="/assets/img/jp-gana/hi.gif" alt="ひ hi" class="w3-image"></td><td><img src="/assets/img/jp-gana/fu.gif" alt="ふ fu" class="w3-image"></td><td><img src="/assets/img/jp-gana/he.gif" alt="へ he" class="w3-image"></td><td><img src="/assets/img/jp-gana/ho.gif" alt="ほ ho" class="w3-image"></td></tr><tr><td>ma</td><td><img src="/assets/img/jp-gana/ma.gif" alt="ま ma" class="w3-image"></td><td><img src="/assets/img/jp-gana/mi.gif" alt="み mi" class="w3-image"></td><td><img src="/assets/img/jp-gana/mu.gif" alt="む mu" class="w3-image"></td><td><img src="/assets/img/jp-gana/me.gif" alt="め me" class="w3-image"></td><td><img src="/assets/img/jp-gana/mo.gif" alt="も mo" class="w3-image"></td></tr><tr><td>ra</td><td><img src="/assets/img/jp-gana/ra.gif" alt="ら ra" class="w3-image"></td><td><img src="/assets/img/jp-gana/ri.gif" alt="り ri" class="w3-image"></td><td><img src="/assets/img/jp-gana/ru.gif" alt="る ru" class="w3-image"></td><td><img src="/assets/img/jp-gana/re.gif" alt="れ re" class="w3-image"></td><td><img src="/assets/img/jp-gana/ro.gif" alt="ろ ro" class="w3-image"></td></tr><tr><td>ya</td><td><img src="/assets/img/jp-gana/ya.gif" alt="や ya" class="w3-image"></td><td>&nbsp;</td><td><img src="/assets/img/jp-gana/yu.gif" alt="ゆ yu" class="w3-image"></td><td>&nbsp;</td><td><img src="/assets/img/jp-gana/yo.gif" alt="よ yo" class="w3-image"></td></tr><tr><td>wa</td><td><img src="/assets/img/jp-gana/wa.gif" alt="わ wa" class="w3-image"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><img src="/assets/img/jp-gana/wo.gif" alt="を wo" class="w3-image"></td></tr><tr><td>n</td><td><img src="/assets/img/jp-gana/n.gif" alt="ん n" class="w3-image"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+    {% include hiragana.html %}
     </div>
   </div>
 </div>
@@ -362,7 +392,19 @@ konami: true
       <h2 style="font-size: small;">Katakana</h2>
     </header>
     <div class="w3-container">
-    <table class="w3-table w3-hoverable w3-card-4 w3-section"><tbody><tr><td>a</td><td><img src="/assets/img/jp-kana/ak.gif" alt="ア a" class="w3-image"></td><td><img src="/assets/img/jp-kana/ik.gif" alt="イ i" class="w3-image"></td><td><img src="/assets/img/jp-kana/uk.gif" alt="ウ u" class="w3-image"></td><td><img src="/assets/img/jp-kana/ek.gif" alt="エ e" class="w3-image"></td><td><img src="/assets/img/jp-kana/ok.gif" alt="オ o" class="w3-image"></td></tr><tr><td>ka</td><td><img src="/assets/img/jp-kana/kak.gif" alt="カ ka" class="w3-image"></td><td><img src="/assets/img/jp-kana/kik.gif" alt="キ ki" class="w3-image"></td><td><img src="/assets/img/jp-kana/kuk.gif" alt="ク ku" class="w3-image"></td><td><img src="/assets/img/jp-kana/kek.gif" alt="ケ ke" class="w3-image"></td><td><img src="/assets/img/jp-kana/kok.gif" alt="コ ko" class="w3-image"></td></tr><tr><td>sa</td><td><img src="/assets/img/jp-kana/sak.gif" alt="サ sa" class="w3-image"></td><td><img src="/assets/img/jp-kana/shik.gif" alt="シ shi" class="w3-image"></td><td><img src="/assets/img/jp-kana/suk.gif" alt="ス su" class="w3-image"></td><td><img src="/assets/img/jp-kana/sek.gif" alt="セ se" class="w3-image"></td><td><img src="/assets/img/jp-kana/sok.gif" alt="ソ so" class="w3-image"></td></tr><tr><td>ta</td><td><img src="/assets/img/jp-kana/tak.gif" alt="タ ta" class="w3-image"></td><td><img src="/assets/img/jp-kana/chik.gif" alt="チ chi" class="w3-image"></td><td><img src="/assets/img/jp-kana/tsuk.gif" alt="ツ tsu" class="w3-image"></td><td><img src="/assets/img/jp-kana/tek.gif" alt="テ te" class="w3-image"></td><td><img src="/assets/img/jp-kana/tok.gif" alt="ト to" class="w3-image"></td></tr><tr><td>na</td><td><img src="/assets/img/jp-kana/nak.gif" alt="ナ na" class="w3-image"></td><td><img src="/assets/img/jp-kana/nik.gif" alt="ニ ni" class="w3-image"></td><td><img src="/assets/img/jp-kana/nuk.gif" alt="ヌ nu" class="w3-image"></td><td><img src="/assets/img/jp-kana/nek.gif" alt="ネ ne" class="w3-image"></td><td><img src="/assets/img/jp-kana/nok.gif" alt="ノ no" class="w3-image"></td></tr><tr><td>ha</td><td><img src="/assets/img/jp-kana/hak.gif" alt="ハ ha" class="w3-image"></td><td><img src="/assets/img/jp-kana/hik.gif" alt="ヒ hi" class="w3-image"></td><td><img src="/assets/img/jp-kana/fuk.gif" alt="フ fu" class="w3-image"></td><td><img src="/assets/img/jp-kana/hek.gif" alt="ヘ he" class="w3-image"></td><td><img src="/assets/img/jp-kana/hok.gif" alt="ホ ho" class="w3-image"></td></tr><tr><td>ma</td><td><img src="/assets/img/jp-kana/mak.gif" alt="マ ma" class="w3-image"></td><td><img src="/assets/img/jp-kana/mik.gif" alt="ミ mi" class="w3-image"></td><td><img src="/assets/img/jp-kana/muk.gif" alt="ム mu" class="w3-image"></td><td><img src="/assets/img/jp-kana/mek.gif" alt="メ me" class="w3-image"></td><td><img src="/assets/img/jp-kana/mok.gif" alt="モ mo" class="w3-image"></td></tr><tr><td>ra</td><td><img src="/assets/img/jp-kana/rak.gif" alt="ラ ra" class="w3-image"></td><td><img src="/assets/img/jp-kana/rik.gif" alt="リ ri" class="w3-image"></td><td><img src="/assets/img/jp-kana/ruk.gif" alt="ル ru" class="w3-image"></td><td><img src="/assets/img/jp-kana/rek.gif" alt="レ re" class="w3-image"></td><td><img src="/assets/img/jp-kana/rok.gif" alt="ロ ro" class="w3-image"></td></tr><tr><td>ya</td><td><img src="/assets/img/jp-kana/yak.gif" alt="ヤ ya" class="w3-image"></td><td>&nbsp;</td><td><img src="/assets/img/jp-kana/yuk.gif" alt="ユ yu" class="w3-image"></td><td>&nbsp;</td><td><img src="/assets/img/jp-kana/yok.gif" alt="ヨ yo" class="w3-image"></td></tr><tr><td>wa</td><td><img src="/assets/img/jp-kana/wak.gif" alt="ワ wa" class="w3-image"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><img src="/assets/img/jp-kana/wok.gif" alt="ヲ wo" class="w3-image"></td></tr><tr><td>n</td><td><img src="/assets/img/jp-kana/nk.gif" alt="ン n" class="w3-image"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+    {% include katakana.html %}
+    </div>
+  </div>
+</div>
+<div id="boThu214Modal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-left w3-card-4">
+    <header class="w3-container w3-indigo">
+      <span onclick="document.getElementById('boThu214Modal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 style="font-size: small;">214 Bộ Thủ</h2>
+    </header>
+    <div class="w3-container">
+    {% include 214bothu.html %}
     </div>
   </div>
 </div>

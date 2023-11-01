@@ -2,6 +2,7 @@
 layout: default
 robots: NOINDEX, NOFOLLOW
 # info
+priority: 3
 tool_name: Writing
 icon: "/assets/img/tools/edit_256x256_2.png"
 description: Writing
