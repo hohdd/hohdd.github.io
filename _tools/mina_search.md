@@ -11,6 +11,9 @@ quickNote: true
 secondMenu: true
 secondMenuIcon: close
 secondMenuHandler: closeAllModal()
+thirdMenu: true
+thirdMenuIcon: gamepad
+thirdMenuHandler: toggleContentForChallenge()
 ---
 <script>
   function closeAllModal() {
@@ -349,6 +352,7 @@ secondMenuHandler: closeAllModal()
 	<div id="results-container" class="w3-card"></div>
 </div>
 <script src="/tools/mina_search/mina_search-custom.js" type="text/javascript"></script>
+<script src="/tools/mina_search/mina_js.js" type="text/javascript"></script>
 <script>
 	(function() {
 		JSearch({
@@ -407,6 +411,7 @@ secondMenuHandler: closeAllModal()
     {% include 214bothu.html %}
     </div>
   </div>
+  <!--- <span class="material-icons w3-button" onclick="toggleContentForChallenge()" style="z-index: 100000;position: absolute;bottom: 0px;left: 0px;">gamepad</span> --->
 </div>
 
 <script>

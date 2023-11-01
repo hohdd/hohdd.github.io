@@ -77,7 +77,7 @@ function gotoTime(btn) {
 }
 
 function openFMCmd() {
-    document.getElementById('fileManagerModal').style.display = 'block';
+    toggleElmDisplay(document.getElementById('fileManagerModal'));
 }
 function closeFMCmd() {
     document.getElementById('fileManagerModal').style.display = 'none';

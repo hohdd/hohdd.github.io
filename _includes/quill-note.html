@@ -33,7 +33,7 @@
         } catch (error) {
             console.log(error);            
         }
-        document.getElementById('quillNote').style.display = 'block';
+        toggleElmDisplay(document.getElementById('quillNote'));
     }
     
     function onNoteSave() {

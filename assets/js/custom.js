@@ -453,3 +453,12 @@ document.onreadystatechange = function () {
 function _documentReady_() {
   // now using 'document.onreadystatechange'
 }
+function toggleElmDisplay(elm, block = "block") {
+  try {
+    if (elm.style.display === "none") {
+      elm.style.display = block;
+    } else {
+      elm.style.display = "none";
+    }
+  } catch (error) {}
+}
