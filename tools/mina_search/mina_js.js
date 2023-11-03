@@ -3,10 +3,19 @@ function toggleContentForChallenge() {
     var trHTMLCollection = bothuDiv.getElementsByTagName('tr');
     for (let tr of trHTMLCollection) {
         try {
-            toggleElmDisplay(tr.childNodes[2], 'table-cell');
-        } catch (error) {}
+            toggleElmVisibility(tr.childNodes[0]);
+        } catch (error) {
+            console.log(error);
+        }
         try {
-            toggleElmDisplay(tr.childNodes[3], 'table-cell');
-        } catch (error) {}
+            toggleElmVisibility(tr.childNodes[2]);
+        } catch (error) {
+            console.log(error);
+        }
+        try {
+            toggleElmVisibility(tr.childNodes[3]);
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
