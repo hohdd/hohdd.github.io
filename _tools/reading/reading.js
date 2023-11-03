@@ -148,7 +148,7 @@ function renderFileList() {
         var li = document.createElement('li');
         li.className = 'w3-display-container';
         li.innerHTML = `
-      ${value.name} <span class="w3-display-right">
+      ${value.name} <span class="w3-display-right small-BG-lightTealColor">
         <button onclick="fmOpen('${value.id}')" class="w3-button w3-transparent" ${value.id == window.currentFileId ? 'disabled' : ''}>Open</button>
         <button onclick="fmRename('${value.id}')" class="w3-button w3-transparent" ${value.id == window.currentFileId ? 'disabled' : defaultIds.includes(value.id) ? 'disabled' : ''}>Re-name</button>
         <button onclick="fmDelete('${value.id}')" class="w3-button w3-transparent" ${value.id == window.currentFileId ? 'disabled' : defaultIds.includes(value.id) ? 'disabled' : ''}>Delete</button>
