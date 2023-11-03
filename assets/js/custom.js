@@ -464,3 +464,12 @@ function toggleElmDisplay(elm, block = "block") {
     }
   } catch (error) {}
 }
+function toggleElmVisibility(elm, visible = "visible") {
+  try {
+    if (elm.style.visibility === "hidden") {
+      elm.style.visibility = visible;
+    } else {
+      elm.style.visibility = "hidden";
+    }
+  } catch (error) {}
+}

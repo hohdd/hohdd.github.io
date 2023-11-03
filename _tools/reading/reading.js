@@ -195,7 +195,7 @@ function settingToolHandler() {
     openFMCmd();
 }
 function pdfObjectOpenFile(filePath) {
-    PDFObject.embed(filePath, '#pdfContainer');
+    PDFObject.embed(filePath, '#pdfContainer', { forcePDFJS: true, PDFJS_URL: '/assets/pdfjs/web/viewer.html' });
 }
 window.onload = function () {
     renderFileList();
