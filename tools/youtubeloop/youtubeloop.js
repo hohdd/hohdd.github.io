@@ -1,14 +1,26 @@
+var params = {
+    id: 'DnIBWk_TdKw', // Người miền núi chất
+    // id: 'CvcIDBhRjqk', // Chài điếp noọng
+    // id: '3gNuUcPg1fk', // BINZ - HIT ME UP (ft. NOMOVODKA)
+    start: 28.5,
+    end: 63,
+    seek: 0
 
+    // start: 0,
+    // end: 0,
+    // seek: 0
+}
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubePlayerAPIReady() {
+    prepareUrlParams();
     window.DHytplayerMain = new YT.Player('ytplayer', {
         height: '390',
         width: '640',
-        videoId: '_fa5M8vmOOk',
+        /*videoId: params.id,*/
         playerVars: {
             'playsinline': 1,
             'autoplay': 1,
@@ -28,7 +40,7 @@ function onPlayerError(err) {
 }
 function onPlayerReady(event) {
     window.DHytplayerTarget = event.target;
-    pickEnd(window.DHytplayerTarget.getDuration());
+    loadAndPlayById(params.id, params.start);
 }
 
 function onPlayerStateChange(event) {
@@ -46,42 +58,39 @@ function onPlayerStateChange(event) {
     }
 }
 function playVideo() {
-    console.log('---playVideo---');
-    window.DHytplayerTarget.playVideo();
+    window.DHytplayerMain.playVideo();
     startTimer();
 }
 function pauseVideo() {
-    console.log('---pauseVideo---');
-    window.DHytplayerTarget.pauseVideo();
+    window.DHytplayerMain.pauseVideo();
     stopTimer();
 }
 function stopVideo() {
-    console.log('---stopVideo---');
-    window.DHytplayerTarget.stopVideo();
+    window.DHytplayerMain.stopVideo();
     stopTimer();
 }
 function pickStart(i) {
-    console.log('---inputStart---');
-    document.getElementById('inputStart').value = i ? i : window.DHytplayerTarget.getCurrentTime();
+    document.getElementById('inputStart').value = i ? i : window.DHytplayerMain.getCurrentTime();
+    onChangeInputParams('start', document.getElementById('inputStart'));
 }
 function pickEnd(i) {
-    console.log('---inputEnd---');
-    document.getElementById('inputEnd').value = i ? i : window.DHytplayerTarget.getCurrentTime();
+    document.getElementById('inputEnd').value = i ? i : window.DHytplayerMain.getCurrentTime();
+    onChangeInputParams('end', document.getElementById('inputEnd'));
 }
 function pickCurrent(i) {
-    console.log('---inputSeekTo---');
-    document.getElementById('inputSeekTo').value = i ? i : window.DHytplayerTarget.getCurrentTime();
+    document.getElementById('inputSeekTo').value = i ? i : window.DHytplayerMain.getCurrentTime();
+    onChangeInputParams('seek', document.getElementById('inputSeekTo'));
 }
 function seekTo(i) {
     if (i) {
-        window.DHytplayerTarget.seekTo(i);
+        window.DHytplayerMain.seekTo(i);
     } else {
         var input = document.getElementById("inputSeekTo");
         if (input.value) {
             if (YT.PlayerState.PLAYING === 0) {
-                window.DHytplayerTarget.playVideo();
+                window.DHytplayerMain.playVideo();
             }
-            window.DHytplayerTarget.seekTo(input.value);
+            window.DHytplayerMain.seekTo(input.value);
         } else {
             DHtoast('Chưa nhập giá trị...');
         }
@@ -92,15 +101,17 @@ function seekToStart() {/*loop*/
 }
 function clearToBegin() {
     document.getElementById('inputStart').value = 0;
+    onChangeInputParams('start', document.getElementById('inputStart'));
 }
 function clearToEnd() {
-    pickEnd(window.DHytplayerTarget.getDuration());
+    pickEnd(window.DHytplayerMain.getDuration());
+    onChangeInputParams('end', document.getElementById('inputEnd'));
 }
 
 function startTimer() {
     try {
         window.DHTimer = setInterval(() => {
-            if ((document.getElementById('inputEnd').value > 0) && (window.DHytplayerTarget.getCurrentTime() > document.getElementById('inputEnd').value)) {
+            if ((document.getElementById('inputEnd').value > 0) && (window.DHytplayerMain.getCurrentTime() > document.getElementById('inputEnd').value)) {
                 seekTo(document.getElementById('inputStart').value ? document.getElementById('inputStart').value : 0);
             }
         }, 300);
@@ -121,9 +132,15 @@ function stopTimer() {
  * DnIBWk_TdKw: Người miền núi chất
  **/
 function loadAndPlayById(id, startNum = 0) {
-    window.DHytplayerTarget.loadVideoById(id, startNum);
+    window.DHytplayerMain.loadVideoById(id, startNum);
     setTimeout(() => {
-        clearToEnd();
+        /*clearToEnd();*/
+        if (!document.getElementById('inputEnd').value) {
+            params.end = document.getElementById('inputEnd').value = window.DHytplayerMain.getDuration();
+        }
+        if (document.getElementById('inputStart').value) {
+            seekToStart();
+        }
     }, 2000);
 }
 function getYoutubeShortId(url) {
@@ -147,8 +164,65 @@ function onChangeUrlInput() {
         if (url) {
             var id = getYoutubeId(url);
             loadAndPlayById(id);
+
+            updateParams('id', id);
         }
     }, 1000);
+}
+function fullscreenPlayer() {
+    try {
+        var iframe = window.DHytplayerMain.g;
+        var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+        if (requestFullScreen) {
+            requestFullScreen.bind(iframe)();
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+function prepareUrlParams() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var id = urlParams.get('id');
+    setInputValueIfNotNull(id, document.getElementById('urlInput'), 'id', urlParams);
+    var start = urlParams.get('start');
+    setInputValueIfNotNull(start, document.getElementById('inputStart'), 'start', urlParams);
+    var end = urlParams.get('end');
+    setInputValueIfNotNull(end, document.getElementById('inputEnd'), 'end', urlParams);
+    var seek = urlParams.get('seek');
+    setInputValueIfNotNull(seek, document.getElementById('inputSeekTo'), 'seek', urlParams);
+}
+function setInputValueIfNotNull(v, elm, paramKey, urlParams) {
+    if ((! urlParams.size) && (params.id)) {
+        v = params[paramKey];
+    }
+    if (v) {
+        params[paramKey] = v;
+        elm.value = v;
+    }
+}
+function onChangeInputParams(keyParam, elmInput) {
+    if (window.debounceTimmer) {
+        clearTimeout(window.debounceTimmer);
+    }
+    window.debounceTimmer = setTimeout(() => {
+        updateParams(keyParam, elmInput.value ? elmInput.value : 0);
+    }, 2000);
+}
+function updateParams(keyParam, val) {
+    if (val) {
+        params[keyParam] = val;
+        updateLocationSearch();
+    }
+}
+function encodeQueryData(data) {
+    const ret = [];
+    for (let d in data)
+      ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
+    return ret.join('&');
+}
+function updateLocationSearch() {
+    /*window.location.search = encodeQueryData(params);*/
+    window.history.replaceState(null, null, `?${encodeQueryData(params)}`);
 }
 
 document.onreadystatechange = function () {
