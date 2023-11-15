@@ -1,14 +1,13 @@
 var params = {
-    id: 'DnIBWk_TdKw', // Người miền núi chất
-    // id: 'CvcIDBhRjqk', // Chài điếp noọng
-    // id: '3gNuUcPg1fk', // BINZ - HIT ME UP (ft. NOMOVODKA)
-    start: 28.5,
-    end: 63,
-    seek: 0
-
-    // start: 0,
-    // end: 0,
+    // id: 'DnIBWk_TdKw', // Người miền núi chất
+    // start: 28.5,
+    // end: 63,
     // seek: 0
+
+    id: '3gNuUcPg1fk', // BINZ - HIT ME UP (ft. NOMOVODKA)
+    start: 33,
+    end: 283,
+    seek: 0
 }
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
