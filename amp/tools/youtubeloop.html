@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tools</title>
-    <link rel="canonical" href="https://me.donghd.com/pages/tools" />
+    <title>Youtubeloop</title>
+    <link rel="canonical" href="https://me.donghd.com/tools/youtubeloop" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/pages/tools",
-        "headline": "Tools",
+        "mainEntityOfPage": "https://me.donghd.com/tools/youtubeloop",
+        "headline": "Youtubeloop",
         
         "dateModified": "2023-11-15 20:37:21 +0700",
-        "description": "Tools",
+        "description": "Youtube Loop",
         
       }
     </script>
@@ -96,7 +96,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Tools</h2>
+      <h2>Youtubeloop</h2>
       <span class="author">
         
         
@@ -112,50 +112,42 @@
       </time>
 
       <div class="w3-section">
-        <ul class="w3-ul">
-  
-  
-    <li class="w3-bar konamiHide">
-      <img src="/assets/img/tools/reading_512x512.png" class="w3-bar-item w3-circle w3-hide-small" style="width:150px" />
-      <div class="w3-bar-item">
-        <a href="/tools/reading"><h2><span class="hvr-forward">Reading</span></h2></a>
-        <h5>Reading</h5>
-      </div>
-    </li>
-  
-    <li class="w3-bar konamiHide">
-      <img src="/assets/img/tools/youtube_loop_512x512.png" class="w3-bar-item w3-circle w3-hide-small" style="width:150px" />
-      <div class="w3-bar-item">
-        <a href="/tools/youtubeloop"><h2><span class="hvr-forward">Youtube Loop</span></h2></a>
-        <h5>Youtube Loop</h5>
-      </div>
-    </li>
-  
-    <li class="w3-bar konamiHide">
-      <img src="/assets/img/tools/mina_search.png" class="w3-bar-item w3-circle w3-hide-small" style="width:150px" />
-      <div class="w3-bar-item">
-        <a href="/tools/mina_search"><h2><span class="hvr-forward">Minano Nihongo</span></h2></a>
-        <h5>Minano Nihongo Search</h5>
-      </div>
-    </li>
-  
-    <li class="w3-bar konamiHide">
-      <img src="/assets/img/tools/edit_256x256_2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:150px" />
-      <div class="w3-bar-item">
-        <a href="/tools/writing"><h2><span class="hvr-forward">Writing</span></h2></a>
-        <h5>Writing</h5>
-      </div>
-    </li>
-  
-    <li class="w3-bar konamiHide">
-      <img src="/assets/img/tools/for_work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:150px" />
-      <div class="w3-bar-item">
-        <a href="/tools/for_work"><h2><span class="hvr-forward">For Work</span></h2></a>
-        <h5>For Work</h5>
-      </div>
-    </li>
-  
-</ul>
+        <!-- https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player -->
+<!-- https://developers.google.com/youtube/player_parameters#Parameters -->
+<div class="w3-padding-24"></div>
+
+<p><label>
+  <input type="text" class="DHInput" placeholder="Enter Youtube URL here..." id="urlInput" onchange="onChangeUrlInput()" />
+</label></p>
+
+<div class="w3-cell-row">
+  <div class="w3-container w3-cell w3-mobile">
+    <div id="ytplayer"></div>
+  </div>
+  <div class="w3-container w3-cell w3-mobile">
+    <div class="w3-container">
+      <p>
+      <label class="w3-btn w3-border" onclick="pickStart()">Start (pick)</label>
+      <span class="material-icons w3-button" onclick="clearToBegin()">delete_forever</span>
+      <input class="w3-input" type="number" id="inputStart" value="0" /></p>
+      <p>
+      <label class="w3-btn w3-border" onclick="pickEnd()">End (pick)</label>
+      <span class="material-icons w3-button" onclick="clearToEnd()">delete_forever</span>
+      <input class="w3-input" type="number" id="inputEnd" /></p>
+      <p>
+      <label onclick="seekTo()" class="w3-btn w3-border">Seek To (jump)</label>
+      <label onclick="pickCurrent()" class="w3-btn w3-border">Pick current</label>
+      <input class="w3-input" type="number" id="inputSeekTo" /></p>
+      <p>
+      <span class="material-icons w3-button" onclick="playVideo()">play_arrow</span>
+      <span class="material-icons w3-button" onclick="pauseVideo()">pause</span>
+      <span class="material-icons w3-button" onclick="stopVideo()">stop</span>
+      <span class="material-icons w3-button" onclick="seekToStart()">repeat</span></p>
+    </div>
+  </div>
+</div>
+<script src="/tools/youtubeloop/youtubeloop.js"></script>
+
 
       </div>
 

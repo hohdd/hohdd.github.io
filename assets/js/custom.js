@@ -473,3 +473,9 @@ function toggleElmVisibility(elm, visible = "visible") {
     }
   } catch (error) {}
 }
+function DHtoast(msg, milisc = 3000) {
+  var x = document.getElementById("snackbar");
+  x.innerHTML = msg;
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, milisc);
+}
