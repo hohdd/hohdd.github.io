@@ -201,7 +201,7 @@ function setInputValueIfNotNull(v, elm, paramKey, urlParams) {
     }
     if (v) {
         params[paramKey] = v;
-        elm.value = v;
+        elm.value = paramKey !== 'id' ? v : '';
     }
 }
 function onChangeInputParams(keyParam, elmInput) {
