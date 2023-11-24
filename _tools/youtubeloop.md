@@ -20,7 +20,7 @@ quickNote: true
 <div class="w3-padding-24"></div>
 
 <label>
-  <input type="text" class="DHInput" placeholder="Youtube URL/Short/videoId here..." id="urlInput" onchange="onChangeUrlInput()">
+  <input type="text" class="DHInput" placeholder="Enter Youtube URL | Short | VideoId here..." id="urlInput" onchange="onChangeUrlInput()">
 </label>
 
 <div class="w3-cell-row">
