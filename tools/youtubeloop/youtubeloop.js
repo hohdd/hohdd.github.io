@@ -4,9 +4,14 @@ var params = {
     // end: 63,
     // seek: 0
 
-    id: '3gNuUcPg1fk', // BINZ - HIT ME UP (ft. NOMOVODKA)
-    start: 33,
-    end: 283,
+    // id: '3gNuUcPg1fk', // BINZ - HIT ME UP (ft. NOMOVODKA)
+    // start: 33,
+    // end: 283,
+    // seek: 0
+
+    id: 'xq-aTe77bkA', // [ Alizée ] - La Isla Bonita | XHX2CJryJ4U (boy version)
+    start: 15,
+    end: 222,
     seek: 0
 }
 var tag = document.createElement('script');
