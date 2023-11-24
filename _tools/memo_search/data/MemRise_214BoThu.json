@@ -1,0 +1,1222 @@
+[
+ {
+  "title": "一 nhất (Số một, thứ nhất)",
+  "subTitle": "一 nhất, 丨 cổn, 丶 chủ, 丿 phiệt",
+  "tag": "bothu01, bothux01, bothux01-1"
+ },
+ {
+  "title": "丨 cổn (Nét sổ)",
+  "subTitle": "丨 cổn, 丶 chủ, 丿 phiệt, 乙 ất",
+  "tag": "bothu01, bothux01, bothux01-1"
+ },
+ {
+  "title": "丶 chủ (Nét chấm)",
+  "subTitle": "丶 chủ, 丿 phiệt, 乙 ất, 亅 quyết",
+  "tag": "bothu01, bothux01, bothux01-1"
+ },
+ {
+  "title": "丿 phiệt (Nét phảy)",
+  "subTitle": "丿 phiệt, 乙 ất, 亅 quyết, 二 nhị",
+  "tag": "bothu01, bothux01, bothux01-1"
+ },
+ {
+  "title": "乙 ất (Ất)",
+  "subTitle": "乙 ất, 亅 quyết, 二 nhị, 亠 đầu",
+  "tag": "bothu01, bothux01, bothux01-1"
+ },
+ {
+  "title": "亅 quyết (Cái móc)",
+  "subTitle": "亅 quyết, 二 nhị, 亠 đầu, 人(亻) nhân",
+  "tag": "bothu01, bothux01, bothux01-2"
+ },
+ {
+  "title": "二 nhị (Số hai)",
+  "subTitle": "二 nhị, 亠 đầu, 人(亻) nhân, 儿 nhi",
+  "tag": "bothu01, bothux01, bothux01-2"
+ },
+ {
+  "title": "亠 đầu (Đầu)",
+  "subTitle": "亠 đầu, 人(亻) nhân, 儿 nhi, 入 nhập",
+  "tag": "bothu01, bothux01, bothux01-2"
+ },
+ {
+  "title": "人(亻) nhân (Người)",
+  "subTitle": "人(亻) nhân, 儿 nhi, 入 nhập, 八 bát",
+  "tag": "bothu01, bothux01, bothux01-2"
+ },
+ {
+  "title": "儿 nhi (Đứa trẻ con)",
+  "subTitle": "儿 nhi, 入 nhập, 八 bát, 冂 quynh",
+  "tag": "bothu01, bothux01, bothux01-2"
+ },
+ {
+  "title": "入 nhập (Vào, thâm nhập)",
+  "subTitle": "入 nhập, 八 bát, 冂 quynh, 冖 mịch",
+  "tag": "bothu01, bothux02, bothux02-1"
+ },
+ {
+  "title": "八 bát (Số tám)",
+  "subTitle": "八 bát, 冂 quynh, 冖 mịch, 冫 băng",
+  "tag": "bothu01, bothux02, bothux02-1"
+ },
+ {
+  "title": "冂 quynh (Vùng biên giới)",
+  "subTitle": "冂 quynh, 冖 mịch, 冫 băng, 几 kỷ",
+  "tag": "bothu01, bothux02, bothux02-1"
+ },
+ {
+  "title": "冖 mịch (Khăn quàng)",
+  "subTitle": "冖 mịch, 冫 băng, 几 kỷ, 凵 khảm",
+  "tag": "bothu01, bothux02, bothux02-1"
+ },
+ {
+  "title": "冫 băng (Băng)",
+  "subTitle": "冫 băng, 几 kỷ, 凵 khảm, 刀(刂) đao",
+  "tag": "bothu01, bothux02, bothux02-1"
+ },
+ {
+  "title": "几 kỷ (Ghế dựa)",
+  "subTitle": "几 kỷ, 凵 khảm, 刀(刂) đao, 力 lực",
+  "tag": "bothu01, bothux02, bothux02-2"
+ },
+ {
+  "title": "凵 khảm (Há miệng)",
+  "subTitle": "凵 khảm, 刀(刂) đao, 力 lực, 勹 bao",
+  "tag": "bothu01, bothux02, bothux02-2"
+ },
+ {
+  "title": "刀(刂) đao (Con dao, cây đao)",
+  "subTitle": "刀(刂) đao, 力 lực, 勹 bao, 匕 chủy",
+  "tag": "bothu01, bothux02, bothux02-2"
+ },
+ {
+  "title": "力 lực (Sức mạnh)",
+  "subTitle": "力 lực, 勹 bao, 匕 chủy, 匚 phương",
+  "tag": "bothu01, bothux02, bothux02-2"
+ },
+ {
+  "title": "勹 bao (Bao bọc)",
+  "subTitle": "勹 bao, 匕 chủy, 匚 phương, 匸 hễ",
+  "tag": "bothu01, bothux02, bothux02-2"
+ },
+ {
+  "title": "匕 chủy (Cái thìa)",
+  "subTitle": "匕 chủy, 匚 phương, 匸 hễ, 十 thập",
+  "tag": "bothu01, bothux03, bothux03-1"
+ },
+ {
+  "title": "匚 phương (Tủ đựng hình vuông)",
+  "subTitle": "匚 phương, 匸 hễ, 十 thập, 卜 bốc",
+  "tag": "bothu01, bothux03, bothux03-1"
+ },
+ {
+  "title": "匸 hễ (Che đậy, giấu diếm)",
+  "subTitle": "匸 hễ, 十 thập, 卜 bốc, 卩 tiết",
+  "tag": "bothu01, bothux03, bothux03-1"
+ },
+ {
+  "title": "十 thập (Số mười)",
+  "subTitle": "十 thập, 卜 bốc, 卩 tiết, 厂 xưởng",
+  "tag": "bothu01, bothux03, bothux03-1"
+ },
+ {
+  "title": "卜 bốc (Xem bói)",
+  "subTitle": "卜 bốc, 卩 tiết, 厂 xưởng, 厶 tư",
+  "tag": "bothu01, bothux03, bothux03-1"
+ },
+ {
+  "title": "卩 tiết (Đốt tre)",
+  "subTitle": "卩 tiết, 厂 xưởng, 厶 tư, 又 hựu",
+  "tag": "bothu01, bothux03, bothux03-2"
+ },
+ {
+  "title": "厂 xưởng (Nhà xưởng)",
+  "subTitle": "厂 xưởng, 厶 tư, 又 hựu, 口 khẩu",
+  "tag": "bothu01, bothux03, bothux03-2"
+ },
+ {
+  "title": "厶 tư (Riêng tư)",
+  "subTitle": "厶 tư, 又 hựu, 口 khẩu, 囗 vi",
+  "tag": "bothu01, bothux03, bothux03-2"
+ },
+ {
+  "title": "又 hựu (Lại)",
+  "subTitle": "又 hựu, 口 khẩu, 囗 vi, 土 thổ",
+  "tag": "bothu01, bothux03, bothux03-2"
+ },
+ {
+  "title": "口 khẩu (Cái Miệng)",
+  "subTitle": "口 khẩu, 囗 vi, 土 thổ, 士 sĩ",
+  "tag": "bothu02, bothux03, bothux03-2"
+ },
+ {
+  "title": "囗 vi (Vây quanh)",
+  "subTitle": "囗 vi, 土 thổ, 士 sĩ, 夂 truy",
+  "tag": "bothu02, bothux04, bothux04-1"
+ },
+ {
+  "title": "土 thổ (Đất)",
+  "subTitle": "土 thổ, 士 sĩ, 夂 truy, 夊 tuy",
+  "tag": "bothu02, bothux04, bothux04-1"
+ },
+ {
+  "title": "士 sĩ (Kẻ sĩ)",
+  "subTitle": "士 sĩ, 夂 truy, 夊 tuy, 夕 tịch",
+  "tag": "bothu02, bothux04, bothux04-1"
+ },
+ {
+  "title": "夂 truy (Đến từ phía sau)",
+  "subTitle": "夂 truy, 夊 tuy, 夕 tịch, 大 đại",
+  "tag": "bothu02, bothux04, bothux04-1"
+ },
+ {
+  "title": "夊 tuy (Đi chậm)",
+  "subTitle": "夊 tuy, 夕 tịch, 大 đại, 女 nữ",
+  "tag": "bothu02, bothux04, bothux04-1"
+ },
+ {
+  "title": "夕 tịch (Đêm Tối)",
+  "subTitle": "夕 tịch, 大 đại, 女 nữ, 子 tử",
+  "tag": "bothu02, bothux04, bothux04-2"
+ },
+ {
+  "title": "大 đại (To lớn)",
+  "subTitle": "大 đại, 女 nữ, 子 tử, 宀 miên",
+  "tag": "bothu02, bothux04, bothux04-2"
+ },
+ {
+  "title": "女 nữ (Nữ giới)",
+  "subTitle": "女 nữ, 子 tử, 宀 miên, 寸 thốn",
+  "tag": "bothu02, bothux04, bothux04-2"
+ },
+ {
+  "title": "子 tử (Con trai)",
+  "subTitle": "子 tử, 宀 miên, 寸 thốn, 小 tiểu",
+  "tag": "bothu02, bothux04, bothux04-2"
+ },
+ {
+  "title": "宀 miên (Mái nhà)",
+  "subTitle": "宀 miên, 寸 thốn, 小 tiểu, 尢 uông",
+  "tag": "bothu02, bothux04, bothux04-2"
+ },
+ {
+  "title": "寸 thốn (“Tấc”(Đo Chiều Dài))",
+  "subTitle": "寸 thốn, 小 tiểu, 尢 uông, 尸 thi",
+  "tag": "bothu02, bothux05, bothux05-1"
+ },
+ {
+  "title": "小 tiểu (Nhỏ bé)",
+  "subTitle": "小 tiểu, 尢 uông, 尸 thi, 屮 triệt",
+  "tag": "bothu02, bothux05, bothux05-1"
+ },
+ {
+  "title": "尢 uông (Yếu đuối)",
+  "subTitle": "尢 uông, 尸 thi, 屮 triệt, 山 sơn",
+  "tag": "bothu02, bothux05, bothux05-1"
+ },
+ {
+  "title": "尸 thi (Xác chết)",
+  "subTitle": "尸 thi, 屮 triệt, 山 sơn, 巛 xuyên",
+  "tag": "bothu02, bothux05, bothux05-1"
+ },
+ {
+  "title": "屮 triệt (Mầm non)",
+  "subTitle": "屮 triệt, 山 sơn, 巛 xuyên, 工 công",
+  "tag": "bothu02, bothux05, bothux05-1"
+ },
+ {
+  "title": "山 sơn (Núi non)",
+  "subTitle": "山 sơn, 巛 xuyên, 工 công, 己 kỷ",
+  "tag": "bothu02, bothux05, bothux05-2"
+ },
+ {
+  "title": "巛 xuyên (Sông ngòi)",
+  "subTitle": "巛 xuyên, 工 công, 己 kỷ, 巾 cân",
+  "tag": "bothu02, bothux05, bothux05-2"
+ },
+ {
+  "title": "工 công (Công việc)",
+  "subTitle": "工 công, 己 kỷ, 巾 cân, 干 can",
+  "tag": "bothu02, bothux05, bothux05-2"
+ },
+ {
+  "title": "己 kỷ (Bản thân mình)",
+  "subTitle": "己 kỷ, 巾 cân, 干 can, 幺 yêu",
+  "tag": "bothu02, bothux05, bothux05-2"
+ },
+ {
+  "title": "巾 cân (Cái khăn)",
+  "subTitle": "巾 cân, 干 can, 幺 yêu, 广 quảng",
+  "tag": "bothu02, bothux05, bothux05-2"
+ },
+ {
+  "title": "干 can (Làm)",
+  "subTitle": "干 can, 幺 yêu, 广 quảng, 廴 dẫn",
+  "tag": "bothu02, bothux06, bothux06-1"
+ },
+ {
+  "title": "幺 yêu (Nhỏ nhắn)",
+  "subTitle": "幺 yêu, 广 quảng, 廴 dẫn, 廾 củng",
+  "tag": "bothu02, bothux06, bothux06-1"
+ },
+ {
+  "title": "广 quảng (Rộng)",
+  "subTitle": "广 quảng, 廴 dẫn, 廾 củng, 弋 dực",
+  "tag": "bothu02, bothux06, bothux06-1"
+ },
+ {
+  "title": "廴 dẫn (Bước dài)",
+  "subTitle": "廴 dẫn, 廾 củng, 弋 dực, 弓 cung",
+  "tag": "bothu02, bothux06, bothux06-1"
+ },
+ {
+  "title": "廾 củng (Chắp tay)",
+  "subTitle": "廾 củng, 弋 dực, 弓 cung, 彐 ký",
+  "tag": "bothu02, bothux06, bothux06-1"
+ },
+ {
+  "title": "弋 dực (Bắn)",
+  "subTitle": "弋 dực, 弓 cung, 彐 ký, 彡 sam",
+  "tag": "bothu02, bothux06, bothux06-2"
+ },
+ {
+  "title": "弓 cung (Cái cung)",
+  "subTitle": "弓 cung, 彐 ký, 彡 sam, 彳 xích",
+  "tag": "bothu02, bothux06, bothux06-2"
+ },
+ {
+  "title": "彐 ký (Đầu con nhím)",
+  "subTitle": "彐 ký, 彡 sam, 彳 xích, 心(忄) tâm",
+  "tag": "bothu02, bothux06, bothux06-2"
+ },
+ {
+  "title": "彡 sam (Lông, tóc dài)",
+  "subTitle": "彡 sam, 彳 xích, 心(忄) tâm, 戈 qua",
+  "tag": "bothu02, bothux06, bothux06-2"
+ },
+ {
+  "title": "彳 xích (Bước chân trái)",
+  "subTitle": "彳 xích, 心(忄) tâm, 戈 qua, 戶 hộ",
+  "tag": "bothu02, bothux06, bothux06-2"
+ },
+ {
+  "title": "心(忄) tâm (Trái tim, tâm trí)",
+  "subTitle": "心(忄) tâm, 戈 qua, 戶 hộ, 手 (扌) thủ",
+  "tag": "bothu03, bothux07, bothux07-1"
+ },
+ {
+  "title": "戈 qua (Binh khí)",
+  "subTitle": "戈 qua, 戶 hộ, 手 (扌) thủ, 支 chi",
+  "tag": "bothu03, bothux07, bothux07-1"
+ },
+ {
+  "title": "戶 hộ (Cửa một cánh)",
+  "subTitle": "戶 hộ, 手 (扌) thủ, 支 chi, 攴 (攵) phốc",
+  "tag": "bothu03, bothux07, bothux07-1"
+ },
+ {
+  "title": "手 (扌) thủ (Tay)",
+  "subTitle": "手 (扌) thủ, 支 chi, 攴 (攵) phốc, 文 văn",
+  "tag": "bothu03, bothux07, bothux07-1"
+ },
+ {
+  "title": "支 chi (Cành cây)",
+  "subTitle": "支 chi, 攴 (攵) phốc, 文 văn, 斗 đấu",
+  "tag": "bothu03, bothux07, bothux07-1"
+ },
+ {
+  "title": "攴 (攵) phốc (Đánh khẽ)",
+  "subTitle": "攴 (攵) phốc, 文 văn, 斗 đấu, 斤 cân",
+  "tag": "bothu03, bothux07, bothux07-2"
+ },
+ {
+  "title": "文 văn (Văn chương)",
+  "subTitle": "文 văn, 斗 đấu, 斤 cân, 方 phương",
+  "tag": "bothu03, bothux07, bothux07-2"
+ },
+ {
+  "title": "斗 đấu (Cái đấu)",
+  "subTitle": "斗 đấu, 斤 cân, 方 phương, 无 vô",
+  "tag": "bothu03, bothux07, bothux07-2"
+ },
+ {
+  "title": "斤 cân (Cân)",
+  "subTitle": "斤 cân, 方 phương, 无 vô, 日 nhật",
+  "tag": "bothu03, bothux07, bothux07-2"
+ },
+ {
+  "title": "方 phương (Hình vuông)",
+  "subTitle": "方 phương, 无 vô, 日 nhật, 曰 viết",
+  "tag": "bothu03, bothux07, bothux07-2"
+ },
+ {
+  "title": "无 vô (Không)",
+  "subTitle": "无 vô, 日 nhật, 曰 viết, 月 nguyệt",
+  "tag": "bothu03, bothux08, bothux08-1"
+ },
+ {
+  "title": "日 nhật (Ngày, mặt trời)",
+  "subTitle": "日 nhật, 曰 viết, 月 nguyệt, 木 mộc",
+  "tag": "bothu03, bothux08, bothux08-1"
+ },
+ {
+  "title": "曰 viết (Nói)",
+  "subTitle": "曰 viết, 月 nguyệt, 木 mộc, 欠 khiếm",
+  "tag": "bothu03, bothux08, bothux08-1"
+ },
+ {
+  "title": "月 nguyệt (Tháng, mặt trăng)",
+  "subTitle": "月 nguyệt, 木 mộc, 欠 khiếm, 止 chỉ",
+  "tag": "bothu03, bothux08, bothux08-1"
+ },
+ {
+  "title": "木 mộc (Gỗ, cây)",
+  "subTitle": "木 mộc, 欠 khiếm, 止 chỉ, 歹 đãi",
+  "tag": "bothu03, bothux08, bothux08-1"
+ },
+ {
+  "title": "欠 khiếm (Khiếm khuyết)",
+  "subTitle": "欠 khiếm, 止 chỉ, 歹 đãi, 殳 thù",
+  "tag": "bothu03, bothux08, bothux08-2"
+ },
+ {
+  "title": "止 chỉ (Dừng lại)",
+  "subTitle": "止 chỉ, 歹 đãi, 殳 thù, 毋 vô",
+  "tag": "bothu03, bothux08, bothux08-2"
+ },
+ {
+  "title": "歹 đãi (Xấu xa)",
+  "subTitle": "歹 đãi, 殳 thù, 毋 vô, 比 tỉ",
+  "tag": "bothu03, bothux08, bothux08-2"
+ },
+ {
+  "title": "殳 thù (Một loại vũ khí)",
+  "subTitle": "殳 thù, 毋 vô, 比 tỉ, 毛 mao",
+  "tag": "bothu03, bothux08, bothux08-2"
+ },
+ {
+  "title": "毋 vô (Chớ, đừng)",
+  "subTitle": "毋 vô, 比 tỉ, 毛 mao, 氏 thị",
+  "tag": "bothu03, bothux08, bothux08-2"
+ },
+ {
+  "title": "比 tỉ (So sánh)",
+  "subTitle": "比 tỉ, 毛 mao, 氏 thị, 气 khí",
+  "tag": "bothu03, bothux09, bothux09-1"
+ },
+ {
+  "title": "毛 mao (Lông)",
+  "subTitle": "毛 mao, 氏 thị, 气 khí, 水(氵) nước",
+  "tag": "bothu03, bothux09, bothux09-1"
+ },
+ {
+  "title": "氏 thị (Thị tộc)",
+  "subTitle": "氏 thị, 气 khí, 水(氵) nước, 火(灬) hỏa",
+  "tag": "bothu03, bothux09, bothux09-1"
+ },
+ {
+  "title": "气 khí (Không khí)",
+  "subTitle": "气 khí, 水(氵) nước, 火(灬) hỏa, 爪 trảo",
+  "tag": "bothu03, bothux09, bothux09-1"
+ },
+ {
+  "title": "水(氵) nước (Nước)",
+  "subTitle": "水(氵) nước, 火(灬) hỏa, 爪 trảo, 父 phụ",
+  "tag": "bothu03, bothux09, bothux09-1"
+ },
+ {
+  "title": "火(灬) hỏa (Lửa)",
+  "subTitle": "火(灬) hỏa, 爪 trảo, 父 phụ, 爻 hào",
+  "tag": "bothu03, bothux09, bothux09-2"
+ },
+ {
+  "title": "爪 trảo (Móng vuốt)",
+  "subTitle": "爪 trảo, 父 phụ, 爻 hào, 爿 tường",
+  "tag": "bothu03, bothux09, bothux09-2"
+ },
+ {
+  "title": "父 phụ (Cha)",
+  "subTitle": "父 phụ, 爻 hào, 爿 tường, 片 phiến",
+  "tag": "bothu03, bothux09, bothux09-2"
+ },
+ {
+  "title": "爻 hào (Giao nhau)",
+  "subTitle": "爻 hào, 爿 tường, 片 phiến, 牙 nha",
+  "tag": "bothu03, bothux09, bothux09-2"
+ },
+ {
+  "title": "爿 tường (Mảnh gỗ, cái giường)",
+  "subTitle": "爿 tường, 片 phiến, 牙 nha, 牛( 牜) ngưu",
+  "tag": "bothu03, bothux09, bothux09-2"
+ },
+ {
+  "title": "片 phiến (Mảnh, tấm, miếng)",
+  "subTitle": "片 phiến, 牙 nha, 牛( 牜) ngưu, 犬(犭) khuyển",
+  "tag": "bothu03, bothux10, bothux10-1"
+ },
+ {
+  "title": "牙 nha (Răng)",
+  "subTitle": "牙 nha, 牛( 牜) ngưu, 犬(犭) khuyển, 玄 huyền",
+  "tag": "bothu03, bothux10, bothux10-1"
+ },
+ {
+  "title": "牛( 牜) ngưu (Trâu, bò)",
+  "subTitle": "牛( 牜) ngưu, 犬(犭) khuyển, 玄 huyền, 玉 ngọc",
+  "tag": "bothu03, bothux10, bothux10-1"
+ },
+ {
+  "title": "犬(犭) khuyển (Con chó)",
+  "subTitle": "犬(犭) khuyển, 玄 huyền, 玉 ngọc, 瓜 qua",
+  "tag": "bothu03, bothux10, bothux10-1"
+ },
+ {
+  "title": "玄 huyền (Huyền bí)",
+  "subTitle": "玄 huyền, 玉 ngọc, 瓜 qua, 瓦 ngõa",
+  "tag": "bothu04, bothux10, bothux10-1"
+ },
+ {
+  "title": "玉 ngọc (Đá quý, ngọc)",
+  "subTitle": "玉 ngọc, 瓜 qua, 瓦 ngõa, 甘 cam",
+  "tag": "bothu04, bothux10, bothux10-2"
+ },
+ {
+  "title": "瓜 qua (Quả dưa)",
+  "subTitle": "瓜 qua, 瓦 ngõa, 甘 cam, 生 sinh",
+  "tag": "bothu04, bothux10, bothux10-2"
+ },
+ {
+  "title": "瓦 ngõa (Ngói)",
+  "subTitle": "瓦 ngõa, 甘 cam, 生 sinh, 用 dụng",
+  "tag": "bothu04, bothux10, bothux10-2"
+ },
+ {
+  "title": "甘 cam (Ngọt)",
+  "subTitle": "甘 cam, 生 sinh, 用 dụng, 田 điền",
+  "tag": "bothu04, bothux10, bothux10-2"
+ },
+ {
+  "title": "生 sinh (Sinh đẻ, sinh sống)",
+  "subTitle": "生 sinh, 用 dụng, 田 điền, 疋(匹) thất",
+  "tag": "bothu04, bothux10, bothux10-2"
+ },
+ {
+  "title": "用 dụng (Dùng)",
+  "subTitle": "用 dụng, 田 điền, 疋(匹) thất, 疒 nạch",
+  "tag": "bothu04, bothux11, bothux11-1"
+ },
+ {
+  "title": "田 điền (Ruộng)",
+  "subTitle": "田 điền, 疋(匹) thất, 疒 nạch, 癶 bát",
+  "tag": "bothu04, bothux11, bothux11-1"
+ },
+ {
+  "title": "疋(匹) thất (Đơn vị đo chiều dài)",
+  "subTitle": "疋(匹) thất, 疒 nạch, 癶 bát, 白 bạch",
+  "tag": "bothu04, bothux11, bothux11-1"
+ },
+ {
+  "title": "疒 nạch (Bệnh tật)",
+  "subTitle": "疒 nạch, 癶 bát, 白 bạch, 皮 bì",
+  "tag": "bothu04, bothux11, bothux11-1"
+ },
+ {
+  "title": "癶 bát (Gạt ngược lại)",
+  "subTitle": "癶 bát, 白 bạch, 皮 bì, 皿 mãnh",
+  "tag": "bothu04, bothux11, bothux11-1"
+ },
+ {
+  "title": "白 bạch (Màu trắng)",
+  "subTitle": "白 bạch, 皮 bì, 皿 mãnh, 目 mục",
+  "tag": "bothu04, bothux11, bothux11-2"
+ },
+ {
+  "title": "皮 bì (Da)",
+  "subTitle": "皮 bì, 皿 mãnh, 目 mục, 矛 mâu",
+  "tag": "bothu04, bothux11, bothux11-2"
+ },
+ {
+  "title": "皿 mãnh (Bát đĩa)",
+  "subTitle": "皿 mãnh, 目 mục, 矛 mâu, 矢 thỉ",
+  "tag": "bothu05, bothux11, bothux11-2"
+ },
+ {
+  "title": "目 mục (Mắt)",
+  "subTitle": "目 mục, 矛 mâu, 矢 thỉ, 石 thạch",
+  "tag": "bothu05, bothux11, bothux11-2"
+ },
+ {
+  "title": "矛 mâu (Cây giáo)",
+  "subTitle": "矛 mâu, 矢 thỉ, 石 thạch, 示(礻) thị (kỳ)",
+  "tag": "bothu05, bothux11, bothux11-2"
+ },
+ {
+  "title": "矢 thỉ (Mũi tên)",
+  "subTitle": "矢 thỉ, 石 thạch, 示(礻) thị (kỳ), 禸 nhựu",
+  "tag": "bothu05, bothux12, bothux12-1"
+ },
+ {
+  "title": "石 thạch (Đá)",
+  "subTitle": "石 thạch, 示(礻) thị (kỳ), 禸 nhựu, 禾 hòa",
+  "tag": "bothu05, bothux12, bothux12-1"
+ },
+ {
+  "title": "示(礻) thị (kỳ) (Chỉ thị)",
+  "subTitle": "示(礻) thị (kỳ), 禸 nhựu, 禾 hòa, 穴 huyệt",
+  "tag": "bothu05, bothux12, bothux12-1"
+ },
+ {
+  "title": "禸 nhựu (Vết chân)",
+  "subTitle": "禸 nhựu, 禾 hòa, 穴 huyệt, 立 lập",
+  "tag": "bothu05, bothux12, bothux12-1"
+ },
+ {
+  "title": "禾 hòa (Cây lúa)",
+  "subTitle": "禾 hòa, 穴 huyệt, 立 lập, 竹 trúc",
+  "tag": "bothu05, bothux12, bothux12-1"
+ },
+ {
+  "title": "穴 huyệt (Hang lỗ)",
+  "subTitle": "穴 huyệt, 立 lập, 竹 trúc, 米 mễ",
+  "tag": "bothu05, bothux12, bothux12-2"
+ },
+ {
+  "title": "立 lập (Đứng, thành lập)",
+  "subTitle": "立 lập, 竹 trúc, 米 mễ, 糸(糹–纟) mịch",
+  "tag": "bothu05, bothux12, bothux12-2"
+ },
+ {
+  "title": "竹 trúc (Tre, trúc)",
+  "subTitle": "竹 trúc, 米 mễ, 糸(糹–纟) mịch, 缶 phẫu",
+  "tag": "bothu05, bothux12, bothux12-2"
+ },
+ {
+  "title": "米 mễ (Gạo)",
+  "subTitle": "米 mễ, 糸(糹–纟) mịch, 缶 phẫu, 网(罒– 罓) võng",
+  "tag": "bothu05, bothux12, bothux12-2"
+ },
+ {
+  "title": "糸(糹–纟) mịch (Sợi tơ nhỏ)",
+  "subTitle": "糸(糹–纟) mịch, 缶 phẫu, 网(罒– 罓) võng, 羊 dương",
+  "tag": "bothu05, bothux12, bothux12-2"
+ },
+ {
+  "title": "缶 phẫu (Đồ sành)",
+  "subTitle": "缶 phẫu, 网(罒– 罓) võng, 羊 dương, 羽 vũ",
+  "tag": "bothu05, bothux13, bothux13-1"
+ },
+ {
+  "title": "网(罒– 罓) võng (Cái lưới)",
+  "subTitle": "网(罒– 罓) võng, 羊 dương, 羽 vũ, 老 lão",
+  "tag": "bothu05, bothux13, bothux13-1"
+ },
+ {
+  "title": "羊 dương (Con dê)",
+  "subTitle": "羊 dương, 羽 vũ, 老 lão, 而 nhi",
+  "tag": "bothu05, bothux13, bothux13-1"
+ },
+ {
+  "title": "羽 vũ (Lông vũ)",
+  "subTitle": "羽 vũ, 老 lão, 而 nhi, 耒 lỗi",
+  "tag": "bothu05, bothux13, bothux13-1"
+ },
+ {
+  "title": "老 lão (Già)",
+  "subTitle": "老 lão, 而 nhi, 耒 lỗi, 耳 nhĩ",
+  "tag": "bothu05, bothux13, bothux13-1"
+ },
+ {
+  "title": "而 nhi (Mà, và)",
+  "subTitle": "而 nhi, 耒 lỗi, 耳 nhĩ, 聿 duật",
+  "tag": "bothu05, bothux13, bothux13-2"
+ },
+ {
+  "title": "耒 lỗi (Cái cày)",
+  "subTitle": "耒 lỗi, 耳 nhĩ, 聿 duật, 肉 nhục",
+  "tag": "bothu05, bothux13, bothux13-2"
+ },
+ {
+  "title": "耳 nhĩ (Tai, lỗ tai)",
+  "subTitle": "耳 nhĩ, 聿 duật, 肉 nhục, 臣 thần",
+  "tag": "bothu05, bothux13, bothux13-2"
+ },
+ {
+  "title": "聿 duật (Cây bút)",
+  "subTitle": "聿 duật, 肉 nhục, 臣 thần, 自 tự",
+  "tag": "bothu05, bothux13, bothux13-2"
+ },
+ {
+  "title": "肉 nhục (Thịt)",
+  "subTitle": "肉 nhục, 臣 thần, 自 tự, 至 chí",
+  "tag": "bothu05, bothux13, bothux13-2"
+ },
+ {
+  "title": "臣 thần (Bầy tôi)",
+  "subTitle": "臣 thần, 自 tự, 至 chí, 臼 cữu",
+  "tag": "bothu05, bothux14, bothux14-1"
+ },
+ {
+  "title": "自 tự (Bản thân)",
+  "subTitle": "自 tự, 至 chí, 臼 cữu, 舌 thiệt",
+  "tag": "bothu05, bothux14, bothux14-1"
+ },
+ {
+  "title": "至 chí (Đến)",
+  "subTitle": "至 chí, 臼 cữu, 舌 thiệt, 舛 suyễn",
+  "tag": "bothu05, bothux14, bothux14-1"
+ },
+ {
+  "title": "臼 cữu (Cái cối)",
+  "subTitle": "臼 cữu, 舌 thiệt, 舛 suyễn, 舟 chu",
+  "tag": "bothu05, bothux14, bothux14-1"
+ },
+ {
+  "title": "舌 thiệt (Cái lưỡi)",
+  "subTitle": "舌 thiệt, 舛 suyễn, 舟 chu, 艮 cấn",
+  "tag": "bothu05, bothux14, bothux14-1"
+ },
+ {
+  "title": "舛 suyễn (Sai lầm)",
+  "subTitle": "舛 suyễn, 舟 chu, 艮 cấn, 色 sắc",
+  "tag": "bothu05, bothux14, bothux14-2"
+ },
+ {
+  "title": "舟 chu (Cái thuyền)",
+  "subTitle": "舟 chu, 艮 cấn, 色 sắc, 艸(艹) thảo",
+  "tag": "bothu05, bothux14, bothux14-2"
+ },
+ {
+  "title": "艮 cấn (Quẻ Cấn)",
+  "subTitle": "艮 cấn, 色 sắc, 艸(艹) thảo, 虍 hổ",
+  "tag": "bothu05, bothux14, bothux14-2"
+ },
+ {
+  "title": "色 sắc (Màu)",
+  "subTitle": "色 sắc, 艸(艹) thảo, 虍 hổ, 虫 trùng",
+  "tag": "bothu05, bothux14, bothux14-2"
+ },
+ {
+  "title": "艸(艹) thảo (Cỏ)",
+  "subTitle": "艸(艹) thảo, 虍 hổ, 虫 trùng, 血 huyết",
+  "tag": "bothu05, bothux14, bothux14-2"
+ },
+ {
+  "title": "虍 hổ (Vằn vện)",
+  "subTitle": "虍 hổ, 虫 trùng, 血 huyết, 行 hành",
+  "tag": "bothu05, bothux15, bothux15-1"
+ },
+ {
+  "title": "虫 trùng (Sâu bọ)",
+  "subTitle": "虫 trùng, 血 huyết, 行 hành, 衣(衤) y",
+  "tag": "bothu05, bothux15, bothux15-1"
+ },
+ {
+  "title": "血 huyết (Máu)",
+  "subTitle": "血 huyết, 行 hành, 衣(衤) y, 襾 á",
+  "tag": "bothu05, bothux15, bothux15-1"
+ },
+ {
+  "title": "行 hành (Đi,thi hành)",
+  "subTitle": "行 hành, 衣(衤) y, 襾 á, 見( 见) kiến",
+  "tag": "bothu05, bothux15, bothux15-1"
+ },
+ {
+  "title": "衣(衤) y (Áo)",
+  "subTitle": "衣(衤) y, 襾 á, 見( 见) kiến, 角 giác",
+  "tag": "bothu05, bothux15, bothux15-1"
+ },
+ {
+  "title": "襾 á (Che đậy, úp lên)",
+  "subTitle": "襾 á, 見( 见) kiến, 角 giác, 言(讠) ngôn",
+  "tag": "bothu05, bothux15, bothux15-2"
+ },
+ {
+  "title": "見( 见) kiến (Trông thấy)",
+  "subTitle": "見( 见) kiến, 角 giác, 言(讠) ngôn, 谷 cốc",
+  "tag": "bothu06, bothux15, bothux15-2"
+ },
+ {
+  "title": "角 giác (Góc, sừng thú)",
+  "subTitle": "角 giác, 言(讠) ngôn, 谷 cốc, 豆 đậu",
+  "tag": "bothu06, bothux15, bothux15-2"
+ },
+ {
+  "title": "言(讠) ngôn (Nói)",
+  "subTitle": "言(讠) ngôn, 谷 cốc, 豆 đậu, 豕 thỉ",
+  "tag": "bothu06, bothux15, bothux15-2"
+ },
+ {
+  "title": "谷 cốc (Khe nước)",
+  "subTitle": "谷 cốc, 豆 đậu, 豕 thỉ, 豸 trãi",
+  "tag": "bothu06, bothux15, bothux15-2"
+ },
+ {
+  "title": "豆 đậu (Hạt đậu)",
+  "subTitle": "豆 đậu, 豕 thỉ, 豸 trãi, 貝(贝) bối",
+  "tag": "bothu06, bothux16, bothux16-1"
+ },
+ {
+  "title": "豕 thỉ (Con heo, con lợn)",
+  "subTitle": "豕 thỉ, 豸 trãi, 貝(贝) bối, 赤 xích",
+  "tag": "bothu06, bothux16, bothux16-1"
+ },
+ {
+  "title": "豸 trãi (Loài sâu)",
+  "subTitle": "豸 trãi, 貝(贝) bối, 赤 xích, 走 tẩu",
+  "tag": "bothu06, bothux16, bothux16-1"
+ },
+ {
+  "title": "貝(贝) bối (Vật báu)",
+  "subTitle": "貝(贝) bối, 赤 xích, 走 tẩu, 足 thất",
+  "tag": "bothu06, bothux16, bothux16-1"
+ },
+ {
+  "title": "赤 xích (Màu đỏ)",
+  "subTitle": "赤 xích, 走 tẩu, 足 thất, 身 thân",
+  "tag": "bothu06, bothux16, bothux16-1"
+ },
+ {
+  "title": "走 tẩu (Đi,chạy)",
+  "subTitle": "走 tẩu, 足 thất, 身 thân, 車(车) xa",
+  "tag": "bothu06, bothux16, bothux16-2"
+ },
+ {
+  "title": "足 thất (Chân, đầy đủ)",
+  "subTitle": "足 thất, 身 thân, 車(车) xa, 辛 tân",
+  "tag": "bothu06, bothux16, bothux16-2"
+ },
+ {
+  "title": "身 thân (Thân thể)",
+  "subTitle": "身 thân, 車(车) xa, 辛 tân, 辰 thần",
+  "tag": "bothu06, bothux16, bothux16-2"
+ },
+ {
+  "title": "車(车) xa (Xe cộ)",
+  "subTitle": "車(车) xa, 辛 tân, 辰 thần, 辵(辶 ) quai xước",
+  "tag": "bothu06, bothux16, bothux16-2"
+ },
+ {
+  "title": "辛 tân (Vất vả)",
+  "subTitle": "辛 tân, 辰 thần, 辵(辶 ) quai xước, 邑(阝) ấp",
+  "tag": "bothu06, bothux16, bothux16-2"
+ },
+ {
+  "title": "辰 thần (Thìn (12 chi))",
+  "subTitle": "辰 thần, 辵(辶 ) quai xước, 邑(阝) ấp, 酉 dậu",
+  "tag": "bothu06, bothux17, bothux17-1"
+ },
+ {
+  "title": "辵(辶 ) quai xước (Bước đi)",
+  "subTitle": "辵(辶 ) quai xước, 邑(阝) ấp, 酉 dậu, 釆 biện",
+  "tag": "bothu06, bothux17, bothux17-1"
+ },
+ {
+  "title": "邑(阝) ấp (Vùng đất)",
+  "subTitle": "邑(阝) ấp, 酉 dậu, 釆 biện, 里 lí",
+  "tag": "bothu06, bothux17, bothux17-1"
+ },
+ {
+  "title": "酉 dậu (Gà)",
+  "subTitle": "酉 dậu, 釆 biện, 里 lí, 金 kim",
+  "tag": "bothu06, bothux17, bothux17-1"
+ },
+ {
+  "title": "釆 biện (Nhiều màu)",
+  "subTitle": "釆 biện, 里 lí, 金 kim, 長(镸– 长) trường",
+  "tag": "bothu06, bothux17, bothux17-1"
+ },
+ {
+  "title": "里 lí (Dặm)",
+  "subTitle": "里 lí, 金 kim, 長(镸– 长) trường, 門(门) môn",
+  "tag": "bothu06, bothux17, bothux17-2"
+ },
+ {
+  "title": "金 kim (Kim loại, vàng)",
+  "subTitle": "金 kim, 長(镸– 长) trường, 門(门) môn, 阜(阝) phụ",
+  "tag": "bothu06, bothux17, bothux17-2"
+ },
+ {
+  "title": "長(镸– 长) trường (Dài)",
+  "subTitle": "長(镸– 长) trường, 門(门) môn, 阜(阝) phụ, 隶 đãi",
+  "tag": "bothu06, bothux17, bothux17-2"
+ },
+ {
+  "title": "門(门) môn (Cửa)",
+  "subTitle": "門(门) môn, 阜(阝) phụ, 隶 đãi, 隹 chuy",
+  "tag": "bothu06, bothux17, bothux17-2"
+ },
+ {
+  "title": "阜(阝) phụ (Đống đất)",
+  "subTitle": "阜(阝) phụ, 隶 đãi, 隹 chuy, 雨 vũ",
+  "tag": "bothu06, bothux17, bothux17-2"
+ },
+ {
+  "title": "隶 đãi (Kịp)",
+  "subTitle": "隶 đãi, 隹 chuy, 雨 vũ, 青(靑) thanh",
+  "tag": "bothu06, bothux18, bothux18-1"
+ },
+ {
+  "title": "隹 chuy (Chim đuôi ngắn)",
+  "subTitle": "隹 chuy, 雨 vũ, 青(靑) thanh, 非 phi",
+  "tag": "bothu06, bothux18, bothux18-1"
+ },
+ {
+  "title": "雨 vũ (Mưa)",
+  "subTitle": "雨 vũ, 青(靑) thanh, 非 phi, 面( 靣) diện",
+  "tag": "bothu06, bothux18, bothux18-1"
+ },
+ {
+  "title": "青(靑) thanh (Màu xanh)",
+  "subTitle": "青(靑) thanh, 非 phi, 面( 靣) diện, 革 cách",
+  "tag": "bothu06, bothux18, bothux18-1"
+ },
+ {
+  "title": "非 phi (Không)",
+  "subTitle": "非 phi, 面( 靣) diện, 革 cách, 韋(韦) vĩ",
+  "tag": "bothu06, bothux18, bothux18-1"
+ },
+ {
+  "title": "面( 靣) diện (Mặt)",
+  "subTitle": "面( 靣) diện, 革 cách, 韋(韦) vĩ, 韭 phỉ",
+  "tag": "bothu07, bothux18, bothux18-2"
+ },
+ {
+  "title": "革 cách (Cải cách)",
+  "subTitle": "革 cách, 韋(韦) vĩ, 韭 phỉ, 音 âm",
+  "tag": "bothu07, bothux18, bothux18-2"
+ },
+ {
+  "title": "韋(韦) vĩ (Da đã thuộc rồi)",
+  "subTitle": "韋(韦) vĩ, 韭 phỉ, 音 âm, 頁(页) hiệt",
+  "tag": "bothu07, bothux18, bothux18-2"
+ },
+ {
+  "title": "韭 phỉ (Rau hẹ)",
+  "subTitle": "韭 phỉ, 音 âm, 頁(页) hiệt, 風(凬–风) phong",
+  "tag": "bothu07, bothux18, bothux18-2"
+ },
+ {
+  "title": "音 âm (Âm thanh)",
+  "subTitle": "音 âm, 頁(页) hiệt, 風(凬–风) phong, 飛(飞) phi",
+  "tag": "bothu07, bothux18, bothux18-2"
+ },
+ {
+  "title": "頁(页) hiệt (Trang giấy)",
+  "subTitle": "頁(页) hiệt, 風(凬–风) phong, 飛(飞) phi, 食( 飠–饣) thực",
+  "tag": "bothu07, bothux19, bothux19-1"
+ },
+ {
+  "title": "風(凬–风) phong (Gió)",
+  "subTitle": "風(凬–风) phong, 飛(飞) phi, 食( 飠–饣) thực, 首 thủ",
+  "tag": "bothu07, bothux19, bothux19-1"
+ },
+ {
+  "title": "飛(飞) phi (Bay)",
+  "subTitle": "飛(飞) phi, 食( 飠–饣) thực, 首 thủ, 香 hương",
+  "tag": "bothu07, bothux19, bothux19-1"
+ },
+ {
+  "title": "食( 飠–饣) thực (Ăn)",
+  "subTitle": "食( 飠–饣) thực, 首 thủ, 香 hương, 馬( 马) mã",
+  "tag": "bothu07, bothux19, bothux19-1"
+ },
+ {
+  "title": "首 thủ (Đầu)",
+  "subTitle": "首 thủ, 香 hương, 馬( 马) mã, 骫 cốt",
+  "tag": "bothu07, bothux19, bothux19-1"
+ },
+ {
+  "title": "香 hương (Mùi hương)",
+  "subTitle": "香 hương, 馬( 马) mã, 骫 cốt, 高 cao",
+  "tag": "bothu07, bothux19, bothux19-2"
+ },
+ {
+  "title": "馬( 马) mã (Con ngựa)",
+  "subTitle": "馬( 马) mã, 骫 cốt, 高 cao, 髟 bưu",
+  "tag": "bothu07, bothux19, bothux19-2"
+ },
+ {
+  "title": "骫 cốt (Xương)",
+  "subTitle": "骫 cốt, 高 cao, 髟 bưu, 鬥 đấu",
+  "tag": "bothu07, bothux19, bothux19-2"
+ },
+ {
+  "title": "高 cao (Cao)",
+  "subTitle": "高 cao, 髟 bưu, 鬥 đấu, 鬯 xưởng",
+  "tag": "bothu07, bothux19, bothux19-2"
+ },
+ {
+  "title": "髟 bưu (Tóc dài)",
+  "subTitle": "髟 bưu, 鬥 đấu, 鬯 xưởng, 鬲 cách",
+  "tag": "bothu07, bothux19, bothux19-2"
+ },
+ {
+  "title": "鬥 đấu (Chiến đấu)",
+  "subTitle": "鬥 đấu, 鬯 xưởng, 鬲 cách, 鬼 quỷ",
+  "tag": "bothu07, bothux20, bothux20-1"
+ },
+ {
+  "title": "鬯 xưởng (Rượu nếp)",
+  "subTitle": "鬯 xưởng, 鬲 cách, 鬼 quỷ, 魚( 鱼) ngư",
+  "tag": "bothu07, bothux20, bothux20-1"
+ },
+ {
+  "title": "鬲 cách (Cái đỉnh)",
+  "subTitle": "鬲 cách, 鬼 quỷ, 魚( 鱼) ngư, 鳥(鸟) điểu",
+  "tag": "bothu07, bothux20, bothux20-1"
+ },
+ {
+  "title": "鬼 quỷ (Con quỷ)",
+  "subTitle": "鬼 quỷ, 魚( 鱼) ngư, 鳥(鸟) điểu, 鹵 lỗ",
+  "tag": "bothu07, bothux20, bothux20-1"
+ },
+ {
+  "title": "魚( 鱼) ngư (Con cá)",
+  "subTitle": "魚( 鱼) ngư, 鳥(鸟) điểu, 鹵 lỗ, 鹿 lộc",
+  "tag": "bothu08, bothux20, bothux20-1"
+ },
+ {
+  "title": "鳥(鸟) điểu (Con chim)",
+  "subTitle": "鳥(鸟) điểu, 鹵 lỗ, 鹿 lộc, 麥(麦) mạch",
+  "tag": "bothu08, bothux20, bothux20-2"
+ },
+ {
+  "title": "鹵 lỗ (Đất mặn)",
+  "subTitle": "鹵 lỗ, 鹿 lộc, 麥(麦) mạch, 麻 ma",
+  "tag": "bothu08, bothux20, bothux20-2"
+ },
+ {
+  "title": "鹿 lộc (Con huơu)",
+  "subTitle": "鹿 lộc, 麥(麦) mạch, 麻 ma, 黃 hoàng",
+  "tag": "bothu08, bothux20, bothux20-2"
+ },
+ {
+  "title": "麥(麦) mạch (Lúa mạch)",
+  "subTitle": "麥(麦) mạch, 麻 ma, 黃 hoàng, 黍 thử",
+  "tag": "bothu08, bothux20, bothux20-2"
+ },
+ {
+  "title": "麻 ma (Cây gai)",
+  "subTitle": "麻 ma, 黃 hoàng, 黍 thử, 黑 hắc",
+  "tag": "bothu08, bothux20, bothux20-2"
+ },
+ {
+  "title": "黃 hoàng (Màu vàng)",
+  "subTitle": "黃 hoàng, 黍 thử, 黑 hắc, 黹 chỉ",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "黍 thử (Lúa nếp)",
+  "subTitle": "黍 thử, 黑 hắc, 黹 chỉ, 黽 mãnh",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "黑 hắc (Màu đen)",
+  "subTitle": "黑 hắc, 黹 chỉ, 黽 mãnh, 鼎 đỉnh",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "黹 chỉ (May áo)",
+  "subTitle": "黹 chỉ, 黽 mãnh, 鼎 đỉnh, 鼓 cổ",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "黽 mãnh (Con ếch)",
+  "subTitle": "黽 mãnh, 鼎 đỉnh, 鼓 cổ, 鼠 thử",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "鼎 đỉnh (Cái đỉnh)",
+  "subTitle": "鼎 đỉnh, 鼓 cổ, 鼠 thử, 鼻 tỵ",
+  "tag": "bothu08, bothux21, bothux21-2"
+ },
+ {
+  "title": "鼓 cổ (Cái trống)",
+  "subTitle": "鼓 cổ, 鼠 thử, 鼻 tỵ, 齊(斉–齐) tề",
+  "tag": "bothu08, bothux21, bothux21-2"
+ },
+ {
+  "title": "鼠 thử (Con chuột)",
+  "subTitle": "鼠 thử, 鼻 tỵ, 齊(斉–齐) tề, 齒(歯 –齿) xỉ",
+  "tag": "bothu08, bothux21, bothux21-2"
+ },
+ {
+  "title": "鼻 tỵ (Cái mũi)",
+  "subTitle": "鼻 tỵ, 齊(斉–齐) tề, 齒(歯 –齿) xỉ, 龍(龙) long",
+  "tag": "bothu08, bothux21, bothux21-2"
+ },
+ {
+  "title": "齊(斉–齐) tề (Ngang bằng)",
+  "subTitle": "齊(斉–齐) tề, 齒(歯 –齿) xỉ, 龍(龙) long, 龜(亀–龟) quy",
+  "tag": "bothu08, bothux21, bothux21-2"
+ },
+ {
+  "title": "齒(歯 –齿) xỉ (Răng)",
+  "subTitle": "齒(歯 –齿) xỉ, 龍(龙) long, 龜(亀–龟) quy, 龠 dược",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "龍(龙) long (Con rồng)",
+  "subTitle": "龍(龙) long, 龜(亀–龟) quy, 龠 dược, ",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "龜(亀–龟) quy (Con rùa)",
+  "subTitle": "龜(亀–龟) quy, 龠 dược, , ",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "龠 dược (Sáo 3 lỗ)",
+  "subTitle": "龠 dược, 龜(亀–龟) quy, 龍(龙) long, 齒(歯 –齿) xỉ",
+  "tag": "bothu08, bothux21, bothux21-1"
+ },
+ {
+  "title": "黃 Hoàng (màu vàng), 革 cách (Cải cách)",
+  "subTitle": "phân biệt bộ có đầu chữ U ở trên, nhìn giống nhau",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "黍 thử (Lúa nếp), 麥(麦) mạch (Lúa mạch), 米 mễ (Gạo), 禾 hòa (Cây lúa), 釆 biện (Nhiều màu), 耒 lỗi (Cái cày), 木 mộc (Gỗ, cây)",
+  "subTitle": "phân biệt liên quan đến nhu yếu phẩm gạo",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "鼎 đỉnh (cái đỉnh), 鬲 cách (Cái đỉnh), 高 cao (Cao), 邑(阝) ấp (Vùng đất), 阜(阝) phụ (Đống đất)",
+  "subTitle": "phân biệt cùng tên, cân bằng-đối xứng",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "臼 cữu (Cái cối), 鼠 thử (Con chuột)",
+  "subTitle": "ô chữ nhật bị đứt ở giữa trên đầu",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "鳥(鸟) điểu (Con chim), 魚( 鱼) ngư (Con cá), 馬( 马) mã (Con ngựa), 鹿 lộc (con hưu)",
+  "subTitle": "phân biệt bộ động vật có nhiều chân\/sừng ở dưới",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "髟 bưu (Tóc dài), 彡 sam (Lông, tóc dài), 毛 mao (Lông), 手 (扌) thủ (Tay)",
+  "subTitle": "liên quan đến lông, tóc…",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "隶 đãi (Kịp), 長(镸– 长) trường (Dài), 身 thân (Thân thể), 艮 cấn (Quẻ Cấn), 牙 nha (Răng)",
+  "subTitle": "Bộ chưa liên kết được vào đâu",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "豸 trãi (Loài sâu), 豕 thỉ (Con heo, con lợn), 角 giác (Góc, sừng thú)",
+  "subTitle": "nhìn giống nhau",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "辵(辶 ) quai xước (Bước đi), 足 thất (Chân, đầy đủ), 走 tẩu (Đi,chạy), 廴 dẫn (Bước dài), 疋(匹) thất (ĐVĐ.chiều dài)",
+  "subTitle": "liên quan đến chân và hành động của chân",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "辰 thần (Thìn (12 chi)), 龍(龙) long (Con rồng), 酉 dậu (Gà)",
+  "subTitle": "Nhầm lẫn giữa Thần (thìn) - Long",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "貝(贝) bối (Vật báu), 見( 见) kiến (Trông thấy), 自 tự (Bản thân), 目 mục (Mắt), 曰 viết (Nói)",
+  "subTitle": "Phân biệt các bộ có ô chữ nhật và chân ở dưới",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "土 thổ (Đất), 士 sĩ (Kẻ sĩ), 生 sinh (sinh sống đẻ), 玉 ngọc (Đá quý), 彐 ký (Đầu nhím), 牛( 牜) ngưu (Trâu)",
+  "subTitle": "Bộ giống cái cọc trên đất (có đế ngang và gạch ngang ở giữa) 01",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "厶 tư (Riêng tư), 玄 huyền (Huyền bí), 幺 yêu (Nhỏ nhắn), 禸 nhựu (Vết chân)",
+  "subTitle": "Bộ số 4 kép",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "犬(犭) khuyển (Con chó), 火(灬) hỏa (Lửa), 欠 khiếm (Khiếm khuyết), 大 đại (To lớn), 入 nhập (Vào, thâm nhập)",
+  "subTitle": "Bộ 2 chân dạng và có gạch ngang ở giữa (giống bộ nhân)",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "矢 thỉ (Mũi tên), 穴 huyệt (Hang lỗ)",
+  "subTitle": "Bộ 2 chân dạng (2)",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "豆 đậu (Hạt đậu), 言(讠) ngôn (Nói), 谷 cốc (Khe nước), 襾 á (Che đậy, úp lên), 文 văn (Văn chương)",
+  "subTitle": "cân bằng - đối xứng 1",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "血 huyết (Máu), 皿 mãnh (Bát đĩa), 白 bạch (Màu trắng), 支 chi (Cành cây), 干 can (Làm), 工 công (Công việc)",
+  "subTitle": "cân bằng - đối xứng 2",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "父 phụ (Cha), 爻 hào (Giao nhau), 示(礻) thị (kỳ) (Chỉ thị)",
+  "subTitle": "cân bằng - đối xứng 3",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "口 khẩu (Cái Miệng), 囗 vi (Vây quanh), 缶 phẫu (Đồ sành)",
+  "subTitle": "bộ vuông kín",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "厂 xưởng (Nhà xưởng), 气 khí (Không khí), 戶 hộ (Cửa một cánh), 广 quảng (Rộng), 尸 thi (Xác chết), 疒 nạch (Bệnh tật)",
+  "subTitle": "bộ có mái che và 1 bên vểnh ra",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "夕 tịch (Đêm Tối), 歹 đãi (Xấu xa), 舛 suyễn (Sai lầm)",
+  "subTitle": "bộ số 7",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "方 phương (Hình vuông), 石 thạch (Đá)",
+  "subTitle": "bộ lên gối",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "又 hựu (Lại), 夂 truy (Đến từ phía sau), 夊 tuy (Đi chậm), 殳 thù (Một loại vũ khí), 皮 bì (Da)",
+  "subTitle": "bộ 2 chân vắt chéo",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "勹 bao (Bao bọc), 力 lực (Sức mạnh), 刀(刂) đao (Con dao), 虍 hổ (Vằn vện)",
+  "subTitle": "nhìn giống bộ bao (bao bọc)",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "几 kỷ (Ghế dựa), 儿 nhi (Đứa trẻ con), 匕 chủy (Cái thìa), 尢 uông (Yếu đuối), 无 vô (Không), 瓦 ngõa (Ngói)",
+  "subTitle": "bộ giống chữ Rê 1",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "弋 dực (Bắn), 戈 qua (Binh khí), 氏 thị (Thị tộc), 老 lão (Già), 鬯 xưởng (Rượu nếp)",
+  "subTitle": "bộ giống chữ Rê 2",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "冂 quynh (Vùng biên giới), 凵 khảm (Há miệng), 匚 phương (Tủ đựng, h.vuông), 匸 hễ (Che đậy), 巾 cân (Cái khăn)",
+  "subTitle": "bộ chữ nhật thiếu 1 mặt",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "亻(人) nhân đứng (Người), 彳 xích (Bước chân trái), 行 hành (Đi,thi hành)",
+  "subTitle": "nhìn giống bộ nhân đứng",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "弓 cung (Cái cung), 己 kỷ (Bản thân mình)",
+  "subTitle": "bộ nhìn kiểu bụng bầu",
+  "tag": "bothu, dễ nhầm, bothux22"
+ },
+ {
+  "title": "水(氵) nước (Nước), 衣(衤) y (Áo)",
+  "subTitle": "nhìn gần cân bằng và fancy (giống bộ Y phục)",
+  "tag": "bothu, dễ nhầm, bothux22"
+ }
+]
