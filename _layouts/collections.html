@@ -34,11 +34,13 @@ layout: default
       </span>
     {% endif %}
     </time>
-    {% include reading_time.html %}
+    {% include reading_time.html %}{% if page.text2speech %} · {% include txt_2_speech.html %}{% endif %}
   </span>
 
 	<div class="w3-section">
-		{{ content | toc }}
+    <div class="content-speech">
+      {{ content | toc }}
+    </div>
   </div>
 
 </article>

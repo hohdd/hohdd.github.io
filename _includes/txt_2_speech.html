@@ -1,0 +1,98 @@
+<span id="audio-txt-2-speech">🔊 Speech</span>
+<select id="voice-select"></select>
+<script>
+    const voiceSelect = document.getElementById("voice-select");
+    const synth = window.speechSynthesis;
+
+    let voices = [];
+    function populateVoiceList() {
+        voices = synth.getVoices();
+
+        for (let i = 0; i < voices.length; i++) {
+            const option = document.createElement("option");
+            /*option.textContent = `${voices[i].name} (${voices[i].lang})`;*/
+            option.textContent = `${voices[i].name}`;
+            /*option.textContent = `${voices[i].lang}`;*/
+
+            if (voices[i].default) {
+                option.textContent += " — DEFAULT";
+            }
+
+            option.setAttribute("data-lang", voices[i].lang);
+            option.setAttribute("data-name", voices[i].name);
+            voiceSelect.appendChild(option);
+        }
+    }
+
+    populateVoiceList();
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = populateVoiceList;
+    }
+
+    const audioBtn = document.getElementById("audio-txt-2-speech");
+    let isPlayingTxt2Speech = false;
+    let defaultTabTitle = document.title;
+    const isSynthAvailable = window.speechSynthesis !== undefined;
+    if (!isSynthAvailable) {
+        audioBtn.style.display = "none";
+    }
+
+    function speak(text, onend) {
+        window.speechSynthesis.cancel();
+        var ssu = new SpeechSynthesisUtterance(text);
+        const selectedOption = voiceSelect.selectedOptions[0].getAttribute("data-name");
+        for (let i = 0; i < voices.length; i++) {
+            if (voices[i].name === selectedOption) {
+                ssu.voice = voices[i];
+            }
+        }
+        window.speechSynthesis.speak(ssu);
+        function _wait() {
+            if (!window.speechSynthesis.speaking) {
+                onend();
+                return;
+            }
+            window.setTimeout(_wait, 200);
+        }
+        _wait();
+    }
+
+    function getBlogText() {
+        const text = document.querySelectorAll(".content-speech > *");
+        let textArray = [];
+        text.forEach((elem) => {
+            textArray.push(elem.innerText);
+        });
+
+        textArray.forEach((elem, index) => {
+            if (elem.startsWith("Copy")) textArray[index] = elem.replace("Copy\n", "");
+        });
+        return textArray.join("\n");
+    }
+
+    audioBtn.addEventListener("click", () => {
+        isPlayingTxt2Speech = !isPlayingTxt2Speech;
+        if (isPlayingTxt2Speech) {
+            let text = getBlogText();
+            speak(text, () => {
+                isPlayingTxt2Speech = false;
+                audioBtn.classList.remove("active");
+            });
+        } else {
+            window.speechSynthesis.cancel();
+        }
+        audioBtn.classList.toggle("active");
+    });
+
+    window.addEventListener("beforeunload", () => {
+        window.speechSynthesis.cancel();
+    });
+
+    window.setInterval(() => {
+        if (isPlayingTxt2Speech) {
+            document.title = "🔊 Playing... " + defaultTabTitle;
+        } else {
+            document.title = defaultTabTitle;
+        }
+    }, 500);
+</script>

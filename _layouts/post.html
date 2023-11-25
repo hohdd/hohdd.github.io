@@ -20,7 +20,7 @@ layout: default
       {% endif %}
     </span>
     <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line"> · {{ page.date | date_to_string }} 
-    {% include reading_time.html %} · 
+    {% include reading_time.html %}{% if page.text2speech %} · {% include txt_2_speech.html %}{% endif %} · 
     {% if page.draft != true %}
     <span>
       {% if post %}
@@ -37,7 +37,9 @@ layout: default
     </time>
   </span>
 	<div class="w3-section">
-		{{ content | toc }}
+    <div class="content-speech">
+      {{ content | toc }}
+    </div>
   </div>
 </article>
 

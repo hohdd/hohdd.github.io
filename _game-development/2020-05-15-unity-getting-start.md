@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: Unity Getting Start
-description: Unity Getting Start
+title: Unity Getting Start - làm việc với Unity Editor (Interface)
+description: Unity Getting Start - làm việc với Unity Editor (Interface)
 
 ### HUMAN
-header: Unity Getting Start
+header: Unity Getting Start - làm việc với Unity Editor (Interface)
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
@@ -22,9 +22,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Unity # this for AMP related post
+collection: Get_Started # this for AMP related post
 ### category: dùng để group collection
-category: Unity
+category: Get_Started
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
@@ -39,6 +39,8 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Unity Editor (Interface)
 Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor.html
+
+### Toolbar
 - Toolbar: gồm
 	+ thông tin Account
 	+ Unity Game Services
@@ -47,6 +49,8 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 	+ Unity Search (Ctrl+K): ? help, p: only Project, find: tìm activate Files, h: only Hierarchy, m: only Menus, api: only Static API, pkg: only Packages...
 	+ Layers: cho phép Show/Hide/Clickable các objects thuộc về layer. Có thể Edit Tags và Layers. Thêm/Sửa/Xóa Tags, có tối đa 31 User Layer và một số Builtin Layer mặc định.
 	+ Layout: kiểu layout sử dụng (2 by 3, 4 split...)
+
+### Hierarchy window
 - Hierarchy window: Unity sử dụng khái niệm "parent-child" để Phân cấp và Organize các GameObjects. Sử dụng Kéo-Thả để sắp xếp...
 	+ Ctrl+Shift+N: để tạo mới empty GameObject nằm ở root
 	+ Ctrl+Shift+G: để tạo parent của selected GameObject hiện tại
@@ -55,12 +59,16 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 		+ Tip: giữ Alt để không loading Scence khi kéo Scene vào Hierarchy
 		+ Set Active Scene để khi thêm mới GameObjects bằng Scripts sẽ thêm vào Scene đó
 		+ Xem thêm "Work with multiple scenes in Unity": https://docs.unity3d.com/2021.3/Documentation/Manual/MultiSceneEditing.html
+
+### Game view
 - Game view: để xem trước game sẽ như thế nào trong các thiết bị.
 	![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/device-simulator-view.png)
 	+ Game/Simulator: với Simulator có thể xem trước trong các thiết bị, Rotate, Safe Area
 	+ Aspect: kiểm tra xem trò chơi trông như thế nào trên các màn hình có tỷ lệ khung hình khác nhau.
 	+ Scale slider: để phóng to và kiểm tra các khu vực của màn hình Trò chơi một cách chi tiết hơn.
 	+ Gizmos: hiển thị của Gizmos các GameObject, có thể filter để chỉ xem một số loại Gizmo nhất định.
+
+### Scene view
 - Scene view: là nơi trực quan hóa và tương tác với thế giới game trong Unity Editor.
 	+ Overlays: nhấn "Space" để hiển thị Overlays Menu (Tools, View Options, Grid and Snap Toolbar, Orientation, Search, Tool Settings)
 	+ Tools:
@@ -101,6 +109,8 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 		- Khi một GameObject được chọn, nó có viền Orange
 		- Nếu GameObject được chọn là Parents thì Children của nó có viền màu Blue
 		- có thể thay đổi màu trong Edit > Preferences > Color
+
+### Inspector window
 - Inspector window
 	+ Khi có hai hoặc nhiều mục được chọn, bạn có thể chỉnh sửa tất cả các thuộc tính "chung" của chúng, các thuộc tính khác sẽ có dấu "-".
 	+ "Lock the Inspector" để chỉnh sửa thuộc tính trong nó mà không bị nhảy sang Inspector của GameObject khác.
@@ -109,6 +119,13 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 		- Right-click a GameObject in the Hierarchy view, or an Asset in the Project view. (hoặc bấm Alt+P)
 		- Một Component trong Inspector cũng có thể Focused
 		- Hover lên title của Focused Inspector hoặc click chuột phải lên title và "ping" để tìm xem GameObject đó ở đâu (Hierarchy, Project Assets)
+	+ Editing properties (Numeric field expressions): Các trường số cũng hỗ trợ các chức năng đặc biệt hữu ích khi chỉnh sửa nhiều đối tượng được chọn cùng một lúc:
+		- L(a,b) dẫn đến đường nối tuyến tính giữa a và b.<br>![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/inspector-expr-L.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+		- R(a,b) dẫn đến một giá trị ngẫu nhiên giữa a và b.<br>![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/inspector-expr-R.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+		- Các biểu thức +=, -=, *=, /= có thể được sử dụng để sửa đổi giá trị hiện tại, ví dụ: nhập *=2 sẽ làm cho tất cả giá trị trường lớn gấp đôi.<br>![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/inspector-expr-assign.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+		- ExpressionEvaluator: sqrt(a), floor(a), ceil(a), round(a), cos(a), sin(a), tan(a), pi. Nhập cos(L(0,2*pi))*5 vào X và sin(L(0,2*pi))*5 vào tọa độ Z sẽ đặt mười viên nang đã chọn vào một vòng tròn.<br>![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/inspector-expr-trig.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+### Others
 - Status Bar:
 	+ Tin nhắn gần đây nhất được ghi vào cửa sổ Console . Bấm vào thông báo để mở cửa sổ Console.
 	+ Thanh tiến trình chung cho các tác vụ không đồng bộ khác nhau
@@ -122,11 +139,15 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 - Undo History: cung cấp một cách trực quan để điều hướng qua lịch sử hoàn tác.<br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/undo-history-redo.png)
 
 ## Create Gameplay
+
+### Scenes
 - Scenes:
 	+ mỗi Scene có môi trường, nhân vật, chướng ngại vật, đồ trang trí và giao diện người dùng riêng.
 	+ Scene mặc định, chứa a Main Camera and a directional Light.
 	+ Có thể tạo Scene template (Unity sử dụng các Scene template để tạo Scene mới. Scene template là nội dung được lưu trữ trong Project. Chúng tương tự như các Scene nhưng được thiết kế để sao chép thay vì sử dụng trực tiếp.)
 	+ Ctrl+N để tạo Scene mới hoặc click chuột phải Project Assets chọn create Scene.
+
+### GameObjects
 - GameObjects:
 	+ Mặc định sẽ có thuộc tính Transform (luôn có, không thể xóa), được sử dụng để lưu trữ Position, Rotation, Scale, Parenting state.
 	+ Parenting: root > GameObject > GameObject ... Cơ thể > Cánh tay > Bàn tay > Ngón tay... global coordinates > local coordinates
@@ -162,13 +183,17 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 			+ Navigation Static: Bao gồm GameObject khi tính toán trước dữ liệu điều hướng (Navigation and Pathfinding).
 			+ Off Mesh Link Generation: Cố gắng tạo Liên kết OffMesh bắt đầu từ GameObject này khi tính toán trước dữ liệu điều hướng (Navigation and Pathfinding). Xem thêm: https://docs.unity3d.com/2021.3/Documentation/Manual/nav-BuildingOffMeshLinksAutomatically.html
 			+ Reflection Probe: Bao gồm GameObject này khi tính toán trước dữ liệu cho Reflection Probe có thuộc tính Type được đặt thành Baked (Lighting).
-	+ Save your work:
-		- Scene changes: Nếu bạn thêm, di chuyển hoặc xóa GameObject. Nếu bạn thay đổi các tham số của GameObject trong Inspector.
-		- Project-wide changes: Những thay đổi trên toàn dự án trong Unity áp dụng cho toàn bộ dự án của bạn chứ không phải cho một Scence cụ thể.
-			+ Project Settings: các file được lưu trong thư mục "Library", Input > InputManager.asset, Tags And Layers > TagManager.asset, Player > ProjectSettings.asset...
-			+ Build Settings: Unity lưu các thay đổi đối với Cài đặt bản dựng trong thư mục "Library" dưới dạng EditorBuildSettings.asset.
-			+ Changed assets: (Lưu ý) Một số loại nội dung có nút "Apply" trong "Inspector". Unity sẽ không lưu những thứ này trừ khi bạn chọn "Apply".
-			+ Dirty assets: các tệp trên đĩa của bạn đã được sửa đổi trong phần mềm nhưng chưa được lưu.
+
+### Save your work
+- Save your work:
+	- Scene changes: Nếu bạn thêm, di chuyển hoặc xóa GameObject. Nếu bạn thay đổi các tham số của GameObject trong Inspector.
+	- Project-wide changes: Những thay đổi trên toàn dự án trong Unity áp dụng cho toàn bộ dự án của bạn chứ không phải cho một Scence cụ thể.
+		+ Project Settings: các file được lưu trong thư mục "Library", Input > InputManager.asset, Tags And Layers > TagManager.asset, Player > ProjectSettings.asset...
+		+ Build Settings: Unity lưu các thay đổi đối với Cài đặt bản dựng trong thư mục "Library" dưới dạng EditorBuildSettings.asset.
+		+ Changed assets: (Lưu ý) Một số loại nội dung có nút "Apply" trong "Inspector". Unity sẽ không lưu những thứ này trừ khi bạn chọn "Apply".
+		+ Dirty assets: các tệp trên đĩa của bạn đã được sửa đổi trong phần mềm nhưng chưa được lưu.
+
+### Prefabs
 - Prefabs: Hệ thống Prefab của Unity cho phép bạn tạo, định cấu hình và lưu trữ GameObject hoàn chỉnh với tất cả các thành phần, giá trị thuộc tính và GameObject con của nó dưới dạng Nội dung có thể tái sử dụng.
 	+ Creating Prefabs: Để tạo assets Prefab, hãy kéo GameObject từ Hierarchy vào Project window (Quá trình này cũng biến GameObject ban đầu thành một Prefab instance). Các Prefab instance hiển thị trong Hierarchy với text blue và GameObject gốc của Prefab được hiển thị bằng biểu tượng Prefab hình khối blue.
 	+ Creating Prefab instances: có thể tạo các phiên bản của Prefab bằng cách kéo Prefab Assets từ chế Project view to Hierarchy or Scene view. (cũng có thể tạo các Prefabs instance trong runtime bằng Scripting)
@@ -179,10 +204,120 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 		- Trong Inspector, phần override instance được hiển thị với Text Name được in đậm và có đường màu xanh lam ở lề trái. Ngoài ra trên Hierarchy và Inspector cũng có badges +- khi Prefab Instnace Override có Add/Remove components.
 		- Overridden Property Value luôn được ưu tiên hơn Value từ Asset Prefab và nó cũng không ảnh hưởng gì tới Asset Prefab gốc
 		- Alignment (Position, Rotation, Width, Height, Margins...) không được tính là Prefab Override vì thông thường bạn sẽ muốn các Prefab Instance ở các vị trí và góc quay khác nhau.
-	+ Editing a Prefab via its instances</br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsInspectorControls1.png)
+	+ Editing a Prefab via its instances<br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsInspectorControls1.png)
 		- Applying: để áp dụng các Overrides của instance hiện tại vào Asset Prefab
-		- Reverting: để loại bỏ tất cả các Overrides để về giá trị Prefab gốc</br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdown1.png)
-		- có thể click vào một mục của Overrides Drop-down để kiểm tra override đó</br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdownCompareComponent1.png)
+		- Reverting: để loại bỏ tất cả các Overrides để về giá trị Prefab gốc<br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdown1.png)
+		- có thể click vào một mục của Overrides Drop-down để kiểm tra override đó<br>![alt](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PrefabsOverridesDropdownCompareComponent1.png)
+
+## Asset Workflow
+
+Asset Workflow là quy trình tạo, quản lý và sử dụng các tài sản trong Unity. Asset Workflow bao gồm các bước sau:
+- Tạo tài sản: Bước đầu tiên là tạo các tài sản cần thiết cho trò chơi của bạn. Tài sản có thể là bất kỳ thứ gì, từ mô hình 3D đến âm thanh và kịch bản.
+- Xuất bản tài sản: Sau khi tạo tài sản, bạn cần xuất bản chúng để có thể sử dụng trong project của mình.
+- Quản lý tài sản: Bạn cần quản lý tài sản của mình một cách hiệu quả để dễ dàng tìm thấy và sử dụng chúng.
+- Sử dụng tài sản: Bước cuối cùng là sử dụng tài sản trong cảnh của trò chơi của bạn.
+
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/AssetWorkflowOverview.svg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+### Tạo tài sản
+
+Có nhiều cách để tạo tài sản trong Unity. Bạn có thể tạo tài sản từ đầu bằng cách sử dụng các công cụ của Unity, hoặc bạn có thể nhập tài sản từ các nguồn bên ngoài, chẳng hạn như các trang web tải xuống tài sản miễn phí hoặc trả phí.
+
+Nếu bạn muốn tạo tài sản từ đầu, Unity cung cấp một bộ công cụ mạnh mẽ để giúp bạn. Các công cụ này bao gồm:
+- Modeler: Công cụ này cho phép bạn tạo mô hình 3D.
+- Texturer: Công cụ này cho phép bạn tạo kết cấu cho các mô hình 3D.
+- Audio Mixer: Công cụ này cho phép bạn tạo và chỉnh sửa âm thanh và nhạc.
+- Scripting Editor: Công cụ này cho phép bạn tạo và chỉnh sửa kịch bản.
+
+### Xuất bản tài sản
+
+Sau khi tạo tài sản, bạn cần xuất bản chúng để có thể sử dụng trong project của mình. Để xuất bản tài sản, bạn có thể sử dụng menu File > Export Asset.
+
+Khi xuất bản tài sản, bạn có thể chọn định dạng tệp mà bạn muốn xuất. Unity hỗ trợ nhiều định dạng tệp khác nhau, bao gồm .fbx, .obj, .png, .wav và .cs.
+
+### Quản lý tài sản
+
+Unity cung cấp một số công cụ để giúp bạn quản lý tài sản của mình. Các công cụ này bao gồm:
+- Project Browser: Cửa sổ này cho phép bạn xem tất cả các tài sản trong project của mình.
+- Asset Store: Cửa hàng trực tuyến này cung cấp nhiều tài sản miễn phí và trả phí mà bạn có thể sử dụng trong trò chơi của mình.
+- Asset Bundles: Asset Bundles là một cách để nhóm các tài sản lại với nhau thành một tệp duy nhất. Điều này có thể giúp bạn giảm kích thước project của mình và cải thiện hiệu suất.
+
+### Sử dụng tài sản
+
+Sau khi xuất bản tài sản, bạn có thể sử dụng chúng trong cảnh của trò chơi của mình. Để sử dụng tài sản, bạn có thể kéo và thả chúng vào cửa sổ Hierarchy.
+
+Bạn cũng có thể sử dụng mã để sử dụng tài sản. Ví dụ: bạn có thể sử dụng mã để tải tài sản từ tệp hoặc tạo đối tượng từ tài sản.
+
+Dưới đây là một số mẹo để cải thiện Asset Workflow của bạn:
+- Sử dụng các thư mục và tên tài sản mô tả nội dung của chúng. Điều này sẽ giúp bạn dễ dàng tìm thấy các tài sản mà bạn cần.
+- Tạo các Asset Bundles cho các tài sản có liên quan. Điều này sẽ giúp bạn giảm kích thước project của mình và cải thiện hiệu suất.
+- Sử dụng mã để tải tài sản từ tệp. Điều này sẽ giúp bạn tiết kiệm thời gian và cải thiện hiệu suất.
+
+### AssetBundles
+
+AssetBundles là một tính năng của Unity cho phép bạn nhóm các tài sản lại với nhau thành một tệp duy nhất. AssetBundles có thể được sử dụng để giảm kích thước project, cải thiện hiệu suất và dễ dàng phân phối tài sản.
+
+Các thành phần của AssetBundles:
+- Manifest: Manifest là một tệp văn bản chứa thông tin về các tài sản được bao gồm trong AssetBundle.
+- Assets: Assets là các tài sản thực tế được bao gồm trong AssetBundle.
+
+Cách tạo AssetBundles:
+- Để tạo một AssetBundle, bạn có thể sử dụng menu Assets > Create > AssetBundle. Bạn cũng có thể tạo AssetBundle bằng cách kéo và thả các tài sản vào cửa sổ Project.
+- Khi bạn tạo một AssetBundle, Unity sẽ tạo một tệp AssetBundle mới trong thư mục Assets của project của bạn. Tệp AssetBundle này sẽ chứa tất cả các thông tin cần thiết để tải AssetBundle trong trò chơi của bạn.
+
+Sử dụng AssetBundles:
+- Để sử dụng một AssetBundle trong trò chơi của bạn, bạn có thể sử dụng hàm LoadAssetBundle. Hàm này sẽ trả về một đối tượng AssetBundle mà bạn có thể sử dụng để tải các tài sản từ AssetBundle.
+
+Một số ví dụ về cách sử dụng AssetBundles:
+- Sử dụng AssetBundles để lưu trữ các tài sản có kích thước lớn, chẳng hạn như mô hình 3D hoặc âm thanh.
+- Sử dụng AssetBundles để lưu trữ các tài sản không cần thiết cho tất cả người chơi, chẳng hạn như nội dung bổ sung hoặc tài sản tùy chọn.
+- Sử dụng AssetBundles để phân phối tài sản cho các nền tảng khác nhau, chẳng hạn như iOS và Android.
+
+Tùy chỉnh AssetBundles:
+- Compression: Bạn có thể chọn mức nén cho AssetBundle. Mức nén cao hơn sẽ giảm kích thước AssetBundle, nhưng cũng có thể làm giảm hiệu suất.
+- Variants: Bạn có thể tạo các biến thể của AssetBundle với các tài sản khác nhau. Điều này có thể hữu ích nếu bạn muốn phân phối tài sản cho các nền tảng khác nhau hoặc cho các nhóm người chơi khác nhau.
+
+Xuất AssetBundles:
+- Bạn có thể xuất AssetBundles để chia sẻ chúng với những người khác hoặc sử dụng chúng trong các project khác. Để xuất AssetBundle, bạn có thể sử dụng menu File > Export AssetBundle.
+
+Ngoài các tính năng cơ bản, AssetBundles còn có một số tính năng nâng cao, chẳng hạn như:
+- AssetBundle Streaming: AssetBundle Streaming cho phép bạn tải AssetBundle một cách linh hoạt, giúp cải thiện hiệu suất của trò chơi của bạn.
+- AssetBundle Dependencies: AssetBundle Dependencies cho phép bạn xác định các tài sản khác mà AssetBundle phụ thuộc vào. Điều này có thể hữu ích để quản lý AssetBundle của bạn một cách hiệu quả.
+
+Dưới đây là một số mẹo để sử dụng AssetBundles hiệu quả:
+- Sử dụng AssetBundles cho các tài sản có kích thước lớn hoặc không cần thiết cho tất cả người chơi.
+- Tùy chỉnh cài đặt nén và biến thể để tối ưu hóa AssetBundle của bạn cho nhu cầu của bạn.
+- Sử dụng AssetBundle Streaming để cải thiện hiệu suất
+
+## Presets
+
+Presets là một tính năng của Unity cho phép bạn lưu trữ và áp dụng các giá trị cài đặt cho các thành phần, tài sản hoặc cài đặt Project. Presets có thể được sử dụng để tiết kiệm thời gian và cải thiện hiệu quả khi làm việc với Unity.
+
+Lợi ích của Presets:
+- Tiết kiệm thời gian: Presets cho phép bạn lưu trữ các cài đặt mà bạn thường sử dụng, giúp bạn tiết kiệm thời gian khi cần sử dụng chúng.
+- Cải thiện hiệu quả: Presets có thể giúp bạn làm việc với Unity một cách hiệu quả hơn bằng cách cho phép bạn nhanh chóng áp dụng các cài đặt mà bạn cần.
+
+Một số ví dụ về cách sử dụng Presets:
+- Sử dụng Presets để lưu trữ các cài đặt cho các thành phần thường sử dụng, chẳng hạn như Rigidbody2D hoặc Light.
+- Sử dụng Presets để lưu trữ các cài đặt cho các tài sản thường sử dụng, chẳng hạn như mô hình 3D hoặc kết cấu.
+- Sử dụng Presets để lưu trữ các cài đặt Project, chẳng hạn như cài đặt hình ảnh hoặc cài đặt âm thanh.
+
+### Cách tạo Presets
+
+Để tạo một Preset, bạn có thể sử dụng menu Assets > Create > Preset. Bạn cũng có thể tạo Preset bằng cách nhấp chuột phải vào một thành phần, tài sản hoặc cài đặt Project và chọn Create Preset.
+
+Khi bạn tạo một Preset, Unity sẽ mở một cửa sổ cho phép bạn chọn các giá trị cài đặt mà bạn muốn lưu trữ.
+
+Bạn có thể tùy chỉnh Presets bằng cách thêm hoặc xóa các giá trị cài đặt. Để làm điều này, bạn có thể mở Preset trong Editor và chỉnh sửa các giá trị cài đặt của nó.
+
+### Sử dụng Presets
+
+Để sử dụng một Preset, bạn có thể nhấp chuột phải vào một thành phần, tài sản hoặc cài đặt Project và chọn Apply Preset. Bạn cũng có thể áp dụng Preset bằng cách sử dụng menu Window > Presets.
+
+Lưu ý: Áp dụng Preset sẽ sao chép các thuộc tính từ Preset vào item. Nó không liên kết Preset với item. Những thay đổi bạn thực hiện đối với Preset không ảnh hưởng đến các items mà bạn đã áp dụng Preset trước đó.
+
+Bạn có thể xuất Presets để chia sẻ chúng với những người khác hoặc sử dụng chúng trong các project khác. Để xuất Preset, bạn có thể sử dụng menu File > Export Preset.
+
 
 ## Scripting
 
@@ -212,3 +347,11 @@ Tham khảo: https://docs.unity3d.com/2021.3/Documentation/Manual/UsingTheEditor
 - Github:
 	- https://github.com/mminer?tab=repositories
 	- https://learn.unity.com/tutorial/playground-reference-guide#64885b62edbc2a01d4bbf3af
+
+## Knowhow
+
+| Title | Sub-Title
+|:-|:-:|-:
+| Row **1** | Column *2*
+| Column 1  | Row *2*
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}
