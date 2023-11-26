@@ -37,9 +37,23 @@ date: 2020-05-15 14:26:14 +0700
 ```
 |- ROOT
 |--Assets
+|	|--Editor
 |	|--Standard Assets
 |	|--StreamingAssets
 |	|--Resources
+|	|--<NameOfGame>
+|	|	|--Animations
+|	|	|--Art
+|	|	|	|--UI
+|	|	|--Audio
+|	|	|	|--UI
+|	|	|--Prefabs
+|	|	|	|--UI
+|	|	|--Scenes
+|	|	|--Scripts
+|	|	|	|--UI
+|	|	|	|--Utils
+|	|	|--Presets
 |--Library
 |--Editor
 |--Gizmos

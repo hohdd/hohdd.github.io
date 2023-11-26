@@ -318,6 +318,13 @@ Lưu ý: Áp dụng Preset sẽ sao chép các thuộc tính từ Preset vào it
 
 Bạn có thể xuất Presets để chia sẻ chúng với những người khác hoặc sử dụng chúng trong các project khác. Để xuất Preset, bạn có thể sử dụng menu File > Export Preset.
 
+### Preset Manager
+
+Preset Manager là một cửa sổ trong Cài đặt dự án (menu: Edit > Project Settings > Preset Manager) cho phép bạn quản lý các Cài đặt sẵn tùy chỉnh mà bạn tạo để chỉ định các thuộc tính mặc định khi bạn thêm một thành phần vào GameObject hoặc Nội dung mới vào dự án của mình. Các cài đặt trước mặc định mà bạn xác định sẽ ghi đè cài đặt mặc định của Unity.
+
+Lưu ý: Bạn không thể đặt thuộc tính mặc định cho Project settings, Preferences settings hoặc native Assets như Materials, Animations hoặc SpriteSheets.
+
+Ngoài việc sử dụng Giá trị đặt trước mặc định khi tạo Components mới và import Assets, Unity còn áp dụng Giá trị đặt trước mặc định khi bạn sử dụng lệnh Reset trong Inspector.
 
 ## Scripting
 
@@ -347,11 +354,3 @@ Bạn có thể xuất Presets để chia sẻ chúng với những người kh�
 - Github:
 	- https://github.com/mminer?tab=repositories
 	- https://learn.unity.com/tutorial/playground-reference-guide#64885b62edbc2a01d4bbf3af
-
-## Knowhow
-
-| Title | Sub-Title
-|:-|:-:|-:
-| Row **1** | Column *2*
-| Column 1  | Row *2*
-{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}

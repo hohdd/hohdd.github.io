@@ -57,7 +57,7 @@ Bạn có thể sử dụng công cụ này trong các dự án 3D hướng đ�
 
 #### Character Controller component
 
-Nó chỉ đơn giản là một chiếc Collider hình viên nang có thể được yêu cầu di chuyển theo một hướng nào đó từ một tập lệnh. Bộ điều khiển sau đó sẽ thực hiện chuyển động nhưng bị hạn chế do va chạm . Nó sẽ trượt dọc theo các bức tường, đi lên cầu thang (nếu chúng thấp hơn Step Offset) và đi trên các sườn dốc trong Giới hạn Độ dốc.
+Nó chỉ đơn giản là một chiếc Collider hình viên nang có thể được yêu cầu di chuyển theo một hướng nào đó từ một tập lệnh. Bộ điều khiển sau đó sẽ thực hiện chuyển động nhưng bị hạn chế do va chạm . Nó sẽ trượt dọc theo các bức tường, đi lên cầu thang (nếu chúng thấp hơn Step Offset) và đi trên các sườn dốc trong Giới hạn Độ dốc (Slope Limit).
 
 Bộ điều khiển không tự phản ứng với các lực và nó không tự động đẩy các Vật thể rắn đi (cần sử dụng OnControllerColliderHit() thông qua tập lệnh).
 
