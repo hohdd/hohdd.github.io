@@ -1,8 +1,22 @@
 <!DOCTYPE html><html lang="vi"><title>Cấu trúc và thứ tự Compile của một project Unity</title><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cấu trúc và thứ tự Compile của một project Unity"><meta name="author" content="Dong Ho"> <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex"><link rel="manifest" href="/assets/manifest.json"><meta name="theme-color" content="#317EFB"/><link href="/assets/css/main.css" rel="stylesheet" media="all"><link rel="stylesheet" href="/assets/css/delay.css" media="none" onload="if(media!='all')media='all'"> <noscript><link rel="stylesheet" href="/assets/css/delay.css"></noscript><link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" /><link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"><body onload="_documentReady_()"><nav class="w3-sidebar w3-black w3-animate-opacity w3-xxlarge z-index-999" style="display:none;padding-top:100px;top:0px;" id="menuElm"><div class="w3-bar-block w3-center"><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/pages/about" title="About">About</a></h1><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/pages/authors" title="Teams">Teams</a></h1><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/pages/categories" title="Archives">Archives</a></h1><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/collections" title="Collections">Collections</a></h1><h1 class="w3-bar-item w3-button w3-text-grey w3-hover-black"> <a href="/pages/tools" title="Tools">Tools</a></h1></div></nav><div class="w3-top z-index-9999 w3-white" id="navbar"><div class="w3-bar w3-padding w3-card opacity-transition-hover w3-display-container" style="letter-spacing:4px;"><div class="w3-display-left w3-padding w3-hide-small"> <img id="hat" src="/assets/img/kmw/hat63.png"> <a href="/" class="w3-bar-item">Mr.Winter</a></div><div class="w3-display-middle w3-hide-small"></div><div class="w3-right" > <span class="material-icons w3-button" id="menuIcon" onclick="toggleMenu()" title="Menu">menu</span></div></div></div><div class="w3-content w3-panel w3-animate-opacity-slow" style="max-width:1100px"><main><div class="w3-padding-32"></div><article id="articleBody"><h2>Cấu trúc và thứ tự Compile của một project Unity</h2><span class="opacity-transition-hover"> <span class="author"> <a href="/authors/dongho" class="hvr-float-shadow">Dong Ho</a> </span> <time datetime="2020-05-15T14:26:14+07:00" class="by-line">15 May 2020 <span> <a href="/collections/game-development#Unity" class="hvr-float-shadow">Unity</a> </span> </time> <span title="reading time">· about 5 mins read </span> </span><div class="w3-section"><div class="content-speech"><ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em"><li class="toc-entry toc-h2"><a href="#cấu-trúc-của-một-project-unity" spy-toc="Cấu trúc của một project Unity">Cấu trúc của một project Unity</a><ul><li class="toc-entry toc-h3"><a href="#cách-tổ-chức-một-project-unity" spy-toc="Cách tổ chức một project Unity">Cách tổ chức một project Unity</a><li class="toc-entry toc-h3"><a href="#một-số-mẹo-tổ-chức-project-unity" spy-toc="Một số mẹo tổ chức project Unity:">Một số mẹo tổ chức project Unity:</a></ul><li class="toc-entry toc-h2"><a href="#thứ-tự-compile" spy-toc="Thứ tự Compile">Thứ tự Compile</a></ul><h2 id="cấu-trúc-của-một-project-unity"> <a class="anchor" href="#c%E1%BA%A5u-tr%C3%BAc-c%E1%BB%A7a-m%E1%BB%99t-project-unity" aria-hidden="true" spy-title="Cấu trúc của một project Unity"><span class="octicon octicon-link"></span></a>Cấu trúc của một project Unity</h2><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|- ROOT
 |--Assets
+|	|--Editor
 |	|--Standard Assets
 |	|--StreamingAssets
 |	|--Resources
+|	|--&lt;NameOfGame&gt;
+|	|	|--Animations
+|	|	|--Art
+|	|	|	|--UI
+|	|	|--Audio
+|	|	|	|--UI
+|	|	|--Prefabs
+|	|	|	|--UI
+|	|	|--Scenes
+|	|	|--Scripts
+|	|	|	|--UI
+|	|	|	|--Utils
+|	|	|--Presets
 |--Library
 |--Editor
 |--Gizmos

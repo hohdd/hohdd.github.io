@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Unity Knowhow - Note</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-knowhow-note" />
+    <title>Unity Tips - Note</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-tips" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-knowhow-note",
-        "headline": "Unity Knowhow - Note",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tips",
+        "headline": "Unity Tips - Note",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-11-26 01:16:28 +0700",
-        "description": "Unity Knowhow - Note",
+        "dateModified": "2023-11-26 15:27:10 +0700",
+        "description": "Unity Tips - Note",
         
         "author": {
           "@type": "Person",
@@ -117,7 +117,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Unity Knowhow - Note</h2>
+      <h2>Unity Tips - Note</h2>
       <span class="author">
         
         
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 1 min read </span> · 
+      <span title="reading time">· about 2 mins read </span> · 
       
       <span>
         
@@ -148,10 +148,68 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">Row <strong>1</strong>
-</td>
-      <td style="text-align: center">Column <em>2</em>
-</td>
+      <td style="text-align: left">Unity Search (Ctrl+K): có thể save những search thường xuyên…</td>
+      <td style="text-align: center">có thể xem nhanh với inspector, kéo thả vào Hierarchy…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“Lock the Inspector” để chỉnh sửa properties mà không bị nhảy sang Inspector khác</td>
+      <td style="text-align: center">“Toggle Debug Mode” để hiển thị cả biến private mặc dù không chỉnh sửa được chúng</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Focused Inspectors (Alt+P): luôn hiển thị Inspector ở một cửa sổ mới</td>
+      <td style="text-align: center">hoặc mở bằng Right-click và chọn Properties…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Numeric field expressions: L(a,b), R(a,b), +=, -=, *=, /= …</td>
+      <td style="text-align: center">sqrt(a), floor(a), ceil(a), round(a), cos(a), sin(a), tan(a), pi</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Không nên điều chỉnh Scale của Transform Component. Tùy chọn tốt nhất là tạo Models real-life sale.</td>
+      <td style="text-align: center">Kích thước của Mesh trong Unity (và do đó là thang đo của Transform) rất quan trọng, đặc biệt là trong quá trình mô phỏng vật lý.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Transforms: Parenting Transforms về &lt;0,0,0&gt; trước khi thêm Child</td>
+      <td style="text-align: center">Điều này có nghĩa là tọa độ cục bộ của Child sẽ giống với tọa độ chung, giúp bạn dễ dàng đảm bảo rằng bạn đặt Child ở đúng vị trí.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Việc thay đổi Scale ảnh hưởng đến Position của child Transforms</td>
+      <td style="text-align: center">Ví dụ: Scale cha mẹ thành (0,0,0) sẽ định vị tất cả Child ở (0,0,0) so với cha mẹ.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Testing properties: trong “Play Mode” có thể thay đổi value của properties để xem nó tác động thế nào đến trò chơi</td>
+      <td style="text-align: center">khi thoát “properties” value sẽ được reset.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Deactivate GameObjects: đánh dấu GameObject là “inactive” (trong Inspector)</td>
+      <td style="text-align: center">trong Script sử dụng method SetActive</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nếu bạn Deactivate một GameObject gốc thì bạn cũng Deactivate tất cả các GameObject con của nó</td>
+      <td style="text-align: center">việc Deactivate sẽ ghi đè cài đặt “activeSelf” trên tất cả các GameObject con.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“Tag” là một từ tham chiếu mà bạn có thể gán cho một hoặc nhiều GameObject</td>
+      <td style="text-align: center">sử dụng “Tag” để tìm reference trong code (FindWithTag)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Preset Manager: sử dụng để đặt trước giá trị mặc định của component, import Assets</td>
+      <td style="text-align: center">Unity còn áp dụng Giá trị đặt trước mặc định khi bạn sử dụng lệnh Reset trong Inspector.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Project Structure: Tổ chức tốt sẽ giúp bạn dễ dàng tìm thấy các tài sản mà bạn cần.</td>
+      <td style="text-align: center">Sử dụng các tên thư mục mô tả nội dung/mục đích/scope-phạm vi của chúng</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Input System: sử dụng interface của Unity, còn lại để Unity tự xử lý.</td>
+      <td style="text-align: center">Input.GetAxis(“Horizontal”); …transform.Translate(Vector3 * moveSpeed * Time.deltaTime);</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mobile device input: Multi-touch screen… trạng thái và số lượng ngón tay touch…</td>
+      <td style="text-align: center">Chuyên sâu hơn Touch còn có “Lực nhấn”, “điểm tiếp xúc đầu tiên”, là Pen (bút cảm ứng)…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Physics: tùy tương tác muốn mô phỏng để sử dụng component phù hợp CharacterController, Rigidbody, Collision</td>
+      <td style="text-align: center">Character Controller, Rigidbody, Kinematic, Convex, Constant Force, Interpolate/Extrapolate, Collision, Joints, Articulations, Cloth…</td>
     </tr>
   </tbody>
 </table>
