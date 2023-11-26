@@ -1,0 +1,297 @@
+[
+    {
+        "title": "うんどうします [ undoushimasu ]",
+        "subTitle": "vận động, tập thể thao 運動します VẬN ĐỘNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "せいこうします [ seikoushimasu ]",
+        "subTitle": "thành công 成功します THÀNH CÔNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[しけんに～]しっぱいします [ ［shikenni～］shippaishimasu ]",
+        "subTitle": "thất bại, trượt [thi~] [試験に～]失敗します THÍ NGHIỆM THẤT BẠI",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[しけんに～]ごうかくします [ ［shikenni～］goukakushimasu ]",
+        "subTitle": "đỗ [thi~] [試験に～]合格します THÍ NGHIỆM HỢP CÁCH",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "もどります [ modorimasu ]",
+        "subTitle": "quay lại, trở lại 戻ります LỆ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[あめが～] やみます [ ［amega～］　yamimasu ]",
+        "subTitle": "tạnh, ngừng [mưa ~] [雨が～] VŨ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "はれます [ haremasu ]",
+        "subTitle": "nắng, quang đãng 晴れます TÌNH",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "くもります [ kumorimasu ]",
+        "subTitle": "có mây, mây mù 曇ります ĐÀM",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[かぜが～]ふきます [ ［kazega～］fukimasu ]",
+        "subTitle": "thổi [gió ~] [風が～]吹きます PHONG XÚY",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[びょうきが～]なおります [ ［byoukiga～］naorimasu ]",
+        "subTitle": "khỏi [bệnh] [病気が～]治ります，直ります BỆNH KHÍ TRỊ TRỰC",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[こしょうが～]なおります [ ［koshouga～］naorimasu ]",
+        "subTitle": "đã được sửa [chỗ hỏng ~] [故障が～] CỐ CHƯỚNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[ねつが～]つづきます [ ［netsuga～］tsudukimasu ]",
+        "subTitle": "tiếp tục, tiếp diễn [sốt] [熱が～]続きます NHIỆT TỤC",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "[かぜを～]ひきます [ ［kazewo～］hikimasu ]",
+        "subTitle": "bị [cảm]  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "ひやします [ hiyashimasu ]",
+        "subTitle": "làm lạnh 冷やします LÃNH",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "しんぱい[な] [ shinpai［na］ ]",
+        "subTitle": "lo lắng 心配[な] TÂM PHỐI",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "じゅうぶん[な] [ juubun［na］ ]",
+        "subTitle": "đủ 十分[な] THẬP PHÂN",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "おかしい [ okashii ]",
+        "subTitle": "có vấn đề, không bình thường, buồn cười  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "うるさい [ urusai ]",
+        "subTitle": "ồn ào, (âm thanh) to  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "やけど [ yakedo ]",
+        "subTitle": "bỏng (～をします：bị bỏng)  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "けが [ kega ]",
+        "subTitle": "vết thương (～をします：bị thương)  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "せき [ seki ]",
+        "subTitle": "ho (～がでます：bị ho)  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "インフルエンザ [ infuruenza ]",
+        "subTitle": "cúm dịch  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "そら [ sora ]",
+        "subTitle": "bầu trời 空 KHÔNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "たいよう [ taiyou ]",
+        "subTitle": "mặt trời 太陽 THÁI DƯƠNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "ほし [ hoshi ]",
+        "subTitle": "sao, ngôi sao 星 TINH",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "つき [ tsuki ]",
+        "subTitle": "trăng, mặt trăng 月 NGUYỆT",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "かぜ [ kaze ]",
+        "subTitle": "gió 風 PHONG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "きた [ kita ]",
+        "subTitle": "bắc 北 BẮC",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "みなみ [ minami ]",
+        "subTitle": "nam 南 NAM",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "にし [ nishi ]",
+        "subTitle": "tây 西 TÂY",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "ひがし [ higashi ]",
+        "subTitle": "đông 東 ĐÔNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "すいどう [ suidou ]",
+        "subTitle": "nước máy 水道 THỦY ĐẠO",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "エンジン [ enjin ]",
+        "subTitle": "động cơ  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "チーム [ chi-mu ]",
+        "subTitle": "đội  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "こんや [ konya ]",
+        "subTitle": "tối nay, đêm nay 今夜 KIM DẠ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "ゆうがた [ yuugata ]",
+        "subTitle": "chiều tối 夕方 TỊCH PHƯƠNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "まえ [ mae ]",
+        "subTitle": "trước  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "おそく [ osoku ]",
+        "subTitle": "muộn, khuya 遅く TRÌ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "こんなに [ konnani ]",
+        "subTitle": "như thế này  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "そんなに [ sonnani ]",
+        "subTitle": "như thế đó (về vấn đề có quan hệ với người nghe)  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "あんなに [ annani ]",
+        "subTitle": "như thế kia (về vấn đề không có quan hệ với người nói và người nghe)  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "もしかしたら [ moshikashitara ]",
+        "subTitle": "có thể, biết đâu là, có khả năng  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "それはいけませんね。 [ sorehaikemasenne ]",
+        "subTitle": "Thế thì thật không tốt.  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "オリンピック [ orinpikku ]",
+        "subTitle": "Olympic  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "げんき [ genki ]",
+        "subTitle": "khỏe, khỏe mạnh 元気 NGUYÊN KHÍ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "い [ i ]",
+        "subTitle": "dạ dày 胃 VỊ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "はたらきすぎ [ hatarakisugi ]",
+        "subTitle": "làm việc quá sức, làm việc nhiều quá 働きすぎ ĐỘNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "ストレス [ sutoresu ]",
+        "subTitle": "Stress, căng thẳng tâm lý  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "むりをします [ muriwoshimasu ]",
+        "subTitle": "làm quá sức, làm quá khả năng 無理をします VÔ LÝ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "ゆっくりします [ yukkurishimasu ]",
+        "subTitle": "nghỉ ngơi, thư thái, dưỡng sức  ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "ほしうらない [ hoshiuranai ]",
+        "subTitle": "bói sao 星占い TINH CHIẾM",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "おうしざ [ oushiza ]",
+        "subTitle": "chòm sao Kim Ngưu 牡牛座 MẪU NGƯU TỌA",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "こまります [ komarimasu ]",
+        "subTitle": "rắc rối, khó xử, có vấn đề 困ります KHỐN",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "たからくじ [ takarakuji ]",
+        "subTitle": "xổ số 宝くじ BẢO",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "あたります [ atarimasu ]",
+        "subTitle": "Trúng~ trúng [xổ số] [宝くじが～]当たります BẢO ĐƯƠNG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "けんこう [ kenkou ]",
+        "subTitle": "sức khỏe, khỏe mạnh, an khang 健康 KIỆN KHANG",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "れんあい [ renai ]",
+        "subTitle": "tình yêu 恋愛 LUYẾN ÁI",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "こいびと [ koibito ]",
+        "subTitle": "người yêu 恋人 LUYẾN NHÂN",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    },
+    {
+        "title": "「お」かねもち [ 「o」kanemochi ]",
+        "subTitle": "người giàu có, người có nhiều tiền [お]金持ち KIM TRÌ",
+        "tag": "từ vựng mina, mina bài 32, mrmina32"
+    }
+]

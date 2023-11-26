@@ -1,0 +1,322 @@
+[
+    {
+        "title": "おきます [ okimasu ]",
+        "subTitle": "dậy, thức dậy 起きます KHỞI",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ねます [ nemasu ]",
+        "subTitle": "ngủ, đi ngủ 寝ます TẨM",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "はたらきます [ hatarakimasu ]",
+        "subTitle": "làm việc 働きます ĐỘNG",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "やすみます [ yasumimasu ]",
+        "subTitle": "nghỉ, nghỉ ngơi 休みます HƯU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "べんきょうします [ benkyoushimasu ]",
+        "subTitle": "học 勉強します MIỄN CƯỜNG",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "おわります [ owarimasu ]",
+        "subTitle": "hết, kết thúc, xong 終わります CHUNG",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "デパート [ depaｰto ]",
+        "subTitle": "bách hóa  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ぎんこう [ ginkou ]",
+        "subTitle": "ngân hàng 銀行 NGÂN HÀNH",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ゆうびんきょく [ yuubinkyoku ]",
+        "subTitle": "bưu điện 郵便局 BƯU TIỆN CỤC",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "としょかん [ toshokan ]",
+        "subTitle": "thư viện 図書館 ĐỒ THƯ QUÁN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "びじゅつかん [ bijutsukan ]",
+        "subTitle": "bảo tàng mỹ thuật 美術館 MỸ THUẬT QUÁN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "いま [ ima ]",
+        "subTitle": "bây giờ 今 KIM",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "―じ [ ～ji ]",
+        "subTitle": "-giờ －時 THỜI",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "―ふん（－ぷん） [ ～fun(-pun) ]",
+        "subTitle": "- phút ―分 PHÂN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "はん [ han ]",
+        "subTitle": "rưỡi, nửa 半 BÁN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "なんじ [ nanji ]",
+        "subTitle": "mấy giờ 何時 HÀ THỜI",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "なんぷん [ nanpun ]",
+        "subTitle": "mấy phút 何分 HÀ PHÂN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ごぜん [ gozen ]",
+        "subTitle": "sáng, trước 12 giờ trưa 午前 NGỌ TIỀN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ごご [ gogo ]",
+        "subTitle": "chiều, sau 12 giờ trưa 午後 NGỌ HẬU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "あさ [ asa ]",
+        "subTitle": "buổi sáng, sáng 朝 TRIỀU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ひる [ hiru ]",
+        "subTitle": "buổi trưa, trưa 昼 TRÚ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ばん（よる） [ ban(yoru) ]",
+        "subTitle": "buổi tối, tối 晩(夜) VÃN(DẠ)",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "おととい [ ototoi ]",
+        "subTitle": "hôm kia  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "きのう [ kinou ]",
+        "subTitle": "hôm qua  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "きょう [ kyou ]",
+        "subTitle": "hôm nay  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "あした [ ashita ]",
+        "subTitle": "ngày mai  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "あさって [ asatte ]",
+        "subTitle": "ngày kia  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "けさ [ kesa ]",
+        "subTitle": "sáng nay  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "こんばん [ konban ]",
+        "subTitle": "tối nay 今晩 KIM VÃN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "やすみ [ yasumi ]",
+        "subTitle": "nghỉ, nghỉ phép, ngày nghỉ 休み HƯU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ひるやすみ [ hiruyasumi ]",
+        "subTitle": "nghỉ trưa 昼休み TRÚ HƯU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "まいあさ [ maiasa ]",
+        "subTitle": "hàng sáng, mỗi sáng 毎朝 MỖI TRIỀU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "まいばん [ maiban ]",
+        "subTitle": "hàng tối, mỗi tối 毎晩 MỖI VÃN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "まいにち [ mainichi ]",
+        "subTitle": "hàng ngày, mỗi ngày 毎日 MỖI NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "げつようび [ getsuyoubi ]",
+        "subTitle": "thứ hai 月曜日 NGUYỆT DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "かようび [ kayoubi ]",
+        "subTitle": "thứ ba 火曜日 HỎA DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "すいようび [ suiyoubi ]",
+        "subTitle": "thứ tư 水曜日 THỦY DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "もくようび [ mokuyoubi ]",
+        "subTitle": "thứ năm 木曜日 MỘC DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "きんようび [ kinyoubi ]",
+        "subTitle": "thứ sáu 金曜日 KIM DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "どようび [ doyoubi ]",
+        "subTitle": "thứ bảy 土曜日 THỔ DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "にちようび [ nichiyoubi ]",
+        "subTitle": "chủ nhật 日曜日 NHẬT DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "なんようび [ nanyoubi ]",
+        "subTitle": "thứ mấy 何曜日 HÀ DIỆU NHẬT",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ばんごう [ bangou ]",
+        "subTitle": "số (số điện thoại, số phòng) 番号 PHIÊN HIỆU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "なんばん [ nanban ]",
+        "subTitle": "số bao nhiêu, số mấy 何番 HÀ PHIÊN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "～から [ ～kara ]",
+        "subTitle": "~ từ  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "～まで [ ～made ]",
+        "subTitle": "~ đến  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "～と [ ～to ]",
+        "subTitle": "~ và (dùng để nối hai danh từ)  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "そちら [ sochira ]",
+        "subTitle": "phía đó, đằng đó, chỗ đó, đó  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "たいへんですね [ taihendesune ]",
+        "subTitle": "Anh\/chị vất vả quá. 大変ですね ĐẠI BIẾN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "えーと [ eｰto ]",
+        "subTitle": "ừ, à  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "104 [ 104 ]",
+        "subTitle": "Số điện thoại của dịch vụ hướng dẫn số điện thoại  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "おねがいします [ onegaishimasu ]",
+        "subTitle": "Nhờ anh\/chị. Phiền anh\/chị. Xin vui lòng giúp đỡ お願いします NGUYÊỆN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "かしこまりました [ kashikomarimashita ]",
+        "subTitle": "Tôi hiểu rồi ạ.\/ vâng, được rồi ạ.  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "おといあわせのばんごう [ otoiawasenobangou ]",
+        "subTitle": "Số điện thoại mà ông\/ bà muốn hỏi お問い合わせの番号 VẤN HỢP PHIÊN HIỆU",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "[どうも]ありがとうございました。 [ [doumo]arigatougozaimashita｡ ]",
+        "subTitle": "Xin cám ơn ông\/bà  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ニューヨーク [ nyuｰyoｰku ]",
+        "subTitle": "New York  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ペキン [ pekin ]",
+        "subTitle": "Bắc Kinh  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ロンドン [ rondon ]",
+        "subTitle": "Luân Đôn  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "バンコク [ bankoku ]",
+        "subTitle": "Băng Cốc  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "ロサンゼルス [ rosanzerusu ]",
+        "subTitle": "Los Angeles  ",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "やまとびじゅつかん [ yamatobijutsukan ]",
+        "subTitle": "tên một bảo tàng Mỹ thuật (giả tưởng) やまと美術館 MỸ THUẬT QUÁN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "おおさかデパート [ oosakadepaｰto ]",
+        "subTitle": "tên một bách hóa (giả tưởng) 大阪デパート ĐẠI PHẢN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "みどりとしょかん [ midoritoshokan ]",
+        "subTitle": "tên một thư viện (giả tưởng) みどり図書館 ĐỒ THƯ QUÁN",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    },
+    {
+        "title": "アップルぎんこう [ appuruginkou ]",
+        "subTitle": "tên một ngân hàng (giả tưởng) アップル銀行 NGÂN HÀNH",
+        "tag": "từ vựng mina, mina bài 04, mrmina04"
+    }
+]

@@ -1,0 +1,232 @@
+[
+    {
+        "title": "まいります [ mairimasu ]",
+        "subTitle": "đi, đến (khiêm nhường ngữ của いきます và きます) 参ります THAM",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "おります [ orimasu ]",
+        "subTitle": "ở, có (khiêm nhường ngữ của います)  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "いただきます [ itadakimasu ]",
+        "subTitle": "ăn, uống, nhận (khiêm nhường ngữ của たべます、のみます　và もらいます)  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "もうします [ moushimasu ]",
+        "subTitle": "nói (khiêm nhường ngữ của いいます) 申します THÂN",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "いたします [ itashimasu ]",
+        "subTitle": "làm (khiêm nhường ngữ của します)  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "はいけんします [ haikenshimasu ]",
+        "subTitle": "xem, nhìn (khiêm nhường ngữ của みます) 拝見します BÁI KIẾN",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ぞんじます [ zonjimasu ]",
+        "subTitle": "biết (khiêm nhường ngữ của しります) 存じます TỒN",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "うかがいます [ ukagaimasu ]",
+        "subTitle": "hỏi, nghe, đến thăm(khiêm nhường ngữ của ききます và いきます) 伺います TÝ\/TỬ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "おめにかかります [ omenikakarimasu ]",
+        "subTitle": "gặp (khiêm nhường ngữ của あいます) お目にかかります MỤC",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ございます [ gozaimasu ]",
+        "subTitle": "có (thể lịch sự của あります)  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "～でございます [ ～degozaimasu ]",
+        "subTitle": "là (thể lịch sự của ～です)  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "わたくし [ watakushi ]",
+        "subTitle": "tôi (khiêm nhường ngữ của わたし) 私 TƯ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ガイド [ gaido ]",
+        "subTitle": "người hướng dẫn, hướng dẫn viên  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "おたく [ otaku ]",
+        "subTitle": "nhà (dùng cho người khác) お宅 TRẠCH",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "こうがい [ kougai ]",
+        "subTitle": "ngoại ô 郊外 GIAO NGOẠI",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "アルバム [ arubamu ]",
+        "subTitle": "an-bum (ca nhạc)  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "さらいしゅう [ saraishuu ]",
+        "subTitle": "tuần sau nữa 再来週 TÁI LAI CHU",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "さらいげつ [ saraigetsu ]",
+        "subTitle": "tháng sau nữa 再来月 TÁI LAI NGUYỆT",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "さらいねん [ sarainen ]",
+        "subTitle": "năm sau nữa 再来年 TÁI LAI NIÊN",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "はんとし [ hantoshi ]",
+        "subTitle": "nửa năm 半年 BÁN NIÊN",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "さいしょに [ saishoni ]",
+        "subTitle": "đầu tiên, trước hết 最初に TỐI SƠ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "さいごに [ saigoni ]",
+        "subTitle": "cuối cùng 最後に TỐI HẬU",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ただいま [ tadaima ]",
+        "subTitle": "bây giờ (thể lịch sự củaいま) ただ今 KIM",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "えどとうきょうはくぶつかん [ edotoukyouhakubutsukan ]",
+        "subTitle": "bảo tàng Edo-Tokyo 江戸東京博物館 GIANG HỘ ĐÔNG KINH BÁC VẬT QUÁN",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "きんちょうします [ kinchoushimasu ]",
+        "subTitle": "căng thẳng, hồi hộp 緊張します KHẨN TRƯƠNG",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ほうそうします [ housoushimasu ]",
+        "subTitle": "phát thanh, truyền hình 放送します PHÓNG TỐNG",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "[ビデオに～]とります [ ［bideoni～］torimasu ]",
+        "subTitle": "thu [video], quay [ビデオに～]撮ります　 TOÁT",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "しょうきん [ shoukin ]",
+        "subTitle": "tiền thưởng 賞金 THƯỞNG KIM",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "しぜん [ shizen ]",
+        "subTitle": "tự nhiên, thiên nhiên 自然 TỰ NHIÊN",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "きりん [ kirin ]",
+        "subTitle": "con hươu cao cổ  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ぞう [ zou ]",
+        "subTitle": "con voi 像 TƯỢNG",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ころ [ koro ]",
+        "subTitle": "hồi, thời  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "「ゆめが～」かないます [ 「yumega～」kanaimasu ]",
+        "subTitle": "thành hiện thực, được thực hiện [mơ ước ~] [夢が～]かないます MỘNG",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ひとことよろしいでしょうか。 [ hitokotoyoroshiideshouka ]",
+        "subTitle": "Tôi xin phép nói vài lời có được không ạ?  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "きょうりょくします [ kyouryokushimasu ]",
+        "subTitle": "hợp tác 協力します HIỆP LỰC",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "こころから [ kokorokara ]",
+        "subTitle": "từ trái tim, từ đáy lòng 心から TÂM",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "かんしゃします [ kanshashimasu ]",
+        "subTitle": "cám ơn, cảm tạ 感謝します CẢM TẠ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "「お」れい [ 「o」rei ]",
+        "subTitle": "lời cám ơn, sự cám ơn [お]礼 LỄ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "はいけい [ haikei ]",
+        "subTitle": "kính gửi 拝啓 BÁI KHẢI",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "うつくしい [ utsukushii ]",
+        "subTitle": "đẹp 美しい MỸ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "おげんきでいらっしゃいますか [ ogenkideirasshaimasuka ]",
+        "subTitle": "Anh\/chị có khỏe không ạ? (tôn kính ngữ của おげんきですか) お元気でいらっしゃいますか。 NGUYÊN KHÍ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "めいわくを　かけます [ meiwakuwo　kakemasu ]",
+        "subTitle": "làm phiền 迷惑をかけます ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "いかします [ ikashimasu ]",
+        "subTitle": "tận dụng, phát huy, dùng 生かします ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "「お」しろ [ 「o」shiro ]",
+        "subTitle": "lâu đài [お]城 ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "けいぐ [ keigu ]",
+        "subTitle": "kính thư 敬具 ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    },
+    {
+        "title": "ミュンヘン [ myunhen ]",
+        "subTitle": "Munich (ở Đức)  ",
+        "tag": "từ vựng mina, mina bài 50, mrmina50"
+    }
+]

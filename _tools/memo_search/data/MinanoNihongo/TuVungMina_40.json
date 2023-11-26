@@ -1,0 +1,332 @@
+[
+    {
+        "title": "かぞえます [ kazoemasu ]",
+        "subTitle": "đếm 数えます SỐ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "はかります [ hakarimasu ]",
+        "subTitle": "đo, cân 測ります、量ります TRẮC LƯỢNG",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "たしかめます [ tashikamemasu ]",
+        "subTitle": "xác nhận 確かめます XÁC",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "[サイズが～]あいます [ ［saizuga～］aimasu ]",
+        "subTitle": "vừa, hợp [kích thước ~] [サイズが～]合います HỢP",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "しゅっぱつします [ shuppatsushimasu ]",
+        "subTitle": "xuất phát, khởi hành, đi 出発します XUẤT PHÁT",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "とうちゃくします [ touchakushimasu ]",
+        "subTitle": "đến, đến nơi 到着します ĐÁO TRƯỚC",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "よいます [ yoimasu ]",
+        "subTitle": "say 酔います TÚY",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "きけん[な] [ kiken［na］ ]",
+        "subTitle": "nguy hiểm 危険[な] NGUY HIỂM",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ひつよう[な] [ hitsuyou［na］ ]",
+        "subTitle": "cần thiết 必要[な] TẤT YẾU",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "うちゅう [ uchuu ]",
+        "subTitle": "vũ trụ 宇宙 VŨ TRỤ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ちきゅう [ chikyuu ]",
+        "subTitle": "trái đất 地球 ĐỊA CẦU",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ぼうねんかい [ bounenkai ]",
+        "subTitle": "tiệc tất niên 忘年会 VONG NIÊN HỘI",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "しんねんかい [ shinnenkai ]",
+        "subTitle": "tiệc tân niên 新年会 TÂN NIÊN HỘI",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "にじかい [ nijikai ]",
+        "subTitle": "bữa tiệc thứ hai, “tăng hai” 二次会 NHỊ THỨ HỘI",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "たいかい [ taikai ]",
+        "subTitle": "đại hội, cuộc thi 大会 ĐẠI HỘI",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "マラソン [ marason ]",
+        "subTitle": "ma ra tông  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "コンテスト [ kontesuto ]",
+        "subTitle": "cuộc thi  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "おもて [ omote ]",
+        "subTitle": "phía trước, mặt trước 表 BIỂU",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "うら [ ura ]",
+        "subTitle": "phía sau, mặt sau 裏 LÝ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "へんじ [ henji ]",
+        "subTitle": "hồi âm, trả lời 返事 PHẢN SỰ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "もうしこみ [ moushikomi ]",
+        "subTitle": "đăng ký 申し込み THÂN VÀO",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ほんとう [ hontou ]",
+        "subTitle": "thật  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "まちがい [ machigai ]",
+        "subTitle": "sai, lỗi  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "きず [ kizu ]",
+        "subTitle": "vết thương 傷 THƯƠNG",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ズボン [ zubon ]",
+        "subTitle": "cái quần  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ながさ [ nagasa ]",
+        "subTitle": "chiều dài 長さ TRƯỜNG",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "おもさ [ omosa ]",
+        "subTitle": "cân nặng, trọng lượng 重さ TRỌNG",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "たかさ [ takasa ]",
+        "subTitle": "chiều cao 高さ CAO",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "おおきさ [ ookisa ]",
+        "subTitle": "cỡ, kích thước 大きさ ĐẠI",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "[－]びん [ ［－］bin ]",
+        "subTitle": "chuyến bay [―] [－]便 TIỆN",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―ごう [ -gou ]",
+        "subTitle": "số [―] (số hiệu đoàn tàu, cơn bão v.v.) ―号 HIỆU",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―こ [ -ko ]",
+        "subTitle": "cái, cục, viên (đơn vị đếm vật nhỏ) －個 CÁ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―ほん（―ぽん、―ぼん） [ -hon（-pon、-bon） ]",
+        "subTitle": "― cái (đơn vị đếm vật dài) 　―本 BỔN",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―はい（―ぱい、―ばい） [ -hai（-pai、-bai） ]",
+        "subTitle": "―chén, ―cốc ―杯 BÔI",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―キロ [ -kiro ]",
+        "subTitle": "―ki-lô, ―cân  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―グラム [ -guramu ]",
+        "subTitle": "―gam  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―センチ [ -senchi ]",
+        "subTitle": "―xăng-ti-mét  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "―ミリ [ -miri ]",
+        "subTitle": "―mi-li-mét  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "～いじょう [ ～ijou ]",
+        "subTitle": "~ trở lên, trên ～以上 DĨ THƯỢNG",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "～いか [ ～ika ]",
+        "subTitle": "trở xuống, dưới ～以下 DĨ HẠ ~",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "さあ [ saa ]",
+        "subTitle": "À…,Ồ… (dùng khi không rõ về điều gì đó)  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ゴッホ [ gohho ]",
+        "subTitle": "Van-gốc (1853-1890), danh họa người Hà Lan  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ゆきまつり [ yukimatsuri ]",
+        "subTitle": "Lễ hội tuyết (ở Sapporo) 雪祭り TUYẾT TẾ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "のぞみ [ nozomi ]",
+        "subTitle": "tên một loại tàu Shinkansen  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ＪＬ [ ＪＬ ]",
+        "subTitle": "hãng hàng không Nhật Bản (Japan Airlines)  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "どうでしょうか。 [ doudeshouka ]",
+        "subTitle": "Thế nào? (cách nói lịch sự của どうですか)  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "クラス [ kurasu ]",
+        "subTitle": "lớp học  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "テスト [ tesuto ]",
+        "subTitle": "Bài kiểm tra, bài thi  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "せいせき [ seiseki ]",
+        "subTitle": "kết quả, thành tích 成績 THÀNH TÍCH",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ところで [ tokorode ]",
+        "subTitle": "nhân tiện đây  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "いらっしゃいます [ irasshaimasu ]",
+        "subTitle": "đến (tôn kính ngữ của きます)  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ようす [ yousu ]",
+        "subTitle": "vẻ, tình hình 様子 DẠNG TỬ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "じけん [ jiken ]",
+        "subTitle": "vụ án 事件 SỰ KIỆN",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "オートバイ [ o-tobai ]",
+        "subTitle": "xe máy  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "ばくだん [ bakudan ]",
+        "subTitle": "bom 爆弾 BỘC ĐẠN",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "つみます [ tsumimasu ]",
+        "subTitle": "chuyển lên, xếp hàng lên 積みます TÍCH",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "うんてんしゅ [ untenshu ]",
+        "subTitle": "lái xe 運転手 VẬN CHUYỂN THỦ　",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "はなれた [ hanareta ]",
+        "subTitle": "xa cách, xa 離れた LY",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "が [ ga ]",
+        "subTitle": "nhưng  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "きゅうに [ kyuuni ]",
+        "subTitle": "gấp, đột nhiên 急に CẤP",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "うごかします [ ugokashimasu ]",
+        "subTitle": "khởi động, chạy 動かします ĐỘNG",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "いっしょうけんめい [ isshoukenmei ]",
+        "subTitle": "hết sức, chăm chỉ 一生懸命 NHẤT SINH HUYỀN MỆNH　",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "はんにん [ hannin ]",
+        "subTitle": "thủ phạm 犯人 PHẠM NHÂN",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "てに　いれます [ teni　iremasu ]",
+        "subTitle": "có được, lấy được, đoạt được 手に入れます THỦ NHẬP",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "いまでも [ imademo ]",
+        "subTitle": "ngay cả bây giờ 今でも KIM",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    },
+    {
+        "title": "うわさします [ uwasashimasu ]",
+        "subTitle": "đồn đại  ",
+        "tag": "từ vựng mina, mina bài 40, mrmina40"
+    }
+]

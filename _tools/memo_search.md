@@ -93,6 +93,7 @@ secondMenuHandler: closeAllModal()
 			json: [
         '/tools/memo_search/data/MemRise_214BoThu.json'
       ],
+      pwToyRunfiles: '/tools/memo_search/data/MemRiseListFiles.json', /* require: arr[i].dataFilePath */
       searchResultTemplate: '<div class="w3-container w3-padding w3-hover-light-gray"><strong>{title}</strong><br/><small>{subTitle}</small></div>',
       limit: 30
 		})
