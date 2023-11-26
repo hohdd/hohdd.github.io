@@ -296,6 +296,7 @@
         let options = {
             searchInput: null,
             resultsContainer: null,
+            pwToyRunfiles: null,
             json: [],
             success: Function.prototype,
             searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
@@ -362,6 +363,28 @@
                         _$Repository_4.put(json, true)
                     })
                 }
+
+                // support list file from PWToy Run
+                if (options.pwToyRunfiles) {
+                    _$JSONLoader_2.load(options.pwToyRunfiles, function (err, arrFiles) {
+                        if (err) {
+                            throwError('failed to get JSON (' + options.pwToyRunfiles + ')')
+                        }
+                        
+                        for (let i = 0; i < arrFiles.length; i++) {
+                            const dataFilePath = arrFiles[i].dataFilePath;
+                            _$JSONLoader_2.load(dataFilePath, function (err, objs) {
+                                if (err) {
+                                    throwError('failed to get JSON (' + dataFilePath + ')')
+                                }
+                                _$Repository_4.put(objs, true)
+                            })
+                        }
+
+                    })
+                }
+
+                // addEventListener
                 registerInput()
             } else {
                 if (_$utils_9.isJSON(options.json)) {

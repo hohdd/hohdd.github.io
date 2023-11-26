@@ -1,0 +1,312 @@
+[
+    {
+        "title": "[こどもが～] います [ [kodomoga～] imasu ]",
+        "subTitle": "có [con] [子供が～] TỬ CUNG",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "[にほんに～] います [ [nihonni～] imasu ]",
+        "subTitle": "ở [Nhật] [日本に～] NHẬT BẢN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "かかります [ kakarimasu ]",
+        "subTitle": "mất, tốn (thời gian, tiền bạc)  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "[かいしゃを～] やすみます [ [kaishawo～] yasumimasu ]",
+        "subTitle": "nghỉ [làm việc] [会社を～]休みます HỘI XÃ HƯU",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ひとつ [ hitotsu ]",
+        "subTitle": "một cái (dùng để đếm đồ vật) １つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ふたつ [ futatsu ]",
+        "subTitle": "hai cái ２つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "みっつ [ mittsu ]",
+        "subTitle": "ba cái ３つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "よっつ [ yottsu ]",
+        "subTitle": "bốn cái ４つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いつつ [ itsutsu ]",
+        "subTitle": "năm cái ５つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "むっつ [ muttsu ]",
+        "subTitle": "sáu cái ６つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ななつ [ nanatsu ]",
+        "subTitle": "bảy cái ７つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "やっつ [ yattsu ]",
+        "subTitle": "tám cái ８つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ここのつ [ kokonotsu ]",
+        "subTitle": "chín cái ９つ ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "とお [ too ]",
+        "subTitle": "mười cái 10 ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いくつ [ ikutsu ]",
+        "subTitle": "mấy cái, bao nhiêu cái  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ひとり [ hitori ]",
+        "subTitle": "một người １人 NHÂN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ふたり [ futari ]",
+        "subTitle": "hai người ２人 NHÂN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―にん [ ～nin ]",
+        "subTitle": "- người －人 NHÂN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―だい [ ～dai ]",
+        "subTitle": "- cái (dùng để đếm máy móc, xe cộ v.v.) －台 ĐÀI",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―まい [ ～mai ]",
+        "subTitle": "- tờ, tấm －枚 MAI",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―かい [ ～kai ]",
+        "subTitle": "- lần ―回 HỒI",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "りんご [ ringo ]",
+        "subTitle": "táo  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "みかん [ mikan ]",
+        "subTitle": "quýt  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "サンドイッチ [ sandoicchi ]",
+        "subTitle": "bánh San Uých  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "カレー[ライス] [ kareｰ[raisu] ]",
+        "subTitle": "món [cơm] ca-ri  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "アイスクリーム [ aisukuriｰmu ]",
+        "subTitle": "kem  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "きって [ kitte ]",
+        "subTitle": "tem 切手 THIẾT THỦ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "はがき [ hagaki ]",
+        "subTitle": "bưu thiếp  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ふうとう [ fuutou ]",
+        "subTitle": "phong bì 封筒 PHONG ĐỒNG",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "そくたつ [ sokutatsu ]",
+        "subTitle": "(bưu phẩm) gửi nhanh 速達 TỐC ĐẠT",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "かきとめ [ kakitome ]",
+        "subTitle": "(bưu phẩm) gửi bảo đảm 書留 THƯ LƯU",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "エアメール [ eameｰru ]",
+        "subTitle": "(Air Mail) thư chuyển bằng đường hàng khô  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "こうくうびん [ koukuubin ]",
+        "subTitle": "gửi bằng đường hàng không 航空便 HÀNG KHÔNG TIỆN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ふなびん [ funabin ]",
+        "subTitle": "gửi bằng đường biển 船便 THUYỀN TIỆN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "りょうしん [ ryoushin ]",
+        "subTitle": "bố mẹ 両親 LƯỠNG THÂN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "きょうだい [ kyoudai ]",
+        "subTitle": "anh chị em 兄弟 HUYNH ĐỆ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "あに [ ani ]",
+        "subTitle": "anh trai 兄 HUYNH",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "おにいさん [ oniisan ]",
+        "subTitle": "anh trai (dùng cho người khác) お兄さん HUYNH",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "あね [ ane ]",
+        "subTitle": "chị gái 姉 TỶ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "おねえさん [ oneesan ]",
+        "subTitle": "chị gái (dùng cho người khác) お姉さん TỶ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "おとうと [ otouto ]",
+        "subTitle": "em trai 弟 ĐỆ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "おとうとさん [ otoutosan ]",
+        "subTitle": "em trai (dùng cho người khác) 弟さん ĐỆ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いもうと [ imouto ]",
+        "subTitle": "em gái 妹 MUỘI",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いもうとさん [ imoutosan ]",
+        "subTitle": "em gái (dùng cho người khác) 妹さん MUỘI",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "がいこく [ gaikoku ]",
+        "subTitle": "nước ngoài 外国 NGOẠI QUỐC",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―じかん [ ～jikan ]",
+        "subTitle": "- tiếng ―時間 THỜI GIAN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―しゅうかん [ ～shuukan ]",
+        "subTitle": "- tuần ―週間 CHU GIAN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―かげつ [ ～kagetsu ]",
+        "subTitle": "- tháng －か月 NGUYỆT",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "―ねん [ ～nen ]",
+        "subTitle": "- năm ―年 NIÊN",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "～ぐらい [ ～gurai ]",
+        "subTitle": "khoảng ~  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "どのくらい [ donokurai ]",
+        "subTitle": "bao lâu  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ぜんぶで [ zenbude ]",
+        "subTitle": "tổng cộng 全部で TOÀN BỘ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "みんな [ minna ]",
+        "subTitle": "tất cả  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "～だけ [ ～dake ]",
+        "subTitle": "chỉ ~  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いらっしゃいませ。 [ irasshaimase｡ ]",
+        "subTitle": "Xin mời vào.\/ xin chào quý khách.  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いい[お]てんきですね。 [ ii[o]tenkidesune｡ ]",
+        "subTitle": "Trời đẹp nhỉ. いい[お]天気ですね。 THIÊN KHÍ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "おでかけですか。 [ odekakedesuka｡ ]",
+        "subTitle": "Anh\/ chị đi ra ngoài đấy à? お出かけですか。 XUẤT",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "ちょっと～まで。 [ chotto～made｡ ]",
+        "subTitle": "Tôi đi ~ một chút.  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いっていらっしゃい。 [ itteirasshai｡ ]",
+        "subTitle": "Anh\/chị đi nhé. 行っていらっしゃい。 HÀNH",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "いってまいります [ ittemairimasu ]",
+        "subTitle": "Tôi đi đây. (nguyên nghĩa: tôi đi rồi sẽ về.) 行ってまいります。 HÀNH",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "それから [ sorekara ]",
+        "subTitle": "sau đó, tiếp theo  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    },
+    {
+        "title": "オーストラリア [ oｰsutoraria ]",
+        "subTitle": "Úc  ",
+        "tag": "từ vựng mina, mina bài 11, mrmina11"
+    }
+]

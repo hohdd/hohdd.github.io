@@ -1,0 +1,257 @@
+[
+    {
+        "title": "わかります [ wakarimasu ]",
+        "subTitle": "hiểu, nắm được  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "あります [ arimasu ]",
+        "subTitle": "có (sở hữu)  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "すき[な] [ suki[na] ]",
+        "subTitle": "thích 好き[な] HIẾU\/HẢO",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "きらい[な] [ kirai[na] ]",
+        "subTitle": "ghét, không thích 嫌い[な] HIỀM",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "じょうず[な] [ jouzu[na] ]",
+        "subTitle": "giỏi, khéo 上手[な] THƯỢNG THỦ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "へた[な] [ heta[na] ]",
+        "subTitle": "kém 下手[な] HẠ THỦ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "りょうり [ ryouri ]",
+        "subTitle": "món ăn, việc nấu ăn 料理 LIỆU LÝ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "のみもの [ nomimono ]",
+        "subTitle": "đồ uống 飲み物 ẨM VẬT",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "スポーツ [ supoｰtsu ]",
+        "subTitle": "thể thao (～をします：chơi thể thao)  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "やきゅう [ yakyuu ]",
+        "subTitle": "bóng chày (～をします：chơi bóng chày) 野球 DÃ CẦU",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ダンス [ dansu ]",
+        "subTitle": "nhảy, khiêu vũ(～をします：nhảy, khiêu vũ)  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "おんがく [ ongaku ]",
+        "subTitle": "âm nhạc 音楽 ÂM NHẠC\/LẠC",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "うた [ uta ]",
+        "subTitle": "bài hát 歌 CA",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "クラシック [ kurashikku ]",
+        "subTitle": "nhạc cổ điển  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ジャズ [ jazu ]",
+        "subTitle": "nhạc jazz  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "コンサート [ konsaｰto ]",
+        "subTitle": "buổi hòa nhạc  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "カラオケ [ karaoke ]",
+        "subTitle": "karaoke  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "かぶき [ kabuki ]",
+        "subTitle": "Kabuki (một loại ca kịch truyền thống của Nhật) 歌舞伎 CA VŨ KỸ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "え [ e ]",
+        "subTitle": "tranh, hội họa 絵 HỘI",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "じ [ ji ]",
+        "subTitle": "chữ 字 TỰ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "かんじ [ kanji ]",
+        "subTitle": "chữ hán 漢字 HÁN TỰ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ひらがな [ hiragana ]",
+        "subTitle": "chữ Hiragana  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "かたかな [ katakana ]",
+        "subTitle": "Chữ Katakana  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ローマじ [ roｰmaji ]",
+        "subTitle": "chữ La Mã ローマ字 TỰ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "こまかいおかね [ komakaiokane ]",
+        "subTitle": "tiền lẻ 細かいお金 TẾ KIM",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "チケット [ chiketto ]",
+        "subTitle": "vé (xem hòa nhạc, xem phim)  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "じかん [ jikan ]",
+        "subTitle": "thời gian 時間 THÌ\/THỜI GIAN",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ようじ [ youji ]",
+        "subTitle": "việc bận, công chuyện 用事 DỤNG SỰ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "やくそく [ yakusoku ]",
+        "subTitle": "cuộc hẹn, lời hứa 約束 ƯỚC THÚC",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ごしゅじん [ goshujin ]",
+        "subTitle": "chồng (dùng khi nói về chồng người khác) ご主人 CHỦ NHÂN",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "おっと\/しゅじん [ otto\/shujin ]",
+        "subTitle": "chồng (dùng khi nói về chồng mình) 夫 \/主人 PHU CHỦ NHÂN",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "おくさん [ okusan ]",
+        "subTitle": "vợ (dùng khi nói về vợ người khác) 奥さん ÁO",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "つま\/かない [ tsuma\/kanai ]",
+        "subTitle": "vợ (dùng khi nói về vợ mình) 妻\/家内 THÊ GIA NỘI",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "こども [ kodomo ]",
+        "subTitle": "con cái 子ども TỬ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "よく [ yoku ]",
+        "subTitle": "tốt, rõ (chỉ mức độ)  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "だいたい [ daitai ]",
+        "subTitle": "đại khái, đại thể  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "たくさん [ takusan ]",
+        "subTitle": "nhiều  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "すこし [ sukoshi ]",
+        "subTitle": "ít, một ít 少し THIẾU, THIỂU",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ぜんぜん [ zenzen ]",
+        "subTitle": "hoàn toàn ~ không 全然 TOÀN NHIÊN",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "はやく [ hayaku ]",
+        "subTitle": "sớm, nhanh 早く, 速く TẢO、TỐC",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "～から [ ～kara ]",
+        "subTitle": "~ từ  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "どうして [ doushite ]",
+        "subTitle": "tại sao  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ざんねんです[ね]。 [ zannendesu[ne]｡ ]",
+        "subTitle": "Thật đáng tiếc nhỉ.\/ buồn nhỉ. 残念です[ね]。 TÀN NIỆM",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "すみません。 [ sumimasen｡ ]",
+        "subTitle": "Xin lỗi.  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "もしもし [ moshimoshi ]",
+        "subTitle": "a-lô  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "ああ [ aa ]",
+        "subTitle": "a (cách nói khi đã gặp được đúng người trên điện thoại)  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "いっしょにいかがですか。 [ isshoniikagadesuka｡ ]",
+        "subTitle": "Anh\/chị cùng ~ (làm cái gì đó) với chúng tôi được không?  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "[～は]ちょっと…。 [ [～ha]chotto～｡ ]",
+        "subTitle": "[~ thì] có lẽ không được rồi.  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "だめですか。 [ damedesuka｡ ]",
+        "subTitle": "Không được à?  ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "またこんどおねがいします [ matakondoonegaishimasu ]",
+        "subTitle": "Hẹn Anh\/Chị lần sau vậy. また今度お願いします KIM ĐỘ NGUYỆN",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    },
+    {
+        "title": "おざわせいじ [ ozawaseiji ]",
+        "subTitle": "Ozawa Seiji (1935 ~ ) 小沢征爾 TIỂU TRẠCH CHINH NHĨ",
+        "tag": "từ vựng mina, mina bài 09, mrmina09"
+    }
+]

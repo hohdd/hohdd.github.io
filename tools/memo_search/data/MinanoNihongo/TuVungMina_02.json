@@ -1,0 +1,237 @@
+[
+    {
+        "title": "これ [ kore ]",
+        "subTitle": "cái này, đây (vật ở gần người nói)  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "それ [ sore ]",
+        "subTitle": "cái đó, đó (vật ở gần người nghe)  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "あれ [ are ]",
+        "subTitle": "cái kia, kia (vật ở xa cả người nói và người nghe)  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "この～ [ kono～ ]",
+        "subTitle": "~ này  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "その～ [ sono～ ]",
+        "subTitle": "~ đó  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "あの～ [ ano～ ]",
+        "subTitle": "~ kia  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "ほん [ hon ]",
+        "subTitle": "sách 本 BẢN\/BỔN",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "じしょ [ jisho ]",
+        "subTitle": "từ điển 辞書 TỪ THƯ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "ざっし [ zasshi ]",
+        "subTitle": "tạp chí 雑誌 TẠP CHÍ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "しんぶん [ shinbun ]",
+        "subTitle": " báo 新聞 TÂN VĂN",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "ノート [ noｰto ]",
+        "subTitle": "vở  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "てちょう [ techou ]",
+        "subTitle": "sổ tay 手帳 THỦ TRƯƠNG",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "めいし [ meishi ]",
+        "subTitle": "danh thiếp 名刺 DANH THÍCH",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "カード [ kaｰdo ]",
+        "subTitle": "thẻ, cạc  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "テレホンカード [ terehonkaｰdo ]",
+        "subTitle": "thẻ điện thoại  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "えんぴつ [ enpitsu ]",
+        "subTitle": "bút chì 鉛筆 DUYÊN BÚT",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "ボールペン [ boｰrupen ]",
+        "subTitle": "bút bi  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "シャープペンシル [ shaｰpupenshiru ]",
+        "subTitle": "bút chì kim, bút chì bấm  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "かぎ [ kagi ]",
+        "subTitle": "chìa khóa  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "とけい [ tokei ]",
+        "subTitle": "đồng hồ 時計 THỜI KẾ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "かさ [ kasa ]",
+        "subTitle": "ô, dù 傘 TẢN",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "かばん [ kaban ]",
+        "subTitle": "cặp sách, túi sách  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "[カセット]テープ [ [kasetto]teｰpu ]",
+        "subTitle": "băng [cát-xét]  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "テープレコーダー [ teｰpurekoｰdaｰ ]",
+        "subTitle": "máy ghi âm  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "テレビ [ terebi ]",
+        "subTitle": "tivi  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "ラジオ [ rajio ]",
+        "subTitle": "Radio  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "カメラ [ kamera ]",
+        "subTitle": "máy ảnh  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "コンピューター [ konpyuｰtaｰ ]",
+        "subTitle": "máy vi tính  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "じどうしゃ [ jidousha ]",
+        "subTitle": "ô tô, xe hơi 自動車 TỰ ĐỘNG XA",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "つくえ [ tsukue ]",
+        "subTitle": "cái bàn  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "いす [ isu ]",
+        "subTitle": "cái ghế  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "チョコレート [ chokoreｰto ]",
+        "subTitle": "Socola  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "コーヒー [ koｰhiｰ ]",
+        "subTitle": "cà phê  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "えいご [ eigo ]",
+        "subTitle": "tiếng anh  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "にほんご [ nihongo ]",
+        "subTitle": "tiếng nhật  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "なに [ nani ]",
+        "subTitle": "cái gì  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "なん [ nan ]",
+        "subTitle": "cái gì  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "そう [ sou ]",
+        "subTitle": "đúng rồi  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "ちがいます [ chigaimasu ]",
+        "subTitle": "không phải, không đúng, sai rồi 違います VI",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "そうですか [ soudesuka ]",
+        "subTitle": "thế à, vậy à  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "あのう [ anou ]",
+        "subTitle": "à, ờ  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "ほんのきもち [ honnokimochi ]",
+        "subTitle": "chỉ là chút lòng thành thôi ほんの気持ち KHÍ TRÌ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "どうぞ [ douzo ]",
+        "subTitle": "xin mời  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "どうも [ doumo ]",
+        "subTitle": "cám ơn  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "どうもありがとうございます [ doumoarigatougozaimasu ]",
+        "subTitle": "xin chân thành cám ơn  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "これからおせわになります [ korekaraosewaninarimasu ]",
+        "subTitle": "từ nay tôi rất mong sự giúp đỡ của anh chị  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    },
+    {
+        "title": "こちらこそ　よろしく [ kochirakoso yoroshiku ]",
+        "subTitle": "chính tôi mới phải xin ông giúp đỡ cho  ",
+        "tag": "từ vựng mina, mina bài 02, mrmina02"
+    }
+]

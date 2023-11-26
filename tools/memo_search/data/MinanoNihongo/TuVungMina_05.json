@@ -1,0 +1,292 @@
+[
+    {
+        "title": "いきます [ ikimasu ]",
+        "subTitle": "đi 行きます HÀNH",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "きます [ kimasu ]",
+        "subTitle": "đến 来ます LAI",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "かえります [ kaerimasu ]",
+        "subTitle": "về 帰ります QUY",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "がっこう [ gakkou ]",
+        "subTitle": "trường học 学校 HỌC HIỆU",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "スーパー [ suｰpaｰ ]",
+        "subTitle": "siêu thị  ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "えき [ eki ]",
+        "subTitle": "ga, nhà ga 駅 DỊCH",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ひこうき [ hikouki ]",
+        "subTitle": "máy bay 飛行機 PHI HÀNH CƠ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ふね [ fune ]",
+        "subTitle": "thuyền, tàu thủy 船 THUYỀN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "でんしゃ [ densha ]",
+        "subTitle": "tàu điện 電車 ĐIỆN XA",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ちかてつ [ chikatetsu ]",
+        "subTitle": "tàu điện ngầm 地下鉄 ĐỊA HẠ THIẾT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "しんかんせん [ shinkansen ]",
+        "subTitle": "tàu Shinkansen (tàu điện siêu tốc của Nhật) 新幹線 TÂN CÁN TUYẾN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "バス [ basu ]",
+        "subTitle": "xe buýt  ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "タクシー [ takushiｰ ]",
+        "subTitle": "tắc-xi  ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "じてんしゃ [ jitensha ]",
+        "subTitle": "xe đạp 自転車 TỰ CHUYỂN XA",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "あるいて [ aruite ]",
+        "subTitle": "đi bộ 歩いて BỘ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ひと [ hito ]",
+        "subTitle": "người 人 NHÂN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ともだち [ tomodachi ]",
+        "subTitle": "bạn, bạn bè 友達 HỮU ĐẠT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "かれ [ kare ]",
+        "subTitle": "anh ấy, bạn trai 彼 BỈ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "かのじょ [ kanojo ]",
+        "subTitle": "chị ấy, bạn gái 彼女 BỈ NỮ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "かぞく [ kazoku ]",
+        "subTitle": "gia đình 家族 GIA TỘC",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ひとりで [ hitoride ]",
+        "subTitle": "một mình 一人で NHẤT NHÂN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "せんしゅう [ senshuu ]",
+        "subTitle": "tuần trước 先週 TIÊN CHU",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "こんしゅう [ konshuu ]",
+        "subTitle": "tuần này 今週 KIM CHU",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "らいしゅう [ raishuu ]",
+        "subTitle": "tuần sau 来週 LAI CHU",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "こんげつ [ kongetsu ]",
+        "subTitle": "tháng này 今月 KIM NGUYỆT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "らいげつ [ raigetsu ]",
+        "subTitle": "tháng sau 来月 LAI NGUYỆT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "きょねん [ kyonen ]",
+        "subTitle": "năm ngoái 去年 KHỨ NIÊN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ことし [ kotoshi ]",
+        "subTitle": "năm nay  ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "らいねん [ rainen ]",
+        "subTitle": "năm sau 来年 LAI NIÊN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "―がつ [ ～gatsu ]",
+        "subTitle": "tháng - ―月 NGUYỆT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "なんがつ [ nangatsu ]",
+        "subTitle": "tháng mấy 何月 HÀ NGUYỆT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ついたち [ tsuitachi ]",
+        "subTitle": "ngày mồng 1 １日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ふつか [ futsuka ]",
+        "subTitle": "ngày mồng 2, 2 ngày ２日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "みっか [ mikka ]",
+        "subTitle": "ngày mồng 3, 3 ngày ３日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "よっか [ yokka ]",
+        "subTitle": "ngày mồng 4, 4 ngày ４日 NHẬT ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "いつか [ itsuka ]",
+        "subTitle": "ngày mồng 5, 5 ngày ５日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "むいか [ muika ]",
+        "subTitle": "ngày mồng 6, 6 ngày ６日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "なのか [ nanoka ]",
+        "subTitle": "ngày mồng 7, 7 ngày ７日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ようか [ youka ]",
+        "subTitle": "ngày mồng 8, 8 ngày ８日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ここのか [ kokonoka ]",
+        "subTitle": "ngày mồng 9, 9 ngày ９日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "とおか [ tooka ]",
+        "subTitle": "ngày mồng 10, 10 ngày １０日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "じゅうよっか [ juuyokka ]",
+        "subTitle": "ngày 14, 14 ngày １４日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "はつか [ hatsuka ]",
+        "subTitle": "ngày 20, 20 ngày ２０日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "にじゅうよっか [ nijuuyokka ]",
+        "subTitle": "ngày 24, 24 ngày ２４日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "―にち [ ～nichi ]",
+        "subTitle": "ngày -, - ngày ―日 NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "なんにち [ nannichi ]",
+        "subTitle": "ngày mấy, ngày bao nhiêu, mấy ngày, bao nhiêu ngày 何日 HÀ NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "いつ [ itsu ]",
+        "subTitle": "bao giờ, khi nào  ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "たんじょうび [ tanjoubi ]",
+        "subTitle": "sinh nhật 誕生日 ĐẢN SINH NHẬT",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ふつう [ futsuu ]",
+        "subTitle": "tàu thường (dừng cả ở các ga lẻ) 普通 PHỔ THÔNG",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "きゅうこう [ kyuukou ]",
+        "subTitle": "tàu tốc hành 急行 CẤP HÀNH",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "とっきゅう [ tokkyuu ]",
+        "subTitle": "tàu tốc hành đặc biệt 特急 ĐẶC CẤP",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "つぎの [ tsugino ]",
+        "subTitle": "tiếp theo 次の THỨ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "どういたしまして [ douitashimashite ]",
+        "subTitle": "Không có gì.  ",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "―ばんせん [ ～bansen ]",
+        "subTitle": "sân ga số - ―番線 PHIÊN TUYẾN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "はかた [ hakata ]",
+        "subTitle": "tên một khu phố ở Kyushu 博多 BÁC ĐA",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "ふしみ [ fushimi ]",
+        "subTitle": "tên một khu phố ở Kyoto 伏見 PHỤC KIẾN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "こうしえん [ koushien ]",
+        "subTitle": "tên một khu phố ở Osaka 甲子園 GIÁP TỬ VIÊN",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    },
+    {
+        "title": "おおさかじょう [ oosakajou ]",
+        "subTitle": "Lâu đài Osaka, một lâu đài nổi tiếng ở Osaka 大阪城 ĐẠI PHẢN THÀNH",
+        "tag": "từ vựng mina, mina bài 05, mrmina05"
+    }
+]
