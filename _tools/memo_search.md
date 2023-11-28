@@ -11,6 +11,9 @@ quickNote: true
 secondMenu: true
 secondMenuIcon: close
 secondMenuHandler: closeAllModal()
+thirdMenu: true
+thirdMenuIcon: menu_open
+thirdMenuHandler: toggleSideBar()
 ---
 <script>
   function closeAllModal() {
@@ -26,6 +29,14 @@ secondMenuHandler: closeAllModal()
     try {
       document.getElementById('boThu214Modal').style.display='none';
     } catch (error) {}
+  }
+  function toggleSideBar() {
+    var x = document.getElementById("mySidenav");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
   }
 </script>
 <style>
