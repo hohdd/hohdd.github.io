@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Reading</title>
-    <link rel="canonical" href="https://me.donghd.com/tools/reading" />
+    <title>Unity - Di chuyển một GameObject</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-di-chuyen-mot-gameobject" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,32 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/tools/reading",
-        "headline": "Reading",
-        
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-di-chuyen-mot-gameobject",
+        "headline": "Unity - Di chuyển một GameObject",
+        "datePublished": "2020-05-15 14:26:14 +0700",
         "dateModified": "2023-11-30 23:33:14 +0700",
-        "description": "Reading",
+        "description": "Unity - Di chuyển một GameObject",
+        
+        "author": {
+          "@type": "Person",
+          "name": "Dong Ho"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Mr.Winter",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/assets/img/logo-mrwinter.png",
+            "width": 257,
+            "height": 32
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "/assets/img/articles/demo/girl_hat.jpg",
+          "height": 395,
+          "width": 600
+        }
         
       }
     </script>
@@ -96,15 +117,20 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Reading</h2>
+      <h2>Unity - Di chuyển một GameObject</h2>
       <span class="author">
         
         
+          <a href="/authors/dongho">Dong Ho</a>
+        
       </span>
-      <time datetime="" class="by-line"> ·  
-      <span title="reading time">· about 1 min read </span> · 
+      <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
+      <span title="reading time">· about 4 mins read </span> · 
       
       <span>
+        
+        
+        <a href="/pages/categories#Scripts" class="hvr-float-shadow">Scripts</a>
         
         
       </span>
@@ -112,102 +138,160 @@
       </time>
 
       <div class="w3-section">
-        <!-- https://pdfobject.com/pdf/sample-3pp.pdf -->
-<!-- https://codepen.io/justinchmura/pen/PZzBOP/ -->
-<link rel="stylesheet" href="/tools/reading/reading.css" />
+        <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
+<li class="toc-entry toc-h2"><a href="#di-chuyển-một-gameobject-dựa-trên-input-từ-người-dùng" spy-toc="Di chuyển một GameObject dựa trên Input từ người dùng">Di chuyển một GameObject dựa trên Input từ người dùng</a></li>
+<li class="toc-entry toc-h2"><a href="#lấy-input" spy-toc="Lấy Input">Lấy Input</a></li>
+<li class="toc-entry toc-h2"><a href="#lấy-reference-của-một-gameobject" spy-toc="Lấy Reference của một GameObject">Lấy Reference của một GameObject</a></li>
+<li class="toc-entry toc-h2"><a href="#di-chuyển-bằng-transform" spy-toc="Di chuyển bằng Transform">Di chuyển bằng Transform</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#di-chuyển-gameobject-theo-phản-ứng-lực-và-mô-men-xoắn" spy-toc="Di chuyển GameObject theo phản ứng lực và mô-men xoắn.">Di chuyển GameObject theo phản ứng lực và mô-men xoắn.</a></li>
+</ul>
+</li>
+</ul><h2 id="di-chuyển-một-gameobject-dựa-trên-input-từ-người-dùng">
+<a class="anchor" href="#di-chuy%E1%BB%83n-m%E1%BB%99t-gameobject-d%E1%BB%B1a-tr%C3%AAn-input-t%E1%BB%AB-ng%C6%B0%E1%BB%9Di-d%C3%B9ng" aria-hidden="true" spy-title="Di chuyển một GameObject dựa trên Input từ người dùng"><span class="octicon octicon-link"></span></a>Di chuyển một GameObject dựa trên Input từ người dùng</h2>
 
-<script src="/tools/reading/pdfobject.min.js"></script>
+<pre><code class="language-C#">void Update()
+{
+    // GetAxis: trả về giá trị tăng dần 0-&gt;1, luôn là 1 nếu không thả phím
+    // GetAxisRaw: luôn luôn trả về -1 hoặc 1 khi bấm phím, 0 khi thả phím
+    xAxis = Input.GetAxis("Horizontal"); // Left-Right hoặc A-D ~ [-,+]
+    yAxis = Input.GetAxis("Vertical"); // Up-Down hoặc W-S ~ [+,-]
 
-<script>
-  function toggleToolBar() {
-    try {
-      var x = document.getElementById("toolBar");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    } catch (error) {}
-  }
-</script>
+    #region Di chuyển một GameObject sang TRÁI và PHẢI bằng cách sử dụng phím A và D
+    // trục X: bàn tay trái =&gt; là hướng ngang (dang 2 tay), [+] đi về bên phải, [-] đi về bên trái
 
-<div id="pdfContainer"></div>
+    // Tính toán tốc độ di chuyển
+    xSpeed = 5 * Time.deltaTime; // không bao gồm giá trị của Axis (lực bấm / distance tay cầm)
 
-<div id="toolBar">
-  <p style="z-index: 10000;position: absolute;bottom: 0;right: 0; scale: 0.6;">
-      <audio id="audio" controls="" style="float: right;"></audio><br />
-      <button id="noteDiv" onclick="onClickNoteDiv()">[PDF_takeNoteContent]</button>
-      <button id="count" disabled="">0</button>
-      <button onclick="apply(0.5)">0.5</button>
-      <button onclick="apply(0.8)">0.8</button>
-      <button onclick="apply(1)">1</button>
-      <button onclick="apply(1.5)">1.5</button>
-      <button onclick="apply(2)">2</button>
-      <button onclick="apply(3)">3</button>
-  </p>
+    // Di chuyển GameObject sang trái
+    if (xAxis &lt; 0)
+    {
+        gameObject.transform.Translate(-xSpeed, 0, 0); // người dùng bấm 'A' -&gt; đi về bên trái [-]
+    }
+    // Di chuyển GameObject sang phải
+    if (xAxis &gt; 0)
+    {
+        gameObject.transform.Translate(xSpeed, 0, 0); // người dùng bấm 'D' -&gt; đi về bên phải [+]
+    }
+    #endregion
 
-  <p style="z-index: 10000;position: absolute;bottom: 0; scale: 0.6;">
-      <button onclick="document.getElementById('selectFileInput').click()">File</button>
-      <input type="file" id="selectFileInput" onchange="loadFile(event)" style="display:none" />
-      <input class="w3-check w3-margin-top" type="checkbox" id="repeatCheck" checked="" />
-      <select class="w3-select w3-border" id="speedSelect">
-          <option value="" disabled="">...</option>
-          <option value="0.5">0.5</option>
-          <option value="0.8">0.6</option>
-          <option value="0.8">0.7</option>
-          <option value="0.8">0.8</option>
-          <option value="0.8">0.9</option>
-          <option value="1.0" selected="">1.0</option>
-          <option value="1.5">1.1</option>
-          <option value="1.5">1.2</option>
-          <option value="1.5">1.3</option>
-          <option value="1.5">1.4</option>
-          <option value="1.5">1.5</option>
-          <option value="1.8">1.8</option>
-          <option value="2.0">2.0</option>
-          <option value="2.5">2.5</option>
-          <option value="3.0">3.0</option>
-          <option value="3.5">3.5</option>
-          <option value="4.0">4.0</option>
-          <option value="4.5">4.5</option>
-          <option value="5.0">5.0</option>
-      </select>
-      <button onclick="apply(false)">apply</button>
-      <button onclick="resetTime()">RS</button>
-      <button onclick="pickTime()">pick</button>
-      <button id="pickTimeValue" onclick="gotoTime(this)">0</button>
-      <br />
-      <button disabled="">SUB</button>
-      <button onclick="subTime(5)">5</button>
-      <button onclick="subTime(10)">10</button>
-      <button onclick="subTime(20)">20</button>
-      <button onclick="subTime(30)">30</button>
-      <button onclick="subTime(60)">60</button>
-      <br />
-      <button disabled="">ADD</button>
-      <button onclick="addTime(5)">5</button>
-      <button onclick="addTime(10)">10</button>
-      <button onclick="addTime(20)">20</button>
-      <button onclick="addTime(30)">30</button>
-      <button onclick="addTime(60)">60</button>
-  </p>
-</div>
+    #region Di chuyển một GameObject LÊN và XUỐNG bằng cách sử dụng phím W và S
+    // trục Z: bàn tay trái =&gt; là hướng người nhìn, + đi ra về phía trước, - đi về phía sau lưng
 
-<script src="/tools/reading/reading.js"></script>
+    // Tính toán tốc độ di chuyển
+    ySpeed = 5 * Time.deltaTime; // không bao gồm giá trị của Axis (lực bấm / distance tay cầm)
 
-<!-- Files modal -->
-<div id="fileManagerModal" class="w3-modal w3-animate-opacity" style="z-index: 1000">
-  <div class="w3-modal-content w3-card-4">
-    <header class="w3-container w3-teal">
-      <span onclick="document.getElementById('fileManagerModal').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
-      <h2>File Manager</h2>
-    </header>
-    <div class="w3-container w3-padding">
-      <button class="w3-btn w3-padding" onclick="fmCreateNew()" disabled="">Open</button>
-      <div id="listFilesContainer" class="w3-padding w3-card"></div>
-    </div>
-  </div>
-</div>
+    // Di chuyển GameObject lên
+    if (yAxis &lt; 0)
+    {
+        gameObject.transform.Translate(0, 0, -ySpeed); // người dùng bấm 'S' -&gt; đi về phía sau lưng [-]
+    }
+    // Di chuyển GameObject xuống
+    if (yAxis &gt; 0)
+    {
+        gameObject.transform.Translate(0, 0, ySpeed); // người dùng bấm 'W' -&gt; đi về phía trước [+]
+    }
+    #endregion
+
+    // trục Y: bàn tay trái =&gt; là phương thẳng đứng =&gt; không sử dụng
+
+    #region CÁCH DI CHUYỂN PHỤ THUỘC VÀO GIÁ TRỊ Axis (tăng dần từ 0-&gt;1 và luôn = 1 nếu giữ phím)
+    //gameObject.transform.Translate(xSpeed * xAxis, 0, 0); // &lt;--- đoạn code này sử dụng cả dấu của Axis
+    //gameObject.transform.Translate(0, 0, ySpeed * yAxis); // &lt;--- đoạn code này sử dụng cả dấu của Axis
+    #endregion
+
+    #region KẾT LUẬN
+    // 1. Không nhầm lẫn giữa Horizontal và Vertical của INPUT với X-Y-Z (quy tắc bàn tay trái)
+    // 2. Sử dụng cả giá trị của Axis để có cảm giá thật hơn (có quán tính 0-&gt;1) và đã kèm dấu (+,-) trong giá trị rồi.
+    #endregion
+}
+</code></pre>
+
+<h2 id="lấy-input">
+<a class="anchor" href="#l%E1%BA%A5y-input" aria-hidden="true" spy-title="Lấy Input"><span class="octicon octicon-link"></span></a>Lấy Input</h2>
+
+<p><strong>GetAxis</strong>: Phương thức này trả về giá trị của một trục điều khiển.</p>
+
+<p><strong>GetAxisRaw</strong>: Phương thức này trả về giá trị thô của một trục điều khiển.</p>
+
+<p><strong>GetKeyDown</strong>: Phương thức này trả về true nếu một phím được nhấn xuống.</p>
+
+<p><strong>GetKeyUp</strong>: Phương thức này trả về true nếu một phím được thả ra.</p>
+
+<pre><code class="language-C#">float xAxis = Input.GetAxis("Horizontal"); // -1&lt;-0-&gt;+1
+float xAxisRaw = Input.GetAxisRaw("Horizontal"); // -1/0/+1
+bool isKeyDown = Input.GetKeyDown(KeyCode.A);
+bool isKeyUp = Input.GetKeyUp(KeyCode.A);
+</code></pre>
+
+<h2 id="lấy-reference-của-một-gameobject">
+<a class="anchor" href="#l%E1%BA%A5y-reference-c%E1%BB%A7a-m%E1%BB%99t-gameobject" aria-hidden="true" spy-title="Lấy Reference của một GameObject"><span class="octicon octicon-link"></span></a>Lấy Reference của một GameObject</h2>
+
+<p>Biến <strong>gameObject</strong> sẽ luôn trỏ đến GameObject đang được đính kèm Script hiện tại.</p>
+
+<p>Hàm <strong>GetComponent</strong> có thể được sử dụng để lấy reference của một Component cụ thể từ một GameObject. VD: <code class="highlighter-rouge">Rigidbody rb = GetComponent&lt;Rigidbody&gt;();</code> hoặc <code class="highlighter-rouge">otherGameObject.GetComponent&lt;Rigidbody&gt;();</code></p>
+
+<p>Khai báo một biến GameObject public và kéo thả GameObject vào Inspector.</p>
+
+<p>Sử dụng hàm <strong>Find</strong> của GameObject. VD: <code class="highlighter-rouge">GameObject player = GameObject.Find("MainHeroCharacter");</code></p>
+
+<p>Sử dụng hàm <strong>FindWithTag</strong> của GameObject. VD: <code class="highlighter-rouge">GameObject chef = GameObject.FindWithTag("Chef");</code></p>
+
+<p>Sử dụng hàm <strong>FindGameObjectsWithTag</strong> của GameObject. VD: <code class="highlighter-rouge">GameObject[] stoves = GameObject.FindGameObjectsWithTag("Stove");</code></p>
+
+<p>Ngoài ra, bạn cũng có thể sử dụng các phương thức sau để lấy reference của GameObject:</p>
+<ul>
+  <li>
+<strong>player.GetComponentInChildren</strong>: Lấy reference của một thành phần từ một GameObject hoặc một GameObject con của nó.</li>
+  <li>
+<strong>player.GetComponentInParent</strong>: Lấy reference của một thành phần từ một GameObject cha của nó.</li>
+  <li>
+<strong>GameObject.FindObjectOfType</strong>: Tìm kiếm một GameObject có loại cụ thể trong Scene.</li>
+</ul>
+
+<h2 id="di-chuyển-bằng-transform">
+<a class="anchor" href="#di-chuy%E1%BB%83n-b%E1%BA%B1ng-transform" aria-hidden="true" spy-title="Di chuyển bằng Transform"><span class="octicon octicon-link"></span></a>Di chuyển bằng Transform</h2>
+
+<p><strong>Translate</strong>: Phương thức này di chuyển GameObject theo một vector.</p>
+
+<p><strong>Rotate</strong>: Phương thức này xoay GameObject theo một góc.</p>
+
+<pre><code class="language-C#">// Di chuyển một GameObject sang bên phải
+gameObject.Translate(1, 0, 0);
+
+// Xoay một GameObject theo chiều kim đồng hồ
+gameObject.Rotate(90);
+
+// Thay đổi kích thước một GameObject thành một nửa kích thước ban đầu
+gameObject.Scale(0.5);
+</code></pre>
+
+<p><strong>MoveTowards</strong>: Phương thức này di chuyển GameObject về phía một điểm hoặc một GameObject khác.</p>
+
+<p><strong>Lerp</strong>: Phương thức này di chuyển GameObject từ một điểm đến một điểm khác theo một tỷ lệ.</p>
+
+<pre><code class="language-C#">// Di chuyển một GameObject về phía một điểm
+gameObject.MoveTowards(new Vector3(1, 0, 0), 10);
+
+// Di chuyển một GameObject từ vị trí hiện tại đến vị trí của một GameObject khác
+gameObject.Lerp(otherGameObject.transform.position, 1);
+</code></pre>
+
+<h3 id="di-chuyển-gameobject-theo-phản-ứng-lực-và-mô-men-xoắn">
+<a class="anchor" href="#di-chuy%E1%BB%83n-gameobject-theo-ph%E1%BA%A3n-%E1%BB%A9ng-l%E1%BB%B1c-v%C3%A0-m%C3%B4-men-xo%E1%BA%AFn" aria-hidden="true" spy-title="Di chuyển GameObject theo phản ứng lực và mô-men xoắn."><span class="octicon octicon-link"></span></a>Di chuyển GameObject theo phản ứng lực và mô-men xoắn.</h3>
+
+<p><strong>AddForce</strong>: Phương thức này thêm một lực vào GameObject.</p>
+
+<p><strong>AddTorque</strong>: Phương thức này thêm một mô-men xoắn vào GameObject.</p>
+
+<pre><code class="language-C#">// Thêm một lực vào GameObject
+gameObject.AddForce(new Vector3(1, 0, 0));
+
+// Thêm một mô-men xoắn vào GameObject
+gameObject.AddTorque(new Vector3(0, 1, 0));
+
+</code></pre>
+
 
       </div>
 

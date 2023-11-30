@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-physics-mo-phong-vat-ly-va-cham",
         "headline": "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-11-28 22:00:59 +0700",
+        "dateModified": "2023-11-30 23:33:14 +0700",
         "description": "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 9 mins read </span> · 
+      <span title="reading time">· about 13 mins read </span> · 
       
       <span>
         
@@ -325,6 +325,170 @@ tính toán kết quả. Nếu bạn thay đổi trực tiếp Transform thì Un
 
 <h4 id="collision">
 <a class="anchor" href="#collision" aria-hidden="true" spy-title="Collision"><span class="octicon octicon-link"></span></a>Collision</h4>
+
+<p>Để cấu hình va chạm giữa GameObjects trong Unity, bạn cần sử dụng Colliders. Colliders xác định hình dạng của GameObject nhằm mục đích va chạm vật lý. Sau đó, bạn có thể sử dụng các Collider này để quản lý các sự kiện va chạm.</p>
+
+<p>Collider là <strong>vô hình</strong> và không cần phải có hình dạng giống hệt như Mesh của GameObject.</p>
+
+<p>Collider đơn giản nhất (và ít sử dụng bộ xử lý nhất) là loại <strong>primitive collider</strong>. Trong 3D, đây là Box Collider, Sphere Collider và Capsule Collider. Ở dạng 2D, bạn có thể sử dụng Box Collider 2D và Circle Collider 2D.</p>
+
+<p>Compound colliders: có thể thêm Colliders vào child nhưng chỉ nên sử dụng 1 Rigidbody ở GameObject gốc.</p>
+
+<p>Mesh colliders: sử dụng Mesh colliders (3D) hoặc Polygon Collider (2D), những máy va chạm này sử dụng nhiều bộ xử lý hơn nhiều so với các loại nguyên thủy, vì vậy hãy sử dụng chúng một cách tiết kiệm để duy trì hiệu suất tốt.</p>
+
+<p>Static colliders: Bạn có thể thêm bộ va chạm vào GameObject mà không cần thành phần Rigidbody để tạo sàn, tường và các thành phần bất động khác của Cảnh. Chúng được gọi là máy va chạm tĩnh. Ngược lại, máy va chạm trên GameObject có Rigidbody được gọi là máy va chạm động. Máy va chạm tĩnh có thể tương tác với máy va chạm động nhưng vì chúng không có Vật rắn nên chúng không chuyển động khi va chạm.</p>
+
+<p>Physics materials: Mặc dù hình dạng của máy va chạm không bị biến dạng trong quá trình va chạm, lực ma sát và lực nảy của chúng có thể được cấu hình bằng Vật liệu Vật lý (Physics materials).</p>
+
+<p>Triggers: Hệ thống tập lệnh có thể phát hiện khi xảy ra xung đột và bắt đầu các hành động bằng hàm <strong>OnCollisionEnter</strong>. Tuy nhiên, bạn cũng có thể sử dụng công cụ vật lý chỉ đơn giản là phát hiện khi một máy va chạm đi vào không gian của một máy va chạm khác mà không tạo ra va chạm. Khi một trình va chạm đi vào không gian của nó, trình kích hoạt sẽ gọi hàm <strong>OnTriggerEnter</strong> trên các tập lệnh của đối tượng trình kích hoạt.</p>
+
+<p>Collision callbacks for scripts (lưu ý có khác biệt nếu 2 đối tượng là Kinematic):</p>
+<ul>
+  <li>OnCollisionEnter &gt; OnCollisionStay &gt; OnCollisionExit (tương tự 2D, tên hàm thêm 2D ở cuối) -&gt; 2 Kinematic does not apply</li>
+  <li>OnTriggerEnter &gt; OnTriggerStay &gt; OnTriggerExit (tương tự 2D, tên hàm thêm 2D ở cuối) -&gt; 2 Kinematic apply</li>
+</ul>
+
+<p>Khi hai đối tượng va chạm, một số sự kiện kịch bản khác nhau có thể xảy ra tùy thuộc vào cấu hình rigidbodies của các đối tượng va chạm. Biểu đồ bên dưới cung cấp thông tin chi tiết về các hàm sự kiện được gọi dựa trên các thành phần được gắn vào đối tượng.</p>
+
+<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Collision: Phát hiện va chạm xảy ra và tin nhắn được gửi khi va chạm</div>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>Static Collider</td>
+      <td>Rigidbody Collider</td>
+      <td>Kinematic Rigidbody Collider</td>
+      <td>Static Trigger Collider</td>
+      <td>Rigidbody Trigger Collider</td>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+    </tr>
+    <tr>
+      <td>Static Collider</td>
+      <td> </td>
+      <td>Y</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rigidbody Collider</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Collider</td>
+      <td> </td>
+      <td>Y</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Static Trigger Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rigidbody Trigger Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Trigger: Thông báo kích hoạt được gửi khi va chạm</div>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>Static Collider</td>
+      <td>Rigidbody Collider</td>
+      <td>Kinematic Rigidbody Collider</td>
+      <td>Static Trigger Collider</td>
+      <td>Rigidbody Trigger Collider</td>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+    </tr>
+    <tr>
+      <td>Static Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Rigidbody Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Static Trigger Collider</td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Rigidbody Trigger Collider</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="joints">
 <a class="anchor" href="#joints" aria-hidden="true" spy-title="Joints"><span class="octicon octicon-link"></span></a>Joints</h4>
