@@ -241,6 +241,16 @@ function updateLocationSearch() {
     /*window.location.search = encodeQueryData(params);*/
     window.history.replaceState(null, null, `?${encodeQueryData(params)}`);
 }
+function getTitleVideo() {
+    try {
+        document.getElementById("saveDesc").value = window.DHytplayerTarget.videoTitle;
+    } catch (error) {
+        console.log(error);
+    }
+}
+function clearDescInput() {
+    document.getElementById("saveDesc").value = "";
+}
 
 /** LIST FILES: begin */
 const defaultFiles = {
