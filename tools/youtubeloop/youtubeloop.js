@@ -362,7 +362,7 @@ function fmCreateNew() {
     } else {
         window.savedlistFiles[fileId] = {
             uuid: fileId,
-            id: urlInput,
+            id: getYoutubeId(urlInput),
             name: fileName,
             start: inputStart,
             end: inputEnd,
