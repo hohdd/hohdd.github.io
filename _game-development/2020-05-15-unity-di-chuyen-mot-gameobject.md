@@ -142,8 +142,6 @@ gameObject.Translate(1, 0, 0);
 // Xoay một GameObject theo chiều kim đồng hồ
 gameObject.Rotate(90);
 
-// Thay đổi kích thước một GameObject thành một nửa kích thước ban đầu
-gameObject.Scale(0.5);
 ```
 
 **MoveTowards**: Phương thức này di chuyển GameObject về phía một điểm hoặc một GameObject khác.
