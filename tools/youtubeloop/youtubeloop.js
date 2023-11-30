@@ -143,9 +143,6 @@ function loadAndPlayById(id, startNum = 0) {
         if (!document.getElementById('inputEnd').value) {
             params.end = document.getElementById('inputEnd').value = window.DHytplayerMain.getDuration();
         }
-        if (document.getElementById('inputStart').value) {
-            seekToStart();
-        }
     }, 2000);
 }
 function getYoutubeShortId(url) {
@@ -188,13 +185,28 @@ function fullscreenPlayer() {
 function prepareUrlParams() {
     var urlParams = new URLSearchParams(window.location.search);
     var id = urlParams.get('id');
-    setInputValueIfNotNull(id, document.getElementById('urlInput'), 'id', urlParams);
-    var start = urlParams.get('start');
-    setInputValueIfNotNull(start, document.getElementById('inputStart'), 'start', urlParams);
-    var end = urlParams.get('end');
-    setInputValueIfNotNull(end, document.getElementById('inputEnd'), 'end', urlParams);
-    var seek = urlParams.get('seek');
-    setInputValueIfNotNull(seek, document.getElementById('inputSeekTo'), 'seek', urlParams);
+    if (id) {
+        setInputValueIfNotNull(id, document.getElementById('urlInput'), 'id', urlParams);
+        var start = urlParams.get('start');
+        setInputValueIfNotNull(start, document.getElementById('inputStart'), 'start', urlParams);
+        var end = urlParams.get('end');
+        setInputValueIfNotNull(end, document.getElementById('inputEnd'), 'end', urlParams);
+        var seek = urlParams.get('seek');
+        setInputValueIfNotNull(seek, document.getElementById('inputSeekTo'), 'seek', urlParams);
+    } else {
+        //update params
+        params.uuid = window.currentFileId;
+        params.id = window.savedlistFiles[window.currentFileId].id;
+        params.start = window.savedlistFiles[window.currentFileId].start;
+        params.end = window.savedlistFiles[window.currentFileId].end;
+        params.seek = window.savedlistFiles[window.currentFileId].seek;        
+        updateLocationSearch();
+        // update inputs
+        document.getElementById('urlInput').value = params.id;
+        document.getElementById('inputStart').value = params.start;
+        document.getElementById('inputEnd').value = params.end;
+        document.getElementById('inputSeekTo').value = params.seek;
+    }
 }
 function setInputValueIfNotNull(v, elm, paramKey, urlParams) {
     if ((! urlParams.size) && (params.id)) {
@@ -328,10 +340,9 @@ function fmOpen(id) {
     params.start = window.savedlistFiles[id].start;
     params.end = window.savedlistFiles[id].end;
     params.seek = window.savedlistFiles[id].seek;
+    updateLocationSearch();
 
     loadAndPlayById(params.id, params.start);
-    
-    updateParams('id', params.id);
 }
 function fmCreateNew() {
     // doing for own youtubeloop
