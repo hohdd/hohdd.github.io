@@ -18,6 +18,29 @@ quickNote: true
 <!-- https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player -->
 <!-- https://developers.google.com/youtube/player_parameters#Parameters -->
 <div class="w3-padding-24"></div>
+<style>
+/* scroll */
+.scroll {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+/* width */
+.scroll::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
 
 <label>
   <input type="text" class="DHInput" placeholder="Enter Youtube URL | Short | VideoId here..." id="urlInput" onchange="onChangeUrlInput()">
@@ -26,7 +49,7 @@ quickNote: true
 <div class="w3-cell-row">
   <div class="w3-container w3-cell w3-mobile">
     <div id="ytplayer"></div>
-    <div id="listFilesContainer" class="w3-padding w3-margin-top w3-margin-right w3-card"></div>
+    <div id="listFilesContainer" class="w3-padding w3-margin-top w3-margin-right w3-card scroll"></div>
   </div>
   <div class="w3-container w3-cell w3-mobile">
     <div class="w3-container">
@@ -56,7 +79,9 @@ quickNote: true
       <span class="material-icons w3-button" onclick="fullscreenPlayer()">fit_screen</span></p>
       <p>
       <input class="w3-input" placeholder="Description" id="saveDesc">
-      <label class="w3-btn w3-border w3-margin-top" onclick="fmCreateNew()">Save</label></p>
+      <label class="w3-btn w3-border w3-margin-top" onclick="fmCreateNew()">Save</label>
+      <label class="w3-btn w3-border w3-margin-top" onclick="getTitleVideo()">Get Desc</label>
+      <label class="w3-btn w3-border w3-margin-top" onclick="clearDescInput()">X</label></p>
     </div>
   </div>
 </div>
