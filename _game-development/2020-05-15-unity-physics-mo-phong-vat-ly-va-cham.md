@@ -114,6 +114,50 @@ Constant Force component reference:
 
 #### Collision
 
+Để cấu hình va chạm giữa GameObjects trong Unity, bạn cần sử dụng Colliders. Colliders xác định hình dạng của GameObject nhằm mục đích va chạm vật lý. Sau đó, bạn có thể sử dụng các Collider này để quản lý các sự kiện va chạm.
+
+Collider là **vô hình** và không cần phải có hình dạng giống hệt như Mesh của GameObject.
+
+Collider đơn giản nhất (và ít sử dụng bộ xử lý nhất) là loại **primitive collider**. Trong 3D, đây là Box Collider, Sphere Collider và Capsule Collider. Ở dạng 2D, bạn có thể sử dụng Box Collider 2D và Circle Collider 2D.
+
+Compound colliders: có thể thêm Colliders vào child nhưng chỉ nên sử dụng 1 Rigidbody ở GameObject gốc.
+
+Mesh colliders: sử dụng Mesh colliders (3D) hoặc Polygon Collider (2D), những máy va chạm này sử dụng nhiều bộ xử lý hơn nhiều so với các loại nguyên thủy, vì vậy hãy sử dụng chúng một cách tiết kiệm để duy trì hiệu suất tốt.
+
+Static colliders: Bạn có thể thêm bộ va chạm vào GameObject mà không cần thành phần Rigidbody để tạo sàn, tường và các thành phần bất động khác của Cảnh. Chúng được gọi là máy va chạm tĩnh. Ngược lại, máy va chạm trên GameObject có Rigidbody được gọi là máy va chạm động. Máy va chạm tĩnh có thể tương tác với máy va chạm động nhưng vì chúng không có Vật rắn nên chúng không chuyển động khi va chạm.
+
+Physics materials: Mặc dù hình dạng của máy va chạm không bị biến dạng trong quá trình va chạm, lực ma sát và lực nảy của chúng có thể được cấu hình bằng Vật liệu Vật lý (Physics materials).
+
+Triggers: Hệ thống tập lệnh có thể phát hiện khi xảy ra xung đột và bắt đầu các hành động bằng hàm **OnCollisionEnter**. Tuy nhiên, bạn cũng có thể sử dụng công cụ vật lý chỉ đơn giản là phát hiện khi một máy va chạm đi vào không gian của một máy va chạm khác mà không tạo ra va chạm. Khi một trình va chạm đi vào không gian của nó, trình kích hoạt sẽ gọi hàm **OnTriggerEnter** trên các tập lệnh của đối tượng trình kích hoạt.
+
+Collision callbacks for scripts (lưu ý có khác biệt nếu 2 đối tượng là Kinematic):
+- OnCollisionEnter > OnCollisionStay > OnCollisionExit (tương tự 2D, tên hàm thêm 2D ở cuối) -> 2 Kinematic does not apply
+- OnTriggerEnter > OnTriggerStay > OnTriggerExit (tương tự 2D, tên hàm thêm 2D ở cuối) -> 2 Kinematic apply
+
+Khi hai đối tượng va chạm, một số sự kiện kịch bản khác nhau có thể xảy ra tùy thuộc vào cấu hình rigidbodies của các đối tượng va chạm. Biểu đồ bên dưới cung cấp thông tin chi tiết về các hàm sự kiện được gọi dựa trên các thành phần được gắn vào đối tượng.
+
+<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Collision: Phát hiện va chạm xảy ra và tin nhắn được gửi khi va chạm</div>
+
+| | Static Collider | Rigidbody Collider | Kinematic Rigidbody Collider | Static Trigger Collider | Rigidbody Trigger Collider | Kinematic Rigidbody Trigger Collider
+| Static Collider  | | Y 
+| Rigidbody Collider  | Y | Y | Y 
+| Kinematic Rigidbody Collider | | Y
+| Static Trigger Collider
+| Rigidbody Trigger Collider
+| Kinematic Rigidbody Trigger Collider
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}
+
+<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Trigger: Thông báo kích hoạt được gửi khi va chạm</div>
+
+| | Static Collider | Rigidbody Collider | Kinematic Rigidbody Collider | Static Trigger Collider | Rigidbody Trigger Collider | Kinematic Rigidbody Trigger Collider
+| Static Collider | | | | | Y | Y 
+| Rigidbody Collider | | | | Y | Y | Y
+| Kinematic Rigidbody Collider | | | | Y | Y | Y
+| Static Trigger Collider | | Y | Y | | Y | Y
+| Rigidbody Trigger Collider | Y | Y | Y | Y | Y | Y
+| Kinematic Rigidbody Trigger Collider | Y | Y | Y | Y | Y | Y
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}
+
 #### Joints
 
 #### Articulations

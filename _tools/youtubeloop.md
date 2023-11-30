@@ -26,6 +26,7 @@ quickNote: true
 <div class="w3-cell-row">
   <div class="w3-container w3-cell w3-mobile">
     <div id="ytplayer"></div>
+    <div id="listFilesContainer" class="w3-padding w3-margin-top w3-margin-right w3-card"></div>
   </div>
   <div class="w3-container w3-cell w3-mobile">
     <div class="w3-container">
@@ -53,6 +54,9 @@ quickNote: true
       <span class="material-icons w3-button" onclick="stopVideo()">stop</span>
       <span class="material-icons w3-button" onclick="seekToStart()">refresh</span>
       <span class="material-icons w3-button" onclick="fullscreenPlayer()">fit_screen</span></p>
+      <p>
+      <input class="w3-input" placeholder="Description" id="saveDesc">
+      <label class="w3-btn w3-border w3-margin-top" onclick="fmCreateNew()">Save</label></p>
     </div>
   </div>
 </div>
