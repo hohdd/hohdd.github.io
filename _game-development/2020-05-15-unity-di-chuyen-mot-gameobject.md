@@ -44,7 +44,7 @@ void Update()
     yAxis = Input.GetAxis("Vertical"); // Up-Down hoặc W-S ~ [+,-]
 
     #region Di chuyển một GameObject sang TRÁI và PHẢI bằng cách sử dụng phím A và D
-    // trục X: bàn tay trái => là hướng ngang (dang 2 tay), [+] đi về bên phải, [-] đi về bên trái
+    // [TRỤC X]: bàn tay trái => là hướng ngang (dang 2 tay), [+] đi về bên phải, [-] đi về bên trái
 
     // Tính toán tốc độ di chuyển
     xSpeed = 5 * Time.deltaTime; // không bao gồm giá trị của Axis (lực bấm / distance tay cầm)
@@ -62,7 +62,7 @@ void Update()
     #endregion
 
     #region Di chuyển một GameObject LÊN và XUỐNG bằng cách sử dụng phím W và S
-    // trục Z: bàn tay trái => là hướng người nhìn, + đi ra về phía trước, - đi về phía sau lưng
+    // [TRỤC Z]: bàn tay trái => là hướng người nhìn, + đi ra về phía trước, - đi về phía sau lưng
 
     // Tính toán tốc độ di chuyển
     ySpeed = 5 * Time.deltaTime; // không bao gồm giá trị của Axis (lực bấm / distance tay cầm)
@@ -79,7 +79,7 @@ void Update()
     }
     #endregion
 
-    // trục Y: bàn tay trái => là phương thẳng đứng => không sử dụng
+    // [TRỤC Y]: bàn tay trái => là phương thẳng đứng => không sử dụng
 
     #region CÁCH DI CHUYỂN PHỤ THUỘC VÀO GIÁ TRỊ Axis (tăng dần từ 0->1 và luôn = 1 nếu giữ phím)
     //gameObject.transform.Translate(xSpeed * xAxis, 0, 0); // <--- đoạn code này sử dụng cả dấu của Axis
@@ -89,6 +89,9 @@ void Update()
     #region KẾT LUẬN
     // 1. Không nhầm lẫn giữa Horizontal và Vertical của INPUT với X-Y-Z (quy tắc bàn tay trái)
     // 2. Sử dụng cả giá trị của Axis để có cảm giá thật hơn (có quán tính 0->1) và đã kèm dấu (+,-) trong giá trị rồi.
+    // [TRỤC X]: bàn tay trái => là hướng ngang (dang 2 tay), [+] đi về bên phải, [-] đi về bên trái
+    // [TRỤC Y]: bàn tay trái => là phương thẳng đứng, + lên trên, - xuống dưới
+    // [TRỤC Z]: bàn tay trái => là hướng người nhìn, + đi ra về phía trước, - đi về phía sau lưng
     #endregion
 }
 ```
@@ -137,23 +140,11 @@ Ngoài ra, bạn cũng có thể sử dụng các phương thức sau để lấ
 
 ```C#
 // Di chuyển một GameObject sang bên phải
-gameObject.Translate(1, 0, 0);
+gameObject.Translate(1, 0, 0); // X-Y-Z của 'Translate' tùy theo quy tắc bàn tay trái
 
 // Xoay một GameObject theo chiều kim đồng hồ
-gameObject.Rotate(90);
+gameObject.transform.Rotate(new Vector3(0, 0, 1)); // X-Y-Z của 'Vector3' tùy theo quy tắc bàn tay trái
 
-```
-
-**MoveTowards**: Phương thức này di chuyển GameObject về phía một điểm hoặc một GameObject khác.
-
-**Lerp**: Phương thức này di chuyển GameObject từ một điểm đến một điểm khác theo một tỷ lệ.
-
-```C#
-// Di chuyển một GameObject về phía một điểm
-gameObject.MoveTowards(new Vector3(1, 0, 0), 10);
-
-// Di chuyển một GameObject từ vị trí hiện tại đến vị trí của một GameObject khác
-gameObject.Lerp(otherGameObject.transform.position, 1);
 ```
 
 ### Di chuyển GameObject theo phản ứng lực và mô-men xoắn.
@@ -163,13 +154,18 @@ gameObject.Lerp(otherGameObject.transform.position, 1);
 **AddTorque**: Phương thức này thêm một mô-men xoắn vào GameObject.
 
 ```C#
-// Thêm một lực vào GameObject
-gameObject.AddForce(new Vector3(1, 0, 0));
+// Thêm một lực 'AddForce' vào GameObject
+rigidbody = gameObject.GetComponent<Rigidbody>();
+rigidbody.AddForce(xAxis * 1500 * Time.deltaTime * new Vector3(0, 0, 1)); // X-Y-Z của 'Vector3' theo QT BTT
+rigidbody.AddForce(0, 0, xAxis * speed * Time.deltaTime); // có +3 overloads của 'AddForce', bản chất là sử dụng 'Vector3'
+// Thêm một gia tốc liên tục vào vật rắn, bỏ qua khối lượng của nó. Sử dụng 
+rigidbody.AddForce(0, 0, xAxis * speed * Time.deltaTime, ForceMode.Acceleration); // Sử dụng ForceMode để chỉ định cách áp dụng lực
 
-// Thêm một mô-men xoắn vào GameObject
-gameObject.AddTorque(new Vector3(0, 1, 0));
+// Cách dùng giống 'AddForce', thêm một mô-men xoắn 'AddTorque' vào GameObject
+rigidbody.AddTorque(xAxis * 1500 * Time.deltaTime * new Vector3(0, 0, 1)); // X-Y-Z của 'Vector3' theo QT BTT
 
+xSpeed = xAxis * speed * Time.deltaTime;
+zSpeed = yAxis * speed * Time.deltaTime;
+ySpeed = jumpAxis * speed * Time.deltaTime;
+rigidbody.AddForce(xSpeed, ySpeed, zSpeed); // X-Y-Z của 'Vector3' theo QT BTT
 ```
-
-
-
