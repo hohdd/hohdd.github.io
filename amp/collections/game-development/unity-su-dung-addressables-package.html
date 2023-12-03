@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Cấu trúc và thứ tự Compile của một project Unity</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-cau-truc-project-va-thu-tu-compile" />
+    <title>Sử dụng Addressables package</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-su-dung-addressables-package" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-cau-truc-project-va-thu-tu-compile",
-        "headline": "Cấu trúc và thứ tự Compile của một project Unity",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-su-dung-addressables-package",
+        "headline": "Sử dụng Addressables package",
         "datePublished": "2020-05-15 14:26:14 +0700",
         "dateModified": "2023-12-04 00:33:26 +0700",
-        "description": "Cấu trúc và thứ tự Compile của một project Unity",
+        "description": "Sử dụng Addressables package",
         
         "author": {
           "@type": "Person",
@@ -117,7 +117,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Cấu trúc và thứ tự Compile của một project Unity</h2>
+      <h2>Sử dụng Addressables package</h2>
       <span class="author">
         
         
@@ -125,12 +125,12 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 5 mins read </span> · 
+      <span title="reading time">· about 1 min read </span> · 
       
       <span>
         
         
-        <a href="/pages/categories#Unity" class="hvr-float-shadow">Unity</a>
+        <a href="/pages/categories#Package" class="hvr-float-shadow">Package</a>
         
         
       </span>
@@ -139,120 +139,11 @@
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h2"><a href="#cấu-trúc-của-một-project-unity" spy-toc="Cấu trúc của một project Unity">Cấu trúc của một project Unity</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#cách-tổ-chức-một-project-unity" spy-toc="Cách tổ chức một project Unity">Cách tổ chức một project Unity</a></li>
-<li class="toc-entry toc-h3"><a href="#một-số-mẹo-tổ-chức-project-unity" spy-toc="Một số mẹo tổ chức project Unity:">Một số mẹo tổ chức project Unity:</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#thứ-tự-compile" spy-toc="Thứ tự Compile">Thứ tự Compile</a></li>
-</ul><h2 id="cấu-trúc-của-một-project-unity">
-<a class="anchor" href="#c%E1%BA%A5u-tr%C3%BAc-c%E1%BB%A7a-m%E1%BB%99t-project-unity" aria-hidden="true" spy-title="Cấu trúc của một project Unity"><span class="octicon octicon-link"></span></a>Cấu trúc của một project Unity</h2>
+<li class="toc-entry toc-h2"><a href="#sử-dụng-addressables-package" spy-toc="Sử dụng Addressables package">Sử dụng Addressables package</a></li>
+</ul><h2 id="sử-dụng-addressables-package">
+<a class="anchor" href="#s%E1%BB%AD-d%E1%BB%A5ng-addressables-package" aria-hidden="true" spy-title="Sử dụng Addressables package"><span class="octicon octicon-link"></span></a>Sử dụng Addressables package</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|- ROOT
-|--Assets
-|	|--Editor
-|	|--Standard Assets
-|	|--StreamingAssets
-|	|--Resources
-|	|--&lt;NameOfGame&gt;
-|	|	|--Animations
-|	|	|--Art
-|	|	|	|--UI
-|	|	|--Audio
-|	|	|	|--UI
-|	|	|--Prefabs
-|	|	|	|--UI
-|	|	|--Scenes
-|	|	|--Scripts
-|	|	|	|--UI
-|	|	|	|--Utils
-|	|	|--Presets
-|--Library
-|--Editor
-|--Gizmos
-|--Logs
-|--Packages
-|--ProjectSettings
-|--UserSettings
-</code></pre></div></div>
-
-<p>Một project Unity là một tập hợp các tệp và thư mục chứa tất cả các thành phần cần thiết để tạo một trò chơi điện tử.</p>
-<ul>
-  <li>Assets: Thư mục này chứa tất cả các tài sản của trò chơi, chẳng hạn như mô hình 3D, âm thanh, hình ảnh và kịch bản. Nội dung của cửa sổ Project trong Editor tương ứng trực tiếp với nội dung của thư mục Assets.</li>
-  <li>Editor: thêm chức năng cho Unity trong quá trình phát triển nhưng không có sẵn trong các bản dựng khi Runtime. Các tập lệnh trong thư mục Editor chạy dưới dạng tập lệnh Editor, không phải tập lệnh thời gian chạy (Runtime). Có thể đặt nhiều thư mục Editor ở bất kỳ đâu. Vị trí chính xác của thư mục Editor ảnh hưởng đến thời gian biên dịch các tập lệnh của nó so với các tập lệnh khác. Lưu ý: Unity không cho phép các components có nguồn gốc từ MonoBehaviour được gán cho GameObjects nếu các tập lệnh nằm trong thư mục Editor.</li>
-  <li>Gizmos: Gizmos cho phép bạn thêm đồ họa vào Scene để giúp trực quan hóa các chi tiết thiết kế mà không thể nhìn thấy được. Hàm Gizmos.DrawIcon đặt một biểu tượng trong Scene để hoạt động như một điểm đánh dấu cho một đối tượng hoặc vị trí đặc biệt. Bạn phải đặt file ảnh dùng để vẽ biểu tượng này vào thư mục có tên Gizmos để hàm DrawIcon xác định vị trí của nó. Chỉ có thể có một thư mục Gizmos và nó phải được đặt trong thư mục gốc của Dự án.</li>
-  <li>Resources: Bạn có thể tải Nội dung theo yêu cầu (Assets on-demand) từ tập lệnh thay vì tạo phiên bản Nội dung trong Cảnh để sử dụng trong trò chơi. Bạn thực hiện việc này bằng cách đặt Assets vào thư mục có tên Resources. Tải các Assets này bằng cách sử dụng hàm Resources.Load. Có thể đặt nhiều thư mục Resources ở bất kỳ đâu.</li>
-  <li>Standard Assets: Khi bạn import một Standard Asset package, Unity sẽ đặt tài sản đó vào thư mục có tên Standard Assets. Chỉ có thể có một thư mục Standard Assets và bạn phải để nó trong thư mục gốc của dự án.</li>
-  <li>StreamingAssets</li>
-  <li>Android Asset Packs</li>
-  <li>Android Library Projects</li>
-  <li>Hidden Assets: Trong quá trình import, Unity bỏ qua các tệp và thư mục sau trong thư mục Assets (hoặc thư mục con trong đó):
-    <ul>
-      <li>Các thư mục ẩn.</li>
-      <li>Các Files và folders BẮT ĐẦU với ‘.’.</li>
-      <li>Các Files và folders KẾT THÚC với ‘~’.</li>
-      <li>Các Files và folders có tên “cvs”.</li>
-      <li>Các Files với phần mở rộng là .tmp.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="cách-tổ-chức-một-project-unity">
-<a class="anchor" href="#c%C3%A1ch-t%E1%BB%95-ch%E1%BB%A9c-m%E1%BB%99t-project-unity" aria-hidden="true" spy-title="Cách tổ chức một project Unity"><span class="octicon octicon-link"></span></a>Cách tổ chức một project Unity</h3>
-
-<p>Cách tốt nhất để tổ chức một project Unity là tạo các thư mục con để phân loại các tài sản. Ví dụ: bạn có thể tạo các thư mục con cho mô hình 3D, kết cấu, âm thanh và kịch bản.</p>
-
-<p>Tổ chức tốt sẽ giúp bạn dễ dàng tìm thấy các tài sản mà bạn cần. Nó cũng sẽ giúp bạn quản lý project của mình một cách hiệu quả hơn.</p>
-
-<h3 id="một-số-mẹo-tổ-chức-project-unity">
-<a class="anchor" href="#m%E1%BB%99t-s%E1%BB%91-m%E1%BA%B9o-t%E1%BB%95-ch%E1%BB%A9c-project-unity" aria-hidden="true" spy-title="Một số mẹo tổ chức project Unity:"><span class="octicon octicon-link"></span></a>Một số mẹo tổ chức project Unity:</h3>
-
-<ul>
-  <li>Sử dụng các tên thư mục mô tả nội dung của chúng.</li>
-  <li>Sử dụng các tên tài sản mô tả mục đích của chúng.</li>
-  <li>Sử dụng các mô hình và kết cấu có kích thước phù hợp với nhu cầu của bạn.</li>
-  <li>Sử dụng các kịch bản ngắn gọn và dễ hiểu.</li>
-</ul>
-
-<h2 id="thứ-tự-compile">
-<a class="anchor" href="#th%E1%BB%A9-t%E1%BB%B1-compile" aria-hidden="true" spy-title="Thứ tự Compile"><span class="octicon octicon-link"></span></a>Thứ tự Compile</h2>
-
-<p>Unity biên dịch tập lệnh trong bốn giai đoạn riêng biệt, dựa trên vị trí của tệp tập lệnh trong cấu trúc thư mục dự án. Unity tạo một tệp dự án CSharp riêng (.csproj) và một tập hợp được xác định trước cho từng giai đoạn. (Nếu không có tập lệnh nào đủ điều kiện cho giai đoạn biên dịch, Unity sẽ không tạo tệp dự án hoặc tập hợp tương ứng.)</p>
-
-<p>Thứ tự biên dịch rất quan trọng khi tập lệnh tham chiếu đến một lớp được biên dịch ở một giai đoạn khác (và do đó nằm trong một assembly khác). Quy tắc cơ bản là bất cứ thứ gì được biên dịch trong một giai đoạn sau giai đoạn hiện tại đều không thể được tham chiếu. Mọi thứ được biên soạn trong giai đoạn hiện tại hoặc giai đoạn trước đó đều có sẵn đầy đủ.</p>
-
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-green">
-  <thead>
-    <tr>
-      <th style="text-align: left">Phase</th>
-      <th style="text-align: center">Assembly name</th>
-      <th style="text-align: right">Script files</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">1</td>
-      <td style="text-align: center">Assembly-CSharp-firstpass</td>
-      <td style="text-align: right">Runtime scripts trong các thư mục có tên Standard Assets, Pro Standard Assets và Plugins</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">2</td>
-      <td style="text-align: center">Assembly-CSharp-Editor-firstpass</td>
-      <td style="text-align: right">Editor scripts ở bất kỳ đâu trong các thư mục top-level có tên là Standard Assets, Pro Standard Assets và Plugins</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">3</td>
-      <td style="text-align: center">Assembly-CSharp</td>
-      <td style="text-align: right">Tất cả các tập lệnh khác không nằm trong thư mục có tên Editor.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">4</td>
-      <td style="text-align: center">Assembly-CSharp-Editor</td>
-      <td style="text-align: right">Tất cả các tập lệnh còn lại (những tập lệnh nằm trong thư mục có tên Editor).</td>
-    </tr>
-  </tbody>
-</table>
+<p>TODO: https://docs.unity3d.com/Packages/com.unity.addressables@1.19/manual/AddressableAssetsGettingStarted.html</p>
 
       </div>
 

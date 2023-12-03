@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tips",
         "headline": "Unity Tips - Note",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-01 01:38:37 +0700",
+        "dateModified": "2023-12-04 00:33:26 +0700",
         "description": "Unity Tips - Note",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 2 mins read </span> · 
+      <span title="reading time">· about 4 mins read </span> · 
       
       <span>
         
@@ -160,7 +160,7 @@
       <td style="text-align: center">hoặc mở bằng Right-click và chọn Properties…</td>
     </tr>
     <tr>
-      <td style="text-align: left">Numeric field expressions: L(a,b), R(a,b), +=, -=, *=, /= …</td>
+      <td style="text-align: left">Inspector-Transform expressions: L(a,b), R(a,b), +=, -=, *=, /= …</td>
       <td style="text-align: center">sqrt(a), floor(a), ceil(a), round(a), cos(a), sin(a), tan(a), pi</td>
     </tr>
     <tr>
@@ -201,7 +201,7 @@
     </tr>
     <tr>
       <td style="text-align: left">Input System: sử dụng interface của Unity, còn lại để Unity tự xử lý.</td>
-      <td style="text-align: center">Input.GetAxis(“Horizontal”); …transform.Translate(Vector3 * moveSpeed * Time.deltaTime);</td>
+      <td style="text-align: center">Input.GetAxis(“Horizontal/Vertical”); …GetAxisRaw, GetKeyDown, GetKeyUp;</td>
     </tr>
     <tr>
       <td style="text-align: left">Mobile device input: Multi-touch screen… trạng thái và số lượng ngón tay touch…</td>
@@ -212,8 +212,48 @@
       <td style="text-align: center">Character Controller, Rigidbody, Kinematic, Convex, Constant Force, Interpolate/Extrapolate, Collision, Joints, Articulations, Cloth…</td>
     </tr>
     <tr>
-      <td style="text-align: left">Camera: chuyển góc nhìn của Scence hiện tại vào Camera</td>
+      <td style="text-align: left">Camera: Ctrl+Shift+F -&gt; chuyển góc nhìn của Scence hiện tại vào Camera</td>
       <td style="text-align: center">từ Scene View -&gt; chọn Camera -&gt; Ctrl+Shift+F để nhanh chóng căn chỉnh Camera với những gì đang nhìn thấy trong Scene</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Reference: Biến <strong>gameObject</strong> sẽ luôn trỏ đến GameObject đang được đính kèm Script hiện tại.</td>
+      <td style="text-align: center">otherGameObj.GetComponent<rigidbody>(); GameObject.Find(), FindWithTag, FindGameObjectsWithTag</rigidbody>
+</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">
+<strong>Translate</strong>: Phương thức này di chuyển GameObject theo một vector.</td>
+      <td style="text-align: center">gameObject.Translate(1, 0, 0); // X-Y-Z của ‘Translate’ tùy theo quy tắc bàn tay trái</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">
+<strong>Rotate</strong>: Phương thức này xoay GameObject theo một góc.</td>
+      <td style="text-align: center">gameObject.transform.Rotate(new Vector3(0, 0, 1)); // X-Y-Z của ‘Vector3’ tùy theo quy tắc bàn tay trái</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Quy tắc bàn tay trái: [TRỤC X]: là hướng ngang (dang 2 tay)</td>
+      <td style="text-align: center">[TRỤC X]: hướng ngang (dang 2 tay), [+] đi về bên phải, [-] đi về bên trái</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Quy tắc bàn tay trái: [TRỤC Y]: là phương thẳng đứng (không nhầm lẫn với Z)</td>
+      <td style="text-align: center">[TRỤC Y]: là phương thẳng đứng, [+] lên trên, [-] xuống dưới</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Quy tắc bàn tay trái: [TRỤC Z]: là hướng người nhìn thẳng phía trước</td>
+      <td style="text-align: center">[TRỤC Z]: hướng người nhìn thẳng phía trước, [+] đi ra về phía trước, [-] đi về phía sau lưng</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Làm việc với UI Builder: trong inspector, giá trị nào được sửa sẽ có đánh dấu LEFT màu trắng</td>
+      <td style="text-align: center">trong UXML sử dụng thuộc tính class=”<class_name>" giống HTML CSS, các style khác sẽ là inline-style của Element</class_name>
+</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“public class CharacterData : ScriptableObject” ko cần đính kèm vào GameObject</td>
+      <td style="text-align: center">“ScriptableObject” có thể sử dụng mà không cần tạo các đối tượng gắn vào GameObject.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">[CreateAssetMenu] // This adds an entry to the <strong>Create</strong> menu</td>
+      <td style="text-align: center">để thêm một sub-menu vào “Assets/Create” menu để tạo nhanh một instance class (file.asset)</td>
     </tr>
   </tbody>
 </table>
