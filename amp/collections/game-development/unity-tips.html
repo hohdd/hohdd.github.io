@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tips",
         "headline": "Unity Tips - Note",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-06 16:10:02 +0700",
+        "dateModified": "2023-12-06 23:46:46 +0700",
         "description": "Unity Tips - Note",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 4 mins read </span> · 
+      <span title="reading time">· about 5 mins read </span> · 
       
       <span>
         
@@ -254,6 +254,26 @@
     <tr>
       <td style="text-align: left">[CreateAssetMenu] // This adds an entry to the <strong>Create</strong> menu</td>
       <td style="text-align: center">để thêm một sub-menu vào “Assets/Create” menu để tạo nhanh một instance class (file.asset)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Debug: VS attach to Unity, AssetDatabase cần full path, Resources ko kèm phần mở rộng của file name</td>
+      <td style="text-align: center">AssetDatabase.LoadAssetAtPath cần điền full “Assets/…jpg”, Resources.Load tính từ Assets/Resources, ko tính Resources, không bao gồm phần mở rộng file (.jpg)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Load UXML sẽ được object kiểu “VisualTreeAsset” =&gt; cần .Instantiate() để được “VisualElement”</td>
+      <td style="text-align: center">Load UXML sẽ được object kiểu “VisualTreeAsset” =&gt; cần .Instantiate() để được “VisualElement”</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“rootVisualElement” là một “VisualElement”, giống “gameObject” luôn có sẵn</td>
+      <td style="text-align: center">“rootVisualElement” là một “VisualElement”, giống “gameObject” luôn có sẵn và reference đển TOP-Element (giống “document” của HTML)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“Custom Control” gồm UXML + Script C# extend “VisualElement” (CloneTree(this))</td>
+      <td style="text-align: center">Script C# cần “EXPOSE to UXML and UI Builder” và cần có “DEFAULT constructor”. Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UXML đại diện luôn là “VisualTreeAsset”</td>
+      <td style="text-align: center">Kể cả có reference bằng kéo thả vào GameObject ([SerializeField])</td>
     </tr>
   </tbody>
 </table>

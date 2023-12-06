@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Minano nihongo bài 1</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/japanese/mina-bai-01" />
+    <title>[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/INPROGRESS-unity-physics-mo-phong-vat-ly-va-cham" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/japanese/mina-bai-01",
-        "headline": "Minano nihongo bài 1",
-        "datePublished": "2021-04-13 14:26:14 +0700",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/INPROGRESS-unity-physics-mo-phong-vat-ly-va-cham",
+        "headline": "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)",
+        "datePublished": "2020-05-15 14:26:14 +0700",
         "dateModified": "2023-12-06 23:46:46 +0700",
-        "description": "Minano nihongo bài 1",
+        "description": "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)",
         
         "author": {
           "@type": "Person",
@@ -117,20 +117,20 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Minano nihongo bài 1</h2>
+      <h2>[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)</h2>
       <span class="author">
         
         
           <a href="/authors/dongho">Dong Ho</a>
         
       </span>
-      <time datetime="2021-04-13T14:26:14+07:00" class="by-line"> · 13 Apr 2021 
-      <span title="reading time">· about 6 mins read </span> · 
+      <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
+      <span title="reading time">· about 13 mins read </span> · 
       
       <span>
         
         
-        <a href="/pages/categories#Minano_Nihongo" class="hvr-float-shadow">Minano_Nihongo</a>
+        <a href="/pages/categories#Unity" class="hvr-float-shadow">Unity</a>
         
         
       </span>
@@ -139,359 +139,384 @@
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h2"><a href="#từ-vựng" spy-toc="Từ vựng">Từ vựng</a></li>
-<li class="toc-entry toc-h2"><a href="#ngữ-pháp" spy-toc="Ngữ pháp">Ngữ pháp</a></li>
-<li class="toc-entry toc-h2"><a href="#kaiwa" spy-toc="Kaiwa">Kaiwa</a>
+<li class="toc-entry toc-h2"><a href="#physics" spy-toc="Physics">Physics</a></li>
+<li class="toc-entry toc-h2"><a href="#built-in-physics-engines" spy-toc="Built-in physics engines">Built-in physics engines</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#はじめまして-hajimemashite---rất-vui-được-làm-quen-với-chị" spy-toc="はじめまして hajimemashite - Rất vui được làm quen với chị.">はじめまして hajimemashite - Rất vui được làm quen với chị.</a></li>
+<li class="toc-entry toc-h3"><a href="#built-in-3d-physics-nvidia-physx-engine-integration" spy-toc="Built-in 3D physics (Nvidia PhysX engine integration)">Built-in 3D physics (Nvidia PhysX engine integration)</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#character-controller-component" spy-toc="Character Controller component">Character Controller component</a></li>
+<li class="toc-entry toc-h4"><a href="#rigidbody-physics" spy-toc="Rigidbody physics">Rigidbody physics</a></li>
+<li class="toc-entry toc-h4"><a href="#collision" spy-toc="Collision">Collision</a></li>
+<li class="toc-entry toc-h4"><a href="#joints" spy-toc="Joints">Joints</a></li>
+<li class="toc-entry toc-h4"><a href="#articulations" spy-toc="Articulations">Articulations</a></li>
+<li class="toc-entry toc-h4"><a href="#ragdoll-physics" spy-toc="Ragdoll physics">Ragdoll physics</a></li>
+<li class="toc-entry toc-h4"><a href="#cloth" spy-toc="Cloth">Cloth</a></li>
+<li class="toc-entry toc-h4"><a href="#multi-scene-physics" spy-toc="Multi-scene physics">Multi-scene physics</a></li>
 </ul>
 </li>
-</ul><h2 id="từ-vựng">
-<a class="anchor" href="#t%E1%BB%AB-v%E1%BB%B1ng" aria-hidden="true" spy-title="Từ vựng"><span class="octicon octicon-link"></span></a>Từ vựng</h2>
+<li class="toc-entry toc-h3"><a href="#built-in-2d-physics-box2d-engine-integration" spy-toc="Built-in 2D physics (Box2D engine integration)">Built-in 2D physics (Box2D engine integration)</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#physics-engine-packages" spy-toc="Physics engine packages">Physics engine packages</a></li>
+</ul><h2 id="physics">
+<a class="anchor" href="#physics" aria-hidden="true" spy-title="Physics"><span class="octicon octicon-link"></span></a>Physics</h2>
 
-<audio controls=""><source src="/assets/audio/jp/mina/bai01/tumoi.mp3" type="audio/mpeg"></source>Your browser does not support the audio element.</audio>
+<p>Bạn có thể đạt được một số mục tiêu vật lý cơ bản với giao diện người dùng, nhưng để kiểm soát tốt hơn mô phỏng, bạn cần làm quen với C#</p>
 
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
-  <tbody>
-    <tr>
-      <td><span class="tooltip">わたし <span class="tooltiptext">Watashi</span></span></td>
-      <td>tôi</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">わたしたち  <span class="tooltiptext">Watashi-tachi</span></span></td>
-      <td>chúng tôi, chúng ta</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">あなた <span class="tooltiptext">Anata</span></span></td>
-      <td>anh/ chị/ ông/ bà, bạn ngôi thứ 2 số ít)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">あのひと <span class="tooltiptext">Ano hito</span></span></td>
-      <td>người kia, người đó</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">あのかた  <span class="tooltiptext">Ano kata</span></span></td>
-      <td>(「あのかた」là cách nói lịch sự của「あのひと」, vị kia)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">みなさん <span class="tooltiptext">Minasan</span></span></td>
-      <td>mọi người, các anh chị, các ông bà, các bạn, quý vị</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">～さん <span class="tooltiptext">-San</span></span></td>
-      <td>anh, chị, ông, bà (cách gọi người khác một cách lịch sự bằng cách thêm từ này vào sau tên của người đó)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">～ちゃん <span class="tooltiptext">-Chan</span></span></td>
-      <td>(hậu tố thêm vào sau tên của trẻ em thay cho 「～さん」)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">～くん <span class="tooltiptext">-Kun</span></span></td>
-      <td>(hậu tố thêm vào sau tên của em trai)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">～じん <span class="tooltiptext">~ Jin</span></span></td>
-      <td>(hậu tố mang nghĩa “người (nước)~”; ví dụ 「アメリカじん」: Người Mỹ)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">せんせい <span class="tooltiptext">Sensei</span></span></td>
-      <td>thầy/ cố (không dùng khi nói về nghề nghiệp giáo viên của mình)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">きょうし <span class="tooltiptext">Kyōshi</span></span></td>
-      <td>giáo viên</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">がくせい <span class="tooltiptext">Gaku sei</span></span></td>
-      <td>học sinh, sinh viên</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">かいしゃいん <span class="tooltiptext">Kaisha in</span></span></td>
-      <td>nhân viên công ty</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">しゃいん <span class="tooltiptext">Sha in</span></span></td>
-      <td>Nhân viên công ty</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ぎんこういん <span class="tooltiptext">Gin kōin</span></span></td>
-      <td>Nhân viên ngân hàng</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">いしゃ <span class="tooltiptext">Isha</span></span></td>
-      <td>Bác Sĩ</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">けんきゅうしゃ <span class="tooltiptext">Ken kyū sha</span></span></td>
-      <td>nhà nghiên cứu</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">エンジニア <span class="tooltiptext">Enjinia</span></span></td>
-      <td>kỹ sư</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">だいがく <span class="tooltiptext">Dai gaku</span></span></td>
-      <td>đại học, trường đại học</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">びょういん <span class="tooltiptext">Byō in</span></span></td>
-      <td>bệnh viện</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">でんき <span class="tooltiptext">Den ki</span></span></td>
-      <td>điện, đèn điện</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">だれどなた <span class="tooltiptext">Dare donata</span></span></td>
-      <td>ai (「どなた」là cách nói lịch sự của「だれ」, vị nào)</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">～さい <span class="tooltiptext">~ Sai</span></span></td>
-      <td>― tuổi</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">おいくつ <span class="tooltiptext">O ikutsu</span></span></td>
-      <td>mấy tuổi, bao nhiêu tuổi</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">はい <span class="tooltiptext">Hai</span></span></td>
-      <td>vâng, dạ</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">いいえ <span class="tooltiptext">Īe</span></span></td>
-      <td>không</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">しつれいですが <span class="tooltiptext">Shitsure idesuga</span></span></td>
-      <td>xin lỗi,…</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">おなまえは？ <span class="tooltiptext">O na ma e wa?</span></span></td>
-      <td>Tên anh/chị là gì?</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">はじめまして <span class="tooltiptext">Hajimemashite</span></span></td>
-      <td>Rất hân hạnh được gặp anh/chị</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">どうぞよろしく(おねがいします) <span class="tooltiptext">Dōzo yoroshiku (onegai shimasu)</span></span></td>
-      <td>Rất mong được sự giúp đỡ của anh/chị</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">こちらは～です。 <span class="tooltiptext">Kochira wa ~desu.</span></span></td>
-      <td>Đây là anh/chị/ông/bà ~.</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">～からきました。 <span class="tooltiptext">~ Kara kimashita.</span></span></td>
-      <td>(tôi) đến từ ~</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">アメリカ <span class="tooltiptext">Amerika</span></span></td>
-      <td>Mỹ</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">イギリス <span class="tooltiptext">Igirisu</span></span></td>
-      <td>Anh</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">インド <span class="tooltiptext">Indo</span></span></td>
-      <td>Ấn Độ</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">インドネシア <span class="tooltiptext">Indoneshia</span></span></td>
-      <td>Indonesia</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">かんこく <span class="tooltiptext">Kan koku</span></span></td>
-      <td>Hàn Quốc</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">タイ <span class="tooltiptext">Tai</span></span></td>
-      <td>Thái Lan</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ちゅうごく <span class="tooltiptext">Chi ~yuugoku</span></span></td>
-      <td>Trung Quốc</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ドイツ <span class="tooltiptext">Doitsu</span></span></td>
-      <td>Đức</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">にほん <span class="tooltiptext">Ni hon</span></span></td>
-      <td>Nhật Bản</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">フランス <span class="tooltiptext">Furansu</span></span></td>
-      <td>Pháp</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ブラジル <span class="tooltiptext">Burajiru</span></span></td>
-      <td>Braxin</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">さくらだいがく <span class="tooltiptext">Sakura dai gaku</span></span></td>
-      <td>trường Đại học Sakura</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ふじだいがく <span class="tooltiptext">Fuji dai gaku</span></span></td>
-      <td>tên trường Đại học Fuji</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">パワーでんき <span class="tooltiptext">Pawā den ki</span></span></td>
-      <td>Công ty điện Power</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ブラジルエアー <span class="tooltiptext">Burajirueā</span></span></td>
-      <td>Hãng hàng không Brazin</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">こうべびょういん <span class="tooltiptext">Kō be byō in</span></span></td>
-      <td>Bệnh viện Kobe</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">エジプト <span class="tooltiptext">Ejiputo</span></span></td>
-      <td>Egypt</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">オーストラリア <span class="tooltiptext">Ōsutoraria</span></span></td>
-      <td>Australia</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">カナダ <span class="tooltiptext">Kanada</span></span></td>
-      <td>Canada</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">サウジアラビア <span class="tooltiptext">Saujiarabia</span></span></td>
-      <td>Ả Rập Saudi</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">シンガポール <span class="tooltiptext">Shingapōru</span></span></td>
-      <td>Singapore</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">スペイン <span class="tooltiptext">Supein</span></span></td>
-      <td>Spain</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">フィリピン <span class="tooltiptext">Firipin</span></span></td>
-      <td>Philippines</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ベトナム <span class="tooltiptext">Betonamu</span></span></td>
-      <td>Việt Nam</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">マレーシア <span class="tooltiptext">Marēshia</span></span></td>
-      <td>Malaysia</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">メキシコ <span class="tooltiptext">Mekishiko</span></span></td>
-      <td>Mexico</td>
-    </tr>
-    <tr>
-      <td><span class="tooltip">ロシア <span class="tooltiptext">Roshia</span></span></td>
-      <td>Russia</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="built-in-physics-engines">
+<a class="anchor" href="#built-in-physics-engines" aria-hidden="true" spy-title="Built-in physics engines"><span class="octicon octicon-link"></span></a>Built-in physics engines</h2>
 
-<h2 id="ngữ-pháp">
-<a class="anchor" href="#ng%E1%BB%AF-ph%C3%A1p" aria-hidden="true" spy-title="Ngữ pháp"><span class="octicon octicon-link"></span></a>Ngữ pháp</h2>
+<h3 id="built-in-3d-physics-nvidia-physx-engine-integration">
+<a class="anchor" href="#built-in-3d-physics-nvidia-physx-engine-integration" aria-hidden="true" spy-title="Built-in 3D physics (Nvidia PhysX engine integration)"><span class="octicon octicon-link"></span></a>Built-in 3D physics (Nvidia PhysX engine integration)</h3>
 
-<audio controls=""><source src="/assets/audio/jp/mina/bai01/nguphap.mp3" type="audio/mpeg"></source>Your browser does not support the audio element.</audio>
+<p>Bạn có thể sử dụng công cụ này trong các dự án 3D hướng đối tượng.</p>
 
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-green">
   <thead>
     <tr>
-      <th style="text-align: left">Ví dụ</th>
-      <th>Dịch</th>
-      <th>Ghi chú</th>
+      <th style="text-align: left">Topic</th>
+      <th style="text-align: center">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><span class="tooltip">わたしはマイク。ミラーです。 <span class="tooltiptext">Watashi wa maiku. Mirādesu.</span></span></td>
-      <td>Tôi là Mike Miller.</td>
-      <td>Chú ý: Trợ từ 「は」 đọc là 「わ」, MẪU: <span class="tooltip">Danh từ 1 は Danh từ 2 です <span class="tooltiptext">わたしはマイク。ミラーです。</span></span>
-</td>
+      <td style="text-align: left"><a href="https://docs.unity3d.com/2021.3/Documentation/Manual/class-CharacterController.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Character control</a></td>
+      <td style="text-align: center">Định cấu hình điều khiển nhân vật dựa trên vật lý cho nhân vật ở ngôi thứ nhất và ngôi thứ ba.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><span class="tooltip">わたしはエンギ二アです。 <span class="tooltiptext">Watashi wa engi ni adesu.</span></span></td>
-      <td>Tôi là kỹ sư.</td>
-      <td>「です」 làm vị ngữ trong câu khẳng định, và thể hiện sự lịch sự của người nói</td>
+      <td style="text-align: left"><a href="https://docs.unity3d.com/2021.3/Documentation/Manual/rigidbody-physics-section.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Rigidbody physics</a></td>
+      <td style="text-align: center">Áp dụng hành vi dựa trên vật lý cho GameObjects.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><span class="tooltip">サントスさんはがくせいじゃありません。 <span class="tooltiptext">Santosu-san wa gaku sei jaarimasen.</span></span></td>
-      <td>Anh Santos không phải là sinh viên.</td>
-      <td>MẪU: Danh từ 1 は Danh từ 2 じゃありません, 「じゃありません」 là thể phủ định của 「です」 và được dùng trong giao tiếp hằng ngày. 「ではありません」 được dùng trong văn viết hoặc các bài phát biểu quan trọng. Chú ý: 「では」 đọc là 「でわ」</td>
+      <td style="text-align: left">Collision</td>
+      <td style="text-align: center">Sử dụng máy va chạm để định cấu hình xung đột giữa các GameObject.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><span class="tooltip">ミラーさんはアメリカじんですか。 <span class="tooltiptext">Mirā-san wa Amerika jindesu ka.</span></span></td>
-      <td>Anh Miller có phải là người Mỹ không?</td>
-      <td>Trợ từ 「か」thêm ở cuối câu được đọc với giọng cao hơn, dùng để hỏi</td>
+      <td style="text-align: left">Joints</td>
+      <td style="text-align: center">Áp dụng và định cấu hình các khớp kết nối GameObject và mô phỏng các lực vật lý để xoay, chuyển động và hạn chế.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><span class="tooltip">はい、アメリカじんです。 <span class="tooltiptext">Hai, Amerika jindesu.</span></span></td>
-      <td>Vâng, anh ấy là người Mỹ</td>
-      <td>Nếu đúng thì trả lời là 「はい」 , không đúng thì là 「いいえ」 .</td>
+      <td style="text-align: left">Articulations</td>
+      <td style="text-align: center">Cấu hình các hệ thống phức tạp của thân và khớp cứng.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><span class="tooltip">あのかたはどなたですか。 <span class="tooltiptext">Ano kata wa donatadesu ka.</span></span></td>
-      <td>Người kia là ai.</td>
-      <td>Thêm từ nghi vấn từ vào cuối câu mà bạn muốn hỏi. Trật tự từ không thay đổi. Thêm 「か」 vào cuối câu.</td>
+      <td style="text-align: left">Ragdoll physics</td>
+      <td style="text-align: center">Cấu hình vật lý ragdoll cho nhân vật.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><span class="tooltip">「あのかたは」 ミラーさんです。 <span class="tooltiptext">`Ano kataha’ mirā-sandesu.</span></span></td>
-      <td>Người đó là anh Miller.</td>
-      <td>Trả lời…</td>
+      <td style="text-align: left">Cloth</td>
+      <td style="text-align: center">Mô phỏng chuyển động của vải cho quần áo nhân vật và các loại vải dệt ứng dụng khác.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><span class="tooltip">ミラーさんはかいしゃいんです。グプたさんもかいしゃいんです。 <span class="tooltiptext">Mirā-san wa kaisha i ndesu. Guputa-san mo kaisha i ndesu.</span></span></td>
-      <td>Anh Miller là nhân viên công ty. Anh Gupta cũng là nhân viên công ty.</td>
-      <td>「も」 được dùng khi danh từ diễn tả chủ đề của câu giống với danh từ tương ứng ở câu trước.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><span class="tooltip">ミラーさんはIMCのしゃいんです。 <span class="tooltiptext">Mirā-san wa aiemushī nosha i ndesu.</span></span></td>
-      <td>Anh Miller là nhân viên công ty IMC.</td>
-      <td>MẪU: Danh từ 1 の danh từ 2. 「の」 trong bài này biểu thị tính sở thuộc (xem thêm bài 2 và 3 về cách dùng 「の」 trong các trường hợp khác).</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><span class="tooltip">あのかたはミラーさんです。 <span class="tooltiptext">Ano kataha mirā-sandesu.</span></span></td>
-      <td>Người kia là anh Miller.</td>
-      <td>「さん」 được dùng ngay sau họ của người nghe để thể hiện sự kính trọng khi gọi tên người đó. Từ 「さん」 không được dùng với chính bản thân người nói.</td>
+      <td style="text-align: left">Multi-scene physics</td>
+      <td style="text-align: center">Quản lý các bối cảnh vật lý khác nhau trong một dự án với nhiều cảnh vật lý chuyên dụng.</td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="kaiwa">
-<a class="anchor" href="#kaiwa" aria-hidden="true" spy-title="Kaiwa"><span class="octicon octicon-link"></span></a>Kaiwa</h2>
+<h4 id="character-controller-component">
+<a class="anchor" href="#character-controller-component" aria-hidden="true" spy-title="Character Controller component"><span class="octicon octicon-link"></span></a>Character Controller component</h4>
 
-<h3 id="はじめまして-hajimemashite---rất-vui-được-làm-quen-với-chị">
-<a class="anchor" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6-hajimemashite---r%E1%BA%A5t-vui-%C4%91%C6%B0%E1%BB%A3c-l%C3%A0m-quen-v%E1%BB%9Bi-ch%E1%BB%8B" aria-hidden="true" spy-title="はじめまして hajimemashite - Rất vui được làm quen với chị."><span class="octicon octicon-link"></span></a><span class="tooltip">はじめまして <span class="tooltiptext">hajimemashite - Rất vui được làm quen với chị.</span></span>
-</h3>
+<p>Nó chỉ đơn giản là một chiếc Collider hình viên nang có thể được yêu cầu di chuyển theo một hướng nào đó từ một tập lệnh. Bộ điều khiển sau đó sẽ thực hiện chuyển động nhưng bị hạn chế do va chạm . Nó sẽ trượt dọc theo các bức tường, đi lên cầu thang (nếu chúng thấp hơn Step Offset) và đi trên các sườn dốc trong Giới hạn Độ dốc (Slope Limit).</p>
 
-<audio controls=""><source src="/assets/audio/jp/mina/bai01/1-4-Kaiwa.mp3" type="audio/mpeg"></source>Your browser does not support the audio element.</audio>
+<p>Bộ điều khiển không tự phản ứng với các lực và nó không tự động đẩy các Vật thể rắn đi (cần sử dụng OnControllerColliderHit() thông qua tập lệnh).</p>
 
+<p>Nếu bạn muốn nhân vật người chơi của mình bị ảnh hưởng bởi vật lý thì tốt hơn hết bạn nên sử dụng Rigidbody thay vì Character Controller.</p>
+
+<p>Skin Width là một trong những thuộc tính quan trọng nhất cần sử dụng đúng khi Fine-tuning Character Controller của bạn. Nếu nhân vật của bạn bị kẹt thì rất có thể là do Skin Width của bạn quá nhỏ. Cách tốt nhất là giữ Skin Width của bạn ít nhất lớn hơn 0,01 và hơn 10% Radius.<br><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/CharacterControllerWindow.jpg" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
+
+<h4 id="rigidbody-physics">
+<a class="anchor" href="#rigidbody-physics" aria-hidden="true" spy-title="Rigidbody physics"><span class="octicon octicon-link"></span></a>Rigidbody physics</h4>
+
+<p>Trong mô phỏng vật lý, các Rigidbody (vật thể không bị biến dạng hoặc thay đổi hình dạng dưới tác dụng của lực vật lý. Khoảng cách giữa hai điểm bất kỳ của vật rắn không đổi theo thời gian, bất kể ngoại lực tác dụng lên nó) cho phép thực hiện các hành vi dựa trên vật lý như chuyển động, trọng lực và va chạm.</p>
+
+<p>Rigidbody component cung cấp cách thức dựa trên vật lý để điều khiển chuyển động và vị trí của GameObject. Thay vì các thuộc tính Transform, bạn có thể sử dụng các lực (<a href="https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Rigidbody.AddForce.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Rigidbody.AddForce</a>) và mô-men xoắn (<a href="https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Rigidbody.AddTorque.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Rigidbody.AddTorque</a>) vật lý mô phỏng để di chuyển GameObject và để physics system
+tính toán kết quả. Nếu bạn thay đổi trực tiếp Transform thì Unity không thể tính toán chính xác mô phỏng vật lý và bạn có thể thấy hành vi không mong muốn. Điều này đặc biệt đúng với những Rigidbody có các Joints.</p>
+
+<p>Nếu muốn thay đổi chuyển động trực tiếp thông qua Transform thì tick chọn “Is Kinematic” để loại bỏ GameObject khỏi sự điều khiển của công cụ vật lý để thành “kinematic motion”. Một “Rigidbody Kinematic” có thể áp dụng lực dựa trên vật lý cho các GameObject Rigidbody physics-based khác, nhưng không nhận được lực dựa trên vật lý (lực đẩy của Rigidbody physics-based khác).</p>
+
+<p>Nếu một vật cứng này va chạm với vật cứng khác, động cơ vật lý chỉ tính toán va chạm nếu cả hai GameObject đều có Collider được đính kèm. Nếu một GameObject có Rigidbody nhưng không có Collider, thì nó sẽ chuyển qua các GameObject khác và Unity không đưa nó vào tính toán va chạm.</p>
+
+<p>Unity xử lý chuyển động dựa trên vật lý trên toàn cầu chứ không phải cục bộ. Khi một GameObject có Rigidbody di chuyển thông qua chuyển động dựa trên vật lý, nó sẽ di chuyển độc lập với bất kỳ GameObject cha mẹ hoặc con nào. Một GameObject con có Rigidbody vẫn sử dụng GameObject mẹ của nó để xác định vị trí cục bộ của nó cho quá trình khởi tạo, nhưng Unity tính toán chuyển động dựa trên vật lý của nó trong không gian toàn cầu.</p>
+
+<p>Khối lượng tương đối (Mass) của mỗi vật rắn trong một vụ va chạm quyết định cách chúng phản ứng khi va chạm với nhau.</p>
+
+<p>Convex and concave collider geometry (Hình học máy va chạm lồi và lõm), liên quan đến lồi lõm =&gt; nên sử dụng các primitive Colliders (Compound Collider cho giống Mesh của GameObject)…</p>
+
+<p>Để áp dụng một lực tuyến tính hoặc lực quay không đổi cho GameObject Rigidbody, thêm “Constant Force” component (được đại diện bởi lớp API ConstantForce) vào GameObject của bạn. Lực không đổi không giống như tốc độ không đổi. Khi bạn tác dụng một lực không đổi, tốc độ chuyển động sẽ tăng dần theo thời gian dựa trên giá trị của lực. Trong cuộc sống thực, sự tăng tốc này tiếp tục vô tận (in Unity, reaches a max velocity of 50 rad/s. You can change these maximum velocities in code, via the properties Rigidbody.maxLinearVelocity and Rigidbody.maxAngularVelocity.)</p>
+
+<p>Áp dụng phép nội suy (Interpolate)/Ngoại suy (Extrapolate) cho Rigidbody nếu nó có vẻ/hiện tượng giật cục trong thời gian chạy…</p>
+
+<p>Rigidbody component reference:</p>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+  <thead>
+    <tr>
+      <th style="text-align: left">Property</th>
+      <th style="text-align: center">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Mass</td>
+      <td style="text-align: center">Xác định khối lượng của GameObject (tính bằng kilôgam). Khối lượng được đặt thành 1 theo mặc định. Giống như trong đời thực, khối lượng không ảnh hưởng đến tốc độ rơi của một vật thể dưới tác dụng của trọng lực. Để mô phỏng lực cản làm chậm chuyển động, hãy sử dụng Drag (ma sát).</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Drag</td>
+      <td style="text-align: center">Xác định tốc độ phân rã của vận tốc tuyến tính của Vật rắn, để mô phỏng lực cản, lực cản không khí hoặc ma sát. Giá trị thấp tạo ra tốc độ phân rã chậm hơn, do đó GameObject di chuyển nhanh hơn trong thời gian dài hơn.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Angular Drag</td>
+      <td style="text-align: center">Xác định tốc độ phân rã của vận tốc quay của Vật cứng, để mô phỏng lực cản, lực cản không khí hoặc ma sát. Giá trị thấp tạo ra tốc độ phân rã chậm hơn, do đó GameObject di chuyển nhanh hơn trong thời gian dài hơn.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Use Gravity</td>
+      <td style="text-align: center">Chuyển đổi tác dụng của trọng lực lên Rigidbody. Nếu được bật, hệ thống vật lý sẽ áp dụng một lực để di chuyển GameObject theo hướng trọng lực mô phỏng (theo mặc định là dọc theo trục y). Sử dụng Gravity được bật theo mặc định.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Is Kinematic</td>
+      <td style="text-align: center">Khi Is Kinematic được bật, hệ thống vật lý không thể tác dụng lực để di chuyển hoặc xoay GameObject, thay vào đó, Unity chỉ có thể di chuyển và xoay nó thông qua Transform.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Interpolate (None, Interpolate, Extrapolate)</td>
+      <td style="text-align: center">Cài đặt Nội suy trên Rigidbody cung cấp hai tùy chọn để làm mượt sự xuất hiện của chuyển động của Rigidbody nếu nó có vẻ giật cục trong thời gian chạy. Các tùy chọn này là Nội suy và Ngoại suy. Cả phép nội suy và ngoại suy đều tính toán tư thế của Vật cứng nhắc (nghĩa là vị trí và góc quay) giữa các lần cập nhật vật lý. Bạn nên chọn cái nào tùy thuộc vào tùy chọn nào tạo ra kết quả hình ảnh tốt nhất cho trường hợp sử dụng của bạn.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Collision Detection (Discrete, Continuous, Continuous Dynamic, Continuous Speculative)</td>
+      <td style="text-align: center">Unity tạo ra một va chạm trên mỗi cặp máy va chạm và xác định phương pháp phát hiện va chạm dựa trên thuộc tính Phát hiện va chạm này.Theo mặc định, Phát hiện va chạm được đặt thành Rời rạc (Discrete).</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Constraints</td>
+      <td style="text-align: center">Đặt các hạn chế đối với chuyển động của Rigidbody. Freeze Position + Freeze Position: hạn chế di chuyển/quay theo các trục X, Y và Z…</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Info section: Phần Thông tin của thành phần Rigidbody chứa dữ liệu về Rigidbody mà bạn có thể sử dụng để theo dõi hành vi của nó. Bạn không thể chỉnh sửa các giá trị thuộc tính trong phần thành phần này. Bạn có thể sửa đổi chúng thông qua tập lệnh, nhưng điều đó không được khuyến khích; trong hầu hết các trường hợp, bạn nên tác dụng lực thông qua hệ thống vật lý để thay đổi các giá trị này.</p>
+
+<p>Constant Force component reference:</p>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+  <thead>
+    <tr>
+      <th style="text-align: left">Property</th>
+      <th style="text-align: center">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Force</td>
+      <td style="text-align: center">Xác định hướng của lực tuyến tính. Các vectơ XYZ đề cập đến cảnh các trục toàn cầu.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Relative Force</td>
+      <td style="text-align: center">Xác định hướng của lực tuyến tính. Các vectơ XYZ đề cập đến các trục cục bộ của Rigidbody.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Torque</td>
+      <td style="text-align: center">Xác định các trục tổng thể mà Rigidbody quay xung quanh.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Relative Torque</td>
+      <td style="text-align: center">Xác định các trục cục bộ mà Rigidbody quay xung quanh.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="collision">
+<a class="anchor" href="#collision" aria-hidden="true" spy-title="Collision"><span class="octicon octicon-link"></span></a>Collision</h4>
+
+<p>Để cấu hình va chạm giữa GameObjects trong Unity, bạn cần sử dụng Colliders. Colliders xác định hình dạng của GameObject nhằm mục đích va chạm vật lý. Sau đó, bạn có thể sử dụng các Collider này để quản lý các sự kiện va chạm.</p>
+
+<p>Collider là <strong>vô hình</strong> và không cần phải có hình dạng giống hệt như Mesh của GameObject.</p>
+
+<p>Collider đơn giản nhất (và ít sử dụng bộ xử lý nhất) là loại <strong>primitive collider</strong>. Trong 3D, đây là Box Collider, Sphere Collider và Capsule Collider. Ở dạng 2D, bạn có thể sử dụng Box Collider 2D và Circle Collider 2D.</p>
+
+<p>Compound colliders: có thể thêm Colliders vào child nhưng chỉ nên sử dụng 1 Rigidbody ở GameObject gốc.</p>
+
+<p>Mesh colliders: sử dụng Mesh colliders (3D) hoặc Polygon Collider (2D), những máy va chạm này sử dụng nhiều bộ xử lý hơn nhiều so với các loại nguyên thủy, vì vậy hãy sử dụng chúng một cách tiết kiệm để duy trì hiệu suất tốt.</p>
+
+<p>Static colliders: Bạn có thể thêm bộ va chạm vào GameObject mà không cần thành phần Rigidbody để tạo sàn, tường và các thành phần bất động khác của Cảnh. Chúng được gọi là máy va chạm tĩnh. Ngược lại, máy va chạm trên GameObject có Rigidbody được gọi là máy va chạm động. Máy va chạm tĩnh có thể tương tác với máy va chạm động nhưng vì chúng không có Vật rắn nên chúng không chuyển động khi va chạm.</p>
+
+<p>Physics materials: Mặc dù hình dạng của máy va chạm không bị biến dạng trong quá trình va chạm, lực ma sát và lực nảy của chúng có thể được cấu hình bằng Vật liệu Vật lý (Physics materials).</p>
+
+<p>Triggers: Hệ thống tập lệnh có thể phát hiện khi xảy ra xung đột và bắt đầu các hành động bằng hàm <strong>OnCollisionEnter</strong>. Tuy nhiên, bạn cũng có thể sử dụng công cụ vật lý chỉ đơn giản là phát hiện khi một máy va chạm đi vào không gian của một máy va chạm khác mà không tạo ra va chạm. Khi một trình va chạm đi vào không gian của nó, trình kích hoạt sẽ gọi hàm <strong>OnTriggerEnter</strong> trên các tập lệnh của đối tượng trình kích hoạt.</p>
+
+<p>Collision callbacks for scripts (lưu ý có khác biệt nếu 2 đối tượng là Kinematic):</p>
 <ul>
-  <li>佐藤 (satou): <span class="tooltip">おはよう　ございます。 <span class="tooltiptext">ohayou gozai masu. - Chào anh!</span></span>
-</li>
-  <li>山田 (yamada): <span class="tooltip">おはよう　ございます。 <span class="tooltiptext">ohayou gozai masu. - Chào chị!</span></span>
-</li>
-  <li>山田 (yamada): <span class="tooltip">佐藤さん、こちらは　マイク・ミラーさんです。 <span class="tooltiptext">satou san, kochira ha maiku. mira san desu. - Chị Sato, đây là anh Mike Miller.</span></span>
-</li>
-  <li>ミラー (mira): <span class="tooltip">初めまして。 <span class="tooltiptext">hajime mashite. - Rất vui được làm quen với chị.</span></span>
-</li>
-  <li>ミラー (mira): <span class="tooltip">マイク・ミラーです。 <span class="tooltiptext">maiku. mira desu. - Tôi là Mike Miller.</span></span>
-</li>
-  <li>ミラー (mira): <span class="tooltip">アメリカから　来ました。 <span class="tooltiptext">amerika kara ki mashi ta. - Tôi đến từ Mỹ.</span></span>
-</li>
-  <li>ミラー (mira): <span class="tooltip">どうぞ　よろしく。 <span class="tooltiptext">douzo yoroshiku. - Rất mong sẽ nhận được sự giúp đỡ của chị.</span></span>
-</li>
-  <li>佐藤 (satou): <span class="tooltip">佐藤けい子です。 <span class="tooltiptext">satou keiko desu. - Tôi là Sato Keiko.</span></span>
-</li>
-  <li>佐藤 (satou): <span class="tooltip">どうぞ　よろしく。 <span class="tooltiptext">douzo yoroshiku. - Rất vui được làm quen với anh.</span></span>
-</li>
+  <li>OnCollisionEnter &gt; OnCollisionStay &gt; OnCollisionExit (tương tự 2D, tên hàm thêm 2D ở cuối) -&gt; 2 Kinematic does not apply</li>
+  <li>OnTriggerEnter &gt; OnTriggerStay &gt; OnTriggerExit (tương tự 2D, tên hàm thêm 2D ở cuối) -&gt; 2 Kinematic apply</li>
+</ul>
+
+<p>Khi hai đối tượng va chạm, một số sự kiện kịch bản khác nhau có thể xảy ra tùy thuộc vào cấu hình rigidbodies của các đối tượng va chạm. Biểu đồ bên dưới cung cấp thông tin chi tiết về các hàm sự kiện được gọi dựa trên các thành phần được gắn vào đối tượng.</p>
+
+<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Collision: Phát hiện va chạm xảy ra và tin nhắn được gửi khi va chạm</div>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>Static Collider</td>
+      <td>Rigidbody Collider</td>
+      <td>Kinematic Rigidbody Collider</td>
+      <td>Static Trigger Collider</td>
+      <td>Rigidbody Trigger Collider</td>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+    </tr>
+    <tr>
+      <td>Static Collider</td>
+      <td> </td>
+      <td>Y</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rigidbody Collider</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Collider</td>
+      <td> </td>
+      <td>Y</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Static Trigger Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rigidbody Trigger Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Trigger: Thông báo kích hoạt được gửi khi va chạm</div>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>Static Collider</td>
+      <td>Rigidbody Collider</td>
+      <td>Kinematic Rigidbody Collider</td>
+      <td>Static Trigger Collider</td>
+      <td>Rigidbody Trigger Collider</td>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+    </tr>
+    <tr>
+      <td>Static Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Rigidbody Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Collider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Static Trigger Collider</td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+      <td> </td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Rigidbody Trigger Collider</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Kinematic Rigidbody Trigger Collider</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="joints">
+<a class="anchor" href="#joints" aria-hidden="true" spy-title="Joints"><span class="octicon octicon-link"></span></a>Joints</h4>
+
+<h4 id="articulations">
+<a class="anchor" href="#articulations" aria-hidden="true" spy-title="Articulations"><span class="octicon octicon-link"></span></a>Articulations</h4>
+
+<h4 id="ragdoll-physics">
+<a class="anchor" href="#ragdoll-physics" aria-hidden="true" spy-title="Ragdoll physics"><span class="octicon octicon-link"></span></a>Ragdoll physics</h4>
+
+<h4 id="cloth">
+<a class="anchor" href="#cloth" aria-hidden="true" spy-title="Cloth"><span class="octicon octicon-link"></span></a>Cloth</h4>
+
+<h4 id="multi-scene-physics">
+<a class="anchor" href="#multi-scene-physics" aria-hidden="true" spy-title="Multi-scene physics"><span class="octicon octicon-link"></span></a>Multi-scene physics</h4>
+
+<h3 id="built-in-2d-physics-box2d-engine-integration">
+<a class="anchor" href="#built-in-2d-physics-box2d-engine-integration" aria-hidden="true" spy-title="Built-in 2D physics (Box2D engine integration)"><span class="octicon octicon-link"></span></a>Built-in 2D physics (Box2D engine integration)</h3>
+
+<p>TODO</p>
+
+<h2 id="physics-engine-packages">
+<a class="anchor" href="#physics-engine-packages" aria-hidden="true" spy-title="Physics engine packages"><span class="octicon octicon-link"></span></a>Physics engine packages</h2>
+
+<p>Nếu dự án của bạn sử dụng Data-Oriented Technology Stack (DOTS) của Unity, bạn cần cài đặt gói vật lý DOTS chuyên dụng. Các gói có sẵn là:</p>
+<ul>
+  <li>Unity Physics package: công cụ vật lý DOTS mà bạn cần cài đặt theo mặc định để mô phỏng vật lý trong bất kỳ dự án hướng dữ liệu nào.</li>
+  <li>Havok Physics for Unity package: triển khai công cụ vật lý Havok cho Unity, để sử dụng như một phần mở rộng của gói Vật lý Unity. Lưu ý rằng gói này tuân theo chương trình cấp phép cụ thể.</li>
 </ul>
 
 

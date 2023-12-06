@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-user-interface-ui",
         "headline": "[User interface (UI)] giao diện người dùng (UI) cho Unity",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-06 16:10:02 +0700",
+        "dateModified": "2023-12-06 23:46:46 +0700",
         "description": "[User interface (UI)] giao diện người dùng (UI) cho Unity",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 19 mins read </span> · 
+      <span title="reading time">· about 22 mins read </span> · 
       
       <span>
         
@@ -156,6 +156,10 @@
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#set-up-the-scene" spy-toc="Set up the scene">Set up the scene</a></li>
+<li class="toc-entry toc-h2"><a href="#example-mainui-sử-dụng-thêm-uxml-cho-các-phần-khác-của-ui" spy-toc="Example: MainUI sử dụng thêm UXML cho các phần khác của UI">Example: MainUI sử dụng thêm UXML cho các phần khác của UI</a></li>
+<li class="toc-entry toc-h2"><a href="#image-import-settings" spy-toc="Image import settings">Image import settings</a></li>
+<li class="toc-entry toc-h2"><a href="#uss-transition-và-transition-events" spy-toc="USS transition và Transition events">USS transition và Transition events</a></li>
+<li class="toc-entry toc-h2"><a href="#tips" spy-toc="Tips:">Tips:</a></li>
 </ul><h2 id="user-interface-ui">
 <a class="anchor" href="#user-interface-ui" aria-hidden="true" spy-title="User interface (UI)"><span class="octicon octicon-link"></span></a>User interface (UI)</h2>
 
@@ -705,11 +709,151 @@ public class SimpleRuntimeUI : MonoBehaviour
 }
 </code></pre>
 
-<p><strong>Tips</strong>:</p>
+<h2 id="example-mainui-sử-dụng-thêm-uxml-cho-các-phần-khác-của-ui">
+<a class="anchor" href="#example-mainui-s%E1%BB%AD-d%E1%BB%A5ng-th%C3%AAm-uxml-cho-c%C3%A1c-ph%E1%BA%A7n-kh%C3%A1c-c%E1%BB%A7a-ui" aria-hidden="true" spy-title="Example: MainUI sử dụng thêm UXML cho các phần khác của UI"><span class="octicon octicon-link"></span></a>Example: MainUI sử dụng thêm UXML cho các phần khác của UI</h2>
+
+<ol>
+  <li>Tạo MainUI.uxml + MainUI.uss</li>
+  <li>Tạo Custom Control: WithAnImageAsset.uxml + WithAnImageAsset.cs : VisualElement</li>
+  <li>Tạo MainUI.cs : MonoBehaviour để add Component cho UIDocument. MainUI.cs thực hiện add Custom Control vào rootVisualElement</li>
+  <li>Tạo UIDocument và kéo UXML vào Source Asset và add Component là MainUI.cs</li>
+</ol>
+
+<p><strong>MainUI.uxml</strong><br></p>
+<pre><code class="language-XML">&lt;ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False"&gt;
+    &lt;Style src="project://database/Assets/UI/PositioningTest.uss?fileID=7433441132597879392&amp;amp;guid=b58854dc6d9143c43b21527e4edfaf5c&amp;amp;type=3#PositioningTest" /&gt;
+    &lt;ui:VisualElement class="box" /&gt;
+    &lt;ui:VisualElement class="box" /&gt;
+    &lt;ui:Label text="Relative\nPos\n25, 0" name="relative" /&gt;
+    &lt;ui:VisualElement class="box" /&gt;
+    &lt;ui:VisualElement class="box" /&gt;
+    &lt;ui:Label text="Absolute\nPos\n25, 25" name="absolutePositionElement" /&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+
+<p><strong>MainUI.uss</strong><br></p>
+<pre><code class="language-CSS">.box {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 2px;
+    background-color: gray;
+}
+#relative{
+    width: 70px; 
+    height: 70px; 
+    background-color: purple; 
+    left: 25px; 
+    margin-bottom: 2px;
+    position:relative;
+}
+#absolutePositionElement{
+    left: 25px; 
+    top: 25px; 
+    width: 70px; 
+    height: 70px; 
+    background-color: black;
+    position: absolute;
+}
+</code></pre>
+
+<p><strong>WithAnImageAsset.uxml</strong><br></p>
+<pre><code class="language-XML">&lt;ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False"&gt;
+    &lt;ui:VisualElement style="position: absolute; top: 0; right: 0;"&gt;
+        &lt;ui:VisualElement name="VElm01" style="height: 200px; background-image: url(&amp;apos;project://database/Assets/Backgrounds/4.bmp?fileID=2800000&amp;amp;guid=9a8a37633dcc73540b906cf4ed2b83b1&amp;amp;type=3#4&amp;apos;); -unity-background-scale-mode: scale-and-crop; width: 350px;" /&gt;
+        &lt;ui:VisualElement name="VElm02" style="height: 200px;" /&gt;
+    &lt;/ui:VisualElement&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+
+<p><strong>WithAnImageAsset.cs</strong><br></p>
+<pre><code class="language-C#">using UnityEditor;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class WithAnImageAsset : VisualElement
+{
+    public WithAnImageAsset() // default ctor
+    {
+        //Init(); // chuyển qua sử dụng AttachToPanelEvent / DetachFromPanelEvent
+    }
+
+    public new class UxmlFactory : UxmlFactory&lt;WithAnImageAsset&gt; {} // expose
+
+    public void Init()
+    {
+        // AssetDatabase thuộc namespace UnityEditor
+        var uxmlTemplate = AssetDatabase.LoadAssetAtPath&lt;VisualTreeAsset&gt;("Assets/UI/SetBackgroundImages/WithAnImageAsset/WithAnImageAsset.uxml");
+        uxmlTemplate.CloneTree(this);
+        SetBG();
+    }
+    void SetBG()
+    {
+        var VElm02 = this.Q&lt;VisualElement&gt;("VElm02");
+        //VElm02.style.width = 350; // trong UXML đã khai báo
+        //VElm02.style.height = 200;
+
+        // AssetDatabase.LoadAssetAtPath cần full path kể cả 'Assets/.../*.jpg'
+        //var bg = AssetDatabase.LoadAssetAtPath&lt;Texture2D&gt;("Assets/Backgrounds/3.jpg");
+
+        // Resources.Load tính từ Assets/Resources, ko bao gồm Resources và phần mở rộng của file
+        var bg = Resources.Load&lt;Texture2D&gt;("Backgrounds/1");
+        Debug.Log(bg);
+
+        VElm02.style.backgroundImage = bg;
+    }
+}
+</code></pre>
+
+<p><strong>MainUI.cs</strong><br></p>
+<pre><code class="language-C#">using UnityEngine;
+using UnityEngine.UIElements;
+
+public class MainUI : MonoBehaviour
+{
+    //[SerializeField] private VisualTreeAsset secondVElm;
+    //[SerializeField] private VisualTreeAsset thirdVElm;
+    void OnEnable()
+    {
+        var uiDoc = GetComponent&lt;UIDocument&gt;();
+        var withAnImageAsset = new WithAnImageAsset();
+        // WithAnImageAsset không khởi tạo ở Contructor nên đăng ký event này để call Init()
+        withAnImageAsset.RegisterCallback&lt;AttachToPanelEvent&gt;(e =&gt; {
+            Debug.Log(e);
+            withAnImageAsset.Init();
+            withAnImageAsset.style.position = Position.Absolute;
+            withAnImageAsset.style.top = 0;
+            withAnImageAsset.style.right = 0;
+        });
+        uiDoc.rootVisualElement.Add(withAnImageAsset);
+    }
+}
+</code></pre>
+
+<h2 id="image-import-settings">
+<a class="anchor" href="#image-import-settings" aria-hidden="true" spy-title="Image import settings"><span class="octicon octicon-link"></span></a>Image import settings</h2>
+
+<p>Sau khi bạn đã nhập hình ảnh vào dự án của mình, để có kết quả trực quan nhất, bạn nên áp dụng một số cài đặt nhập nhất định cho Textures, Sprites, and Vector trước khi bạn sử dụng chúng làm nền cho thành phần trực quan trong giao diện người dùng Người xây dựng.</p>
+
+<p><a href="https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-image-import-settings.html" class="hvr-forward" rel="nofollow" target="_blank">Các settings ở đây</a></p>
+
+<h2 id="uss-transition-và-transition-events">
+<a class="anchor" href="#uss-transition-v%C3%A0-transition-events" aria-hidden="true" spy-title="USS transition và Transition events"><span class="octicon octicon-link"></span></a>USS transition và Transition events</h2>
+
+<p>USS transition thay đổi giá trị thuộc tính trong một khoảng thời gian nhất định (tương tự như CSS transition), sử dụng để thực hiện các animation cho UI.</p>
+
+<p><a href="https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transitions.html" class="hvr-forward" rel="nofollow" target="_blank">Xem thêm USS transition ở đây</a></p>
+
+<p>Transition events thông báo cho bạn về những thay đổi trong trạng thái của quá trình chuyển đổi.</p>
+
+<p><a href="https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transition-Events.html" class="hvr-forward" rel="nofollow" target="_blank">Xem thêm Transition events ở đây</a></p>
+
+<h2 id="tips">
+<a class="anchor" href="#tips" aria-hidden="true" spy-title="Tips:"><span class="octicon octicon-link"></span></a>Tips:</h2>
 <ul>
   <li>Load UXML sẽ được object kiểu “VisualTreeAsset” =&gt; cần .Instantiate() để được “VisualElement”</li>
   <li>“rootVisualElement” là một “VisualElement”, giống “gameObject” luôn có sẵn và reference đển TOP-Element (giống “document” của HTML)</li>
-  <li>“Custom Control” gồm UXML + Script C# extend “VisualElement”, Script C# cần “EXPOSE to UXML and UI Builder” và cần có “DEFAULT constructor”. Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).</li>
+  <li>“Custom Control” gồm UXML + Script C# extend “VisualElement” (CloneTree(this)), Script C# cần “EXPOSE to UXML and UI Builder” và cần có “DEFAULT constructor”. Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).</li>
+  <li>UXML đại diện luôn là “VisualTreeAsset” kể cả có reference bằng kéo thả ([SerializeField])</li>
 </ul>
 
 <p>TODO: https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-uxml-examples.html</p>
