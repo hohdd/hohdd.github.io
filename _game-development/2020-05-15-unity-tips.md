@@ -61,4 +61,9 @@ date: 2020-05-15 14:26:14 +0700
 | Làm việc với UI Builder: trong inspector, giá trị nào được sửa sẽ có đánh dấu LEFT màu trắng | trong UXML sử dụng thuộc tính class="<Class_Name>" giống HTML CSS, các style khác sẽ là inline-style của Element
 | "public class CharacterData : ScriptableObject" ko cần đính kèm vào GameObject | "ScriptableObject" có thể sử dụng mà không cần tạo các đối tượng gắn vào GameObject.
 | [CreateAssetMenu] // This adds an entry to the **Create** menu | để thêm một sub-menu vào "Assets/Create" menu để tạo nhanh một instance class (file.asset)
+| Debug: VS attach to Unity, AssetDatabase cần full path, Resources ko kèm phần mở rộng của file name  | AssetDatabase.LoadAssetAtPath cần điền full "Assets/...jpg", Resources.Load tính từ Assets/Resources, ko tính Resources, không bao gồm phần mở rộng file (.jpg)
+| Load UXML sẽ được object kiểu "VisualTreeAsset" => cần .Instantiate() để được "VisualElement" | Load UXML sẽ được object kiểu "VisualTreeAsset" => cần .Instantiate() để được "VisualElement"
+| "rootVisualElement" là một "VisualElement", giống "gameObject" luôn có sẵn | "rootVisualElement" là một "VisualElement", giống "gameObject" luôn có sẵn và reference đển TOP-Element (giống "document" của HTML)
+| "Custom Control" gồm UXML + Script C# extend "VisualElement" (CloneTree(this)) | Script C# cần "EXPOSE to UXML and UI Builder" và cần có "DEFAULT constructor". Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).
+| UXML đại diện luôn là "VisualTreeAsset" | Kể cả có reference bằng kéo thả vào GameObject ([SerializeField])
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}

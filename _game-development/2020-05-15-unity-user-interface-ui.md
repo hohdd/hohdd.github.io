@@ -522,9 +522,148 @@ public class SimpleRuntimeUI : MonoBehaviour
 }
 ```
 
-**Tips**:
+## Example: MainUI sử dụng thêm UXML cho các phần khác của UI
+
+1. Tạo MainUI.uxml + MainUI.uss
+2. Tạo Custom Control: WithAnImageAsset.uxml + WithAnImageAsset.cs : VisualElement
+3. Tạo MainUI.cs : MonoBehaviour để add Component cho UIDocument. MainUI.cs thực hiện add Custom Control vào rootVisualElement
+4. Tạo UIDocument và kéo UXML vào Source Asset và add Component là MainUI.cs
+
+**MainUI.uxml**<br>
+```XML
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/PositioningTest.uss?fileID=7433441132597879392&amp;guid=b58854dc6d9143c43b21527e4edfaf5c&amp;type=3#PositioningTest" />
+    <ui:VisualElement class="box" />
+    <ui:VisualElement class="box" />
+    <ui:Label text="Relative\nPos\n25, 0" name="relative" />
+    <ui:VisualElement class="box" />
+    <ui:VisualElement class="box" />
+    <ui:Label text="Absolute\nPos\n25, 25" name="absolutePositionElement" />
+</ui:UXML>
+```
+
+**MainUI.uss**<br>
+```CSS
+.box {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 2px;
+    background-color: gray;
+}
+#relative{
+    width: 70px; 
+    height: 70px; 
+    background-color: purple; 
+    left: 25px; 
+    margin-bottom: 2px;
+    position:relative;
+}
+#absolutePositionElement{
+    left: 25px; 
+    top: 25px; 
+    width: 70px; 
+    height: 70px; 
+    background-color: black;
+    position: absolute;
+}
+```
+
+**WithAnImageAsset.uxml**<br>
+```XML
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="position: absolute; top: 0; right: 0;">
+        <ui:VisualElement name="VElm01" style="height: 200px; background-image: url(&apos;project://database/Assets/Backgrounds/4.bmp?fileID=2800000&amp;guid=9a8a37633dcc73540b906cf4ed2b83b1&amp;type=3#4&apos;); -unity-background-scale-mode: scale-and-crop; width: 350px;" />
+        <ui:VisualElement name="VElm02" style="height: 200px;" />
+    </ui:VisualElement>
+</ui:UXML>
+```
+
+**WithAnImageAsset.cs**<br>
+```C#
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class WithAnImageAsset : VisualElement
+{
+    public WithAnImageAsset() // default ctor
+    {
+        //Init(); // chuyển qua sử dụng AttachToPanelEvent / DetachFromPanelEvent
+    }
+
+    public new class UxmlFactory : UxmlFactory<WithAnImageAsset> {} // expose
+
+    public void Init()
+    {
+        // AssetDatabase thuộc namespace UnityEditor
+        var uxmlTemplate = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UI/SetBackgroundImages/WithAnImageAsset/WithAnImageAsset.uxml");
+        uxmlTemplate.CloneTree(this);
+        SetBG();
+    }
+    void SetBG()
+    {
+        var VElm02 = this.Q<VisualElement>("VElm02");
+        //VElm02.style.width = 350; // trong UXML đã khai báo
+        //VElm02.style.height = 200;
+
+        // AssetDatabase.LoadAssetAtPath cần full path kể cả 'Assets/.../*.jpg'
+        //var bg = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Backgrounds/3.jpg");
+
+        // Resources.Load tính từ Assets/Resources, ko bao gồm Resources và phần mở rộng của file
+        var bg = Resources.Load<Texture2D>("Backgrounds/1");
+        Debug.Log(bg);
+
+        VElm02.style.backgroundImage = bg;
+    }
+}
+```
+
+**MainUI.cs**<br>
+```C#
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class MainUI : MonoBehaviour
+{
+    //[SerializeField] private VisualTreeAsset secondVElm;
+    //[SerializeField] private VisualTreeAsset thirdVElm;
+    void OnEnable()
+    {
+        var uiDoc = GetComponent<UIDocument>();
+        var withAnImageAsset = new WithAnImageAsset();
+        // WithAnImageAsset không khởi tạo ở Contructor nên đăng ký event này để call Init()
+        withAnImageAsset.RegisterCallback<AttachToPanelEvent>(e => {
+            Debug.Log(e);
+            withAnImageAsset.Init();
+            withAnImageAsset.style.position = Position.Absolute;
+            withAnImageAsset.style.top = 0;
+            withAnImageAsset.style.right = 0;
+        });
+        uiDoc.rootVisualElement.Add(withAnImageAsset);
+    }
+}
+```
+
+## Image import settings
+
+Sau khi bạn đã nhập hình ảnh vào dự án của mình, để có kết quả trực quan nhất, bạn nên áp dụng một số cài đặt nhập nhất định cho Textures, Sprites, and Vector trước khi bạn sử dụng chúng làm nền cho thành phần trực quan trong giao diện người dùng Người xây dựng.
+
+[Các settings ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-image-import-settings.html){:.hvr-forward rel="nofollow" target="_blank"}
+
+## USS transition và Transition events
+
+USS transition thay đổi giá trị thuộc tính trong một khoảng thời gian nhất định (tương tự như CSS transition), sử dụng để thực hiện các animation cho UI.
+
+[Xem thêm USS transition ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transitions.html){:.hvr-forward rel="nofollow" target="_blank"}
+
+Transition events thông báo cho bạn về những thay đổi trong trạng thái của quá trình chuyển đổi.
+
+[Xem thêm Transition events ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transition-Events.html){:.hvr-forward rel="nofollow" target="_blank"}
+
+## Tips:
 - Load UXML sẽ được object kiểu "VisualTreeAsset" => cần .Instantiate() để được "VisualElement"
 - "rootVisualElement" là một "VisualElement", giống "gameObject" luôn có sẵn và reference đển TOP-Element (giống "document" của HTML)
-- "Custom Control" gồm UXML + Script C# extend "VisualElement", Script C# cần "EXPOSE to UXML and UI Builder" và cần có "DEFAULT constructor". Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).
+- "Custom Control" gồm UXML + Script C# extend "VisualElement" (CloneTree(this)), Script C# cần "EXPOSE to UXML and UI Builder" và cần có "DEFAULT constructor". Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).
+- UXML đại diện luôn là "VisualTreeAsset" kể cả có reference bằng kéo thả ([SerializeField])
 
 TODO: https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-uxml-examples.html
