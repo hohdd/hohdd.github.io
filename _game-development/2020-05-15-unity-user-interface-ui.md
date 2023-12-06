@@ -269,9 +269,262 @@ Tham khảo thêm [Create a custom control](https://docs.unity3d.com/2021.3/Docu
 
 ## Đóng gói các tài liệu UXML bằng logic
 
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/uxml/reusable-card.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
 Tách giao diện người dùng khỏi mã trò chơi hoặc ứng dụng của bạn:
 - Sử dụng UXML để xác định cấu trúc
 - Sử dụng USS để xác định giao diện
 - Sử dụng C# để xác định logic của điều khiển.
 
-TODO: https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-encapsulate-uxml-with-logic.html
+### UXML-first approach
+
+Cách tiếp cận UXML-first sẽ thêm children sau khi xây dựng element.
+
+1. Tạo UXML document (CardElement.uxml)
+
+    ```XML
+    <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+        <Style src="CardElementUI.uss" />
+        <CardElement> 
+            <ui:VisualElement name="image" />
+            <ui:VisualElement name="stats">
+                <ui:Label name="attack-badge" class="badge" />
+                <ui:Label name="health-badge" class="badge" />
+            </ui:VisualElement>
+        </CardElement> 
+    </ui:UXML>
+    ```
+
+2. Tạo "custom control class" (CardElement.cs): Lớp điều khiển tùy chỉnh gán giá trị hình ảnh và huy hiệu cho CardElement ở một hàm Init() riêng.
+
+    ```C#
+    using UnityEngine;
+    using UnityEngine.UIElements;
+
+    // Define the custom control type.
+    public class CardElement : VisualElement
+    {
+        // EXPOSE the custom control to UXML and UI Builder.
+        public new class UxmlFactory : UxmlFactory<CardElement> {}
+
+        private VisualElement portraitImage => this.Q("image");
+        private Label attackBadge => this.Q<Label>("attack-badge");
+        private Label healthBadge => this.Q<Label>("health-badge");
+
+        // Use the Init() approach instead of a constructor because we don't have children yet.
+        public void Init(Texture2D image, int health, int attack)
+        {
+            portraitImage.style.backgroundImage = image;
+            attackBadge.text = health;
+            healthBadge.text = attack;
+        }
+
+        // Custom controls need a DEFAULT constructor. 
+        public CardElement() {}
+    }
+    ```
+
+3. Khởi tạo trực tiếp trong C#
+
+    ```C#
+    using UnityEngine;
+    using UnityEngine.UIElements;
+
+    public class UIManager : MonoBehaviour // Script này sẽ được đính kèm vào 
+    {
+        public void Start() // hoặc OnEnable(): được call khi object được enable hoặc active
+        {
+            UIDocument document = GetComponent<UIDocument>();
+
+            // Load the UXML document (template) that defines CardElement.
+            // It assumes the UXML file (CardElement.uxml) is placed at the "Resources" folder.
+            VisualTreeAsset template = Resources.Load<VisualTreeAsset>("CardElement"); // (CardElement.uxml)
+
+            // Create a loop to modify properties and perform interactions for each card.
+            // It assumes that you have created a function called `GetCards()` to get all the cards in your game.
+            foreach(Card card in GetCards()) // CardData : ScriptableObject với [CreateAssetMenu] ...
+            {
+                // Instantiate a template container.
+                var templateContainer = template.Instantiate();
+
+                // Find the custom element inside the template container.
+                var cardElement = templateContainer.Q<CardElement>();
+
+                // Add the custom element into the scene.
+                document.rootVisualElement.Add(cardElement);
+
+                // Initialize the card.
+                cardElement.Init(card.image, card.health, card.attack);
+
+                // Register an event callback for additional interaction.
+                cardElement.RegisterCallback<ClickEvent>(SomeInteraction);
+            }
+        }
+
+        private void SomeInteraction(ClickEvent evt)
+        {
+            // Interact with the elements here.
+        }
+    }
+    ```
+
+### Element-first approach
+
+Cách tiếp cận Element-first sẽ thêm children trong quá trình xây dựng element.
+
+Với tiếp cận này, bạn chỉ bao gồm các phần tử con trong tài liệu UXML phân cấp và sử dụng C# để tải tài liệu UXML phân cấp vào định nghĩa lớp CardElement. Cách tiếp cận này cung cấp cấu trúc giao diện người dùng linh hoạt cho các điều khiển tùy chỉnh. Ví dụ: bạn có thể tải các tài liệu UXML phân cấp khác nhau tùy thuộc vào các điều kiện cụ thể.
+
+1. UXML document (CardElement.uxml)
+2. Tạo "custom control class" (CardElement.cs): Lớp điều khiển tùy chỉnh gán giá trị hình ảnh và huy hiệu cho CardElement ở luôn contructor.
+
+    ```C#
+    using UnityEngine;
+    using UnityEngine.UIElements;
+
+    // Define the custom control type.
+    public class CardElement : VisualElement
+    {
+        // Expose the custom control to UXML and UI Builder.
+        public new class UxmlFactory : UxmlFactory<CardElementA> {}
+
+        private VisualElement portraitImage => this.Q("image");
+        private Label attackBadge => this.Q<Label>("attack-badge");
+        private Label healthBadge => this.Q<Label>("health-badge");
+
+
+        // Custom controls need a default constructor. This default constructor calls the other constructor in this class.
+        public CardElement() {}
+
+        // Define a constructor that loads the UXML document that defines CardElement and assigns an image and badge values.
+        public CardElement(Texture2D image, int health, int attack)
+        {
+            // It assumes the UXML file is called "CardElement.uxml" and is placed at the "Resources" folder.
+            var asset = Resources.Load<VisualTreeAsset>("CardElement"); // (CardElement.uxml)
+            asset.CloneTree(this); // Build a tree of VisualElements from the asset. Return the root of the tree of VisualElements that was just cloned.
+
+            portraitImage.style.backgroundImage = image;
+            attackBadge.text = health.ToString();
+            healthBadge.text = attack.ToString();
+        }
+    }
+    ```
+
+3. Khởi tạo bên trong UXML gốc
+
+    ```XML
+    <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <CardElement />
+    <CardElement />
+    <CardElement />
+    </ui:UXML>
+    ```
+
+4. Khởi tạo trực tiếp trong C#
+
+    ```C#
+    using UnityEngine;
+    using UnityEngine.UIElements;
+
+    public class UIManager : MonoBehaviour
+    {
+        public void Start()
+        {
+            UIDocument document = GetComponent<UIDocument>();
+
+            // Create a loop to modify properties and perform interactions 
+            // for each card. It assumes that you have created a function 
+            // called `GetCards()` to get all the cards in your game.
+            foreach(Card card in GetCards())
+            {
+                var cardElement = new CardElement(card.image, card.health, card.attack);
+
+                // Register an event callback for additional interaction.
+                cardElement.RegisterCallback<ClickEvent>(SomeInteraction);
+
+                // Add the custom element into the scene.
+                document.rootVisualElement.Add(cardElement);
+            }
+        }
+
+        private void SomeInteraction(ClickEvent evt)
+        {
+            // Interact with the elements here.
+        }
+    }
+    ```
+
+## Set up the scene
+
+GameObject "UIDocument" cần có 2 reference là "source asset" và "script" extend "MonoBehaviour" để add component cho "UIDocument".
+
+1. Tạo UI Document (.uxml) làm UI của game.
+2. Tạo Script extend "MonoBehaviour" để sử dụng add component
+3. Tạo một GameObject "UIDocument" trong Scene và thêm UI Document ở bước (1) làm "source asset" và add component là Script ở bước (2).
+
+**UI Document (.uxml)**<br>
+```XML
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+        xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+        noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="This is a Label" display-tooltip-when-elided="true"/>
+        <ui:Button text="This is a Button" display-tooltip-when-elided="true" name="button"/>
+        <ui:Toggle label="Display the counter?" name="toggle"/>
+        <ui:TextField picking-mode="Ignore" label="Text Field" text="filler text" name="input-message" />
+    </ui:VisualElement>
+</ui:UXML>
+```
+
+**Script extend "MonoBehaviour"**<br>
+```C#
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class SimpleRuntimeUI : MonoBehaviour
+{
+    private Button _button;
+    private Toggle _toggle;
+
+    private int _clickCount;
+
+    //Add logic that interacts with the UI controls in the `OnEnable` methods
+    private void OnEnable()
+    {
+        // The UXML is already instantiated by the UIDocument component
+        var uiDocument = GetComponent<UIDocument>();
+
+        _button = uiDocument.rootVisualElement.Q("button") as Button;
+        _toggle = uiDocument.rootVisualElement.Q("toggle") as Toggle;
+
+        _button.RegisterCallback<ClickEvent>(PrintClickMessage);
+
+        var _inputFields = uiDocument.rootVisualElement.Q("input-message");
+        _inputFields.RegisterCallback<ChangeEvent<string>>(InputMessage);
+    }
+
+    private void OnDisable()
+    {
+        _button.UnregisterCallback<ClickEvent>(PrintClickMessage);
+    }
+
+    private void PrintClickMessage(ClickEvent evt)
+    {
+        ++_clickCount;
+
+        Debug.Log($"{"button"} was clicked!" +
+                (_toggle.value ? " Count: " + _clickCount : ""));
+    }
+
+    public static void InputMessage(ChangeEvent<string> evt)
+    {
+        Debug.Log($"{evt.newValue} -> {evt.target}");
+    }
+}
+```
+
+**Tips**:
+- Load UXML sẽ được object kiểu "VisualTreeAsset" => cần .Instantiate() để được "VisualElement"
+- "rootVisualElement" là một "VisualElement", giống "gameObject" luôn có sẵn và reference đển TOP-Element (giống "document" của HTML)
+- "Custom Control" gồm UXML + Script C# extend "VisualElement", Script C# cần "EXPOSE to UXML and UI Builder" và cần có "DEFAULT constructor". Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).
+
+TODO: https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-uxml-examples.html
