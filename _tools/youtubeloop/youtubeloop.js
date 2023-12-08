@@ -46,6 +46,34 @@ function onPlayerError(err) {
 function onPlayerReady(event) {
     window.DHytplayerTarget = event.target;
     loadAndPlayById(params.id, params.start);
+    setTimeout(() => {
+        loadPlaybackRateList();
+    }, 2000);
+}
+function loadPlaybackRateList(currentRate) {
+    window.currentPlayRate = currentRate ? currentRate : window.DHytplayerMain.getPlaybackRate();
+    window.plRateList = window.DHytplayerMain.getAvailablePlaybackRates();
+    if (!window.plRateList.includes(0.9)) {
+        window.plRateList.push(0.9);
+    }
+    if (!window.plRateList.includes(1.1)) {
+        window.plRateList.push(1.1);
+    }
+    window.plRateList.sort();
+    console.log(window.plRateList);
+    renderPlaybackRatesContainer();
+}
+function renderPlaybackRatesContainer() {
+    var playbackRatesContainer = document.getElementById('playbackRatesContainer');
+    playbackRatesContainer.innerHTML = '';
+
+    window.plRateList.forEach(rateItem => {
+        playbackRatesContainer.innerHTML += `<button onclick="changePlaybackRate(${rateItem})" class="w3-button w3-transparent ${window.currentPlayRate == rateItem ? 'w3-border' : ''}">${rateItem}</button>`; 
+    });
+}
+function changePlaybackRate(rateVal) {
+    window.DHytplayerMain.setPlaybackRate(rateVal);
+    loadPlaybackRateList(rateVal);
 }
 
 function onPlayerStateChange(event) {
@@ -277,6 +305,62 @@ const defaultFiles = {
         start: 15,
         end: 222,
         seek: 0
+    },
+    '1701367193754': {
+        uuid: '1701367193754',
+        id: 'BLED0zy6UNE',
+        name: 'Shape of You | Music Travel Love ft. Jada Facer (Ed Sheeran Cover)',
+        start: '5',
+        end: '215',
+        seek: '215.91382219073486'
+    },
+    '1701925141323': {
+        uuid: '1701925141323',
+        id: 'XMyAEeXicbI',
+        name: 'One In A Million - Ne-Yo | Tuấn Danh x Đức Tiến Choreography || REBOOT WORKSHOP 2',
+        start: '1',
+        end: '82',
+        seek: '82'
+    },
+    '1702050285116': {
+        uuid: '1702050285116',
+        id: '65Gy4oPXjmE',
+        name: 'One In A Million - Ne-Yo | Choreography Tutorial and Follow Along',
+        start: '912',
+        end: '1050',
+        seek: ''
+    },
+    '1702052471731': {
+        uuid: '1702052471731',
+        id: 'lXHjxJ5kTzs',
+        name: 'Footwork | Footwork Creativity for Shuffling',
+        start: '0',
+        end: '16',
+        seek: '16.361197133514406'
+    },
+    '1702052607072': {
+        uuid: '1702052607072',
+        id: 'BxOBhZBLOio',
+        name: 'Footwork | 5 Easy Footwork Shuffle Steps',
+        start: '0',
+        end: '9',
+        seek: ''
+    },
+    '1702053794203': {
+        uuid: '1702053794203',
+        id: 'Ku2t4mtRl0M',
+        name: 'Samba Whisk - Basic step in 4 steps - PLUS Arm Styling - Dance Insanity',
+        start: '379',
+        end: '411',
+        seek: ''
+    },
+    '1702054074760': {
+        uuid: '1702054074760',
+        id: 'KQ5DrOVjUu8',
+        name: '4 Basic Cha Cha Chasses for Agility | Practice Dance Tutorial',
+        start: '165',
+        end: '223',
+        seek: ''
     }
 }
 window.currentFileId = window.localStorage.getItem('youtube_loop_currentFileId');

@@ -66,4 +66,6 @@ date: 2020-05-15 14:26:14 +0700
 | "rootVisualElement" là một "VisualElement", giống "gameObject" luôn có sẵn | "rootVisualElement" là một "VisualElement", giống "gameObject" luôn có sẵn và reference đển TOP-Element (giống "document" của HTML)
 | "Custom Control" gồm UXML + Script C# extend "VisualElement" (CloneTree(this)) | Script C# cần "EXPOSE to UXML and UI Builder" và cần có "DEFAULT constructor". Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).
 | UXML đại diện luôn là "VisualTreeAsset" | Kể cả có reference bằng kéo thả vào GameObject ([SerializeField])
+| UIDocument GameObject có 3 điểm: Panel Setting, Source Asset, Sort Order | Có thể có nhiều UIDocument GameObject trong Screen và cùng trỏ đến 1 Panel Setting
+| Show/Hide một VisualElement bằng 'style.display' và 'style.visibility' | this.style.display = DisplayStyle.Flex/None; this.style.visibility = Visibility.Visible/Hidden;
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}

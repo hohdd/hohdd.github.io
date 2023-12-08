@@ -77,6 +77,7 @@ quickNote: true
       <span class="material-icons w3-button" onclick="stopVideo()">stop</span>
       <span class="material-icons w3-button" onclick="seekToStart()">refresh</span>
       <span class="material-icons w3-button" onclick="fullscreenPlayer()">fit_screen</span></p>
+      <p id="playbackRatesContainer"></p>
       <p>
       <input class="w3-input" placeholder="Description" id="saveDesc">
       <label class="w3-btn w3-border w3-margin-top" onclick="fmCreateNew()">Save</label>
