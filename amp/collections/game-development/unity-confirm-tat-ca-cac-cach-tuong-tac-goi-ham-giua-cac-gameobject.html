@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/game-development/INPROGRESS-unity-physics-mo-phong-vat-ly-va-cham" />
+    <title>Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-confirm-tat-ca-cac-cach-tuong-tac-goi-ham-giua-cac-gameobject" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/INPROGRESS-unity-physics-mo-phong-vat-ly-va-cham",
-        "headline": "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-confirm-tat-ca-cac-cach-tuong-tac-goi-ham-giua-cac-gameobject",
+        "headline": "Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-09 01:05:53 +0700",
-        "description": "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)",
+        "dateModified": "2023-12-09 16:37:25 +0700",
+        "description": "Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject",
         
         "author": {
           "@type": "Person",
@@ -117,7 +117,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)</h2>
+      <h2>Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject</h2>
       <span class="author">
         
         
@@ -125,12 +125,12 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 13 mins read </span> · 
+      <span title="reading time">· about 3 mins read </span> · 
       
       <span>
         
         
-        <a href="/pages/categories#Unity" class="hvr-float-shadow">Unity</a>
+        <a href="/pages/categories#Confirm" class="hvr-float-shadow">Confirm</a>
         
         
       </span>
@@ -139,386 +139,90 @@
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h2"><a href="#physics" spy-toc="Physics">Physics</a></li>
-<li class="toc-entry toc-h2"><a href="#built-in-physics-engines" spy-toc="Built-in physics engines">Built-in physics engines</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#built-in-3d-physics-nvidia-physx-engine-integration" spy-toc="Built-in 3D physics (Nvidia PhysX engine integration)">Built-in 3D physics (Nvidia PhysX engine integration)</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#character-controller-component" spy-toc="Character Controller component">Character Controller component</a></li>
-<li class="toc-entry toc-h4"><a href="#rigidbody-physics" spy-toc="Rigidbody physics">Rigidbody physics</a></li>
-<li class="toc-entry toc-h4"><a href="#collision" spy-toc="Collision">Collision</a></li>
-<li class="toc-entry toc-h4"><a href="#joints" spy-toc="Joints">Joints</a></li>
-<li class="toc-entry toc-h4"><a href="#articulations" spy-toc="Articulations">Articulations</a></li>
-<li class="toc-entry toc-h4"><a href="#ragdoll-physics" spy-toc="Ragdoll physics">Ragdoll physics</a></li>
-<li class="toc-entry toc-h4"><a href="#cloth" spy-toc="Cloth">Cloth</a></li>
-<li class="toc-entry toc-h4"><a href="#multi-scene-physics" spy-toc="Multi-scene physics">Multi-scene physics</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h3"><a href="#built-in-2d-physics-box2d-engine-integration" spy-toc="Built-in 2D physics (Box2D engine integration)">Built-in 2D physics (Box2D engine integration)</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#physics-engine-packages" spy-toc="Physics engine packages">Physics engine packages</a></li>
-</ul><h2 id="physics">
-<a class="anchor" href="#physics" aria-hidden="true" spy-title="Physics"><span class="octicon octicon-link"></span></a>Physics</h2>
+<li class="toc-entry toc-h3"><a href="#gọi-một-method-của-một-gameobject-khác-từ-gameobject-hiện-tại" spy-toc="Gọi một method của một GameObject khác từ GameObject hiện tại">Gọi một method của một GameObject khác từ GameObject hiện tại</a></li>
+<li class="toc-entry toc-h3"><a href="#các-cách-truyền-và-nhận-dữ-liệu-từ-gameobject-này-sang-gameobject-khác" spy-toc="Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác.">Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác.</a></li>
+</ul><h3 id="gọi-một-method-của-một-gameobject-khác-từ-gameobject-hiện-tại">
+<a class="anchor" href="#g%E1%BB%8Di-m%E1%BB%99t-method-c%E1%BB%A7a-m%E1%BB%99t-gameobject-kh%C3%A1c-t%E1%BB%AB-gameobject-hi%E1%BB%87n-t%E1%BA%A1i" aria-hidden="true" spy-title="Gọi một method của một GameObject khác từ GameObject hiện tại"><span class="octicon octicon-link"></span></a>Gọi một method của một GameObject khác từ GameObject hiện tại</h3>
 
-<p>Bạn có thể đạt được một số mục tiêu vật lý cơ bản với giao diện người dùng, nhưng để kiểm soát tốt hơn mô phỏng, bạn cần làm quen với C#</p>
+<p>•  Sử dụng phương thức <strong>GetComponent</strong> hoặc <strong>GetComponentInChildren</strong> để lấy một thành phần của một GameObject khác, và sau đó gọi method của thành phần đó. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Lấy một thành phần ScriptA của một GameObject khác</span>
+<span class="n">ScriptA</span> <span class="n">scriptA</span> <span class="p">=</span> <span class="n">otherGameObject</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ScriptA</span><span class="p">&gt;();</span>
+<span class="c1">// Gọi một method của ScriptA</span>
+<span class="n">scriptA</span><span class="p">.</span><span class="nf">SomeMethod</span><span class="p">();</span>
+</code></pre></div></div>
 
-<h2 id="built-in-physics-engines">
-<a class="anchor" href="#built-in-physics-engines" aria-hidden="true" spy-title="Built-in physics engines"><span class="octicon octicon-link"></span></a>Built-in physics engines</h2>
+<p>•  Sử dụng phương thức <strong>SendMessage</strong> hoặc <strong>BroadcastMessage</strong> để gửi một message đến một GameObject khác, và sau đó xử lý message đó trong method của GameObject đó. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gửi một message đến một GameObject khác</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"SomeMessage"</span><span class="p">);</span>
+<span class="c1">// Xử lý message đó trong method của GameObject đó</span>
+<span class="k">void</span> <span class="nf">SomeMessage</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="c1">// Làm gì đó</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<h3 id="built-in-3d-physics-nvidia-physx-engine-integration">
-<a class="anchor" href="#built-in-3d-physics-nvidia-physx-engine-integration" aria-hidden="true" spy-title="Built-in 3D physics (Nvidia PhysX engine integration)"><span class="octicon octicon-link"></span></a>Built-in 3D physics (Nvidia PhysX engine integration)</h3>
+<p>•  Sử dụng phương thức <strong>Invoke</strong> hoặc <strong>StartCoroutine</strong> để gọi một method của một GameObject khác với một độ trễ hoặc một cách liên tục. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gọi một method của một GameObject khác với một độ trễ 5 giây</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">(</span><span class="s">"SomeMethod"</span><span class="p">,</span> <span class="m">5f</span><span class="p">);</span>
+<span class="c1">// Gọi một method của một GameObject khác một cách liên tục</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">StartCoroutine</span><span class="p">(</span><span class="s">"SomeMethod"</span><span class="p">);</span>
+</code></pre></div></div>
 
-<p>Bạn có thể sử dụng công cụ này trong các dự án 3D hướng đối tượng.</p>
+<p>•  Sử dụng phương thức <strong>AddListener</strong> để đăng ký một method của một GameObject hiện tại với một event của một GameObject khác, và sau đó gọi method đó khi event được kích hoạt. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Đăng ký một method của một GameObject hiện tại với một event của một GameObject khác</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">SomeMethod</span><span class="p">);</span>
+<span class="c1">// Gọi method đó khi event được kích hoạt</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
+</code></pre></div></div>
 
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-green">
-  <thead>
-    <tr>
-      <th style="text-align: left">Topic</th>
-      <th style="text-align: center">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><a href="https://docs.unity3d.com/2021.3/Documentation/Manual/class-CharacterController.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Character control</a></td>
-      <td style="text-align: center">Định cấu hình điều khiển nhân vật dựa trên vật lý cho nhân vật ở ngôi thứ nhất và ngôi thứ ba.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><a href="https://docs.unity3d.com/2021.3/Documentation/Manual/rigidbody-physics-section.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Rigidbody physics</a></td>
-      <td style="text-align: center">Áp dụng hành vi dựa trên vật lý cho GameObjects.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Collision</td>
-      <td style="text-align: center">Sử dụng máy va chạm để định cấu hình xung đột giữa các GameObject.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Joints</td>
-      <td style="text-align: center">Áp dụng và định cấu hình các khớp kết nối GameObject và mô phỏng các lực vật lý để xoay, chuyển động và hạn chế.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Articulations</td>
-      <td style="text-align: center">Cấu hình các hệ thống phức tạp của thân và khớp cứng.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Ragdoll physics</td>
-      <td style="text-align: center">Cấu hình vật lý ragdoll cho nhân vật.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Cloth</td>
-      <td style="text-align: center">Mô phỏng chuyển động của vải cho quần áo nhân vật và các loại vải dệt ứng dụng khác.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Multi-scene physics</td>
-      <td style="text-align: center">Quản lý các bối cảnh vật lý khác nhau trong một dự án với nhiều cảnh vật lý chuyên dụng.</td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="các-cách-truyền-và-nhận-dữ-liệu-từ-gameobject-này-sang-gameobject-khác">
+<a class="anchor" href="#c%C3%A1c-c%C3%A1ch-truy%E1%BB%81n-v%C3%A0-nh%E1%BA%ADn-d%E1%BB%AF-li%E1%BB%87u-t%E1%BB%AB-gameobject-n%C3%A0y-sang-gameobject-kh%C3%A1c" aria-hidden="true" spy-title="Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác."><span class="octicon octicon-link"></span></a>Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác.</h3>
 
-<h4 id="character-controller-component">
-<a class="anchor" href="#character-controller-component" aria-hidden="true" spy-title="Character Controller component"><span class="octicon octicon-link"></span></a>Character Controller component</h4>
+<p>•  Sử dụng <strong>biến public</strong> hoặc <strong>[SerializeField]</strong> để lưu trữ dữ liệu trong một GameObject, và sau đó gán reference của GameObject đó cho một GameObject khác trong <strong>Inspector</strong>. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Khai báo một biến public để lưu trữ dữ liệu kiểu int</span>
+<span class="k">public</span> <span class="kt">int</span> <span class="n">someData</span><span class="p">;</span>
+<span class="c1">// Khai báo một biến [SerializeField] để lưu trữ reference của một GameObject khác</span>
+<span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span> <span class="k">private</span> <span class="n">GameObject</span> <span class="n">otherGameObject</span><span class="p">;</span>
+</code></pre></div></div>
 
-<p>Nó chỉ đơn giản là một chiếc Collider hình viên nang có thể được yêu cầu di chuyển theo một hướng nào đó từ một tập lệnh. Bộ điều khiển sau đó sẽ thực hiện chuyển động nhưng bị hạn chế do va chạm . Nó sẽ trượt dọc theo các bức tường, đi lên cầu thang (nếu chúng thấp hơn Step Offset) và đi trên các sườn dốc trong Giới hạn Độ dốc (Slope Limit).</p>
+<p>•  Sử dụng phương thức <strong>GetComponent</strong> hoặc <strong>GetComponentInChildren</strong> để lấy một thành phần của một GameObject khác, và sau đó truy cập vào dữ liệu của thành phần đó. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Lấy một thành phần ScriptA của một GameObject khác</span>
+<span class="n">ScriptA</span> <span class="n">scriptA</span> <span class="p">=</span> <span class="n">otherGameObject</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ScriptA</span><span class="p">&gt;();</span>
+<span class="c1">// Truy cập vào dữ liệu của ScriptA</span>
+<span class="kt">int</span> <span class="n">someData</span> <span class="p">=</span> <span class="n">scriptA</span><span class="p">.</span><span class="n">someData</span><span class="p">;</span>
+</code></pre></div></div>
 
-<p>Bộ điều khiển không tự phản ứng với các lực và nó không tự động đẩy các Vật thể rắn đi (cần sử dụng OnControllerColliderHit() thông qua tập lệnh).</p>
+<p>•  Sử dụng phương thức <strong>SendMessage</strong> hoặc <strong>BroadcastMessage</strong> để gửi một message đến một GameObject khác, và sau đó xử lý message đó trong method của GameObject đó. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gửi một message đến một GameObject khác, kèm theo một dữ liệu kiểu int</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"SomeMessage"</span><span class="p">,</span> <span class="m">10</span><span class="p">);</span>
+<span class="c1">// Xử lý message đó trong method của GameObject đó, và lấy dữ liệu kiểu int</span>
+<span class="k">void</span> <span class="nf">SomeMessage</span><span class="p">(</span><span class="kt">int</span> <span class="n">someData</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="c1">// Làm gì đó với someData</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>Nếu bạn muốn nhân vật người chơi của mình bị ảnh hưởng bởi vật lý thì tốt hơn hết bạn nên sử dụng Rigidbody thay vì Character Controller.</p>
+<p>•  Sử dụng phương thức <strong>Invoke</strong> hoặc <strong>StartCoroutine</strong> để gọi một method của một GameObject khác, và sau đó truyền dữ liệu vào method đó. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gọi một method của một GameObject khác, và truyền vào một dữ liệu kiểu int</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">(</span><span class="s">"SomeMethod"</span><span class="p">,</span> <span class="m">10</span><span class="p">);</span>
+<span class="c1">// Định nghĩa method đó, và nhận dữ liệu kiểu int</span>
+<span class="k">void</span> <span class="nf">SomeMethod</span><span class="p">(</span><span class="kt">int</span> <span class="n">someData</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="c1">// Làm gì đó với someData</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p>Skin Width là một trong những thuộc tính quan trọng nhất cần sử dụng đúng khi Fine-tuning Character Controller của bạn. Nếu nhân vật của bạn bị kẹt thì rất có thể là do Skin Width của bạn quá nhỏ. Cách tốt nhất là giữ Skin Width của bạn ít nhất lớn hơn 0,01 và hơn 10% Radius.<br><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/CharacterControllerWindow.jpg" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
-
-<h4 id="rigidbody-physics">
-<a class="anchor" href="#rigidbody-physics" aria-hidden="true" spy-title="Rigidbody physics"><span class="octicon octicon-link"></span></a>Rigidbody physics</h4>
-
-<p>Trong mô phỏng vật lý, các Rigidbody (vật thể không bị biến dạng hoặc thay đổi hình dạng dưới tác dụng của lực vật lý. Khoảng cách giữa hai điểm bất kỳ của vật rắn không đổi theo thời gian, bất kể ngoại lực tác dụng lên nó) cho phép thực hiện các hành vi dựa trên vật lý như chuyển động, trọng lực và va chạm.</p>
-
-<p>Rigidbody component cung cấp cách thức dựa trên vật lý để điều khiển chuyển động và vị trí của GameObject. Thay vì các thuộc tính Transform, bạn có thể sử dụng các lực (<a href="https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Rigidbody.AddForce.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Rigidbody.AddForce</a>) và mô-men xoắn (<a href="https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Rigidbody.AddTorque.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Rigidbody.AddTorque</a>) vật lý mô phỏng để di chuyển GameObject và để physics system
-tính toán kết quả. Nếu bạn thay đổi trực tiếp Transform thì Unity không thể tính toán chính xác mô phỏng vật lý và bạn có thể thấy hành vi không mong muốn. Điều này đặc biệt đúng với những Rigidbody có các Joints.</p>
-
-<p>Nếu muốn thay đổi chuyển động trực tiếp thông qua Transform thì tick chọn “Is Kinematic” để loại bỏ GameObject khỏi sự điều khiển của công cụ vật lý để thành “kinematic motion”. Một “Rigidbody Kinematic” có thể áp dụng lực dựa trên vật lý cho các GameObject Rigidbody physics-based khác, nhưng không nhận được lực dựa trên vật lý (lực đẩy của Rigidbody physics-based khác).</p>
-
-<p>Nếu một vật cứng này va chạm với vật cứng khác, động cơ vật lý chỉ tính toán va chạm nếu cả hai GameObject đều có Collider được đính kèm. Nếu một GameObject có Rigidbody nhưng không có Collider, thì nó sẽ chuyển qua các GameObject khác và Unity không đưa nó vào tính toán va chạm.</p>
-
-<p>Unity xử lý chuyển động dựa trên vật lý trên toàn cầu chứ không phải cục bộ. Khi một GameObject có Rigidbody di chuyển thông qua chuyển động dựa trên vật lý, nó sẽ di chuyển độc lập với bất kỳ GameObject cha mẹ hoặc con nào. Một GameObject con có Rigidbody vẫn sử dụng GameObject mẹ của nó để xác định vị trí cục bộ của nó cho quá trình khởi tạo, nhưng Unity tính toán chuyển động dựa trên vật lý của nó trong không gian toàn cầu.</p>
-
-<p>Khối lượng tương đối (Mass) của mỗi vật rắn trong một vụ va chạm quyết định cách chúng phản ứng khi va chạm với nhau.</p>
-
-<p>Convex and concave collider geometry (Hình học máy va chạm lồi và lõm), liên quan đến lồi lõm =&gt; nên sử dụng các primitive Colliders (Compound Collider cho giống Mesh của GameObject)…</p>
-
-<p>Để áp dụng một lực tuyến tính hoặc lực quay không đổi cho GameObject Rigidbody, thêm “Constant Force” component (được đại diện bởi lớp API ConstantForce) vào GameObject của bạn. Lực không đổi không giống như tốc độ không đổi. Khi bạn tác dụng một lực không đổi, tốc độ chuyển động sẽ tăng dần theo thời gian dựa trên giá trị của lực. Trong cuộc sống thực, sự tăng tốc này tiếp tục vô tận (in Unity, reaches a max velocity of 50 rad/s. You can change these maximum velocities in code, via the properties Rigidbody.maxLinearVelocity and Rigidbody.maxAngularVelocity.)</p>
-
-<p>Áp dụng phép nội suy (Interpolate)/Ngoại suy (Extrapolate) cho Rigidbody nếu nó có vẻ/hiện tượng giật cục trong thời gian chạy…</p>
-
-<p>Rigidbody component reference:</p>
-
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
-  <thead>
-    <tr>
-      <th style="text-align: left">Property</th>
-      <th style="text-align: center">Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Mass</td>
-      <td style="text-align: center">Xác định khối lượng của GameObject (tính bằng kilôgam). Khối lượng được đặt thành 1 theo mặc định. Giống như trong đời thực, khối lượng không ảnh hưởng đến tốc độ rơi của một vật thể dưới tác dụng của trọng lực. Để mô phỏng lực cản làm chậm chuyển động, hãy sử dụng Drag (ma sát).</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Drag</td>
-      <td style="text-align: center">Xác định tốc độ phân rã của vận tốc tuyến tính của Vật rắn, để mô phỏng lực cản, lực cản không khí hoặc ma sát. Giá trị thấp tạo ra tốc độ phân rã chậm hơn, do đó GameObject di chuyển nhanh hơn trong thời gian dài hơn.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Angular Drag</td>
-      <td style="text-align: center">Xác định tốc độ phân rã của vận tốc quay của Vật cứng, để mô phỏng lực cản, lực cản không khí hoặc ma sát. Giá trị thấp tạo ra tốc độ phân rã chậm hơn, do đó GameObject di chuyển nhanh hơn trong thời gian dài hơn.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Use Gravity</td>
-      <td style="text-align: center">Chuyển đổi tác dụng của trọng lực lên Rigidbody. Nếu được bật, hệ thống vật lý sẽ áp dụng một lực để di chuyển GameObject theo hướng trọng lực mô phỏng (theo mặc định là dọc theo trục y). Sử dụng Gravity được bật theo mặc định.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Is Kinematic</td>
-      <td style="text-align: center">Khi Is Kinematic được bật, hệ thống vật lý không thể tác dụng lực để di chuyển hoặc xoay GameObject, thay vào đó, Unity chỉ có thể di chuyển và xoay nó thông qua Transform.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Interpolate (None, Interpolate, Extrapolate)</td>
-      <td style="text-align: center">Cài đặt Nội suy trên Rigidbody cung cấp hai tùy chọn để làm mượt sự xuất hiện của chuyển động của Rigidbody nếu nó có vẻ giật cục trong thời gian chạy. Các tùy chọn này là Nội suy và Ngoại suy. Cả phép nội suy và ngoại suy đều tính toán tư thế của Vật cứng nhắc (nghĩa là vị trí và góc quay) giữa các lần cập nhật vật lý. Bạn nên chọn cái nào tùy thuộc vào tùy chọn nào tạo ra kết quả hình ảnh tốt nhất cho trường hợp sử dụng của bạn.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Collision Detection (Discrete, Continuous, Continuous Dynamic, Continuous Speculative)</td>
-      <td style="text-align: center">Unity tạo ra một va chạm trên mỗi cặp máy va chạm và xác định phương pháp phát hiện va chạm dựa trên thuộc tính Phát hiện va chạm này.Theo mặc định, Phát hiện va chạm được đặt thành Rời rạc (Discrete).</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Constraints</td>
-      <td style="text-align: center">Đặt các hạn chế đối với chuyển động của Rigidbody. Freeze Position + Freeze Position: hạn chế di chuyển/quay theo các trục X, Y và Z…</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Info section: Phần Thông tin của thành phần Rigidbody chứa dữ liệu về Rigidbody mà bạn có thể sử dụng để theo dõi hành vi của nó. Bạn không thể chỉnh sửa các giá trị thuộc tính trong phần thành phần này. Bạn có thể sửa đổi chúng thông qua tập lệnh, nhưng điều đó không được khuyến khích; trong hầu hết các trường hợp, bạn nên tác dụng lực thông qua hệ thống vật lý để thay đổi các giá trị này.</p>
-
-<p>Constant Force component reference:</p>
-
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
-  <thead>
-    <tr>
-      <th style="text-align: left">Property</th>
-      <th style="text-align: center">Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Force</td>
-      <td style="text-align: center">Xác định hướng của lực tuyến tính. Các vectơ XYZ đề cập đến cảnh các trục toàn cầu.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Relative Force</td>
-      <td style="text-align: center">Xác định hướng của lực tuyến tính. Các vectơ XYZ đề cập đến các trục cục bộ của Rigidbody.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Torque</td>
-      <td style="text-align: center">Xác định các trục tổng thể mà Rigidbody quay xung quanh.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Relative Torque</td>
-      <td style="text-align: center">Xác định các trục cục bộ mà Rigidbody quay xung quanh.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="collision">
-<a class="anchor" href="#collision" aria-hidden="true" spy-title="Collision"><span class="octicon octicon-link"></span></a>Collision</h4>
-
-<p>Để cấu hình va chạm giữa GameObjects trong Unity, bạn cần sử dụng Colliders. Colliders xác định hình dạng của GameObject nhằm mục đích va chạm vật lý. Sau đó, bạn có thể sử dụng các Collider này để quản lý các sự kiện va chạm.</p>
-
-<p>Collider là <strong>vô hình</strong> và không cần phải có hình dạng giống hệt như Mesh của GameObject.</p>
-
-<p>Collider đơn giản nhất (và ít sử dụng bộ xử lý nhất) là loại <strong>primitive collider</strong>. Trong 3D, đây là Box Collider, Sphere Collider và Capsule Collider. Ở dạng 2D, bạn có thể sử dụng Box Collider 2D và Circle Collider 2D.</p>
-
-<p>Compound colliders: có thể thêm Colliders vào child nhưng chỉ nên sử dụng 1 Rigidbody ở GameObject gốc.</p>
-
-<p>Mesh colliders: sử dụng Mesh colliders (3D) hoặc Polygon Collider (2D), những máy va chạm này sử dụng nhiều bộ xử lý hơn nhiều so với các loại nguyên thủy, vì vậy hãy sử dụng chúng một cách tiết kiệm để duy trì hiệu suất tốt.</p>
-
-<p>Static colliders: Bạn có thể thêm bộ va chạm vào GameObject mà không cần thành phần Rigidbody để tạo sàn, tường và các thành phần bất động khác của Cảnh. Chúng được gọi là máy va chạm tĩnh. Ngược lại, máy va chạm trên GameObject có Rigidbody được gọi là máy va chạm động. Máy va chạm tĩnh có thể tương tác với máy va chạm động nhưng vì chúng không có Vật rắn nên chúng không chuyển động khi va chạm.</p>
-
-<p>Physics materials: Mặc dù hình dạng của máy va chạm không bị biến dạng trong quá trình va chạm, lực ma sát và lực nảy của chúng có thể được cấu hình bằng Vật liệu Vật lý (Physics materials).</p>
-
-<p>Triggers: Hệ thống tập lệnh có thể phát hiện khi xảy ra xung đột và bắt đầu các hành động bằng hàm <strong>OnCollisionEnter</strong>. Tuy nhiên, bạn cũng có thể sử dụng công cụ vật lý chỉ đơn giản là phát hiện khi một máy va chạm đi vào không gian của một máy va chạm khác mà không tạo ra va chạm. Khi một trình va chạm đi vào không gian của nó, trình kích hoạt sẽ gọi hàm <strong>OnTriggerEnter</strong> trên các tập lệnh của đối tượng trình kích hoạt.</p>
-
-<p>Collision callbacks for scripts (lưu ý có khác biệt nếu 2 đối tượng là Kinematic):</p>
-<ul>
-  <li>OnCollisionEnter &gt; OnCollisionStay &gt; OnCollisionExit (tương tự 2D, tên hàm thêm 2D ở cuối) -&gt; 2 Kinematic does not apply</li>
-  <li>OnTriggerEnter &gt; OnTriggerStay &gt; OnTriggerExit (tương tự 2D, tên hàm thêm 2D ở cuối) -&gt; 2 Kinematic apply</li>
-</ul>
-
-<p>Khi hai đối tượng va chạm, một số sự kiện kịch bản khác nhau có thể xảy ra tùy thuộc vào cấu hình rigidbodies của các đối tượng va chạm. Biểu đồ bên dưới cung cấp thông tin chi tiết về các hàm sự kiện được gọi dựa trên các thành phần được gắn vào đối tượng.</p>
-
-<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Collision: Phát hiện va chạm xảy ra và tin nhắn được gửi khi va chạm</div>
-
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
-  <tbody>
-    <tr>
-      <td> </td>
-      <td>Static Collider</td>
-      <td>Rigidbody Collider</td>
-      <td>Kinematic Rigidbody Collider</td>
-      <td>Static Trigger Collider</td>
-      <td>Rigidbody Trigger Collider</td>
-      <td>Kinematic Rigidbody Trigger Collider</td>
-    </tr>
-    <tr>
-      <td>Static Collider</td>
-      <td> </td>
-      <td>Y</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Rigidbody Collider</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Kinematic Rigidbody Collider</td>
-      <td> </td>
-      <td>Y</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Static Trigger Collider</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Rigidbody Trigger Collider</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Kinematic Rigidbody Trigger Collider</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Trigger: Thông báo kích hoạt được gửi khi va chạm</div>
-
-<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
-  <tbody>
-    <tr>
-      <td> </td>
-      <td>Static Collider</td>
-      <td>Rigidbody Collider</td>
-      <td>Kinematic Rigidbody Collider</td>
-      <td>Static Trigger Collider</td>
-      <td>Rigidbody Trigger Collider</td>
-      <td>Kinematic Rigidbody Trigger Collider</td>
-    </tr>
-    <tr>
-      <td>Static Collider</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td>Rigidbody Collider</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td>Kinematic Rigidbody Collider</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td>Static Trigger Collider</td>
-      <td> </td>
-      <td>Y</td>
-      <td>Y</td>
-      <td> </td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td>Rigidbody Trigger Collider</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-    <tr>
-      <td>Kinematic Rigidbody Trigger Collider</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="joints">
-<a class="anchor" href="#joints" aria-hidden="true" spy-title="Joints"><span class="octicon octicon-link"></span></a>Joints</h4>
-
-<h4 id="articulations">
-<a class="anchor" href="#articulations" aria-hidden="true" spy-title="Articulations"><span class="octicon octicon-link"></span></a>Articulations</h4>
-
-<h4 id="ragdoll-physics">
-<a class="anchor" href="#ragdoll-physics" aria-hidden="true" spy-title="Ragdoll physics"><span class="octicon octicon-link"></span></a>Ragdoll physics</h4>
-
-<h4 id="cloth">
-<a class="anchor" href="#cloth" aria-hidden="true" spy-title="Cloth"><span class="octicon octicon-link"></span></a>Cloth</h4>
-
-<h4 id="multi-scene-physics">
-<a class="anchor" href="#multi-scene-physics" aria-hidden="true" spy-title="Multi-scene physics"><span class="octicon octicon-link"></span></a>Multi-scene physics</h4>
-
-<h3 id="built-in-2d-physics-box2d-engine-integration">
-<a class="anchor" href="#built-in-2d-physics-box2d-engine-integration" aria-hidden="true" spy-title="Built-in 2D physics (Box2D engine integration)"><span class="octicon octicon-link"></span></a>Built-in 2D physics (Box2D engine integration)</h3>
-
-<p>TODO</p>
-
-<h2 id="physics-engine-packages">
-<a class="anchor" href="#physics-engine-packages" aria-hidden="true" spy-title="Physics engine packages"><span class="octicon octicon-link"></span></a>Physics engine packages</h2>
-
-<p>Nếu dự án của bạn sử dụng Data-Oriented Technology Stack (DOTS) của Unity, bạn cần cài đặt gói vật lý DOTS chuyên dụng. Các gói có sẵn là:</p>
-<ul>
-  <li>Unity Physics package: công cụ vật lý DOTS mà bạn cần cài đặt theo mặc định để mô phỏng vật lý trong bất kỳ dự án hướng dữ liệu nào.</li>
-  <li>Havok Physics for Unity package: triển khai công cụ vật lý Havok cho Unity, để sử dụng như một phần mở rộng của gói Vật lý Unity. Lưu ý rằng gói này tuân theo chương trình cấp phép cụ thể.</li>
-</ul>
-
+<p>•  Sử dụng phương thức <strong>AddListener</strong> để đăng ký một method của một GameObject hiện tại với một event của một GameObject khác, và sau đó truyền dữ liệu vào event đó. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Đăng ký một method của một GameObject hiện tại với một event của một GameObject khác</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">SomeMethod</span><span class="p">);</span>
+<span class="c1">// Gọi event đó, và truyền vào một dữ liệu kiểu int</span>
+<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
+<span class="c1">// Định nghĩa method đó, và nhận dữ liệu kiểu int</span>
+<span class="k">void</span> <span class="nf">SomeMethod</span><span class="p">(</span><span class="kt">int</span> <span class="n">someData</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="c1">// Làm gì đó với someData</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
       </div>
 

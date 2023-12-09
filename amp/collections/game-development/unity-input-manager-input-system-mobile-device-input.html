@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>[Google Play] Play Asset Delivery (PAD) cho Unity</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/game-development/TODO-google-play-tich-hop-tinh-nang-phan-phoi-assets-unity" />
+    <title>Unity Input Manager - Input System - Mobile device input</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-input-manager-input-system-mobile-device-input" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/TODO-google-play-tich-hop-tinh-nang-phan-phoi-assets-unity",
-        "headline": "[Google Play] Play Asset Delivery (PAD) cho Unity",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-input-manager-input-system-mobile-device-input",
+        "headline": "Unity Input Manager - Input System - Mobile device input",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-09 01:05:53 +0700",
-        "description": "[Google Play] Play Asset Delivery (PAD) cho Unity",
+        "dateModified": "2023-12-09 16:37:25 +0700",
+        "description": "Unity Input Manager - Input System - Mobile device input",
         
         "author": {
           "@type": "Person",
@@ -117,7 +117,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>[Google Play] Play Asset Delivery (PAD) cho Unity</h2>
+      <h2>Unity Input Manager - Input System - Mobile device input</h2>
       <span class="author">
         
         
@@ -125,12 +125,12 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 1 min read </span> · 
+      <span title="reading time">· about 10 mins read </span> · 
       
       <span>
         
         
-        <a href="/pages/categories#Unity" class="hvr-float-shadow">Unity</a>
+        <a href="/pages/categories#Chủ đề" class="hvr-float-shadow">Chủ đề</a>
         
         
       </span>
@@ -139,11 +139,295 @@
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h2"><a href="#google-play-tích-hợp-tính-năng-phân-phối-tài-sản-unity" spy-toc="[Google Play] Tích hợp tính năng phân phối tài sản (Unity)">[Google Play] Tích hợp tính năng phân phối tài sản (Unity)</a></li>
-</ul><h2 id="google-play-tích-hợp-tính-năng-phân-phối-tài-sản-unity">
-<a class="anchor" href="#google-play-t%C3%ADch-h%E1%BB%A3p-t%C3%ADnh-n%C4%83ng-ph%C3%A2n-ph%E1%BB%91i-t%C3%A0i-s%E1%BA%A3n-unity" aria-hidden="true" spy-title="[Google Play] Tích hợp tính năng phân phối tài sản (Unity)"><span class="octicon octicon-link"></span></a>[Google Play] Tích hợp tính năng phân phối tài sản (Unity)</h2>
+<li class="toc-entry toc-h2"><a href="#input" spy-toc="Input">Input</a></li>
+<li class="toc-entry toc-h2"><a href="#input-manager" spy-toc="Input Manager">Input Manager</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#physical-keys" spy-toc="Physical keys">Physical keys</a></li>
+<li class="toc-entry toc-h3"><a href="#virtual-axes" spy-toc="Virtual Axes">Virtual Axes</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#adding-removing-and-copying-virtual-axes" spy-toc="Adding, removing, and copying virtual axes">Adding, removing, and copying virtual axes</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#lấy-giá-trị-input-virtual-axes-trong-scripts" spy-toc="Lấy giá trị Input, Virtual Axes trong Scripts">Lấy giá trị Input, Virtual Axes trong Scripts</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#mobile-device-input" spy-toc="Mobile device input">Mobile device input</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#multi-touch-screen" spy-toc="Multi-touch screen">Multi-touch screen</a></li>
+<li class="toc-entry toc-h3"><a href="#mobile-keyboard" spy-toc="Mobile Keyboard">Mobile Keyboard</a></li>
+<li class="toc-entry toc-h3"><a href="#unity-xr-input" spy-toc="Unity XR Input">Unity XR Input</a></li>
+</ul>
+</li>
+</ul><h2 id="input">
+<a class="anchor" href="#input" aria-hidden="true" spy-title="Input"><span class="octicon octicon-link"></span></a>Input</h2>
 
-<p>TODO: https://developer.android.com/guide/playcore/asset-delivery/integrate-unity?hl=vi</p>
+<p>Unity hỗ trợ đầu vào từ nhiều loại thiết bị đầu vào, bao gồm:</p>
+<ul>
+  <li>Keyboards and mice</li>
+  <li>Joysticks</li>
+  <li>Controllers</li>
+  <li>Touch screens</li>
+  <li>Movement-sensing capabilities of mobile devices, such as accelerometers or gyroscopes</li>
+  <li>VR and AR controllers</li>
+</ul>
+
+<p>Unity hỗ trợ đầu vào thông qua hai hệ thống riêng biệt:</p>
+<ul>
+  <li>Input Manager: Trình quản lý đầu vào là một phần của nền tảng Unity cốt lõi và có sẵn theo mặc định.</li>
+  <li>Input System: Hệ thống đầu vào là một gói cần được cài đặt thông qua Trình quản lý gói trước khi bạn có thể sử dụng nó. Nó yêu cầu thời gian chạy .NET 4 và không hoạt động trong các dự án sử dụng thời gian chạy .NET 3.5 cũ.</li>
+</ul>
+
+<h2 id="input-manager">
+<a class="anchor" href="#input-manager" aria-hidden="true" spy-title="Input Manager"><span class="octicon octicon-link"></span></a>Input Manager</h2>
+
+<p>Trình quản lý đầu vào sử dụng các loại điều khiển sau:</p>
+<ul>
+  <li>“Key” đề cập đến bất kỳ phím nào trên bàn phím vật lý, chẳng hạn như W, Shift hoặc phím cách..</li>
+  <li>“Button” đề cập đến bất kỳ nút nào trên bộ controller vật lý (ví dụ: tay cầm chơi game), chẳng hạn như nút X trên điều khiển từ xa.</li>
+  <li>“Virtual Axis” được ánh xạ tới một CONTROL, chẳng hạn như BUTTON hoặc KEY. Khi người dùng kích hoạt CONTROL, trục sẽ nhận được giá trị trong phạm vi [–1..1]. Bạn có thể sử dụng giá trị này trong tập lệnh của mình.</li>
+</ul>
+
+<h3 id="physical-keys">
+<a class="anchor" href="#physical-keys" aria-hidden="true" spy-title="Physical keys"><span class="octicon octicon-link"></span></a>Physical keys</h3>
+
+<p>Khi bật Physical keys, Unity sử dụng bố cục “Qwerty” ANSI/ISO để thể hiện vị trí thực của các phím bất kể bố cục thực tế của người dùng (QWERTY / AZERTY). Điều này có nghĩa là nếu bạn chỉ định phím “Q”, nó sẽ luôn là CHỮ CÁI NGOÀI CÙNG BÊN TRÁI TRÊN HÀNG PHÍM CHỮ CÁI ĐẦU TIÊN, ngay cả khi bàn phím của người dùng có một chữ cái khác ở vị trí đó.</p>
+
+<p>Lưu ý, bạn không nên đọc phím nhập để nhập văn bản trong trò chơi, vì điều này sẽ không cho phép người dùng nhập các ký tự không phải tiếng Latinh. Thay vào đó, hãy sử dụng “Input.compositionString” (Ở một số ngôn ngữ như tiếng Trung, tiếng Nhật hoặc tiếng Hàn, văn bản được nhập bằng cách gõ nhiều phím để tạo ra một hoặc nhiều ký tự).</p>
+
+<h3 id="virtual-axes">
+<a class="anchor" href="#virtual-axes" aria-hidden="true" spy-title="Virtual Axes"><span class="octicon octicon-link"></span></a>Virtual Axes</h3>
+
+<p>Mỗi Dự án đều có một số trục đầu vào được tạo theo mặc định. Các trục này cho phép bạn sử dụng ngay đầu vào bàn phím, chuột và cần điều khiển trong Dự án của mình.</p>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-indigo">
+  <thead>
+    <tr>
+      <th style="text-align: left">Property</th>
+      <th style="text-align: center">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Name</td>
+      <td style="text-align: center">Tên trục. Bạn có thể sử dụng điều này để truy cập trục từ tập lệnh.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Descriptive Name, Descriptive Negative Name</td>
+      <td style="text-align: center"><em>Những giá trị này không được dùng nữa và không hoạt động</em></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Negative Button, Positive Button</td>
+      <td style="text-align: center">Controls đẩy trục theo chiều âm và chiều dương tương ứng. Đây có thể là các phím trên bàn phím hoặc các nút trên cần điều khiển hoặc chuột.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Alt Negative Button, Alt Positive Button</td>
+      <td style="text-align: center">Các điều khiển thay thế để đẩy trục theo hướng âm và dương tương ứng.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Gravity</td>
+      <td style="text-align: center">Tốc độ tính bằng đơn vị trên giây mà trục rơi về phía trung tính khi không có đầu vào.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Dead</td>
+      <td style="text-align: center">Người dùng cần di chuyển cần analog bao xa trước khi ứng dụng của bạn đăng ký chuyển động. Trong thời gian chạy, đầu vào từ tất cả các thiết bị analog nằm trong phạm vi này sẽ được coi là rỗng.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Sensitivity</td>
+      <td style="text-align: center">Tốc độ tính bằng đơn vị trên giây mà trục sẽ di chuyển về phía giá trị mục tiêu. Điều này chỉ dành cho các thiết bị kỹ thuật số.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Snap</td>
+      <td style="text-align: center">Nếu được bật, giá trị trục sẽ đặt lại về 0 khi nhấn nút tương ứng với hướng ngược lại.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Type</td>
+      <td style="text-align: center">Loại đầu vào điều khiển trục. Chọn từ các giá trị sau: Key or Mouse button, Mouse Movement, Joystick Axis</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Axis</td>
+      <td style="text-align: center">Trục của thiết bị được kết nối điều khiển trục này.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">JoyNum</td>
+      <td style="text-align: center">Cần điều khiển được kết nối điều khiển trục này. Bạn có thể chọn một phím điều khiển cụ thể hoặc đầu vào truy vấn từ tất cả các phím điều khiển.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Giá trị trục có thể là:</p>
+<ul>
+  <li>Giữa –1 và 1 cho đầu vào cần điều khiển và bàn phím. Vị trí trung lập cho các trục này là 0. Một số loại điều khiển, chẳng hạn như các nút trên bàn phím, không nhạy cảm với cường độ đầu vào nên chúng không thể tạo ra các giá trị khác ngoài –1, 0 hoặc 1.</li>
+  <li>Mouse delta (mức độ chuột đã di chuyển trong khung hình cuối cùng) để nhập chuột. Các giá trị cho trục đầu vào của chuột có thể lớn hơn 1 hoặc nhỏ hơn –1 khi người dùng di chuyển chuột nhanh.</li>
+</ul>
+
+<h4 id="adding-removing-and-copying-virtual-axes">
+<a class="anchor" href="#adding-removing-and-copying-virtual-axes" aria-hidden="true" spy-title="Adding, removing, and copying virtual axes"><span class="octicon octicon-link"></span></a>Adding, removing, and copying virtual axes</h4>
+
+<p>Để thêm trục ảo, hãy tăng số lượng trong trường Kích thước. Điều này tạo ra một trục mới ở cuối danh sách. Trục mới sao chép các thuộc tính của trục trước đó trong danh sách (Giảm số lượng trong trường Kích thước. Việc này sẽ loại bỏ trục cuối cùng trong danh sách, hoặc Bấm chuột phải vào bất kỳ trục nào và chọn Xóa phần tử mảng. Lưu ý: Bạn không thể hoàn tác hành động xóa).</p>
+
+<p>Tên Key tuân theo các quy ước đặt tên sau:</p>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key family</th>
+      <th style="text-align: center">Naming convention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Letter keys</td>
+      <td style="text-align: center">a, b, c…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Number keys</td>
+      <td style="text-align: center">1, 2, 3…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Arrow keys</td>
+      <td style="text-align: center">up, down, left, right</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Numpad keys</td>
+      <td style="text-align: center">[1], [2], [3], [+], [equals]…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Modifier keys</td>
+      <td style="text-align: center">right shift, left shift, right ctrl, left ctrl, right alt, left alt, right cmd, left cmd</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Special keys</td>
+      <td style="text-align: center">backspace, tab, return, escape, space, delete, enter, insert, home, end, page up, page down</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Function keys</td>
+      <td style="text-align: center">f1, f2, f3…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mouse buttons</td>
+      <td style="text-align: center">mouse 0, mouse 1, mouse 2…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">A specific button on any joystick</td>
+      <td style="text-align: center">joystick button 0, joystick button 1, joystick button 2…</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">A specific button on a specific joystick</td>
+      <td style="text-align: center">joystick 1 button 0, joystick 1 button 1, joystick 2 button 0…</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="lấy-giá-trị-input-virtual-axes-trong-scripts">
+<a class="anchor" href="#l%E1%BA%A5y-gi%C3%A1-tr%E1%BB%8B-input-virtual-axes-trong-scripts" aria-hidden="true" spy-title="Lấy giá trị Input, Virtual Axes trong Scripts"><span class="octicon octicon-link"></span></a>Lấy giá trị Input, Virtual Axes trong Scripts</h3>
+
+<ul>
+  <li>Sử dụng <code class="highlighter-rouge">Input.GetKey("&lt;Naming_Convention&gt;")</code>. Ví dụ: <code class="highlighter-rouge">Input.GetKey("right shift");</code>
+</li>
+  <li>Sủ dụng “Axis Name”. Ví dụ: <code class="highlighter-rouge">float horizontalInput = Input.GetAxis ("Horizontal");</code>
+</li>
+  <li>Đối với các trục mô tả một sự kiện chứ không phải một chuyển động (ví dụ: bắn vũ khí trong trò chơi), hãy sử dụng <code class="highlighter-rouge">Input.GetButtonDown</code> thay thế.</li>
+  <li>Nếu hai hoặc nhiều trục có cùng tên, truy vấn sẽ trả về trục có giá trị tuyệt đối lớn nhất. Điều này cho phép gán nhiều thiết bị đầu vào cho một tên trục.</li>
+</ul>
+
+<p>Ví dụ lấy giá trị Input “Horizontal” và “Vertical” và thay đổi “transform.Translate” để d chuyển GameObject.</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="n">moveSpeed</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span> <span class="c1">// Xác định vận tốc chuyển động của vật.</span>
+
+<span class="kt">float</span> <span class="n">horizontalInput</span> <span class="p">=</span> <span class="n">Input</span><span class="p">.</span><span class="nf">GetAxis</span><span class="p">(</span><span class="s">"Horizontal"</span><span class="p">);</span> <span class="c1">// Lấy giá trị của trục đầu vào Horizontal.</span>
+
+<span class="kt">float</span> <span class="n">verticalInput</span> <span class="p">=</span> <span class="n">Input</span><span class="p">.</span><span class="nf">GetAxis</span><span class="p">(</span><span class="s">"Vertical"</span><span class="p">);</span> <span class="c1">// Lấy giá trị của trục đầu vào Vertical.</span>
+
+<span class="n">transform</span><span class="p">.</span><span class="nf">Translate</span><span class="p">(</span><span class="k">new</span> <span class="nf">Vector3</span><span class="p">(</span><span class="n">horizontalInput</span><span class="p">,</span> <span class="n">verticalInput</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span> <span class="p">*</span> <span class="n">moveSpeed</span> <span class="p">*</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">);</span>
+<span class="c1">// Di chuyển đối tượng đến tọa độ XYZ được xác định lần lượt là horizontalInput, 0 và verticalInput.</span>
+<span class="c1">// Time.deltaTime là thời gian đã trôi qua kể từ khung hình cuối cùng. Nhân moveSpeed ​​với Time.deltaTime để đảm bảo rằng GameObject di chuyển với tốc độ không đổi trong mỗi khung hình.</span>
+</code></pre></div></div>
+
+<h2 id="mobile-device-input">
+<a class="anchor" href="#mobile-device-input" aria-hidden="true" spy-title="Mobile device input"><span class="octicon octicon-link"></span></a>Mobile device input</h2>
+
+<p>Trên thiết bị di động, class “Input” cung cấp quyền truy cập vào màn hình cảm ứng, gia tốc kế và đầu vào địa lý/vị trí. Tham khảo <a href="https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Input.html" class="hvr-float-shadow" rel="nofollow" target="_blank">class “Input”</a></p>
+
+<p>Quyền truy cập vào bàn phím trên thiết bị di động được cung cấp thông qua <a href="https://docs.unity3d.com/2021.3/Documentation/Manual/MobileKeyboard.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Mobile Keyboard</a></p>
+
+<h3 id="multi-touch-screen">
+<a class="anchor" href="#multi-touch-screen" aria-hidden="true" spy-title="Multi-touch screen"><span class="octicon octicon-link"></span></a>Multi-touch screen</h3>
+
+<p>Các thiết bị iPhone, iPad và iPod Touch có khả năng theo dõi tối đa năm ngón tay chạm vào màn hình cùng một lúc. Bạn có thể truy xuất trạng thái của từng ngón tay chạm vào màn hình trong khung hình cuối cùng bằng cách truy cập vào mảng thuộc tính <a href="https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Input-touches.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Input.touches</a></p>
+
+<p>Các thiết bị Android không có giới hạn thống nhất về số lượng ngón tay mà chúng theo dõi. Thay vào đó, nó thay đổi tùy theo thiết bị và có thể là bất kỳ thao tác nào từ chạm hai lần trên thiết bị cũ đến năm ngón tay trên một số thiết bị mới hơn.</p>
+
+<p>Mỗi lần chạm ngón tay được thể hiện bằng cấu trúc dữ liệu Input.Touch như bảng dưới đây:</p>
+
+<table class="w3-table-all w3-hoverable w3-card-4 w3-section th-blue/green/orange/indigo">
+  <thead>
+    <tr>
+      <th style="text-align: left">Property</th>
+      <th style="text-align: center">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">fingerId (int)</td>
+      <td style="text-align: center">Chỉ số duy nhất cho một lần chạm.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">position (Vector2)</td>
+      <td style="text-align: center">Vị trí màn hình của cảm ứng.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">deltaPosition (Vector2)</td>
+      <td style="text-align: center">Vị trí màn hình thay đổi kể từ khung hình cuối cùng.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">deltaTime (float)</td>
+      <td style="text-align: center">Khoảng thời gian đã trôi qua kể từ lần thay đổi trạng thái cuối cùng.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">tapCount (int)</td>
+      <td style="text-align: center">Màn hình iPhone/iPad có thể phân biệt các thao tác chạm ngón tay nhanh của người dùng. Bộ đếm này sẽ cho bạn biết người dùng đã chạm vào màn hình bao nhiêu lần mà không di chuyển ngón tay sang hai bên. Thiết bị Android không tính số lần nhấn, trường này luôn là 1.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">phase (enum TouchPhase)</td>
+      <td style="text-align: center">Mô tả trạng thái chạm, có thể giúp bạn xác định xem người dùng mới bắt đầu chạm vào màn hình, vừa di chuyển ngón tay hay vừa nhấc ngón tay lên.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TouchPhase.Began</td>
+      <td style="text-align: center">ngón tay chạm vào màn hình.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TouchPhase.Moved</td>
+      <td style="text-align: center">ngón tay di chuyển trên màn hình.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TouchPhase.Stationary</td>
+      <td style="text-align: center">ngón tay đang chạm vào màn hình nhưng không di chuyển.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TouchPhase.Ended</td>
+      <td style="text-align: center">ngón tay được nhấc lên khỏi màn hình. Đây là giai đoạn cuối cùng của một liên lạc.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TouchPhase.Canceled</td>
+      <td style="text-align: center">Hệ thống đã hủy theo dõi thao tác chạm.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="mobile-keyboard">
+<a class="anchor" href="#mobile-keyboard" aria-hidden="true" spy-title="Mobile Keyboard"><span class="octicon octicon-link"></span></a>Mobile Keyboard</h3>
+
+<p>Bàn phím sẽ tự động xuất hiện khi người dùng chạm vào các thành phần GUI có thể chỉnh sửa. Hiện tại, GUI.TextField, GUI.TextArea và GUI.PasswordField sẽ hiển thị bàn phím.</p>
+
+<p>Trong hầu hết các trường hợp, Unity sẽ tự động xử lý việc nhập bàn phím cho các thành phần GUI nhưng cũng dễ dàng hiển thị bàn phím theo yêu cầu từ tập lệnh.</p>
+
+<p>Manual Keyboard Handling: Sử dụng hàm <code class="highlighter-rouge">TouchScreenKeyboard.Open()</code> để mở bàn phím.</p>
+
+<p>Tham khảo thêm <a href="https://docs.unity3d.com/2021.3/Documentation/Manual/MobileKeyboard.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Mobile Keyboard</a></p>
+
+<h3 id="unity-xr-input">
+<a class="anchor" href="#unity-xr-input" aria-hidden="true" spy-title="Unity XR Input"><span class="octicon octicon-link"></span></a>Unity XR Input</h3>
+
+<p>Unity hỗ trợ cho thực tế ảo , thực tế tăng cường và Windows Mixed Reality. Tham khảo <a href="https://docs.unity3d.com/2021.3/Documentation/Manual/xr_input.html" class="hvr-float-shadow" rel="nofollow" target="_blank">Unity XR Input</a></p>
 
       </div>
 
