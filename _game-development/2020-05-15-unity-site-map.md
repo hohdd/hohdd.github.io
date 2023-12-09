@@ -47,6 +47,8 @@ date: 2020-05-15 14:26:14 +0700
 - Unity - Chủ đề (T) - Google Play: Tích hợp tính năng phân phối tài sản (Unity)
 - Unity - Chủ đề (D) - [User interface (UI)] giao diện người dùng (UI) cho Unity
 - Unity - Chủ đề (D) - Di chuyển một GameObject
+- Unity - Chủ đề (I) - Vấn đề kích thước trong game
+- Unity - Chủ đề (D) - System.Attribute của UnityEngine
 
 ### Unity - Package
 
@@ -62,6 +64,10 @@ date: 2020-05-15 14:26:14 +0700
 
 - Unity - Confirm (D) - Tất cả cách cách lấy reference của một GameObject
 - Unity - Confirm (D) - Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject
+
+### Unity - Microgame
+
+- Unity - Microgame (I) - KartingMicrogame
 
 ### Unity - Uncategorized
 
