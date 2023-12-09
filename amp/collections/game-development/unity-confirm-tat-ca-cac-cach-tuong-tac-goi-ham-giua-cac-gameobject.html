@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-confirm-tat-ca-cac-cach-tuong-tac-goi-ham-giua-cac-gameobject",
         "headline": "Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-09 16:37:25 +0700",
+        "dateModified": "2023-12-09 18:37:49 +0700",
         "description": "Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject",
         
         "author": {
@@ -222,6 +222,14 @@
 <span class="p">{</span>
 	<span class="c1">// Làm gì đó với someData</span>
 <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// SendMessage, BroadcastMessage có ở cả gameObject và MonoBehaviour, nhưng Invoke, StartCoroutine thì chỉ có trên MonoBehaviour</span>
+<span class="n">top1</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"Log"</span><span class="p">);</span> <span class="c1">// hoặc objectC.BroadcastMessage("Log"); // BroadcastMessage call tất cả, SendMessage chỉ THIS</span>
+
+<span class="n">top1</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"LogPrivate"</span><span class="p">);</span> <span class="c1">// call tất cả, kể cả private</span>
+<span class="n">top1</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"SpecialMethod"</span><span class="p">);</span> <span class="c1">// log lỗi nếu không tồn tại methodName</span>
 </code></pre></div></div>
 
       </div>

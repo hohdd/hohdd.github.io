@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-confirm-tat-ca-cach-lay-reference-cua-gameobject",
         "headline": "Tất cả các cách lấy Reference của một GameObject",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-09 16:37:25 +0700",
+        "dateModified": "2023-12-09 18:37:49 +0700",
         "description": "Tất cả các cách lấy Reference của một GameObject",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 2 mins read </span> · 
+      <span title="reading time">· about 3 mins read </span> · 
       
       <span>
         
@@ -210,6 +210,22 @@
 <span class="k">public</span> <span class="n">GameObject</span> <span class="n">someGameObject</span><span class="p">;</span>
 <span class="c1">// Khai báo một biến [SerializeField] để lấy reference của một thành phần</span>
 <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span> <span class="k">private</span> <span class="n">Rigidbody</span> <span class="n">someRigidbody</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// TÌM bằng phương thức của Object (sử dụng khi tìm trực tiếp đối tượng MonoBehaviour không phải GameObject)</span>
+<span class="n">Object_a</span> <span class="p">=</span> <span class="n">FindObjectOfType</span><span class="p">&lt;</span><span class="n">Object_A</span><span class="p">&gt;();</span> <span class="c1">// tìm thấy vì Scrip A được attach vào Object A</span>
+<span class="n">Object_b</span> <span class="p">=</span> <span class="n">FindObjectOfType</span><span class="p">&lt;</span><span class="n">Object_B</span><span class="p">&gt;();</span> <span class="c1">// tìm thấy vì Scrip B được attach vào Object B_1</span>
+<span class="n">Object_c</span> <span class="p">=</span> <span class="n">FindObjectOfType</span><span class="p">&lt;</span><span class="n">Object_C</span><span class="p">&gt;();</span> <span class="c1">// null - không tìm thấy vì Scrip C không được attach vào đâu cả</span>
+
+<span class="c1">// TÌM bằng phương thức của GameObject (sử dụng để tìm GameObject và thao tác với GameObject)</span>
+<span class="kt">var</span> <span class="n">objectA</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="s">"ObjectA"</span><span class="p">);</span> <span class="c1">// match tên - tìm thấy, ko có children ngoài transform</span>
+<span class="kt">var</span> <span class="n">objectB</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="s">"ObjectB"</span><span class="p">);</span> <span class="c1">// match tên - tìm thấy, có 1 child là ObjecB_1</span>
+<span class="kt">var</span> <span class="n">objectC</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="nf">Find</span><span class="p">(</span><span class="s">"ObjectC"</span><span class="p">);</span> <span class="c1">// match tên - tìm thấy, có 2 child là ObjectC_1 và Object_C2</span>
+
+<span class="kt">var</span> <span class="n">a</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="nf">FindWithTag</span><span class="p">(</span><span class="s">"TagA"</span><span class="p">);</span> <span class="c1">// không tìm thấy vì ko sử dụng TagA</span>
+<span class="kt">var</span> <span class="n">b</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="nf">FindGameObjectWithTag</span><span class="p">(</span><span class="s">"TagB"</span><span class="p">);</span> <span class="c1">// tìm thấy ObjectB đầu tiên (ko phải ObjectB_1)</span>
+<span class="kt">var</span> <span class="n">c</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="nf">FindGameObjectsWithTag</span><span class="p">(</span><span class="s">"TagC"</span><span class="p">);</span> <span class="c1">// mảng GameObject[3]</span>
 </code></pre></div></div>
 
       </div>

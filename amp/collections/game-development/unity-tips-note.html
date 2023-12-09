@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tips-note",
         "headline": "Unity - Tips, Note",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-09 16:37:25 +0700",
+        "dateModified": "2023-12-09 18:37:49 +0700",
         "description": "Unity - Tips, Note",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 5 mins read </span> · 
+      <span title="reading time">· about 6 mins read </span> · 
       
       <span>
         
@@ -298,6 +298,26 @@
     <tr>
       <td style="text-align: left">GameObject.FindWithTag trả về GameObject.</td>
       <td style="text-align: center">GetComponentInChildren chỉ tìm được những Object/Component có extend ModalController : MonoBehaviour</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Khi tìm kiếm Reference, đối tượng đó phải có trong Scence</td>
+      <td style="text-align: center">Script MonoBehaviour nằm trong Assets mà không đính kèm vào GameObject thì không thể tìm thấy</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SendMessage bị lỗi nếu không có “receiver”, children không nhận được Message</td>
+      <td style="text-align: center">“This GameObject” không tính Childrend! tất cả MonoBehaviour của GameObject sẽ được call</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SendMessage kích hoạt gọi tất cả method của “This GameObject” kể cả method “private”</td>
+      <td style="text-align: center">“SendMessage” call cả method “Private”, method name không có thì sẽ có log lỗi</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">nếu muốn Children cũng được call thì sử dụng “BroadcastMessage”</td>
+      <td style="text-align: center">“BroadcastMessage” call methodName trên This+Children</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">phân biệt instance MonoBehaviour (script) và “gameObject”</td>
+      <td style="text-align: center">SendMessage, BroadcastMessage có ở cả 2, nhưng Invoke, StartCoroutine thì chỉ có trên MonoBehaviour</td>
     </tr>
   </tbody>
 </table>
