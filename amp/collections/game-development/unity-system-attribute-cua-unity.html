@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-confirm-tat-ca-cac-cach-tuong-tac-goi-ham-giua-cac-gameobject" />
+    <title>System.Attribute của UnityEngine</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-system-attribute-cua-unity" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-confirm-tat-ca-cac-cach-tuong-tac-goi-ham-giua-cac-gameobject",
-        "headline": "Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-system-attribute-cua-unity",
+        "headline": "System.Attribute của UnityEngine",
         "datePublished": "2020-05-15 14:26:14 +0700",
         "dateModified": "2023-12-10 01:34:33 +0700",
-        "description": "Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject",
+        "description": "System.Attribute của UnityEngine",
         
         "author": {
           "@type": "Person",
@@ -117,7 +117,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject</h2>
+      <h2>System.Attribute của UnityEngine</h2>
       <span class="author">
         
         
@@ -125,12 +125,12 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 3 mins read </span> · 
+      <span title="reading time">· about 1 min read </span> · 
       
       <span>
         
         
-        <a href="/pages/categories#Confirm" class="hvr-float-shadow">Confirm</a>
+        <a href="/pages/categories#Chủ đề" class="hvr-float-shadow">Chủ đề</a>
         
         
       </span>
@@ -139,97 +139,56 @@
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h3"><a href="#gọi-một-method-của-một-gameobject-khác-từ-gameobject-hiện-tại" spy-toc="Gọi một method của một GameObject khác từ GameObject hiện tại">Gọi một method của một GameObject khác từ GameObject hiện tại</a></li>
-<li class="toc-entry toc-h3"><a href="#các-cách-truyền-và-nhận-dữ-liệu-từ-gameobject-này-sang-gameobject-khác" spy-toc="Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác.">Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác.</a></li>
-</ul><h3 id="gọi-một-method-của-một-gameobject-khác-từ-gameobject-hiện-tại">
-<a class="anchor" href="#g%E1%BB%8Di-m%E1%BB%99t-method-c%E1%BB%A7a-m%E1%BB%99t-gameobject-kh%C3%A1c-t%E1%BB%AB-gameobject-hi%E1%BB%87n-t%E1%BA%A1i" aria-hidden="true" spy-title="Gọi một method của một GameObject khác từ GameObject hiện tại"><span class="octicon octicon-link"></span></a>Gọi một method của một GameObject khác từ GameObject hiện tại</h3>
+<li class="toc-entry toc-h2"><a href="#systemattribute-của-unityengine" spy-toc="System.Attribute của UnityEngine">System.Attribute của UnityEngine</a></li>
+</ul><h2 id="systemattribute-của-unityengine">
+<a class="anchor" href="#systemattribute-c%E1%BB%A7a-unityengine" aria-hidden="true" spy-title="System.Attribute của UnityEngine"><span class="octicon octicon-link"></span></a>System.Attribute của UnityEngine</h2>
 
-<p>•  Sử dụng phương thức <strong>GetComponent</strong> hoặc <strong>GetComponentInChildren</strong> để lấy một thành phần của một GameObject khác, và sau đó gọi method của thành phần đó. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Lấy một thành phần ScriptA của một GameObject khác</span>
-<span class="n">ScriptA</span> <span class="n">scriptA</span> <span class="p">=</span> <span class="n">otherGameObject</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ScriptA</span><span class="p">&gt;();</span>
-<span class="c1">// Gọi một method của ScriptA</span>
-<span class="n">scriptA</span><span class="p">.</span><span class="nf">SomeMethod</span><span class="p">();</span>
-</code></pre></div></div>
+<p>System.Attribute là một lớp cơ sở để tạo ra các thuộc tính tùy biến cho các <strong>class, property hoặc function</strong> trong C#. Các thuộc tính này <strong>có thể thay đổi hành vi hoặc hiển thị</strong> của các thành phần trong Unity <a href="https://forum.unity.com/threads/tutorial-character-stats-aka-attributes-system.504095/" class="hvr-forward" rel="nofollow" target="_blank">(hướng dẫn từ forum unity)</a>. Đây là một số ví dụ về các System.Attribute của UnityEngine:</p>
 
-<p>•  Sử dụng phương thức <strong>SendMessage</strong> hoặc <strong>BroadcastMessage</strong> để gửi một message đến một GameObject khác, và sau đó xử lý message đó trong method của GameObject đó. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gửi một message đến một GameObject khác</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"SomeMessage"</span><span class="p">);</span>
-<span class="c1">// Xử lý message đó trong method của GameObject đó</span>
-<span class="k">void</span> <span class="nf">SomeMessage</span><span class="p">()</span>
+<p>•  <strong>[AddComponentMenu]</strong>: Thuộc tính này dùng để thêm một class kế thừa từ MonoBehaviour vào menu Components của trình soạn thảo Unity. Thuộc tính này nhận vào một chuỗi là tên của menu và tùy chọn một số nguyên là thứ tự của menu. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">AddComponentMenu</span><span class="p">(</span><span class="s">"Custom/MyScript"</span><span class="p">,</span> <span class="m">1</span><span class="p">)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">MyScript</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-	<span class="c1">// Làm gì đó</span>
+    <span class="c1">// Your code here</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>•  Sử dụng phương thức <strong>Invoke</strong> hoặc <strong>StartCoroutine</strong> để gọi một method của một GameObject khác với một độ trễ hoặc một cách liên tục. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gọi một method của một GameObject khác với một độ trễ 5 giây</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">(</span><span class="s">"SomeMethod"</span><span class="p">,</span> <span class="m">5f</span><span class="p">);</span>
-<span class="c1">// Gọi một method của một GameObject khác một cách liên tục</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">StartCoroutine</span><span class="p">(</span><span class="s">"SomeMethod"</span><span class="p">);</span>
-</code></pre></div></div>
-
-<p>•  Sử dụng phương thức <strong>AddListener</strong> để đăng ký một method của một GameObject hiện tại với một event của một GameObject khác, và sau đó gọi method đó khi event được kích hoạt. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Đăng ký một method của một GameObject hiện tại với một event của một GameObject khác</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">SomeMethod</span><span class="p">);</span>
-<span class="c1">// Gọi method đó khi event được kích hoạt</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
-</code></pre></div></div>
-
-<h3 id="các-cách-truyền-và-nhận-dữ-liệu-từ-gameobject-này-sang-gameobject-khác">
-<a class="anchor" href="#c%C3%A1c-c%C3%A1ch-truy%E1%BB%81n-v%C3%A0-nh%E1%BA%ADn-d%E1%BB%AF-li%E1%BB%87u-t%E1%BB%AB-gameobject-n%C3%A0y-sang-gameobject-kh%C3%A1c" aria-hidden="true" spy-title="Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác."><span class="octicon octicon-link"></span></a>Các cách truyền và nhận dữ liệu từ GameObject này sang GameObject khác.</h3>
-
-<p>•  Sử dụng <strong>biến public</strong> hoặc <strong>[SerializeField]</strong> để lưu trữ dữ liệu trong một GameObject, và sau đó gán reference của GameObject đó cho một GameObject khác trong <strong>Inspector</strong>. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Khai báo một biến public để lưu trữ dữ liệu kiểu int</span>
-<span class="k">public</span> <span class="kt">int</span> <span class="n">someData</span><span class="p">;</span>
-<span class="c1">// Khai báo một biến [SerializeField] để lưu trữ reference của một GameObject khác</span>
-<span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span> <span class="k">private</span> <span class="n">GameObject</span> <span class="n">otherGameObject</span><span class="p">;</span>
-</code></pre></div></div>
-
-<p>•  Sử dụng phương thức <strong>GetComponent</strong> hoặc <strong>GetComponentInChildren</strong> để lấy một thành phần của một GameObject khác, và sau đó truy cập vào dữ liệu của thành phần đó. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Lấy một thành phần ScriptA của một GameObject khác</span>
-<span class="n">ScriptA</span> <span class="n">scriptA</span> <span class="p">=</span> <span class="n">otherGameObject</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ScriptA</span><span class="p">&gt;();</span>
-<span class="c1">// Truy cập vào dữ liệu của ScriptA</span>
-<span class="kt">int</span> <span class="n">someData</span> <span class="p">=</span> <span class="n">scriptA</span><span class="p">.</span><span class="n">someData</span><span class="p">;</span>
-</code></pre></div></div>
-
-<p>•  Sử dụng phương thức <strong>SendMessage</strong> hoặc <strong>BroadcastMessage</strong> để gửi một message đến một GameObject khác, và sau đó xử lý message đó trong method của GameObject đó. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gửi một message đến một GameObject khác, kèm theo một dữ liệu kiểu int</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"SomeMessage"</span><span class="p">,</span> <span class="m">10</span><span class="p">);</span>
-<span class="c1">// Xử lý message đó trong method của GameObject đó, và lấy dữ liệu kiểu int</span>
-<span class="k">void</span> <span class="nf">SomeMessage</span><span class="p">(</span><span class="kt">int</span> <span class="n">someData</span><span class="p">)</span>
+<p>•  <strong>[ContextMenu]</strong>: Thuộc tính này dùng để thêm một function vào menu ngữ cảnh của trình soạn thảo Unity. Thuộc tính này nhận vào một chuỗi là tên của menu. Function phải không có tham số và không trả về giá trị. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">MyScript</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-	<span class="c1">// Làm gì đó với someData</span>
+    <span class="p">[</span><span class="nf">ContextMenu</span><span class="p">(</span><span class="s">"Reset Position"</span><span class="p">)]</span>
+    <span class="k">void</span> <span class="nf">ResetPosition</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">transform</span><span class="p">.</span><span class="n">position</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>•  Sử dụng phương thức <strong>Invoke</strong> hoặc <strong>StartCoroutine</strong> để gọi một method của một GameObject khác, và sau đó truyền dữ liệu vào method đó. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Gọi một method của một GameObject khác, và truyền vào một dữ liệu kiểu int</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">(</span><span class="s">"SomeMethod"</span><span class="p">,</span> <span class="m">10</span><span class="p">);</span>
-<span class="c1">// Định nghĩa method đó, và nhận dữ liệu kiểu int</span>
-<span class="k">void</span> <span class="nf">SomeMethod</span><span class="p">(</span><span class="kt">int</span> <span class="n">someData</span><span class="p">)</span>
+<p>•  <strong>[ExecuteInEditMode]</strong>: Thuộc tính này dùng để cho phép một class kế thừa từ MonoBehaviour chạy trong chế độ soạn thảo, không cần phải chạy trò chơi. Thuộc tính này không có tham số. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">ExecuteInEditMode</span><span class="p">]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">MyScript</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-	<span class="c1">// Làm gì đó với someData</span>
+    <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"This runs in edit mode"</span><span class="p">);</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>•  Sử dụng phương thức <strong>AddListener</strong> để đăng ký một method của một GameObject hiện tại với một event của một GameObject khác, và sau đó truyền dữ liệu vào event đó. Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Đăng ký một method của một GameObject hiện tại với một event của một GameObject khác</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">SomeMethod</span><span class="p">);</span>
-<span class="c1">// Gọi event đó, và truyền vào một dữ liệu kiểu int</span>
-<span class="n">otherGameObject</span><span class="p">.</span><span class="n">someEvent</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
-<span class="c1">// Định nghĩa method đó, và nhận dữ liệu kiểu int</span>
-<span class="k">void</span> <span class="nf">SomeMethod</span><span class="p">(</span><span class="kt">int</span> <span class="n">someData</span><span class="p">)</span>
+<p>•  <strong>[HideInInspector]</strong>: Thuộc tính này dùng để ẩn một biến công khai khỏi Inspector, ngay cả khi nó là public. Thuộc tính này không có tham số. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">MyScript</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-	<span class="c1">// Làm gì đó với someData</span>
+    <span class="p">[</span><span class="n">HideInInspector</span><span class="p">]</span>
+    <span class="k">public</span> <span class="kt">float</span> <span class="n">speed</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Ví dụ:<br></p>
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// SendMessage, BroadcastMessage có ở cả gameObject và MonoBehaviour, nhưng Invoke, StartCoroutine thì chỉ có trên MonoBehaviour</span>
-<span class="n">top1</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"Log"</span><span class="p">);</span> <span class="c1">// hoặc objectC.BroadcastMessage("Log"); // BroadcastMessage call tất cả, SendMessage chỉ THIS</span>
-
-<span class="n">top1</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"LogPrivate"</span><span class="p">);</span> <span class="c1">// call tất cả, kể cả private</span>
-<span class="n">top1</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"SpecialMethod"</span><span class="p">);</span> <span class="c1">// log lỗi nếu không tồn tại methodName</span>
+<p>•  <strong>[SerializeField]</strong>: Thuộc tính này dùng để cho phép một biến riêng tư hiển thị trong Inspector, để có thể chỉnh sửa giá trị của nó. Thuộc tính này không có tham số. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">MyScript</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
+    <span class="k">private</span> <span class="kt">float</span> <span class="n">health</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
       </div>
