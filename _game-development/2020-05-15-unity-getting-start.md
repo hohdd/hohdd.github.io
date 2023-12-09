@@ -22,15 +22,34 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Get_Started # this for AMP related post
+collection: Uncategorized # this for AMP related post
 ### category: dùng để group collection
-category: Get_Started
+category: Uncategorized
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
 ### permalink: /url-ghi-de-mac-dinh # cân nhắc nếu muốn dùng!
 # ROADMAP: https://github.com/utilForever/game-developer-roadmap
 ---
+
+## Tổng quan phát triển Game với Unity Engine
+
+Tổng quan các bước:
+- Bước 1: Tải và cài đặt Unity Engine từ trang web chính thức. Bạn cần chọn phiên bản phù hợp với hệ điều hành và nhu cầu của bạn. Bạn cũng cần cài đặt Visual Studio để viết code cho game của bạn.
+- Bước 2: Tạo một project mới trong Unity Engine. Bạn cần chọn một template cho project của bạn, tùy thuộc vào bạn muốn làm game 2D hay 3D. Bạn cũng cần đặt tên và chọn vị trí lưu project của bạn.
+- Bước 3: Làm quen với giao diện của Unity Engine. Bạn sẽ thấy nhiều cửa sổ khác nhau, như Scene, Game, Hierarchy, Inspector, Assets, v.v. Bạn cần biết chức năng của từng cửa sổ và cách thao tác với chúng.
+- Bước 4: Thêm các GameObject vào Scene. GameObject là các đối tượng cơ bản trong game của bạn, như nhân vật, đạo cụ, phong cảnh, v.v. Bạn có thể tạo ra các GameObject mới hoặc sử dụng các GameObject có sẵn trong Assets. Bạn cần điều chỉnh vị trí, kích thước, góc quay, và các thuộc tính khác của các GameObject trong Inspector.
+- Bước 5: Viết kịch bản cho game của bạn. Kịch bản là các đoạn code được gán cho các GameObject để xác định hành vi và tương tác của chúng. Bạn có thể viết kịch bản bằng C# trong Visual Studio và sau đó kéo thả vào GameObject trong Unity Engine. Bạn cần tuân theo các quy tắc và cấu trúc của ngôn ngữ lập trình và Unity Engine khi viết kịch bản.
+- Bước 6: Thêm các thành phần khác cho game của bạn, như đồ họa, âm thanh, vật lý, v.v. Bạn có thể sử dụng các công cụ và thư viện có sẵn trong Unity Engine hoặc tìm kiếm và tải về từ các nguồn khác. Bạn cần chú ý đến các yếu tố như độ phân giải, định dạng, tương thích, v.v. khi thêm các thành phần này vào game của bạn.
+- Bước 7: Kiểm tra và xử lý lỗi cho game của bạn. Bạn có thể sử dụng nút Play để chạy thử game của bạn trong Unity Engine. Bạn cần quan sát và kiểm tra xem game của bạn có hoạt động đúng như mong muốn hay không, có bị lỗi hay không, và có cần cải thiện hay không. Bạn có thể sử dụng cửa sổ Console để xem các thông báo và lỗi của game của bạn. Bạn cần sửa chữa các lỗi và cải thiện game của bạn cho đến khi bạn hài lòng với kết quả.
+- Bước 8: Xuất bản và phân phối game của bạn. Bạn có thể sử dụng công cụ Build để xuất bản game của bạn cho nhiều nền tảng khác nhau, như Windows, Android, iOS, v.v. Bạn cần chọn các tùy chọn phù hợp cho game của bạn, như độ phân giải, chất lượng, biểu tượng, v.v. Bạn cũng cần đảm bảo rằng game của bạn tuân thủ các quy định và yêu cầu của các nền tảng đó. Sau khi xuất bản, bạn có thể phân phối game của bạn qua các kênh khác nhau, như trang web, cửa hàng ứng dụng, mạng xã hội, v.v.
+
+Tổng quan phương pháp luyện tập:
+- Bạn nên bắt đầu với các dự án game đơn giản và cơ bản, để nắm vững các khái niệm và kỹ năng cần thiết cho làm game. Bạn có thể tham khảo các dự án game mẫu của Unity, như Roll-a-ball, Space Shooter, Flappy Bird, v.v. Bạn có thể tìm thấy chúng ở đây.
+- Bạn nên thử nghiệm và thay đổi các thành phần của game, như GameObject, Script, Component, Asset, v.v. để xem ảnh hưởng của chúng đến game. Bạn cũng nên tạo ra các phiên bản khác nhau của game, như thêm hoặc bớt các tính năng, đổi màu sắc, âm thanh, v.v. để tăng sự sáng tạo và linh hoạt của bạn.
+- Bạn nên học hỏi từ các nguồn đáng tin cậy và chất lượng, như tài liệu chính thức của Unity, các video hướng dẫn trên YouTube, các khóa học trực tuyến, các diễn đàn và cộng đồng của các lập trình viên game, v.v. Bạn nên chọn các nguồn phù hợp với trình độ và mục tiêu của bạn, và áp dụng những kiến thức và kinh nghiệm mà bạn học được vào game của bạn.
+- Bạn nên thường xuyên kiểm tra và xử lý lỗi cho game của bạn, bằng cách sử dụng các công cụ và phương pháp khác nhau, như Play Mode, Debug Mode, Console, Breakpoint, v.v. Bạn nên tìm hiểu nguyên nhân và cách khắc phục các lỗi thường gặp khi làm game với Unity, như NullReferenceException, IndexOutOfRangeException, MissingReferenceException, v.v.
+- Bạn nên nhận và đánh giá phản hồi từ người dùng và người chơi cho game của bạn, bằng cách chia sẻ và phân phối game của bạn qua các kênh khác nhau, như trang web, cửa hàng ứng dụng, mạng xã hội, v.v. Bạn nên lắng nghe và xem xét các ý kiến và góp ý của người dùng và người chơi, để cải thiện và nâng cao chất lượng và trải nghiệm của game của bạn.
 
 ## Getting Start
 1. Tải Unity Hub > Đăng nhập bằng email > nhận mã qua email

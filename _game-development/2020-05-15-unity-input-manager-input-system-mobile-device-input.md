@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: "[Input] Unity Input Manager - Input System - Mobile device input"
-description: "[Input] Unity Input Manager - Input System - Mobile device input"
+title: "Unity Input Manager - Input System - Mobile device input"
+description: "Unity Input Manager - Input System - Mobile device input"
 
 ### HUMAN
-header: "[Input] Unity Input Manager - Input System - Mobile device input"
+header: "Unity Input Manager - Input System - Mobile device input"
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
@@ -23,9 +23,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Unity # this for AMP related post
+collection: "Chủ đề" # this for AMP related post
 ### category: dùng để group collection
-category: Unity
+category: "Chủ đề"
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
@@ -111,7 +111,7 @@ Tên Key tuân theo các quy ước đặt tên sau:
 - Nếu hai hoặc nhiều trục có cùng tên, truy vấn sẽ trả về trục có giá trị tuyệt đối lớn nhất. Điều này cho phép gán nhiều thiết bị đầu vào cho một tên trục.
 
 Ví dụ lấy giá trị Input "Horizontal" và "Vertical" và thay đổi "transform.Translate" để d chuyển GameObject.
-```c#
+```csharp
 float moveSpeed = 10; // Xác định vận tốc chuyển động của vật.
 
 float horizontalInput = Input.GetAxis("Horizontal"); // Lấy giá trị của trục đầu vào Horizontal.

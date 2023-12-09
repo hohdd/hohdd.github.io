@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)"
-description: "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)"
+title: "Physics: mô phỏng vật lý, gia tốc, trọng lực, va chạm"
+description: "Physics: mô phỏng vật lý, gia tốc, trọng lực, va chạm"
 
 ### HUMAN
-header: "[Physics] mô phỏng vật lý - gia tốc, trọng lực (gravity), va chạm (collision)"
+header: "Physics: mô phỏng vật lý, gia tốc, trọng lực, va chạm"
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
@@ -23,9 +23,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Unity # this for AMP related post
+collection: "Chủ đề" # this for AMP related post
 ### category: dùng để group collection
-category: Unity
+category: "Chủ đề"
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700

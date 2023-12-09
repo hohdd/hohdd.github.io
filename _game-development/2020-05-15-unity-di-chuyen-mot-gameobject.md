@@ -23,9 +23,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Scripts # this for AMP related post
+collection: "Chủ đề" # this for AMP related post
 ### category: dùng để group collection
-category: Scripts
+category: "Chủ đề"
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
@@ -35,7 +35,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Di chuyển một GameObject dựa trên Input từ người dùng
 
-```C#
+```csharp
 void Update()
 {
     // GetAxis: trả về giá trị tăng dần 0->1, luôn là 1 nếu không thả phím
@@ -106,7 +106,7 @@ void Update()
 
 **GetKeyUp**: Phương thức này trả về true nếu một phím được thả ra.
 
-```C#
+```csharp
 float xAxis = Input.GetAxis("Horizontal"); // -1<-0->+1
 float xAxisRaw = Input.GetAxisRaw("Horizontal"); // -1/0/+1
 bool isKeyDown = Input.GetKeyDown(KeyCode.A);
@@ -138,7 +138,7 @@ Ngoài ra, bạn cũng có thể sử dụng các phương thức sau để lấ
 
 **Rotate**: Phương thức này xoay GameObject theo một góc.
 
-```C#
+```csharp
 // Di chuyển một GameObject sang bên phải
 gameObject.Translate(1, 0, 0); // X-Y-Z của 'Translate' tùy theo quy tắc bàn tay trái
 
@@ -153,7 +153,7 @@ gameObject.transform.Rotate(new Vector3(0, 0, 1)); // X-Y-Z của 'Vector3' tùy
 
 **AddTorque**: Phương thức này thêm một mô-men xoắn vào GameObject.
 
-```C#
+```csharp
 // Thêm một lực 'AddForce' vào GameObject
 rigidbody = gameObject.GetComponent<Rigidbody>();
 rigidbody.AddForce(xAxis * 1500 * Time.deltaTime * new Vector3(0, 0, 1)); // X-Y-Z của 'Vector3' theo QT BTT

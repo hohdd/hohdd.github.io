@@ -22,9 +22,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Unity # this for AMP related post
+collection: "Chủ đề" # this for AMP related post
 ### category: dùng để group collection
-category: Unity
+category: "Chủ đề"
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700

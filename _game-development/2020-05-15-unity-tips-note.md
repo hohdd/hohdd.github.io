@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: Unity Tips - Note
-description: Unity Tips - Note
+title: Unity - Tips, Note
+description: Unity - Tips, Note
 
 ### HUMAN
-header: Unity Tips - Note
+header: Unity - Tips, Note
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
@@ -23,9 +23,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Get_Started # this for AMP related post
+collection: Tips # this for AMP related post
 ### category: dùng để group collection
-category: Get_Started
+category: Tips
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
@@ -68,4 +68,8 @@ date: 2020-05-15 14:26:14 +0700
 | UXML đại diện luôn là "VisualTreeAsset" | Kể cả có reference bằng kéo thả vào GameObject ([SerializeField])
 | UIDocument GameObject có 3 điểm: Panel Setting, Source Asset, Sort Order | Có thể có nhiều UIDocument GameObject trong Screen và cùng trỏ đến 1 Panel Setting
 | Show/Hide một VisualElement bằng 'style.display' và 'style.visibility' | this.style.display = DisplayStyle.Flex/None; this.style.visibility = Visibility.Visible/Hidden;
+| sử dụng uxmlModal.CloneTree(this) thì không cần Instantiate() đã có luôn VisualElement cho "this" | CloneTree của VisualTreeAsset sẽ Instantiate luôn cho "this" trong .CloneTree(this)
+| các UIDocument chung panelSettings có "rootVisualElement" riêng | "rootVisualElement" từ UIDocument không phải là "panelSettings"
+| Gửi/Nhận Event lúc "AddListener" phải có "sender" và "receiver" ở cùng 1 nơi | ```sender.myEvent.AddListener(receiver.OnEventReceived); // [System.Serializable] public class MyIntEvent : UnityEvent<int> {}```
+| GameObject.FindWithTag trả về GameObject. | GetComponentInChildren chỉ tìm được những Object/Component có extend ModalController : MonoBehaviour
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}

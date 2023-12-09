@@ -23,9 +23,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Unity # this for AMP related post
+collection: "Chủ đề" # this for AMP related post
 ### category: dùng để group collection
-category: Unity
+category: "Chủ đề"
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
@@ -73,7 +73,7 @@ Bạn có thể thêm các UI Controls theo những cách sau:
 - Sử dụng tệp văn bản giống XML (UXML) để thêm các UI Controls
 - Sử dụng tập lệnh C# để thêm các UI Controls
 
-```C#
+```csharp
 public class MyCustomEditor : EditorWindow // custom Editor
 {
     [SerializeField]
@@ -161,7 +161,7 @@ Trong UXML sử dụng template sẽ có khai báo giống thế này:
 
 Trong UI Builder, click chuột phải vào c (một phần UXML hiện tại trong Hierarchy) và chọn "Create Template" > sau khi tạo Template thì Sub-Document trở thành "**TemplateContainer**".
 
-```XML
+```xml
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:Template name="ListEntry" src="project://database/Assets/UI/ListEntry.uxml?fileID=9197481963319205126&amp;guid=f511ca1ef59a15b4aa606c94f8049527&amp;type=3#ListEntry" />
     <ui:Template name="background" src="project://database/Assets/UI/Templates/background.uxml?fileID=9197481963319205126&amp;guid=4081ee76a069a0c41a0b2ae2be816d44&amp;type=3#background" />
@@ -181,7 +181,7 @@ Trong UI Builder, click chuột phải vào c (một phần UXML hiện tại tr
 
 ## Thêm Selector vào StyleSheets
 
-```CSS
+```css
 #elementNameOrId (bắt đầu với #)
 .styleClassName (bắt đầu với .)
 .parentClassName > .directChildClassName
@@ -204,7 +204,7 @@ Trong UI Builder không thể tạo USS variables, sử dụng text editor để
 - USS không hỗ trợ các phép toán trên biến VÀ không hỗ trợ hàm var() bên trong các hàm khác. VD: ```background-color: rgb(var(--red), 0, 0);```
 - Trong UI Builder có thể xem được property nào đang sử dụng giá trị biến thì label sẽ được bọc trong 1 box<br>![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/UIBuilder/USSVariablesSet.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 
-```CSS
+```css
 :root {
   --color-1: blue;
   --color-2: yellow;
@@ -240,7 +240,7 @@ Trong UI Builder không thể tạo USS variables, sử dụng text editor để
 - ```Query<Type>: VD: VisualElement result = root.Query<Button>().AtIndex(2);```
 - Query with a predicate: VD: ```List<VisualElement> result = root.Query(className: "yellow").Where(elem => elem.tooltip == "").ToList();```
 - Complex hierarchical queries:
-```C#
+```csharp
 VisualElement result = root.Query<Button>(className: "yellow", name: "OK").First();
 VisualElement result = root.Query<VisualElement>("container2").Children<Button>("Cancel").First();
 root.Query().Where(elem => elem.tooltip == "").ForEach(elem => elem.tooltip="This is a tooltip!");
@@ -257,7 +257,7 @@ root.Query().Where(elem => elem.tooltip == "").ForEach(elem => elem.tooltip="Thi
 Tạo Class extend "**VisualElement**" (ko extend built-in UI controls vì nó có thể thay đổi trong tương lai).
 
 Bạn có thể khởi tạo một điều khiển tùy chỉnh trong constructor của nó. Tuy nhiên, nếu ứng dụng của bạn cần, bạn có thể trì hoãn việc khởi chạy cho đến khi điều khiển tùy chỉnh được thêm vào giao diện người dùng. Để thực hiện việc này, hãy đăng ký lệnh gọi lại cho **AttachToPanelEvent**. Để phát hiện điều khiển tùy chỉnh của bạn đã bị xóa khỏi giao diện người dùng, hãy sử dụng lệnh gọi lại **DetachFromPanelEvent**.
-```C#
+```csharp
 var myCustomElement = rootVisualElement.Q(className: "my-custom-element");
 myCustomElement.RegisterCallback<AttachToPanelEvent>(e =>
     { /* do something here when element is added to UI */ });
@@ -282,7 +282,7 @@ Cách tiếp cận UXML-first sẽ thêm children sau khi xây dựng element.
 
 1. Tạo UXML document (CardElement.uxml)
 
-    ```XML
+    ```xml
     <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
         <Style src="CardElementUI.uss" />
         <CardElement> 
@@ -297,7 +297,7 @@ Cách tiếp cận UXML-first sẽ thêm children sau khi xây dựng element.
 
 2. Tạo "custom control class" (CardElement.cs): Lớp điều khiển tùy chỉnh gán giá trị hình ảnh và huy hiệu cho CardElement ở một hàm Init() riêng.
 
-    ```C#
+    ```csharp
     using UnityEngine;
     using UnityEngine.UIElements;
 
@@ -326,7 +326,7 @@ Cách tiếp cận UXML-first sẽ thêm children sau khi xây dựng element.
 
 3. Khởi tạo trực tiếp trong C#
 
-    ```C#
+    ```csharp
     using UnityEngine;
     using UnityEngine.UIElements;
 
@@ -377,7 +377,7 @@ Với tiếp cận này, bạn chỉ bao gồm các phần tử con trong tài l
 1. UXML document (CardElement.uxml)
 2. Tạo "custom control class" (CardElement.cs): Lớp điều khiển tùy chỉnh gán giá trị hình ảnh và huy hiệu cho CardElement ở luôn contructor.
 
-    ```C#
+    ```csharp
     using UnityEngine;
     using UnityEngine.UIElements;
 
@@ -411,7 +411,7 @@ Với tiếp cận này, bạn chỉ bao gồm các phần tử con trong tài l
 
 3. Khởi tạo bên trong UXML gốc
 
-    ```XML
+    ```xml
     <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <CardElement />
     <CardElement />
@@ -421,7 +421,7 @@ Với tiếp cận này, bạn chỉ bao gồm các phần tử con trong tài l
 
 4. Khởi tạo trực tiếp trong C#
 
-    ```C#
+    ```csharp
     using UnityEngine;
     using UnityEngine.UIElements;
 
@@ -462,7 +462,7 @@ GameObject "UIDocument" cần có 2 reference là "source asset" và "script" ex
 3. Tạo một GameObject "UIDocument" trong Scene và thêm UI Document ở bước (1) làm "source asset" và add component là Script ở bước (2).
 
 **UI Document (.uxml)**<br>
-```XML
+```xml
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
         xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
         noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
@@ -476,7 +476,7 @@ GameObject "UIDocument" cần có 2 reference là "source asset" và "script" ex
 ```
 
 **Script extend "MonoBehaviour"**<br>
-```C#
+```csharp
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -530,7 +530,7 @@ public class SimpleRuntimeUI : MonoBehaviour
 4. Tạo UIDocument và kéo UXML vào Source Asset và add Component là MainUI.cs
 
 **MainUI.uxml**<br>
-```XML
+```xml
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/PositioningTest.uss?fileID=7433441132597879392&amp;guid=b58854dc6d9143c43b21527e4edfaf5c&amp;type=3#PositioningTest" />
     <ui:VisualElement class="box" />
@@ -543,7 +543,7 @@ public class SimpleRuntimeUI : MonoBehaviour
 ```
 
 **MainUI.uss**<br>
-```CSS
+```css
 .box {
     height: 70px;
     width: 70px;
@@ -569,7 +569,7 @@ public class SimpleRuntimeUI : MonoBehaviour
 ```
 
 **WithAnImageAsset.uxml**<br>
-```XML
+```xml
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement style="position: absolute; top: 0; right: 0;">
         <ui:VisualElement name="VElm01" style="height: 200px; background-image: url(&apos;project://database/Assets/Backgrounds/4.bmp?fileID=2800000&amp;guid=9a8a37633dcc73540b906cf4ed2b83b1&amp;type=3#4&apos;); -unity-background-scale-mode: scale-and-crop; width: 350px;" />
@@ -579,7 +579,7 @@ public class SimpleRuntimeUI : MonoBehaviour
 ```
 
 **WithAnImageAsset.cs**<br>
-```C#
+```csharp
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -619,7 +619,7 @@ public class WithAnImageAsset : VisualElement
 ```
 
 **MainUI.cs**<br>
-```C#
+```csharp
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -665,5 +665,5 @@ Transition events thông báo cho bạn về những thay đổi trong trạng t
 - "rootVisualElement" là một "VisualElement", giống "gameObject" luôn có sẵn và reference đển TOP-Element (giống "document" của HTML)
 - "Custom Control" gồm UXML + Script C# extend "VisualElement" (CloneTree(this)), Script C# cần "EXPOSE to UXML and UI Builder" và cần có "DEFAULT constructor". Script C# đại diện UXML để sử dụng trong coding (gán giá trị cần thiết ở Contructor hoặc Init khi thích hợp).
 - UXML đại diện luôn là "VisualTreeAsset" kể cả có reference bằng kéo thả ([SerializeField])
-
-TODO: https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-uxml-examples.html
+- sử dụng uxmlModal.CloneTree(this) thì không cần Instantiate() đã có luôn VisualElement cho "this"
+- các UIDocument chung panelSettings có "rootVisualElement" riêng, "rootVisualElement" từ UIDocument không phải là "panelSettings"
