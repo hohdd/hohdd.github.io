@@ -122,3 +122,12 @@ void SomeMethod(int someData)
 	// Làm gì đó với someData
 }
 ```
+
+Ví dụ:<br>
+```csharp
+// SendMessage, BroadcastMessage có ở cả gameObject và MonoBehaviour, nhưng Invoke, StartCoroutine thì chỉ có trên MonoBehaviour
+top1.SendMessage("Log"); // hoặc objectC.BroadcastMessage("Log"); // BroadcastMessage call tất cả, SendMessage chỉ THIS
+
+top1.SendMessage("LogPrivate"); // call tất cả, kể cả private
+top1.SendMessage("SpecialMethod"); // log lỗi nếu không tồn tại methodName
+```

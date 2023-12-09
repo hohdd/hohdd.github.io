@@ -110,3 +110,20 @@ public GameObject someGameObject;
 // Khai báo một biến [SerializeField] để lấy reference của một thành phần
 [SerializeField] private Rigidbody someRigidbody;
 ```
+
+Ví dụ:<br>
+```csharp
+// TÌM bằng phương thức của Object (sử dụng khi tìm trực tiếp đối tượng MonoBehaviour không phải GameObject)
+Object_a = FindObjectOfType<Object_A>(); // tìm thấy vì Scrip A được attach vào Object A
+Object_b = FindObjectOfType<Object_B>(); // tìm thấy vì Scrip B được attach vào Object B_1
+Object_c = FindObjectOfType<Object_C>(); // null - không tìm thấy vì Scrip C không được attach vào đâu cả
+
+// TÌM bằng phương thức của GameObject (sử dụng để tìm GameObject và thao tác với GameObject)
+var objectA = GameObject.Find("ObjectA"); // match tên - tìm thấy, ko có children ngoài transform
+var objectB = GameObject.Find("ObjectB"); // match tên - tìm thấy, có 1 child là ObjecB_1
+var objectC = GameObject.Find("ObjectC"); // match tên - tìm thấy, có 2 child là ObjectC_1 và Object_C2
+
+var a = GameObject.FindWithTag("TagA"); // không tìm thấy vì ko sử dụng TagA
+var b = GameObject.FindGameObjectWithTag("TagB"); // tìm thấy ObjectB đầu tiên (ko phải ObjectB_1)
+var c = GameObject.FindGameObjectsWithTag("TagC"); // mảng GameObject[3]
+```

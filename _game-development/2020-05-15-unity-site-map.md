@@ -33,25 +33,6 @@ date: 2020-05-15 14:26:14 +0700
 # ROADMAP: https://github.com/utilForever/game-developer-roadmap
 ---
 
-<!-- search -->
-<div id="search-container">
-	<label>
-		<input type="text" id="search-input" placeholder="Tìm kiếm...">
-	</label>
-	<div id="results-container" class="w3-card"></div>
-</div>
-
-<script src="/assets/js/search-custom.min.js" type="text/javascript"></script>
-<script>
-	(function() {
-	JSearch({
-		searchInput: document.getElementById('search-input'),
-		resultsContainer: document.getElementById('results-container'),
-			json: '/search/search-collections.json'
-	})
-	})();
-</script>
-
 ### Unity - Tips
 
 - Unity - Tips, Note

@@ -72,4 +72,9 @@ date: 2020-05-15 14:26:14 +0700
 | các UIDocument chung panelSettings có "rootVisualElement" riêng | "rootVisualElement" từ UIDocument không phải là "panelSettings"
 | Gửi/Nhận Event lúc "AddListener" phải có "sender" và "receiver" ở cùng 1 nơi | ```sender.myEvent.AddListener(receiver.OnEventReceived); // [System.Serializable] public class MyIntEvent : UnityEvent<int> {}```
 | GameObject.FindWithTag trả về GameObject. | GetComponentInChildren chỉ tìm được những Object/Component có extend ModalController : MonoBehaviour
+| Khi tìm kiếm Reference, đối tượng đó phải có trong Scence | Script MonoBehaviour nằm trong Assets mà không đính kèm vào GameObject thì không thể tìm thấy
+| SendMessage bị lỗi nếu không có "receiver", children không nhận được Message | "This GameObject" không tính Childrend! tất cả MonoBehaviour của GameObject sẽ được call
+| SendMessage kích hoạt gọi tất cả method của "This GameObject" kể cả method "private" | "SendMessage" call cả method "Private", method name không có thì sẽ có log lỗi
+| nếu muốn Children cũng được call thì sử dụng "BroadcastMessage" | "BroadcastMessage" call methodName trên This+Children
+| phân biệt instance MonoBehaviour (script) và "gameObject" | SendMessage, BroadcastMessage có ở cả 2, nhưng Invoke, StartCoroutine thì chỉ có trên MonoBehaviour
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}

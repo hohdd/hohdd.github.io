@@ -37,6 +37,17 @@ layout: default
     {% include reading_time.html %}{% if page.text2speech %} · {% include txt_2_speech.html %}{% endif %}
   </span>
 
+  <div class="w3-section konamiHide">
+    <!-- search -->
+    <div id="search-container">
+      <label>
+        <span class="dh-unnecessary">Tìm kiếm</span>
+        <input type="text" id="search-input" placeholder="Hoặc tìm bài viết khác..." class="w3-margin-top">
+      </label>
+      <div id="results-container" class="w3-card"></div>
+    </div>
+  </div>
+
 	<div class="w3-section">
     <div class="content-speech">
       {{ content | toc }}
@@ -67,17 +78,6 @@ layout: default
   {% endfor %}
   </ul>
   {% endfor %}
-
-  <div class="w3-section konamiHide">
-    <!-- search -->
-    <div id="search-container">
-      <label>
-        <span class="dh-unnecessary">Tìm kiếm</span>
-        <input type="text" id="search-input" placeholder="Hoặc tìm bài viết khác...">
-      </label>
-      <div id="results-container" class="w3-card"></div>
-    </div>
-  </div>
 
 </div>
 
