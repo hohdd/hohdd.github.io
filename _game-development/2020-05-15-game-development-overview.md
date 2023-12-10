@@ -66,3 +66,16 @@ date: 2020-05-15 14:26:14 +0700
 	- Công cụ xử lí ảnh, âm thanh
 	- Text Editor, IDE
 	- Source Control (GIT)
+
+### VII: Tools for Plan and Management
+
+	- Microsoft Excel (free) <--- Excel vẫn là chân ái...
+	- Google Docs (Trang tính) (free)
+	- Trello (free > pay): Tối đa 10 bảng, không cho TRƯỜNG TÙY CHỈNH
+	- Milanote (free > pay): Tối đa 10 file uploads, 100 items (notes, images or links), được chọn sẵn Templates...
+
+### VIII: Một số nguồn lực
+
+	- Researchgate
+	- Researcher.life
+	- Kodeco.com

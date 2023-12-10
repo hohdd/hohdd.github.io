@@ -87,3 +87,24 @@ public class MyScript : MonoBehaviour
     private float health;
 }
 ```
+
+•  [Tooltip("...")]: Đặt một thuộc tính Tooltip cho biến, hiển thị một thông báo khi rê chuột lên biến đó trong trình soạn thảo Unity.<br>
+```csharp
+[Tooltip("How quickly the kart reaches top speed.")]
+public float Acceleration;
+```
+
+•  [Min(0.001f), Tooltip("...")]: Đặt hai thuộc tính cho biến tiếp theo, là **Min** và **Tooltip**. Thuộc tính Min dùng để giới hạn giá trị nhỏ nhất của biến là 0.001f, để tránh trường hợp biến có giá trị âm hoặc bằng 0. Thuộc tính Tooltip dùng để hiển thị một thông báo khi rê chuột lên biến đó trong trình soạn thảo Unity.<br>
+```csharp
+[Min(0.001f), Tooltip("Top speed attainable when moving backward.")]
+public float ReverseSpeed;
+```
+
+•  [Range(0.2f, 1)]: Đặt một thuộc tính **Range** cho biến tiếp theo, giới hạn giá trị của biến trong khoảng từ 0.2f đến 1. Thuộc tính này cũng cho phép điều chỉnh giá trị của biến bằng một thanh trượt trong trình soạn thảo Unity.<br>
+```csharp
+[Range(0.0f, 1.0f)]
+[Tooltip("The amount of side-to-side friction.")]
+public float Grip;
+```
+
+•  **[Header("Movement Settings")]**: Đặt một **tiêu đề cho nhóm các biến tiếp theo**, hiển thị một dòng chữ "Movement Settings" trên Inspector, để tạo ra sự phân cách và dễ nhìn hơn.

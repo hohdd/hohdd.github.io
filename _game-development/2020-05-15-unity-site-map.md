@@ -49,6 +49,10 @@ date: 2020-05-15 14:26:14 +0700
 - Unity - Chủ đề (D) - Di chuyển một GameObject
 - Unity - Chủ đề (I) - Vấn đề kích thước trong game
 - Unity - Chủ đề (D) - System.Attribute của UnityEngine
+- Unity - Chủ đề (D) - Hiển thị Inspector dựa vào biến Public của Script
+- Unity - Chủ đề (D) - Toán học cơ bản liên quan đến không gian 3 chiều trong Unity Engine
+- Unity - Chủ đề (D) - Cách để làm một Game trở nên thú vị
+- Unity - Chủ đề (D) - Trình tự gọi các Event Functions (Script lifecycle)
 
 ### Unity - Package
 
@@ -59,6 +63,7 @@ date: 2020-05-15 14:26:14 +0700
 - Unity - Practice (D) - Project Boost
 - Unity - Practice (D) - Realistic lighting
 - Unity - Practice (T) - Luyện tập UI Toolkit
+- Unity - Practice (T) - Cách tạo Hệ thống tăng sức mạnh (Powerup System) trong Unity
 
 ### Unity - Confirm
 
