@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-system-attribute-cua-unity",
         "headline": "System.Attribute của UnityEngine",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-10 01:34:33 +0700",
+        "dateModified": "2023-12-11 01:06:04 +0700",
         "description": "System.Attribute của UnityEngine",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 1 min read </span> · 
+      <span title="reading time">· about 2 mins read </span> · 
       
       <span>
         
@@ -190,6 +190,24 @@
     <span class="k">private</span> <span class="kt">float</span> <span class="n">health</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
+
+<p>•  [Tooltip(“…”)]: Đặt một thuộc tính Tooltip cho biến, hiển thị một thông báo khi rê chuột lên biến đó trong trình soạn thảo Unity.<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">Tooltip</span><span class="p">(</span><span class="s">"How quickly the kart reaches top speed."</span><span class="p">)]</span>
+<span class="k">public</span> <span class="kt">float</span> <span class="n">Acceleration</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>•  [Min(0.001f), Tooltip(“…”)]: Đặt hai thuộc tính cho biến tiếp theo, là <strong>Min</strong> và <strong>Tooltip</strong>. Thuộc tính Min dùng để giới hạn giá trị nhỏ nhất của biến là 0.001f, để tránh trường hợp biến có giá trị âm hoặc bằng 0. Thuộc tính Tooltip dùng để hiển thị một thông báo khi rê chuột lên biến đó trong trình soạn thảo Unity.<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">Min</span><span class="p">(</span><span class="m">0.001f</span><span class="p">),</span> <span class="nf">Tooltip</span><span class="p">(</span><span class="s">"Top speed attainable when moving backward."</span><span class="p">)]</span>
+<span class="k">public</span> <span class="kt">float</span> <span class="n">ReverseSpeed</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>•  [Range(0.2f, 1)]: Đặt một thuộc tính <strong>Range</strong> cho biến tiếp theo, giới hạn giá trị của biến trong khoảng từ 0.2f đến 1. Thuộc tính này cũng cho phép điều chỉnh giá trị của biến bằng một thanh trượt trong trình soạn thảo Unity.<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">Range</span><span class="p">(</span><span class="m">0.0f</span><span class="p">,</span> <span class="m">1.0f</span><span class="p">)]</span>
+<span class="p">[</span><span class="nf">Tooltip</span><span class="p">(</span><span class="s">"The amount of side-to-side friction."</span><span class="p">)]</span>
+<span class="k">public</span> <span class="kt">float</span> <span class="n">Grip</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>•  <strong>[Header(“Movement Settings”)]</strong>: Đặt một <strong>tiêu đề cho nhóm các biến tiếp theo</strong>, hiển thị một dòng chữ “Movement Settings” trên Inspector, để tạo ra sự phân cách và dễ nhìn hơn.</p>
 
       </div>
 
