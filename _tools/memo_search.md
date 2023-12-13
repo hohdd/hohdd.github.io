@@ -106,7 +106,7 @@ thirdMenuHandler: toggleSideBar()
       ],
       pwToyRunfiles: '/tools/memo_search/data/MemRiseListFiles.json', /* require: arr[i].dataFilePath */
       searchResultTemplate: '<div class="w3-container w3-padding w3-hover-light-gray"><strong>{title}</strong><br/><small>{subTitle}</small></div>',
-      limit: 30
+      limit: 300
 		})
 	})();
 </script>
