@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Trình tự gọi các Event Functions (Script lifecycle)</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-trinh-tu-goi-event-function-lifecycle-script" />
+    <title>Biên dịch có điều kiện (Conditional compilation)</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-bien-dich-co-dieu-kien-conditional-compilation" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-trinh-tu-goi-event-function-lifecycle-script",
-        "headline": "Trình tự gọi các Event Functions (Script lifecycle)",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-bien-dich-co-dieu-kien-conditional-compilation",
+        "headline": "Biên dịch có điều kiện (Conditional compilation)",
         "datePublished": "2020-05-15 14:26:14 +0700",
         "dateModified": "2023-12-15 00:11:33 +0700",
-        "description": "Trình tự gọi các Event Functions (Script lifecycle)",
+        "description": "Biên dịch có điều kiện (Conditional compilation)",
         
         "author": {
           "@type": "Person",
@@ -117,7 +117,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Trình tự gọi các Event Functions (Script lifecycle)</h2>
+      <h2>Biên dịch có điều kiện (Conditional compilation)</h2>
       <span class="author">
         
         
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 5 mins read </span> · 
+      <span title="reading time">· about 1 min read </span> · 
       
       <span>
         
@@ -139,103 +139,55 @@
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h2"><a href="#trình-tự-gọi-các-event-functions-script-lifecycle" spy-toc="Trình tự gọi các Event Functions (Script lifecycle)">Trình tự gọi các Event Functions (Script lifecycle)</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#1-first-scene-load" spy-toc="1. First Scene load">1. First Scene load</a></li>
-<li class="toc-entry toc-h3"><a href="#2-before-the-first-frame-update" spy-toc="2. Before the first frame update">2. Before the first frame update</a></li>
-<li class="toc-entry toc-h3"><a href="#3-physics-update" spy-toc="3. Physics update">3. Physics update</a></li>
-<li class="toc-entry toc-h3"><a href="#4-input-events" spy-toc="4. Input Events">4. Input Events</a></li>
-<li class="toc-entry toc-h3"><a href="#5-during-a-frame-thứ-tự-update" spy-toc="5. During a Frame (Thứ tự Update)">5. During a Frame (Thứ tự Update)</a></li>
-<li class="toc-entry toc-h3"><a href="#6-in-between-frames" spy-toc="6. In between frames">6. In between frames</a></li>
-<li class="toc-entry toc-h3"><a href="#7-coroutines" spy-toc="7. Coroutines">7. Coroutines</a></li>
-<li class="toc-entry toc-h3"><a href="#8-các-event-khác-editor-animation-rendering-when-the-object-is-destroyed-when-quitting" spy-toc="8. Các Event khác (Editor, Animation, Rendering, When the Object is destroyed, When quitting)">8. Các Event khác (Editor, Animation, Rendering, When the Object is destroyed, When quitting)</a></li>
-</ul>
-</li>
-</ul><h2 id="trình-tự-gọi-các-event-functions-script-lifecycle">
-<a class="anchor" href="#tr%C3%ACnh-t%E1%BB%B1-g%E1%BB%8Di-c%C3%A1c-event-functions-script-lifecycle" aria-hidden="true" spy-title="Trình tự gọi các Event Functions (Script lifecycle)"><span class="octicon octicon-link"></span></a>Trình tự gọi các Event Functions (Script lifecycle)</h2>
+<li class="toc-entry toc-h2"><a href="#conditional-compilation" spy-toc="Conditional compilation">Conditional compilation</a></li>
+</ul><h2 id="conditional-compilation">
+<a class="anchor" href="#conditional-compilation" aria-hidden="true" spy-title="Conditional compilation"><span class="octicon octicon-link"></span></a>Conditional compilation</h2>
 
-<p>Sơ đồ dưới đây tóm tắt cách Unity sắp xếp và lặp lại chức năng sự kiện trong suốt vòng đời của tập lệnh.</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">ExecuteInEditMode</span><span class="p">]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">PlatformDetector</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="err">#</span><span class="k">if</span> <span class="n">UNITY_EDITOR</span>
+    <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Đang chạy trong editor"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="err">#</span><span class="n">endif</span>
 
-<p><img src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
+    <span class="err">#</span><span class="k">if</span> <span class="n">UNITY_ANDROID</span>
+    <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Đang chạy trên Android"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="err">#</span><span class="n">endif</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<h3 id="1-first-scene-load">
-<a class="anchor" href="#1-first-scene-load" aria-hidden="true" spy-title="1. First Scene load"><span class="octicon octicon-link"></span></a>1. First Scene load</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">PlatformDefines</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+    <span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span> <span class="p">{</span>
 
-<p>Các hàm sau đây được gọi khi một Scence bắt đầu (<strong>một lần cho mỗi đối tượng</strong> trong cảnh).</p>
-<ul>
-  <li>
-<strong>Awake</strong>: Hàm này luôn được gọi trước bất kỳ hàm Start nào và cũng ngay sau một Prefab được khởi tạo. (Nếu GameObject là inactive trong khi khởi động, Awake sẽ không được gọi cho đến khi nó được kích hoạt)</li>
-  <li>
-<strong>OnEnable</strong>: (chỉ được gọi nếu Object đang active): Hàm này được gọi ngay sau khi đối tượng được enabled. Điều này xảy ra khi một phiên bản MonoBehavior được tạo, chẳng hạn như khi một Level được tải hoặc GameObject với component script được khởi tạo.</li>
-</ul>
+        <span class="err">#</span><span class="k">if</span> <span class="n">UNITY_EDITOR</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Unity Editor"</span><span class="p">);</span>
+        <span class="err">#</span><span class="n">endif</span>
 
-<p><strong>Lưu ý rằng</strong>: Đối với các đối tượng được thêm vào Scene, các chức năng <strong>Awake và OnEnable</strong> của tất cả Script sẽ được gọi trước khi Start, Update, v.v. được gọi cho bất kỳ ai trong số chúng. Đương nhiên, điều này <strong>không thể được thực thi khi bạn khởi tạo một đối tượng trong quá trình chơi trò chơi</strong>.</p>
+        <span class="err">#</span><span class="k">if</span> <span class="n">UNITY_IOS</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"iOS"</span><span class="p">);</span>
+        <span class="err">#</span><span class="n">endif</span>
 
-<h3 id="2-before-the-first-frame-update">
-<a class="anchor" href="#2-before-the-first-frame-update" aria-hidden="true" spy-title="2. Before the first frame update"><span class="octicon octicon-link"></span></a>2. Before the first frame update</h3>
+        <span class="err">#</span><span class="k">if</span> <span class="n">UNITY_STANDALONE_OSX</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Standalone OSX"</span><span class="p">);</span>
+        <span class="err">#</span><span class="n">endif</span>
 
-<ul>
-  <li>
-<strong>Start</strong>: Start được gọi trước khi cập nhật frame đầu tiên chỉ khi phiên bản tập lệnh được enabled.</li>
-</ul>
+        <span class="err">#</span><span class="k">if</span> <span class="n">UNITY_STANDALONE_WIN</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Standalone Windows"</span><span class="p">);</span>
+        <span class="err">#</span><span class="n">endif</span>
 
-<p>Đối với các đối tượng là một phần của nội dung Scene, hàm <strong>Start được gọi trên tất cả</strong> các tập lệnh trước khi Update, v.v. được gọi cho bất kỳ tập lệnh nào trong số chúng. Đương nhiên, <strong>điều này không thể được</strong> thực thi <strong>khi bạn khởi tạo một đối tượng trong quá trình chơi</strong> trò chơi.</p>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<h3 id="3-physics-update">
-<a class="anchor" href="#3-physics-update" aria-hidden="true" spy-title="3. Physics update"><span class="octicon octicon-link"></span></a>3. Physics update</h3>
-
-<p>Sẽ bắt đầu ngay sau khi Start được gọi hoàn tất, <strong>FixedUpdate</strong> được gọi trước khi bắt đầu một <strong>Physics Cycle</strong>, thực hiện các xử lý <strong>OnTriggerXXX</strong>, <strong>OnCollisionXXX</strong> ở đây.</p>
-
-<p>Chu trình vật lý (Physics Cycle) có thể xảy ra nhiều hơn một lần trên mỗi khung hình nếu bước thời gian cố định (Fixed Time Step) nhỏ hơn thời gian cập nhật khung thực tế (vì <em>FixedUpdate được gọi</em> trên một bộ đếm thời gian đáng tin cậy, <em>độc lập với tốc độ khung hình</em>).</p>
-
-<h3 id="4-input-events">
-<a class="anchor" href="#4-input-events" aria-hidden="true" spy-title="4. Input Events"><span class="octicon octicon-link"></span></a>4. Input Events</h3>
-
-<p>Sau Physics update sẽ đến Input Events, xử lý các event <strong>OnMouseXXX</strong> ở đây.</p>
-
-<h3 id="5-during-a-frame-thứ-tự-update">
-<a class="anchor" href="#5-during-a-frame-th%E1%BB%A9-t%E1%BB%B1-update" aria-hidden="true" spy-title="5. During a Frame (Thứ tự Update)"><span class="octicon octicon-link"></span></a>5. During a Frame (Thứ tự Update)</h3>
-
-<p>Khi bạn theo dõi logic trò chơi và các tương tác, hoạt ảnh, máy quay phim, Vị trí, v.v., mô hình phổ biến là thực hiện hầu hết các tác vụ bên trong <strong>function Update</strong>, nhưng cũng có những function khác mà bạn có thể sử dụng.</p>
-
-<p><strong>FixedUpdate</strong>: FixedUpdate thường được gọi thường xuyên hơn Update. Nó <em>có thể được gọi nhiều lần trên mỗi khung hình</em>, nếu tốc độ khung hình thấp và nó có thể không được gọi giữa các khung hình nếu tốc độ khung hình cao. Tất cả các tính toán và cập nhật vật lý xảy ra ngay sau khi FixedUpdate. <em>Khi áp dụng tính toán chuyển động bên trong <strong>FixedUpdate</strong>, bạn không cần nhân giá trị của mình với <strong>Time.deltaTime</strong></em>. Điều này là do <em>FixedUpdate được gọi</em> trên một bộ đếm thời gian đáng tin cậy, <em>độc lập với tốc độ khung hình</em>.</p>
-
-<p><strong>Update</strong>: Update được gọi <em>một lần trên mỗi khung</em>. Đây là chức năng chính để cập nhật khung.</p>
-
-<p><strong>LateUpdate</strong>: LateUpdate được gọi <em>một lần trên mỗi khung</em>, sau khi Cập nhật xong. Bất kỳ tính toán nào được thực hiện trong <em>Update sẽ hoàn tất khi LateUpdate bắt đầu</em>. Một cách sử dụng phổ biến cho LateUpdate sẽ là các tính toán chuyển động và xoay của máy ảnh trong LateUpdate. <em>Điều này sẽ đảm bảo rằng nhân vật đã di chuyển hoàn toàn trước khi máy ảnh theo dõi vị trí của nó</em>.</p>
-
-<p>Nói chung, bạn <strong>không nên dựa vào thứ tự</strong> mà <strong>cùng một</strong> function được gọi cho các <strong>GameObjects khác nhau</strong>.</p>
-
-<h3 id="6-in-between-frames">
-<a class="anchor" href="#6-in-between-frames" aria-hidden="true" spy-title="6. In between frames"><span class="octicon octicon-link"></span></a>6. In between frames</h3>
-
-<ul>
-  <li>
-<strong>OnApplicationPause</strong>: được gọi ở cuối khung nơi <em>phát hiện pause</em>, hiệu quả giữa các bản cập nhật khung hình bình thường. <strong>Một khung hình bổ sung</strong> sẽ được phát hành sau khi OnApplicationPause được gọi <strong>để cho phép trò chơi hiển thị đồ họa cho biết trạng thái tạm dừng</strong>.</li>
-</ul>
-
-<h3 id="7-coroutines">
-<a class="anchor" href="#7-coroutines" aria-hidden="true" spy-title="7. Coroutines"><span class="octicon octicon-link"></span></a>7. Coroutines</h3>
-
-<p>Các funcions của coroutine (yield null/WaitForSeconds/WaitForFixedUpdate/WWW/StartCoroutine) được gọi sau khi hoàn tất <strong>Update</strong>. Một coroutine là một hàm có thể đình chỉ việc thực thi (yield) của nó cho đến khi <strong>YieldInstruction</strong> kết thúc. Các cách sử dụng khác nhau của Coroutines:</p>
-<ul>
-  <li>
-<strong>yield</strong>: Coroutine sẽ tiếp tục sau khi tất cả các Update đã được gọi trên khung tiếp theo.</li>
-  <li>
-<strong>yield WaitForSeconds</strong>: Tiếp tục sau một thời gian trễ được chỉ định, sau khi tất cả các Update đã được gọi cho frame.</li>
-  <li>
-<strong>yield WaitForFixedUpdate</strong>: Tiếp tục sau khi tất cả FixedUpdate đã được gọi trên tất cả các tập lệnh. Nếu coroutine yielded trước FixedUpdate, thì nó sẽ tiếp tục sau FixedUpdate trong khung hiện tại.</li>
-  <li>
-<strong>yield WWW</strong>: Tiếp tục sau khi quá trình tải xuống WWW hoàn tất.</li>
-  <li>
-<strong>yield StartCoroutine</strong>: Xâu chuỗi coroutine và sẽ đợi coroutine <strong>MyFunc</strong> hoàn thành trước.</li>
-</ul>
-
-<h3 id="8-các-event-khác-editor-animation-rendering-when-the-object-is-destroyed-when-quitting">
-<a class="anchor" href="#8-c%C3%A1c-event-kh%C3%A1c-editor-animation-rendering-when-the-object-is-destroyed-when-quitting" aria-hidden="true" spy-title="8. Các Event khác (Editor, Animation, Rendering, When the Object is destroyed, When quitting)"><span class="octicon octicon-link"></span></a>8. Các Event khác (Editor, Animation, Rendering, When the Object is destroyed, When quitting)</h3>
-
-<p>Xem thêm ở đây: <a href="https://docs.unity3d.com/Manual/ExecutionOrder.html" class="hvr-forward" rel="nofollow" target="_blank">Order of execution for event functions</a></p>
-
+<p>Xem thêm: <a href="https://docs.unity3d.com/2021.3/Documentation/Manual/PlatformDependentCompilation.html" class="hvr-forward" rel="nofollow" target="_blank">Conditional compilation</a></p>
 
       </div>
 
