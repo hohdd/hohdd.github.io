@@ -215,7 +215,7 @@ NGUYÊN TẮC VÀNG
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200518124447100.mp3 %}
+{% mp3 /assets/mp3/speech_20200518124447100.mp3 %}
 
 - Annie usually **goes** to school at 7 am.
 - Kate **is doing** her homework at the moment.

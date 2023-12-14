@@ -43,7 +43,7 @@ afraid, agree, angry, arrive, attack, bottom, clever, cruel, finally, hide, hunt
 
 ### Word List
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/4k-words/volume-1/4k-essential-volume1-01-01.mp3 %}
+{% mp3 /assets/4k-words/volume-1/4k-essential-volume1-01-01.mp3 %}
 
 | **afraid** [*adj*] {% u sợ%}. | không dám, sợ hải
 | When someone is **afraid**, they feel fear  | Khi ai đó sợ hãi, họ cảm thấy sợ hãi
@@ -147,7 +147,7 @@ afraid, agree, angry, arrive, attack, bottom, clever, cruel, finally, hide, hunt
 
 ### Story
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/4k-words/volume-1/4k-essential-volume1-01-02.mp3 %}
+{% mp3 /assets/4k-words/volume-1/4k-essential-volume1-01-02.mp3 %}
 
 <div class="w3-bar w3-light-gray">
     <button id="story-v1-02-tab" class="w3-bar-item w3-button w3-red" onclick="openTab('v1-02', 'story','trans')">Story</button>

@@ -243,7 +243,7 @@ date: 2019-06-13 22:26:14 +0700
 
 #### Những Động Từ thường dùng ở bàng thái cách
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/bang-thai-cach-dong-tu.mp3 %}
+{% mp3 /assets/mp3/bang-thai-cach-dong-tu.mp3 %}
 
 - to **advise** (that)
 - to **ask** (that)
@@ -259,7 +259,7 @@ date: 2019-06-13 22:26:14 +0700
 
 #### Những Tính Từ thường dùng ở bàng thái cách
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/bang-thai-cach-tinh-tu.mp3 %}
+{% mp3 /assets/mp3/bang-thai-cach-tinh-tu.mp3 %}
 
 - It is **best** (that)
 - It is **crucial** (that)
@@ -524,7 +524,7 @@ Khi chuyển từ loại 1 sang loại 2, hoặc loại 2 sang loại 3, bạn c
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200518143543628.mp3 %}
+{% mp3 /assets/mp3/speech_20200518143543628.mp3 %}
 
 - He is free after 8 pm.
 - She can play the guitar.
@@ -590,7 +590,7 @@ Khi chuyển từ loại 1 sang loại 2, hoặc loại 2 sang loại 3, bạn c
 - **If** I **spoke** German, I **would work** in Germany.
 - **If** she **knew** that, she **would be** very surprised.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200518144217685.mp3 %}
+{% mp3 /assets/mp3/speech_20200518144217685.mp3 %}
 
 - **If** I **had studied** harder, I **would have passed** the exam.
 - **If** it **hadn't rained**, she **would have gone** to the beach.
@@ -640,7 +640,7 @@ Khi chuyển từ loại 1 sang loại 2, hoặc loại 2 sang loại 3, bạn c
 - much → more → the most
 - little → less → the least
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200518144902737.mp3 %}
+{% mp3 /assets/mp3/speech_20200518144902737.mp3 %}
 
 - We have **more** *homework* **than** other students.
 - They earned **the most** points and therefore won the contest.

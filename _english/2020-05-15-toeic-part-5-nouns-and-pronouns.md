@@ -33,7 +33,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## KEY TEST 1
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/nouns-and-pronouns-key-test-1.mp3 %}
+{% mp3 /assets/mp3/nouns-and-pronouns-key-test-1.mp3 %}
 
 | Sentence | Translate | Remark
 |:-
@@ -81,7 +81,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## KEY TEST 2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/nouns-and-pronouns-key-test-2.mp3 %}
+{% mp3 /assets/mp3/nouns-and-pronouns-key-test-2.mp3 %}
 
 | Sentence | Translate | Remark
 |:-
@@ -129,7 +129,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## KEY TEST 3
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/nouns-and-pronouns-key-test-3.mp3 %}
+{% mp3 /assets/mp3/nouns-and-pronouns-key-test-3.mp3 %}
 
 | Sentence | Translate | Remark
 |:-

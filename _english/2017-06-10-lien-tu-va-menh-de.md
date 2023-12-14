@@ -361,7 +361,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200518162821570.mp3 %}
+{% mp3 /assets/mp3/speech_20200518162821570.mp3 %}
 
 - I like the smell of coffee, **but** I don't like drinking coffee.
 - I don't like drinking coffee, **so** I ordered some tea.
@@ -417,7 +417,7 @@ date: 2019-06-13 22:26:14 +0700
 - **In case** *it rains*, please take an umbrella when you go out.
 - **Now that** *I have passed the exam*, I can play games all day.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200518163107960.mp3 %}
+{% mp3 /assets/mp3/speech_20200518163107960.mp3 %}
 
 - We left early **so that** *we wouldn’t be caught in the traffic jam*.
 - **Even if** *you are confident in your ability*, never ever underestimate your opponents.

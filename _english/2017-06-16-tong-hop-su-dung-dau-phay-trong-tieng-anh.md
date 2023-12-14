@@ -34,7 +34,7 @@ date: 2019-06-13 22:26:14 +0700
 ### Chèn Link: [link](url){:.hvr-forward rel="nofollow" target="_blank"}
 ---
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/tong-hop-su-dung-dau-phay-trong-tieng-anh.mp3 %}
+{% mp3 /assets/mp3/tong-hop-su-dung-dau-phay-trong-tieng-anh.mp3 %}
 
 ## Sử dụng dấu phẩy
 

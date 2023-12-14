@@ -110,7 +110,7 @@ Trong tiếng Anh, có 2 loại từ thường được dùng để bổ nghĩa 
         - *Nếu bổ nghĩa cho **danh từ*** thì **đứng ngay trước** danh từ: I have **enough** *food* for all of us. → bổ nghĩa cho danh từ *food*
         - *Nếu bổ nghĩa cho các từ loại khác* thì **đứng ngay sau** từ đó: This house isn't *big* **enough** for us. → bổ nghĩa cho tính từ *big*
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/trangtu-chi-muc-do-thuonggap.mp3 %}
+{% mp3 /assets/mp3/trangtu-chi-muc-do-thuonggap.mp3 %}
 
 - Một số trạng từ chỉ mức độ thường gặp:
     - **absolutely, completely, perfectly, totally**: hoàn toàn
@@ -134,7 +134,7 @@ Trong tiếng Anh, có 2 loại từ thường được dùng để bổ nghĩa 
     - Khi bổ nghĩa cho cụm danh từ:
         - Sau từ mà nó bổ nghĩa. VD: The *food* **here** is delicious.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/trangtu-chi-noi-chon-thuonggap.mp3 %}
+{% mp3 /assets/mp3/trangtu-chi-noi-chon-thuonggap.mp3 %}
 
 - Một số trạng từ chỉ nơi chốn thường gặp:
     - **here** = ở đây / đến đây
@@ -161,7 +161,7 @@ Trong tiếng Anh, có 2 loại từ thường được dùng để bổ nghĩa 
     - Khi bổ nghĩa cho cụm danh từ:
         - Sau từ mà nó bổ nghĩa. VD: Young *people* **today** face a very difficult future at work.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/trangtu-chi-thoi-gian-thuonggap.mp3 %}
+{% mp3 /assets/mp3/trangtu-chi-thoi-gian-thuonggap.mp3 %}
 
 - Một số trạng từ chỉ thời gian thường gặp:
     - **today** = hôm nay
@@ -192,7 +192,7 @@ Trong tiếng Anh, có 2 loại từ thường được dùng để bổ nghĩa 
     - Khi bổ nghĩa cho tính từ, trạng từ, cụm danh từ, cụm giới từ:
         - Trước từ mà nó bổ nghĩa. VD: The fruit sold in this supermarket is **always** *fresh*. → bổ nghĩa cho tính từ *fresh*
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/trangtu-chi-tan-suat-thuonggap.mp3 %}
+{% mp3 /assets/mp3/trangtu-chi-tan-suat-thuonggap.mp3 %}
 
 - Một số trạng từ chỉ tần suất thường gặp:
     - **always** = luôn luôn
@@ -213,7 +213,7 @@ Trong tiếng Anh, có 2 loại từ thường được dùng để bổ nghĩa 
             - **Only** *my phone* can make calls to family in this area. → bổ nghĩa cho *my phone*: chỉ có điện thoại của tôi, không phải những cái khác.
             - My phone can **only** *make calls* to family in this area. → bổ nghĩa cho *make calls*: chỉ có mỗi chức năng là gọi điện.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/trangtu-hoi-tu-thuonggap.mp3 %}
+{% mp3 /assets/mp3/trangtu-hoi-tu-thuonggap.mp3 %}
 
 - Một số trạng từ hội tụ thường gặp:
     - **just, simply** = chỉ là, đơn giản là
@@ -234,7 +234,7 @@ Trong tiếng Anh, có 2 loại từ thường được dùng để bổ nghĩa 
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200522162116488.mp3 %}
+{% mp3 /assets/mp3/speech_20200522162116488.mp3 %}
 
 - He *spoke* **loudly**. It was an **extremely** *bad* match. He did the work **completely** *well*. **Personally**, *I’d rather not go out tonight.*
 - I bought **only** *the fruit*; The amusement park opens **only** *in the summer*; You can’t blame anyone else. *you* **alone** made the decision; He lost **almost** <u>all</u> *his money*.

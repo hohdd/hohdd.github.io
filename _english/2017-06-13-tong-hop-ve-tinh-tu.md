@@ -70,7 +70,7 @@ Chúng ta cũng dùng tính từ trong các cấu trúc sau đây:
 
 ## Các đuôi tính từ phổ biến
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/cac-duoi-tinh-tu-pho-bien.mp3 %}
+{% mp3 /assets/mp3/cac-duoi-tinh-tu-pho-bien.mp3 %}
 
 - **-able/-ible**. VD: drinkable, suitable, possible
 - **-al**. VD: formal, local, maternal
@@ -85,7 +85,7 @@ Chúng ta cũng dùng tính từ trong các cấu trúc sau đây:
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200522154544039.mp3 %}
+{% mp3 /assets/mp3/speech_20200522154544039.mp3 %}
 
 - tall, short, beautiful, friendly,… cheap, expensive, good, bad, small, big,…
 - <u>a pretty tall thin young black-haired English woman</u>. an old green **and** white T-shirt.

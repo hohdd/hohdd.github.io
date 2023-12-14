@@ -34,7 +34,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 1. cry, drive, funny, hope, laugh
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day1.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day1.mp3 %}
 
 | (v) cry, cried, cried - khóc | He **cries** when he is sad | Anh ấy khóc khi buồn
 | (v) drive, drove, driven - lái xe | He **drives** to work. | Anh ấy lái xe đi làm
@@ -45,7 +45,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 2. nice, smile, strong, student, young
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day2.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day2.mp3 %}
 
 | (adj) nice - tốt bụng, tử tế | Mary is very **nice**. | Mary rất tốt bụng.
 | (v) smile, smiled, smiled - cười, mỉm cười | She always **smiles**. | Cô ấy luôn tươi cười
@@ -56,7 +56,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 3. big, boy, child, have, loud
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day3.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day3.mp3 %}
 
 | (adj) big - to, lớn | The red apple is **big**. | Quả táo đó rất lớn.
 | (n) boy - cậu bé, con trai | The **boy** is ten years olds. | Cậu bé đó 10 tuổi.
@@ -67,7 +67,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 4. story, swim, today, watch, worry
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day4.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day4.mp3 %}
 
 | (n) story - truyện, câu chuyện | We read a **story** at bedtime. | Chúng tôi đọc truyện trước giờ đi ngủ.
 | (v) swim, swam, swum - bơi | He can **swim**. | Anh ấy có thể bơi.
@@ -78,7 +78,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 5. ÔN TẬP: "First day of School"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day5-ontap-first-day-of-school.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day5-ontap-first-day-of-school.mp3 %}
 
 | Sam **watches** the **big** yellow bus. | Sam nhìn theo chiếc xe buýt lớn màu vàng.
 | It stops, and the bus driver opens the door. | Nó dừng lại, và tài xế xe buýt mở cửa ra.
@@ -112,7 +112,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 6. able, alone, animal, become, call
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day6.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day6.mp3 %}
 
 | (adj) **able** - có thể, có khả năng | She is **able** to swim. | Cô ấy biết bơi.
 | (adj) **alone** - một mình | She **cries** when she is alone. | Cô ấy khóc khi ở một mình.
@@ -123,7 +123,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 7. catch, country, monkey, thin, word
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day7.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day7.mp3 %}
 
 | (v) **catch**, caught, caught - bắt được | He **catches** the ball. | Anh ấy bắt quả bóng.
 | (n) **country** - ngoại ô, ngoại thành | The farm is in the **country**. | Trang trại nằm ở ngoại thành.
@@ -134,7 +134,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 8. baby, clean, eat, enjoy, family
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day8.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day8.mp3 %}
 
 | (n) **baby** - em bé | The baby **cries** a lot. | Em bé khóc rất nhiều.
 | (v) **clean**, cleaned, cleaned - lau, cọ, rửa | She **cleans** the floor. | Cô ấy lau sàn nhà.
@@ -145,7 +145,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 9. fruit, jump, kind, man, parent
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day9.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day9.mp3 %}
 
 | (n) **fruit** - hoa quả | She **eats** fruit every day. | Cô ấy ăn hoa quả mỗi ngày.
 | (v) **jump**, jumped, jumped - nhảy lên/xuống | They **jump** into the water. | Họ nhảy xuống nước.
@@ -156,7 +156,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 10. ÔN TẬP: "Monkeys"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day10-ontap-monkeys.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day10-ontap-monkeys.mp3 %}
 
 | Monkeys **live** in groups. | Khỉ sống theo đàn.
 | They do not **live** alone. | Chúng không sống một mình.
@@ -189,7 +189,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 11. address, afternoon, come, home, letter
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day11.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day11.mp3 %}
 
 | **address** (n) - địa chỉ | My email **address** is fun54@yoohoo.com | Địa chỉ email của tôi là fun54@yoohoo.com
 | **afternoon** (n) - buổi chiều | He cleans his car in the **afternoon**. | Anh ấy rửa xe ô tô của mình vào buổi chiều.
@@ -200,7 +200,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 12. lunch, make, need, people, start
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day12.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day12.mp3 %}
 
 | **lunch** (n) bữa trưa | She eats a sandwich for **lunch** every day. | Cô ấy ăn trưa bằng bánh mì kẹp mỗi ngày.
 | **make**, made, made (v) - làm, tạo nên | My parents **make** good pies. | Bố mẹ tôi làm bánh rất ngon.
@@ -211,7 +211,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 13. cook, day, drink, front, great
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day13.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day13.mp3 %}
 
 | **cook**, cooked, cooked (v) - nấu ăn | Dad **cooks** dinner for us. | Bố nấu bữa tối cho chúng tôi.
 | **day** (n) - ngày, hôm, thứ | Which **day** do you have art class? | Cậu có lớp học vẽ vào hôm nào?
@@ -222,7 +222,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 14. play, see, send, small, time
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day14.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day14.mp3 %}
 
 | **play**, played, played (v) - chơi | We are able to **play** soccer after school today. | Hôm nay chúng ta có thể chơi bóng đá sau giờ học.
 | **see**, saw, seen (v) - nhìn, nhìn thấy, gặp | He **sees** the baby smile. | Anh ấy nhìn thấy em bé cười.
@@ -233,7 +233,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 15. ÔN TẬP: "Come to my Party"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day15-ontap-come-to-my-party.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day15-ontap-come-to-my-party.mp3 %}
 
 | Hi Anna, | Chào Anna,
 | My birthday is **this Saturday**. | Sinh nhật của tớ là vào thứ Bảy này.
@@ -268,7 +268,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 16. again, bad, buy, end, find
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day16.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day16.mp3 %}
 
 | **again** (adv) - lại lần nữa | He needs to write the letter **again**. | Anh ấy cần phải viết lại lá thư.
 | **bad** (adj) - xấu, không tốt, tệ, dở | The fruit is **bad**. | Trái cây đó (Quả này) thật dở.
@@ -279,7 +279,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 17. friend, say, speak, sweet, true
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day17.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day17.mp3 %}
 
 | **friend** (n) - bạn bè | He plays baseball with his **friends** in the afternoon. | Cậu ấy chơi bóng chày với bạn vào buổi chiều.
 | **say**, said, said (v) - nói | Please **say** your address again. | Xin vui lòng nhắc lại địa chỉ của bạn.
@@ -290,7 +290,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 18. answer, learn, like, long, minute
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day18.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day18.mp3 %}
 
 | **answer** (n) - câu trả lời, đáp án | Karen is able to give the right **answers**. | Karren có thể đưa ra các câu trả lời đúng.
 | **learn**, learnt/learned, learnt/learned (v) - học, tìm hiểu | He **learns** how to make pizza. | Anh ấy học cách làm pizza.
@@ -301,7 +301,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 19. sing, sit, star, think, town
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day19.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day19.mp3 %}
 
 | **sing**, sang, sung (v) - hát | She **sings** a great song. | Cô ấy hát một bài hát hay.
 | **sit**, sat, sat (v) - ngồi | The man **sits** under the tree. | Người đàn ông đó ngồi dưới gốc cây.
@@ -312,7 +312,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 20. ÔN TẬP: "Summer Song"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day20-ontap-summer-song.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day20-ontap-summer-song.mp3 %}
 
 | **Do** you **want to find** a movie **to watch?** | Bạn có muốn tìm một bộ phim để xem không?
 | **Go see** Summer Song *with your friends!* | Hãy xem thử Bài Ca Mùa Hè với bạn của bạn nhé!
@@ -342,7 +342,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 21. breakfast, carry, cheap, count, cut
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day21.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day21.mp3 %}
 
 | **breakfast** (n) - bữa sáng | What time do you eat **breakfast**? | Bạn ăn sáng lúc mấy giờ?
 | **carry**, carried, carried (v) - mang, cầm theo | She **carries** the animal to the car. | Cô ấy mang con vật đó lên ô tô.
@@ -353,7 +353,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 22. early, finish, flower, food, vegetable
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day22.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day22.mp3 %}
 
 | **early** (adj) - sớm | Rob gets up **early** on weekdays. | Rob dậy sớm vào ngày thường.
 | **finish**, finished, finished (v) - hoàn thành, làm xong. | They **finish** running. | Họ đã chạy xong.
@@ -364,7 +364,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 23. begin, excuse, heavy, market, meat
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day23.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day23.mp3 %}
 
 | **begin**, began, begun (v) - bắt đầu | The horses **begin** to run. | Những chú ngựa bắt đầu chạy.
 | **excuse** (v/n) - cớ, lý do | Her mother does not like her long **excuse**. | Mẹ cô gấy không thích cái cớ dài dòng của cô.
@@ -375,7 +375,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 24. money, put, station, visit, yesterday
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day24.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day24.mp3 %}
 
 | **money** (n) - tiền | He has a lot of **money**! | Anh ấy có rất nhiều tiền!
 | **put**, put, put (v) - cho, đặt vào | She **puts** money in the piggy bank. | Cô ấy đút tiền vào lợn.
@@ -386,7 +386,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 25. ÔN TẬP: "Market Day"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day25-ontap-market-day.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day25-ontap-market-day.mp3 %}
 
 | It **is** Friday. | Hôm nay là thứ Sáu.
 | It **is** *a big day*. | Hôm nay là một ngày trọng đại.
@@ -427,7 +427,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 26. cold, dard, dinner, dish, evening
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day26.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day26.mp3 %}
 
 | **cold** (adj) - lạnh | It is very **cold** today. | Hôm nay trời rất lạnh.
 | **dark** (adj) - tối | I cannot see well when it is **dark**. | Tôi không thể nhìn rõ khi trời tối.
@@ -438,7 +438,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 27. sick, snowy, sugar, tea, world
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day27.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day27.mp3 %}
 
 | **sick** (adj) - ốm, bệnh | He goes to bed early because he is **sick**. | Anh ấy đi ngủ sớm vì anh ấy ốm.
 | **snowy** (adj) - có tuyết rơi | It is **snowy** by our home. | Tuyết rơi gần nhà chúng tôi.
@@ -449,7 +449,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 28. hard, late, life, look, love
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day28.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day28.mp3 %}
 
 | **hard** (adj) - khó khăn, nặng nhọc | It is **hard** to carry the heavy box. | Thật khó để cầm một chiếc hộp nặng.
 | **late** (adj/adv) - muộn | He is **late**. | Anh ấy tới muộn.
@@ -460,7 +460,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 29. night, same, sleep, water, weak
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day29.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day29.mp3 %}
 
 | **night** (n) - đêm | The market is also open at **night**. | Chợ cũng mở vào ban đêm.
 | **same** (adj) - như nhau | I think the apples are the **same** size. | Tôi nghĩ mấy quả táo đó có kích cỡ giống nhau.
@@ -471,7 +471,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 30. ÔN TẬP: "Tea"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day30-ontap-tea.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day30-ontap-tea.mp3 %}
 
 | People all over the world love to drink tea. | Mọi người trên thế giới đều thích uống trà.
 | It can be hot or cold. | Có thể là trà nóng hoặc lạnh.
@@ -507,7 +507,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## AAA. BBB
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/cake-speaking/day.mp3 %}
+{% mp3 /assets/mp3-2/cake-speaking/day.mp3 %}
 
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 {% endcomment %}

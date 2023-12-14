@@ -33,7 +33,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 1.The Neighborhoods
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/1.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/1.mp3 %}
 
 - **This is** a neighborhood.
 - {% tooltip Neighborhood [(n) Khu vực lân cận, tình giao hảo giữa láng giềng, tình giao hảo người lân cận, tình hàng xóm] %} **have** people.
@@ -53,7 +53,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 2.The Pet Store
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/2.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/2.mp3 %}
 
 - **We go to** a pet store.
 - **We see** pets in the store.
@@ -74,7 +74,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 3.The Car Wash
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/3.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/3.mp3 %}
 
 - A car wash **has** cars.
 - A car wash **has** dirty cars.
@@ -89,7 +89,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 4. The Doctor
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/4.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/4.mp3 %}
 
 - **Doctors help** kids.
 - **Doctors help** {% tooltip adults [người lớn, người trưởng thành] %}.
@@ -104,7 +104,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 5. The Fire Station
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/5.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/5.mp3 %}
 
 - Firehouses **help**.
 - Firemen **help**.
@@ -119,7 +119,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 6. The {% tooltip Grocery Store [Cửa hàng tạp hóa] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/6.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/6.mp3 %}
 
 - The grocery store **is a place**.
 - The grocery store **has food**.
@@ -138,7 +138,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 7. The Park
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/7.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/7.mp3 %}
 
 - The park **is fun place**.
 - **There are** *people* **in the park**.
@@ -157,7 +157,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 8. The Pool
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/8.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/8.mp3 %}
 
 - The pool **is outside**.
 - Kids *swim* **at the pool**.
@@ -174,7 +174,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 9. The Police Station
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/9.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/9.mp3 %}
 
 - A police station has policemen.
 - A police station has policewomen.
@@ -189,7 +189,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 10. The School
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/10.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/10.mp3 %}
 
 - The school is a place.
 - There are books in the school.
@@ -209,7 +209,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 11. Time for School
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/11.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/11.mp3 %}
 
 - It is time for school.
 - I fix my hair.
@@ -224,7 +224,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 12. Our Daily Routine
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/12.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/12.mp3 %}
 
 - It is a new day!
 - We get up.
@@ -247,7 +247,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 13. Things Make Us Go!
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/13.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/13.mp3 %}
 
 - Things let us move.
 - Some things are old.
@@ -267,7 +267,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 14. Music is Fun!
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/14.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/14.mp3 %}
 
 - Music is fun.
 - Music is good.
@@ -282,7 +282,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 15. People live in Houses
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/15.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/15.mp3 %}
 
 - People live in houses.
 - Houses are small.
@@ -297,7 +297,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 16. Things that are rough
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/16.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/16.mp3 %}
 
 - Some things are {% tooltip rough [(adj) thô, nhám, lồi lõm, cọc cằn, thô lỗ. (v) sống vất vả. (n) đất gồ ghề, côn đồ] %}.
 - The tree is rough.
@@ -314,7 +314,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 17. Things that are cold
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/17.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/17.mp3 %}
 
 - Lots of things are cold.
 - Ice cream is cold.
@@ -332,7 +332,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 18. Things that are soft
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/18.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/18.mp3 %}
 
 - Soft things are all over.
 - Grass is soft.
@@ -351,7 +351,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 19. Things that are sticky
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/19.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/19.mp3 %}
 
 - Lots of things are {% tooltip sticky [(adj) dính, dính khó gỡ được] %}.
 - Paint is sticky.
@@ -369,7 +369,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## 20. Things that are warm
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-2/supper-simple-sentence/20.mp3 %}
+{% mp3 /assets/mp3-2/supper-simple-sentence/20.mp3 %}
 
 - Lots of things are warm.
 - The sun is warm.

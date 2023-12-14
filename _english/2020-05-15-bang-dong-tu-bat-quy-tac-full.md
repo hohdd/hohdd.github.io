@@ -35,7 +35,7 @@ date: 2020-05-15 14:26:14 +0700
 Đây là full danh sách 360 động từ bất quy tắc trong tiếng anh chuẩn nhất hệ mặt trời mà bạn đang tìm kiếm :D, sương sương có luôn cả audio chuẩn native để nghe nữa nhé bạn :)
 </div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/full-dong-tu-bat-quy-tac.mp3 %}
+{% mp3 /assets/mp3/full-dong-tu-bat-quy-tac.mp3 %}
 
 | 	STT	 | 	Nguyên thể	 | 	Quá khứ	 | 	Quá khứ phân từ 	 | 	Nghĩa 
 |:-

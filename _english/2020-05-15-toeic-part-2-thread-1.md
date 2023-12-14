@@ -71,7 +71,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns WHEN
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-001.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-001.mp3 %}
 
 |	Past Events	|	**When did** + S + V ~ ?	|	**When did** John *leave?*	|	John rời đi **khi nào?**
 |		|	**When was** [were] + S + P2?	|	**When was** the report *done?*	|	Báo cáo được thực hiện **khi nào?**
@@ -85,7 +85,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions WHEN
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-002.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-002.mp3 %}
 
 |	Past Events	|	**When did** he **go home?** - *At* 5 o'clock.	|	Anh ấy *về nhà* **khi nào?** - Vào lúc 5 giờ.	|	
 |		|	**When was** John **supposed to show up?** - Ten minutes *ago*.	|	John *phải xuất hiện* **khi nào?** - Mười phút trước.	|	
@@ -101,7 +101,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns WHO
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-003.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-003.mp3 %}
 
 |	Past Events	|	**Who + V-ed** ~?	|	**Who sketched** the new design?	|	**Ai là người** *phác thảo thiết kế mới?*
 |		|		|	**Who mailed** the package?	|	Ai đã gửi gói hàng qua đường bưu điện?
@@ -118,7 +118,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions WHO
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-004.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-004.mp3 %}
 
 |	Past Events	|	**Who drew up** the blueprints? - Jack, the architect.	|	**Ai đã** *vẽ ra các bản thiết kế?* - **Jack**, kiến trúc sư.	|	
 |		|	**Who sent out** the boxes? - Mary **did**, Why?	|	**Ai đã** *gửi các hộp?* - **Mary** đã làm, Tại sao?	|	
@@ -135,7 +135,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns WHERE
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-005.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-005.mp3 %}
 
 |	**Where + Be**	|	**Where is** [are] + S + ~?	|	**Where is** *your new car?*	|	*Xe mới của bạn* **ở đâu?**
 |		|		|	**Where are** *the computers* that *came in today*?	|	*Máy tính ngày nay* **ở đâu?**
@@ -150,7 +150,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions WHERE
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-006.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-006.mp3 %}
 
 |	**Where + Be**	|	**Where is** *your new apartment*? - It's **close to the office**.	|	Căn hộ mới của bạn **ở đâu?** - Nó **gần văn phòng**.	|	
 |		|	**Where are** *the boxes* Mr.Lee asked us to deliver? - They **should be in** the storage room.	|	**Những hộp** Mr.Lee yêu cầu chúng tôi giao hàng **ở đâu?** - Họ **nên ở trong phòng** chứa đồ.	|	
@@ -166,7 +166,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns WHAT
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-007.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-007.mp3 %}
 
 |	**What + Noun**	|	**What + Noun + did** + S + V ~?	|	**What** *suggestion* **did** he **make?**	|	Anh ấy đã **đề nghị gì?**
 |		|	**What kind of** [type of / sort of] + *Noun* + **do** [does / did] + S + **V** ~?	|	**What** *kind of movies* **do** you **like** watching?	|	Bạn thích xem **loại phim nào?**
@@ -183,7 +183,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions WHAT
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-008.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-008.mp3 %}
 
 |	**What + Noun**	|	**What suggestion** *did* your boss *make*? - *He offered me a pay raise*.	|	Ông chủ của bạn *đã đưa ra* **đề xuất gì?** - Anh ấy *đề nghị tôi tăng lương*.	|	
 |		|	**What kind of books** *do* you *like* reading? - *I like detective novels*.	|	Bạn thích đọc **loại sách nào?** - Tôi thích *tiểu thuyết trinh thám*.	|	
@@ -199,7 +199,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns HOW
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-009.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-009.mp3 %}
 
 |	Method	|	**How are you getting to** ~?	|	**How are you getting to** *the airport* tomorrow?	|	**Làm thế nào** bạn *đến sân bay* vào ngày mai?
 |		|	**How do [will]** + S + V ~?	|	**How do** I **use this** *copy machine*?	|	**Làm cách nào** *để sử dụng* máy sao chép này?
@@ -217,7 +217,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions HOW
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0010.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0010.mp3 %}
 
 |	Method	|	**How are you getting to** the company retirement party this evening? - Jim **will come** to pick me up at five.	|	**Làm thế nào** bạn *đến bữa tiệc* nghỉ hưu của công ty vào tối nay? - *Jim sẽ đến đón tôi* lúc năm giờ.	|	
 |		|	**How do** I **use** this fax machine? - Don't worry, I'll show you.	|	**Làm cách nào** *để sử dụng* máy fax này? - Đừng lo, tôi sẽ chỉ cho bạn.	|	
@@ -233,7 +233,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns WHY
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0011.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0011.mp3 %}
 
 |	**Why + Verb**	|	**Why do [does / don't / doesn't]** + S + V ~?	|	**Why do** you **take** the bus to work?	|	**Tại sao** bạn *đi xe buýt* đến nơi làm việc?
 |		|		|	**Why don't** you **come along**?	|	**Tại sao** bạn *không đi cùng?*
@@ -254,7 +254,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions WHY
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0012.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0012.mp3 %}
 
 |	**Why + Verb**	|	**Why did** you **leave** your position? - **To find** a better job.	|	**Tại sao** bạn *rời bỏ vị trí* của bạn? - **Để tìm một công việc tốt hơn**.	|	
 |		|	**Why didn't** you **attend** the workshop yesterday? - **I thought** it had been canceled.	|	**Tại sao** bạn **không tham dự** hội thảo ngày hôm qua? - *Tôi nghĩ nó đã bị hủy*.	|	
@@ -270,7 +270,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns WHOSE, WHICH
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0013.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0013.mp3 %}
 
 |	**Whose (Possession)**	|	**Whose + Noun + Be** + S?	|	**Whose bike is** this?	|	Đây là chiếc **xe đạp của ai?**
 |		|		|	**Whose job is** it to **take out the garbage**?	|	**Công việc của ai** để đổ rác?
@@ -286,7 +286,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions WHOSE, WHICH
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0014.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0014.mp3 %}
 
 |	**Whose**	|	**Whose bag is** that on the table? - **It belongs to** the receptionist.	|	**Túi của ai** *trên bàn?* - Nó **thuộc về** lễ tân.	|	
 |		|	**Whose job is** it to secure the building tonight? - Mr.Long **is on duty** tonight.	|	**Công việc của ai** *là bảo vệ* tòa nhà tối nay? - Tối nay **Mr.Long trực**.	|	
@@ -302,7 +302,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns BE, DO, HAVE, WILL / WOULD
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0015.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0015.mp3 %}
 
 |	**Be**	|	**Is [were]** there + S ~?	|	**Is** there a way **to get** to the station quicker?	|	**Có cách nào** *để đến nhà ga* nhanh hơn không?
 |		|		|	**Were** there any calls for me?	|	Có cuộc gọi nào cho tôi không?
@@ -320,7 +320,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions BE, DO, HAVE, WILL / WOULD
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0016.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0016.mp3 %}
 
 |	**Be**	|	**Is** there a bus to City Hall from here? - **Yes**, there's one every ten minutes.	|	**Có xe buýt** đến Tòa thị chính từ đây không? - **Có**, cứ mười phút lại có một.	|	
 |		|	**Are** you **going to order** office supplies? - **No**, not until the end of the week.	|	Bạn **sắp đặt** đồ dùng văn phòng? - **Không**, phải đến cuối tuần.	|	
@@ -336,7 +336,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns "Choice"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0017.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0017.mp3 %}
 
 |	Choice of an **Object**	|	~ Object 1 **or** Object 2?	|	**Would you prefer** coffee **or** tea?	|	Bạn **thích** *cà phê* **hay** *trà hơn?*
 |		|		|	**Are you taking** the bus **or** the train to New York?	|	Bạn **đang đi** *xe buýt* **hoặc** *xe lửa* đến New York?
@@ -351,7 +351,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions "Choice"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0018.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0018.mp3 %}
 
 |	**Object**	|	**Would you prefer** a blue shirt **or** a red one? - **Actually, I'd like** a green one.	|	Bạn **thích** áo sơ mi màu xanh lam **hay** màu đỏ? - Thực ra, tôi muốn một cái màu xanh lá cây.	|	
 |		|	**Would you be interested in** pizza **or** pasta? - **It doesn't matter to me**.	|	Bạn có **thích** pizza **hay** mì ống không? - Đối với tôi không thành vấn đề.	|	
@@ -367,7 +367,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns "Suggestion" - "Request"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0019.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0019.mp3 %}
 
 |	**Suggestion**	|	**Why don't you [we]** + V ~?	|	**Why don't you** take it with you?	|	**Tại sao** bạn không mang nó theo bên mình?
 |		|		|	**Why don't we** go to a movie tonight?	|	**Tại sao** chúng ta không đi xem phim tối nay?
@@ -385,7 +385,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions "Suggestion" - "Request"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0020.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0020.mp3 %}
 
 |	**Suggestion**	|	**Why don't** we take off at six today? - **That sounds good**.	|	**Tại sao chúng ta không** cất cánh lúc sáu giờ hôm nay? - **Nghe hay đấy.**	|	
 |		|	**Why don't** you come to Gordon Park with us? - Certainly, **I'd love to go**.	|	**Tại sao bạn không** đến Gordon Park với chúng tôi? - *Chắc chắn, tôi rất muốn đi.*	|	
@@ -401,7 +401,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns "question tags"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0021.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0021.mp3 %}
 
 |	**Negative question tags**	|	Affirmative sentence, V + **not + S?**	|	This **is** your new bag, **isn't it?**	|	Đây là túi mới của bạn, **phải không?**
 |		|		|	That **was** a great presentation, **wasn't it?**	|	Đó là một bài thuyết trình tuyệt vời, **phải không?**
@@ -422,7 +422,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions "question tags"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0022.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0022.mp3 %}
 
 |	**Negative question tags**	|	**We're** getting a bit behind, **aren't we?** - Don't worry. **We'll** catch up soon.	|	Chúng ta đang bị tụt lại một chút, **phải không?** - *Đừng lo lắng. Chúng tôi sẽ sớm bắt kịp.*	|	
 |		|	**That was** a perfect game, **wasn't it?** - **Yes**, it was **amazing**.	|	Đó là một trò chơi hoàn hảo, **phải không?** - **Vâng**, thật tuyệt vời.	|	
@@ -439,7 +439,7 @@ Những câu trả lời sai thường sẽ là:
 
 ### Question Patterns "Negative Questions" - "Statements"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0023.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0023.mp3 %}
 
 |	**Negative Questions**	|	**Isn't [Aren't / Weren't]** + S + **going [scheduled / supposed] to-V** ~?	|	**Isn't** Peter **going to** the meeting today?	|	Hôm nay Peter không đi họp sao?
 |		|		|	**Aren't** we **scheduled to have** a meeting today?	|	Hôm nay **chúng ta không** hẹn gặp nhau **sao?**
@@ -464,7 +464,7 @@ Những câu trả lời sai thường sẽ là:
 
 ##### More Expressions "Negative Questions" - "Statements"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/20200908part2-0024.mp3 %}
+{% mp3 /assets/mp3-toeic/20200908part2-0024.mp3 %}
 
 |	**Negative Questions**	|	**Aren't** you **going to deliver** the product today? - **No**, it's not urgent.	|	**Bạn không định** giao sản phẩm hôm nay **sao?** - **Không**, không gấp đâu.	|	
 |		|	**Wasn't** the seminar **held** in June? - **No**, in July.	|	**Không phải** hội thảo được tổ chức vào tháng Sáu **à?** - **Không**, vào tháng Bảy.	|	
@@ -481,7 +481,7 @@ Những câu trả lời sai thường sẽ là:
 
 ## Luyện tập
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/part2_1.mp3 %}
+{% mp3 /assets/mp3-toeic/part2_1.mp3 %}
 
 | **Where** *should I keep* these company letterheads? => **In** the cabinet by the door. | Tôi nên giữ những tiêu đề thư của công ty **ở đâu?** => **Trong tủ đựng hồ sơ** cạnh cửa
 | **When** *will you take off* for Paris? => **On** Tuesday afternoon. | **Khi nào** bạn sẽ đi Paris? => **Chiều thứ Ba.**
@@ -495,7 +495,7 @@ Những câu trả lời sai thường sẽ là:
 | **Would you like to** take the early flight **or** catch the afternoon one? => *I'd rather take the later plane*. | **Bạn có muốn** đi chuyến bay sớm không **hay** bắt chuyến vào buổi chiều? => **Tôi thà** bắt chuyến sau **còn hơn.**
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-001.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-001.mp3 %}
 
 |	**Who told you** *to turn off* the air conditioner? - **Ms. Walsh** *asked me to do it*.	|	**Ai bảo bạn** *tắt cái máy điều hòa không khí vậy*? - **Cô Walsh** *bảo tôi làm vậy*.
 |	**When do you expect** *the merger to be approved?* - **By** the end of the month.	|	**Bạn mong đợi khi** nào sự liên doanh **sẽ được đồng ý?** - **Vào** *cuối tháng*.
@@ -509,7 +509,7 @@ Những câu trả lời sai thường sẽ là:
 |	**When will** the furniture for the lobby **be delivered?** - *Probably* **tomorrow**.	|	Khi nào thì đồ nội thất cho hành lang sẽ được chuyển đến? - Có lẽ là ngày mai.
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-002.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-002.mp3 %}
 
 |	**Can you come** here *to sign the contract* anytime tomorrow? - **Sure**, *I'll drop by in the morning*.	|	**Bạn có thể đến đây** *để ký hợp đồng* lúc nào đó vào ngày mai không? - **Chắc rồi**, tôi sẽ ghé qua vào buổi sáng.
 |	**When is** the new economic report **due?** - **By** *the end of the month*.	|	Bản báo cáo kinh tế mới **khi nào thì đến hạn?** - *Trước cuối tháng*
@@ -523,7 +523,7 @@ Những câu trả lời sai thường sẽ là:
 |	**Why do you** *go to work so early* every morning? - **So I can** *avoid the traffic congestion*.	|	**Tại sao** mỗi sáng *bạn đều đi làm sớm thế?* - **Để tránh kẹt xe**.
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-003.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-003.mp3 %}
 
 |	**Why are** so many tourists *asking for a refund*? - **Probably because of** *the bad service*.	|	Tại sao có nhiều du khách đòi hoàn tiền? - Chắc là vì dịch vụ kém.
 |	**Do you need help** *setting up the dining room for the banquet?* - **Everything's ready**, *thanks*.	|	**Bạn có cần giúp đỡ** để dọn bàn phòng ăn cho buổi tiệc lớn **không?** - *Mọi thứ đã sẵn sàng rồi*, **cám ơn**.
@@ -537,7 +537,7 @@ Những câu trả lời sai thường sẽ là:
 |	**Why does** *Mr. Tang* *look so worried?* - *He left his briefcase on the plane*.	|	**Tại sao** *Ông Tang lại trông có vẻ lo lắng đến vậy? - Anh ta để quên cặp đựng hồ sơ trên máy bay*.
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-004.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-004.mp3 %}
 
 |	**Aren't you** *meeting with the real estate agent* today? - **No**, *our meeting was canceled*.	|	**Không phải** hôm nay *bạn gặp công ty địa ốc* sao? - **Không**, *cuộc họp của chúng tôi đã bị hủy*.
 |	**Would you like to** *join us* for dinner tonight? - **I wish I could, but** *I already have plans*.	|	**Bạn có muốn** *ăn tối cùng chúng tôi tối nay không?* - **Ước gì tôi có thể, nhưng** *tôi có kế hoạch khác rồi.*
@@ -551,7 +551,7 @@ Những câu trả lời sai thường sẽ là:
 |	**When does** *the new restaurant* **open?** - **Isn't it tomorrow?**	|	**Khi nào** *thì nhà hàng mới* **sẽ mở cửa?** - *Không phải là mai sao?*
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-005.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-005.mp3 %}
 
 |	**Didn't** you **hear about** the new check-out procedure? - **No,** *what is it?*	|	**Bạn đã nghe về** *thủ tục trả phòng mới* **chưa?** - **Không,** *là gì vậy.*
 |	**When does** *the editorial department* **issue** *the newsletter?* - **On the last day of the month**.	|	**Khi nào** *thì phòng biên tập* **phát hành** *thư thông tin?* - **Vào ngày cuối cùng của tháng**
@@ -565,7 +565,7 @@ Những câu trả lời sai thường sẽ là:
 |	*I went to the new Thai restaurant last night*. - **How was it?**	|	*Tối qua tôi đi đến nhà hàng Thái mới mở*. - **Nó như thế nào?**
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-006.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-006.mp3 %}
 
 |	**How much** *does this briefcase* **cost?** - **Let me check** for you.	|	Chiếc cặp này **giá bao nhiêu?** - **Để tôi kiểm tra** nó cho bạn
 |	**Who entered** these figures on the spreadsheet? - **My assistant** did.	|	**Ai nhập những con số này** vào bảng tính vậy? - **Trợ tá của tôi làm.**
@@ -579,7 +579,7 @@ Những câu trả lời sai thường sẽ là:
 |	**Who changed** *the password* for the security system? - I think it was **the president**.	|	**Ai đã thay đổi** *mật mã* cho hệ thống bảo mật? - *Tôi nghĩ đó là* **giám đốc**.
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-007.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-007.mp3 %}
 
 |	**Do you think we should** *take extra product samples to the convention?* - **That's probably a good idea**.	|	**Bạn có nghĩ chúng ta nên** *mang theo thêm những mẫu sản phẩm đến hội nghị không?* - **Đó có lẽ là một ý kiến hay**.
 |	**What are** you **going to** do over the weekend? - **I'm thinking of driving over** *to my parent's house*.	|	**Bạn định làm gì** vào cuối tuần? - **Tôi đang nghĩ đến việc** lái xe về thăm bố mẹ.
@@ -593,7 +593,7 @@ Những câu trả lời sai thường sẽ là:
 |	**Are** *the marketing reports nearly ready?* - **We need more time**.	|	Báo cáo tiếp thị **sắp xong chưa?** - *Chúng tôi cần thêm thời gian.*
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-008.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-008.mp3 %}
 
 |	Hello, **I'd like to** *book a single room* for this weekend. - **Sure,** *will this be for one night?*	|	Xin chào, **tôi muốn đặt một phòng đơn** cho cuối tuần này. - **Được,** *cho một đêm thôi ạ?*
 |	**Don't** *you think we should call* our client first? - **Yes, that would be the wise thing to do**.	|	**Bạn không nghĩ chúng ta nên** *gọi cho khách hàng trước sao?* - **Vâng,** **đó là điều khôn ngoan để làm.**
@@ -607,7 +607,7 @@ Những câu trả lời sai thường sẽ là:
 |	**Why is** *that grocery store* **closed?** - **They went bankrupt.**	|	**Tại sao** *cửa hàng tạp hoá đó* **đóng cửa?** - **Họ đã phá sản.**
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part2/20200912-part2-009.mp3 %}
+{% mp3 /assets/toeic/part2/20200912-part2-009.mp3 %}
 
 |	**How much is this** *alarm clock?* - **Let me check** *the price list.*	|	*Cái đồng hồ báo thức này* **giá bao nhiêu?** - **Để tôi kiểm tra** *bảng giá*.
 |	**What is** *Ms. Lydia's e-mail* **about?** - *I haven't checked yet.*	|	*Email của cô Lydia* **là về việc gì?** - *Tôi chưa xem*.

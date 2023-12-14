@@ -39,7 +39,7 @@ date: 2019-06-13 22:26:14 +0700
 
 #### Câu hỏi
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/giao-tiep-chu-de-nghe-nghiep-cauhoi.mp3 %}
+{% mp3 /assets/mp3/giao-tiep-chu-de-nghe-nghiep-cauhoi.mp3 %}
 
 - **What do you do?** - Bạn làm nghề gì?
 - **What do you do for a living?** - Bạn kiếm sống bằng nghề gì?
@@ -55,7 +55,7 @@ date: 2019-06-13 22:26:14 +0700
 
 #### Câu trả lời
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/giao-tiep-chu-de-nghe-nghiep-cautraloi.mp3 %}
+{% mp3 /assets/mp3/giao-tiep-chu-de-nghe-nghiep-cautraloi.mp3 %}
 
 - **I'm training to be a doctor.** - Tôi đang được đào tạo để trở thành bác sĩ.
 - **I'm on a cookery course to become a chef.** - Tôi đang theo học một khóa nấu ăn để trở thành đầu bếp.
@@ -201,7 +201,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Từ vựng nghề nghiệp
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/tu-vung-nghe-nghiep.mp3 %}
+{% mp3 /assets/mp3/tu-vung-nghe-nghiep.mp3 %}
 
 | Word | IPA | Google Translate
 |:-
@@ -268,7 +268,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 54 từ vựng về công việc
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/54-tu-vung-ve-cong-vec.mp3 %}
+{% mp3 /assets/mp3/54-tu-vung-ve-cong-vec.mp3 %}
 
 | Head-1 | Head-2
 |:-
@@ -331,7 +331,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Hiện tại
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/gioithieu-congviec-banthan-su-dung-cac-thi-hien-tai.mp3 %}
+{% mp3 /assets/mp3/gioithieu-congviec-banthan-su-dung-cac-thi-hien-tai.mp3 %}
 
 - **I am a recent graduate student at University of Economics. My major is Business Administration. I have spent three years improving my skills in Marketing**. (*Tôi là sinh viên mới ra trường của Đại học Kinh tế. Chuyên ngành quản trị kinh doanh. Tôi đã dành 3 năm phát triển kỹ năng Marketing.*)
 - **I am a final year student at University of Commerce. My major is Accounting. I have spent four years improving my skills in Accounting.** (*Tôi là sinh viên năm cuối của Đại học Thương mại. Chuyên ngành kế toán. Tôi đã dành 4 năm cải thiện kỹ năng trong lĩnh vực kế toán.*)
@@ -345,7 +345,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Quá khứ
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/gioithieu-congviec-banthan-su-dung-cac-thi-qua-khu.mp3 %}
+{% mp3 /assets/mp3/gioithieu-congviec-banthan-su-dung-cac-thi-qua-khu.mp3 %}
 
 - **Last summer, I participated in an internship at a Marketing agency, and it taught me analytics, social media skills. This internship fits well with this Marketing position because I had an experience to work in an professional environment, as well as had basic knowledge about Marketing.** (*Hè năm ngoái, tôi đã tham gia thực tập tại một công ty Marketing, hoạt động này đã dạy tôi kỹ năng phân tích, truyền thông xã hội. Kỳ thực tập này rất phù hợp với vị trí Marketing này vì tôi đã có kinh nghiệm làm việc trong một môi trường chuyên nghiệp, cũng như có những kiến thức cơ bản về Marketing.*)
 - **Last summer, I participated in a Green Summer Volunteer Campaign at my university, and it taught me teamwork skill. This experience fits well with this Coordinator position because I had an experience to work with disadvantaged children, as well as knew how to coordinate the volunteers.** (*Hè năm ngoái, tôi đã tham gia Chiến dịch mùa hè xanh tại trường đại học, hoạt động này đã dạy tôi kỹ năng làm việc nhóm. Trải nghiệm này rất phù hợp với vị trí điều phối viên này vì tôi đã có kinh nghiệm làm việc với trẻ em bất lợi thế, cũng như biết cách điều phối tình nguyện viên.*)
@@ -355,7 +355,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Tương lai
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/gioithieu-congviec-banthan-su-dung-cac-thi-tuong-lai.mp3 %}
+{% mp3 /assets/mp3/gioithieu-congviec-banthan-su-dung-cac-thi-tuong-lai.mp3 %}
 
 - **I'm interested in ABC because I can demonstrate my skills in Teamwork, Soft Skills I am excellent at and I can contribute these strength to your projects.** (*Tôi hứng thú với Công ty ABC vì tôi có thể thể hiện được những kỹ năng tôi rất xuất sắc - là làm việc nhóm, kỹ năng mềm và tôi có thể đóng góp những thế mạnh này cho những dự án của các ông.*)
 - **I'm interested in Real Education because I can demonstrate my skills in web designing and I can contribute this strength to your website - XYZ.com.** (*Tôi hứng thú với Công ty Real Education vì tôi có thể thể hiện được kỹ năng thiết kế trang web của mình và tôi có thể đóng góp thế mạnh này cho trang web XYZ.com.*)
@@ -367,7 +367,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Giới thiệu nghề nghiệp, vị trí
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/bai-nghe-gioi-thieu-nghe-nghiep-vi-tri.mp3 %}
+{% mp3 /assets/mp3/bai-nghe-gioi-thieu-nghe-nghiep-vi-tri.mp3 %}
 
 - **I teach English for a living.** (*Tôi dạy tiếng Anh để kiếm sống.*)
 - **I am working as a secretary**. (*Tôi đang là một thư kí.*)
@@ -375,7 +375,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Giới thiệu công ty của bạn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/bai-nghe-gioi-thieu-cong-ty-cua-ban.mp3 %}
+{% mp3 /assets/mp3/bai-nghe-gioi-thieu-cong-ty-cua-ban.mp3 %}
 
 **I work for DLT, an accounting company. My company is one of the nation’s leaders in accounting and auditing. We have over 300 employees nationwide. The company was founded in 1994 and our head office is in Hanoi. Our name is quite popular with export companies in Vietnam.**
 
@@ -383,7 +383,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Mô tả công việc hiện tại
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/bai-nghe-gioi-thieu-cong-viec-hien-tai.mp3 %}
+{% mp3 /assets/mp3/bai-nghe-gioi-thieu-cong-viec-hien-tai.mp3 %}
 
 **Currently, I’m an HR Executive. I’m mainly in charge of arranging schedules for the candidates and welcoming the newcomers of our branch. My job includes contacting the candidate to confirm the time, preparing materials, setting up the interview and announcing the result afterward. When we hire a new employee, I will handle all the paper works. I have weekly meetings with the HR Department to create a plan for the next working week.**
 
@@ -391,7 +391,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### Một số bài mẫu khác
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/bai-nghe-gioi-thieu-cong-viec-mot-so-bai-mau-khac-001.mp3 %}
+{% mp3 /assets/mp3/bai-nghe-gioi-thieu-cong-viec-mot-so-bai-mau-khac-001.mp3 %}
 
 **I have finished my graduation majoring Computer Science and would like to work as a computer programmer in a reputed software company. I have learned few programming languages in my academic years and hope to work as a programmer and want to contribute making some great software as every programmer wants.**
 

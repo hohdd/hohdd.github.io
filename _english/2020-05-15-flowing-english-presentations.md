@@ -33,7 +33,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Structure
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/presentation_09b98ae9-b7bb-4dcf-8956-1c68d862f4a3.mp3 %}
+{% mp3 /assets/mp3/presentation_09b98ae9-b7bb-4dcf-8956-1c68d862f4a3.mp3 %}
 
 ### Introduction
 
@@ -351,7 +351,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Linking Words for Speaking
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200820175510979.mp3 %}
+{% mp3 /assets/mp3/speech_20200820175510979.mp3 %}
 
 ### Adding ideas
 

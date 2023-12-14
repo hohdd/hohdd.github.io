@@ -86,7 +86,7 @@ Danh từ số ít & Danh từ số nhiều có ảnh hưởng đến ngữ phá
 
 ## Các đuôi danh từ thông dụng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/cac-duoi-danh-tu-thong-dung.mp3 %}
+{% mp3 /assets/mp3/cac-duoi-danh-tu-thong-dung.mp3 %}
 
 - `-acy`: `accuracy, democracy, privacy (chính xác, dân chủ, riêng tư)`
 - `-age`: `baggage, millage, village (hành lý, cối xay, làng)`
@@ -292,7 +292,7 @@ Khi dùng với các cấu trúc ở Liên từ Tương quan (Correlative Conjun
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200522132955692.mp3 %}
+{% mp3 /assets/mp3/speech_20200522132955692.mp3 %}
 
 - box → box**es**; bus → bus**es**; match → match**es**; means → means; series → series; species → species; fish → fish.
 - famil**y** → famil**ies**; bab**y** → bab**ies**; part**y** → part**ies**; b**oy** → boy**s**; k**ey** → key**s**; t**oy** → toy**s**; her**o** → hero**es**; tomat**o** → tomato**es**; potat**o** → potato**es**;

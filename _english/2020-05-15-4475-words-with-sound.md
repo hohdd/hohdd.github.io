@@ -35,7 +35,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 1. a - by
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_1.mp3 %}
+{% mp3 /assets/mp3/4475_words_1.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -543,7 +543,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 2. bye - desire
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_2.mp3 %}
+{% mp3 /assets/mp3/4475_words_2.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -1051,7 +1051,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 3. desk - full
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_3.mp3 %}
+{% mp3 /assets/mp3/4475_words_3.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -1559,7 +1559,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 4. fumble - joe
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_4.mp3 %}
+{% mp3 /assets/mp3/4475_words_4.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -2067,7 +2067,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 5. jog - nickel
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_5.mp3 %}
+{% mp3 /assets/mp3/4475_words_5.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -2575,7 +2575,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 6. niece - really
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_6.mp3 %}
+{% mp3 /assets/mp3/4475_words_6.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -3083,7 +3083,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 7. realm - snub
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_7.mp3 %}
+{% mp3 /assets/mp3/4475_words_7.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -3591,7 +3591,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 8. snug - tint
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_8.mp3 %}
+{% mp3 /assets/mp3/4475_words_8.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -4099,7 +4099,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 9. tiny - zoom
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_9.mp3 %}
+{% mp3 /assets/mp3/4475_words_9.mp3 %}
 
 | Words | IPA | Google Translate
 |:-
@@ -4582,6 +4582,6 @@ date: 2020-05-15 14:26:14 +0700
 
 ## All words with none silence
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/4475_words_all_none_silence.mp3 %}
+{% mp3 /assets/mp3/4475_words_all_none_silence.mp3 %}
 
 ## Bonus

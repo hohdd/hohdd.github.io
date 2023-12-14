@@ -40,18 +40,18 @@ date: 2019-06-13 22:26:14 +0700
 Tham khảo: [Mẫu câu thông dụng kinh điển trong tiếng anh](/collections/english/sentence-mau-cau-kinh-dien-thong-dung-trong-tieng-anh){:.hvr-forward}
 
 Full Repeat:<br>
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/0_0_REPEAT_1_0_English_Speaking_Basics.mp3 %}
+{% mp3 /assets/mp3/0_0_REPEAT_1_0_English_Speaking_Basics.mp3 %}
 
 ## Basics - Section I
 
 <div class="w3-section konamiHide">
 Full Repeat Section I:<br>
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/0_1_REPEAT_1_0_English_Speaking_Basics.mp3 %}
+{% mp3 /assets/mp3/0_1_REPEAT_1_0_English_Speaking_Basics.mp3 %}
 </div>
 
 ### 1. Basic usage of 'I'm'
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2001-long.mp3 %}
+{% mp3 /assets/mp3/2001-long.mp3 %}
 
 'I'm' is an {% tooltip abbreviation [(n) viết tắt] %} for the word 'I AM.' It is used in {% tooltip combination [(n) sự phối hợp] %} with other words to tell someone about yourself or to {% tooltip describe [(v) diễn tả] %} something you are doing.
 
@@ -80,7 +80,7 @@ You can also add {% tooltip descriptive [(adj) mô tả] %} words with 'I'm' suc
 
 ### 2. Variations of 'I'm in/at/on'
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2002-long.mp3 %}
+{% mp3 /assets/mp3/2002-long.mp3 %}
 
 'I'm in/at/on' Describes an action you are doing. {% tooltip Most commonly [phổ biến nhất] %}, you would use the word 'in' when entering a {% tooltip physical [(adj) vật lý] %} location such as a room or a building.
 
@@ -127,7 +127,7 @@ Here are some examples:
 
 ### 3. I'm good at + (Noun/V-ing) [Tôi giỏi/rành về ...(something/doing something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2003-long.mp3 %}
+{% mp3 /assets/mp3/2003-long.mp3 %}
 
 Again, 'I'm' is used here as 'I am.' 'Good at' {% tooltip informs [(v) inform: thông báo] %} someone what you {% tooltip excel [(v) vượt trội, xuất chúng] %} at and are {% tooltip comfortable [(adj) yên tâm, thoải mái] %} doing.
 
@@ -147,7 +147,7 @@ Here are some examples:
 
 ### 4. I'm + (V-ing) [Tôi đang ...(doing something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2005-long.mp3 %}
+{% mp3 /assets/mp3/2005-long.mp3 %}
 
 'I'm' is a {% tooltip contraction [(n) sự viết chung, sự kết thân] %} of the words 'I am.' By adding a verb to 'I'm' this lets you express an action or {% tooltip occurrence [(n) tần suất xảy ra, biến cố, việc thình lình] %} about yourself.
 
@@ -172,7 +172,7 @@ Here are some examples:
 
 ### 5. I'm getting + (Noun/Adv/Adj) [Tôi sẽ/sắp/đang/cần/tiến triển...(something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2006-long.mp3 %}
+{% mp3 /assets/mp3/2006-long.mp3 %}
 
 When {% tooltip combining [(v) combine: liên kết, phối hợp] %} the words 'I am' and 'getting' you are telling someone 'you' are {% tooltip gaining [(v) gain: thu được, được lợi, được danh tiếng. (n) gain: tăng gia, thắng lợi] %} {% tooltip possession [(n) chiếm hữu, possession] %}, being {% tooltip affected [(v) affect: có ảnh hưởng đến. (adj) affected: cầu kỳ, không tự nhiên, làm bộ] %} by or have plans {% tooltip to seek out [tìm ra] %} and {% tooltip obtain [(v) đạt được, kiếm được] %} a {% tooltip particular [(adj) cụ thể, riêng biệt, rõ ràng] %} thing.
 
@@ -192,7 +192,7 @@ Here are some examples:
 
 ### 6. I'm trying + (to verb / Noun) [Tôi đang cố gắng/đang thử/khó khăn ....(something/to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2007-long.mp3 %}
+{% mp3 /assets/mp3/2007-long.mp3 %}
 
 'I am trying' {% tooltip informs [(v) inform: thông báo, cho biết] %} someone that you are {% tooltip attempting [(v) attempt: ráng làm, thử] %} to {% tooltip accomplish [(v) accomplish: đạt được, làm tròn, hòan thành] %} something using {% tooltip bodily [(adv) thuộc về thân thể] %}, {% tooltip mental [(adj) trí óc, thuộc về tinh thần] %}, or {% tooltip spiritual [(adj) thuộc về tâm linh, thuộc về linh hồn] %} strength. By adding a verb to 'I'm trying' you are pointing out exactly what it is you are attempting to do.
 
@@ -218,7 +218,7 @@ Here are some examples:
 
 ### 7. I'm gonna + (verb) [~ I'm going to = Tôi sẽ ...(do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2008-long.mp3 %}
+{% mp3 /assets/mp3/2008-long.mp3 %}
 
 The word 'gonna' is incorrect {% tooltip grammatically [(adv) về mặt ngữ pháp] %}. The {% tooltip equivalent [(n) tương đương] %} in {% tooltip proper [(adj) thích hợp, riêng biệt] %} grammar would be 'going to.' When using the word 'gonna' you are telling someone what you are planning to do at that moment or in the near future.
 
@@ -238,7 +238,7 @@ Here are some examples:
 
 ### 8. I have + (noun) [Tôi có ...(something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2009-long.mp3 %}
+{% mp3 /assets/mp3/2009-long.mp3 %}
 
 By using the words 'I have' you are informing someone of something you have {% tooltip possession [(n) thuộc địa, quyền sở hửu, vật sở hửu] %} of or have {% tooltip acquired [(v) acquire: có được, thu được, mua được] %}.
 
@@ -263,7 +263,7 @@ Here are some examples:
 
 ### 9. I have + (past participle) [Tôi đã ...(P2 something).]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2010-long.mp3 %}
+{% mp3 /assets/mp3/2010-long.mp3 %}
 
 Again, 'I have' shows {% tooltip possession [(n) thuộc địa, quyền sở hửu, vật sở hửu] %} or something {% tooltip acquired [(v) acquire: có được, thu được, mua được] %}. By adding a past {% tooltip participle [(n) hiện tại phân từ, phân từ] %} you are informing someone of a past or completed action done by you.
 
@@ -283,7 +283,7 @@ Here are some examples:
 
 ### 10. I used to + (verb) [Tôi đã từng ... (giờ thì không: to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2011-long.mp3 %}
+{% mp3 /assets/mp3/2011-long.mp3 %}
 
 'Used to' expresses something that was done in the past, and is not usually done now.
 
@@ -303,7 +303,7 @@ Here are some examples:
 
 ### 11. I have to + (verb) [Tôi phải ...(to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2012-long.mp3 %}
+{% mp3 /assets/mp3/2012-long.mp3 %}
 
 The words 'have to' describe something that needs to {% tooltip take place [diễn ra] %} soon. It expresses {% tooltip certainty [(n) sự tin chắc, sự chắc chắn] %}, {% tooltip necessity [(n) sự cần thiết] %}, or {% tooltip obligation [(n) nhiệm vụ, nghĩa vụ, bổn phận] %}.
 
@@ -327,7 +327,7 @@ You can also add the word 'don't' to suggest that someone is not required to do 
 
 ### 12. I wanna + (verb) [~ I want to = Tôi muốn ...(do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2013-long.mp3 %}
+{% mp3 /assets/mp3/2013-long.mp3 %}
 
 The word 'wanna' is incorrect grammatically. It is equivalent to 'want to.' When combined with the word 'I' it helps {% tooltip communicate [(v) giao tiếp] %} something you want to do.
 
@@ -353,7 +353,7 @@ Here are some examples:
 
 ### 13. I gotta + (verb) [~ I have got to = Tôi cần phải ...(do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2014-long.mp3 %}
+{% mp3 /assets/mp3/2014-long.mp3 %}
 
 'I gotta' is grammatically incorrect. It is more of a {% tooltip spoken form [dạng nói, văn nói] %}. If you want to say this with {% tooltip proper grammar [đúng ngữ pháp] %}, {% tooltip the equivalent would be [tương đương sẽ là] %}, 'I have got to' or 'I've got to'. In the spoken form, 'got to' is shortened to 'gotta' and the word 'have' is dropped.
 
@@ -379,7 +379,7 @@ Here are some examples:
 
 ### 14. I would like to + (verb) [Tôi muốn ... (lịch sự: to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2015-long.mp3 %}
+{% mp3 /assets/mp3/2015-long.mp3 %}
 
 This sentence lets someone know what you would be interested in doing. This can be a physical, mental or verbal action.
 
@@ -399,7 +399,7 @@ Here are some examples:
 
 ### 15. I plan to + (verb) [Tôi dự định ...(to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2016-long.mp3 %}
+{% mp3 /assets/mp3/2016-long.mp3 %}
 
 'Plan to' describes something that you would like to do in the near future.
 
@@ -419,7 +419,7 @@ Here are some examples:
 
 ### 16. I've decided to + (verb) [Tôi đã quyết định ...(to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2017-long.mp3 %}
+{% mp3 /assets/mp3/2017-long.mp3 %}
 
 'I've' is short for 'I have' and including the word 'decided' you are stating that you have made a decision or come to a conclusion.
 
@@ -439,7 +439,7 @@ Here are some examples:
 
 ### 17. I was about to + (verb) [Tôi sắp/Tôi chuẩn bị/Tôi đã định ...(to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2018-long.mp3 %}
+{% mp3 /assets/mp3/2018-long.mp3 %}
 
 When {% tooltip stating [(v) nói rõ, tuyên bố, phát biểu] %} 'I was about to' you are informing someone that you were going to do something, but another event prevented you from doing it. It is similar to 'I am about to' but the difference is that you will not do it any longer. Since you will not do it any longer, it becomes a past event. That is why we use 'was' instead of 'am'
 
@@ -470,7 +470,7 @@ Here are some examples:
 
 ### 18. I didn't mean to + (verb) [Tôi không có ý ...(to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2019-long.mp3 %}
+{% mp3 /assets/mp3/2019-long.mp3 %}
 
 The word 'didn't' is a contraction of the words 'did not'. When using it in a sentence with the words 'mean to' you are informing someone that you did something you {% tooltip regret [(v) hối tiếc, thương tiếc] %} or are sorry for. This could have been a physical, mental or {% tooltip verbal [(adj) bằng lời nói, bằng miệng, về lời nói] %} action.
 
@@ -490,7 +490,7 @@ Here are some examples:
 
 ### 19. I don't have time to + (verb) [Tôi không có thời gian để ...(to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2020-long.mp3 %}
+{% mp3 /assets/mp3/2020-long.mp3 %}
 
 The word 'don't' is a contraction of the words 'do not.' When adding 'have time to' you are simply stating that you have other {% tooltip obligations [(n) obligation: nhiệm vụ, nghĩa vụ, bổn phận] %} and all other things {% tooltip considered [(v) consider: xem xét, đắn đo, lưu tâm đến] %} must wait.
 
@@ -517,7 +517,7 @@ Here are some examples:
 
 ### 20. I promise not to + (verb) [Tôi hứa sẽ không ...(to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2021-long.mp3 %}
+{% mp3 /assets/mp3/2021-long.mp3 %}
 
 When using the word 'promise' you are giving your word that what you are saying is true. You might also be {% tooltip assuring [(v) assure: cam đoan] %} someone a {% tooltip guarantee [(n) sự cam đoan, sự bảo lãnh, sự bảo đảm, bảo hành, người đứng bảo đảm, người đứng bảo lãnh] %} that you will follow {% tooltip thru [thông qua] %} on what you are saying to them.
 
@@ -545,7 +545,7 @@ Here are some examples:
 
 ### 21. I'd rather + (verb) [~ I would rather = Tôi muốn/Tôi thà ...(do something (than) other something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2022-long.mp3 %}
+{% mp3 /assets/mp3/2022-long.mp3 %}
 
 'I'd' is a contraction of the words 'I had' or 'I would.'
 
@@ -567,7 +567,7 @@ Here are some examples:
 
 ### 22. I feel like + (verb-ing) [Tôi thấy thích/Tôi cảm thấy thích...(doing something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2023-long.mp3 %}
+{% mp3 /assets/mp3/2023-long.mp3 %}
 
 Here you are expressing to someone something you would {% tooltip enjoy [(v) vui thích, hưởng thụ, thưởng thức, thích thú] %} doing.
 
@@ -595,7 +595,7 @@ Here are some examples:
 
 ### 23. I can't help + (verb-ing) [Tôi không thể không ...(doing something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2024-long.mp3 %}
+{% mp3 /assets/mp3/2024-long.mp3 %}
 
 The word 'can't' is contraction for 'cannot.' Combined with 'help' you are communicating something you are unable to control or having a hard time {% tooltip gaining [thu được] %} a {% tooltip grasp [(n) sự hiểu biết, sự ôm lấy, cán chèo, tay cằm, sức cổ tay, sự am hiểu, sự nắm lấy] %} for. This can be a physical or mental action.
 
@@ -615,7 +615,7 @@ Here are some examples:
 
 ### 24. I was busy + (verb-ing) [Tôi đã bận ...(doing something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2025-long.mp3 %}
+{% mp3 /assets/mp3/2025-long.mp3 %}
 
 When using the word 'was', you are referring to something in a past tense, or something that happened before. Combining it with the word 'busy' you can express something that was {% tooltip occupying [(v) occupy: giữ, chiếm, chiếm đóng] %} you in a past time.
 
@@ -646,7 +646,7 @@ Here are some examples:
 
 ### 25. I'm not used to + (verb-ing) [Tôi không quen ...(doing something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2026-long.mp3 %}
+{% mp3 /assets/mp3/2026-long.mp3 %}
 
 Here you are using 'not used to' to inform someone that you are unfamiliar or uncomfortable with a topic at hand.
 
@@ -665,7 +665,7 @@ Here are some examples:
 
 ### 26. I want you to + (verb) [Tôi muốn bạn ...(do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2027-long.mp3 %}
+{% mp3 /assets/mp3/2027-long.mp3 %}
 
 I want you to' is telling someone that you have a {% tooltip desire [(n) khao khát, ước nguyện, lòng ham muốn, lời yêu cầu] %} or would like for them to do something.
 
@@ -691,7 +691,7 @@ Here are some examples:
 
 ### 27. I'm here to + (verb) [Tôi ở đây để ... (to-do something)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2028-long.mp3 %}
+{% mp3 /assets/mp3/2028-long.mp3 %}
 
 You are informing someone that you are at a particular place to {% tooltip accomplish [(v) đạt được, làm tròn, làm xong] %} something.
 
@@ -711,7 +711,7 @@ Here are some examples:
 
 ### 28. I have something + (to verb) [Tôi có một thứ để/muốn/cho ...(to-do something/for somebody)]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2029-long.mp3 %}
+{% mp3 /assets/mp3/2029-long.mp3 %}
 
 When using the expression 'I have something' you are communicating that you {% tooltip possess [(v) sở hữu, chiếm hữu] %} something or need to do something that is {% tooltip unspecified [không xác định, chưa định rõ] %} or {% tooltip undetermined [chưa chỉ định, chưa quyết định] %}.
 
@@ -732,7 +732,7 @@ Here are some examples:
 
 ### 29. I'm looking forward to + (Verb-ing) [Tôi mong được/Tôi đang mong đợi/Tôi đang mong chờ ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2030-long.mp3 %}
+{% mp3 /assets/mp3/2030-long.mp3 %}
 
 When telling someone that you are 'looking forward to' you are saying that you are waiting or hoping for something, {% tooltip especially [(adv) riêng biệt, tách biệt] %} with {% tooltip pleasure [(v) làm vừa lòng, làm vui lòng, làm vui vẻ] %}.
 
@@ -754,12 +754,12 @@ Here are some examples:
 
 <div class="w3-section konamiHide">
 Full Repeat Section II:<br>
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/0_2_REPEAT_1_0_English_Speaking_Basics.mp3 %}
+{% mp3 /assets/mp3/0_2_REPEAT_1_0_English_Speaking_Basics.mp3 %}
 </div>
 
 ### 1. I'm calling to + (verb/noun) [Tôi gọi để/Tôi muốn gọi để/Tôi sẽ gọi đây là/Tôi kêu gọi sự ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2031-long.mp3 %}
+{% mp3 /assets/mp3/2031-long.mp3 %}
 
 When using the words 'I'm calling' you are stating that you are actually using the phone to call and {% tooltip relay [(v) đặt lại, để lại] %} information.
 
@@ -779,7 +779,7 @@ Here are some examples:
 
 ### 2. I'm working on + (noun) [Tôi đang làm việc/đang xử lý]/đang triển khai ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2032-long.mp3 %}
+{% mp3 /assets/mp3/2032-long.mp3 %}
 
 'I'm' is a contraction for the words 'I am.' The phrase 'working on' relays a physical or mental {% tooltip effort [(n) sự cố gắng, sự nỗ lực, sự ráng sức, động lực] %} {% tooltip towards [(prep) vào khoảng, về hướng, đối với, về phía] %} an {% tooltip accomplishment [(n) khả năng, thực hiện kế hoạch, hoàn thành, tài năng] %}.
 
@@ -798,7 +798,7 @@ Here are some examples:
 
 ### 3. I'm sorry to + (verb) [Tôi xin lỗi/Tôi rất tiếc/Xin chia buồn...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2033-long.mp3 %}
+{% mp3 /assets/mp3/2033-long.mp3 %}
 
 Saying you are 'sorry to' expresses a feeling of {% tooltip sympathy [(n) cảm thông, sự chia buồn, lòng thương hại, lòng trắc ẩn] %} or {% tooltip regret [(v/n) sự thương tiếc, sự hối hận, lòng thương tiếc] %}.
 
@@ -817,7 +817,7 @@ Here are some examples:
 
 ### 4. I'm thinking of + (verb-ing) [Tôi đang nghĩ đến việc/Tôi đang tính đến chuyện/Tôi đang nghĩ về ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2034-long.mp3 %}
+{% mp3 /assets/mp3/2034-long.mp3 %}
 
 'Thinking' {% tooltip refers [(v) refer: tham khảo, nhắm vào] %} to a {% tooltip process of thought [quá trình suy nghĩ] %}, {% tooltip forming [hình thành] %} an opinion or {% tooltip judgment [(n) sự phán xét, sự xét xử] %}. When expressing 'I am thinking of' you are letting someone know what you are personally thinking.
 
@@ -837,7 +837,7 @@ Here are some examples:
 
 ### 5. I'll help you + (verb) [Tôi sẽ giúp bạn ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2035-long.mp3 %}
+{% mp3 /assets/mp3/2035-long.mp3 %}
 
 This lets you inform someone that you are {% tooltip willing [(n/adj) sẵn lòng, sự muốn, ý muốn, hay giúp đỡ, có thiện ý] %} to provide {% tooltip assistance [(n) sự hỗ trợ, sự giúp đỡ] %}. This could refer to something physical or mental, like helping someone to 'think' or 'remember' something.
 
@@ -857,7 +857,7 @@ Here are some examples:
 
 ### 6. I'm dying to + (verb) [Tôi nóng lòng muốn ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2036-long.mp3 %}
+{% mp3 /assets/mp3/2036-long.mp3 %}
 
 When using the word 'dying' in this {% tooltip manner [(n) cách thức, cách làm việc gì, phương pháp, thói quen] %} you are referring to wanting or desiring something {% tooltip greatly [(adv) tráng lệ, phi thường] %}.
 
@@ -877,7 +877,7 @@ Here are some examples:
 
 ### 7. It's my turn to + (verb) [Đến lượt tôi ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2037-long.mp3 %}
+{% mp3 /assets/mp3/2037-long.mp3 %}
 
 The word 'It's' is a contraction of the words 'it is.' When stating 'my turn' you are telling someone that it is time to change position or position focuses on to you.
 
@@ -897,7 +897,7 @@ Here are some examples:
 
 ### 8. It's hard for me to + (verb) [Thật khó cho tôi để ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2038-long.mp3 %}
+{% mp3 /assets/mp3/2038-long.mp3 %}
 
 When saying that something is 'hard for me' you are informing someone that what you are talking about is difficult or challenging for you.
 
@@ -917,7 +917,7 @@ Here are some examples:
 
 ### 9. I'm having a hard time + (verb-ing) [Tôi đang có một thời gian khó khăn để/đang gặp khó khăn khi ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2039-long.mp3 %}
+{% mp3 /assets/mp3/2039-long.mp3 %}
 
 By stating you are having a hard time you are letting someone know you are having difficulty with something. This could be something physical or mental and something that could be {% tooltip overcome [(v) chiến thắng, vượt qua] %} with effort.
 
@@ -942,7 +942,7 @@ Here are some examples:
 
 ### 10. I think I should + (verb) [Tôi nghĩ tôi nên ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2040-long.mp3 %}
+{% mp3 /assets/mp3/2040-long.mp3 %}
 
 Here you are telling someone that you feel strongly about doing a particular action. Here are some examples:
 
@@ -966,7 +966,7 @@ Here are some examples:
 
 ### 11. I've heard that + (subject + verb) [Tôi đã nghe nói rằng ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2041-long.mp3 %}
+{% mp3 /assets/mp3/2041-long.mp3 %}
 
 You are letting someone know that you are {% tooltip aware [(adj) phỏng đoán, đoán trước, hiểu rõ việc gì] %} of something or that you have been informed of something that is {% tooltip taking place [diễn ra] %}. This could be something that has already happened or something happening in the near future. 'I've' is a contraction of the words 'I have.'
 
@@ -986,7 +986,7 @@ Here are some examples:
 
 ### 12. It occurred to me that (subject + verb) [Tôi chợt nhận ra rằng ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2042-long.mp3 %}
+{% mp3 /assets/mp3/2042-long.mp3 %}
 
 The word '{% tooltip occurred [(v) occurre: xảy ra, xảy đến] %}' informs someone that something has come to mind or has been found. You are letting someone know that you suddenly have thought or remembered about something.
 
@@ -1011,7 +1011,7 @@ Here are some examples:
 
 ### 13. Let me + (verb) [Hãy để tôi ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2043-long.mp3 %}
+{% mp3 /assets/mp3/2043-long.mp3 %}
 
 'Let me' is suggesting that you are asking for {% tooltip permission [(n) sự cho phép, sự chấp nhận] %} or an {% tooltip opportunity [(n) 	cơ hội, dịp tốt] %} to do something.
 
@@ -1031,7 +1031,7 @@ Here are some examples:
 
 ### 14. Thank you for + (Verb-ing/Noun) [Cảm ơn bạn đã ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2044-long.mp3 %}
+{% mp3 /assets/mp3/2044-long.mp3 %}
 
 Saying 'thank you' is telling someone you {% tooltip appreciate [(v) đánh giá cao, cảm kích] %} what they have done. This can either be something they did for you or for someone else.
 
@@ -1051,7 +1051,7 @@ Here are some examples:
 
 ### 15. Can I + (verb) [Tôi có thể ...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2045-long.mp3 %}
+{% mp3 /assets/mp3/2045-long.mp3 %}
 
 When ending a sentence with a question mark (?) you are asking the person or people you are talking to a question for which you would like an answer. Here you are asking permission to do a particular action.
 
@@ -1071,7 +1071,7 @@ Here are some examples:
 
 ### 16. Can I get + (noun) [Tôi có thể ...(lấy/có/được)...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2046-long.mp3 %}
+{% mp3 /assets/mp3/2046-long.mp3 %}
 
 The phrase 'Can I get' can be used in a {% tooltip couple different ways [vài cách khác nhau] %}. You can use it to ask a question.
 
@@ -1097,7 +1097,7 @@ Here are some examples:
 
 ### 17. I'm not sure if (subject + verb) [Tôi không chắc liệu ....]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2047-long.mp3 %}
+{% mp3 /assets/mp3/2047-long.mp3 %}
 
 'I'm not sure' expresses a feeling of uncertainty or {% tooltip lack of confidence [thiếu tự tin] %} on a {% tooltip particular matter [vấn đề cụ thể] %}.
 
@@ -1117,7 +1117,7 @@ Here are some examples:
 
 ### 18. Do you mind if I + (verb) [Bạn có phiền nếu ...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2048-long.mp3 %}
+{% mp3 /assets/mp3/2048-long.mp3 %}
 
 You are asking someone in present tense if they {% tooltip object [(n/v) phản đối] %} to something you are asking.
 
@@ -1143,7 +1143,7 @@ Here are some examples:
 
 ### 19. I don't know what to + (verb) [Tôi không biết phải ... gì.]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2049-long.mp3 %}
+{% mp3 /assets/mp3/2049-long.mp3 %}
 
 You are letting someone know that you are not sure about what is being asked. You may also have no knowledge or opinion on a topic.
 
@@ -1163,7 +1163,7 @@ Here are some examples:
 
 ### 20. I should have + (past participle) [Đáng lẽ tôi nên ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2050-long.mp3 %}
+{% mp3 /assets/mp3/2050-long.mp3 %}
 
 'Should' is the past tense of the word 'shall.' When using the words 'should have' you are talking about something in the past that you 'ought to' or 'might have' done.
 
@@ -1190,7 +1190,7 @@ Here are some examples:
 
 ### 21. I wish I could + (verb) [Tôi ước tôi có thể ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2051-long.mp3 %}
+{% mp3 /assets/mp3/2051-long.mp3 %}
 
 You are expressing a desire to do something.
 
@@ -1210,7 +1210,7 @@ Here are some examples:
 
 ### 22. You should + (verb) [Bạn nên ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2052-long.mp3 %}
+{% mp3 /assets/mp3/2052-long.mp3 %}
 
 Here you are suggesting an {% tooltip obligation [(n) nhiệm vụ, nghĩa vụ, bổn phận] %} or {% tooltip duty [(n) vâng lời, phục tùng] %} that needs to {% tooltip take place [diễn ra] %} either now or in the near future.
 
@@ -1230,7 +1230,7 @@ Here are some examples:
 
 ### 23. You're supposed to + (verb) [Lẽ ra bạn phải ... rồi.]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2053-long.mp3 %}
+{% mp3 /assets/mp3/2053-long.mp3 %}
 
 'You're' is a contraction of the words 'you are.' When using 'You're' with the words 'supposed to' you are making a suggestion that something you strongly believe ought to happen.
 
@@ -1250,7 +1250,7 @@ Here are some examples:
 
 ### 24. You seem + (adjective) [Bạn có vẻ/Hình như bạn/Dường như bạn ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2054-long.mp3 %}
+{% mp3 /assets/mp3/2054-long.mp3 %}
 
 When stating 'you seem' you're referring to the person you are talking to and expressing that they are giving the impression of or appear to be.
 
@@ -1270,7 +1270,7 @@ Here are some examples:
 
 ### 25. You'd better + (verb) [~ You had better = Bạn nên/Tốt hơn bạn nên ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2055-long.mp3 %}
+{% mp3 /assets/mp3/2055-long.mp3 %}
 
 'You'd' is a contraction of 'you had' or 'you would.' You are making a suggestion to someone for a particular action.
 
@@ -1290,7 +1290,7 @@ Here are some examples:
 
 ### 26. Are you into + (noun) [Bạn có thích/Bạn đang ...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2056-long.mp3 %}
+{% mp3 /assets/mp3/2056-long.mp3 %}
 
 Here you are asking a question about an interest they might have or something they might enjoy doing.
 
@@ -1310,7 +1310,7 @@ Here are some examples:
 
 ### 27. Are you trying to + (verb) [Bạn muốn/Bạn đang/Bạn định ... ?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2057-long.mp3 %}
+{% mp3 /assets/mp3/2057-long.mp3 %}
 
 You are asking someone if they are attempting to do something. This can be something mentally or physically.
 
@@ -1330,7 +1330,7 @@ Here are some examples:
 
 ### 28. Please + (verb) [Vui lòng/Làm ơn ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2058-long.mp3 %}
+{% mp3 /assets/mp3/2058-long.mp3 %}
 
 'Please' is generally used in a polite request when asking someone to do something.
 
@@ -1358,7 +1358,7 @@ Here are some examples:
 
 ### 29. Don't + (verb) [Đừng ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2059-long.mp3 %}
+{% mp3 /assets/mp3/2059-long.mp3 %}
 
 The word 'don't' is a contraction of the words 'do not.' It is said to {% tooltip convey [(v) truyền nhiễm, truyền âm, chuyền đạt, vận tải, chuyên chở] %} a message of what NOT should be done.
 
@@ -1378,7 +1378,7 @@ Here are some examples:
 
 ### 30. Do you like + (Verb-ing) [Bạn có thích ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2060-long.mp3 %}
+{% mp3 /assets/mp3/2060-long.mp3 %}
 
 With this question you are asking someone what they prefer or enjoy.
 
@@ -1400,12 +1400,12 @@ Here are some examples:
 
 <div class="w3-section konamiHide">
 Full Repeat Section III:<br>
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/0_3_REPEAT_1_0_English_Speaking_Basics.mp3 %}
+{% mp3 /assets/mp3/0_3_REPEAT_1_0_English_Speaking_Basics.mp3 %}
 </div>
 
 ### 1. How often do you + (Verb) [Bạn có hay/Bạn có thường xuyên/Bao lâu bạn ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2061-long.mp3 %}
+{% mp3 /assets/mp3/2061-long.mp3 %}
 
 When asking this question you are {% tooltip inquiring [(adj) tìm hiểu, điều tra, thẩm vấn] %} how often or how frequent someone does a particular thing.
 
@@ -1425,7 +1425,7 @@ Here are some examples:
 
 ### 2. Do you want me to + (verb) [Bạn có muốn tôi ...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2062-long.mp3 %}
+{% mp3 /assets/mp3/2062-long.mp3 %}
 
 To 'want' is to feel or have a desire for. When saying 'Do you want me to' you're asking someone if there is anything you can do for them or {% tooltip assist [(v) giúp đỡ, hỗ trợ, giúp sức] %} them with.
 
@@ -1452,7 +1452,7 @@ Here are some examples:
 
 ### 3. What do you think about (verb-ing) [Bạn nghĩ gì về việc ...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2063-long.mp3 %}
+{% mp3 /assets/mp3/2063-long.mp3 %}
 
 This question asks someone their opinion about a topic.
 
@@ -1472,7 +1472,7 @@ Here are some examples:
 
 ### 4. Why don't we + (verb) [Tại sao chúng ta không ...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2064-long.mp3 %}
+{% mp3 /assets/mp3/2064-long.mp3 %}
 
 'Don't' is a contraction of 'do not.' When using 'why' you are asking a question that {% tooltip involves [(v) involve: bao gồm, bao hàm, liên quan đến, dính dáng đến] %} yourself and the person you are talking to.
 
@@ -1492,7 +1492,7 @@ Here are some examples:
 
 ### 5. It's too bad that [Thật tệ khi ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2065-long.mp3 %}
+{% mp3 /assets/mp3/2065-long.mp3 %}
 
 'Too bad' means regrettable or unfortunate. When using it in a sentence you are expressing a concern or regret for what has taken place. The topic being discussed could have happened to you, the person you are talking to, or someone or something else.
 
@@ -1511,7 +1511,7 @@ Here are some examples:
 
 ### 6. You could have + (past participle) [Bạn đã có thể/Bạn có thể đã ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2066-long.mp3 %}
+{% mp3 /assets/mp3/2066-long.mp3 %}
 
 Using 'could have' you are speaking about something that was, should be or would be. You are stating that they had other options that could have been chosen.
 
@@ -1531,7 +1531,7 @@ Here are some examples:
 
 ### 7. If I were you, I would + (verb) [Nếu tôi là bạn, tôi sẽ ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2067-long.mp3 %}
+{% mp3 /assets/mp3/2067-long.mp3 %}
 
 Here you are giving an example of what decision YOU would do given the {% tooltip circumstances [(n) hoàn cảnh, trường hợp, tình huống, tình thế] %}. This can be in past tense or in a conditional present.
 
@@ -1557,7 +1557,7 @@ Here are some examples:
 
 ### 8. It's gonna be + (adjective) [~ It's going to/be = Nó sẽ ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2068-long.mp3 %}
+{% mp3 /assets/mp3/2068-long.mp3 %}
 
 You're informing someone what something is going to be like. This could be something you are going to do, see or feel.
 
@@ -1584,7 +1584,7 @@ Here are some examples:
 
 ### 9. It looks like + (noun) [Nó trông giống như ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2069-long.mp3 %}
+{% mp3 /assets/mp3/2069-long.mp3 %}
 
 You could be describing how something is similar or appears to be by the way it looks.
 
@@ -1617,7 +1617,7 @@ Here are some examples:
 
 ### 10. That's why + (subject + verb) [Đó là lý do tại sao ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2070-long.mp3 %}
+{% mp3 /assets/mp3/2070-long.mp3 %}
 
 'That's' is short for 'that is.' Here you are telling someone 'because of this' or '{% tooltip therefore [(adv) vì thế, vì lẽ đó] %}.'
 
@@ -1637,7 +1637,7 @@ Here are some examples:
 
 ### 11. It's time to + (verb) [Đã đến lúc/Đây là thời gian để ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2071-long.mp3 %}
+{% mp3 /assets/mp3/2071-long.mp3 %}
 
 You are letting someone know that something is required to be done at the present time.
 
@@ -1657,7 +1657,7 @@ Here are some examples:
 
 ### 12. The point is that + (subject + verb) [Điểm then chốt/mấu chốt/trọng yếu/chủ yếu là ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2072-long.mp3 %}
+{% mp3 /assets/mp3/2072-long.mp3 %}
 
 By stating 'the point is' you are stating in your opinion the meaning about what is actually happening.
 
@@ -1677,7 +1677,7 @@ Here are some examples:
 
 ### 13. How was + (noun) [... thế nào?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2073-long.mp3 %}
+{% mp3 /assets/mp3/2073-long.mp3 %}
 
 By using the words 'how was' you are asking someone a question about something that happened or something they did in the past.
 
@@ -1697,7 +1697,7 @@ Here are some examples:
 
 ### 14. How about + (verb-ing) [... thì sao/thì thế nào?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2074-long.mp3 %}
+{% mp3 /assets/mp3/2074-long.mp3 %}
 
 You're asking someone their opinion on something or if they would like to do something.
 
@@ -1717,7 +1717,7 @@ Here are some examples:
 
 ### 15. What if + (subject + verb) [Nếu ... thì sao?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2075-long.mp3 %}
+{% mp3 /assets/mp3/2075-long.mp3 %}
 
 Here you are asking a question about 'in the event of' or 'in the event that.' Usually you are looking for an answer at the time of the question that is being asked.
 
@@ -1737,7 +1737,7 @@ Here are some examples:
 
 ### 16. How much does it cost to + (verb) [Chi phí ... là bao nhiêu?/Bao nhiêu chi phí để ...?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2076-long.mp3 %}
+{% mp3 /assets/mp3/2076-long.mp3 %}
 
 You are simply asking how much you would need to pay to do something.
 
@@ -1757,7 +1757,7 @@ Here are some examples:
 
 ### 17. How come + (subject + verb) [Sao mà ... vậy?/Tại sao mà ... vậy?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2077-long.mp3 %}
+{% mp3 /assets/mp3/2077-long.mp3 %}
 
 When using 'how come' you are asking why a particular thing has or had to take place.
 
@@ -1777,7 +1777,7 @@ Here are some examples:
 
 ### 18. What are the chances of + (verb-ing) [Có bao nhiêu cơ hội/khả năng/xác xuất để ...? / Khả năng để ... là gì?]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2078-long.mp3 %}
+{% mp3 /assets/mp3/2078-long.mp3 %}
 
 By asking 'what are the chances of' you are wondering how often or in what case would a particular thing happen.
 
@@ -1804,7 +1804,7 @@ Here are some examples:
 
 ### 19. There is something wrong with + (noun) [Có một cái gì đó sai/không đúng/không ổn với ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2079-long.mp3 %}
+{% mp3 /assets/mp3/2079-long.mp3 %}
 
 You are informing someone that there is something not right or out of the ordinary.
 
@@ -1824,7 +1824,7 @@ Here are some examples:
 
 ### 20. Let's not + (verb) [Chúng ta đừng ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2080-long.mp3 %}
+{% mp3 /assets/mp3/2080-long.mp3 %}
 
 The word 'let's' is formed from the words 'let us.' Here you are requesting that something not take place at this moment or that what is happening needs to be contained or lessened.
 
@@ -1844,7 +1844,7 @@ Here are some examples:
 
 ### 21. Let's say that + (subject + verb) [Cứ cho rằng/Coi như ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2081-long.mp3 %}
+{% mp3 /assets/mp3/2081-long.mp3 %}
 
 'Let's' is a contraction for 'let us.' You are suggesting to someone that you should both agree on what you will communicate to someone else.
 
@@ -1863,7 +1863,7 @@ Here are some examples:
 
 ### 22. There's no need to + (verb) [Không cần phải ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2082-long.mp3 %}
+{% mp3 /assets/mp3/2082-long.mp3 %}
 
 The word 'there's' is a contraction of the words 'there is' or 'there has.' When expressing 'no need' you are stating that the action does not need to take place.
 
@@ -1883,7 +1883,7 @@ Here are some examples:
 
 ### 23. It takes + (time) + to + (verb) [Phải mất (time) để (to-do something).]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2083-long.mp3 %}
+{% mp3 /assets/mp3/2083-long.mp3 %}
 
 You are letting someone know how long it will take to do a particular thing.
 
@@ -1901,7 +1901,7 @@ Here are some examples:
 
 ### 24. Please make sure that + (subject + verb) [Hãy chắc chắn rằng ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2084-long.mp3 %}
+{% mp3 /assets/mp3/2084-long.mp3 %}
 
 You are asking someone to make sure that a particular thing happens or takes place.
 
@@ -1921,7 +1921,7 @@ Here are some examples:
 
 ### 25. Here's to + (noun) [Chúc mừng ...!]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2085-long.mp3 %}
+{% mp3 /assets/mp3/2085-long.mp3 %}
 
 'Here's to' is used in a way of {% tooltip celebrating [(v) celebrate: ăn mừng, chúc tụng] %} or identifying a person, place, or thing of {% tooltip significance [(n) ý nghĩa, tính trọng đại, sự quan trọng] %}. It is usually said while toasting someone at dinner, or signaling to someone or something after an event.
 
@@ -1941,7 +1941,7 @@ Here are some examples:
 
 ### 26. It's no use + (verb-ing) [... chẳng ích lợi gì đâu/chẳng ích gì/cũng vô dụng.]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2086-long.mp3 %}
+{% mp3 /assets/mp3/2086-long.mp3 %}
 
 'It's' is a contraction for 'it is.' By stating 'it's no use' you are saying that what you or someone else is doing is not recommended or uncalled for.
 
@@ -1961,7 +1961,7 @@ Here are some examples:
 
 ### 27. There's no way + (subject + verb) [Làm gì có chuyện/Không đời nào/Không cách nào mà ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2087-long.mp3 %}
+{% mp3 /assets/mp3/2087-long.mp3 %}
 
 'There's' is a contraction of the words 'there is.' By stating 'there's no way' you are relaying a thought of {% tooltip doubt [(v) nghi ngờ, chưa chắc, không chắc] %} about an event taking place now or in the future.
 
@@ -1981,7 +1981,7 @@ Here are some examples:
 
 ### 28. It's very kind of you to + (verb) [Bạn thật tử tế/tốt bụng khi ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2088-long.mp3 %}
+{% mp3 /assets/mp3/2088-long.mp3 %}
 
 When saying it is 'kind of you' you are saying that what someone has done or said was very appreciated or welcomed.
 
@@ -2001,7 +2001,7 @@ Here are some examples:
 
 ### 29. There's nothing + (subject) + can + (verb) [Không có gì ... có thể ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2089-long.mp3 %}
+{% mp3 /assets/mp3/2089-long.mp3 %}
 
 'There's' is a contraction of the words 'there is.' When using the word 'nothing' you are suggesting that something cannot happen or be done.
 
@@ -2027,7 +2027,7 @@ Here are some examples:
 
 ### 30. Rumor has it that + (subject + verb) [Có tin đồn rằng ...]
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/2090-long.mp3 %}
+{% mp3 /assets/mp3/2090-long.mp3 %}
 
 'Rumor has it' is an expression used when suggesting you might have heard something or read about something that is taking place now or in the future. A rumor is not a fact.
 

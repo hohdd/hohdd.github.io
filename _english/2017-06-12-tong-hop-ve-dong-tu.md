@@ -97,7 +97,7 @@ Trong một câu tiếng anh **bắt buộc phải có động từ** (trợ đ�
 
 ##### Dạng quá khứ của các động từ khiếm khuyết
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/dang-qua-khu-cua-cac-dong-tu-khiem-khuyet.mp3 %}
+{% mp3 /assets/mp3/dang-qua-khu-cua-cac-dong-tu-khiem-khuyet.mp3 %}
 
 - **Could** và **Could have** là 2 dạng quá khứ của **can**. Vậy chúng có gì khác nhau?
     - **could**: đã có khả năng làm được trong quá khứ, còn **bây giờ thì không làm được nữa**. VD: I could run faster (còn bây giờ thì tôi không chạy nhanh hơn được)
@@ -119,7 +119,7 @@ Trong một câu tiếng anh **bắt buộc phải có động từ** (trợ đ�
 - Động từ nối là các động từ dùng dùng để diễn tả trạng thái của chủ ngữ thay vì diễn tả một hành động. *Sau động từ nối là một tính từ hoặc một cụm danh từ*.
 - Có một số từ vừa là động từ thường, vừa là động từ nối. **Để nhận biết** một động từ là động từ thường hay là động từ nối: hãy **thử thay thế động từ đó bằng to be**, nếu sau khi thay vào mà **nghĩa vẫn không đổi** thì đó chính là một động từ nối.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mot-so-dong-tu-noi-thuong-gap.mp3 %}
+{% mp3 /assets/mp3/mot-so-dong-tu-noi-thuong-gap.mp3 %}
 
 - Một số động từ nối thường gặp:
     - feel : cảm thấy
@@ -345,7 +345,7 @@ Nhìn chung, chúng ta có thể rút ra kết luận là:
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200523150938736.mp3 %}
+{% mp3 /assets/mp3/speech_20200523150938736.mp3 %}
 
 - He **wrote** *a letter*. She is saving money to **buy** *a new house*.
 - He *gave* **her** *a new dress*. She *wrote* **him** *a letter*.
@@ -393,7 +393,7 @@ Nhìn chung, chúng ta có thể rút ra kết luận là:
 - [**difficulty/difficulties, problem/problems, no use**] I have no *difficulty* **finishing** the test;
 - [**busy, worth**] It would be worth giving it a try.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200523151542367.mp3 %}
+{% mp3 /assets/mp3/speech_20200523151542367.mp3 %}
 
 - The woman **teaching** English at his school is Ms. Smith.
 - **Getting** up late, he was late for work.

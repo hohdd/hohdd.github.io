@@ -33,7 +33,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Cấu trúc câu tiếng Anh thông dụng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-tieng-anh-thong-dung.mp3 %}
+{% mp3 /assets/mp3/mau-cau-tieng-anh-thong-dung.mp3 %}
 
 | No. | Mẫu câu | Giải thích | Ví dụ | Trans
 |:-
@@ -74,7 +74,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Cấu trúc tiếng anh kinh điển
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-tieng-anh-kinh-dien.mp3 %}
+{% mp3 /assets/mp3/mau-cau-tieng-anh-kinh-dien.mp3 %}
 
 | No. | Mẫu câu | Giải thích | Ví dụ | Trans
 |:-

@@ -33,7 +33,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Adjective: level A1 + A2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/vocabulary-adj-level-a.mp3 %}
+{% mp3 /assets/mp3/vocabulary-adj-level-a.mp3 %}
 
 | Word | IPA | Google Translate
 |:-
@@ -265,7 +265,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Adjective: level B1 + B2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/vocabulary-adj-level-b.mp3 %}
+{% mp3 /assets/mp3/vocabulary-adj-level-b.mp3 %}
 
 | Word | IPA | Google Translate
 |:-
@@ -1137,7 +1137,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Adjective: level C1 + C2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/vocabulary-adj-level-c.mp3 %}
+{% mp3 /assets/mp3/vocabulary-adj-level-c.mp3 %}
 
 | Word | IPA | Google Translate
 |:-

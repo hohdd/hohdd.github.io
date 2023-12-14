@@ -38,7 +38,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 1. Greetings
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-01.mp3 %}
+{% mp3 /assets/mp3/E-01.mp3 %}
 
 General greetings (Formal)
 - Hello
@@ -85,7 +85,7 @@ Useful responses when greeting people
 
 ### 2. Saying Goodbye
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-02.mp3 %}
+{% mp3 /assets/mp3/E-02.mp3 %}
 
 - Goodbye
 - Bye
@@ -110,7 +110,7 @@ Useful responses when greeting people
 
 ### 3. Making apologies
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-03.mp3 %}
+{% mp3 /assets/mp3/E-03.mp3 %}
 
 Apologies Expressions
 
@@ -145,7 +145,7 @@ To accept an apology, you can use these sentences and expressions:
 
 ### 4. Introducing yourself and others
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-04.mp3 %}
+{% mp3 /assets/mp3/E-04.mp3 %}
 
 Introducing yourself
 
@@ -178,7 +178,7 @@ Useful responses when introducing yourself or other people:
 
 ### 5. Thank you
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-05.mp3 %}
+{% mp3 /assets/mp3/E-05.mp3 %}
 
 Express thanks and gratitude:
 
@@ -215,7 +215,7 @@ Useful Responses:
 
 ### 6. Talking about time
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-06.mp3 %}
+{% mp3 /assets/mp3/E-06.mp3 %}
 
 - What time **is it**?
 - What’s the time?
@@ -245,7 +245,7 @@ Useful Responses:
 
 ### 7. Do you speak English?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-07.mp3 %}
+{% mp3 /assets/mp3/E-07.mp3 %}
 
 - **Can you speak** English?
 - **How long have you been** learning English?
@@ -273,7 +273,7 @@ Useful Responses:
 
 ### 8. Giving compliments
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-08.mp3 %}
+{% mp3 /assets/mp3/E-08.mp3 %}
 
 Giving Compliments:
 
@@ -313,7 +313,7 @@ Receiving {% tooltip compliments [(n) compliment: lời khen] %}:
 
 ### 9. Making Complaints
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-09.mp3 %}
+{% mp3 /assets/mp3/E-09.mp3 %}
 
 Making a complaint
 
@@ -351,7 +351,7 @@ Rejecting a complaint
 
 ### 10. Likes and dislikes
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-10.mp3 %}
+{% mp3 /assets/mp3/E-10.mp3 %}
 
 Expressing Likes:
 - I **like**…
@@ -386,7 +386,7 @@ Examples:
 
 ### 11. Certainty and Uncertainty
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-11.mp3 %}
+{% mp3 /assets/mp3/E-11.mp3 %}
 
 Asking for {% tooltip Certainty [(n) sự chắc chắn] %}:
 - Are you **sure**?
@@ -424,7 +424,7 @@ Expressing Uncertainty:
 
 ### 12. Making Invitations
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-12.mp3 %}
+{% mp3 /assets/mp3/E-12.mp3 %}
 
 Making invitations:
 - Do you **feel like** going for a walk?
@@ -462,7 +462,7 @@ Refusing an Invitation:
 
 ### 13. Making Requests
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-13.mp3 %}
+{% mp3 /assets/mp3/E-13.mp3 %}
 
 Making requests:
 - Will/Would/Can/Could you please…
@@ -509,7 +509,7 @@ Refusing Requests:
 
 ### 14. Making Offers
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-14.mp3 %}
+{% mp3 /assets/mp3/E-14.mp3 %}
 
 Making Offers:
 - **Can I**…?
@@ -555,7 +555,7 @@ Refusing Offers:
 
 ### 15. Asking and Giving Permission
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-15.mp3 %}
+{% mp3 /assets/mp3/E-15.mp3 %}
 
 Asking for permission:
 - **Can I** use your pen, please?
@@ -590,7 +590,7 @@ Refusing permission:
 
 ### 16. Making suggestions and giving advice
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-16.mp3 %}
+{% mp3 /assets/mp3/E-16.mp3 %}
 
 Making suggestions and giving advice:
 - **You should** try to learn English everyday.
@@ -626,7 +626,7 @@ Refusing suggestions:
 
 ### 17. Expressing Sympathy
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-17.mp3 %}
+{% mp3 /assets/mp3/E-17.mp3 %}
 
 Expressing {% tooltip sympathy [(n) sự cảm thông, sự chia buồn, lòng thương hại, lòng trắc ẩn] %}:
 - That’s **too bad**.
@@ -654,7 +654,7 @@ Responding:
 
 ### 18. Asking for information
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-18.mp3 %}
+{% mp3 /assets/mp3/E-18.mp3 %}
 
 Asking for Information: 
 - **Could you tell me how to** get to the bus station?
@@ -671,7 +671,7 @@ Asking for Information:
 
 ### 19. Guessing
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-19.mp3 %}
+{% mp3 /assets/mp3/E-19.mp3 %}
 
 - **It looks like** you’re new here.
 - **It looks like** you don’t know what happened.
@@ -688,7 +688,7 @@ Asking for Information:
 
 ### 20. Demanding explanations
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-20.mp3 %}
+{% mp3 /assets/mp3/E-20.mp3 %}
 
 - **Can you explain why** you were so late?
 - **How come** it has taken you so long to reply to my email?
@@ -699,7 +699,7 @@ Asking for Information:
 
 ### 21. Hopes and desires
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-21.mp3 %}
+{% mp3 /assets/mp3/E-21.mp3 %}
 
 - **I hope** to see you soon.
 - **Let’s hope** he will get better soon.
@@ -715,7 +715,7 @@ Asking for Information:
 
 ### 22. Asking for Opinions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-22.mp3 %}
+{% mp3 /assets/mp3/E-22.mp3 %}
 
 - **What do you think about** this problem?
 - **What do you think of** my new house?
@@ -733,7 +733,7 @@ Asking for Information:
 
 ### 23. Giving Opinions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-23.mp3 %}
+{% mp3 /assets/mp3/E-23.mp3 %}
 
 Expressing opinions:
 - **I think we need to** buy a house.
@@ -762,7 +762,7 @@ Disagreeing with an opinion:
 
 ### 24. Making an Appointment
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-24.mp3 %}
+{% mp3 /assets/mp3/E-24.mp3 %}
 
 Making Appointment:
 - **Can we meet** on the 14th?
@@ -794,7 +794,7 @@ Canceling/rejecting an appointment:
 
 ### 25. Fear and {% tooltip Anxiety [(n) sự lo ngại, sự băn khoăn, lòng ham muốn] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-25.mp3 %}
+{% mp3 /assets/mp3/E-25.mp3 %}
 
 Are you afraid of the dark?
 - I’m afraid of **being alone at night**.
@@ -815,7 +815,7 @@ Useful Responses:
 
 ### 26. Making promises
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-26.mp3 %}
+{% mp3 /assets/mp3/E-26.mp3 %}
 
 Making promises:
 - **I promise that** I will finish the job on time.
@@ -836,7 +836,7 @@ Useful Responses:
 
 ### 27. Admitting mistakes
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-27.mp3 %}
+{% mp3 /assets/mp3/E-27.mp3 %}
 
 Admitting mistakes:
 - **I have to admit that** I was wrong.
@@ -864,7 +864,7 @@ Useful responses:
 
 ### 28. Expressing preferences
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-28.mp3 %}
+{% mp3 /assets/mp3/E-28.mp3 %}
 
 Questions about preferences:
 - **Which do you prefer**, football or volleyball?
@@ -887,7 +887,7 @@ Expressing Preferences:
 
 ### 29. Expressing Cause and Effect
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-29.mp3 %}
+{% mp3 /assets/mp3/E-29.mp3 %}
 
 - I help you **because** I like you.
 - I study hard **because** I want to pass the exam.
@@ -907,7 +907,7 @@ Expressing Preferences:
 
 ### 30. Talking about feelings
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-30.mp3 %}
+{% mp3 /assets/mp3/E-30.mp3 %}
 
 Asking about Feelings:
 - How are you **feeling**?
@@ -931,7 +931,7 @@ Expressing Feelings:
 
 ### 31. Making and Answering Phone Call
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-31.mp3 %}
+{% mp3 /assets/mp3/E-31.mp3 %}
 
 - **Can I speak to** John, please?
 - **I’d like to speak to** John.
@@ -963,7 +963,7 @@ Expressing Feelings:
 
 ### 32. Making friends
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-32.mp3 %}
+{% mp3 /assets/mp3/E-32.mp3 %}
 
 - It’s nice to meet you.
 - What’s your name?
@@ -987,7 +987,7 @@ Expressing Feelings:
 
 ### 33. Asking and giving directions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-33.mp3 %}
+{% mp3 /assets/mp3/E-33.mp3 %}
 
 Asking directions
 - Excuse me, **do you know where** the bookstore **is**?
@@ -1006,7 +1006,7 @@ Asking directions
 
 ### 34. Talking about jobs and {% tooltip occupations [(n) occupation: nghề nghiệp, việc làm] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-34.mp3 %}
+{% mp3 /assets/mp3/E-34.mp3 %}
 
 - What do you do?
 - What do you do **for a living**?
@@ -1026,7 +1026,7 @@ Asking directions
 
 ### 35. Agreeing and Disagreeing
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-35.mp3 %}
+{% mp3 /assets/mp3/E-35.mp3 %}
 
 Agreeing:
 - I **completely agree**.
@@ -1067,7 +1067,7 @@ Disagreeing:
 
 ### 36. Checking for Understanding-Asking for Clarification
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-36.mp3 %}
+{% mp3 /assets/mp3/E-36.mp3 %}
 
 Checking for Understanding:
 - Do you **understand**?
@@ -1110,7 +1110,7 @@ Showing Understanding:
 
 ### 37. Expressing {% tooltip Regret [(v/n) sự hối tiếc, sự hối hận] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-37.mp3 %}
+{% mp3 /assets/mp3/E-37.mp3 %}
 
 **I wish/If only + Past perfect**
 - **I wish I had** come to your party!
@@ -1133,7 +1133,7 @@ Showing Understanding:
 
 ### 38. Congratulations and Best Wishes
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-38.mp3 %}
+{% mp3 /assets/mp3/E-38.mp3 %}
 
 Expressing Congratulations:
 - Congratulations!
@@ -1169,7 +1169,7 @@ Useful Responses:
 
 ### 39. Expressing {% tooltip Obligation [(n) Nghĩa vụ, bổn phận] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-39.mp3 %}
+{% mp3 /assets/mp3/E-39.mp3 %}
 
 Asking {% tooltip whether [(conj) liệu...] %} you or others have an obligation to do or not:
 - **Do I have to** do it now?
@@ -1197,7 +1197,7 @@ Expressing obligation:
 
 ### 40. Expressing {% tooltip Indifference [(n) Thờ ơ, hờ hững, thái độ trung lập] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-40.mp3 %}
+{% mp3 /assets/mp3/E-40.mp3 %}
 
 - Who **cares**!
 - I don’t **care**!
@@ -1218,7 +1218,7 @@ Expressing obligation:
 
 ### 41. Interrupting people
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-41.mp3 %}
+{% mp3 /assets/mp3/E-41.mp3 %}
 
 - **Excuse me** for interrupting, but…
 - **Sorry for** interrupting but….
@@ -1243,7 +1243,7 @@ Expressing obligation:
 
 ### 42. Talking about health and {% tooltip Illness [(n) tình trạng ốm, tình trạng đau yếu] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-42.mp3 %}
+{% mp3 /assets/mp3/E-42.mp3 %}
 
 Asking about health:
 - What’s the problem?
@@ -1268,7 +1268,7 @@ Talking about general illness:
 
 ### 43. {% tooltip Ability [(n) Có khả năng, tài năng, sức lực] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-43.mp3 %}
+{% mp3 /assets/mp3/E-43.mp3 %}
 
 Asking about {% tooltip ability [(n) có khả năng, có tư cách] %}:
 - **Can you** lift this table?
@@ -1290,7 +1290,7 @@ Expressing ability:
 
 ### 44. Giving good news
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-44.mp3 %}
+{% mp3 /assets/mp3/E-44.mp3 %}
 
 Giving good news:
 - I’ve got **some good news** for you…
@@ -1313,7 +1313,7 @@ Responding to good news:
 
 ### 45. Giving bad news
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-45.mp3 %}
+{% mp3 /assets/mp3/E-45.mp3 %}
 
 Giving bad news:
 - **I’m afraid** I’ve got **some bad news** for you…
@@ -1337,7 +1337,7 @@ Responding to bad news:
 
 ### 46. Expressing {% tooltip Disappointment [(n) Thất vọng, thất hứa, nản lòng] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-46.mp3 %}
+{% mp3 /assets/mp3/E-46.mp3 %}
 
 - That’s **too bad**.
 - How **disappointing**!
@@ -1356,7 +1356,7 @@ Responding to bad news:
 
 ### 47. Asking and Giving Instructions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-47.mp3 %}
+{% mp3 /assets/mp3/E-47.mp3 %}
 
 Asking for {% tooltip Instructions [(n) Instruction: chỉ đẫn, sự dạy dỗ] %}:
 - **How do I**…?
@@ -1395,7 +1395,7 @@ Finishing:
 
 ### 48. Expressing {% tooltip Prohibition [(n) Sự cấm] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-48.mp3 %}
+{% mp3 /assets/mp3/E-48.mp3 %}
 
 - It is **{% tooltip forbidden [(adj) cấm, ngăn cấm, cản trở] %}** to…
 - You are **not allowed** to …
@@ -1416,7 +1416,7 @@ Examples:
 
 ### 49. Expressing Shock
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-49.mp3 %}
+{% mp3 /assets/mp3/E-49.mp3 %}
 
 - I **was shocked** to hear…
 - We’re all **in complete shock**.
@@ -1430,7 +1430,7 @@ Examples:
 
 ### 50. Blaming and {% tooltip Accusing [(v) Accuse: Cáo buộc, tố cáo] %}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/E-50.mp3 %}
+{% mp3 /assets/mp3/E-50.mp3 %}
 
 Expressions of Blaming Someone:
 - **It’s your fault**.

@@ -33,7 +33,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Adverb: level A1 + A2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/vocabulary-other-determiner-exclamation-modal.mp3 %}
+{% mp3 /assets/mp3/vocabulary-other-determiner-exclamation-modal.mp3 %}
 
 | Word | IPA | Google Translate
 |:-

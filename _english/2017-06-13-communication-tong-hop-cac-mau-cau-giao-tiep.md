@@ -34,11 +34,11 @@ date: 2019-06-13 22:26:14 +0700
 ### Chèn Link: [link](url){:.hvr-forward rel="nofollow" target="_blank"}
 ---
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-tong-hop-cac-mau-cau-giao-tiep.mp3 %}
+{% mp3 /assets/mp3/communication-tong-hop-cac-mau-cau-giao-tiep.mp3 %}
 
 ### 1.Chào hỏi
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-1.mp3 %}
+{% mp3 /assets/mp3/communication-1.mp3 %}
 
 | Hello |   xin chào 
 | How are you   |   Bạn khỏe không?
@@ -52,7 +52,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 2.Tạm biệt
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-2.mp3 %}
+{% mp3 /assets/mp3/communication-2.mp3 %}
 
 | Goodbye | Tạm biệt
 | See you next time! | Hẹn gặp bạn lần tới
@@ -67,7 +67,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 3.Xin lỗi
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-3.mp3 %}
+{% mp3 /assets/mp3/communication-3.mp3 %}
 
 | I'm sorry | Tôi xin lỗi
 | I'm terribly sorry | Tôi rất xin lỗi
@@ -82,7 +82,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 4.Cảm ơn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-4.mp3 %}
+{% mp3 /assets/mp3/communication-4.mp3 %}
 
 | Thank you | Cảm ơn bạn
 | Thank you very much | Cảm ơn rất nhiều
@@ -98,7 +98,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 5.Giới thiệu
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-5.mp3 %}
+{% mp3 /assets/mp3/communication-5.mp3 %}
 
 | Hello. My name is ... | Xin chào. Tên của tôi là ...
 | Hi. I'm ... | Xin chào. Tôi là ...
@@ -113,7 +113,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 6.Thời gian
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-6.mp3 %}
+{% mp3 /assets/mp3/communication-6.mp3 %}
 
 | What time is it? | Bây giờ là mấy giờ rồi?
 | What time can we meet? | Mấy giờ chúng ta có thể gặp nhau?
@@ -129,7 +129,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 7.Khen ngợi
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-7.mp3 %}
+{% mp3 /assets/mp3/communication-7.mp3 %}
 
 | Well done! | Làm tốt lắm!
 | That's perfect! | Hoàn hảo rồi đó!
@@ -145,7 +145,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 8.Than phiền
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-8.mp3 %}
+{% mp3 /assets/mp3/communication-8.mp3 %}
 
 | I'm sorry to say this but ... | Tôi xin lỗi khi phải nói điều này nhưng mà ...
 | I'm angry about ... | Tôi đang bực về ...
@@ -160,7 +160,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 9.Nhạc nhiên
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-9.mp3 %}
+{% mp3 /assets/mp3/communication-9.mp3 %}
 
 | I was surprised to hear that ... | Tôi đã rất ngạc nhiên khi nghe là ...
 | We're all in complete shock | Chúng tôi đều bị sốc hoàn toàn
@@ -175,7 +175,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 10.Lời mời
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-10.mp3 %}
+{% mp3 /assets/mp3/communication-10.mp3 %}
 
 | Do you feel like going for a walk? | Bạn có muốn đi dạo chút không?
 | Would you like to play cards? | Bạn có muốn chơi bài không?
@@ -190,7 +190,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 11.Yêu cầu
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-11.mp3 %}
+{% mp3 /assets/mp3/communication-11.mp3 %}
 
 | Can you give me the book? | Bạn có thể đưa cho tôi quyển sách được không?
 | Would you mind opening the window, please? | Bạn vui lòng mở cửa sổ ra được không?
@@ -205,7 +205,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 12.Sự cho phép
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-12.mp3 %}
+{% mp3 /assets/mp3/communication-12.mp3 %}
 
 | Can I sit here? | Tôi có thể ngồi đây không?
 | May I use your computer? | Tôi có thể dùng máy tính của bạn không?
@@ -220,7 +220,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 13.Gợi ý
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-13.mp3 %}
+{% mp3 /assets/mp3/communication-13.mp3 %}
 
 | You should try to learn english everyday. | Bạn nên cố gắng học tiếng anh hằng ngày
 | I think you should go home early. | Tôi nghĩ bạn nên đi về nhà sớm
@@ -234,7 +234,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 14.Sự cảm thông
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-14.mp3 %}
+{% mp3 /assets/mp3/communication-14.mp3 %}
 
 | That's too bad. | Đúng là tệ thật
 | I'm sorry. What bad luck! | Tôi xin lỗi. Đúng là xui thật!
@@ -249,7 +249,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 15.Sở thích
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-15.mp3 %}
+{% mp3 /assets/mp3/communication-15.mp3 %}
 
 | I like dogs. | Tôi thích chó
 | I enjoy playing football. | Tôi thích chơi bóng đá
@@ -264,7 +264,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 16.Phỏng đoán
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-16.mp3 %}
+{% mp3 /assets/mp3/communication-16.mp3 %}
 
 | It looks like you're new here. | Nhìn có vẻ bạn mới làm ở đây.
 | Perhaps she knows the answer. | Có thể cô ấy biết câu trả lời.
@@ -279,7 +279,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 17.Mong muốn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-17.mp3 %}
+{% mp3 /assets/mp3/communication-17.mp3 %}
 
 | I hope to see you soon. | Tôi hy vọng được gặp bạn sớm.
 | I believe things will get better. | Tôi tin là mọi chuyện sẽ trở nên tốt hơn.
@@ -295,7 +295,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 18.Nêu ý kiến
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-18.mp3 %}
+{% mp3 /assets/mp3/communication-18.mp3 %}
 
 | What do you think about this problem? | Bạn nghĩ thế nào về vấn đề này?
 | Do you have any thoughts on that? | Bạn có suy nghĩ về nó không?
@@ -310,7 +310,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 19.Cuộc hẹn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-19.mp3 %}
+{% mp3 /assets/mp3/communication-19.mp3 %}
 
 | Are you available on the 14th? | Bạn có rảnh vào ngày 14 không?
 | Let's meet this evening. | Chúng ta gặp nhau tối nay nhé
@@ -325,7 +325,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 20.Nỗi sợ
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-20.mp3 %}
+{% mp3 /assets/mp3/communication-20.mp3 %}
 
 | Are you afraid of the dark? | Bạn có sợ bóng tối không?
 | What are you afraid of? | Bạn sợ cái gì?
@@ -340,7 +340,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 21.Hứa hẹn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-21.mp3 %}
+{% mp3 /assets/mp3/communication-21.mp3 %}
 
 | I promise that I will finish the job on time. | Tôi hứa là tôi sẽ hoàn thành công việc đúng hẹn.
 | I promise you that it's the truth. | Tôi hứa với bạn rằng đó là sự thật.
@@ -355,7 +355,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 22.Nhận lỗi
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-22.mp3 %}
+{% mp3 /assets/mp3/communication-22.mp3 %}
 
 | I have to admit that I was wrong. | Tôi nhận là tôi đã sai.
 | I admit what I've done is wrong. | Tôi nhận là những gì tôi đã làm là sai.
@@ -370,7 +370,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 23.Thất vọng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-23.mp3 %}
+{% mp3 /assets/mp3/communication-23.mp3 %}
 
 | That's too bad. | Nó tệ thật đấy
 | How disappointing! | Thật đáng thất vọng!
@@ -385,7 +385,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 24.Cảm xúc
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-24.mp3 %}
+{% mp3 /assets/mp3/communication-24.mp3 %}
 
 | How are you feeling? | Bạn cảm thấy thế nào?
 | Do you want to talk about it? | Bạn có muốn nói chuyện về nó không?
@@ -400,7 +400,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 25.Điện thoại
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-25.mp3 %}
+{% mp3 /assets/mp3/communication-25.mp3 %}
 
 | I'd like to speak to John, please. | Tôi muốn nói chuyện với John. (vui lòng cho tôi gặp John)
 | I'm sorry, he's not available at the moment. | Tôi xin lỗi, anh ấy hiện đang bận.
@@ -415,7 +415,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 26.Bị ốm
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-26.mp3 %}
+{% mp3 /assets/mp3/communication-26.mp3 %}
 
 | What's the problem? | Có vấn đề gì vậy?
 | Are you feeling any better? | Bạn thấy ổn chưa?
@@ -430,7 +430,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 27.Hỏi đường
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-27.mp3 %}
+{% mp3 /assets/mp3/communication-27.mp3 %}
 
 | Do you know where the bookstore is? | Bạn có biết hiệu sách ở đâu không?
 | How can I get to the train station from here? | Làm sao để tôi đến được nhà ga tầu từ đây thế?
@@ -445,7 +445,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 28.Nghề nghiệp
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-28.mp3 %}
+{% mp3 /assets/mp3/communication-28.mp3 %}
 
 | What do you do? | Bạn làm gì vậy?
 | What do you do for a living? | Bạn làm gì để kiếm sống vậy?
@@ -460,7 +460,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 29.Hối hận
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-29.mp3 %}
+{% mp3 /assets/mp3/communication-29.mp3 %}
 
 | I wish I had come to your party! | Tôi ước là tôi đã đến dự bữa tiệc của bạn.
 | I wish I had worked harder. | Tôi ước gì tôi đã làm việc chăm chỉ hơn.
@@ -475,7 +475,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ### 30.Chúc mừng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/communication-30.mp3 %}
+{% mp3 /assets/mp3/communication-30.mp3 %}
 
 | Congratulations! | Chúc mừng!
 | Well done! | Làm tốt lắm!

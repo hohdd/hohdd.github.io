@@ -31,8 +31,8 @@ date: 2020-05-15 14:26:14 +0700
 ### permalink: /url-ghi-de-mac-dinh # cân nhắc nếu muốn dùng!
 ---
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/sentence-cac-chu-diem-ngu-phap.mp3 %}
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/sentence-cac-chu-diem-ngu-phap_REPREAT.mp3 %}
+{% mp3 /assets/mp3/sentence-cac-chu-diem-ngu-phap.mp3 %}
+{% mp3 /assets/mp3/sentence-cac-chu-diem-ngu-phap_REPREAT.mp3 %}
 
 | Sentence | Remark
 |:-

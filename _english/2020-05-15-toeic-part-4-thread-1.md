@@ -64,7 +64,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-001.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-001.mp3 %}
 
 |	*This is* **your captain** [**driver**] **speaking**.	|	*Đây là* **đội trưởng của bạn** [**tài xế**] **đang nói**.	|	
 |	*Welcome* **aboard** ~.	|	*Chào mừng bạn* **lên tàu** ~.	|	
@@ -82,7 +82,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-001.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-001.mp3 %}
 
 |	**Opening**	|	Hello, ladies and gentlemen. *This is* **your captain** *speaking*. **Welcome** *aboard* **Flight 705**.	|	Xin chào quý vị và các bạn. *Đây là* **đội trưởng của bạn** *đang nói*. **Chào mừng** *bạn lên chuyến bay 705*.
 |		|	Hello, *this is* **your driver** *speaking*. We **have just departed** *from Toronto Greyhound Station*.	|	Xin chào, *đây là* **tài xế của bạn** *đang nói*. Chúng ta **vừa khởi hành** *từ ga Toronto Greyhound.*
@@ -100,7 +100,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-002.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-002.mp3 %}
 
 |	*This is* **Sam calling** *to-V* ~.	|	*Đây là* **Sam đang gọi** *để-V* ~.	|	
 |	*This is* **Margaret** *from General Public Services.*	|	*Đây là* **Margaret** *từ Dịch vụ Công cộng Chung*.	|	
@@ -116,7 +116,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-002.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-002.mp3 %}
 
 |	**Greeting**	|	Hi, *this is* **Ron** *from London Life* **calling about** *your group insurance*.	|	Xin chào, *đây là* **Ron** *từ London Life* **gọi điện** *về bảo hiểm nhóm của bạn*.
 |		|	Hi, **you have reached** *John Simpson's desk*.	|	Xin chào, **bạn đã đến** *bàn của John Simpson*.
@@ -134,7 +134,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-003.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-003.mp3 %}
 
 |	**be the place** *for you*	|	**là nơi** *dành cho bạn*	|	
 |	**take advantage of**	|	**tận dụng lợi thế của**	|	
@@ -148,7 +148,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-003.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-003.mp3 %}
 
 |	**Opening**	|	**If you are thinking of** *improving your language skills*, George Brown **institute** is **the place for you**.	|	**Nếu bạn đang nghĩ đến việc** *cải thiện kỹ năng ngôn ngữ của mình*, **học viện** George Brown là **nơi dành cho bạn**.
 |		|	*Mark's Warehouse* will **finally** open its doors this Saturday, so we are inviting everyone **to join us** at our **grand opening sale**.	|	*Mark's Warehouse* **cuối cùng** cũng sẽ mở cửa vào thứ Bảy tuần này, vì vậy chúng tôi mời mọi người đến **tham gia với chúng tôi** trong đợt **bán hàng khai trương**.
@@ -164,7 +164,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-004.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-004.mp3 %}
 
 |	*The first thing* {% u I want to say %} **is about** ~.	|	*Điều đầu tiên* {% u tôi muốn nói %} **là về** ~.	|	
 |	**The first topic** *on today's agenda* **is** ~.	|	**Chủ đề đầu tiên** *trong chương trình nghị sự hôm nay* **là** ~.	|	
@@ -178,7 +178,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-004.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-004.mp3 %}
 
 |	**Opening**	|	Good morning, staff. **The first topic** {% u on today's agenda %} **is the fire alarm system**.	|	Chào buổi sáng, nhân viên. **Chủ đề đầu tiên** {% u trong chương trình nghị sự hôm nay %} **là hệ thống báo cháy.**
 |		|	Good afternoon, everyone. **Please be informed that** *we will be having* **a company outing** *this Saturday at Thompson Park*.	|	Chào mọi người. **Xin được thông báo rằng** *chúng tôi sẽ có* **một chuyến đi chơi cùng công ty** *vào thứ Bảy tuần này tại Thompson Park.*
@@ -196,7 +196,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-005.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-005.mp3 %}
 
 |	**May I have your attention**, *please*?	|	**Tôi có thể để ý của bạn được không?**	|	
 |	**Could I have a moment of your time**, *please*?	|	**Làm ơn cho tôi một chút thời gian được không?**	|	
@@ -213,7 +213,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-005.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-005.mp3 %}
 
 |	**Greeting**	|	**May I have your attention** {% u for a minute %}, please?	|	**Làm ơn cho tôi chú ý** {% u một phút %} được không?
 |		|	*Could I have* **a moment of your time**, please?	|	*Làm ơn cho tôi* **một chút thời gian được không?**
@@ -231,7 +231,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-006.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-006.mp3 %}
 
 |	**In sports news today**, *S + has (been) P2* ~.	|	**Trong bản tin thể thao hôm nay**, *S + đã (được) P2* ~.	|	
 |	**In today's top news**, *S + has (been) P2* ~.	|	**Trong tin tức hàng đầu hôm nay**, *S + đã (được) P2* ~.	|	
@@ -246,7 +246,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-006.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-006.mp3 %}
 
 |	**Opening**	|	**In sports news today**, *the Detroit Tigers* **signed** *a multi-million dollar contract* **with** *left-handed pitcher Jim Gonzales*.	|	**Trong bản tin thể thao hôm nay**, *Detroit Tigers* **đã ký** *hợp đồng trị giá hàng triệu USD* **với** *tay ném trái Jim Gonzales*.
 |		|	Now, **to our local news**. *City officials* **made an announcement** this morning **that** *they will build* **a new highway** in the northern part of the city.	|	Bây giờ, **đến tin tức địa phương của chúng tôi**. *Các quan chức thành phố* **đã đưa ra thông báo** sáng nay **rằng** *họ sẽ xây dựng* **một đường cao tốc mới** ở phần phía bắc của thành phố.
@@ -263,7 +263,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-007.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-007.mp3 %}
 
 |	**This is** [a name] **with the day's weather report.**	|	**Đây là [tên] với báo cáo thời tiết trong ngày**.	|	
 |	**Here is** [a name] **with the weather update** *for the week*.	|	**Đây là [tên] với bản cập nhật thời tiết** *trong tuần*.	|	
@@ -278,7 +278,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-007.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-007.mp3 %}
 
 |	**Opening**	|	Good morning, this is Ron Springs **with the day's weather report**.	|	Chào buổi sáng, đây là Ron Springs **với báo cáo thời tiết trong ngày.**
 |		|	Good afternoon. This is Jerry Lewis **with the 2 o'clock weather update**.	|	Chào buổi trưa. Đây là Jerry Lewis **với bản cập nhật thời tiết lúc 2 giờ.**
@@ -296,7 +296,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-008.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-008.mp3 %}
 
 |	Now, **to our local traffic report** in the city.	|	Bây giờ, **đến báo cáo giao thông địa phương** của chúng tôi trong thành phố.	|	
 |	**This is** [a name] **with the local traffic update**. 	|	**Đây là** [tên] **có cập nhật giao thông cục bộ.**	|	
@@ -310,7 +310,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-008.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-008.mp3 %}
 
 |	**Opening**	|	Now, **to our local traffic report** in the city.	|	Bây giờ, **đến báo cáo giao thông địa phương** của chúng tôi trong thành phố.
 |		|	Good morning, this is Sarah McKenzie **with the traffic conditions** *around the city*.	|	Chào buổi sáng, đây là Sarah McKenzie **với tình hình giao thông** *xung quanh thành phố*.
@@ -329,7 +329,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-009.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-009.mp3 %}
 
 |	**I'd like to thank you for** ~.	|	**Tôi muốn cảm ơn bạn vì** ~.	|	
 |	**I'm honored to-V** ~.	|	**Tôi rất hân hạnh được-V** ~.	|	
@@ -343,7 +343,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-009.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-009.mp3 %}
 
 |	**Opening**	|	**I'd like to thank you for** *taking the time out of* **your busy schedules** *to attend today*.	|	**Tôi muốn cảm ơn bạn đã** *dành thời gian ra khỏi* **lịch trình bận rộn của mình** *để tham dự ngày hôm nay*.
 |		|	**I'm honored to be standing before you today** *to accept this award* **on behalf of** *our team*.	|	**Tôi rất vinh dự được đứng trước các bạn hôm nay** *để thay mặt cho nhóm của chúng tôi* **nhận giải thưởng này**.
@@ -361,7 +361,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-010.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-010.mp3 %}
 
 |	**I've asked you** *to gather here today* **to-V** ~.	|	**Tôi đã yêu cầu bạn** *tụ tập ở đây hôm nay* **để-V** ~.	|	
 |	**You are all here today** *because S + V* ~.	|	**Tất cả các bạn ở đây hôm nay** *vì S + V* ~.	|	
@@ -377,7 +377,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-010.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-010.mp3 %}
 
 |	**Opening**	|	**I've asked you** *to gather here today* **to let you know that** *we are going* **to have a new manager** *starting with us* next week.	|	**Tôi đã đề nghị các bạn** *tập trung tại đây hôm nay* **để cho các bạn biết rằng** *chúng tôi sẽ* **có một người quản lý mới** *bắt đầu với chúng tôi vào tuần tới*.
 |		|	**You are all here today** *because* **I have some good news** *to tell* **each and every one of you**.	|	**Tất cả các bạn ở đây hôm nay** *bởi vì* **tôi có một số tin tốt** *để nói* **với mỗi người trong số các bạn**.
@@ -395,7 +395,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-011.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-011.mp3 %}
 
 |	**Here is** ~, *and* **it is** ~ **to-V** ~.	|	**Đây là** ~, *và* **nó là** ~ **to-V** ~.	|	
 |	**I want to let [someone] know** {% u that S + V %} ~.	|	**Tôi muốn cho [ai đó] biết** {% u rằng S + V %} ~.	|	
@@ -408,7 +408,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-011.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-011.mp3 %}
 
 |	**Opening**	|	***The phone* you just picked up** *has many features*. **Let me** {% u briefly %} *explain* **some of the most useful functions** *for you*.	|	***Chiếc điện thoại* bạn vừa nhấc máy** *có nhiều tính năng*. **Hãy để tôi** *giải thích* {% u ngắn gọn %} **một số chức năng hữu ích nhất** *cho bạn*.
 |		|	**You made a good purchase here** *because* **this phone is the latest phone** *on the market*.	|	**Bạn đã mua hàng tốt ở đây** *vì* **điện thoại này là điện thoại mới nhất** *trên thị trường*.
@@ -427,7 +427,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-key-expressions-012.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-key-expressions-012.mp3 %}
 
 |	**I'd like to apologize for** ~.	|	**Tôi muốn xin lỗi vì** ~.	|	
 |	**I'm *quite* certain that** *S + V* ~.	|	**Tôi *khá* chắc chắn rằng** *S + V* ~.	|	
@@ -443,7 +443,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-theory-more-exp-012.mp3 %}
+{% mp3 /assets/toeic/part4/part4-theory-more-exp-012.mp3 %}
 
 |	**Opening**	|	*Welcome, everyone!* **My name is** *Jeff Wills*, *and* **I will be your guide** *today*.	|	*Chào mừng mọi người!* **Tên tôi là** *Jeff Wills, và* **tôi sẽ là người hướng dẫn bạn** *hôm nay*.
 |		|	*Hello, everyone, and welcome*. Today, **we will be going on** *a 10-kilometer* **hike up the mountain**.	|	*Xin chào, tất cả mọi người, và chào mừng*. Hôm nay, **chúng ta sẽ đi bộ** *10 km* **lên núi**.
@@ -461,7 +461,7 @@ Cách đọc trước câu hỏi:
 
 ## Luyện tập
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/XpCLj.mp3 %}
+{% mp3 /assets/mp3-toeic/XpCLj.mp3 %}
 
 | I'm a **wedding planner**.  | Tôi là một **người tổ chức lễ cưới**.
 | *My job* **brings me** *a lot of pleasure*. | *Công việc của tôi* **mang đến cho tôi** *rất nhiều niềm vui*.
@@ -474,7 +474,7 @@ Cách đọc trước câu hỏi:
 | **I hope** *they like it* {% u a lot %}. | **Tôi hy vọng** *họ thích nó* {% u thật nhiều %}.
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/7PVex.mp3 %}
+{% mp3 /assets/mp3-toeic/7PVex.mp3 %}
 
 | **Attention, please**. | Xin chú ý.
 | *We would like to remind you* that **next Monday *at* nine o'clock**, we **will be having** *our yearly staff picnic*. | *Chúng tôi muốn nhắc các bạn* rằng **thứ Hai tuần sau *lúc* 9 giờ**, chúng ta **sẽ có** *buổi dã ngoại dành cho nhân viên hàng năm*.
@@ -484,7 +484,7 @@ Cách đọc trước câu hỏi:
 | *Prizes* **include** *a new DVD player and a holiday*. | *Phần thưởng* **gồm có** *một đầu DVD mới và một kỳ nghỉ.*
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/2t5hz.mp3 %}
+{% mp3 /assets/mp3-toeic/2t5hz.mp3 %}
 
 | **Due to** *problems* **with the lighting**, *the concert* **has to be postponed** {% u until %} *Friday the 22nd*. | **Do có** *vấn đề* **về ánh sáng**, nên *buổi hòa nhạc* **sẽ bị hoãn lại** {% u cho đến %} *thứ Sáu ngày 22*.
 | *The concert* **will *also* be moved** {% u from %} *hall A* {% u to %} *the larger hall C*. | *Buổi hòa nhạc* ***cũng* sẽ được chuyển** {% u từ %} *sảnh A* {% u sang %} *sảnh C lớn hơn*.
@@ -492,7 +492,7 @@ Cách đọc trước câu hỏi:
 | **Because of** *the extra tickets*, tickets **will now be priced at** *the lower cost of twenty dollars*. | **Vì có** *thêm vé* nên **vé sẽ có giá thấp hơn**, *là 20 đô*.
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/39kdG.mp3 %}
+{% mp3 /assets/mp3-toeic/39kdG.mp3 %}
 
 | **Tomorrow's issue** *will be* **the last one for our newspaper**. | **Số báo ngày mai** **sẽ là** **số cuối cùng của tờ báo chúng ta**.
 | **We all** *knew* **this day** *was coming*, and **it is a sad day**. | **Tất cả chúng ta** *đều biết* **ngày này** *sẽ đến*, **và nó đúng là một ngày buồn bã.**
@@ -506,7 +506,7 @@ Cách đọc trước câu hỏi:
 | **Let's get to work** *and* **make it the best *it can be***. | **Chúng ta hãy cùng làm** *cho nó trở nên hay nhất có thể nào.*
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/zT97O.mp3 %}
+{% mp3 /assets/mp3-toeic/zT97O.mp3 %}
 
 | Hello, *this message* **is for** *Tayna Smith*. | Xin chào, *tin nhắn này* **dành cho** *Tayna Smith*.
 | Tayna, **my name is** *Karl Klaussen* **with** *Premium Insurance Company*. | Tayna, **tên tôi là** *Karl Klaussen* **ở công ty** *bảo hiểm Premium.*
@@ -525,7 +525,7 @@ Cách đọc trước câu hỏi:
 
 ### Tour du lịch
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-001.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-001.mp3 %}
 
 **Who** is *the speaker*? → Người nói là ai?
 - (A) A snake farmer. → Người trong trang trại rắn.
@@ -545,7 +545,7 @@ Cách đọc trước câu hỏi:
 - (C) To not be late getting back to the bus. → Không được trễ giờ lên xe buýt.
 - (D) To be careful at the snake farm. → Cẩn thận khi ở trang trại rắn.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/IjSJi.mp3 %}
+{% mp3 /assets/toeic/part4/IjSJi.mp3 %}
 
 | Good morning, everyone. **It's a bright**, *beautiful day* **today**, *isn't it*? | Xin chào moi người. **Ngày hôm nay là một ngày đẹp trời** *phải không ạ?*
 | **My name is** Richard Benson and **I'm your assigned tour guide** *for today*. | **Tôi tên là** Richard Benson và **tôi được phân làm người hướng dẫn đoàn** cho hôm nay.
@@ -560,7 +560,7 @@ Cách đọc trước câu hỏi:
 
 ### Thông báo ở phòng chờ sân bay
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-002.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-002.mp3 %}
 
 **Who** is the **intended audience** for this announcement? → Thông báo này **nhắm đến đối tượng khán giả là ai?**
 - (A) Car commuters → Những người đi làm xa bằng ô tô
@@ -580,7 +580,7 @@ Cách đọc trước câu hỏi:
 - **(C) Get more information → Lấy thêm thông tin** Ta thấy ý này trong câu "Please check the arrivals and departure boards, located on the concourses of each main terminal, for more specific information and updates on individual flights."
 - (D) Fly Midwestern Airlines → Bay của hãng Midwestern
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/fgvtL.mp3 %}
+{% mp3 /assets/toeic/part4/fgvtL.mp3 %}
 
 | Ladies and gentlemen, **can I have your attention please**. | Kính chào quý ông và quý bà, **tôi xin có đôi lời.**
 | We **regret to inform** you that **a thunderstorm** in Chicago **has delayed several flights.**  | Chúng tôi **lấy làm tiếc khi phải thông báo** cho quý vị biết là **một cơn giông bão** ở Chicago **đã làm trì hoãn nhiều chuyến bay.**
@@ -595,7 +595,7 @@ Cách đọc trước câu hỏi:
 
 ### Cung cấp lời khuyên cho những người muốn khởi nghiệp
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-003.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-003.mp3 %}
 
 **What** is the **purpose of the talk?** → **Mục đích** của bài nói **là gì?**
 - (A) To give tips on how to quickly climb the corporate ladder. → Đưa ra những chiêu thức để thăng tiến nhanh trong công ty.
@@ -615,7 +615,7 @@ Cách đọc trước câu hỏi:
 - (C) To have as many investors as possible. → Có càng nhiều nhà đầu tư càng tốt.
 - (D) To use a local bank if possible. → Sử dụng ngân hàng địa phương nếu có.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/P0cDC.mp3 %}
+{% mp3 /assets/toeic/part4/P0cDC.mp3 %}
 
 | **Many people** *have great ideas*, **yet** they have **much difficulty** *in getting* their own businesses **off the ground**. | **Nhiều người** *có ý tưởng rất hay*, **nhưng** *rất khó khăn* **trong việc làm cho** doanh nghiệp của họ **thành công (khỏi mặt đất)**.
 | If you are **the entrepreneurial type** *and* **are interested in** *starting your own business*, here are **a couple of words** *of interest* **from previous entrepreneurs** {% u such as %} Michael Bell and Susan McDonald, **who have started their own businesses**. | Nếu bạn thuộc **tuýp người thích khởi nghiệp** và **hứng thú với việc** *tự kinh doanh*, sau đây là **một vài lời** *rất thú vị* **từ những người khởi nghiệp trước** {% u như %} Michael Bell và Susan McDonald, **những người đã tự mở công ty cho chính mình**.
@@ -626,7 +626,7 @@ Cách đọc trước câu hỏi:
 
 ### Quảng cảo nước tăng lực Rev up
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-004.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-004.mp3 %}
 
 **What** is *being advertised?* → **Cái gì** *đang được quảng cáo?*
 - (A) Heart medication → Thuốc cho bệnh tim
@@ -646,7 +646,7 @@ Cách đọc trước câu hỏi:
 - (C) Only online → Chỉ ở trên mạng.
 - (D) At coffee shops → Ở tiệm cà phê.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/zcElN.mp3 %}
+{% mp3 /assets/toeic/part4/zcElN.mp3 %}
 
 | **Feeling run down**? {% u Low on energy %}? **Like** *you'll never make it through the day?* **Then** *it's time for you* **to Rev Up**. | **Cảm thấy kiệt sức**? {% u Thiếu năng lượng %}? **Cứ như là** *bạn chẳng thể nào sống nổi qua ngày?* **Vậy thì** *đã đến lúc bạn* **cần đến Rev Up**.
 | *One package of Rev Up* **contains** *enough vitamins and minerals* **to energize you** *for five straight hours*. | *Một gói Rev Up* **chứa** *đủ vitamin và khoáng chất* **để bổ sung năng lượng cho bạn** *suốt 5 tiếng liền.*
@@ -659,7 +659,7 @@ Cách đọc trước câu hỏi:
 
 ### Tin nhắn thoại để sắp xếp một cuộc phỏng vấn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-005.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-005.mp3 %}
 
 **Who** is the *message for?* → Thông điệp này **dành cho ai?**
 - (A) Wanda Carlson → Wanda Carlson
@@ -679,7 +679,7 @@ Cách đọc trước câu hỏi:
 - (C) Write a newspaper article → Viết một bài báo
 - (D) Talk with Kareen Christenson → Nói chuyện với Kareen Christenson
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/hnobe.mp3 %}
+{% mp3 /assets/toeic/part4/hnobe.mp3 %}
 
 | Hello, **this is** *Wanda Carson* **calling for** *James Yamaguchi*. | Xin chào, **tôi là** *Wanda Carson* **gọi cho** *James Yamaguchi*.
 | James, I'm a **reporter** at the Local Business Journal, and **I was referred to you** by Kareen Christenson of **your marketing department**. | James, tôi là **một phóng viên** ở Tờ báo Kinh doanh Địa phương, và **tôi được giới thiệu tới bạn** bởi Kareen Christenson **trong bộ phận marketing của bạn.**
@@ -693,7 +693,7 @@ Cách đọc trước câu hỏi:
 
 ### Dự báo thời tiết cho đến cuối tuần
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-006.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-006.mp3 %}
 
 **What** is the **current weather like outside?** → Thời tiết **bên ngoài hiện đang như thế nào?**
 - **(A) Sunny. → Trời nắng** Ta thấy ý này trong câu "The weather outside at the moment is fantastic with sunny skies"
@@ -713,7 +713,7 @@ Cách đọc trước câu hỏi:
 - (C) 28 degrees Celsius. → 28 độ C
 - (D) 30 degrees Celsius. → 30 độ C
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/GMfRL.mp3 %}
+{% mp3 /assets/toeic/part4/GMfRL.mp3 %}
 
 | **The weather outside** *at the moment* **is fantastic** *with sunny skies* and **mild temperatures** {% u throughout the city %}. | **Thời tiết ngoài trời** *hiện đang* **rất tuyệt vời**, *trời đầy nắng* và **nhiệt độ dễ chịu** {% u trên khắp thành phố. %}
 | *However*, **by this evening**, *rain is expected* **to come our way**. | *Tuy nhiên*, **vào tối nay**, *sẽ có một đợt mưa.*
@@ -723,7 +723,7 @@ Cách đọc trước câu hỏi:
 
 ### Gọi điện để hủy hẹn và xin hẹn vào một ngày khác
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-007.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-007.mp3 %}
 
 **Who** is the **message for?** → Thông điệp này dành cho ai?
 - (A) Adam Swanson → Adam Swanson
@@ -743,7 +743,7 @@ Cách đọc trước câu hỏi:
 - **(C) Return the phone call → Trả lời một cuộc gọi điện thoại** Ta thấy ý này trong câu "Please call me as soon as you can after hearing this."
 - (D) Take a long vacation → Đi nghỉ dài ngày
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/EZmEM.mp3 %}
+{% mp3 /assets/toeic/part4/EZmEM.mp3 %}
 
 | Hi, **this is** *Adam Swanson* **calling for** *Ron Jaworski*. | Chào, **tôi là** *Adam Swanson*, **gọi để gặp** *Ron Jaworski.* 
 | **It's about** 3 **on Friday afternoon**. | **Giờ đã là** 3 giờ **chiều thứ 6**. 
@@ -758,7 +758,7 @@ Cách đọc trước câu hỏi:
 
 ### Trả lời sau khi nhận được tin nhắn yêu cầu thay đổi giờ họp và lên lịch lại cuộc hẹn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-008.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-008.mp3 %}
 
 **Who** is the **message for?** → Thông điệp này là **dành cho ai?**
 - **(A) Clancy Billups → Clancy Billups** Ta thấy ý này trong câu chào đầu bài "Hi Clancy Billups,"
@@ -778,7 +778,7 @@ Cách đọc trước câu hỏi:
 - (C) Cancel the meeting → Hoãn cuộc họp
 - **(D) Telephone him → Gọi cho anh ta** Ta thấy ý này trong câu "Why don't you call me"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/DQiBa.mp3 %}
+{% mp3 /assets/toeic/part4/DQiBa.mp3 %}
 
 | Hi Clancy Billups, **this is** *Darlene Ellstad* **with** *Frugal Financial Services* **calling again**. | Chào Clancy Billups, **tôi là** *Darlene Ellstad* **ở công ty** *Frugal Financial Services* **gọi lại**.
 | *I got your message* **asking about changing our meeting time** *on Thursday from 5 o'clock to 3*, and **I'm afraid that time won't work for me**. | *Tôi nhận được tin nhắn của anh* **yêu cầu thay đổi giờ họp** *vào thứ 5 từ 5h sang 3h* và **tôi e là không được rồi**.
@@ -797,7 +797,7 @@ Cách đọc trước câu hỏi:
 
 ### Thông báo các chuyến bay bị hủy và delay vì thời tiết thay đổi thất thường ở một số điểm đến.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-009.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-009.mp3 %}
 
 **What** is **causing** the schedule changes? → **Điều gì gây ra** sự thay đổi về kế hoạch bay?
 - **(A) Weather conditions. → Điều kiện thời tiết.** Ta thấy ý này ở câu "Due to the unanticipated weather changes at several of our scheduled destinations, a number of flights will either be cancelled or severely delayed."
@@ -817,7 +817,7 @@ Cách đọc trước câu hỏi:
 - **(C) Contact their travel agents. → Liên hệ với công ty lữ hành của họ.** Ta thấy ý này ở câu "If you need to depart immediately, we suggest checking with your local travel agent to find alternative routes available throughout the day."
 - (D) Talk to an airline staff member. → Nói chuyện với nhân viên hãng hàng không.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/TXStP.mp3 %}
+{% mp3 /assets/toeic/part4/TXStP.mp3 %}
 
 | **Due to** {% u the unanticipated weather changes %} **at several of** {% u our scheduled destinations %}, **a number of flights** will **either** *be cancelled* **or** *severely delayed*. | **Do** {% u thời tiết thay đổi thất thường %} **ở một số** {% u điểm đến của chúng ta %}, một số lượng lớn chuyến bay {% u sẽ được hủy %} **hoặc** {% u hoãn lại %}.
 | *Flight numbers* {% u 777, 778, and 779 %} **have been cancelled** and passengers {% u will be rescheduled %} **for different flights** {% u later this evening %}. | *Chuyến bay số* {% u 777, 778 và 779 %} **đã được hủy** và hành khách {% u sẽ được sắp xếp %} **lên chuyến bay khác** {% u vào tối nay %}.
@@ -831,7 +831,7 @@ Cách đọc trước câu hỏi:
 
 ### Tình hình giao thông trên Radio với sự tài trợ của Koala Cola
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-0091.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-0091.mp3 %}
 
 **Where** is this report most likely being broadcast? → Thông báo này có khả năng là được phát sóng ở đâu nhất?
 - (A) On television → Trên tivi
@@ -851,7 +851,7 @@ Cách đọc trước câu hỏi:
 - (C) The convention center → Trung tâm hội nghị
 - **(D) Koala Cola → Koala Cola** Ta thấy ý này trong câu "This report is brought to you by Koala Cola,"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/TpngW.mp3 %}
+{% mp3 /assets/toeic/part4/TpngW.mp3 %}
 
 | *Patricia Prentice* **here with** *WRAP-FM* **traffic**. | **Tôi là** *Patricia Prentice* **với đài giao thông** *WRAP-FM*.
 | *The commute* **is pretty much a mess** {% u everywhere at this hour %}. | *Việc đi làm xa* **gần như luôn lộn xộn** {% u ở bất kỳ đâu vào giờ giấc này. %}
@@ -866,7 +866,7 @@ Cách đọc trước câu hỏi:
 
 ### Họp các chuyên viên quản lý để trình bày một số thay đổi sẽ diễn ra trong công ty
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-0092.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-0092.mp3 %}
 
 **Who** is most likely **the audience of this talk?** → **Ai** có khả năng sẽ là người **nghe bài nói này?**
 - (A) The sales staff. → Nhân viên kinh doanh.
@@ -886,7 +886,7 @@ Cách đọc trước câu hỏi:
 - **(C) A new regulation set by the Financial Accounting Services Board. → Luật mới được đưa ra bởi Hội đồng dịch vụ kế toán tài chính.** Ta thấy ý này trong câu "This procedure is being introduced to comply with the reporting procedures of the Financial Accounting Services Board in accordance with new regulation 134."
 - (D) An attempt by the managerial staff to improve the working conditions. → Sự nỗ lực của nhân viên quản lý để cải thiện điều kiện làm việc.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/qTlYe.mp3 %}
+{% mp3 /assets/toeic/part4/qTlYe.mp3 %}
 
 | Good afternoon, everyone, and thank you for **attending today's meeting**. | Chào mọi người, cám ơn mọi người **đã tham dự buổi họp hôm nay**.
 | *I have invited* **all the managerial staff** *here today* **to explain a few changes** *that will take place here*. | *Tôi đã mời* **tất cả những chuyên viên quản lý** *đến đây hôm nay* **để trình bày một số sự thay đổi** *sẽ diễn ra trong công ty*.
@@ -898,7 +898,7 @@ Cách đọc trước câu hỏi:
 
 ### Dự báo thời tiết cho ngày mai
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-0093.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-0093.mp3 %}
 
 **What** will the weather be like tomorrow during the day? → Thời tiết sẽ như thế nào vào ngày mai?
 - (A) Cool → Mát
@@ -918,7 +918,7 @@ Cách đọc trước câu hỏi:
 - (C) Next week's forecast → Dự báo thời tiết cho tuần sau
 - (D) A weather advisory → Cảnh báo thời tiết
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/j6bqf.mp3 %}
+{% mp3 /assets/toeic/part4/j6bqf.mp3 %}
 
 | **Here is** *the forecast* **for tomorrow**. | **Đây là** *dự báo thời tiết* **cho ngày mai**.
 | **It'll be** *another very hot day* **with temperatures in the high 30s**. | **Ngày mai sẽ là** *một ngày nóng nực* **với nhiệt độ trên 30 độ**.
@@ -933,7 +933,7 @@ Cách đọc trước câu hỏi:
 
 ### Hỏi mua thiết bị nhà bếp của đơn vị có quảng cáo trên tờ báo địa phương
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-0094.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-0094.mp3 %}
 
 **Where** did the woman see this ad? → Người phụ nữ thấy quảng cáo này ở đâu?
 - (A) On a flyer → Trên tờ bướm
@@ -953,7 +953,7 @@ Cách đọc trước câu hỏi:
 - (C) Give her information about space → Cho cô ấy thông tin về không gian
 - (D) Buy a newspaper → Mua báo
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/keNbv.mp3 %}
+{% mp3 /assets/toeic/part4/keNbv.mp3 %}
 
 | Morning Mr. Burke. **My name is** *Sandra Flynn* **and I saw your stove ad** *in the local newspaper* **the other day**. | Chào buổi sáng ông Burke. **Tên tôi là** *Sandra Flynn* **và tôi thấy quảng cáo bếp của ông** *trên tờ báo địa phương* **ngày hôm kia**.
 | **We'd like to come** *look at the stoves* **you have available**. | **Chúng tôi muốn đến** *xem những cái bếp* **ông có**.
@@ -967,7 +967,7 @@ Cách đọc trước câu hỏi:
 
 ### Cơ trưởng cung cấp thông tin về chuyến bay dài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/part4-questions-synthesize-0095.mp3 %}
+{% mp3 /assets/toeic/part4/part4-questions-synthesize-0095.mp3 %}
 
 **Where** is this announcement probably being heard? → Có thể nghe được thông báo này ở đâu?
 - (A) On a train → Trên tàu lửa
@@ -987,7 +987,7 @@ Cách đọc trước câu hỏi:
 - **(C) A pilot → Phi công** Ta thấy ý này trong câu "This is captain Markus DiPolo up here in the cockpit."
 - (D) A passenger → Hành khách
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part4/nAy4B.mp3 %}
+{% mp3 /assets/toeic/part4/nAy4B.mp3 %}
 
 | Welcome **aboard**. | Chào mừng mọi người **lên máy bay.**
 | **This is** *captain Markus DiPolo* **up here in the cockpit.** | **Tôi là** *cơ trưởng Markus DiPolo* **hiện đang ở buồng lái**.

@@ -131,7 +131,7 @@ Các giới từ trong tiếng Anh thì có khá nhiều, nhưng chúng ta có t
     - **account**: tài khoản → **on account of**: bởi vì
     - **due**: đến kỳ, đến hạn → **due to**: bởi vì
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mot-so-gioi-tu-ghep-pho-bien.mp3 %}
+{% mp3 /assets/mp3/mot-so-gioi-tu-ghep-pho-bien.mp3 %}
 
 - Một số giới từ ghép phổ biến:
     - **because of** → bởi vì. VD: **Because of** the arm injury, he couldn't play basketball anymore.
@@ -168,7 +168,7 @@ Các giới từ trong tiếng Anh thì có khá nhiều, nhưng chúng ta có t
 <strong>Keywork</strong> để tìm thêm thông tin về thằng này là "<strong>Collocation</strong>" (Kết hợp từ). Chẳng hạn như trong tiếng Việt, từ "mun" trong "mèo mun", "ô" trong "ngựa ô" và "mực" trong "chó mực" đều có nghĩa là "đen" nhưng ta không thể hoán đổi cách dùng của chúng cho nhau được. Như không thể nói "mèo ô" hay "mèo mực" được vì như thế sẽ nghe rất kỳ. <strong>Collocation</strong> đặc biệt quan trọng không chỉ trong văn viết mà cả văn nói nếu chúng ta muốn diễn đạt như một người bản xứ.
 </div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/tinh-tu-va-gioi-tu-di-kem-nhau.mp3 %}
+{% mp3 /assets/mp3/tinh-tu-va-gioi-tu-di-kem-nhau.mp3 %}
 
 - Một số **tính từ và giới từ** đi kèm với nhau:
     - **accustomed to** = quen với
@@ -193,7 +193,7 @@ Các giới từ trong tiếng Anh thì có khá nhiều, nhưng chúng ta có t
     - **tired of** = chán
     - **worried about** = lo lắng về
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/danh-tu-va-gioi-tu-di-kem-nhau.mp3 %}
+{% mp3 /assets/mp3/danh-tu-va-gioi-tu-di-kem-nhau.mp3 %}
 
 - Một số **danh từ và giới từ** đi kèm với nhau
     - **advice on** = lời khuyên về
@@ -213,7 +213,7 @@ Các giới từ trong tiếng Anh thì có khá nhiều, nhưng chúng ta có t
     - **respect for** = sự tôn trọng cho
     - **success in** = thành công về
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/dong-tu-va-gioi-tu-di-kem-voi-nhau.mp3 %}
+{% mp3 /assets/mp3/dong-tu-va-gioi-tu-di-kem-voi-nhau.mp3 %}
 
 - Một số **động từ và giới từ** đi kèm với nhau
     - **agree on** = đồng ý về (việc gì đó)
@@ -275,7 +275,7 @@ Các giới từ trong tiếng Anh thì có khá nhiều, nhưng chúng ta có t
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200523093704064.mp3 %}
+{% mp3 /assets/mp3/speech_20200523093704064.mp3 %}
 
 - *The cat is lying* **on** <u>the bed</u>.
 - *The day* **before** <u>Christmas</u> was really cold.
@@ -326,7 +326,7 @@ Các giới từ trong tiếng Anh thì có khá nhiều, nhưng chúng ta có t
 - **regarding**. → Call me if you have any problems **regarding** *your work*.
 - **notwithstanding**. → *The bad weather* **notwithstanding**, the show was a great success.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200523093812066.mp3 %}
+{% mp3 /assets/mp3/speech_20200523093812066.mp3 %}
 
 - **pending**. → He has been suspended **pending** *further investigation*.
 - accustomed to; afraid of; angry at; aware of; capable of; familiar with; fond of; happy about; interested in; involved in; jealous of; made of; made from; married to; proud of; responsible for; similar to; sorry for; sure of; tired of; worried about...

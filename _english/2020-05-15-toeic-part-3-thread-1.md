@@ -89,7 +89,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-001.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-001.mp3 %}
 
 |	**place** *an order* **for**	|	**đặt hàng** *cho*	|	
 |	**have** *the order* **sent out**	|	**có** *đơn đặt hàng* **được gửi đi**	|	
@@ -105,7 +105,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-001.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-001.mp3 %}
 
 |	**Placing an Order**	|	*I want* **to place an order for** *a dozen ink cartridges*.	|	*Tôi muốn* **đặt hàng** *một tá hộp mực*.
 |		|	*I want* **to put in an order for** *ten boxes of printer paper*.	|	*Tôi muốn* **đặt hàng** *mười hộp giấy máy in.*
@@ -125,7 +125,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-002.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-002.mp3 %}
 
 |	**Do you have** *a moment* **to-V** ~?	|	**Bạn có** *một chút thời gian* **để-V** ~?	|	
 |	**Can I bother you** *for* ~?	|	**Tôi có thể làm phiền bạn** *vì* ~?	|	
@@ -141,7 +141,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-002.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-002.mp3 %}
 
 |	**Request**	|	**Do you have** *a moment* **to talk about** *our new project?*	|	**Bạn có** *một chút thời gian* **để nói về** *dự án mới của chúng tôi?*
 |		|	**Can I bother you for** *a quick review* **of** *the show?*	|	**Tôi có thể làm phiền bạn để** *đánh giá nhanh* **về** *chương trình?*
@@ -159,7 +159,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-003.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-003.mp3 %}
 
 |	**put up** *the display*	|	**đưa lên** *màn hình*	|	
 |	**look over** *a resume*	|	**xem qua** *sơ yếu lý lịch*	|	
@@ -175,7 +175,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-003.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-003.mp3 %}
 
 |	**Checking**	|	**Have** *you* **finished** *setting up the display window* **yet?**	|	**Bạn đã** *thiết lập xong cửa sổ hiển thị* **chưa?**
 |		|	*I am calling* **to find out** *if you've had time* **to look over** *my resume* **yet**.	|	*Tôi đang gọi* **để tìm hiểu xem** *bạn đã có thời gian* **để xem qua** *sơ yếu lý lịch của tôi* **chưa.**
@@ -195,7 +195,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-004.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-004.mp3 %}
 
 |	**I wonder if** [what] ~.	|	**Tôi tự hỏi nếu** [cái gì] ~.	|	
 |	**Do you want** (me) **to-V** ~?	|	**Bạn có muốn** (tôi) đến-V ~?	|	
@@ -211,7 +211,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-004.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-004.mp3 %}
 
 |	**Opening Statement & Question**	|	*The bus* **is delayed**. *I wonder* **what the problem is**.	|	*Xe buýt* **bị hoãn**. *Tôi tự hỏi* **vấn đề là gì**.
 |		|	*Pardon me*. **Could I please have** *a napkin here?*	|	*Thứ lỗi cho tôi*. **Tôi có thể** *lấy khăn ăn ở đây* **được không?**
@@ -231,7 +231,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-005.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-005.mp3 %}
 
 |	**make** *a mistake*	|	**mắc lỗi**	|	
 |	**have to** *hand-correct*	|	phải **sửa lại bằng tay**	|	
@@ -245,7 +245,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-005.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-005.mp3 %}
 
 |	**Problem / Issue**	|	The printer **is not working properly**.	|	Máy in **hoạt động không bình thường**.
 |		|	You **need to replace** your battery.	|	Bạn **cần phải thay pin** của bạn.
@@ -265,7 +265,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-006.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-006.mp3 %}
 
 |	*manage* **to-V**	|	*quản lý* **để-V**	|	
 |	*find something* **by chance**	|	**tình cờ tìm thấy** *thứ gì đó*	|	
@@ -279,7 +279,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-006.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-006.mp3 %}
 
 |	**Question**	|	**How did** you *find this place?*	|	**Làm thế nào bạn tìm thấy** nơi này?
 |		|	**How was** *your vacation?* **Did you** *have a good time* in Mexico?	|	*Kỳ nghỉ của bạn* **thế nào?** Bạn đã **có một thời gian vui vẻ** ở Mexico?
@@ -299,7 +299,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-007.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-007.mp3 %}
 
 |	**I can't believe** S + V ~.	|	**Tôi không thể tin được** S + V ~.	|	
 |	You're not **going to** *believe this*, **but S + V** ~.	|	**Bạn sẽ** *không tin vào điều này*, **nhưng S + V** ~.	|	
@@ -313,7 +313,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-007.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-007.mp3 %}
 
 |	**Problem**	|	The machine **has been acting** *weirdly* all day. I think we **are going to have** *to call* a repairperson.	|	Máy **đã hoạt động kỳ lạ** cả ngày. Tôi nghĩ rằng chúng ta **sẽ phải gọi một người sửa chữa**.
 |		|	You're **not going to believe** this, **but** our copier **has conked out** *again*.	|	Bạn **sẽ không tin** *điều này*, **nhưng** máy photocopy của chúng tôi đã phát hiện ra một lần nữa.
@@ -332,7 +332,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-008.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-008.mp3 %}
 
 |	**Have** *you by any chance* **P2 ~?**	|	*Bạn* **có cơ hội P2** *nào không ~?*	|	
 |	S **should [need to-V]** ~.	|	S **nên [cần-V]** ~.	|	
@@ -346,7 +346,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-008.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-008.mp3 %}
 
 |	**Question**	|	**Have you by** *any chance* **seen** *a blue file in the room?* **I'm sure that** *I left it here* in the corner.	|	*Bạn có tình cờ* **nhìn thấy** *một tập tài liệu màu xanh* trong phòng không? **Tôi chắc rằng** *tôi đã để nó ở đây trong góc*.
 |		|	**Do you think we should** *get in contact with* a consulting company **to get** *a new name* **for** *our product?*	|	**Bạn có nghĩ rằng chúng ta nên** *liên hệ với một công ty tư vấn* **để đặt tên mới** *cho sản phẩm của mình không?*
@@ -366,7 +366,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-009.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-009.mp3 %}
 
 |	**I'm going to-V** ~.	|	**Tôi sẽ-V** ~.	|	
 |	I **have [need] to-V** ~.	|	Tôi **phải [cần] V** ~.	|	
@@ -380,7 +380,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-009.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-009.mp3 %}
 
 |	**Action**	|	I'm **going to sort** *the boxes in the backroom* **for** *the inventory check*.	|	Tôi **sẽ sắp xếp** *các hộp trong phòng sau* **để** *kiểm tra hàng tồn kho*.
 |		|	I **have to take off** *in five minutes* **to meet** *Mr. Lee at the head office* this morning.	|	Tôi **phải cất cánh** *trong năm phút nữa* **để gặp** Mr. Lee tại trụ sở chính sáng nay.
@@ -398,7 +398,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-010.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-010.mp3 %}
 
 |	**Where did** *you* + **V** ~?	|	*Bạn* **đã + V ~ ở đâu?**	|	
 |	**Do you know if there is** ~?	|	**Bạn có biết nếu có ~ không?**	|	
@@ -412,7 +412,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-010.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-010.mp3 %}
 
 |	**Opening**	|	**Would you happen to know if there's** *a gift shop* **around here?**	|	**Bạn có tình cờ biết nếu** *có một cửa hàng quà tặng* **xung quanh đây?**
 |		|	This is **really good**. **Where did** *you learn to cook* **like this?**	|	Cái này **thật sự rất tốt**. *Bạn đã học nấu ăn như thế này* **ở đâu?**
@@ -432,7 +432,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-011.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-011.mp3 %}
 
 |	**Could you let me know** *wh- + S + V* ~	|	**Bạn có thể cho tôi biết** *wh- + S + V* ~	|	
 |	**I'd appreciate it if you could V** ~.	|	**Tôi rất cảm kích nếu bạn có thể V** ~.	|	
@@ -445,7 +445,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-011.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-011.mp3 %}
 
 |	**Opening**	|	My wife bought a shirt here **the other day**, **but** it's **a bit too small** for me. **Do you think I can** *exchange it for a bigger size?*	|	**Hôm trước** *vợ tôi có mua một chiếc áo sơ mi ở đây*, **nhưng** *nó hơi nhỏ so với tôi.* **Bạn có nghĩ rằng tôi có thể đổi nó** *cho một kích thước lớn hơn?*
 |		|	**Hi**, *I just tried on this jacket*, **but** **it's a bit** *tight for me*. **Do you think I could** *try on a bigger size?*	|	**Xin chào**, *tôi mới mặc thử áo khoác này*, **nhưng** *nó hơi chật đối với tôi*. **Bạn có nghĩ rằng tôi có thể** *thử kích thước lớn hơn không?*
@@ -465,7 +465,7 @@ Cách đọc trước câu hỏi:
 
 ##### Key Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-key-expressions-012.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-key-expressions-012.mp3 %}
 
 |	S **is waiting for you** ~.	|	S **đang đợi bạn** ~.	|	
 |	**Would it be okay if** S + V ~?	|	**Sẽ ổn nếu** S + V ~?	|	
@@ -479,7 +479,7 @@ Cách đọc trước câu hỏi:
 
 ##### More Expressions
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/part3-theory-012.mp3 %}
+{% mp3 /assets/toeic/part3/part3-theory-012.mp3 %}
 
 |	**Opening**	|	John, **you have** *a visitor*. He says *his name is Owen Stone*. He'**s waiting for you** *in the waiting area*.	|	John, **bạn có một vị khách**. Anh ta nói *tên anh ta là Owen Stone*. Anh ấy **đang đợi bạn** *ở khu vực chờ*.
 |		|	**Do you have** any ink cartridges in stock today?	|	**Bạn có** bất kỳ hộp mực trong kho hôm nay?
@@ -494,7 +494,7 @@ Cách đọc trước câu hỏi:
 
 ## Luyện tập
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/1jFOD.mp3 %}
+{% mp3 /assets/mp3-toeic/1jFOD.mp3 %}
 
 | W: **Do you have** any more of these chairs **available?** *I need three*, **but** *there are only two here*. | W: **Anh có còn** *mấy cái ghế này* **không?** *Tôi cần 3 cái* **nhưng** *ở đây chỉ có 2 cái.*
 | M: I think there is in the warehouse. **Let me check**. Yes, there are two in the warehouse. They're **$129.00 each**. | M: Tôi nghĩ trong kho có. **Để tôi kiểm tra xem**. Vâng, trong kho có 2 cái. **Mỗi cái giá 129 đô**.
@@ -502,7 +502,7 @@ Cách đọc trước câu hỏi:
 | M: **No problem**. *Just give us your address*. | M: **Không vấn đề gì**. *Chỉ cần cho chúng tôi địa chỉ.*
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/LLsDH.mp3 %}
+{% mp3 /assets/mp3-toeic/LLsDH.mp3 %}
 
 | W: Hi, **I'm looking for** *a printer that's a good value*. **Which one** do you **recommend?** | W: Chào, **tôi đang tìm** *một chiếc máy in tốt*. Anh có **cái nào để giới thiệu** không?
 | M: Just *follow me* **and** *have a look at* the Laser X2. *It can print high-quality pictures*, **and** *it only costs 275 dollars*. | M: *Xin đi theo tôi* **để xem** *chiếc Laser X2*. *Nó có thể in ảnh chất lượng cao* **và** *giá chỉ có 275 đô.*
@@ -510,7 +510,7 @@ Cách đọc trước câu hỏi:
 | M: **Yes, we do**. *The printer on the bottom shelf over there is the Print-Plus 7*, **and** *it's very popular.* | M: **Có**. *Chiếc máy in ở ngăn dưới cùng kia là chiếc Print-Plus 7* **và** *nó rất phổ biến.*
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/noRux.mp3 %}
+{% mp3 /assets/mp3-toeic/noRux.mp3 %}
 
 | M: **Could I get** my checking account bankbook updated? **I also need** *two rolls of quarters* **and** *four rolls of dimes*. | M: **Tôi có thể** được cập nhật thông tin tài khoản trong sổ ngân hàng của tôi được không? *Tôi cũng cần 20 đô tiền 25 cent* **và** *20 đô tiền 10 cent*.
 | W: **Of course**, *may I have your account book?* | W: **Dĩ nhiên là được**, *tôi có thể xem sổ ngân hàng của bạn được không?*
@@ -518,7 +518,7 @@ Cách đọc trước câu hỏi:
 | W: Mr. Smith **is in with** *a client* **at the moment**. *If you'd like*, **I can ask him if** *he has time* **later**. | W: Anh Smith **đang gặp** *một khách hàng khác* hiện tại. *Nếu bạn muốn*, **tôi có thể nói với anh ấy** *để xem anh ấy có thời gian sau đó không*.
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/hAaus.mp3 %}
+{% mp3 /assets/mp3-toeic/hAaus.mp3 %}
 
 | M: *I'm feeling* **a bit under the weather**. I think I am **going to** *call it a day* **and** *visit my family doctor.* | M: *Tôi cảm thấy* **hơi mệt**. Tôi nghĩ **tôi sẽ ngưng ở đây** *và đi khám bác sĩ của gia đình tôi*.
 | W: You do **look rather** *pale*. Are you **going to be okay?** | W: Bạn *trông xanh xao quá*. **Bạn ổn chứ?**
@@ -526,7 +526,7 @@ Cách đọc trước câu hỏi:
 | W: Hmm, I think **you may have caught** *the flu*. You'**d better** *take a couple of days off* **and** *get some rest* **because** *I need you here next week* **when** *the people from Hong Kong* **will be here** *to take a look at* **our operation**. | W: Hmm, tôi nghĩ **chắc bạn bị cảm cúm rồi**. Tốt hơn *bạn nên xin nghỉ vài ngày* **và** *nghỉ ngơi* **vì** *tôi cần bạn ở văn phòng vào tuần sau* **khi** *một số nhân viên bên Hong Kong sang kiểm tra việc điều hành của chúng ta.*
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3-toeic/aRHHB.mp3 %}
+{% mp3 /assets/mp3-toeic/aRHHB.mp3 %}
 
 | M: **You do realize that** we are **going to have to increase** *the number of workers* in our plant **once** *the contract is signed*. **Maybe it would be wise for us** *to take out* an ad in the local paper now **since** *it's almost a done* **deal?** | M: **Bạn biết rằng** chúng ta **sẽ phải tăng số lượng** *công nhân trong nhà máy* **khi** *hợp đồng được ký*. **Có thể sẽ thông minh nếu** *chúng ta đăng bài quảng cáo ở tờ báo địa phương* **vì** *việc ký* **hợp đồng** *xem như là không thay đổi rồi.*
 | W: *Yes*, **I think you may be right**. *If we wait* **until** *the contract is signed*, **we might not be able** *to meet their first order* **since** *it's so big*. | W: *Được rồi*, **tôi nghĩ có lẽ bạn đúng**. *Nếu chúng ta* **chờ đến khi** *hộp đồng được ký*, chúng ta **sẽ không thể đáp ứng** *cho đơn hàng đợt một* **vì** *số lượng khá lớn.*
@@ -538,7 +538,7 @@ Cách đọc trước câu hỏi:
 
 ### Tại quán ăn hỏi bồi bàn
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-001.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-001.mp3 %}
 
 **What** would the woman like? → Người phụ nữ muốn gì?
 - **(A) Some water → Một ít nước lọc** *Ta thấy ý này trong câu "I'd like to order some more water."*
@@ -558,7 +558,7 @@ Cách đọc trước câu hỏi:
 - (C) For 15 minutes → 15 phút
 - (D) For 20 minutes → 20 phút
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/oNvsC.mp3 %}
+{% mp3 /assets/toeic/part3/oNvsC.mp3 %}
 
 | Pardon me, **have you seen** *our waiter?* **I'd like to order** *some more water*. | Xin lỗi, **bạn có thấy** *người phục vụ đâu không?* **Tôi muốn gọi** *ít nước lọc*.
 | I'm terribly sorry. **I'll see** *where he has gone*. You **haven't been waiting long**, *have you?* | Tôi vô cùng xin lỗi. **Tôi sẽ đi xem** *anh ấy ở đâu*. Bạn **chờ chưa có lâu lắm** *phải không?*
@@ -568,7 +568,7 @@ Cách đọc trước câu hỏi:
 
 ### Nói chuyện với bác sĩ nha khoa để làm trắng răng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-002.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-002.mp3 %}
 
 **What** does the patient want? → Người bệnh nhân muốn gì?
 - **(A) Shinier teeth. → Răng sáng bóng hơn.** Ta thấy ý trong câu "I just want you to restore the shine to my teeth."
@@ -588,7 +588,7 @@ Cách đọc trước câu hỏi:
 - **(C) Next week. → Tuần sau.** Ta thấy ý trong câu "Can we do it next week?"
 - (D) Next month. → Tháng sau.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/YrXAg.mp3 %}
+{% mp3 /assets/toeic/part3/YrXAg.mp3 %}
 
 | *A quick overview of your dental records* **shows that** *there is cause* **for concern**. | *Một cái nhìn tổng quan về bệnh án răng của bạn* **cho thấy** *có nguyên nhân* **để lo lắng**.
 | You **need to make** *more regular dental appointments* **if you want to have** *a healthy mouth*. | Bạn **cần phải** *sắp xếp nhiều buổi khám răng thường xuyên hơn* **nếu bạn muốn có** *một vùng miệng khỏe mạnh*.
@@ -600,7 +600,7 @@ Cách đọc trước câu hỏi:
 
 ### Nói về tranh sơn dầu ở bảo tàng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-003.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-003.mp3 %}
 
 **What** does the man like about it? → Người đàn ông thích điều gì về bức họa?
 - (A) The size. → Kích thước.
@@ -620,7 +620,7 @@ Cách đọc trước câu hỏi:
 - (C) It's not very interesting. → Nó không quá thú vị.
 - **(D) The collection is varied. → Bộ sưu tập đa dạng.** Ta thấy ý trong câu "Fortunately, the museum's collection covers a wide spectrum of styles."
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/9MGyb.mp3 %}
+{% mp3 /assets/toeic/part3/9MGyb.mp3 %}
 
 | *Art historians* **say that** *this painting* **is a significant contribution** *to the field*. Do you like it? | *Những nhà lịch sử học về nghệ thuật* **nói rằng** *bức họa này* **là một đóng góp to lớn** *đến lĩnh vực này*. Bạn có thích nó không?
 | I **have to admit that** *art history* **was never my strong subject**, *so I'm not sure what* **my opinion's worth**. | **Tôi phải thừa nhận rằng** *lịch sử nghệ thuật* **chưa bao giờ là chủ đề tôi giỏi**, *nên tôi không chắc rằng* **ý kiến của tôi có giá trị**.
@@ -632,7 +632,7 @@ Cách đọc trước câu hỏi:
 
 ### Hỏi về nguồn sỉ đồ thủy tinh
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-004.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-004.mp3 %}
 
 **How will** he obtain more information about what he needs? → Làm sao để anh ấy có được nhiều thông tin hơn về thứ anh ta cần?
 - (A) He'll write a letter. → Anh ấy sẽ viết một bức thư.
@@ -652,7 +652,7 @@ Cách đọc trước câu hỏi:
 - (C) Next week. → Tuần sau.
 - **(D) On the weekend. → Vào cuối tuần.** Ta thấy ý trong câu "I'll be out the rest of today, but we can talk over the weekend."
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/VeEwa.mp3 %}
+{% mp3 /assets/toeic/part3/VeEwa.mp3 %}
 
 | Do you **know of a wholesale source** *for glassware?* | Bạn có **biết một nguồn cung cấp sỉ** *đồ chứa thủy tinh* không?
 | **As a matter of fact**, I **know of a supplier** *who sells* **better-quality wine glasses**. *It's a new enterprise* **called Crystal Company**. | **Sự thật là**, **tôi có biết một nhà cung cấp** *bán* **những ly rượu với chất lượng tốt hơn**. *Đó là một doanh nghiệp mới* **có tên là Crystal Company.**
@@ -663,7 +663,7 @@ Cách đọc trước câu hỏi:
 
 ### Nói về phong cách diễn xuất của một diễn viên
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-005-missing.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-005-missing.mp3 %}
 
 **What** are the speakers discussing? → Những người nói đang bàn luận về điều gì?
 - (A) The lighting in the theater. → Ánh sáng trong rạp chiếu phim.
@@ -683,7 +683,7 @@ Cách đọc trước câu hỏi:
 - **(C) Three. → Ba.** Ta thấy ý trong câu "He's already made three movies this year, and another will be released before the end of this month."
 - (D) Ten. → Mười.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/U9otn.mp3 %}
+{% mp3 /assets/toeic/part3/U9otn.mp3 %}
 
 | *Sam Peterson* **is one of my favorite actors**. *I thought* **his latest movie** *was even more entertaining* **than** *his previous ones*. | *Sam Peterson* **là một trong những diễn viên yêu thích của tôi**. *Tôi nghĩ* **bộ phim gần đây nhất của anh ấy** *còn thú vị* **hơn là** *những vai diễn trước đó*.
 | **It's easy to see** *how he's been influenced* **by situation comedies** *on television*. | **Có thể dễ thấy** *anh ấy chịu ảnh hưởng của* **phim hài tình huống** *trên truyền hình*.
@@ -696,7 +696,7 @@ Cách đọc trước câu hỏi:
 
 ### Tặng vé xem phim cho đồng nghiệp
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-005.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-005.mp3 %}
 
 **What does** the woman offer the man? → Người phụ nữ đề nghị cho người đàn ông cái gì?
 - **(A) Free tickets. → Vé miễn phí.** Ta thấy ý trong câu "I got these two complimentary tickets that you can use at that theater."
@@ -716,7 +716,7 @@ Cách đọc trước câu hỏi:
 - (C) At a travel agency. → Tại một dịch vụ du lịch.
 - (D) At a hotel. → Tại một khách sạn.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/E9fDS.mp3 %}
+{% mp3 /assets/toeic/part3/E9fDS.mp3 %}
 
 | I **overheard** *you mentioning to the sales manager* {% u that you and your wife %} **are into watching movies**. | Tôi **tình cờ nghe được** *bạn đề cập với giám đốc kinh doanh* {% u rằng bạn và vợ bạn %} **thích xem phim**.
 | *Will you* **be seeing one** *this weekend* **by any chance?** | **Có cơ may nào** *bạn sẽ* **xem một bộ phim** *vào cuối tuần này không?*
@@ -731,7 +731,7 @@ Cách đọc trước câu hỏi:
 
 ### Nhờ gọi đội IT Support vì máy tính bị hỏng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-006.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-006.mp3 %}
 
 **What is** the woman's problem? → Vấn đề của người phụ nữ là gì?
 - (A) She missed a meeting. → Cô ta lỡ một cuộc họp.
@@ -751,7 +751,7 @@ Cách đọc trước câu hỏi:
 - **(C) Make a telephone call → Gọi điện thoại** Ta thấy ý này trong câu "I'll call them right away."
 - (D) Order a new computer → Đặt một máy tính mới
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/j0T7y.mp3 %}
+{% mp3 /assets/toeic/part3/j0T7y.mp3 %}
 
 | Bob, **did you contact** *technical support* **about my computer?** *I'm working on* **an important presentation**, *and all my work* **is on that computer**. | Bob, **anh đã gọi** *nhân viên kỹ thuật* **đến sửa máy tính cho tôi chưa**? **Tôi đang làm** *một bài thuyết trình quan trọng* *mà tất cả những gì tôi làm* **đều nằm hết trong máy đó**.
 | Yes, **I called them**. *They told me* **they'd send someone over** *tomorrow afternoon*. | Vâng, **tôi đã gọi họ**. *Họ nói là* **họ sẽ cử ai đó qua đây** *vào chiều mai*.
@@ -762,7 +762,7 @@ Cách đọc trước câu hỏi:
 
 ### Giới thiệu về văn phòng cho thuê với khách đến xem
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-007.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-007.mp3 %}
 
 **Who** most likely is the woman? → Người phụ nữ có khả năng là ai nhất?
 - (A) An architect. → Một kiến ​​trúc sư.
@@ -782,7 +782,7 @@ Cách đọc trước câu hỏi:
 - (C) A building is in the city center. → Một tòa nhà nằm ở trung tâm thành phố.
 - **(D) A parking area in nearby. → Một khu vực đậu xe ở gần đó.** Ta thấy ý trong câu "And this office has a great benefit - it comes with a large parking area right outside"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/QrxzN.mp3 %}
+{% mp3 /assets/toeic/part3/QrxzN.mp3 %}
 
 | Hi, *I'm Rebecca* **from Howard Property Management**. *I'm glad* **both of you could make it today**. *Let me show you* **around the office space available for lease here**. | *Xin chào, tôi là Rebecca* **từ công ty Quản lý tài sản Howard**. *Tôi rất vui vì* **cả hai bạn có thể đến đây ngày hôm nay**. *Hãy để tôi hướng dẫn cho bạn* **tham quan quanh không gian văn phòng sẵn sàng cho thuê ở đây.**
 | Wow, *this office is really nice*. **What do you think**, *Brian?* | Wow, *văn phòng này thực sự tốt*. **Bạn nghĩ thế nào**, *Brian*?
@@ -794,7 +794,7 @@ Cách đọc trước câu hỏi:
 
 ### Hỏi về bảng hợp đồng kinh doanh
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-008.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-008.mp3 %}
 
 **What are** the speakers discussing? → Người nói đang bàn về việc gì?
 - **(A) A business contract → Bảng hợp đồng kinh doanh** Ta thấy ý này trong câu "Arthur, did we receive the signed contract from the talent agency yet?"
@@ -814,7 +814,7 @@ Cách đọc trước câu hỏi:
 - **(C) Call the manager → Gọi cho quản lý** Ta thấy ý này trong câu "Shall I try to contact the office manager?"
 - (D) Pick up the client → Đón khách hàng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/ve96z.mp3 %}
+{% mp3 /assets/toeic/part3/ve96z.mp3 %}
 
 | Arthur, **did we receive** *the signed contract* **from the talent agency** *yet?* | Arthur, **chúng ta nhận được** *bản hợp đồng ký rồi* **từ công ty quảng cáo chưa?**
 | No, **apparently** Keith **wants to make** *a few last-minute changes* **based on** *his client's wishes*. | Chưa, **hình như** Keith *muốn thay đổi một chút* **dựa trên** *mong muốn của khách hàng*.
@@ -824,7 +824,7 @@ Cách đọc trước câu hỏi:
 
 ### Công ty quảng cáo nói chuyện với khách hàng đang có nhu cầu
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-009.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-009.mp3 %}
 
 **Where do** the women work? → Người phụ nữ làm việc ở đâu?
 - **(A) At an advertising firm. → Tại một công ty quảng cáo.**
@@ -844,7 +844,7 @@ Cách đọc trước câu hỏi:
 - (C) Checking some customer reviews. → Kiểm tra một số đánh giá của khách hàng.
 - (D) Contacting some local suppliers. → Liên hệ với một số nhà cung cấp địa phương.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/GTR4G.mp3 %}
+{% mp3 /assets/toeic/part3/GTR4G.mp3 %}
 
 | Good afternoon, Mr.Thompson. **We at Pellman Advertising** *are excited to work on* **the ad campaign** *for your new wind-resistant umbrella.* | Xin chào, ông Thompson. **Chúng tôi đến từ Pellman Advertising** *rất vui mừng được làm việc trong* **chiến dịch quảng cáo** *cho sản phẩm ô chống gió mới của ông*.
 | **I'm looking forward to** *getting started*. Our umbrella's **made of high-quality materials**. And **we want** *the commercial* **to highlight** *the quality of the umbrella* **to our customers**. | **Tôi rất mong chờ** việc này *được bắt đầu*. Chiếc ô của chúng tôi **làm bằng vật liệu chất lượng cao**. Và **chúng tôi muốn** *quảng cáo* **nhấn mạnh vào** *chất lượng của chiếc ô* **cho khách hàng của chúng tôi**.
@@ -854,7 +854,7 @@ Cách đọc trước câu hỏi:
 
 ### Nhờ và căn dặn mua đồ nhu yếu phẩm của văn phòng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0091.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0091.mp3 %}
 
 **What do** they need to order? → Họ cần phải đặt hàng cái gì?
 - (A) Computers. → Máy tính.
@@ -874,7 +874,7 @@ Cách đọc trước câu hỏi:
 - **(C) Tomorrow. → Ngày mai.** Ta thấy ý trong câu "I'll check the supply closet today and send the order out first thing tomorrow, and I'll make sure all the charges on the invoice are right."
 - (D) Tuesday. → Thứ ba.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/EHEag.mp3 %}
+{% mp3 /assets/toeic/part3/EHEag.mp3 %}
 
 | **I've compiled** *a list of office supplies* **we need to order immediately**. | **Tôi đã thu thập** *một danh sách các văn phòng phẩm* **chúng ta cần phải đặt hàng ngay lập tức**.
 | *The order* **should go out** *as soon as possible* **as these are essential items.** | *Đơn đặt hàng* **phải được gửi đi** *nhanh nhất có thể* **bởi những thứ này là vật dụng thiết yếu**.
@@ -886,7 +886,7 @@ Cách đọc trước câu hỏi:
 
 ### Nhân viên ngân hàng phụ vụ khách hàng rút tiền bằng séc
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0092.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0092.mp3 %}
 
 **What does** the man want to do? → Người đàn ông muốn làm gì?
 - (A) Open a bank account. → Mở một tài khoản ngân hàng.
@@ -906,7 +906,7 @@ Cách đọc trước câu hỏi:
 - (C) In ten days. → Trong mười ngày.
 - (D) In eleven days. → Trong mười một ngày.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/2NmtE.mp3 %}
+{% mp3 /assets/toeic/part3/2NmtE.mp3 %}
 
 | **Since** *you have an account with this bank*, **all** *we require in order* **to cash your check** *is a photo ID*. {% u Your driver's license %} **would do**. | **Vì** *bạn có một tài khoản trong ngân hàng này*, **tất cả những gì** *chúng tôi yêu cầu* **để lĩnh tiền bằng séc của bạn** *là một tấm hình thẻ chứng minh*. {% u Bằng lái xe của bạn %} **có thể giúp được việc này.**
 | **I've lost** *my driver's license*, **but** *my signature is on file*. **Is that enough?** | **Tôi đã làm mất** *bằng lái xe của tôi*, **nhưng** *chữ ký của tôi đã được lưu trữ lại*. **Vậy đã đủ chưa?**
@@ -918,7 +918,7 @@ Cách đọc trước câu hỏi:
 
 ### Nhân viên cửa hàng nội thất xử lý việc trả hàng của khách
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0093.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0093.mp3 %}
 
 **Where are** the speakers? → Người nói đang ở đâu?
 - (A) At a supermarket. → Tại một siêu thị.
@@ -938,7 +938,7 @@ Cách đọc trước câu hỏi:
 - (C) Call another store. → Gọi một cửa hàng khác.
 - (D) Provide express delivery service. → Cung cấp dịch vụ chuyển phát nhanh.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/XIe0l.mp3 %}
+{% mp3 /assets/toeic/part3/XIe0l.mp3 %}
 
 | *Hi*, **welcome to Springton Furniture**. *I'm Tom*. **How can I help you?** | *Xin chào*, **chào mừng đến với cửa hàng Nội thất Springton**. *Tôi là Tom*. **Tôi có thể giúp bạn thế nào?**
 | *Hi*, **I'd like to return** *a lamp* **I bought here** *a couple of weeks ago*. | *Xin chào*, **tôi muốn trả lại** *một chiếc đèn* *tôi đã mua ở đây* **vài tuần trước**.
@@ -951,7 +951,7 @@ Cách đọc trước câu hỏi:
 
 ### Nói về các trường hợp thanh toán của bảo hiểm y tế
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0094.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0094.mp3 %}
 
 **What will** happen if the man sees a specialist without a referral? → Chuyện gì sẽ xảy ra nếu người đàn ông gặp một bác sĩ chuyên khoa mà không có sự giới thiệu?
 - (A) He will be dropped from his health plan. → Anh ấy sẽ sẽ bị bỏ khỏi diện bảo hiểm y tế.
@@ -971,7 +971,7 @@ Cách đọc trước câu hỏi:
 - (C) Get a treatment for his headache. → Điều trị cơn đau đầu của anh ấy.
 - (D) Get a special procedure. → Lấy một thủ tục đặc biệt.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/Btyl9.mp3 %}
+{% mp3 /assets/toeic/part3/Btyl9.mp3 %}
 
 | **Does** *the health plan* **allow me** *to see a specialist immediately*, **or** *do I have to see* **my primary care provider** *first*? | *Bảo hiểm y tế* **có cho phép tôi** *gặp một bác sĩ chuyên khoa ngay lập tức*, **hay** *tôi phải gặp* **bác sĩ riêng của tôi trước?**
 | **If you go** *without* **your primary provider's referral**, you **will incur** *a higher percentage of the total cost*. | **Nếu bạn đi** *mà không có* **sự giới thiệu của bác sĩ riêng của bạn**, bạn **sẽ gánh** *một tỉ lệ phần trăm tổng chi phí cao hơn*.
@@ -981,7 +981,7 @@ Cách đọc trước câu hỏi:
 
 ### Xin hỏi gặp bác sĩ sau khi bị lỡ hẹn tại bệnh viện
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0095.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0095.mp3 %}
 
 **Why did** Mary miss her appointment? → Tại sao Mary bỏ lỡ cuộc hẹn của mình?
 - (A) Her meeting ran late. → Cuộc họp của cô ấy đã kết thúc muộn.
@@ -1001,7 +1001,7 @@ Cách đọc trước câu hỏi:
 - (C) Order some lab supplies. → Đặt mua một số vật tư phòng thí nghiệm.
 - **(D) Read a patient file. → Đọc một hồ sơ bệnh nhân.** Ta thấy ý trong câu "Yes, just give me a few minutes to review her file"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/xTTQw.mp3 %}
+{% mp3 /assets/toeic/part3/xTTQw.mp3 %}
 
 | *Hi, I'm Mary Smith*. **I had an appointment** *with Dr.Watanabe* **at two P.M.**, *but I missed it* **because** *my bus was delayed*. **Can she still see me?** | *Xin chào, tôi là Mary Smith*. **Tôi đã có một cuộc hẹn** *với bác sĩ Watanabe* **lúc 2 giờ chiều**, *nhưng tôi đã bỏ lỡ mất* **vì** *xe buýt chỗ tôi đã bị hoãn*. **Liệu tôi còn có thể gặp cô ấy chứ?**
 | **I'll check**, *but she's been busy this week*. **Her partner, Dr.Garcia**, *is away on a business trip*. | **Tôi sẽ kiểm tra**, *nhưng tuần này cô ấy khá bận*. **Đối tác của cô ấy, bác sĩ Garcia**, *đang đi công tác xa*.
@@ -1013,7 +1013,7 @@ Cách đọc trước câu hỏi:
 
 ### Hỏi về giá dịch vụ chuyển phát ở bưu điện
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0096-missing.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0096-missing.mp3 %}
 
 **Where is** the conversation most likely taking place? → Cuộc hội thoại này rất có thể diễn ra ở đâu?
 - (A) In a library → Thư viện
@@ -1033,7 +1033,7 @@ Cách đọc trước câu hỏi:
 - **(C) It needn't arrive quickly. → Nó không cần phải đến nơi nhanh.** Ta thấy ý này trong câu "It isn't extremely urgent."
 - (D) It weighs 10 pounds. → Nó nặng 10 pounds.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/IrOLD.mp3 %}
+{% mp3 /assets/toeic/part3/IrOLD.mp3 %}
 
 | Yes, **I have a bulk order** *I need to ship to India*. **How fast** *will it get there* **if I send it express**? | **Tôi có một đơn hàng số lượng lớn** *muốn chuyển đến Ấn Độ*. **Bao lâu** *nó mới đến đó* **nếu tôi gửi tốc hành?**
 | **Express** *will deliver* **within four days**. *That costs* **$2 per pound**. | **Gửi tốc hành** *sẽ được gửi* **trong vòng 4 ngày**. *Phí là* **2 đô mỗi pound.**
@@ -1044,7 +1044,7 @@ Cách đọc trước câu hỏi:
 
 ### Trò chuyện online giữa 3 người về chiến dịch quảng cáo của công ty
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0096.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0096.mp3 %}
 
 **What field** do the speakers most likely work in? → Những người nói có khả năng làm việc trong lĩnh vực nào?
 - (A) Engineering. → Kỹ thuật.
@@ -1064,7 +1064,7 @@ Cách đọc trước câu hỏi:
 - (C) Postponing a demonstration. → Hoãn một buổi thuyết trình.
 - (D) Contacting technical support. → Liên hệ hỗ trợ kỹ thuật.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/0Uic9.mp3 %}
+{% mp3 /assets/toeic/part3/0Uic9.mp3 %}
 
 | *Good morning, everyone*. **I've scheduled** *this conference call* **to discuss the advertising campaign** *we're developing* **for Denson Hotels** - **more specifically**, *the television commercial*. | *Chào buổi sáng, mọi người*. **Tôi đã lên lịch** *cuộc gọi hội nghị này* **để thảo luận về chiến dịch quảng cáo** *mà chúng ta đang phát triển* **cho chuỗi khách sạn Denson** - **cụ thể hơn là** *quảng cáo trên truyền hình*.
 | *Holly* **will be sharing** *some preliminary ideas for that*. And **Carter is joining us** *by video call* **from our Tokyo office**. | *Holly* **sẽ chia sẻ** *một số ý tưởng sơ bộ về vấn đề đó*. Và **Carter đang tham gia với chúng ta** *bằng cuộc gọi video* **từ văn phòng Tokyo của chúng ta**.
@@ -1077,7 +1077,7 @@ Cách đọc trước câu hỏi:
 
 ### Nói chuyện giữa bên xây dựng nhà ở và khác hàng để bắt đầu quy trình
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0097.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0097.mp3 %}
 
 **What type of** business does the man have? → Người đàn ông kinh doanh loại hình gì?
 - (A) Driveway repair → Sửa chữa đường lái xe
@@ -1097,7 +1097,7 @@ Cách đọc trước câu hỏi:
 - **(C) Next week → Tuần tới** Ta thấy ý này trong câu "I thought you'd be able to start next week."
 - (D) Next month → Tháng tới
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/4dbIZ.mp3 %}
+{% mp3 /assets/toeic/part3/4dbIZ.mp3 %}
 
 | *Good morning.* *This is Conway Contractors*, **here to assist you** *with all your home needs*. **How may I help you?** | *Chào buổi sáng. Đây là Nhà thầu Conway*, **sẽ hỗ trợ** *tất cả nhu cầu nhà ở của bạn*. **Tôi có thể giúp gì cho bạn?**
 | *Hi. My name's Lenora Steele*, and **one of your workers** *came to my house yesterday* **and** *gave me an estimate* **for remodeling my basement**. | *Chào, tôi tên là Lenora Steele*, hôm qua **một trong những nhân viên bên anh** *đến nhà tôi* **và** *đưa tôi bản ước lượng* **giá tu sửa tầng hầm**.
@@ -1109,7 +1109,7 @@ Cách đọc trước câu hỏi:
 
 ### Hỏi về lịch trình có thể gặp nhau để chuẩn bị cho buổi thuyết trình sắp tới
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0098.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0098.mp3 %}
 
 **What is** the man working on? → Người đàn ông đang làm việc liên quan đến gì?
 - (A) The contract with the new partners → Hợp đồng với các đối tác mới
@@ -1129,7 +1129,7 @@ Cách đọc trước câu hỏi:
 - (C) Thursday → Thứ năm
 - **(D) Friday → Thứ sáu** Ta thấy ý này trong câu "I'll have my secretary, Jill, send you an e-mail to confirm a time for Friday."
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/sHYXf.mp3 %}
+{% mp3 /assets/toeic/part3/sHYXf.mp3 %}
 
 | **Do you think** *you could come* **by on Tuesday** *to give me a hand* **preparing a presentation?** | **Bạn có nghĩ** *bạn có thể ghé qua* **vào thứ ba** *để giúp tôi* **chuẩn bị bài thuyết trình không?**
 | **We need to have** *the slides* **and** *the financial reports* **ready by next week** *for the partnership meeting.* | **Chúng ta cần phải có** *phần hình ảnh thuyết trình* **và** *báo cáo tài chính* **sẵn sàng trước tuần sau** *cho buổi họp thành viên*.
@@ -1140,7 +1140,7 @@ Cách đọc trước câu hỏi:
 
 ### Người phụ nữ trò chuyện với quản lý về việc muốn đi đến tận nơi để thuyết phục khách hàng
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-0099.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-0099.mp3 %}
 
 **Why is** the woman thinking of taking a trip to Chicago? → Tại sao người phụ nữ nghĩ về việc đi một chuyến đến Chicago?
 - **(A) To persuade someone. → Để thuyết phục một người.** Ta thấy ý trong đoạn "I think I am going to have to take a trip to Chicago tomorrow to talk to Mr. Shaw in person. I spoke to him on the phone just now, but he didn't sound too convinced about our offer."
@@ -1160,7 +1160,7 @@ Cách đọc trước câu hỏi:
 - (C) go with her on her trip. → Đi cùng với cô ấy trong chuyến đi.
 - (D) Talk to her client. → Nói chuyện với khách hàng của cô ấy.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/3BMkV.mp3 %}
+{% mp3 /assets/toeic/part3/3BMkV.mp3 %}
 
 | *I think* **I am going to have** *to take a trip* **to Chicago tomorrow** *to talk to Mr. Shaw* **in person**. | *Tôi nghĩ* **tôi sẽ đi một chuyến** *đến Chicago vào ngày mai* **để nói chuyện** *trực tiếp với ông Shaw*.
 | **I spoke to him on the phone just now**, but **he didn't sound** *too convinced* **about our offer**. | **Tôi mới vừa nói với ông ấy qua điện thoại xong**, nhưng **ông ấy không có vẻ** *quá thuyết phục* **với lời đề nghị của chúng ta.**
@@ -1175,7 +1175,7 @@ Cách đọc trước câu hỏi:
 
 ### Nói về việc tính và nộp thuế của bản thân
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-00991.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-00991.mp3 %}
 
 **Who** usually prepares the man's taxes? → Ai là người thường chuẩn bị khai thuế cho người đàn ông?
 - (A) The man. → Người đàn ông.
@@ -1195,7 +1195,7 @@ Cách đọc trước câu hỏi:
 - (C) 9 percent. → 9 phần trăm.
 - **(D) 10 percent. → 10 phần trăm.** Ta thấy ý trong câu "Yes, the penalty is ten percent of what you owe, isn't it?"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/aWT5R.mp3 %}
+{% mp3 /assets/toeic/part3/aWT5R.mp3 %}
 
 | **I'm no good** *with numbers*, so **my spouse** *usually* **files our taxes**. *She does* **all the calculations** *and* **fills out the forms**. | **Tôi không hề giỏi** *với những con số*, nên **vợ tôi** *thường là người* **khai thuế cho chúng tôi**. *Cô ấy làm* **tất cả những việc tính toán** *và* **điền vào đơn**.
 | *You're lucky*, **then**. I usually **have to pay** *an accountant* **to prepare my taxes**, and **even then** *I sometimes miss the deadline*. | **Vậy thì** *bạn may mắn đấy*. Tôi thường **phải trả tiền** *cho một kế toán viên* **để thu xếp thuế của tôi**, và **thậm chí** *tôi vẫn đôi khi lỡ hạn chót.*
@@ -1205,7 +1205,7 @@ Cách đọc trước câu hỏi:
 
 ### Người đàn ông muốn hỏi thuê phòng vì thấy quảng cáo dán ở cửa sổ
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/questions-synthesize-00992.mp3 %}
+{% mp3 /assets/toeic/part3/questions-synthesize-00992.mp3 %}
 
 **How** did the man find this place? → Làm cách nào người đàn ông tìm thấy nơi này?
 - (A) He read about it in a newspaper ad. → Anh ấy đọc về nó trong một quảng cáo trên tạp chí.
@@ -1225,7 +1225,7 @@ According to the woman, **what** is special about this place? → Dựa theo ng�
 - (C) Bring out a lease agreement. → Mang ra hợp đồng cho thuê.
 - **(D) Retrieve the key. → Lấy chìa khóa.** Ta thấy ý trong câu "Just give me a second, and I will get the key."
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/toeic/part3/aWT5R-missing.mp3 %}
+{% mp3 /assets/toeic/part3/aWT5R-missing.mp3 %}
 
 | Hi, I saw **for-rent sign** *on your lobby window*. **I am looking for** *a two-bedroom apartment*. | Chào, tôi thấy **bảng cho thuê** *trước cửa sổ sảnh chờ của bạn*. **Tôi đang tìm** *một căn hộ hai phòng ngủ*.
 | **You are in luck**. *We do have* **an available apartment for rent** *on the fifth floor*, and I think **it may be exactly what you're looking for**. | **Bạn đã gặp may rồi**. *Chúng tôi có* **một phòng sẵn sàng cho thuê** *ở tầng năm*, và tôi nghĩ **nó có thể chính xác là những gì bạn đang tìm kiếm**.

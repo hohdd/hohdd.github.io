@@ -16,6 +16,9 @@ rm -rf _site
 # bundle exec jekyll build
 jekyll build
 # checkout master and get lastest
+# S3
+# aws s3 cp ./_site s3://donghd.com --recursive
+# github
 git checkout master
 git pull origin master
 # remove old version

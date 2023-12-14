@@ -35,7 +35,7 @@ date: 2019-06-13 22:26:14 +0700
 ---
 ## Mẫu câu
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-su-dung-trong-cuoc-hop-001.mp3 %}
+{% mp3 /assets/mp3/mau-cau-su-dung-trong-cuoc-hop-001.mp3 %}
 
 ### Mở đầu cuộc họp
 - **Everyone has arrived now, so let’s get started.** – Tất cả mọi người đã có mặt, chúng ta bắt đầu thôi nhỉ.
@@ -164,7 +164,7 @@ Nếu có một cuộc họp trước đó liên quan đến cuộc họp này, 
 
 ### Một số mẫu câu khác
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-su-dung-trong-cuoc-hop-002.mp3 %}
+{% mp3 /assets/mp3/mau-cau-su-dung-trong-cuoc-hop-002.mp3 %}
 
 - **I would like to introduce all of you to the new member of our group.** —> Tôi hân hạnh giới thiệu toàn thể các bạn với những thành viên mới trong nhóm của chúng ta.
 - **We are glad you join us.** —> Chúng tôi lấy làm vinh dự khi có cậu cùng tham gia.
@@ -193,7 +193,7 @@ Nếu có một cuộc họp trước đó liên quan đến cuộc họp này, 
 
 #### Dialogue 1: Working through an agenda – Tiến hành thông qua chương trình
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-su-dung-trong-cuoc-hop-003.mp3 %}
+{% mp3 /assets/mp3/mau-cau-su-dung-trong-cuoc-hop-003.mp3 %}
 
 **A: Has everyone got a copy of the agend? Lee, could you take the minutes, please?** – Mọi người đã có bản sao của chương trình rồi đúng không? Lee, anh vui lòng dành ra vài phút nhé?
 
@@ -207,7 +207,7 @@ B: No problem. – Không vấn đề gì.
 
 #### Dialogue 2: Reporting back to a meeting – Báo cáo trong cuộc họp
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-su-dung-trong-cuoc-hop-004.mp3 %}
+{% mp3 /assets/mp3/mau-cau-su-dung-trong-cuoc-hop-004.mp3 %}
 
 **A: John, could you give us your report?** – John, anh có thể cho chúng tôi xem báo cáo của anh chứ?
 
@@ -219,7 +219,7 @@ B: No problem. – Không vấn đề gì.
 
 #### Dialogue 3: Reaching an agreement – Đạt được thỏa thuận
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-su-dung-trong-cuoc-hop-005.mp3 %}
+{% mp3 /assets/mp3/mau-cau-su-dung-trong-cuoc-hop-005.mp3 %}
 
 **A: I think we should abandon the idea altogether. Does everyone agree?** – Tôi nghĩ chúng ta nên từ bỏ hoàn toàn ý tưởng.
 
@@ -233,7 +233,7 @@ B: No problem. – Không vấn đề gì.
 
 #### Dialogue 4: Making a point – Thể hiện quan điểm
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/mau-cau-su-dung-trong-cuoc-hop-006.mp3 %}
+{% mp3 /assets/mp3/mau-cau-su-dung-trong-cuoc-hop-006.mp3 %}
 
 **A: The pointing I want to make is that we need to be informed about the dates of meetings well in advanced. I was told about the date of this meeting very late and that cause me a lot of problems. Some people were not able to come at all. We really must avoid this in the future. Communication is very bad in this company.** – Điểm mà tôi muốn đề cập là chúng ta cần thông tin về ngày họp trước thật tốt. Tôi đã nói về ngày họp này quá muộn và nó gây cho tôi nhiều vấn đề. Một số người không thể đến. Chúng ta thực sự phải tránh điều này trong tương lai. Trong công ty này liên hệ rất tệ.
 

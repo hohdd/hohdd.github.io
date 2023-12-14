@@ -36,7 +36,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 1. Are you sure…? - Bạn có chắc không?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/001.mp3 %}
+{% mp3 /assets/mp3/001.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -59,7 +59,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 2. Are you used to (verb-ing)? - Bạn có quen (V-ing) không?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/002.mp3 %}
+{% mp3 /assets/mp3/002.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -80,7 +80,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ### 3. As far as I know​/recollect/recall/​can remember​/​can see​/​can tell - Theo như tôi (biết/thấy ...)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/003.mp3 %}
+{% mp3 /assets/mp3/003.mp3 %}
 
 Used for saying what you think is true when you think that there may be facts that you do not know, remember etc
 
@@ -104,7 +104,7 @@ Used for saying what you think is true when you think that there may be facts th
 
 ### 4. As/So far as SOMEONE is concerned, (S+V) - Theo những gì ai đó nghĩ hoặc cảm thấy, (S+V) ...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/004.mp3 %}
+{% mp3 /assets/mp3/004.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -125,7 +125,7 @@ Used for saying what you think is true when you think that there may be facts th
 
 ### 5. Be careful with (Noun)... / Be careful that (S+V) ... / Be careful not to (Verb) ... - Hãy cẩn thận ...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/005.mp3 %}
+{% mp3 /assets/mp3/005.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -147,7 +147,7 @@ Used for saying what you think is true when you think that there may be facts th
 
 ### 6. But this/it doesn’t mean that (S+V)… - Nhưng điều này không có nghĩa là (S+V)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/006.mp3 %}
+{% mp3 /assets/mp3/006.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -169,7 +169,7 @@ Used for saying what you think is true when you think that there may be facts th
 
 ### 7. By the way, (Clause)... - Nhân tiện, Tiện thể, Nhân đây, Sẵn dịp, À...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/007.mp3 %}
+{% mp3 /assets/mp3/007.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -191,7 +191,7 @@ Used for saying what you think is true when you think that there may be facts th
 
 ### 8. Compared to (Noun)... - So với (Noun)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/008.mp3 %}
+{% mp3 /assets/mp3/008.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -212,7 +212,7 @@ II. DIALOGUES:
 
 ### 9. Did you use to (Verb)...? - Bạn đã từng (Verb)...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/009.mp3 %}
+{% mp3 /assets/mp3/009.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -231,7 +231,7 @@ II. DIALOGUES:
 
 ### 10. Don’t ever (Verb)... - Đừng bao giờ (Verb)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/010.mp3 %}
+{% mp3 /assets/mp3/010.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -252,7 +252,7 @@ II. DIALOGUES:
 
 ### 11. Do/Will you agree (that/with/to)...? - Bạn có đồng ý (rằng/với)...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/011.mp3 %}
+{% mp3 /assets/mp3/011.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -272,7 +272,7 @@ II. DIALOGUES:
 
 ### 12. Do you have/carry this in (Noun)...? - Bạn có cái này (Noun)... không?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/012.mp3 %}
+{% mp3 /assets/mp3/012.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -293,7 +293,7 @@ II. DIALOGUES:
 
 ### 13. Do you have (Noun)... available? - Bạn còn (Noun)... không?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/013.mp3 %}
+{% mp3 /assets/mp3/013.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -314,7 +314,7 @@ II. DIALOGUES:
 
 ### 14. Do/Would you mind (Verb-ing/If S+V)...? - Bạn có phiền (nếu) ...không?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/014.mp3 %}
+{% mp3 /assets/mp3/014.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -335,7 +335,7 @@ II. DIALOGUES:
 
 ### 15. Do you feel like (Verb-ing)...? - Bạn có muốn ...? (suggestion)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/015.mp3 %}
+{% mp3 /assets/mp3/015.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -360,7 +360,7 @@ II. DIALOGUES:
 
 ### 16. Shouldn’t we (Verb)...? - Chúng ta có nên...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/016.mp3 %}
+{% mp3 /assets/mp3/016.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -381,7 +381,7 @@ II. DIALOGUES:
 
 ### 17. Have you ever (P2)...? - Bạn đã từng (P2)...chưa?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/017.mp3 %}
+{% mp3 /assets/mp3/017.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -404,7 +404,7 @@ II. DIALOGUES:
 
 ### 18. Not...until... - (phủ định)... cho đến khi...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/018.mp3 %}
+{% mp3 /assets/mp3/018.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -425,7 +425,7 @@ II. DIALOGUES:
 
 ### 19. He/Something is as (Adj/Adv) as (Noun)... - Anh ta/Cái gì đó (Adj) như (Noun)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/019.mp3 %}
+{% mp3 /assets/mp3/019.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -448,7 +448,7 @@ II. DIALOGUES:
 
 ### 20. He/Someone is either... or... - Anh ta hoặc là ... hoặc ...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/020.mp3 %}
+{% mp3 /assets/mp3/020.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -469,7 +469,7 @@ II. DIALOGUES:
 
 ### 21. He is so (Adj/Adv)... that (S+V)... - Mẫu: so...that - ...(Adj/Adv) đến nỗi mà (S+V)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/021.mp3 %}
+{% mp3 /assets/mp3/021.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -490,7 +490,7 @@ II. DIALOGUES:
 
 ### 22. He is not only... but also... - Anh ấy không chỉ ... mà còn ...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/022.mp3 %}
+{% mp3 /assets/mp3/022.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -512,7 +512,7 @@ II. DIALOGUES:
 
 ### 23. Help yourself to (Noun)... - Lấy một số thứ bạn muốn mà không cần xin phép (khi đưa đồ ăn cho ai đó)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/023.mp3 %}
+{% mp3 /assets/mp3/023.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -533,7 +533,7 @@ II. DIALOGUES:
 
 ### 24. How about (Noun/Verb-ing)...? - Used to make a suggestion
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/024.mp3 %}
+{% mp3 /assets/mp3/024.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -556,7 +556,7 @@ II. DIALOGUES:
 
 ### 25. How come (S+V)...? - Used to ask how or why something has happened
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/025.mp3 %}
+{% mp3 /assets/mp3/025.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -577,7 +577,7 @@ II. DIALOGUES:
 
 ### 26. How dare you (S+V)...! - Dùng khi bạn đang rất sốc và tức giận về điều gì đó mà ai đó đã làm.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/026.mp3 %}
+{% mp3 /assets/mp3/026.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -599,7 +599,7 @@ II. DIALOGUES:
 
 ### 27. How do you like (Noun)...? - used when asking someone how they like something
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/027.mp3 %}
+{% mp3 /assets/mp3/027.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -622,7 +622,7 @@ II. DIALOGUES:
 
 ### 28. How long does it take to (Verb)...? - Mất bao lâu để (làm gì)...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/028.mp3 %}
+{% mp3 /assets/mp3/028.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -643,7 +643,7 @@ II. DIALOGUES:
 
 ### 29. How often...? - Bao lâu...? (hỏi mức độ thường xuyên)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/029.mp3 %}
+{% mp3 /assets/mp3/029.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -664,7 +664,7 @@ II. DIALOGUES:
 
 ### 30. I bet (S+V)... - Tôi cá là... ->nói để cho thấy rằng bạn hiểu tại sao ai đó/việc gì đó ra sao.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/030.mp3 %}
+{% mp3 /assets/mp3/030.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->nói để cho thấy rằng bạn hiểu tại sao ai đó/việc gì đó ra sao.</div>
 
@@ -689,7 +689,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 31. I can hardly believe that (S+V)... - Tôi khó có thể tin rằng (S+V)... -> Bạn không thể tin hay chấp nhận những gì đang xảy ra.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/031.mp3 %}
+{% mp3 /assets/mp3/031.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> Bạn không thể tin hay chấp nhận những gì đang xảy ra.</div>
 
@@ -712,7 +712,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 32. I can’t help (Verb-ing)... - Tôi không thể không (Verb-ing) ... -> không thể kiểm soát hoặc ngăn chặn điều gì đó.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/032.mp3 %}
+{% mp3 /assets/mp3/032.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> không thể kiểm soát hoặc ngăn chặn điều gì đó.</div>
 
@@ -736,7 +736,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 33. I can’t say (for/with + Verb-ing/Noun)... - Tôi không chắc -> Dùng để nói rằng bạn không nghĩ hay cảm thấy điều gì đó.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/033.mp3 %}
+{% mp3 /assets/mp3/033.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> Dùng để nói rằng bạn không nghĩ hay cảm thấy điều gì đó.</div>
 
@@ -760,7 +760,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 34. I cannot wait to (Verb)... - Tôi (rất) nóng lòng muốn/được ...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/034.mp3 %}
+{% mp3 /assets/mp3/034.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -781,7 +781,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 35. I dare say (S+V)... - Tôi dám chắc/khẳng định...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/035.mp3 %}
+{% mp3 /assets/mp3/035.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -803,7 +803,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 36. I’d like you to (Verb)... - Tôi muốn bạn (verb)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/036.mp3 %}
+{% mp3 /assets/mp3/036.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -826,7 +826,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">used to emphasize that you do not want something to happen.</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/037.mp3 %}
+{% mp3 /assets/mp3/037.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -850,7 +850,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">used for saying who or what prevented something from happening</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/038.mp3 %}
+{% mp3 /assets/mp3/038.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -873,7 +873,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 39. If there is one thing that (VERB) me, it’s... - Nếu có một điều/thứ khiến/làm tôi ..., đó là...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/039.mp3 %}
+{% mp3 /assets/mp3/039.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -896,7 +896,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 40. I have no idea (that) (S+V)... - Tôi không biết rằng...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/040.mp3 %}
+{% mp3 /assets/mp3/040.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -917,7 +917,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 41. I have *got* to (Verb)... - Tôi phải (Verb)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/041.mp3 %}
+{% mp3 /assets/mp3/041.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -940,7 +940,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 42. ...as (Adj/Adv) as possible/I can/You can - ...(Adj/Adv) nhất có thể.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/042.mp3 %}
+{% mp3 /assets/mp3/042.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -963,7 +963,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 43. I’ll let you know (Adv) (When/If)... - Tôi sẽ cho bạn biết (Adv) (Khi/Nếu)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/043.mp3 %}
+{% mp3 /assets/mp3/043.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -985,7 +985,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 44. I’d be grateful (for/if)... - Tôi rất biết ơn (vì/nếu)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/044.mp3 %}
+{% mp3 /assets/mp3/044.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1008,7 +1008,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 45. I’m afraid (S+V)... - Tôi e/sợ rằng...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/045.mp3 %}
+{% mp3 /assets/mp3/045.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1031,7 +1031,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 46. I’m calling to (Verb) - Tôi gọi để (Verb)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/046.mp3 %}
+{% mp3 /assets/mp3/046.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1053,7 +1053,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 47. I’m looking forward to (Verb-ing) ... - Tôi rất mong được (Verb-ing/Noun)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/047.mp3 %}
+{% mp3 /assets/mp3/047.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1074,7 +1074,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 48. I’m not really happy with (Noun) ... - Tôi không thực sự hài lòng/hạnh phúc với (Noun)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/048.mp3 %}
+{% mp3 /assets/mp3/048.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1097,7 +1097,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 49. I’m thinking about (Verb-ing/Noun) - Tôi đang nghĩ về (Verb-ing/Noun)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/049.mp3 %}
+{% mp3 /assets/mp3/049.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1120,7 +1120,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">like a particular type of person or thing /choose a particular thing/ try to get something</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/050.mp3 %}
+{% mp3 /assets/mp3/050.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1142,7 +1142,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 51. It is (Noun)... that/who (S+V)... - (Nhấn mạnh): Chính/Đó là (Noun)... (S+V)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/051.mp3 %}
+{% mp3 /assets/mp3/051.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1164,7 +1164,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">express a concern or regret for what has happened.</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/052.mp3 %}
+{% mp3 /assets/mp3/052.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1187,7 +1187,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 53. It’s my fault (for + Noun/Verb-ing) (S+V) ... - Đó là lỗi của tôi ...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/053.mp3 %}
+{% mp3 /assets/mp3/053.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1208,7 +1208,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 54. It’s not that (S+V)... but (S+V)... - Không phải là (S+V)... mà là/mà bởi vì ...(S+V)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/054.mp3 %}
+{% mp3 /assets/mp3/054.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1232,7 +1232,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">This expression is used when you are sure that you know something, but somehow it doesn’t quite come to you.</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/055.mp3 %}
+{% mp3 /assets/mp3/055.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1252,7 +1252,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 56. It’s said that / It should be pointed out that / It has been proven that / It will be noted that (S+V)... - Người ta nói răng / Cần chỉ ra rằng / Nó đã được chứng minh rằng ...(S+V)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/056.mp3 %}
+{% mp3 /assets/mp3/056.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1280,7 +1280,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">2. if something is up to you, you are responsible for doing it</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/057.mp3 %}
+{% mp3 /assets/mp3/057.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1306,7 +1306,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> bạn đang ở tiếp theo. Đến lượt của một người là thời điểm họ có thể hoặc phải làm điều gì đó, bởi vì họ đang ở cùng với những người khác, những người lần lượt thực hiện cùng một hoạt động</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/058.mp3 %}
+{% mp3 /assets/mp3/058.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1329,7 +1329,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 59. It/This may surprise you, but (S+V)... - Nó có thể làm bạn ngạc nhiên, nhưng (S+V)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/059.mp3 %}
+{% mp3 /assets/mp3/059.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1354,7 +1354,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">Something started in the past and has continued up until now.</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/060.mp3 %}
+{% mp3 /assets/mp3/060.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1377,7 +1377,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">The threshold any one person has when they've had enough.</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/061.mp3 %}
+{% mp3 /assets/mp3/061.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1400,7 +1400,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 62. I wonder if (S+V)...? / I was wondering if (S+V)... - Tôi tự hỏi liệu...? Không biết liệu...? / Tôi đang tự hỏi liệu...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/062.mp3 %}
+{% mp3 /assets/mp3/062.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1424,7 +1424,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->express a preference when making a choice</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/063.mp3 %}
+{% mp3 /assets/mp3/063.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1446,7 +1446,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 64. No matter what/how/where (S+V)... - Dù cho/Bất kể (S+V)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/064.mp3 %}
+{% mp3 /assets/mp3/064.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1470,7 +1470,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->it is not surprising</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/065.mp3 %}
+{% mp3 /assets/mp3/065.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1491,7 +1491,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 66. Now that I (come to) think about it, ... - Giờ nghĩ lại...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/066.mp3 %}
+{% mp3 /assets/mp3/066.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->indicate that you have suddenly realized something, often something obvious.</div>
 
@@ -1519,7 +1519,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 67. Once you (Verb)... - Một khi bạn đã (Verb)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/067.mp3 %}
+{% mp3 /assets/mp3/067.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1543,7 +1543,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">Discovered/Learned that something I was not expecting. Something that causes surprise, disappointment</div>
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/068.mp3 %}
+{% mp3 /assets/mp3/068.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1565,7 +1565,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 69. On one hand (S+V)...on the other hand (S+V)... - Một mặt, ..., nhưng mặt khác,...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/069.mp3 %}
+{% mp3 /assets/mp3/069.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> use this expression when you are speaking about two different facts or two opposite ways of thinking about a situation.</div>
 
@@ -1591,7 +1591,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 70. See that (S+V)... - Đảm bảo rằng - để đảm bảo rằng ai đó làm điều gì đó hoặc điều gì đó xảy ra.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/070.mp3 %}
+{% mp3 /assets/mp3/070.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->to make sure that someone does something or that something happens</div>
 
@@ -1614,7 +1614,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 71. Speaking of (Noun)... - Nhắc đến (Noun) - nói về điều gì đó vừa được đề cập ngoài việc giới thiệu một chủ đề mới có liên quan đến sự vật đó.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/071.mp3 %}
+{% mp3 /assets/mp3/071.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> say <strong>speaking of something</strong> that has just been mentioned as away of introducing a new topic which has some connection with that thing.</div>
 
@@ -1639,7 +1639,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 72. Thanks to (Noun)... - Nhờ có (Noun) - nghĩa tương tự với "Because of", thể hiện lòng biết ơn là do ai đó hoặc cái gì đó; với lợi ích của sự giúp đỡ từ họ.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/072.mp3 %}
+{% mp3 /assets/mp3/072.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> similar meaning with “Because of” , express gratitude being due to someone or something; with the benefit of help from</div>
 
@@ -1663,7 +1663,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 73. Thank you for (Noun)... - Cám ơn bạn vì (Noun)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/073.mp3 %}
+{% mp3 /assets/mp3/073.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1686,7 +1686,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 74. The first thing I’m going to do when (S+V)... is (Verb)... - Điều đầu tiên tôi sẽ làm khi... là...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/074.mp3 %}
+{% mp3 /assets/mp3/074.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1707,7 +1707,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 75. The more (S+V)... the more (S+V)... - Càng... Càng... (Cấu trúc CÀNG-CÀNG: so sánh hơn - so sánh hơn)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/075.mp3 %}
+{% mp3 /assets/mp3/075.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1729,7 +1729,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 76. There is nothing as (Adj) as (Verb-ing)... - Không có gì ... bằng việc...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/076.mp3 %}
+{% mp3 /assets/mp3/076.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1751,7 +1751,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 77. There is nothing I like better than (Verb-ing)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/077.mp3 %}
+{% mp3 /assets/mp3/077.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1772,7 +1772,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 78. We’d be better off without (Noun/Verb-ing)... - Chúng ta sẽ tốt hơn nếu không có (Noun/Verb-ing ) -> trong tình trạng hoặc tình huống tốt hơn nếu không có ai đó / cái gì đó.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/078.mp3 %}
+{% mp3 /assets/mp3/078.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->in a more satisfactory condition or situation if without someone/something</div>
 
@@ -1796,7 +1796,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 79. We’d better/You had best (Verb)... - Tốt nhất/Tốt hơn chúng ta/bạn nên -> đưa ra lời khuyên về các tình huống cụ thể; sẽ là khôn ngoan khi làm điều gì đó.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/079.mp3 %}
+{% mp3 /assets/mp3/079.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->give advice about specific situations; would be wise to do something.</div>
 
@@ -1820,7 +1820,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 80. We may as well (Verb)... - Chúng tôi cũng có thể (Verb)... -> không có lý do gì bạn không nên làm điều gì đó.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/080.mp3 %}
+{% mp3 /assets/mp3/080.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->there is no reason you should not do something</div>
 
@@ -1843,7 +1843,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 81. What/Whatever (will) becomes of (Noun)...? - (Noun) (sẽ) trở thành gì/sẽ ra sao...? -> tình cờ; là số phận của
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/081.mp3 %}
+{% mp3 /assets/mp3/081.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> to happen to; be the fate of</div>
 
@@ -1867,7 +1867,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 82. What can I do for...? / What can I do to (Verb)...? - Tôi có thể làm gì cho... / Tôi có thể làm gì để (Verb)...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/082.mp3 %}
+{% mp3 /assets/mp3/082.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1889,7 +1889,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 83. What do you mean by (Verb-ing/Noun)...? - Ý bạn là gì khi (Verb-ing/Noun)...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/083.mp3 %}
+{% mp3 /assets/mp3/083.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1911,7 +1911,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 84. ...what-do-you-call-it (what·cha·ma·call·it) -> được sử dụng để mô tả một đồ vật hoặc người mà bạn không biết hoặc không thể nhớ tên.
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/084.mp3 %}
+{% mp3 /assets/mp3/084.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->be used to describe an object or person whose name you do not know or cannot recall.</div>
 
@@ -1938,7 +1938,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 85. What do you say (about) (Noun/S+V)...? - used for making a suggestion (một cách nói thân mật)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/085.mp3 %}
+{% mp3 /assets/mp3/085.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1959,7 +1959,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 86. What... for...? - Dùng khi hỏi mục đích của một vật/hành động/sự việc để LÀM GÌ?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/086.mp3 %}
+{% mp3 /assets/mp3/086.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -1980,7 +1980,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 87. What if (S+V)...? - Nếu ... thì sao? / Điều gì sẽ xảy ra nếu...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/087.mp3 %}
+{% mp3 /assets/mp3/087.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -2002,7 +2002,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 88. What I’m trying to say is (that) (S+V)... - Điều tôi (đang cố gắng) muốn nói là...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/088.mp3 %}
+{% mp3 /assets/mp3/088.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -2025,7 +2025,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 89. What’s wrong/the matter with (Noun)...? - ...bị gì vậy? / Có chuyện gì với... vậy? -> Khó khăn hay vấn đề gì với...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/089.mp3 %}
+{% mp3 /assets/mp3/089.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->What is the difficulty or problem?</div>
 
@@ -2050,7 +2050,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 90. What would you do if (S+V)...? - Bạn sẽ làm gì nếu...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/090.mp3 %}
+{% mp3 /assets/mp3/090.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -2073,7 +2073,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 91. What’s the use/point of (Verb-ing)...? - (Verb-ing) thì có ích gì? - Cách nói tu từ (Verb-ing chả có ích gì!)
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/091.mp3 %}
+{% mp3 /assets/mp3/091.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">>used for saying that something is not likely to have a successful result, and so there is no point in doing it</div>
 
@@ -2099,7 +2099,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 92. Who/What/Which is your favorite (Noun)...? - (Noun) yêu thích của bạn là gì?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/092.mp3 %}
+{% mp3 /assets/mp3/092.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -2121,7 +2121,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 93. Where can I (Verb)...? - Tôi có thể ...ở đâu?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/093.mp3 %}
+{% mp3 /assets/mp3/093.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -2142,7 +2142,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 94. Where there is/are (N1)... there is/are (N2)... - Ở đâu có (N1) thì ở đó có (N2)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/094.mp3 %}
+{% mp3 /assets/mp3/094.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -2165,7 +2165,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 95. Whether (S+V) or not... - Dù cho... hay không thì... -> trong bất kỳ hoàn cảnh nào; bất kể
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/095.mp3 %}
+{% mp3 /assets/mp3/095.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">-> under whatever circumstances; regardless</div>
 
@@ -2191,7 +2191,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 96. Why not (Verb)...? / Why don't (S+V)...? - Tại sao không (Verb)...? / Tại sao không...?
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/096.mp3 %}
+{% mp3 /assets/mp3/096.mp3 %}
 
 **I. EXAMPLES:**
 
@@ -2214,7 +2214,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 97. Would you care for (some) (Noun) ...? - Bạn có muốn... không? -> dùng để hỏi một cách lịch sự xem ai đó có muốn thứ gì đó không
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/097.mp3 %}
+{% mp3 /assets/mp3/097.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->used for asking politely whether someone would like something</div>
 
@@ -2240,7 +2240,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 98. You are not to (Verb)... - Bạn không được (Verb)... -> thừa nhận hướng dẫn hoặc quy định
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/098.mp3 %}
+{% mp3 /assets/mp3/098.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->acknowledge instructions or regulations</div>
 
@@ -2266,7 +2266,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 99. You can never (Noun/be too Adj) (Noun/Verb-ing)... - Bạn PHẢI RẤT...(khi)... -> ý là "Bạn phải càng ... càng tốt"
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/099.mp3 %}
+{% mp3 /assets/mp3/099.mp3 %}
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel w3-padding-16">->”You can never be too careful driving” means that you should always be very careful, and that there is no such thing as being TOO careful, since the more careful you are, the better.</div>
 
@@ -2293,7 +2293,7 @@ Said to show that you understand why someone has a particular opinion or feels a
 
 ### 100. You only have to (Verb)... in order to (Verb)... - Bạn chỉ cần (V1)... để (V2)...
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/100.mp3 %}
+{% mp3 /assets/mp3/100.mp3 %}
 
 **I. EXAMPLES:**
 

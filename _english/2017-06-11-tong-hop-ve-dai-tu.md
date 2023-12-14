@@ -191,7 +191,7 @@ date: 2019-06-13 22:26:14 +0700
 
 ## Các ví dụ trong bài
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/speech_20200522152741311.mp3 %}
+{% mp3 /assets/mp3/speech_20200522152741311.mp3 %}
 
 - **The student** is good at math. → **He** is good at math.
 - I like **the student**. → I like **him**.

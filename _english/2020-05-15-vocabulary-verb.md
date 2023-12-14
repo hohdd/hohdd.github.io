@@ -33,7 +33,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Verb: level A1 + A2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/vocabulary-verb-a1-a2.mp3 %}
+{% mp3 /assets/mp3/vocabulary-verb-a1-a2.mp3 %}
 
 | Word | IPA | Google Translate
 |:-
@@ -240,7 +240,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Verb: level B1 + B2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/vocabulary-verb-b1-b2.mp3 %}
+{% mp3 /assets/mp3/vocabulary-verb-b1-b2.mp3 %}
 
 | Word | IPA | Google Translate
 |:-
@@ -1019,7 +1019,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## Verb: level C1 + C2
 
-{% mp3 https://s3-ap-southeast-1.amazonaws.com/donghd.com/assets/mp3/vocabulary-verb-c1-c2.mp3 %}
+{% mp3 /assets/mp3/vocabulary-verb-c1-c2.mp3 %}
 
 | Word | IPA | Google Translate
 |:-
