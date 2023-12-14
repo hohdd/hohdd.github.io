@@ -17,8 +17,9 @@ rm -rf _site
 jekyll build
 # checkout master and get lastest
 # S3
-# aws s3 cp ./_site s3://donghd.com --recursive
-# github
+# aws s3 cp ./_site s3://donghd.com --recursive --acl public-read
+# github: 10 minutes timeout, 100 GB per month, 10 builds per hour
+# Usage (~7m): build 5m12s, deploy 1m46s, report 2s
 git checkout master
 git pull origin master
 # remove old version
