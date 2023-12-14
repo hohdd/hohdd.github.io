@@ -53,6 +53,7 @@ date: 2020-05-15 14:26:14 +0700
 - Unity - Chủ đề (D) - Toán học cơ bản liên quan đến không gian 3 chiều trong Unity Engine
 - Unity - Chủ đề (D) - Cách để làm một Game trở nên thú vị
 - Unity - Chủ đề (D) - Trình tự gọi các Event Functions (Script lifecycle)
+- Unity - Chủ đề (D) - Biên dịch có điều kiện (Conditional compilation)
 
 ### Unity - Package
 

@@ -79,4 +79,6 @@ date: 2020-05-15 14:26:14 +0700
 | phân biệt instance MonoBehaviour (script) và "gameObject" | SendMessage, BroadcastMessage có ở cả 2, nhưng Invoke, StartCoroutine thì chỉ có trên MonoBehaviour
 | làm gì cũng cần có kế hoạch và plan, làm ra phải phát triển và bảo trì | ko đem con bỏ chợ, có nhiều lý thuyết và tool liên quan, chỉ cần thắc mắc-trò chuyện-tìm hiểu
 | DongHD > Selection History > BACK-FORWARD | Tạo một file custom Editor hay sử dụng, khi phình to thì tạo "Unity Editor Extension"
+| Detect nền tảng runtime với "Application.platform" | if (Application.platform == RuntimePlatform.WindowsPlayer/Android/Android) ...
+| trong Visual Studio có thể thấy Asset Reference từ C# | khi click vào thì sẽ có ping trên Unity Editor
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
