@@ -1,0 +1,842 @@
+[
+  {
+    "title": "Chủ ngữ + Động từ là 2 thành phần KHÔNG THỂ THIẾU trong một câu tiếng anh.",
+    "subTitle": "Chủ ngữ + Động từ là 2 thành phần KHÔNG THỂ THIẾU trong một câu tiếng anh.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Mỗi câu đơn chỉ có một động từ chính (là động từ được chia thì và trợ động từ).",
+    "subTitle": "Mỗi câu đơn chỉ có một động từ chính (là động từ được chia thì và trợ động từ).",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Nếu một câu có nhiều động từ chính thì đó là một câu ghép từ nhiều câu đơn lại với nhau.",
+    "subTitle": "Nếu một câu có nhiều động từ chính thì đó là một câu ghép từ nhiều câu đơn lại với nhau.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Theo sau giới từ có thể là một cụm danh từ hoặc một đại từ hoặc một động từ V-ing.",
+    "subTitle": "Theo sau giới từ có thể là một cụm danh từ hoặc một đại từ hoặc một động từ V-ing.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Trạng từ bổ nghĩa cho động từ và tính từ, để miêu tả mức độ và trạng thái của động từ và tính từ.",
+    "subTitle": "Trạng từ bổ nghĩa cho động từ và tính từ, để miêu tả mức độ và trạng thái của động từ và tính từ.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "To + Verb (to + động từ nguyên mẫu) để diễn tả mục đích của hành động",
+    "subTitle": "To + Verb (to + động từ nguyên mẫu) để diễn tả mục đích của hành động",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "V-ing (động từ thêm đuôi -ing) diễn tả một hành động khác xảy ra cùng lúc (rút gọn mệnh đề trạng ngữ)",
+    "subTitle": "V-ing (động từ thêm đuôi -ing) diễn tả một hành động khác xảy ra cùng lúc (rút gọn mệnh đề trạng ngữ)",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Có 2 dạng câu trần thuật, đó là câu khẳng định và câu phủ định.",
+    "subTitle": "Có 2 dạng câu trần thuật, đó là câu khẳng định và câu phủ định.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu nghi vấn: Câu hỏi Yes\/No, Câu hỏi có từ hỏi, Câu hỏi có lựa chọn.",
+    "subTitle": "Câu nghi vấn: Câu hỏi Yes\/No, Câu hỏi có từ hỏi, Câu hỏi có lựa chọn.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "To + Verb và V-ing (thể form), ở phủ định thì thêm NOT vào trước động từ.",
+    "subTitle": "To + Verb và V-ing (thể form), ở phủ định thì thêm NOT vào trước động từ.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Dùng những từ mang nghĩa phủ định như: No, None, No one, Nobody, Nothing,…",
+    "subTitle": "Dùng những từ mang nghĩa phủ định như: No, None, No one, Nobody, Nothing,…",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Thêm các trạng từ phủ định: never, few, hardly, little, rarely, scarcely, seldom,…",
+    "subTitle": "Thêm các trạng từ phủ định: never, few, hardly, little, rarely, scarcely, seldom,…",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu hỏi đuôi là những câu khẳng định hoặc phủ định (isn’t it? can she?)",
+    "subTitle": "Câu hỏi đuôi là những câu khẳng định hoặc phủ định (isn’t it? can she?)",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu cầu khiến: Động từ nguyên mẫu + (Tân ngữ).",
+    "subTitle": "Câu cầu khiến: Động từ nguyên mẫu + (Tân ngữ).",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Cảm thán: WHAT + (A\/AN) + tính từ + danh từ + (chủ ngữ + động từ)!",
+    "subTitle": "Cảm thán: WHAT + (A\/AN) + tính từ + danh từ + (chủ ngữ + động từ)!",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Cảm thán: HOW + tính từ \/ trạng từ + chủ ngữ + động từ!",
+    "subTitle": "Cảm thán: HOW + tính từ \/ trạng từ + chủ ngữ + động từ!",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Cảm thán: thêm SO (adj) hoặc SUCH (n) vào trong câu trần thuật",
+    "subTitle": "Cảm thán: thêm SO (adj) hoặc SUCH (n) vào trong câu trần thuật",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu Tường Thuật: said that, told that, asked someobody + to Verb, denied + V-ing, promised, suggest + Ving",
+    "subTitle": "Câu Tường Thuật: said that, told that, asked someobody + to Verb, denied + V-ing, promised, suggest + Ving",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu Tường Thuật: can → could, may → might, must → had to, could → could (không đổi)...",
+    "subTitle": "Câu Tường Thuật: can → could, may → might, must → had to, could → could (không đổi)...",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu Tường Thuật: here → there, now → then, today → that day, tonight → that night, yesterday → the previous day \/ the day before...",
+    "subTitle": "Câu Tường Thuật: here → there, now → then, today → that day, tonight → that night, yesterday → the previous day \/ the day before...",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Bàng thái cách: I suggest that... It was essential that... He requested... He demands...",
+    "subTitle": "Bàng thái cách: I suggest that... It was essential that... He requested... He demands...",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Bàng thái cách: to advise (that), to ask (that), to demand (that), to desire (that), to insist (that)",
+    "subTitle": "Bàng thái cách: to advise (that), to ask (that), to demand (that), to desire (that), to insist (that)",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Bàng thái cách: to propose (that), to recommend (that), to request (that), to suggest (that), to urge (that)",
+    "subTitle": "Bàng thái cách: to propose (that), to recommend (that), to request (that), to suggest (that), to urge (that)",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Bàng thái cách: It is best (that)... crucial (chủ yếu), desirable (mong muốn), essential (thiết yếu)...",
+    "subTitle": "Bàng thái cách: It is best (that)... crucial (chủ yếu), desirable (mong muốn), essential (thiết yếu)...",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Bàng thái cách: It is imperative (that) (bắt buộc), important, necessary, vital (sống còn), It is a good\/bad idea (that)...",
+    "subTitle": "Bàng thái cách: It is imperative (that) (bắt buộc), important, necessary, vital (sống còn), It is a good\/bad idea (that)...",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Bàng thái cách khá trang trọng nên bình thường hay dùng kèm chữ “should” sau 3 động từ (I suggest that he should...)",
+    "subTitle": "Bàng thái cách khá trang trọng nên bình thường hay dùng kèm chữ “should” sau 3 động từ (I suggest that he should...)",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu điều kiện loại 1: [If + thì hiện tại đơn], [will + động từ nguyên mẫu]",
+    "subTitle": "Câu điều kiện loại 1: [If + thì hiện tại đơn], [will + động từ nguyên mẫu]",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu điều kiện loại 2: [If + thì quá khứ đơn], [would + động từ nguyên mẫu]",
+    "subTitle": "Câu điều kiện loại 2: [If + thì quá khứ đơn], [would + động từ nguyên mẫu]",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu điều kiện loại 3: [If + thì quá khứ hoàn thành], [would + have + V3\/V-ed]",
+    "subTitle": "Câu điều kiện loại 3: [If + thì quá khứ hoàn thành], [would + have + V3\/V-ed]",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "UNLESS: Để cho dễ hiểu, nên dịch câu từ mệnh đề chính trước rồi mới đến Unless",
+    "subTitle": "UNLESS: Để cho dễ hiểu, nên dịch câu từ mệnh đề chính trước rồi mới đến Unless",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "IF: even if = cho dù, ngay cả khi, only if = chỉ khi, what if, as long as, provided that = providing, suppose = supposing",
+    "subTitle": "IF: even if = cho dù, ngay cả khi, only if = chỉ khi, what if, as long as, provided that = providing, suppose = supposing",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Để diễn tả ý “nếu không có…” hoặc “nếu không vì…”: if it weren’t for + [danh từ], if it hadn’t been for + [danh từ], but for + [danh từ]",
+    "subTitle": "Để diễn tả ý “nếu không có…” hoặc “nếu không vì…”: if it weren’t for + [danh từ], if it hadn’t been for + [danh từ], but for + [danh từ]",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "So sánh bằng: as + ADJ\/ADV + as. VD: She sings as beautifully as a singer.",
+    "subTitle": "So sánh bằng: as + ADJ\/ADV + as. VD: She sings as beautifully as a singer.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "So sánh hơn: 1 âm tiết: ADJ\/ADV + đuôi -er + than. 2 âm tiết trở lên: more + ADJ\/ADV + than.",
+    "subTitle": "So sánh hơn: 1 âm tiết: ADJ\/ADV + đuôi -er + than. 2 âm tiết trở lên: more + ADJ\/ADV + than.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "So sánh nhất: 1 âm tiết: the + ADJ\/ADV + -est. 2 âm tiết trở lên: the + most + ADJ\/ADV",
+    "subTitle": "So sánh nhất: 1 âm tiết: the + ADJ\/ADV + -est. 2 âm tiết trở lên: the + most + ADJ\/ADV",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "tính từ và trạng từ bất quy tắc khi so sánh: good-better, bad-worse, much-more, little-less, far-farther...",
+    "subTitle": "tính từ và trạng từ bất quy tắc khi so sánh: good-better, bad-worse, much-more, little-less, far-farther...",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "“So sánh” DANH TỪ: So sánh hơn: more + danh từ. So sánh nhất: the most + danh từ. So sánh bằng: as much",
+    "subTitle": "“So sánh” DANH TỪ: So sánh hơn: more + danh từ. So sánh nhất: the most + danh từ. So sánh bằng: as much",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "“gấp bao nhiêu lần”: (twice, three times, ten times) trước cấu trúc so sánh bằng as + ADJ\/ADV + as.",
+    "subTitle": "“gấp bao nhiêu lần”: (twice, three times, ten times) trước cấu trúc so sánh bằng as + ADJ\/ADV + as.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Cấu trúc “Ngày càng…”: So sánh hơn + “and” + so sánh hơn. VD: The car was going faster and faster.",
+    "subTitle": "Cấu trúc “Ngày càng…”: So sánh hơn + “and” + so sánh hơn. VD: The car was going faster and faster.",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Cấu trúc “càng… càng…” (nhấn mạnh):  “The” + so sánh hơn …, + “the” + so sánh hơn …",
+    "subTitle": "Cấu trúc “càng… càng…” (nhấn mạnh):  “The” + so sánh hơn …, + “the” + so sánh hơn …",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "Câu bị động: [Đối tượng bị tác động] + [Chia động từ to be theo dạng hoặc thì của thể chủ động] + [V3\/V-ed] + by [Chủ thể]",
+    "subTitle": "Câu bị động: [Đối tượng bị tác động] + [Chia động từ to be theo dạng hoặc thì của thể chủ động] + [V3\/V-ed] + by [Chủ thể]",
+    "tag": "engramar01, engramar01_1"
+  },
+  {
+    "title": "He is free after 8 pm.",
+    "subTitle": "Anh ấy rảnh sau 8 giờ tối.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She can play the guitar.",
+    "subTitle": "Cô có thể chơi guitar.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "He is not free after 8 pm.",
+    "subTitle": "Anh ấy không rảnh sau 8 giờ tối.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She cannot play the guitar.",
+    "subTitle": "Cô ấy không thể chơi guitar.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Is this his book?",
+    "subTitle": "Đây có phải là cuốn sách của anh ấy không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Who is this man?",
+    "subTitle": "Ông này là ai?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Is this his book or your book?",
+    "subTitle": "Đây là cuốn sách của anh ấy hay cuốn sách của bạn?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "We enjoy not staying up late at night.",
+    "subTitle": "Chúng tôi thích không thức khuya.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "He asked me not to call him after 9 pm.",
+    "subTitle": "Anh ấy yêu cầu tôi không gọi cho anh ấy sau 9 giờ tối.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She had no money left.",
+    "subTitle": "Cô không còn tiền nữa.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "No one is at home right now.",
+    "subTitle": "Hiện tại không có ai ở nhà.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She hardly works.",
+    "subTitle": "Cô ấy hầu như không làm việc.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "We seldom go to the museum.",
+    "subTitle": "Chúng tôi hiếm khi đến bảo tàng.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "This is his book, isn’t it?",
+    "subTitle": "Đây là cuốn sách của anh ấy phải không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She can swim fast, can’t she?",
+    "subTitle": "Cô ấy có thể bơi nhanh phải không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She speaks English, doesn’t she?",
+    "subTitle": "Cô ấy nói tiếng Anh phải không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "This is not his book, is it?",
+    "subTitle": "Đây không phải là cuốn sách của anh ấy phải không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She cannot swim fast, can she?",
+    "subTitle": "Cô ấy không thể bơi nhanh phải không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She doesn’t English, does she?",
+    "subTitle": "Cô ấy không nói tiếng Anh phải không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Give me the book!",
+    "subTitle": "Đưa cho tôi quyển sách!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Please close the door!",
+    "subTitle": "Hãy đóng cửa lại!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Don’t do that, please!",
+    "subTitle": "Đừng làm thế, làm ơn!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Can you close the door, please?",
+    "subTitle": "Bạn có thể đóng cửa lại được không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Could you give me the book, please?",
+    "subTitle": "Bạn có thể cho tôi cuốn sách được không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "What a beautiful day!",
+    "subTitle": "Thật là một ngày đẹp!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "What nice weather!",
+    "subTitle": "Thời tiết đẹp làm sao!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "You have a big apartment. → What a big apartment you have!",
+    "subTitle": "Bạn có một căn hộ lớn. → Căn hộ của bạn thật lớn!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "It is nice weather. → What nice weather it is!",
+    "subTitle": "Thời tiết thật đẹp. → Thời tiết thật đẹp!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "How beautiful it is!",
+    "subTitle": "Nó đẹp làm sao!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "How interesting the book is!",
+    "subTitle": "Cuốn sách thú vị biết bao!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "How fast he drives!",
+    "subTitle": "Anh ấy lái xe nhanh làm sao!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "It is SO beautiful.",
+    "subTitle": "Nó thật là đẹp.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "He drives SO fast.",
+    "subTitle": "Anh ấy lái xe thật nhanh.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "You have SUCH a big apartment.",
+    "subTitle": "Bạn có một căn hộ lớn như vậy.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "It is SUCH nice weather.",
+    "subTitle": "Thật là thời tiết đẹp.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Lisa said that she was tired.",
+    "subTitle": "Lisa nói rằng cô ấy mệt mỏi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "I want to see this movie with my girlfriend tomorrow. → Tom said that he wanted to see this movie with his girlfriend tomorrow.",
+    "subTitle": "Tôi muốn xem bộ phim này với bạn gái của tôi vào ngày mai. → Tom nói rằng anh ấy muốn đi xem bộ phim này với bạn gái vào ngày mai.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "here → there; now → then; today → that day; tonight → that night; tomorrow → the following day \/ the next day;",
+    "subTitle": "đây → kia; bây giờ → lúc đó; hôm nay → ngày đó; tối nay → đêm đó; ngày mai → ngày hôm sau \/ ngày hôm sau;",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "two weeks ago → two weeks before; last month → the previous month \/ the month before",
+    "subTitle": "next month → the following month \/ the next month; this → that; these → those;",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "asked; wondered; wanted to know.",
+    "subTitle": "yêu cầu; băn khoăn; muốn biết.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Where can I find Lisa? → He asked where he could find Lisa. → He asked where to find Lisa.",
+    "subTitle": "Tôi có thể tìm Lisa ở đâu? → Anh ấy hỏi có thể tìm Lisa ở đâu. → Anh ấy hỏi tìm Lisa ở đâu.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "What are you doing? → She asked me what I was doing.",
+    "subTitle": "Bạn đang làm gì thế? → Cô ấy hỏi tôi đang làm gì.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Does anybody see Tom? → She asked if anybody saw Tom?",
+    "subTitle": "Có ai nhìn thấy Tom không? → Cô ấy hỏi có ai nhìn thấy Tom không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Have you done your homework? → My mother asked me whether I had done my homework.",
+    "subTitle": "Bạn đã làm xong bài tập chưa? → Mẹ tôi hỏi tôi đã làm bài tập về nhà chưa.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Stand up! → He told me to stand up.",
+    "subTitle": "Đứng lên! → Anh ấy bảo tôi đứng dậy.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Open the door! → She asked him to open the door.",
+    "subTitle": "Mở cửa! → Cô ấy bảo anh ấy mở cửa.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "The teacher said that the sun rises in the East.",
+    "subTitle": "Thầy nói mặt trời mọc ở phương Đông.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Ellen said that she would go to study in France.",
+    "subTitle": "Ellen nói rằng cô ấy sẽ đi du học ở Pháp.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "I suggest that he come to work on time.",
+    "subTitle": "Tôi đề nghị anh ấy nên đến làm việc đúng giờ.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "It was essential that we be at the ceremony.",
+    "subTitle": "Điều quan trọng là chúng tôi phải có mặt tại buổi lễ.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "He requested Frank not come to the party.",
+    "subTitle": "Anh ấy yêu cầu Frank đừng đến bữa tiệc.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "The teacher demands that her students not be late for the trip.",
+    "subTitle": "Giáo viên yêu cầu học sinh của mình không được trễ chuyến đi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "to advise that; to ask that; to command that; to demand that; to desire that; to insist that…",
+    "subTitle": "to propose that; to recommend that; to request that; to suggest that; to urge that.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "It is best that; It is crucial that; It is desirable that; It is essential that; It is imperative that…",
+    "subTitle": " It is important that; It is necessary that; It is recommended that; It is urgent that; It is vital that; It is a good idea that; It is a bad idea that;",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She insisted that he come.",
+    "subTitle": "Cô ấy nhất quyết yêu cầu anh ấy đến.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She insisted that she didn’t do anything illegal.",
+    "subTitle": "Cô khẳng định mình không làm điều gì phạm pháp.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "I suggest that he should come to work on time.",
+    "subTitle": "Tôi đề nghị anh ấy nên đến làm việc đúng giờ.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If John is late, we will wait for him.",
+    "subTitle": "Nếu John đến muộn, chúng tôi sẽ đợi anh ấy.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If I had studied harder, I would have passed the exam.",
+    "subTitle": "Nếu tôi học chăm chỉ hơn thì tôi đã vượt qua kỳ thi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If it rains, we will cancel the trip. → If it rains, we might cancel the trip.",
+    "subTitle": "Nếu trời mưa, chúng tôi sẽ hủy chuyến đi. → Nếu trời mưa, chúng tôi có thể hủy chuyến đi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If I were you, I wouldn’t do that.",
+    "subTitle": "Nếu tôi là bạn, tôi sẽ không làm điều đó.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If I spoke German, I would work in Germany.",
+    "subTitle": "Nếu tôi nói được tiếng Đức thì tôi sẽ làm việc ở Đức.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If she knew that, she would be very surprised.",
+    "subTitle": "Nếu biết được điều đó, cô sẽ rất ngạc nhiên.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If I had studied harder, I would have passed the exam.",
+    "subTitle": "Nếu tôi học chăm chỉ hơn thì tôi đã vượt qua kỳ thi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If it hadn’t rained, she would have gone to the beach.",
+    "subTitle": "Nếu trời không mưa thì cô ấy đã đi biển rồi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If I had known you were in the hospital, I would have visited you.",
+    "subTitle": "Nếu tôi biết bạn ở bệnh viện thì tôi đã đến thăm bạn rồi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If it rains, the road gets wet.",
+    "subTitle": "Nếu trời mưa thì đường bị ướt.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If you press this button, the door opens.",
+    "subTitle": "Nếu bạn nhấn nút này, cửa sẽ mở ra.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If she had studied harder she would do the test well now.",
+    "subTitle": "Nếu cô ấy học chăm chỉ hơn thì bây giờ cô ấy đã làm bài kiểm tra tốt.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "I would believe him now if he hadn’t lied to me before.",
+    "subTitle": "Bây giờ tôi sẽ tin anh ấy nếu trước đây anh ấy không nói dối tôi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If I had saved a little each month, I would have a lot of money now.",
+    "subTitle": "Nếu tôi tiết kiệm được một ít mỗi tháng thì bây giờ tôi đã có rất nhiều tiền.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She won’t go if you do not go. → She won’t go unless you go.",
+    "subTitle": "Cô ấy sẽ không đi nếu bạn không đi. → Cô ấy sẽ không đi trừ khi bạn đi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If you do not study, you’ll fail the exam. → Unless you study, you’ll fail the exam.",
+    "subTitle": "Nếu bạn không học, bạn sẽ trượt kỳ thi. → Trừ khi bạn học tập, bạn sẽ trượt kỳ thi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Even if I become a billionaire, I will still be working.",
+    "subTitle": "Ngay cả khi tôi trở thành tỷ phú, tôi vẫn sẽ làm việc.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She can play video games only if her parents let her.",
+    "subTitle": "Cô ấy chỉ có thể chơi trò chơi điện tử nếu bố mẹ cô ấy cho phép.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "What if John told Mary my secrets?",
+    "subTitle": "Điều gì sẽ xảy ra nếu John kể cho Mary những bí mật của tôi?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "We will camp outside as long as the weather is good.",
+    "subTitle": "Chúng tôi sẽ cắm trại bên ngoài miễn là thời tiết tốt.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "We’ll buy anything, providing the price is reasonable.",
+    "subTitle": "Chúng tôi sẽ mua bất cứ thứ gì miễn là giá cả hợp lý.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Suppose you won the lottery, what would you do?",
+    "subTitle": "Giả sử bạn trúng xổ số, bạn sẽ làm gì?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If it weren’t for you, I wouldn’t know what to do.",
+    "subTitle": "Nếu không có bạn, tôi sẽ không biết phải làm gì.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "If it hadn’t been for the fact that they were wearing seat belts, they would have been badly injured.",
+    "subTitle": "Nếu không phải họ thắt dây an toàn thì có lẽ họ đã bị thương nặng.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "He would have played but for a knee injury.",
+    "subTitle": "Lẽ ra anh ấy đã có thể thi đấu nhưng vì chấn thương đầu gối.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "She sings as beautifully as a singer does. (She sings as beautifully as a singer.)",
+    "subTitle": "Cô ấy hát hay như ca sĩ vậy. (Cô ấy hát hay như một ca sĩ.)",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "This problem is more difficult than that one.",
+    "subTitle": "Vấn đề này khó hơn vấn đề kia.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "My father drives more carefully than I do.",
+    "subTitle": "Bố tôi lái xe cẩn thận hơn tôi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "John is the youngest son. → John is my youngest son.",
+    "subTitle": "John là con trai út. → John là con trai út của tôi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "He drives the most carelessly.",
+    "subTitle": "Anh ấy lái xe bất cẩn nhất.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "This is the most difficult problem in the book.",
+    "subTitle": "Đây là vấn đề khó khăn nhất trong cuốn sách.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "clever → cleverer → the cleverest",
+    "subTitle": "thông minh → thông minh hơn → thông minh nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "simple → simpler → the simplest",
+    "subTitle": "đơn giản → đơn giản hơn → đơn giản nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "narrow → narrower → the narrowest",
+    "subTitle": "hẹp → hẹp hơn → hẹp nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "quiet → quieter → the quietest",
+    "subTitle": "yên tĩnh → yên tĩnh hơn → yên tĩnh nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "dirty → dirtier → the dirtiest",
+    "subTitle": "bẩn → bẩn hơn → bẩn nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "easy → easier → the easiest",
+    "subTitle": "dễ → dễ hơn → dễ nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "happy → happier → the happiest",
+    "subTitle": "hạnh phúc → hạnh phúc hơn → hạnh phúc nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "pretty → prettier → the prettiest",
+    "subTitle": "xinh → đẹp hơn → đẹp nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "early → earlier → the earliest",
+    "subTitle": "sớm → sớm hơn → sớm nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "quick → more quickly → the most quickly",
+    "subTitle": "nhanh → nhanh hơn → nhanh nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "likely → more likely → the most likely",
+    "subTitle": "có khả năng → có nhiều khả năng hơn → có khả năng xảy ra nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "big → bigger → biggest",
+    "subTitle": "lớn → lớn hơn → lớn nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "sad → sadder → saddest",
+    "subTitle": "buồn → buồn hơn → buồn nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "The song today is much better than that one from yesterday.",
+    "subTitle": "Bài hát hôm nay hay hơn nhiều so với bài hát hôm qua.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Alex is far shorter than his brother.",
+    "subTitle": "Alex thấp hơn nhiều so với anh trai mình.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "good → better → the best",
+    "subTitle": "tốt → tốt hơn → tốt nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "well → better → the best",
+    "subTitle": "ừm → tốt hơn → tốt nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "bad worse → the worst",
+    "subTitle": "tệ hơn nữa → tệ nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "badly → worse → the worst",
+    "subTitle": "tệ → tệ hơn → tệ nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "many → more → the most",
+    "subTitle": "nhiều → nhiều hơn → nhiều nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "much → more → the most",
+    "subTitle": "nhiều → nhiều hơn → nhiều nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "little → less → the least",
+    "subTitle": "ít → ít → ít nhất",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "We have more homework than other students.",
+    "subTitle": "Chúng tôi có nhiều bài tập về nhà hơn những học sinh khác.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "They earned the most points and therefore won the contest.",
+    "subTitle": "Họ giành được nhiều điểm nhất và do đó đã giành chiến thắng trong cuộc thi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "We didn’t spend as much time at the museum as I had hoped.",
+    "subTitle": "Chúng tôi không dành nhiều thời gian ở bảo tàng như tôi mong đợi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "This pencil is twice as long as that pen.",
+    "subTitle": "Cây bút chì này dài gấp đôi cây bút kia.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Their house is ten times as large as ours.",
+    "subTitle": "Nhà của họ rộng gấp mười lần nhà chúng tôi.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "The car was going fast. → The car was going faster and faster.",
+    "subTitle": "Chiếc xe đang chạy rất nhanh. → Chiếc xe đang chạy ngày càng nhanh hơn.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Because the queue was so long, she got impatient. → Because the queue was so long, she got more and more impatient.",
+    "subTitle": "Vì xếp hàng quá lâu nên cô mất kiên nhẫn. → Vì xếp hàng quá lâu nên cô ấy càng ngày càng mất kiên nhẫn.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "The knife is sharp, so it is safe to use. → The sharper the knife is, the safer it is to use.",
+    "subTitle": "Con dao rất sắc nên rất an toàn khi sử dụng. → Dao càng sắc thì sử dụng càng an toàn.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "The hotel is expensive, so the service is better. → The more expensive the hotel is, the better the service is.",
+    "subTitle": "Khách sạn đắt tiền nên dịch vụ tốt hơn. → Khách sạn càng đắt thì dịch vụ càng tốt.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "A dog bit my son. → My son was bitten by a dog.",
+    "subTitle": "Con chó cắn con trai tôi. → Con trai tôi bị chó cắn.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Mark has tricked me. → I have been tricked by Mark.",
+    "subTitle": "Mark đã lừa tôi. → Tôi đã bị Mark lừa.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "My credit card has been stolen!",
+    "subTitle": "Thẻ tín dụng của tôi đã bị đánh cắp!",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "A mistake was made.",
+    "subTitle": "Một sai lầm đã được thực hiện.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "How many languages do people speak in Canada? → How many languages are spoken in Canada?",
+    "subTitle": "Người dân Canada nói được bao nhiêu ngôn ngữ? → Có bao nhiêu ngôn ngữ được sử dụng ở Canada?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "Should they print this out for you? → Should this be printed out for you?",
+    "subTitle": "Họ có nên in cái này ra cho bạn không? → Cái này có nên in ra cho bạn không?",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "They looked for the baby. → The baby was looked for.",
+    "subTitle": "Họ tìm kiếm đứa bé. → Đứa bé được tìm kiếm.",
+    "tag": "engramar01, engramar01_2"
+  },
+  {
+    "title": "He was kicked in the face by accident. → He got kicked in the face by accident.",
+    "subTitle": "Anh ta vô tình bị đá vào mặt. → Anh ấy vô tình bị đá vào mặt.",
+    "tag": "engramar01, engramar01_2"
+  }
+]

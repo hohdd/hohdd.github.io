@@ -1,5 +1,17 @@
 [
 	{
+		"name": "English, 59 cấu trúc câu tiếng anh thông dụng nhất",
+		"dataFilePath": "/tools/memo_search/data/English/59CauTrucCauThongDungNhat.json"
+	},
+	{
+		"name": "English, Gramar 01",
+		"dataFilePath": "/tools/memo_search/data/English/Gramar01.json"
+	},
+	{
+		"name": "Unity Tips",
+		"dataFilePath": "/tools/memo_search/data/Unity/Tips.json"
+	},
+	{
 		"name": "Từ vựng Mina Bài 01",
 		"dataFilePath": "/tools/memo_search/data/MinanoNihongo/TuVungMina_01.json"
 	},
