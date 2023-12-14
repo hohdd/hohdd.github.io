@@ -15,11 +15,15 @@ rm -rf _site
 # build new version
 # bundle exec jekyll build
 jekyll build
-# checkout master and get lastest
-# S3
+
+### S3 ###########
 # aws s3 cp ./_site s3://donghd.com --recursive --acl public-read
-# github: 10 minutes timeout, 100 GB per month, 10 builds per hour
+# aws s3 sync ./_site s3://donghd.com --acl public-read
+
+##################
+### github: 10 minutes timeout, 100 GB per month, 10 builds per hour
 # Usage (~7m): build 5m12s, deploy 1m46s, report 2s
+# checkout master and get lastest
 git checkout master
 git pull origin master
 # remove old version
