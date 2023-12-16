@@ -15,7 +15,7 @@ function onYouTubePlayerAPIReady() {
     window.DHytplayerMain = new YT.Player('ytplayer', {
         height: '390',
         width: '640',
-        videoId: params.id, // params already init
+        // videoId: params.id, // params already init
         playerVars: {
             'playsinline': 1,
             'autoplay': 1,
@@ -116,13 +116,21 @@ function onPlayerError(err) {
 
 // onPlayerReady and onChangeUrlInput + fmOpen call many times
 function loadAndPlayById(id, startNum = 0, isOnPlayerReadyCalling) {
-    if (!isOnPlayerReadyCalling) {
+    if (!isOnPlayerReadyCalling || !window.isNotFirstTimeLoadAndPlay) {
         window.DHytplayerMain.loadVideoById(id, startNum);
         setTimeout(() => {
             if (!document.getElementById('inputEnd').value) {
                 params.end = document.getElementById('inputEnd').value = Math.floor(window.DHytplayerMain.getDuration());
             }
         }, 2000);
+
+        // fix first load not playing, seek
+        if (!window.isNotFirstTimeLoadAndPlay) {
+            seekToStart();
+            stopTimer();
+            startTimer();
+        }
+        window.isNotFirstTimeLoadAndPlay = true;
     }
 }
 
