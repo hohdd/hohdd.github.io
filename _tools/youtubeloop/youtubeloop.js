@@ -1,31 +1,21 @@
-var params = {
-    uuid: '1234567890',
-    // id: 'DnIBWk_TdKw', // Người miền núi chất
-    // start: 28.5,
-    // end: 63,
-    // seek: 0
-
-    // id: '3gNuUcPg1fk', // BINZ - HIT ME UP (ft. NOMOVODKA)
-    // start: 33,
-    // end: 283,
-    // seek: 0
-
-    id: 'xq-aTe77bkA', // [ Alizée ] - La Isla Bonita | XHX2CJryJ4U (boy version)
-    start: 15,
-    end: 222,
-    seek: 0
+/** BEGIN Utils */
+function truncate(input) {
+    if (input.length > 47) {
+       return input.substring(0, 47) + '...';
+    }
+    return input;
+};
+function generateFileID() {
+    return Date.now() + '';
 }
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+/** END Utils */
 
 function onYouTubePlayerAPIReady() {
-    prepareUrlParams();
+    prepareUrlParams(); // update params properties or URL if needed and update inputs if need
     window.DHytplayerMain = new YT.Player('ytplayer', {
         height: '390',
         width: '640',
-        /*videoId: params.id,*/
+        videoId: params.id, // params already init
         playerVars: {
             'playsinline': 1,
             'autoplay': 1,
@@ -33,23 +23,109 @@ function onYouTubePlayerAPIReady() {
             'loop': 1
         },
         events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange,
-            'onError': onPlayerError
+            'onReady': onPlayerReady, // play by params properties and generate playbackrate
+            'onStateChange': onPlayerStateChange, // start or stop Timer
+            'onError': onPlayerError // DHtoast error msg
         }
     });
 }
+var params = {
+    uuid: '1234567890',
+    id: 'DnIBWk_TdKw', // Người miền núi chất
+    start: 28.5,
+    end: 63,
+    seek: 0
 
-function onPlayerError(err) {
-    DHtoast('Oops! Hãy kiểm tra lại URL...');
+    // id: '3gNuUcPg1fk', // BINZ - HIT ME UP (ft. NOMOVODKA)
+    // start: 33,
+    // end: 283,
+    // seek: 0
+
+    // id: 'xq-aTe77bkA', // [ Alizée ] - La Isla Bonita | XHX2CJryJ4U (boy version)
+    // start: 15,
+    // end: 222,
+    // seek: 0
 }
+function prepareUrlParams() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var id = urlParams.get('id');
+    if (id) {
+        // update params properties
+        setInputValueIfNotNull(id, document.getElementById('urlInput'), 'id', urlParams);
+        var start = urlParams.get('start');
+        setInputValueIfNotNull(start, document.getElementById('inputStart'), 'start', urlParams);
+        var end = urlParams.get('end');
+        setInputValueIfNotNull(end, document.getElementById('inputEnd'), 'end', urlParams);
+        var seek = urlParams.get('seek');
+        setInputValueIfNotNull(seek, document.getElementById('inputSeekTo'), 'seek', urlParams);
+        // check uuid and localStorate if exiting
+        var uuid = urlParams.get('uuid');
+        if (window.savedlistFiles.hasOwnProperty(uuid)) {
+            // update title and lyric and lyricNoteOut
+            document.getElementById('saveName').value = window.savedlistFiles[uuid].name;
+            document.getElementById('saveLyricNote').value = window.savedlistFiles[uuid].lyricNote ?? '';
+            document.getElementById('lyricNoteOut').innerHTML = window.savedlistFiles[uuid].lyricNote?.replace(/\n/g, "<br>") ?? '';
+        }
+    } else {
+        // update params properties
+        params.uuid = window.currentFileId;
+        params.id = window.savedlistFiles[window.currentFileId].id;
+        params.start = window.savedlistFiles[window.currentFileId].start;
+        params.end = window.savedlistFiles[window.currentFileId].end;
+        params.seek = window.savedlistFiles[window.currentFileId].seek;        
+        updateLocationSearch();
+        // update inputs
+        document.getElementById('urlInput').value = params.id;
+        document.getElementById('inputStart').value = params.start;
+        document.getElementById('inputEnd').value = params.end;
+        document.getElementById('inputSeekTo').value = params.seek;
+        // update title and lyric and lyricNoteOut
+        document.getElementById('saveName').value = window.savedlistFiles[window.currentFileId].name;
+        document.getElementById('saveLyricNote').value = window.savedlistFiles[window.currentFileId].lyricNote ?? '';
+        document.getElementById('lyricNoteOut').innerHTML = window.savedlistFiles[window.currentFileId].lyricNote?.replace(/\n/g, "<br>") ?? '';
+    }
+}
+
 function onPlayerReady(event) {
     window.DHytplayerTarget = event.target;
-    loadAndPlayById(params.id, params.start);
+    loadAndPlayById(params.id, params.start, true);
     setTimeout(() => {
         loadPlaybackRateList();
     }, 2000);
+    // save window.currentFileId since no error any more from loading
+    if (window.isEnterNewUrlManual) {
+        window.localStorage.setItem('youtube_loop_currentFileId', window.currentFileId);
+        renderFileList(); // enable the button if add new video from Input URL
+        window.isEnterNewUrlManual = false; // reset flag
+    }
 }
+function onPlayerStateChange(event) {
+    /**
+     ** YT.PlayerState.PLAYING
+     ** BUFFERING: 3, CUED: 5, ENDED: 0, PAUSED: 2, PLAYING: 1, UNSTARTED: -1 
+     **/
+    if (event.data && event.data == YT.PlayerState.PLAYING) {
+        startTimer();
+    } else {
+        stopTimer();
+    }
+}
+function onPlayerError(err) {
+    DHtoast('Oops! Hãy kiểm tra lại URL...');
+}
+
+// onPlayerReady and onChangeUrlInput + fmOpen call many times
+function loadAndPlayById(id, startNum = 0, isOnPlayerReadyCalling) {
+    if (!isOnPlayerReadyCalling) {
+        window.DHytplayerMain.loadVideoById(id, startNum);
+        setTimeout(() => {
+            if (!document.getElementById('inputEnd').value) {
+                params.end = document.getElementById('inputEnd').value = Math.floor(window.DHytplayerMain.getDuration());
+            }
+        }, 2000);
+    }
+}
+
 function loadPlaybackRateList(currentRate) {
     window.currentPlayRate = currentRate ? currentRate : window.DHytplayerMain.getPlaybackRate();
     window.plRateList = window.DHytplayerMain.getAvailablePlaybackRates();
@@ -58,6 +134,12 @@ function loadPlaybackRateList(currentRate) {
     }
     if (!window.plRateList.includes(1.1)) {
         window.plRateList.push(1.1);
+    }
+    if (!window.plRateList.includes(1.3)) {
+        window.plRateList.push(1.3);
+    }
+    if (!window.plRateList.includes(1.8)) {
+        window.plRateList.push(1.8);
     }
     window.plRateList.sort();
     console.log(window.plRateList);
@@ -73,23 +155,9 @@ function renderPlaybackRatesContainer() {
 }
 function changePlaybackRate(rateVal) {
     window.DHytplayerMain.setPlaybackRate(rateVal);
-    loadPlaybackRateList(rateVal);
+    loadPlaybackRateList(rateVal); // re-render
 }
 
-function onPlayerStateChange(event) {
-    console.log('---onPlayerStateChange---');
-    console.log(event);
-    console.log('-------------------------');
-    /**
-     ** YT.PlayerState.PLAYING
-     ** BUFFERING: 3, CUED: 5, ENDED: 0, PAUSED: 2, PLAYING: 1, UNSTARTED: -1 
-     **/
-    if (event.data && event.data == YT.PlayerState.PLAYING) {
-        startTimer();
-    } else {
-        stopTimer();
-    }
-}
 function playVideo() {
     window.DHytplayerMain.playVideo();
     startTimer();
@@ -103,15 +171,15 @@ function stopVideo() {
     stopTimer();
 }
 function pickStart(i) {
-    document.getElementById('inputStart').value = i ? i : window.DHytplayerMain.getCurrentTime();
+    document.getElementById('inputStart').value = i ? i : Math.round(window.DHytplayerMain.getCurrentTime())/100;
     onChangeInputParams('start', document.getElementById('inputStart'));
 }
 function pickEnd(i) {
-    document.getElementById('inputEnd').value = i ? i : window.DHytplayerMain.getCurrentTime();
+    document.getElementById('inputEnd').value = i ? i : Math.round(window.DHytplayerMain.getCurrentTime())/100;
     onChangeInputParams('end', document.getElementById('inputEnd'));
 }
-function pickCurrent(i) {
-    document.getElementById('inputSeekTo').value = i ? i : window.DHytplayerMain.getCurrentTime();
+function pickSeekCurrent(i) {
+    document.getElementById('inputSeekTo').value = i ? i : Math.floor(window.DHytplayerMain.getCurrentTime());
     onChangeInputParams('seek', document.getElementById('inputSeekTo'));
 }
 function seekTo(i) {
@@ -129,6 +197,7 @@ function seekTo(i) {
         }
     }
 }
+
 function seekToStart() {/*loop*/
     seekTo(document.getElementById('inputStart').value);
 }
@@ -137,15 +206,24 @@ function clearToBegin() {
     onChangeInputParams('start', document.getElementById('inputStart'));
 }
 function clearToEnd() {
-    pickEnd(window.DHytplayerMain.getDuration());
+    pickEnd(Math.floor(window.DHytplayerMain.getDuration()));
     onChangeInputParams('end', document.getElementById('inputEnd'));
 }
-
+function onOffTimeMonitor() {
+    window.isMonitorTimmer = !window.isMonitorTimmer;
+}
 function startTimer() {
     try {
         window.DHTimer = setInterval(() => {
             if ((document.getElementById('inputEnd').value > 0) && (window.DHytplayerMain.getCurrentTime() > document.getElementById('inputEnd').value)) {
                 seekTo(document.getElementById('inputStart').value ? document.getElementById('inputStart').value : 0);
+            }
+            if (window.isMonitorTimmer) {
+                try {
+                    document.getElementById('inputSeekTo_auto').value = window.DHytplayerMain.getCurrentTime();
+                } catch (error) {
+                    console.log(error);                    
+                }
             }
         }, 300);
     } catch (error) {
@@ -158,20 +236,6 @@ function stopTimer() {
     } catch (error) {
         console.log(error);
     }
-}
-/**
- * loadAndPlayById(id)
- * _fa5M8vmOOk: Soft Rock Ballads 70s 80s 90s
- * DnIBWk_TdKw: Người miền núi chất
- **/
-function loadAndPlayById(id, startNum = 0) {
-    window.DHytplayerMain.loadVideoById(id, startNum);
-    setTimeout(() => {
-        /*clearToEnd();*/
-        if (!document.getElementById('inputEnd').value) {
-            params.end = document.getElementById('inputEnd').value = window.DHytplayerMain.getDuration();
-        }
-    }, 2000);
 }
 function getYoutubeShortId(url) {
     if (url.endsWith('/')) {
@@ -195,7 +259,15 @@ function onChangeUrlInput() {
             var id = getYoutubeId(url);
             loadAndPlayById(id);
 
+            window.currentFileId = generateFileID(); // generate new uuid
+            window.isEnterNewUrlManual = true; // set window.isEnterNewUrlManual for onPlayerReady handling
             updateParams('id', id);
+            updateParams('uuid', window.currentFileId); // update uuid also
+
+            // reset title, lyric
+            document.getElementById("saveName").value = "";
+            document.getElementById("saveLyricNote").value = "";
+            document.getElementById('lyricNoteOut').innerHTML = "";
         }
     }, 1000);
 }
@@ -208,32 +280,6 @@ function fullscreenPlayer() {
         }
     } catch (error) {
         console.log(error);
-    }
-}
-function prepareUrlParams() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var id = urlParams.get('id');
-    if (id) {
-        setInputValueIfNotNull(id, document.getElementById('urlInput'), 'id', urlParams);
-        var start = urlParams.get('start');
-        setInputValueIfNotNull(start, document.getElementById('inputStart'), 'start', urlParams);
-        var end = urlParams.get('end');
-        setInputValueIfNotNull(end, document.getElementById('inputEnd'), 'end', urlParams);
-        var seek = urlParams.get('seek');
-        setInputValueIfNotNull(seek, document.getElementById('inputSeekTo'), 'seek', urlParams);
-    } else {
-        //update params
-        params.uuid = window.currentFileId;
-        params.id = window.savedlistFiles[window.currentFileId].id;
-        params.start = window.savedlistFiles[window.currentFileId].start;
-        params.end = window.savedlistFiles[window.currentFileId].end;
-        params.seek = window.savedlistFiles[window.currentFileId].seek;        
-        updateLocationSearch();
-        // update inputs
-        document.getElementById('urlInput').value = params.id;
-        document.getElementById('inputStart').value = params.start;
-        document.getElementById('inputEnd').value = params.end;
-        document.getElementById('inputSeekTo').value = params.seek;
     }
 }
 function setInputValueIfNotNull(v, elm, paramKey, urlParams) {
@@ -253,7 +299,7 @@ function onChangeInputParams(keyParam, elmInput) {
         updateParams(keyParam, elmInput.value ? elmInput.value : 0);
     }, 2000);
 }
-function updateParams(keyParam, val) {
+function updateParams(keyParam, val) {// update params and URL also
     if (val) {
         params[keyParam] = val;
         updateLocationSearch();
@@ -271,13 +317,14 @@ function updateLocationSearch() {
 }
 function getTitleVideo() {
     try {
-        document.getElementById("saveDesc").value = window.DHytplayerTarget.videoTitle;
+        document.getElementById("saveName").value = window.DHytplayerTarget.videoTitle;
     } catch (error) {
         console.log(error);
     }
 }
 function clearDescInput() {
-    document.getElementById("saveDesc").value = "";
+    document.getElementById("saveName").value = "";
+    document.getElementById("saveLyricNote").value = "";
 }
 
 /** LIST FILES: begin */
@@ -290,81 +337,81 @@ const defaultFiles = {
         end: 63,
         seek: 0
     },
-    '1234567891': {
-        uuid: '1234567891',
-        id: '3gNuUcPg1fk',
-        name: 'BINZ - HIT ME UP (ft. NOMOVODKA)',
-        start: 33,
-        end: 283,
-        seek: 0
-    },
-    '1234567892': {
-        uuid: '1234567892',
-        id: 'xq-aTe77bkA',
-        name: '[ Alizée ] - La Isla Bonita | XHX2CJryJ4U (boy version)',
-        start: 15,
-        end: 222,
-        seek: 0
-    },
-    '1701367193754': {
-        uuid: '1701367193754',
-        id: 'BLED0zy6UNE',
-        name: 'Shape of You | Music Travel Love ft. Jada Facer (Ed Sheeran Cover)',
-        start: '5',
-        end: '215',
-        seek: '215.91382219073486'
-    },
-    '1701925141323': {
-        uuid: '1701925141323',
-        id: 'XMyAEeXicbI',
-        name: 'One In A Million - Ne-Yo | Tuấn Danh x Đức Tiến Choreography || REBOOT WORKSHOP 2',
-        start: '1',
-        end: '82',
-        seek: '82'
-    },
-    '1702050285116': {
-        uuid: '1702050285116',
-        id: '65Gy4oPXjmE',
-        name: 'One In A Million - Ne-Yo | Choreography Tutorial and Follow Along',
-        start: '912',
-        end: '1050',
-        seek: ''
-    },
-    '1702052471731': {
-        uuid: '1702052471731',
-        id: 'lXHjxJ5kTzs',
-        name: 'Footwork | Footwork Creativity for Shuffling',
-        start: '0',
-        end: '16',
-        seek: '16.361197133514406'
-    },
-    '1702052607072': {
-        uuid: '1702052607072',
-        id: 'BxOBhZBLOio',
-        name: 'Footwork | 5 Easy Footwork Shuffle Steps',
-        start: '0',
-        end: '9',
-        seek: ''
-    },
-    '1702053794203': {
-        uuid: '1702053794203',
-        id: 'Ku2t4mtRl0M',
-        name: 'Samba Whisk - Basic step in 4 steps - PLUS Arm Styling - Dance Insanity',
-        start: '379',
-        end: '411',
-        seek: ''
-    },
-    '1702054074760': {
-        uuid: '1702054074760',
-        id: 'KQ5DrOVjUu8',
-        name: '4 Basic Cha Cha Chasses for Agility | Practice Dance Tutorial',
-        start: '165',
-        end: '223',
-        seek: ''
-    }
+    // '1234567891': {
+    //     uuid: '1234567891',
+    //     id: '3gNuUcPg1fk',
+    //     name: 'BINZ - HIT ME UP (ft. NOMOVODKA)',
+    //     start: 33,
+    //     end: 283,
+    //     seek: 0
+    // },
+    // '1234567892': {
+    //     uuid: '1234567892',
+    //     id: 'xq-aTe77bkA',
+    //     name: '[ Alizée ] - La Isla Bonita | XHX2CJryJ4U (boy version)',
+    //     start: 15,
+    //     end: 222,
+    //     seek: 0
+    // },
+    // '1701367193754': {
+    //     uuid: '1701367193754',
+    //     id: 'BLED0zy6UNE',
+    //     name: 'Shape of You | Music Travel Love ft. Jada Facer (Ed Sheeran Cover)',
+    //     start: '5',
+    //     end: '215',
+    //     seek: '215.91382219073486'
+    // },
+    // '1701925141323': {
+    //     uuid: '1701925141323',
+    //     id: 'XMyAEeXicbI',
+    //     name: 'One In A Million - Ne-Yo | Tuấn Danh x Đức Tiến Choreography || REBOOT WORKSHOP 2',
+    //     start: '1',
+    //     end: '82',
+    //     seek: '82'
+    // },
+    // '1702050285116': {
+    //     uuid: '1702050285116',
+    //     id: '65Gy4oPXjmE',
+    //     name: 'One In A Million - Ne-Yo | Choreography Tutorial and Follow Along',
+    //     start: '912',
+    //     end: '1050',
+    //     seek: ''
+    // },
+    // '1702052471731': {
+    //     uuid: '1702052471731',
+    //     id: 'lXHjxJ5kTzs',
+    //     name: 'Footwork | Footwork Creativity for Shuffling',
+    //     start: '0',
+    //     end: '16',
+    //     seek: '16.361197133514406'
+    // },
+    // '1702052607072': {
+    //     uuid: '1702052607072',
+    //     id: 'BxOBhZBLOio',
+    //     name: 'Footwork | 5 Easy Footwork Shuffle Steps',
+    //     start: '0',
+    //     end: '9',
+    //     seek: ''
+    // },
+    // '1702053794203': {
+    //     uuid: '1702053794203',
+    //     id: 'Ku2t4mtRl0M',
+    //     name: 'Samba Whisk - Basic step in 4 steps - PLUS Arm Styling - Dance Insanity',
+    //     start: '379',
+    //     end: '411',
+    //     seek: ''
+    // },
+    // '1702054074760': {
+    //     uuid: '1702054074760',
+    //     id: 'KQ5DrOVjUu8',
+    //     name: '4 Basic Cha Cha Chasses for Agility | Practice Dance Tutorial',
+    //     start: '165',
+    //     end: '223',
+    //     seek: ''
+    // }
 }
 window.currentFileId = window.localStorage.getItem('youtube_loop_currentFileId');
-window.currentFileId = window.currentFileId ? window.currentFileId : params.uuid;
+window.currentFileId = window.currentFileId ? window.currentFileId : params.uuid; // use params if not existing
 window.savedlistFiles = window.localStorage.getItem('youtube_loop_savedlistFiles');
 if (!window.savedlistFiles) {
     window.savedlistFiles = { ...defaultFiles };
@@ -373,12 +420,6 @@ if (!window.savedlistFiles) {
 } else {
     window.savedlistFiles = JSON.parse(window.savedlistFiles);
 }
-function truncate(input) {
-   if (input.length > 32) {
-      return input.substring(0, 32) + '...';
-   }
-   return input;
-};
 function renderFileList() {
     var listFilesContainerDiv = document.getElementById('listFilesContainer');
     listFilesContainerDiv.innerHTML = '';
@@ -392,7 +433,7 @@ function renderFileList() {
         li.innerHTML = `<span class="tooltip" style="border-bottom: none;">${truncate(value.name)}<span class="tooltiptext">${value.name}</span></span>
       <span class="w3-display-right small-BG-lightTealColor">
         <button onclick="fmOpen('${value.uuid}')" class="w3-button w3-transparent" ${value.uuid == window.currentFileId ? 'disabled' : ''}>Open</button>
-        <button onclick="fmRename('${value.uuid}')" class="w3-button w3-transparent">Re-name</button>
+        <!--<button onclick="fmRename('${value.uuid}')" class="w3-button w3-transparent">Re-name</button>-->
         <button onclick="fmDelete('${value.uuid}')" class="w3-button w3-transparent">Delete</button>
       </span>
       `;
@@ -404,11 +445,14 @@ function renderFileList() {
 function fmRename(id) {
     var newFileName = prompt("Please enter the new File Name:", window.savedlistFiles[id].name);
     if (newFileName == null || newFileName == "") {
-        alert('File Name không thể để trống...');
+        if (newFileName == "") {
+            DHtoast('File Name không thể để trống...');
+        }
     } else {
         window.savedlistFiles[id].name = newFileName;
         window.localStorage.setItem('youtube_loop_savedlistFiles', JSON.stringify(window.savedlistFiles));
         renderFileList();
+        DHtoast('Changed the name!');
     }
 }
 function fmDelete(id) {
@@ -416,9 +460,11 @@ function fmDelete(id) {
         delete window.savedlistFiles[id];
         window.localStorage.setItem('youtube_loop_savedlistFiles', JSON.stringify(window.savedlistFiles));
         renderFileList();
+        DHtoast('Deleted!');
     }
 }
 function fmOpen(id) {
+    // assign and store new currentFileId
     window.currentFileId = id;
     window.localStorage.setItem('youtube_loop_currentFileId', window.currentFileId);
     // doing for own youtubeloop
@@ -426,6 +472,9 @@ function fmOpen(id) {
     document.getElementById('inputStart').value = window.savedlistFiles[id].start;
     document.getElementById('inputEnd').value = window.savedlistFiles[id].end;
     document.getElementById('inputSeekTo').value = window.savedlistFiles[id].seek;
+    document.getElementById('saveName').value = window.savedlistFiles[id].name;
+    document.getElementById('saveLyricNote').value = window.savedlistFiles[id].lyricNote ?? '';
+    document.getElementById('lyricNoteOut').innerHTML = window.savedlistFiles[id].lyricNote?.replace(/\n/g, "<br>") ?? '';
     renderFileList();
 
     //update params
@@ -438,41 +487,72 @@ function fmOpen(id) {
 
     loadAndPlayById(params.id, params.start);
 }
-function fmCreateNew() {
-    // doing for own youtubeloop
-    var fileId = Date.now() + '';
-    var fileName = document.getElementById('saveDesc').value;
-    var urlInput = document.getElementById('urlInput').value;
-    var inputStart = document.getElementById('inputStart').value;
-    var inputEnd = document.getElementById('inputEnd').value;
-    var inputSeekTo = document.getElementById('inputSeekTo').value;
-
+function validateSaveOrCreateNew(fileName, urlInput, inputStart, inputEnd, saveLyricNote) {
+    if (saveLyricNote && saveLyricNote.length > 1000) {
+        DHtoast('Lyric or Note cannot exceed 1000!');
+        return false;
+    }
     if (fileName == null || fileName == "" 
         || urlInput == null || urlInput == ""
         || (!inputStart)
         || (!inputEnd)
     ) {
-        alert('[Name, URL, Start, End] không thể để trống...');
+        DHtoast('[Name, URL, Start, End] cannot be empty!');
+        return false;
     } else {
-        window.savedlistFiles[fileId] = {
-            uuid: fileId,
-            id: getYoutubeId(urlInput),
-            name: fileName,
-            start: inputStart,
-            end: inputEnd,
-            seek: inputSeekTo
-        };
-        window.localStorage.setItem('youtube_loop_savedlistFiles', JSON.stringify(window.savedlistFiles));
+        return true;
+    }
+}
+function fmCreateNew() {
+    var fileId;
+    var fileName = document.getElementById('saveName').value;
+    var urlInput = document.getElementById('urlInput').value;
+    var inputStart = document.getElementById('inputStart').value;
+    var inputEnd = document.getElementById('inputEnd').value;
+    var inputSeekTo = document.getElementById('inputSeekTo').value;
+    var saveLyricNote = document.getElementById('saveLyricNote').value;
 
-        window.currentFileId = fileId;
-        window.localStorage.setItem('youtube_loop_currentFileId', fileId);
+    if (validateSaveOrCreateNew(fileName, urlInput, inputStart, inputEnd, saveLyricNote)) {
+        if (window.savedlistFiles.hasOwnProperty(window.currentFileId)) {
+            // save current
+            fileId = window.currentFileId;
+        } else {
+            // create new
+            fileId = generateFileID();
+        }
+        // save and render
+        if (fileId) {
+            window.savedlistFiles[fileId] = {
+                uuid: fileId,
+                id: getYoutubeId(urlInput),
+                name: fileName,
+                start: inputStart,
+                end: inputEnd,
+                seek: inputSeekTo,
+                lyricNote: saveLyricNote
+            };
+            window.localStorage.setItem('youtube_loop_savedlistFiles', JSON.stringify(window.savedlistFiles));
+    
+            window.currentFileId = fileId;
+            window.localStorage.setItem('youtube_loop_currentFileId', fileId);
+    
+            renderFileList();
+            document.getElementById('lyricNoteOut').innerHTML = saveLyricNote?.replace(/\n/g, "<br>") ?? '';
 
-        renderFileList();
+            DHtoast('Saved!');
+        }
     }
 }
 renderFileList();
 /** LIST FILES: begin */
 
+// Player API
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Document Ready
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
         onYouTubePlayerAPIReady();
