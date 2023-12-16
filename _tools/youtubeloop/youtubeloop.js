@@ -15,7 +15,7 @@ function onYouTubePlayerAPIReady() {
     window.DHytplayerMain = new YT.Player('ytplayer', {
         height: '390',
         width: '640',
-        // videoId: params.id, // params already init
+        videoId: params.id, // params already init
         playerVars: {
             'playsinline': 1,
             'autoplay': 1,
@@ -496,8 +496,8 @@ function fmOpen(id) {
     loadAndPlayById(params.id, params.start);
 }
 function validateSaveOrCreateNew(fileName, urlInput, inputStart, inputEnd, saveLyricNote) {
-    if (saveLyricNote && saveLyricNote.length > 1000) {
-        DHtoast('Lyric or Note cannot exceed 1000!');
+    if (saveLyricNote && saveLyricNote.length > 10000) {
+        DHtoast('Lyric or Note cannot exceed 10000!');
         return false;
     }
     if (fileName == null || fileName == "" 
