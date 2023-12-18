@@ -1,0 +1,552 @@
+[
+  {
+    "title": "CHỈ ngăn cách 2 câu bằng: Dấu chấm; Dấu chấm phẩy; Liên từ",
+    "subTitle": "Trong tiếng Anh thì chỉ có thể ngăn cách 2 câu bằng một trong ba cách: Dấu chấm; Dấu chấm phẩy; Liên từ",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "Sau giới từ không được có một mệnh đề. Sau liên từ có thể có một mệnh đề.",
+    "subTitle": "Phân biệt liên từ và giới từ: Sau giới từ không được có một mệnh đề. Sau liên từ có thể có một mệnh đề.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "Liên từ phải đứng đầu 1 trong 2 mệnh đề. Trạng từ không nhất thiết phải đứng ở đầu câu.",
+    "subTitle": "Phân biệt liên từ và trạng từ: Liên từ phải đứng ở đầu 1 trong 2 câu (đứng đầu 1 trong 2 mệnh đề). Trạng từ không nhất thiết phải đứng ở đầu câu.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "F.A.N.B.O.Y.S: FOR = bởi vì: Dùng để giải thích lý do.",
+    "subTitle": "F.A.N.B.O.Y.S: FOR = bởi vì: Dùng để giải thích lý do.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "F.A.N.B.O.Y.S: AND = và: Dùng để thêm hay bổ sung một thứ vào một thứ khác.",
+    "subTitle": "F.A.N.B.O.Y.S: AND = và: Dùng để thêm hay bổ sung một thứ vào một thứ khác.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "F.A.N.B.O.Y.S: NOR = và (không): Dùng để bổ sung một ý phủ định vào ý phủ định đã được nêu trước đó.",
+    "subTitle": "F.A.N.B.O.Y.S: NOR = và (không): Dùng để bổ sung một ý phủ định vào ý phủ định đã được nêu trước đó.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "F.A.N.B.O.Y.S: BUT = nhưng: Dùng để diễn tả sự đối lập, ngược nghĩa.",
+    "subTitle": "F.A.N.B.O.Y.S: BUT = nhưng: Dùng để diễn tả sự đối lập, ngược nghĩa.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "F.A.N.B.O.Y.S: OR = hoặc: Dùng để trình bày thêm một lựa chọn khác.",
+    "subTitle": "F.A.N.B.O.Y.S: OR = hoặc: Dùng để trình bày thêm một lựa chọn khác.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "F.A.N.B.O.Y.S: YET = nhưng, ấy vậy mà: Dùng để nói một ý ngược lại so với ý trước đó (tương tự BUT)",
+    "subTitle": "F.A.N.B.O.Y.S: YET = nhưng, ấy vậy mà: Dùng để nói một ý ngược lại so với ý trước đó (tương tự BUT)",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "F.A.N.B.O.Y.S: SO = nên: Dùng để nói về một kết quả hoặc một ảnh hưởng của sự việc được nhắc đến trước đó.",
+    "subTitle": "F.A.N.B.O.Y.S: SO = nên: Dùng để nói về một kết quả hoặc một ảnh hưởng của sự việc được nhắc đến trước đó.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "EITHER … OR … : dùng để diễn tả sự lựa chọn: hoặc là cái này, hoặc là cái kia.",
+    "subTitle": "EITHER … OR … : dùng để diễn tả sự lựa chọn: hoặc là cái này, hoặc là cái kia.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "NEITHER … NOR … : dùng để diễn tả phủ định kép: không cái này cũng không cái kia; cả hai đều không",
+    "subTitle": "NEITHER … NOR … : dùng để diễn tả phủ định kép: không cái này cũng không cái kia; cả hai đều không",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "BOTH … AND … : dùng để diễn tả lựa chọn kép: cả cái này lẫn cả cái kia.",
+    "subTitle": "BOTH … AND … : dùng để diễn tả lựa chọn kép: cả cái này lẫn cả cái kia.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "NOT ONLY … BUT ALSO … : dùng để diễn tả lựa chọn kép: không những cái này mà cả cái kia",
+    "subTitle": "NOT ONLY … BUT ALSO … : dùng để diễn tả lựa chọn kép: không những cái này mà cả cái kia",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "Nếu chủ ngữ có “neither … nor”, “either … or”, “not only … but also ”, động từ được chia với chủ ngữ gần nó nhất",
+    "subTitle": "Nếu chủ ngữ có “neither … nor”, “either … or”, “not only … but also ”, động từ được chia với chủ ngữ gần nó nhất",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "Nếu chủ ngữ có “both … and …” thì động từ chia ở số nhiều",
+    "subTitle": "Nếu chủ ngữ có “both … and …” thì động từ chia ở số nhiều",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "AFTER \/ BEFORE (sau khi\/trước khi): dùng để diễn tả thời gian, một việc xảy ra sau\/trước một việc khác – sau khi \/ trước khi",
+    "subTitle": "AFTER \/ BEFORE (sau khi\/trước khi): dùng để diễn tả thời gian, một việc xảy ra sau\/trước một việc khác – sau khi \/ trước khi",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "AS (khi, bởi vì): dùng để diễn tả hai hành động cùng xảy ra – khi; hoặc diễn tả nguyên nhân – bởi vì",
+    "subTitle": "AS (khi, bởi vì): dùng để diễn tả hai hành động cùng xảy ra – khi; hoặc diễn tả nguyên nhân – bởi vì",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "AS SOON AS (ngay khi mà): dùng để diễn tả quan hệ thời gian – ngay khi mà",
+    "subTitle": "AS SOON AS (ngay khi mà): dùng để diễn tả quan hệ thời gian – ngay khi mà",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "UNTIL (cho đến khi): dùng để diễn tả quan hệ thời gian, thường dùng với câu phủ định – cho đến khi",
+    "subTitle": "UNTIL (cho đến khi): dùng để diễn tả quan hệ thời gian, thường dùng với câu phủ định – cho đến khi",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "WHEN (khi): dùng để diễn tả quan hệ thời gian – khi",
+    "subTitle": "WHEN (khi): dùng để diễn tả quan hệ thời gian – khi",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "WHILE (trong khi): dùng để diễn tả quan hệ thời gian – trong khi; hoặc sự ngược nghĩa giữa 2 mệnh đề - trong khi (= WHEREAS)",
+    "subTitle": "WHILE (trong khi): dùng để diễn tả quan hệ thời gian – trong khi; hoặc sự ngược nghĩa giữa 2 mệnh đề - trong khi (= WHEREAS)",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "ALTHOUGH \/ THOUGH \/ EVEN THOUGH (mặc dù): dùng để biểu thị hai hành động trái ngược nhau về mặt logic – mặc dù",
+    "subTitle": "ALTHOUGH \/ THOUGH \/ EVEN THOUGH (mặc dù): dùng để biểu thị hai hành động trái ngược nhau về mặt logic – mặc dù",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "Lưu ý: Nếu muốn nói ý \"cho dù có cái gì đó\" thì phải dùng \"despite + V_ing \/ danh từ\" hoặc \"in spite of + V_ing \/ danh từ\"",
+    "subTitle": "Lưu ý: Nếu muốn nói ý \"cho dù có cái gì đó\" thì phải dùng \"despite + V_ing \/ danh từ\" hoặc \"in spite of + V_ing \/ danh từ\"",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "AS LONG AS (chừng nào mà, miễn là): dùng để diễn tả điều kiện – chừng nào mà, miễn là",
+    "subTitle": "AS LONG AS (chừng nào mà, miễn là): dùng để diễn tả điều kiện – chừng nào mà, miễn là",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "BECAUSE \/ SINCE (lý do, bởi vì): dùng để diễn tả nguyên nhân, lý do – bởi vì",
+    "subTitle": "BECAUSE \/ SINCE (lý do, bởi vì): dùng để diễn tả nguyên nhân, lý do – bởi vì",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "Lưu ý: Nếu là SINCE dùng trong câu hiện tại hoàn thành thì trước mệnh đề since chia hiện tại hoàn thành, sau since chia quá khứ đơn.",
+    "subTitle": "Lưu ý: Nếu là SINCE dùng trong câu hiện tại hoàn thành thì trước mệnh đề since chia hiện tại hoàn thành, sau since chia quá khứ đơn.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "IN CASE \/ IN THE EVENT THAT (trong trường hợp, phòng khi): dùng để diễn tả giả định về một hành động có thể xảy ra",
+    "subTitle": "IN CASE \/ IN THE EVENT THAT (trong trường hợp, phòng khi): dùng để diễn tả giả định về một hành động có thể xảy ra trong tương lai – trong trường hợp, phòng khi.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "NOW THAT (vì giờ đây): dùng để diễn tả quan hệ nhân quả theo thời gian – vì giờ đây",
+    "subTitle": "NOW THAT (vì giờ đây): dùng để diễn tả quan hệ nhân quả theo thời gian – vì giờ đây",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "SO THAT \/ IN ORDER THAT (để): dùng để diễn tả mục đích – để",
+    "subTitle": "SO THAT \/ IN ORDER THAT (để): dùng để diễn tả mục đích – để",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "EVEN IF (kể cả khi): dùng để diễn tả điều kiện giả định mạnh – kể cả khi",
+    "subTitle": "EVEN IF (kể cả khi): dùng để diễn tả điều kiện giả định mạnh – kể cả khi",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "IF \/ UNLESS (nếu \/ trừ khi): dùng để diễn tả điều kiện – nếu \/ trừ khi",
+    "subTitle": "IF \/ UNLESS (nếu \/ trừ khi): dùng để diễn tả điều kiện – nếu \/ trừ khi",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "Mệnh đề có chứa một động từ đã chia và chủ từ của nó. Động từ đã chia là động từ hòa hợp với chủ từ của nó về ngôi và số.",
+    "subTitle": "Mệnh đề là một nhóm từ có chứa một động từ đã chia và chủ từ của nó. Động từ đã chia là động từ hòa hợp với chủ từ của nó về ngôi và số.",
+    "tag": "engramar02, engramar02_1"
+  },
+  {
+    "title": "I like the smell of coffee, but I don’t like drinking coffee.",
+    "subTitle": "Tôi thích mùi cà phê nhưng lại không thích uống cà phê.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I couldn’t go out because of the rain.",
+    "subTitle": "Tôi không thể đi ra ngoài vì trời mưa.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I couldn’t go out because it was raining.",
+    "subTitle": "Tôi không thể ra ngoài vì trời đang mưa.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I came to visit Mary. However, she was not home, [However].",
+    "subTitle": "Tôi đến thăm Mary. Tuy nhiên, cô ấy không có nhà, [Tuy nhiên].",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I came to visit Mary, but she was not home.",
+    "subTitle": "Tôi đến thăm Mary nhưng cô ấy không có nhà.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "sugar and salt, old but beautiful, a cat and two dogs, on the table or under the chair",
+    "subTitle": "đường và muối, cũ nhưng đẹp, một con mèo và hai con chó, trên bàn hoặc dưới ghế",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I don’t trust him; for he used to lie to me in the past.",
+    "subTitle": "Tôi không tin anh ấy bởi vì anh ta đã từng lừa dối tôi trong quá khứ.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I can read and write very well in English.",
+    "subTitle": "Tôi có thể đọc và viết tiếng Anh rất tốt.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "He wasn’t there on Monday, nor on Tuesday.",
+    "subTitle": "Anh ấy đã không có mặt ở đó vào Thứ Hai và Thứ Ba (cũng không). [Không dùng and ở đây vì câu này là câu phủ định.]",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I tried to explain everything to him but he just didn’t listen to me.",
+    "subTitle": "Tôi đã cố gắng giải thích mọi thứ cho anh ấy nhưng anh ấy cứ không chịu nghe tôi nói.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "You can park your car in this parking lot or on the street.",
+    "subTitle": "Bạn có thể đậu xe ở trong bãi đậu xe này hoặc trên đường.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "John plays basketball well, yet his favorite sport is badminton.",
+    "subTitle": "John chơi bóng rổ giỏi, nhưng môn thể thao yêu thích của anh ấy lại là cầu lông.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I prepared well in advance so I am confident that I will win this game.",
+    "subTitle": "Tôi đã chuẩn bị kỹ từ trước nên tôi tự tin rằng tôi sẽ thắng trận đấu này.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I want either the noodles or the rice.",
+    "subTitle": "Tôi muốn mì hoặc là cơm.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Neither Jack nor Mary agreed to lend me a hand.",
+    "subTitle": "Cả Jack và Mary ĐỀU KHÔNG đồng ý giúp đỡ tôi.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Both his mother and his father will visit my grandparents in this summer.",
+    "subTitle": "Cả mẹ và cha của anh ấy sẽ đến thăm ông bà của tôi trong mùa hè này.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "She not only wrote the text but also drew the illustrations.",
+    "subTitle": "Cô ấy không những viết lời mà còn vẽ hình minh hoạ.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Neither my best friend nor I am going to take a course on French.",
+    "subTitle": "Tôi và bạn thân nhất của tôi đều không tham gia một khóa học tiếng Pháp.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Either my best friend, or I am going to take a course on French.",
+    "subTitle": "Hoặc là bạn thân nhất của tôi, hoặc tôi sẽ tham gia một khóa học tiếng Pháp.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Not only I but my best friend is also going to take a course on French.",
+    "subTitle": "Không chỉ tôi mà người bạn thân nhất của tôi cũng sắp tham gia một khóa học tiếng Pháp.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Both my best friend and I are going to take a course on French.",
+    "subTitle": "Cả tôi và người bạn thân nhất của tôi đều sắp tham gia một khóa học tiếng Pháp.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I enjoy running AND swimming.",
+    "subTitle": "→ cùng là động từ thêm -ing",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "He editted the letter quickly AND correctly.",
+    "subTitle": "→ cùng là trạng từ",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "He remembered what he did and why he did it.",
+    "subTitle": "Anh nhớ lại những gì anh đã làm và tại sao anh làm điều đó.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "He suggested going out and having dinner.",
+    "subTitle": "Anh ấy đề nghị đi ra ngoài và ăn tối.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I tried to finish my homework before my father came home.",
+    "subTitle": "Tôi cố gắng là xong bài tập TRƯỚC KHI bố tôi về nhà.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "After I finished my homework, my father came home.",
+    "subTitle": "SAU KHI tôi làm bài tập xong, bố tôi về nhà.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "As I came she was leaving.",
+    "subTitle": "KHI tôi đến, cô ấy đang rời đi.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "As you couldn’t see the film, we’ll tell you something about it.",
+    "subTitle": "VÌ bạn đã không xem được bộ phim, chúng tôi sẽ kể cho bạn nghe.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "As soon as the teacher arrived, they started their lesson.",
+    "subTitle": "NGAY KHI giáo viên đến, họ bắt đầu bài học.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "He didn’t notice anything strange until he heard a noise from upstairs.",
+    "subTitle": "Anh ấy không nhận ra có gì lạ CHO ĐẾN KHI anh ấy nghe thấy tiếng động trên lầu.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "When you visit Berlin, send me a postcard. ",
+    "subTitle": "KHI bạn đến Berlin, hãy gửi cho mình một tấm bưu thiếp nhé.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "While he is very good at maths, his brother really hates it.",
+    "subTitle": "TRONG KHI anh ấy rất giỏi toán, em trai anh ấy rất ghét môn đó.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Although he was very tired he still continued working.",
+    "subTitle": "MẶC DÙ anh ấy rất mệt nhưng anh ấy vẫn tiếp tục làm việc.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I went go to school today despite the heavy rain.",
+    "subTitle": "\"despite + V_ing \/ danh từ\" hoặc \"in spite of + V_ing \/ danh từ\" (nói ý \"cho dù có cái gì đó\")",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I will lend you my car as long as you promise to drive carefully.",
+    "subTitle": "Tôi sẽ cho bạn mượn xe miễn là bạn hứa sẽ lái xe cẩn thận.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Because he loved acting, he refused to give up his dream of being in the movies.",
+    "subTitle": "Vì anh ấy yêu thích việc diễn xuất, anh ấy từ chối việc từ bỏ ước mơ xuất hiện trong các bộ phim.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I didn’t go to school today because of the heavy rain.",
+    "subTitle": "nói ý “tại cái gì đó, do cái gì đó ” thì phải dùng “because of + V_ing \/ danh từ” hoặc “due to + V_ing \/ danh từ”",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I haven't seen him since he left his hometown to pursue his dream.",
+    "subTitle": " → SINCE để chỉ mốc thời gian, left là động từ ở quá khứ.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Since he has lost his money, he couldn’t go to the restaurant. ",
+    "subTitle": "→ SINCE mang nghĩa “bởi vì”, has lost là động từ thì hiện tại hoàn thành.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Since I will be away for a week, can you take care of my dog? ",
+    "subTitle": "→ SINCE mang nghĩa “bởi vì”, will be là động từ thì tương lai đơn.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "In case it rains, please take an umbrella when you go out.",
+    "subTitle": " Phòng khi trời mưa, hãy mang theo một cây dù khi ra ngoài đường.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Now that I have passed the exam, I can play games all day. ",
+    "subTitle": "Vì giờ đây tôi đã thi đậu, tôi có thể chơi game cả ngày.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "We left early so that we wouldn’t be caught in the traffic jam.",
+    "subTitle": "Chúng tôi đã rời đi sớm để chúng tôi không bị kẹt xe.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Even if you are confident in your ability, never ever underestimate your opponents. ",
+    "subTitle": "Kể cả khi bạn tự tin với khả năng của mình, hãy đừng bao giờ đánh giá thấp đối thủ.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Her baby cannot fall asleep unless she stays in the room. ",
+    "subTitle": "Em bé của cô ấy không thể ngủ được trừ khi cô ấy ở lại trong phòng.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Can I have the book that I gave you last week?",
+    "subTitle": "Quan hệ xác định (QUAN TRỌNG): \"that I gave you last week\"",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I have lost my Oxford English Dictionary, which my teacher gave me ten years ago.",
+    "subTitle": "Quan hệ không xác định (KO BẮT BUỘC): \"which my teacher gave me ten years ago.\"",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "The girl who is smiling at you is John’s daughter.",
+    "subTitle": "MĐQH bắt buộc: không cần được ngăn cách bởi dấu phẩy.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "That Canadian girl, who is smiling at you, is John’s daughter.",
+    "subTitle": "MĐQH không bắt buộc: phải được ngăn cách bởi dấu phẩy \",\"",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "That Canadian girl, WHO is smiling at you, is his daughter.",
+    "subTitle": "who: thay thế cho người",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I spoke to the Vietnamese students, all of WHOM were interested in learning English.",
+    "subTitle": "whom: thay thế cho người ở vị trí tân ngữ",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "The gift WHICH I bought yesterday is for her birthday.",
+    "subTitle": "which: thay thế cho đồ vật hoặc sự việc",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "It’s the house WHOSE door is painted blue.",
+    "subTitle": "whose: thay thế cho các tính từ sở hữu",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "It’s the movie THAT she hates the most.",
+    "subTitle": "that: thay thế cho người, đồ vật, sự việc",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Germany is the country where I’ve lived for ten years.",
+    "subTitle": "where: thay thế cho: Các trạng từ chỉ nơi chốn hoặc Các cụm giới từ chỉ nơi chốn",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I still can remember the day when we met.",
+    "subTitle": "when: thay thế cho: Các trạng từ chỉ thời gian hoặc Các cụm giới từ chỉ thời gian",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Tell me the reason why you cried.",
+    "subTitle": "why: thay thế cho: Các cụm từ chỉ nguyên nhân",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Our team lost the final match. That made me really sad. ",
+    "subTitle": "⇒ Our team lost the final match, WHICH made me really sad.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "We will go to Hawaii this summer. I’m very excited about that. ",
+    "subTitle": "⇒ We wiil go to Hawaii this summer, which I’m very excited about.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "It’s the best movie (that) I have ever seen. ",
+    "subTitle": "BỎ \"that\" → that đóng vai trò tân ngữ của have seen",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "I saw the girl (who) you talked to yesterday. ",
+    "subTitle": "BỎ \"who\" → who đóng vai trò tân ngữ của talked to",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "The woman (who teaches) [->teaching] English at his school is Ms. Smith.",
+    "subTitle": "Thể chủ động => BỎ ĐTQH, BỎ To be (nếu có), chuyển ĐT chính sang Ving",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "The man (who was) [->being] in charge of this department has just resigned.",
+    "subTitle": "Thể chủ động => BỎ ĐTQH, BỎ To be (nếu có), chuyển ĐT chính sang Ving",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "The man (who was) interviewed before me got hired.",
+    "subTitle": "Thể bị động => BỎ ĐTQH, BỎ To be, giữ nguyên ĐT chính ở dạng V3\/V-ed",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Some of the phones (which were) sold last month are broken.",
+    "subTitle": "Thể bị động => BỎ ĐTQH, BỎ To be, giữ nguyên ĐT chính ở dạng V3\/V-ed",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "He is THE YOUNGEST person (who) won the prize. → He is the youngest person TO WIN the prize.",
+    "subTitle": "Chỉ dùng khi DT có \"the\", kèm theo \"first, second, last, only, v.v… BỎ ĐTQH, chuyển ĐT\/Trợ ĐT sang dạng To+V",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "She is THE FIRST person (who) (has completed) the test. → She is the first person TO HAVE completed the test.",
+    "subTitle": "Chỉ dùng khi DT có \"the\", kèm theo \"first, second, last, only, v.v… BỎ ĐTQH, chuyển ĐT\/Trợ ĐT sang dạng To+V",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "After SHE finished her homework, SHE watched her favorite movie. ⇒ After FINISHING her homework, she watched her favorite movie.",
+    "subTitle": "2 mệnh đề phải có cùng chủ ngữ, BỎ chủ ngữ, chuyển ĐT thành V-ing",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Before HE goes home, HE will turn off all the lights. ⇒ Before going home, he will turn off all the lights.",
+    "subTitle": "2 mệnh đề phải có cùng chủ ngữ, BỎ chủ ngữ, chuyển ĐT thành V-ing",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Although he FELT stressed, he decided to keep the job. ⇒ Although stressed, he…",
+    "subTitle": "Nếu là “to be” hoặc Linking Verb thì bỏ luôn cả ĐT\/Tobe, chỉ giữ lại N hoặc Adj. Thường dùng với nghĩa tương phản, trái ngược như although, though, while.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Though she IS an excellent student, she failed the test. ⇒ Though an excellent student, she…",
+    "subTitle": "Nếu là “to be” hoặc Linking Verb thì bỏ luôn cả ĐT\/Tobe, chỉ giữ lại N hoặc Adj. Thường dùng với nghĩa tương phản, trái ngược như although, though, while.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "BECAUSE he got up late, he was late for work. ⇒ Getting up late, he was late for work.",
+    "subTitle": "diễn đạt ý nguyên nhân - kết quả, ta bỏ luôn cả liên từ đó. Thường dùng với because, as, since.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "AS I didn’t want to wake him up, I turned off the radio. ⇒ Not wanting to wake him up, I turned off the radio.",
+    "subTitle": "diễn đạt ý nguyên nhân - kết quả, ta bỏ luôn cả liên từ đó. Thường dùng với because, as, since.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "John hurt his knee WHILE he was playing football. ⇒ John hurt his knee WHILE PLAYING football ⇒ John hurt his knee PLAYING football.",
+    "subTitle": "diễn đạt hành động diễn ra cùng lúc, ta có thể giữ lại hoặc bỏ luôn cả liên từ đó. Thường dùng với các liên từ while, when.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "Be careful WHEN you cross the road. ⇒ Be careful WHEN CROSSING the road. ⇒ Be careful CROSSING the road.",
+    "subTitle": "diễn đạt hành động diễn ra cùng lúc, ta có thể giữ lại hoặc bỏ luôn cả liên từ đó. Thường dùng với các liên từ while, when.",
+    "tag": "engramar02, engramar02_2"
+  },
+  {
+    "title": "AFTER she finished her homework, she watched her favorite movie. ⇒ AFTER FINISHING her homework, she... ⇒ HAVING FINISHED her homework, she...",
+    "subTitle": "Khi HĐ trong MĐ trạng ngữ xảy ra trước HĐ trong MĐ chính, có thể rút gọn MĐTN thành “having + V3\/V-ed”.",
+    "tag": "engramar02, engramar02_2"
+  }
+]
