@@ -4,6 +4,10 @@
 		"dataFilePath": "/tools/memo_search/data/English/59CauTrucCauThongDungNhat.json"
 	},
 	{
+		"name": "English, Gramar 03",
+		"dataFilePath": "/tools/memo_search/data/English/Gramar03.json"
+	},
+	{
 		"name": "English, Gramar 02",
 		"dataFilePath": "/tools/memo_search/data/English/Gramar02.json"
 	},
