@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tips-note",
         "headline": "Unity - Tips, Note",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2023-12-19 23:14:56 +0700",
+        "dateModified": "2024-01-06 19:27:56 +0700",
         "description": "Unity - Tips, Note",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 7 mins read </span> · 
+      <span title="reading time">· about 8 mins read </span> · 
       
       <span>
         
@@ -334,6 +334,46 @@
     <tr>
       <td style="text-align: left">trong Visual Studio có thể thấy Asset Reference từ C#</td>
       <td style="text-align: center">khi click vào thì sẽ có ping trên Unity Editor</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">khi quay (Rotate) thì DẤU (+-) sẽ theo luật XOẮN ỐC</td>
+      <td style="text-align: center">sử dụng shorten Vector3.up/down/left/right/forward/back/zero/one</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Game mode mà để Simulator sẽ không nhận bàn phím</td>
+      <td style="text-align: center">Simulator của Game View chỉ để xem trên các device khác nhìn sẽ như thế nào</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Rotate hoặc Translate của Transform là MANUAL; Rigidbody là TỰ ĐỘNG với Physics</td>
+      <td style="text-align: center">Phân biệt MANUAL vs AUTO; Fixed vs Relative to coordinate system</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Trong RigidBody có thể Freeze Position ở Contraints</td>
+      <td style="text-align: center">Nếu Camera bị giật khi follow RigidBody thì đổi Interpolate khác</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Refactor thì sử dụng Project Window để kéo thả, Cut-Paste trực tiếp từ Windows Explorer</td>
+      <td style="text-align: center">file.sln Unity sẽ tự tạo dựa trên Folder Name thêm vào Unity Hub (và nó cũng có trong .gitignore)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Để tìm Prefab trên Hierarchy nằm ở đâu trong Assets</td>
+      <td style="text-align: center">Chọn Prefab trên Hierarchy và nhấn “Select” trong Inspector</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Refactor đổi tên thư mục bị Access Deny do script Editor</td>
+      <td style="text-align: center">Tắt Unity và Visual Studio, đổi manual, nhớ xóa file OldName.meta</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">AudioMixer phải “expose” thì mới dùng Script được, có thể “Rename” và “Unexpose”</td>
+      <td style="text-align: center">Properties được expose sẽ có indicator MŨI TÊN -&gt;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Timelines, Animation Track có thể “recording” hoặc “Edit in Animation window”</td>
+      <td style="text-align: center">Animation Rule: sẽ thay đổi tuyến tính giá trị giữa 2 POINT gần nhau. Mọi Properties có thể sửa trên Inspector đều có thể Add để Animation.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Particale Sys: Varying properties over time (mặc định là Constant)</td>
+      <td style="text-align: center">Muốn thay đổi thì click vào icon mũi tên (Curve, Random Between…)</td>
     </tr>
   </tbody>
 </table>
