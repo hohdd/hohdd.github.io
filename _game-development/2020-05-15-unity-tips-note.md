@@ -81,4 +81,14 @@ date: 2020-05-15 14:26:14 +0700
 | DongHD > Selection History > BACK-FORWARD | Tạo một file custom Editor hay sử dụng, khi phình to thì tạo "Unity Editor Extension"
 | Detect nền tảng runtime với "Application.platform" | if (Application.platform == RuntimePlatform.WindowsPlayer/Android/Android) ...
 | trong Visual Studio có thể thấy Asset Reference từ C# | khi click vào thì sẽ có ping trên Unity Editor
+| khi quay (Rotate) thì DẤU (+-) sẽ theo luật XOẮN ỐC | sử dụng shorten Vector3.up/down/left/right/forward/back/zero/one
+| Game mode mà để Simulator sẽ không nhận bàn phím | Simulator của Game View chỉ để xem trên các device khác nhìn sẽ như thế nào
+| Rotate hoặc Translate của Transform là MANUAL; Rigidbody là TỰ ĐỘNG với Physics | Phân biệt MANUAL vs AUTO; Fixed vs Relative to coordinate system
+| Trong RigidBody có thể Freeze Position ở Contraints | Nếu Camera bị giật khi follow RigidBody thì đổi Interpolate khác
+| Refactor thì sử dụng Project Window để kéo thả, Cut-Paste trực tiếp từ Windows Explorer | file.sln Unity sẽ tự tạo dựa trên Folder Name thêm vào Unity Hub (và nó cũng có trong .gitignore)
+| Để tìm Prefab trên Hierarchy nằm ở đâu trong Assets | Chọn Prefab trên Hierarchy và nhấn "Select" trong Inspector
+| Refactor đổi tên thư mục bị Access Deny do script Editor | Tắt Unity và Visual Studio, đổi manual, nhớ xóa file OldName.meta
+| AudioMixer phải "expose" thì mới dùng Script được, có thể "Rename" và "Unexpose" | Properties được expose sẽ có indicator MŨI TÊN ->
+| Timelines, Animation Track có thể "recording" hoặc "Edit in Animation window" | Animation Rule: sẽ thay đổi tuyến tính giá trị giữa 2 POINT gần nhau. Mọi Properties có thể sửa trên Inspector đều có thể Add để Animation.
+| Particale Sys: Varying properties over time (mặc định là Constant) | Muốn thay đổi thì click vào icon mũi tên (Curve, Random Between...)
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue}
