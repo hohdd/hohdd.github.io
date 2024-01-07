@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tim-hieu-particles-system-trong-unity",
         "headline": "Tìm hiểu Particle System trong Unity",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2024-01-07 17:10:20 +0700",
+        "dateModified": "2024-01-07 17:42:35 +0700",
         "description": "Tìm hiểu Particle System trong Unity",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 32 mins read </span> · 
+      <span title="reading time">· about 36 mins read </span> · 
       
       <span>
         
@@ -843,6 +843,55 @@ Các cài đặt của mô-đun này xác định cách <strong>Hình ảnh ho�
 <h3 id="noise-module">
 <a class="anchor" href="#noise-module" aria-hidden="true" spy-title="Noise module"><span class="octicon octicon-link"></span></a>Noise module</h3>
 
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysNoiseModule.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"><br>
+Thêm nhiễu loạn (turbulence) vào chuyển động của hạt bằng mô-đun này.</p>
+
+<p>Thêm Noise vào các hạt của bạn là một cách đơn giản và hiệu quả để tạo ra các patterns và hiệu ứng thú vị. Ví dụ, hãy tưởng tượng than hồng từ ngọn lửa di chuyển xung quanh như thế nào hoặc khói cuộn tròn như thế nào khi nó di chuyển. Noise tần số cao, mạnh có thể được sử dụng để mô phỏng than hồng cháy, trong khi Noise tần số thấp, nhẹ sẽ phù hợp hơn để mô phỏng hiệu ứng khói.</p>
+
+<p>Để kiểm soát tối đa Noise, bạn có thể bật tùy chọn <strong>Separate Axes</strong>. Điều này cho phép bạn kiểm soát cường độ (<strong>strength</strong>) và ánh xạ lại (<strong>remapping</strong>) trên từng trục (<strong>axis</strong>) một cách độc lập.</p>
+
+<p><strong>API</strong>:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ParticleSystem</span> <span class="n">ps</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ParticleSystem</span><span class="p">&gt;();</span>
+<span class="n">ParticleSystem</span><span class="p">.</span><span class="n">NoiseModule</span> <span class="n">noise</span> <span class="p">=</span> <span class="n">ps</span><span class="p">.</span><span class="n">noise</span><span class="p">;</span>
+<span class="n">noise</span><span class="p">.</span><span class="n">enabled</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="n">noise</span><span class="p">.</span><span class="n">strength</span> <span class="p">=</span> <span class="m">1.0f</span><span class="p">;</span>
+<span class="n">noise</span><span class="p">.</span><span class="n">quality</span> <span class="p">=</span> <span class="n">ParticleSystemNoiseQuality</span><span class="p">.</span><span class="n">High</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Properties</strong>:</p>
+<ul>
+  <li>
+<strong>Separate Axes (bool)</strong>: (Trục riêng biệt) Kiểm soát cường độ và ánh xạ lại độc lập trên từng trục.</li>
+  <li>
+<strong>Strength</strong>: (cường độ) Một đường cong (curve) xác định <strong>mức độ ảnh hưởng của Noise</strong> lên một hạt trong suốt vòng đời của nó. <strong>Giá trị cao</strong> hơn sẽ làm cho các hạt di chuyển <strong>nhanh hơn và xa hơn</strong>.</li>
+  <li>
+<strong>Frequency</strong>: Kiểm soát <strong>tần suất</strong> các hạt <em>thay đổi hướng di chuyển</em> của chúng và <em>mức độ thay đổi hướng đột ngột</em> đó. Giá trị thấp tạo ra tiếng ồn nhẹ nhàng, êm ái và giá trị cao tạo ra tiếng ồn thay đổi nhanh chóng.</li>
+  <li>
+<strong>Scroll Speed</strong>: Di chuyển trường nhiễu theo thời gian để gây ra chuyển động hạt thất thường và khó lường hơn.</li>
+  <li>
+<strong>Damping</strong>: (Giảm xóc) Khi được bật, cường độ (strength) tỷ lệ thuận với tần số (frequency). Việc buộc các giá trị này lại với nhau có nghĩa là Noise có thể được điều chỉnh tỷ lệ (scaled) trong khi vẫn duy trì hoạt động tương tự (same behaviour) nhưng ở kích thước (size) khác.</li>
+  <li>
+<strong>Octaves</strong>: (Quãng tám) Chỉ định số lượng lớp nhiễu (layers) chồng chéo (overlapping) được kết hợp để tạo ra giá trị nhiễu cuối cùng. Sử dụng nhiều lớp hơn sẽ mang lại Noise phong phú hơn, thú vị hơn nhưng làm tăng đáng kể chi phí hiệu suất (performance cost).</li>
+  <li>
+<strong>Octave Multiplier</strong>: (Hệ số quãng tám) Đối với mỗi lớp nhiễu bổ sung, hãy giảm cường độ (strength) theo tỷ lệ này.</li>
+  <li>
+<strong>Octave Scale</strong>: (Thang quãng tám) Đối với mỗi lớp nhiễu bổ sung, hãy điều chỉnh tần số (frequency) theo hệ số nhân này.</li>
+  <li>
+<strong>Quality (enum)</strong>: [Low, Medium, High] Cài đặt chất lượng thấp hơn sẽ giảm đáng kể chi phí hiệu suất (performance cost) nhưng cũng ảnh hưởng đến mức độ thú vị của Noise. Hãy sử dụng chất lượng thấp nhất nhưng vẫn mang lại cho bạn hành vi mong muốn.</li>
+  <li>
+<strong>Remap (bool)</strong>: Ánh xạ lại các giá trị nhiễu cuối cùng vào một phạm vi khác.
+    <ul>
+      <li>
+<strong>Remap Curve</strong>: Đường cong mô tả cách biến đổi các giá trị nhiễu cuối cùng. Ví dụ: bạn có thể sử dụng điều này để chọn ra các phạm vi thấp hơn của trường nhiễu và bỏ qua các phạm vi cao hơn bằng cách tạo một đường cong bắt đầu ở mức cao và kết thúc ở mức 0.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Position Amount</strong>: Một hệ số nhân để kiểm soát mức độ tiếng ồn <strong>ảnh hưởng đến vị trí</strong> hạt.</li>
+  <li>
+<strong>Rotation Amount</strong>: Một hệ số nhân để kiểm soát mức độ tiếng ồn <strong>ảnh hưởng đến chuyển động quay</strong> của hạt, tính bằng <strong>độ trên giây</strong>.</li>
+  <li>
+<strong>Size Amount</strong>: Một hệ số nhân để kiểm soát mức độ tiếng ồn <strong>ảnh hưởng đến kích thước</strong> hạt.</li>
+</ul>
 
       </div>
 
