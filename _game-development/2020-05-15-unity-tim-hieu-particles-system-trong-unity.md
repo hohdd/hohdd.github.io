@@ -155,7 +155,7 @@ Tất cả các lực được tác dụng trong không gian cục bộ của Tr
 ![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysPartSysInsp.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
 Main Module chứa các thuộc tính chung ảnh hưởng đến toàn bộ hệ thống hạt. Hầu hết các properties này kiểm soát trạng thái ban đầu của các hạt mới được tạo ra.
 
-**API**:
+#### **API**:
 ```csharp
 ParticleSystem ps = GetComponent<ParticleSystem>();
 ParticleSystem.MainModule main = ps.main;
@@ -163,7 +163,7 @@ main.startDelay = 5.0f;
 main.startLifetime = 2.0f;
 ```
 
-**Properties**:
+#### **Properties**:
 {% msg info <strong>Main Module</strong>: Start Speed, Start Lifetime, Start Color, Start Size, Stop Action  %}
 - **Duration (float)**: Tuổi/Khoảng thời gian hệ thống chạy (khi Start Lifetime vẫn còn thì thấy hệ thống vẫn Play?).
 - **Looping (bool)**: Nếu được bật, hệ thống sẽ khởi động lại khi kết thúc để tiếp tục **lặp lại chu kỳ**.
@@ -207,6 +207,14 @@ em.SetBursts(
     }
 );
 ```
+
+#### Rate (over Time/Distance)
+
+Tỉ lệ số hạt phát ra theo thời gian hoặc theo khoảng cách.
+
+#### Bursts
+
+Có thể cài đặt các Bursts là một mảng để emit thêm một số lượng hạt ngoài Rate ở trên.
 
 **Properties**:
 - **Rate over Time (float)**: Số hạt phát ra trong một đơn vị thời gian (mỗi giây).
@@ -339,9 +347,13 @@ Phát ra các hạt từ hình dạng **Sprite** được cung cấp qua Inspect
 ![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/renderer-module-view.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
 Các cài đặt của mô-đun này xác định cách **Hình ảnh hoặc Mesh** của hạt được biến đổi (**transformed**), tô bóng, bị che mờ (**shaded**) và lấn át (**overdrawn**) bởi các hạt khác.
 
-Sử dụng Renderer module để chọn giữa một số chế độ đồ họa Billboard 2D (**PHẲNG**) và chế độ Lưới (**3D Mesh**).
+Sử dụng Renderer module để chọn giữa một số chế độ đồ họa Billboard 2D (**PHẲNG**) và chế độ Lưới (**Mesh 3D**).
+
+#### Mesh 3D
 
 **Mesh 3D** mang lại cho các hạt tính xác thực cao hơn khi chúng đại diện cho các GameObject rắn, chẳng hạn như đá, đồng thời cũng có thể cải thiện cảm giác về khối lượng cho các đám mây, quả cầu lửa và chất lỏng.
+
+#### Billboards
 
 **Billboards** phù hợp với các mục đích sử dụng cụ thể:
 - Chế độ **Billboard** rất hữu ích cho các phần tử biểu thị volume trông giống nhau từ bất kỳ hướng nào (chẳng hạn như các đám mây).
@@ -459,3 +471,279 @@ noise.quality = ParticleSystemNoiseQuality.High;
 - **Position Amount**: Một hệ số nhân để kiểm soát mức độ tiếng ồn **ảnh hưởng đến vị trí** hạt.
 - **Rotation Amount**: Một hệ số nhân để kiểm soát mức độ tiếng ồn **ảnh hưởng đến chuyển động quay** của hạt, tính bằng **độ trên giây**.
 - **Size Amount**: Một hệ số nhân để kiểm soát mức độ tiếng ồn **ảnh hưởng đến kích thước** hạt.
+
+### Lights module
+
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysLightsModule.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+Lights module là một cách nhanh chóng để **thêm ánh sáng theo thời gian thực** vào các hiệu ứng hạt của bạn. Nó có thể được sử dụng để làm cho các hệ thống chiếu ánh sáng vào môi trường xung quanh, ví dụ như để tạo ra lửa, pháo hoa hoặc tia sét. Nó cũng cho phép bạn để đèn thừa hưởng nhiều đặc tính khác nhau từ các hạt mà chúng được gắn vào. Điều này có thể khiến người ta tin chắc hơn rằng bản thân hiệu ứng hạt đang phát ra ánh sáng. Ví dụ, điều này có thể đạt được bằng cách làm cho ánh sáng mờ đi cùng với các hạt của chúng và để chúng có cùng màu sắc.
+
+Mô-đun này giúp bạn dễ dàng tạo ra nhiều đèn thời gian thực rất nhanh và đèn thời gian thực **có chi phí hiệu suất cao** (*performance cost*), đặc biệt là trong Kết xuất chuyển tiếp cách thức (**Forward Rendering**). Nếu đèn cũng đổ bóng thì **chi phí hiệu suất thậm chí còn cao hơn**. Thuộc tính **Maximum Lights** được sử dụng để giúp bảo vệ chống lại sự điều chỉnh vô tình đối với tốc độ phát xạ và do đó tạo ra hàng nghìn đèn theo thời gian thực. Việc tạo ra nhiều đèn hơn khả năng quản lý của phần cứng mục tiêu có thể gây ra tình trạng chậm (**slowdowns**) và không phản hồi (**unresponsiveness**).
+
+**API**
+```csharp
+ParticleSystem ps = GetComponent<ParticleSystem>();
+ParticleSystem.TrailModule trails = ps.trails;
+trails.enabled = true;
+trails.ratio = 0.5f;
+```
+
+**Properties**:
+- **Light (inspector)**: Chỉ định một **Light Prefab** mô tả ánh sáng hạt của bạn trông như thế nào.
+- **Ratio (0-1)**: Giá trị từ 0 đến 1 mô tả tỷ lệ (xác suất) các hạt sẽ nhận được ánh sáng.
+- **Random Distribution (bool)**: Chọn xem Lights được chỉ định ngẫu nhiên (randomly) hay định kỳ (periodically). Khi được đặt thành TRUE, mọi hạt đều có cơ hội ngẫu nhiên nhận được ánh sáng dựa trên **Ratio**. Giá trị cao hơn làm tăng xác suất hạt có ánh sáng. Khi được đặt thành FALSE, **Ratio** sẽ kiểm soát tần suất một hạt mới được tạo nhận được ánh sáng (ví dụ: mọi hạt thứ N sẽ nhận được ánh sáng).
+- **Use Particle Color (bool)**: Khi được đặt thành TRUE, màu cuối cùng của Ánh sáng sẽ được điều chỉnh theo màu của hạt được gắn vào. Nếu được đặt thành FALSE, Màu Light sẽ được sử dụng mà không có bất kỳ sửa đổi nào.
+- **Size Affects Range (bool)**: Khi được bật, Phạm vi (Range) được chỉ định trong Ánh sáng (Light) sẽ được nhân với kích thước (Size) của hạt.
+- **Alpha Affects Intensity (bool)**: Khi được bật, Cường độ ánh sáng (Intensity) sẽ được nhân với giá trị alpha của hạt.
+- **Range Multiplier (float+)**: Áp dụng hệ số nhân tùy chỉnh cho Phạm vi ánh sáng (Range of the light) trong suốt thời gian tồn tại của hạt (lifetime) bằng giá trị/đường cong này.
+- **Intensity Multiplier (float+)**: Áp dụng hệ số nhân tùy chỉnh cho Cường độ ánh sáng (Intensity of the light) trong suốt thời gian tồn tại của hạt (lifetime) bằng giá trị/đường cong này.
+- **Maximum Lights (int)**: Sử dụng cài đặt này để tránh vô tình tạo ra một số lượng lớn đèn (lights), điều này có thể khiến Editor không phản hồi hoặc khiến ứng dụng của bạn chạy rất chậm.
+
+### Trails module
+
+Thêm các vệt (trails) vào các hạt theo tỷ lệ phần trăm (ratio). 
+Mô-đun này chia sẻ một số properties với **Trail Renderer** nhưng cung cấp khả năng dễ dàng gắn Trails vào các hạt và kế thừa các đặc tính khác nhau từ các hạt. Vệt (Trail) có thể hữu ích cho nhiều hiệu ứng khác nhau, chẳng hạn như đạn, khói và hình ảnh ma thuật.
+
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysTrailsModule.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysTrailsModuleRibbon.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+**Tips**:
+- Sử dụng **Renderer Module** để chỉ định **Trail Material**.
+- Unity lấy mẫu màu từ *Color Gradient* ở mỗi đỉnh (vertex) và nội suy tuyến tính các màu giữa mỗi đỉnh. Thêm nhiều vertex hơn vào *Line Renderer* của bạn để có được dải màu gần đúng hơn.
+
+**API**
+```csharp
+ParticleSystem ps = GetComponent<ParticleSystem>();
+ParticleSystem.TrailModule trails = ps.trails;
+trails.enabled = true;
+trails.ratio = 0.5f;
+```
+
+**Properties**:
+- **Mode (enum)**: Chọn cách tạo đường dẫn cho Hệ thống hạt.
+    - **Particle**: tạo ra hiệu ứng trong đó mỗi hạt để lại một vệt cố định trên đường đi của nó.
+        - **Ratio (0-1)**: Giá trị từ 0 đến 1, mô tả tỷ lệ các hạt được gán một Vệt. Unity chỉ định các đường dẫn một cách ngẫu nhiên, vì vậy giá trị này thể hiện xác suất.
+        - **Lifetime (0-1)**: Thời gian tồn tại của mỗi vertex trong Trail, được biểu thị bằng hệ số nhân của thời gian tồn tại của hạt mà nó thuộc về. Khi mỗi đỉnh mới được thêm vào Trail, nó sẽ biến mất sau khi tồn tại lâu hơn tổng thời gian tồn tại của nó.
+        - **Size affects Lifetime (bool)**: Nếu được bật, thời gian tồn tại của Trail sẽ được nhân với kích thước hạt.
+        - **Minimum Vertex Distance (float+)**: Xác định khoảng cách mà một hạt phải di chuyển trước khi Trail của nó nhận được một đỉnh (vertex) mới.
+        - **World Space (bool)**: Khi được bật, các đỉnh của Trail không di chuyển so với GameObject của Hệ thống hạt, ngay cả khi sử dụng Không gian mô phỏng cục bộ (Local Simulation Space). Thay vào đó, các vertex của Trail được thả xuống thế giới và bỏ qua mọi chuyển động của Hệ thống Hạt.
+        - **Die With Particles (bool)**: Nếu được chọn, Trails sẽ biến mất ngay lập tức khi các hạt của chúng chết. Nếu tùy chọn này không được chọn, Trails còn lại sẽ hết hạn một cách tự nhiên dựa trên thời gian tồn tại còn lại của chính nó.
+    - **Ribbon**: tạo ra một dải ruy băng gồm các **ĐƯỜNG NỐI TỪNG HẠT** dựa trên độ tuổi của nó.
+        - **Ribbon Count (int)**: Chọn số lượng dải băng (ribbons) để hiển thị trong Hệ thống hạt. Giá trị 1 tạo ra một dải ruy băng duy nhất kết nối từng hạt. Tuy nhiên, giá trị cao hơn 1 sẽ tạo ra các dải băng kết nối mọi hạt thứ N. Ví dụ: khi sử dụng giá trị 2, sẽ có một dải băng kết nối các hạt 1, 3, 5 và một dải băng khác kết nối các hạt 2, 4, 6, v.v. Thứ tự của các hạt được quyết định dựa trên tuổi của chúng.
+        - **Split Sub Emitter Ribbons (bool)**: (Chia dải băng phát phụ) Khi được bật trên **hệ thống đang được sử dụng làm bộ phát phụ** (*sub-emitter*), các hạt được sinh ra từ cùng một hạt của hệ thống mẹ sẽ chia sẻ một dải băng.
+- **Texture Mode (enum)**: Chọn cách áp dụng họa tiết cho Vệt hạt (Trails).
+    - **Stretch**: Chế độ kéo dài (Stretch) kéo dài kết cấu dọc theo toàn bộ chiều dài của đường nhỏ.
+    - **Tile**: Ngói (Tile) lặp lại kết cấu mỗi N đơn vị khoảng cách. Tốc độ lặp lại được kiểm soát dựa trên các thông số **Tiling** trong **Material**.
+    - **Repeat per Segment**: Chế độ Lặp lại trên mỗi Đoạn (Segment) lặp lại kết cấu dọc theo trail, lặp lại với tốc độ một lần trên mỗi **trail Segment**. Tốc độ lặp lại được kiểm soát dựa trên các thông số **Tiling** trong **Material**.
+    - **Distribute per Segement**: Chế độ Phân phối (Distribute) trên mỗi phân đoạn (Segement) ánh xạ kết cấu một lần dọc theo toàn bộ chiều dài của trail và giả định rằng tất cả các đỉnh (vertex) đều cách đều nhau.
+- **Size affects Width (bool)**: Nếu được bật, chiều rộng của vệt (Trail width) sẽ được nhân với kích thước hạt (size).
+- **Inherit Particle Color (bool)**: Nếu được bật (hộp được chọn), màu Trail được điều chỉnh theo màu hạt.
+- **Color over Lifetime (color)**: Để kiểm soát **màu sắc của toàn bộ Trail** trong suốt thời gian tồn tại của hạt mà nó được gắn vào.
+- **Width over Trail (float+)**: Để kiểm soát chiều rộng của Trail trên chiều dài của nó.
+- **Color over Trail**: Để kiểm soát màu của Trail trên toàn bộ chiều dài của nó.
+- **Generate Lighting Data (bool)**: Kích hoạt tính năng này (đánh dấu vào hộp) để xây dựng hình dạng Trail với Chuẩn (Normals) và Tiếp tuyến (Tangents). Điều này cho phép Trails sử dụng Materials (cái mà sử dụng Scene Lighting), ví dụ như thông qua **Standard Shader** hoặc bằng cách sử dụng trình đổ bóng tùy chỉnh (**custom shader**).
+- **Shadow Bias (float+)**: Apply a shadow bias to prevent self-shadowing artifacts. The specified value is the proportion of the trail width at each segement. (Áp dụng độ lệch bóng để ngăn hiện tượng tạo bóng tự tạo. Giá trị được chỉ định là tỷ lệ chiều rộng của vệt ở mỗi đoạn.)
+
+### Sub Emitters module
+
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysSubEmitInsp.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+Mô-đun này cho phép bạn thiết lập các bộ phát phụ (Sub-Emitters). Đây là những nguồn phát hạt bổ sung được tạo ra ở **vị trí của hạt ở những giai đoạn nhất định** trong vòng đời của nó.
+
+Nhiều loại hạt tạo ra hiệu ứng ở các giai đoạn khác nhau trong vòng đời của chúng cũng có thể được thực hiện bằng Hệ thống hạt. Ví dụ, một viên đạn có thể kèm theo một luồng khói khi nó rời khỏi nòng súng và một quả cầu lửa có thể phát nổ khi va chạm. Bạn có thể sử dụng bộ phát phụ để tạo hiệu ứng như thế.
+
+Bộ phát phụ là các đối tượng Hệ thống hạt thông thường được tạo trong Cảnh hoặc từ Prefabs. Điều này có nghĩa là các bộ phát phụ có thể có các bộ phát phụ của riêng chúng (kiểu sắp xếp này có thể hữu ích cho các hiệu ứng phức tạp như pháo hoa). Tuy nhiên, điều này **rất dễ dàng có thể tiêu tốn nhiều tài nguyên** khi tạo ra một số lượng lớn các hạt bằng cách sử dụng các nguồn phát phụ.
+
+Để **kích hoạt bộ phát phụ**, bạn có thể sử dụng các điều kiện sau:
+- **Birth**: (Sự ra đời) **Khi các hạt được tạo ra**.
+- **Collision**: (Va chạm) Khi các hạt **va chạm với một vật thể**.
+- **Death**: Khi các hạt **bị phá hủy**.
+- **Trigger**: Khi các hạt tương tác với **Trigger collider**
+- **Manual**: (Thủ công) Chỉ được kích hoạt khi được yêu cầu qua tập lệnh. (```public void TriggerSubEmitter(int subEmitterIndex)```).
+
+**Lưu ý rằng** các sự kiện **Collision**, **Trigger**, **Death** và **Manual** chỉ có thể sử dụng phát xạ nổ (**burst**) trong **Emission module**.
+
+Ngoài ra, bạn có thể chuyển các **thuộc tính từ hạt gốc sang từng hạt mới** được tạo bằng cách sử dụng tùy chọn Kế thừa (**Inherit**). Các thuộc tính có thể chuyển nhượng là **size**, **rotation**, **color** và **lifetime**... **duration**, **everything**. Để kiểm soát cách kế thừa vận tốc (*velocity*), hãy cấu hình mô-đun **Inherit Velocity module** trên hệ thống bộ phát phụ (**sub-emitter system**).
+
+Cũng có thể cấu hình xác suất mà sự kiện bộ phát phụ sẽ kích hoạt bằng thuộc tính **Emit Probability**. Giá trị 1 đảm bảo rằng sự kiện sẽ kích hoạt, trong khi giá trị thấp hơn sẽ làm giảm xác suất.
+
+**API**
+```csharp
+ParticleSystem ps = GetComponent<ParticleSystem>();
+ParticleSystem.TrailModule trails = ps.trails;
+trails.enabled = true;
+trails.ratio = 0.5f;
+```
+
+**Properties**:
+- **Sub Emitters**: cấu hình danh sách các bộ phát phụ và chọn điều kiện kích hoạt của chúng cũng như các thuộc tính mà chúng kế thừa từ các hạt gốc.
+
+### Triggers module
+
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysTriggersModule.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+Mô-đun Kích hoạt của Hệ thống Hạt tích hợp cho phép bạn truy cập và sửa đổi các hạt dựa trên sự tương tác của chúng với một hoặc nhiều **Colliders** trong **Scence**. Khi bạn bật mô-đun này, Hệ thống hạt sẽ gọi *callback* **OnParticleTrigger()** trên các tập lệnh đính kèm mà bạn có thể sử dụng để truy cập danh sách các hạt tùy thuộc vào vị trí của chúng so với **Colliders in the Scene**.
+
+**Lưu ý**: *OnParticleTrigger()* **không có parameter input**. Sử dụng **PS.GetTriggerParticles** để lấy ra List các hạt thỏa mãn điều kiện (Enter/Exit...) và **PS.SetTriggerParticles** để *re-assign* các *modified particles* trở lại hệ thống hạt.
+
+Để bắt đầu, cần chỉ định **Colliders nào** mà các hạt có thể tương tác (**kéo vào Colliders List trong Inspector**).
+
+Sau khi thêm Colliders, bạn có thể chỉ định một hạt sẽ *làm gì khi nó đáp ứng các tiêu chí* để vượt qua một loại sự kiện kích hoạt cụ thể. *Có bốn loại sự kiện mô tả cách một hạt có thể tương tác với Colliders*:
+- **Inside**: Một hạt nằm trong giới hạn của Colliders.
+- **Outside**: Một hạt nằm ngoài giới hạn của Colliders.
+- **Enter**: Một hạt đi vào giới hạn của Colliders.
+- **Exit**: Một hạt thoát ra khỏi giới hạn (bounds) của Colliders.
+
+Trong Inspector, có một danh sách thả xuống cho từng loại sự kiện này cho phép bạn chọn điều gì sẽ xảy ra với một hạt nếu thỏa mãn các điều kiện của sự kiện kích hoạt. Các tùy chọn là:
+- **Callback**: Gọi callback **OnParticleTrigger()**.
+- **Kill**: Phá hủy hạt (Destroys). Bạn không thể truy cập hạt trong OnParticleTrigger().
+- **Ignore**: Bỏ qua hạt (Ignores). Bạn không thể truy cập hạt trong OnParticleTrigger().
+
+**API**
+```csharp
+ParticleSystem ps = GetComponent<ParticleSystem>();
+// particles
+List<ParticleSystem.Particle> enter = new List<ParticleSystem.Particle>();
+List exit = new List();
+List inside = new List();
+void OnParticleTrigger()
+{
+    // get the particles which matched the trigger conditions this frame
+    int numEnter = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Enter, enter);
+    int numExit = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Exit, exit);
+    int numInside = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Inside, inside, out var insideData);
+    // Doing something with enter and exit List...
+    // re-assign the modified particles back into the particle system
+    ps.SetTriggerParticles(ParticleSystemTriggerEventType.Enter, enter);
+    ps.SetTriggerParticles(ParticleSystemTriggerEventType.Exit, exit);
+    // insideData
+    if (insideData.GetColliderCount(index) == 1) ...
+    if (insideData.GetCollider(index, 0) == ps.trigger.GetCollider(0)) ...
+}
+```
+
+**Properties**
+- **Inside**: Chỉ định hành động thực hiện đối với các hạt trong **mọi Frame** mà chúng có **trong Collider**.
+- **Outside**: Chỉ định hành động thực hiện đối với các hạt ở **mọi Frame** mà chúng ở bên **ngoài Collider**.
+- **Enter**: Chỉ định hành động thực hiện đối với các hạt **trong Frame** mà chúng **đi vào Collider**.
+- **Exit**: Chỉ định hành động thực hiện đối với các hạt **trong Frame** mà chúng **thoát ra khỏi Collider**.
+- **Collider Query Mode**: Chỉ định phương pháp sử dụng để lấy thông tin về Collider mà các hạt tương tác. Điều này làm **tăng cường độ sử dụng tài nguyên**, vì vậy, nếu bạn không cần thêm bất kỳ thông tin collision nào thì **hãy TẮT thuộc tính này**.
+- **Radius Scale**: Giới hạn Collider của hạt.
+- **Visualize Bounds**: Bật *hiển thị giới hạn Collider của từng hạt* trong **SceneView**.
+
+### Collision module
+
+Mô-đun này kiểm soát cách các hạt va chạm với GameObjects trong Scence.
+
+Khi các vật thể khác bao quanh Hệ thống hạt, hiệu ứng thường thuyết phục hơn khi các hạt tương tác với các vật thể đó. Ví dụ, nước hoặc mảnh vụn phải bị cản trở bởi một bức tường vững chắc thay vì chỉ đi qua nó. Với *Collision module*, các hạt có thể va chạm với các đối tượng trong Scence.
+
+#### Chế độ Planes và World
+
+Hệ thống hạt có thể được thiết lập để các hạt của nó va chạm với bất kỳ Collider nào trong Scence bằng cách chọn chế độ **World**. Colliders cũng có thể bị vô hiệu hóa tùy theo **layer** mà chúng đang thuộc về bằng cách sử dụng **Collides With property**.
+
+Chế độ **Planes** cho phép bạn thêm một tập hợp (List) các mặt phẳng (Plane) vào Scence mà không cần có Collider. Tùy chọn này hữu ích cho các tầng (floors), tường (walls) đơn giản và các vật thể tương tự, đồng thời có chi phí sử dụng bộ xử lý thấp hơn chế độ **World**.
+
+Trong chế độ **Planes**, danh sách các Transforms (thường là GameObject trống) cần được thêm thông qua Inspector. Các mặt phẳng (Plane) *mở rộng vô tận trong các mặt phẳng XZ* **cục bộ (local) của vật thể**, với *trục Y dương biểu thị các vectơ pháp tuyến của các mặt phẳng*. **Để hỗ trợ quá trình development**, các planes sẽ được *hiển thị dưới dạng Gizmos* trong Scene bất kể các đối tượng có Lưới hiển thị hay không. *Gizmos có thể được hiển thị dưới dạng Mesh hoặc mặt phẳng đặc (solid plane) và cũng có thể được thu nhỏ*. Tuy nhiên, việc chia tỷ lệ chỉ áp dụng cho trực quan hóa - bản thân **các mặt phẳng va chạm kéo dài vô tận** trong Scence.
+
+Khi kích hoạt va chạm, kích thước của một hạt đôi khi là một vấn đề vì đồ họa của nó có thể bị cắt bớt khi nó tiếp xúc với một bề mặt. Điều này có thể dẫn đến việc một hạt dường như “chìm” một phần vào bề mặt trước khi dừng lại hoặc nảy lên. **Radius Scale property** giải quyết vấn đề này bằng cách xác định bán kính hình tròn gần đúng cho các hạt, dưới dạng phần trăm kích thước thực tế của nó. Thông tin kích thước này được sử dụng để ngăn chặn việc cắt bớt và tránh hiệu ứng chìm.
+
+#### Dampen, Bounce và Collision Quality
+
+Thuộc tính **Dampen** và **Bounce** rất hữu ích khi các hạt đại diện cho vật thể rắn. Ví dụ, sỏi sẽ có xu hướng **nảy ra** khỏi bề mặt cứng khi ném nhưng các hạt của quả cầu tuyết có thể **mất tốc độ** khi va chạm.
+
+Thuộc tính **Lifetime Loss** và **Min Kill Speed** có thể giúp giảm tác động của các hạt còn sót lại sau một vụ va chạm. Ví dụ, một quả cầu lửa có thể tồn tại trong vài giây khi bay trong không khí nhưng sau khi va chạm, các hạt lửa riêng biệt sẽ tiêu tan nhanh chóng.
+
+Bằng cách phát hiện va chạm (**Send Collision Messages** được bật), bạn có thể sử dụng các hạt làm vật thể kích hoạt trong trò chơi, chẳng hạn như đệm gió, phép thuật và power-ups.
+
+Thuộc tính **Collision Quality** trong chế độ **World** có thể đặt thành **High**, **Medium** hoặc **Low**. Khi là **Medium** (Static Colliders) hoặc **Low** (Static Colliders), các va chạm sẽ sử dụng lưới các điểm ảnh ba chiều (value on a 3D grid of voxels) để lưu vào bộ nhớ đệm các collisions trước đó để sử dụng lại nhanh chóng trong các khung hình sau.
+**Bộ nhớ đệm** này bao gồm một mặt phẳng trong mỗi voxel, trong đó mặt phẳng biểu thị bề mặt va chạm tại vị trí đó. Trên mỗi khung hình, Unity kiểm tra bộ đệm để tìm mặt phẳng ở vị trí của hạt và nếu có, Unity sẽ sử dụng nó để phát hiện va chạm. Nếu không, nó sẽ hỏi hệ thống vật lý. Nếu collision được trả về, nó sẽ được thêm vào bộ đệm để truy vấn nhanh trên các khung tiếp theo.
+
+**Lưu ý rằng** cài đặt **Medium** và **Low** chỉ phù hợp với máy va chạm tĩnh không bao giờ chuyển động (Static Colliders). **Đây chỉ là giá trị gần đúng** nên có thể xảy ra một số va chạm bị bỏ sót. Bạn có thể giảm giá trị Kích thước Voxel để trợ giúp việc này; tuy nhiên, làm như vậy sẽ sử dụng thêm bộ nhớ và kém hiệu quả hơn.
+**Sự khác biệt duy nhất** giữa **Medium** và **Low** là số lần hệ thống được phép truy vấn hệ thống vật lý bao nhiêu lần trên mỗi khung hình. **Low** tạo ra ít truy vấn trên mỗi khung hình hơn **Medium**. Khi vượt quá ngân sách (budget) cho mỗi khung hình, chỉ bộ đệm được sử dụng cho mọi phần còn lại. Điều này có thể dẫn đến sự gia tăng số lần va chạm bị bỏ lỡ cho đến khi bộ đệm được điền đầy đủ hơn.
+
+**Properties**
+
+Cần lựa chọn kiểu va chạm (**Type**) là **Planes** hay **World** (Physics World). Nếu là **Planes** cần kéo các **Collider** (GameObject EMPTY) vào **List Collision Transforms**. Nếu là **World** cần chọn **Mode** là **2D** hay **3D** (Physics).
+
+**Planes module properties (RIÊNG)**<br>
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysCollisionInsp.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+- **Planes**: Một danh sách các Transforms (GameObject EMPTY) có thể mở rộng (phục vụ Development) để xác định các mặt phẳng va chạm.
+- **Visualization**: Chọn xem mặt phẳng va chạm Gizmos sẽ được hiển thị trong chế độ xem Cảnh như lưới khung dây hoặc mặt phẳng rắn.
+- **Scale Plane**: Kích thước của các mặt phẳng được sử dụng để trực quan hóa (mục đích development).
+
+**World module properties (RIÊNG)**<br>
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysCollisionInsp2.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+- **Collision Mode**: 3D or 2D
+- **Collision Quality**: Điều này ảnh hưởng đến số lượng hạt có thể đi qua máy va chạm. Ở mức chất lượng thấp (Low), các hạt đôi khi có thể đi qua máy va chạm nhưng lại tốn ít tài nguyên hơn để tính toán.
+    - **High**: Khi Chất lượng va chạm được đặt thành Cao, các va chạm luôn sử dụng hệ thống vật lý để phát hiện kết quả va chạm. Đây là tùy chọn tốn nhiều tài nguyên nhất nhưng cũng chính xác nhất.
+    - **Medium (Static Colliders)**: các va chạm sẽ sử dụng một mạng lưới các điểm ảnh ba chiều để lưu vào bộ nhớ đệm các va chạm trước đó, để sử dụng lại nhanh hơn trong các khung hình sau này.
+    - **Low (Static Colliders)**: Giống với **Medium (Static Colliders)**, sự khác biệt là số lần hệ thống được phép truy vấn hệ thống vật lý bao nhiêu lần trên mỗi khung hình. **Low** tạo ra ít truy vấn hơn.
+- **Collides With**: Các hạt sẽ chỉ va chạm với các đối tượng trên các **layers đã chọn**.
+- **Max Collision Shapes**: Có bao nhiêu hình dạng va chạm có thể được xem xét cho các va chạm hạt. Các hình dạng dư thừa sẽ bị bỏ qua và **Terrain được ưu tiên**.
+- **Enable Dynamic Colliders**: *Dynamic colliders là bất cứ collider nào* **không phải** *là* **Kinematic**. Bỏ chọn tùy chọn này, các hạt chỉ phản ứng với **static colliders**.
+- **Voxel Size**: Cài đặt này kiểm soát kích thước lưới (grid size). Giá trị nhỏ hơn mang lại độ chính xác cao hơn nhưng tốn nhiều bộ nhớ hơn và kém hiệu quả hơn. *Lưu ý tùy chọn này chỉ có sẵn với Collision Quality là Medium or Low*.
+- **Collider Force**: Tác dụng một lực lên **Physics Colliders** sau một vụ va chạm Hạt. Điều này rất hữu ích cho việc **đẩy Collider bằng các hạt**.
+- **Multiply by Collision Angle**: (mức độ va chạm trực diện) Khi tác dụng lực lên Collider, hãy chia độ lớn của lực dựa trên **góc va chạm** giữa hạt và Collider. Các góc lướt/ngang (Grazing) sẽ tạo ra ít lực hơn so với va chạm trực diện.
+- **Multiply by Particle Speed**: Khi tác dụng lực lên Collider, hãy chia độ lớn của lực dựa trên tốc độ của hạt. Các hạt chuyển động nhanh sẽ tạo ra lực lớn hơn các hạt chuyển động chậm hơn.
+- **Multiply by Particle Size**: Khi tác dụng lực lên Collider, hãy chia độ lớn của lực dựa trên kích thước của hạt. Những hạt lớn hơn sẽ tạo ra lực lớn hơn những hạt nhỏ hơn.
+
+#### Planes + World properties (CHUNG)
+- **Dampen**: (chung) Phần tốc độ của hạt bị mất đi sau một vụ va chạm.
+- **Bounce**: (chung) Một phần tốc độ của hạt bật lại khỏi bề mặt sau một vụ va chạm.
+- **Lifetime Loss**: (chung) Một phần trong tổng thời gian tồn tại của một hạt mà nó bị mất nếu va chạm.
+- **Min Kill Speed**: (chung) Các hạt di chuyển dưới tốc độ này sau khi va chạm sẽ bị loại khỏi hệ thống.
+- **Max Kill Speed**: (chung) Các hạt di chuyển trên tốc độ này sau khi va chạm sẽ bị loại khỏi hệ thống.
+- **Radius Scale**: (chung) Cho phép bạn điều chỉnh bán kính của các quả cầu va chạm hạt để nó khớp chặt hơn với các cạnh trực quan của đồ họa hạt.
+- **Send Collision Messages**: (chung) Nếu được bật, các va chạm hạt có thể được phát hiện từ tập lệnh bởi hàm OnParticleCollision.
+- **Visualize Bounds**: (chung) Hiển thị giới hạn va chạm của từng hạt dưới dạng hình khung dây trong chế độ SceneView.
+
+### Texture Sheet Animation module
+
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysTexSheetAnimModule-0.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+Đồ họa của một hạt không nhất thiết phải là một hình ảnh tĩnh. Mô-đun này cho phép bạn coi Kết cấu (Texture) như một lưới gồm các hình ảnh phụ riêng biệt có thể được phát lại dưới dạng khung hình động. Điều này đạt được bằng cách tạo ra các kết cấu lật (flipbook textures), trông như thế này:<br>![TEXT](https://docs.unity3d.com/2021.3/Documentation/StaticFiles/ScriptRefImages/ParticleFlipbook.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+**Particle animations** thường đơn giản hơn và ít chi tiết hơn **character animations**. Trong các hệ thống mà các hạt được nhìn thấy riêng lẻ, hình ảnh động có thể được sử dụng để truyền tải hành động hoặc chuyển động. Ví dụ, ngọn lửa có thể nhấp nháy và côn trùng trong đàn có thể rung lên hoặc rùng mình như thể đang vỗ cánh. Trong trường hợp các hạt tạo thành một thực thể duy nhất, liên tục như đám mây, các **animated particles** có thể giúp tăng thêm ấn tượng về năng lượng và chuyển động.
+
+Sử dụng thuộc tính **Row Mode** để phá vỡ tính đều đặn dễ thấy trong Hệ thống hạt (ví dụ: một nhóm GameObject lặp đi lặp lại một hoạt ảnh nhấp nháy giống hệt nhau). Để tạo các hạt có đồ họa ngẫu nhiên, hãy sử dụng thuộc tính này với một khung hình trên mỗi hàng. Điều này rất hữu ích để phá vỡ tính quy luật trong một hệ thống duy nhất, chẳng hạn như đám mây hoặc để tạo ra các loại mảnh vụn khác nhau. Ví dụ: một khẩu súng có thể bắn ra một cụm đinh, bu lông và các loại đạn khác hoặc hiệu ứng va chạm ô tô có thể phát ra lò xo, sơn ô tô, ốc vít và các mảnh kim loại khác.
+
+**UV flipping** là một cách tuyệt vời để tăng thêm sự đa dạng về hình ảnh cho các hiệu ứng của bạn mà không cần phải tạo thêm họa tiết.
+
+Chế độ **Sprites** cho phép bạn xác định danh sách các Sprites sẽ được hiển thị cho từng hạt, thay vì sử dụng lưới khung thông thường trên một texture. Sử dụng chế độ này cho phép bạn tận dụng được nhiều tính năng của Sprites, chẳng hạn như **Sprite Packer**, các trục tùy chỉnh (**custom pivot**) và các kích thước khác nhau trên mỗi khung Sprite. **Sprite Packer** có thể giúp bạn **chia sẻ Material** giữa các Hệ thống hạt khác nhau, bằng cách điều chỉnh textures, từ đó có thể cải thiện hiệu suất thông qua **Dynamic Batching**. Có một số hạn chế cần lưu ý với chế độ này. Quan trọng nhất, tất cả các Sprite được gắn vào Hệ thống hạt **phải có cùng texture**. Điều này có thể đạt được bằng cách sử dụng **Multiple Mode Sprite** hoặc bằng cách sử dụng **Sprite Packer**. Nếu sử dụng các điểm xoay tùy chỉnh (**custom pivot**) cho từng Sprite, xin lưu ý rằng bạn không thể hòa trộn (blend) giữa các Frames của chúng, vì hình dạng sẽ khác nhau giữa mỗi Frame. Chỉ các Sprite đơn giản được hỗ trợ chứ không phải "**9 slice**". Ngoài ra, hãy lưu ý rằng các **Mesh particles** không hỗ trợ các **custom pivots** hoặc các kích cỡ Sprite khác nhau.
+
+**API**
+```csharp
+ParticleSystem ps = GetComponent<ParticleSystem>();
+ParticleSystem.TextureSheetAnimationModule ts = ps.textureSheetAnimation;
+// Particle System modules do not need to be reassigned back to the system; they are interfaces and not independent objects.
+ts.enabled = true;
+ts.numTilesX = 2;
+ts.rowMode = ParticleSystemAnimationRowMode.Random;
+```
+
+#### Grid mode properties
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysTexSheetAnimModule-0.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+- **Tiles**: Số ô mà Họa tiết được chia thành theo hướng X (ngang) và Y (dọc).
+- **Animation**: Chế độ Hoạt ảnh (Animation) có thể được đặt thành **Whole Sheet** hoặc **Single Row** (nghĩa là mỗi hàng của sheet đại diện cho một chuỗi Hoạt ảnh (**Animation sequence**) riêng biệt).
+- **Time Mode**: Chọn cách tạo khung mẫu (samples frames).
+    - **Lifetime**: Các khung mẫu sử dụng **Animation Curve** trong suốt thời gian tồn tại của hạt.
+    - **Speed**: Khung mẫu dựa trên tốc độ của hạt. Một **speed range** được chỉ định cho tốc độ tối thiểu và tối đa cho việc lựa chọn khung (**frame selection**).
+    - **FPS**: Các khung hình mẫu dựa trên giá trị khung hình trên giây được chỉ định.
+- **Row Mode**: Chọn một hàng từ **Texture sheet** để tạo hoạt ảnh. Thuộc tính này chỉ khả dụng khi chế độ Hoạt ảnh được đặt thành **Single Row**.
+    - **Custom**: Sử dụng một hàng cụ thể của bảng Kết cấu cho hoạt ảnh.
+    - **Random**: Chọn ngẫu nhiên một hàng cho mỗi hạt khi tạo hoạt ảnh.
+    - **Mesh Index**: Chọn một hàng dựa trên **Mesh index** được gán cho một hạt. Điều này hữu ích khi bạn muốn đảm bảo rằng một hạt sử dụng một Mesh cụ thể cũng như là sử dụng cùng một Texture.
+- **Random Row**: Chọn ngẫu nhiên một hàng từ **Texture sheet** để tạo hoạt ảnh. Tùy chọn này chỉ khả dụng khi Animation Mode là **Single Row**.
+- **Row**: Chọn một hàng cụ thể từ **Texture sheet** để tạo hoạt ảnh, Tùy chọn này chỉ khả dụng khi **Single Row** được chọn và **Random Row** bị tắt.
+- **Frame over Time**: Một curve chỉ định cách khung hình hoạt ảnh (**frame of animation**) tăng lên theo thời gian.
+- **Start Frame**: Cho phép bạn chỉ định sẽ bắt đầu từ frame nào (hữu ích cho việc phân chia ngẫu nhiên hoạt ảnh trên mỗi hạt).
+- **Cycles**: Số lần chuỗi hoạt ảnh lặp lại trong suốt vòng đời của hạt.
+- **Affected UV Channels**: Cho phép bạn chỉ định chính xác luồng UV nào bị ảnh hưởng bởi Hệ thống hạt.
+
+#### Sprite mode properties
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysTexSheetAnimModule-1.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+- **Frame over Time**: Một đường cong chỉ định cách khung hình hoạt ảnh tăng lên theo thời gian.
+- **Start Frame**: Cho phép bạn chỉ định khung nào mà hoạt ảnh hạt sẽ bắt đầu (hữu ích cho việc phân chia ngẫu nhiên hoạt ảnh trên mỗi hạt).
+- **Cycles**: Số lần chuỗi hoạt ảnh lặp lại trong suốt vòng đời của hạt.
+- **Enabled UV Channels**: Cho phép bạn chỉ định chính xác luồng UV nào bị ảnh hưởng bởi Hệ thống hạt.
+
+### Các Modules khác...
+
+Tham khảo thêm ở đây: [https://docs.unity3d.com/2021.3/Documentation/Manual/ParticleSystemModules.html](https://docs.unity3d.com/2021.3/Documentation/Manual/ParticleSystemModules.html){:.hvr-forward rel="nofollow" target="_blank"}
