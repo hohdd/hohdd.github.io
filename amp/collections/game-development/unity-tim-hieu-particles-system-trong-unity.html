@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tim-hieu-particles-system-trong-unity",
         "headline": "Tìm hiểu Particle System trong Unity",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2024-01-06 19:27:56 +0700",
+        "dateModified": "2024-01-07 17:10:20 +0700",
         "description": "Tìm hiểu Particle System trong Unity",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 17 mins read </span> · 
+      <span title="reading time">· about 32 mins read </span> · 
       
       <span>
         
@@ -142,6 +142,7 @@
 <li class="toc-entry toc-h2"><a href="#graphics--visual-effects--particle-system" spy-toc="Graphics &gt; Visual effects &gt; Particle System">Graphics &gt; Visual effects &gt; Particle System</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#particle-effect-panel" spy-toc="Particle Effect panel">Particle Effect panel</a></li>
+<li class="toc-entry toc-h3"><a href="#particle-system-api" spy-toc="Particle System API">Particle System API</a></li>
 <li class="toc-entry toc-h3"><a href="#varying-properties-over-time" spy-toc="Varying properties over time">Varying properties over time</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#particle-system-curves-editor" spy-toc="Particle System Curves editor:">Particle System Curves editor:</a></li>
@@ -165,10 +166,19 @@
 <li class="toc-entry toc-h3"><a href="#emission-module" spy-toc="Emission Module">Emission Module</a></li>
 <li class="toc-entry toc-h3"><a href="#shape-module" spy-toc="Shape module">Shape module</a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#sphere-hemisphere" spy-toc="Sphere, Hemisphere">Sphere, Hemisphere</a></li>
-<li class="toc-entry toc-h4"><a href="#cone" spy-toc="Cone">Cone</a></li>
+<li class="toc-entry toc-h4"><a href="#sphere-hình-cầu-hemisphere-bán-cầu" spy-toc="Sphere (Hình cầu), Hemisphere (Bán cầu)">Sphere (Hình cầu), Hemisphere (Bán cầu)</a></li>
+<li class="toc-entry toc-h4"><a href="#cone-hình-nón" spy-toc="Cone (hình nón)">Cone (hình nón)</a></li>
+<li class="toc-entry toc-h4"><a href="#box-hình-hộp" spy-toc="Box (hình hộp)">Box (hình hộp)</a></li>
+<li class="toc-entry toc-h4"><a href="#mesh-meshrenderer-skinnedmeshrenderer-mesh-mode" spy-toc="Mesh, MeshRenderer, SkinnedMeshRenderer (Mesh mode)">Mesh, MeshRenderer, SkinnedMeshRenderer (Mesh mode)</a></li>
+<li class="toc-entry toc-h4"><a href="#sprite-and-sprite-renderer-sprite-mode" spy-toc="Sprite and Sprite Renderer (Sprite mode)">Sprite and Sprite Renderer (Sprite mode)</a></li>
+<li class="toc-entry toc-h4"><a href="#circle-hình-tròn" spy-toc="Circle (hình tròn)">Circle (hình tròn)</a></li>
+<li class="toc-entry toc-h4"><a href="#edge-đường-thẳng" spy-toc="Edge (đường thẳng)">Edge (đường thẳng)</a></li>
+<li class="toc-entry toc-h4"><a href="#donut-bánh-vòng" spy-toc="Donut (Bánh vòng)">Donut (Bánh vòng)</a></li>
+<li class="toc-entry toc-h4"><a href="#rectangle-hình-chữ-nhật" spy-toc="Rectangle (Hình chữ nhật)">Rectangle (Hình chữ nhật)</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h3"><a href="#renderer-module" spy-toc="Renderer module">Renderer module</a></li>
+<li class="toc-entry toc-h3"><a href="#noise-module" spy-toc="Noise module">Noise module</a></li>
 </ul>
 </li>
 </ul><h2 id="graphics--visual-effects--particle-system">
@@ -201,6 +211,27 @@
   <li>
 <strong>Show Only Selected</strong>: Khi được bật, Unity sẽ ẩn tất cả các Hệ thống hạt không được chọn, cho phép bạn tập trung vào việc tạo ra một hiệu ứng duy nhất.</li>
 </ul>
+
+<h3 id="particle-system-api">
+<a class="anchor" href="#particle-system-api" aria-hidden="true" spy-title="Particle System API"><span class="octicon octicon-link"></span></a>Particle System API</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ParticleSystem</span> <span class="n">ps</span>
+<span class="p">{</span>
+    <span class="k">get</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">_CachedSystem</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+            <span class="n">_CachedSystem</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ParticleSystem</span><span class="p">&gt;();</span>
+        <span class="k">return</span> <span class="n">_CachedSystem</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">private</span> <span class="n">ParticleSystem</span> <span class="n">_CachedSystem</span><span class="p">;</span>
+<span class="k">public</span> <span class="kt">bool</span> <span class="n">includeChildren</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+
+<span class="n">ps</span><span class="p">.</span><span class="nf">Play</span><span class="p">(</span><span class="n">includeChildren</span><span class="p">);</span>
+<span class="n">ps</span><span class="p">.</span><span class="nf">Pause</span><span class="p">(</span><span class="n">includeChildren</span><span class="p">);</span>
+<span class="n">ps</span><span class="p">.</span><span class="nf">Stop</span><span class="p">(</span><span class="n">includeChildren</span><span class="p">,</span> <span class="n">ParticleSystemStopBehavior</span><span class="p">.</span><span class="n">StopEmitting</span><span class="p">);</span>
+<span class="c1">// BroadcastMessage, SendMessage, SendMessageUpwards... Instantiate, Destroy, DontDestroyOnLoad...</span>
+</code></pre></div></div>
 
 <h3 id="varying-properties-over-time">
 <a class="anchor" href="#varying-properties-over-time" aria-hidden="true" spy-title="Varying properties over time"><span class="octicon octicon-link"></span></a>Varying properties over time</h3>
@@ -340,51 +371,54 @@ Main Module chứa các thuộc tính chung ảnh hưởng đến toàn bộ h�
 <strong>Main Module</strong>: Start Speed, Start Lifetime, Start Color, Start Size, Stop Action  </div>
 <ul>
   <li>
-<strong>Duration</strong>: Tuổi/Khoảng thời gian hệ thống chạy (khi Start Lifetime vẫn còn thì thấy hệ thống vẫn Play?).</li>
+<strong>Duration (float)</strong>: Tuổi/Khoảng thời gian hệ thống chạy (khi Start Lifetime vẫn còn thì thấy hệ thống vẫn Play?).</li>
   <li>
-<strong>Looping</strong>: Nếu được bật, hệ thống sẽ khởi động lại khi kết thúc để tiếp tục lặp lại chu kỳ.</li>
+<strong>Looping (bool)</strong>: Nếu được bật, hệ thống sẽ khởi động lại khi kết thúc để tiếp tục <strong>lặp lại chu kỳ</strong>.
+    <ul>
+      <li>
+<strong>Prewarm (bool)</strong>: Nếu được bật, hệ thống sẽ được khởi tạo <strong>như thể nó đã hoàn thành</strong> toàn bộ chu trình (chỉ hoạt động nếu Vòng lặp cũng được bật).</li>
+    </ul>
+  </li>
   <li>
-<strong>Prewarm</strong>: Nếu được bật, hệ thống sẽ được khởi tạo như thể nó đã hoàn thành toàn bộ chu trình (chỉ hoạt động nếu Vòng lặp cũng được bật).</li>
+<strong>Start Delay (float)</strong>: <em>Độ trễ tính bằng giây</em> trước khi hệ thống bắt đầu phát hạt.</li>
   <li>
-<strong>Start Delay</strong>: Độ trễ tính bằng giây trước khi hệ thống bắt đầu phát hạt.</li>
+<strong>Start Lifetime (float)</strong>: <em>Thời gian sống</em> (ban đầu) của các hạt.</li>
   <li>
-<strong>Start Lifetime</strong>: Thời gian sống (ban đầu) của các hạt.</li>
-  <li>
-<strong>Start Speed</strong>: Vận tốc ban đầu của mỗi hạt (khoảng bắn xa so với tâm).</li>
+<strong>Start Speed (float)</strong>: Vận tốc ban đầu của mỗi hạt (<em>khoảng bắn xa so với tâm</em>).</li>
   <li>
 <strong>Start Size + 3D Start Size</strong>: kiểm soát Kích thước ban đầu của mỗi hạt.</li>
   <li>
 <strong>Start Rotation + 3D Start Rotation</strong>: Góc quay ban đầu (XYZ) của mỗi hạt theo TRỤC (Start Rotation = Z).</li>
   <li>
-<strong>Flip Rotation</strong>: Làm cho một số hạt Flip, 0-1 càng lớn Flip càng nhiều.</li>
+<strong>Flip Rotation (0-1)</strong>: Làm cho một số hạt <strong>Flip (lật)</strong>, 0-1 càng lớn Flip càng nhiều.</li>
   <li>
-<strong>Start Color</strong>: Màu sắc ban đầu của mỗi hạt (bốc theo số lượng hạt “<strong>Max Particles</strong>”).</li>
+<strong>Start Color</strong>: Màu sắc ban đầu của mỗi hạt (<em>bốc theo số lượng hạt</em> “<strong>Max Particles</strong>”).</li>
   <li>
 <strong>Gravity Modifier</strong>: [<em>TODO</em>] Cân chỉnh giá trị trọng lực được đặt trong cửa sổ Vật lý (Edit &gt; Project Settings &gt; Physics). Giá trị bằng 0 sẽ tắt trọng lực.</li>
   <li>
-<strong>Simulation Space</strong>: Kiểm soát xem các hạt có hoạt hình trong <strong>Local</strong> của parent object hay không (di chuyển cùng parent object), trong <strong>World</strong> hoặc <strong>Custom</strong> (di chuyển với đối tượng tùy chỉnh được chọn).</li>
+<strong>Simulation Space (enum)</strong>: (Không gian mô phỏng) Kiểm soát xem các hạt có hoạt hình trong <strong>Local</strong> của parent object hay không (di chuyển cùng parent object), trong <strong>World</strong> hoặc <strong>Custom</strong> (di chuyển với đối tượng tùy chỉnh được chọn).</li>
   <li>
-<strong>Simulation Speed</strong>: Điều chỉnh tốc độ cập nhật (playback) toàn bộ hệ thống.</li>
+<strong>Simulation Speed (float)</strong>: Điều chỉnh tốc độ cập nhật (playback) toàn bộ hệ thống.</li>
   <li>
-<strong>Delta Time</strong>: lựa chọn giữa <strong>Scaled</strong> (sử dụng giá trị của <em>Time Scale</em> trong <em>Project Settings &gt; Time</em>) và <strong>Unscaled</strong> (bỏ qua <em>Time Scale</em>). Điều này rất hữu ích cho các Hệ thống hạt xuất hiện trên Menu Tạm dừng (khi mà <em>Time Scale = 0</em>).</li>
+<strong>Delta Time (enum)</strong>: lựa chọn giữa <strong>Scaled</strong> (sử dụng giá trị của <em>Time Scale</em> trong <em>Project Settings &gt; Time</em>) và <strong>Unscaled</strong> (bỏ qua <em>Time Scale</em>). Điều này rất hữu ích cho các Hệ thống hạt xuất hiện trên Menu Tạm dừng (khi mà <em>Time Scale = 0</em>).</li>
   <li>
-<strong>Scaling Mode</strong>: Chọn cách áp dụng giá trị scale từ Transform với các tùy chọn <strong>Hierarchy</strong> (theo Parent), <strong>Local</strong> (ignore Parent) và <strong>Shape</strong> (size ko ảnh hưởng, chỉ ảnh hưởng vị trí bắt đầu)</li>
+<strong>Scaling Mode (enum)</strong>: Chọn cách áp dụng giá trị scale từ Transform với các tùy chọn <strong>Hierarchy</strong> (theo Parent), <strong>Local</strong> (ignore Parent) và <strong>Shape</strong> (size ko ảnh hưởng, chỉ ảnh hưởng vị trí bắt đầu)</li>
   <li>
-<strong>Play on Awake</strong>: Nếu được bật, Hệ thống hạt sẽ tự động khởi động khi đối tượng được tạo (ko cần gọi PLAY).</li>
+<strong>Play on Awake (bool)</strong>: Nếu được bật, Hệ thống hạt sẽ tự động khởi động khi đối tượng được tạo (ko cần gọi PLAY).</li>
   <li>
-<strong>Emitter Velocity</strong>: Chọn cách Hệ thống hạt tính toán vận tốc (velocity) được sử dụng bởi các mô-đun <em>Inherit Velocity</em> và <em>Emission</em>. Hệ thống hạt có thể tính toán vận tốc bằng Rigidbody Component nếu có tồn tại hoặc bằng cách theo dõi chuyển động của Transform Component. Nếu không có <em>Rigidbody Component</em> nào tồn tại, hệ thống sẽ sử dụng <em>Transform Component</em> theo mặc định.</li>
+<strong>Emitter Velocity (enum)</strong>: Chọn cách Hệ thống hạt tính toán vận tốc (velocity) được sử dụng bởi các mô-đun <em>Inherit Velocity</em> và <em>Emission</em>. Hệ thống hạt có thể tính toán vận tốc bằng Rigidbody Component nếu có tồn tại hoặc bằng cách theo dõi chuyển động của Transform Component. Nếu không có <em>Rigidbody Component</em> nào tồn tại, hệ thống sẽ sử dụng <em>Transform Component</em> theo mặc định.</li>
   <li>
-<strong>Max Particles</strong>: Số lượng hạt tối đa trong hệ thống cùng một lúc. Nếu đạt đến giới hạn, một số hạt sẽ bị loại bỏ.</li>
+<strong>Max Particles (int)</strong>: Số lượng hạt tối đa trong hệ thống cùng một lúc. Nếu đạt đến giới hạn, một số hạt sẽ bị loại bỏ.</li>
   <li>
-<strong>Auto Random Seed</strong>: Nếu được bật, Hệ thống hạt sẽ trông khác đi mỗi khi được phát. Ngược lại, hệ thống hạt sẽ giống hệt nhau mỗi lần Play.</li>
+<strong>Auto Random Seed (bool)</strong>: Nếu được bật, Hệ thống hạt sẽ trông khác đi mỗi khi được phát. Ngược lại, hệ thống hạt sẽ giống hệt nhau mỗi lần Play.</li>
   <li>
-<strong>Random Seed</strong>: Khi vô hiệu hóa <em>Auto Random Seed</em>, giá trị này được sử dụng để tạo hiệu ứng lặp lại duy nhất.</li>
+<strong>Random Seed (int)</strong>: Khi vô hiệu hóa <em>Auto Random Seed</em>, giá trị này được sử dụng để tạo hiệu ứng lặp lại duy nhất.</li>
   <li>
-<strong>Stop Action</strong>: (Disable, Destroy, Callback). Khi tất cả các hạt thuộc hệ thống đã hoàn thành, hệ thống có thể thực hiện một hành động. Một hệ thống được xác định là đã dừng khi tất cả các hạt của nó đã chết và tuổi của nó đã vượt quá Thời lượng. Đối với <em>hệ thống lặp</em>, điều này chỉ xảy ra nếu hệ thống <em>bị dừng thông qua tập lệnh</em>.</li>
+<strong>Stop Action (enum)</strong>: (Disable, Destroy, Callback). Khi tất cả các hạt thuộc hệ thống đã hoàn thành, hệ thống có thể <strong>thực hiện một hành động</strong>. Một hệ thống được xác định là đã dừng khi tất cả các hạt của nó đã chết và tuổi của nó đã vượt quá Thời lượng. Đối với <em>hệ thống lặp</em>, điều này chỉ xảy ra nếu hệ thống <em>bị dừng thông qua tập lệnh</em>.</li>
   <li>
-<strong>Culling Mode</strong>: (Automatic, Pause And Catch-up, Pause, Always Simulate) Chọn có nên tạm dừng mô phỏng Hệ thống hạt khi các hạt ở ngoài màn hình hay không.</li>
+<strong>Culling Mode (enum)</strong>: (Automatic, Pause And Catch-up, Pause, Always Simulate) Chọn có nên <strong>tạm dừng mô phỏng</strong> Hệ thống hạt khi các hạt ở ngoài màn hình hay không.</li>
   <li>
-<strong>Ring Buffer Mode</strong>: (Disabled, Pause Until Replaced, Loop Until Replaced) Giữ cho các hạt tồn tại cho đến khi chúng đạt đến số lượng Hạt tối đa, tại thời điểm đó các hạt mới sẽ tái chế những hạt cũ nhất, thay vì loại bỏ các hạt khi vòng đời của chúng trôi qua.</li>
+<strong>Ring Buffer Mode (enum)</strong>: (Disabled, Pause Until Replaced, Loop Until Replaced) <strong>Giữ cho các hạt</strong> tồn tại cho đến khi chúng đạt đến số lượng Hạt tối đa, tại thời điểm đó các hạt mới sẽ tái chế những hạt cũ nhất, thay vì loại bỏ các hạt khi vòng đời của chúng trôi qua.</li>
 </ul>
 
 <h3 id="emission-module">
@@ -409,22 +443,22 @@ Các thuộc tính trong mô-đun này ảnh hưởng đến/kiểm soát tốc 
 <p><strong>Properties</strong>:</p>
 <ul>
   <li>
-<strong>Rate over Time</strong>: Số hạt phát ra trong một đơn vị thời gian (mỗi giây).</li>
+<strong>Rate over Time (float)</strong>: Số hạt phát ra trong một đơn vị thời gian (mỗi giây).</li>
   <li>
-<strong>Rate over Distance</strong>: Số lượng hạt phát ra trên một đơn vị khoảng cách di chuyển.</li>
+<strong>Rate over Distance (float)</strong>: Số lượng hạt phát ra trên một đơn vị khoảng cách di chuyển.</li>
   <li>
-<strong>Bursts</strong>: Một “bùng nổ” là một sự kiện SINH THÊM ra các hạt. Các cài đặt này cho phép các hạt được phát ra vào những thời điểm được chỉ định.
+<strong>Bursts (array)</strong>: Một “bùng nổ” là một sự kiện SINH THÊM ra các hạt. Các cài đặt này cho phép các hạt được phát ra vào những thời điểm được chỉ định.
     <ul>
       <li>
-<strong>Time</strong>: Mốc thời gian sẽ Burst (tính bằng giây, sau khi Hệ thống hạt bắt đầu phát).</li>
+<strong>Time (float)</strong>: Mốc thời gian sẽ Burst (tính bằng giây, sau khi Hệ thống hạt bắt đầu phát).</li>
       <li>
-<strong>Count</strong>: Số lượng hạt sẽ Burst.</li>
+<strong>Count (int)</strong>: Số lượng hạt sẽ Burst.</li>
       <li>
-<strong>Cycles</strong>: Số lần Burst liên tiếp.</li>
+<strong>Cycles (int)</strong>: Số lần Burst liên tiếp.</li>
       <li>
-<strong>Interval</strong>: Thời gian (tính bằng giây) giữa mỗi chu kỳ của Burst được kích hoạt.</li>
+<strong>Interval (float)</strong>: Thời gian (tính bằng giây) giữa mỗi chu kỳ của Burst được kích hoạt.</li>
       <li>
-<strong>Probability</strong>: Xác suất để Burst (0-1: 0 chắc chắn ko Burst, 1 chắc chắn sẽ Burst)</li>
+<strong>Probability (float: 0-1)</strong>: Xác suất để Burst (0-1: 0 chắc chắn ko Burst, 1 chắc chắn sẽ Burst)</li>
     </ul>
   </li>
 </ul>
@@ -447,16 +481,16 @@ Các thuộc tính trong mô-đun này ảnh hưởng đến/kiểm soát tốc 
 <span class="n">sh</span><span class="p">.</span><span class="n">mesh</span> <span class="p">=</span> <span class="n">myMesh</span><span class="p">;</span> <span class="c1">// public Mesh myMesh;</span>
 </code></pre></div></div>
 
-<h4 id="sphere-hemisphere">
-<a class="anchor" href="#sphere-hemisphere" aria-hidden="true" spy-title="Sphere, Hemisphere"><span class="octicon octicon-link"></span></a>Sphere, Hemisphere</h4>
+<h4 id="sphere-hình-cầu-hemisphere-bán-cầu">
+<a class="anchor" href="#sphere-h%C3%ACnh-c%E1%BA%A7u-hemisphere-b%C3%A1n-c%E1%BA%A7u" aria-hidden="true" spy-title="Sphere (Hình cầu), Hemisphere (Bán cầu)"><span class="octicon octicon-link"></span></a>Sphere (Hình cầu), Hemisphere (Bán cầu)</h4>
 
 <p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"><br>
-Lưu ý: Hình cầu và bán cầu có cùng tính chất.</p>
+Lưu ý: Hình cầu và bán cầu có cùng tính chất. Phát hạt <strong>đồng đều theo mọi hướng</strong>.</p>
 
 <p><strong>Properties</strong>:</p>
 <ul>
   <li>
-<strong>Shape</strong>: Hình dạng của emission volume.
+<strong>Shape (enum)</strong>: Hình dạng của emission volume.
     <ul>
       <li>
 <strong>Sphere</strong>: Phát hạt đồng đều theo mọi hướng.</li>
@@ -465,87 +499,350 @@ Lưu ý: Hình cầu và bán cầu có cùng tính chất.</p>
     </ul>
   </li>
   <li>
-<strong>Radius</strong>: Bán kính hình tròn của hình đó.</li>
+<strong>Radius (float)</strong>: Bán kính hình tròn của hình đó.</li>
   <li>
-<strong>Radius Thickness</strong>: (Độ dày bán kính) Tỷ lệ volume phát ra các hạt. Giá trị 0 phát ra từ bề mặt ngoài. Giá trị 1 phát ra từ toàn bộ volume. Các giá trị ở giữa sẽ sử dụng một tỷ lệ volume.</li>
+<strong>Radius Thickness (float)</strong>: (Độ dày bán kính) Tỷ lệ volume phát ra các hạt. Giá trị 0 phát ra từ bề mặt ngoài. Giá trị 1 phát ra từ toàn bộ volume. Các giá trị ở giữa sẽ sử dụng một tỷ lệ volume.</li>
   <li>
-<strong>Arc</strong>: góc lượng giác của hình dạng 0-360 độ</li>
+<strong>Arc (0-360)</strong>: góc lượng giác của hình dạng 0-360 độ
+    <ul>
+      <li>
+<strong>Mode (enum)</strong>: (Random, Loop, Ping-Pong, Burst Spread) kiểm soát cách các Hạt sinh ra xung quanh Arc.</li>
+      <li>
+<strong>Spread (0-1)</strong>: sinh ra các Hạt chỉ ở một góc cụ thể around the arc (0 để disable)</li>
+      <li>
+<strong>Speed (float)</strong>: control tốc độ phát.</li>
+    </ul>
+  </li>
   <li>
-<strong>Texture</strong>: [?] Một kết cấu được sử dụng để pha màu và loại bỏ các hạt.</li>
+<strong>Texture</strong>: [?] Một kết cấu được sử dụng để pha màu và loại bỏ các hạt.
+    <ul>
+      <li>
+<strong>Clip Channel (enum)</strong>: Một kênh (<em>Green, Red, Blue, Alpha</em>) từ kết cấu được sử dụng để loại bỏ các hạt.</li>
+      <li>
+<strong>Clip Threshold (0-1)</strong>: (<em>Ngưỡng clip</em>) Khi ánh xạ các hạt tới các vị trí trên kết cấu, hãy loại bỏ bất kỳ điểm ảnh nào có màu sắc giảm xuống dưới ngưỡng này (0-1).</li>
+    </ul>
+  </li>
   <li>
-<strong>Clip Channel</strong>: [?] Một kênh từ kết cấu được sử dụng để loại bỏ các hạt.</li>
+<strong>Color affects Particles (bool)</strong>: (Màu sắc ảnh hưởng đến hạt) Nhân màu hạt với <strong>màu kết cấu</strong>.</li>
   <li>
-<strong>Clip Threshold</strong>: (Ngưỡng clip) Khi ánh xạ các hạt tới các vị trí trên kết cấu, hãy loại bỏ bất kỳ điểm ảnh nào có màu sắc giảm xuống dưới ngưỡng này (0-1).</li>
+<strong>Alpha affects Particles (bool)</strong>: (Alpha ảnh hưởng đến các hạt) Nhân alpha hạt với <strong>alpha kết cấu</strong>.</li>
   <li>
-<strong>Color affects Particles</strong>: (Màu sắc ảnh hưởng đến hạt) Nhân màu hạt với màu kết cấu.</li>
+<strong>Bilinear Filtering (bool)</strong>: (Lọc song tuyến) Khi đọc kết cấu, hãy <em>kết hợp 4 mẫu lân cận</em> để thay đổi <strong>màu hạt mượt mà hơn</strong>, bất kể kích thước kết cấu.</li>
   <li>
-<strong>Alpha affects Particles</strong>: (Alpha ảnh hưởng đến các hạt) Nhân alpha hạt với alpha kết cấu.</li>
+<strong>Position (Vector3)</strong>: Áp dụng phần bù (<em>offset</em>) cho hình dạng bộ phát.</li>
   <li>
-<strong>Bilinear Filtering</strong>: (Lọc song tuyến) Khi đọc kết cấu, hãy kết hợp 4 mẫu lân cận để thay đổi màu hạt mượt mà hơn, bất kể kích thước kết cấu.</li>
+<strong>Rotation (Vector3)</strong>: <em>Xoay</em> hình dạng bộ phát.</li>
   <li>
-<strong>Position</strong>: Áp dụng phần bù (offset) cho hình dạng bộ phát.</li>
+<strong>Scale (Vector3)</strong>: Thay đổi <em>kích thước</em> của hình dạng bộ phát.</li>
   <li>
-<strong>Rotation</strong>: Xoay hình dạng bộ phát.</li>
+<strong>Align to Direction (bool)</strong>: (Căn chỉnh theo hướng) <strong>Định hướng các hạt dựa trên hướng di chuyển ban đầu</strong> của chúng. Điều này có thể hữu ích nếu bạn muốn mô phỏng, chẳng hạn như các mảng sơn ô tô bay ra khỏi thân ô tô khi va chạm.</li>
   <li>
-<strong>Scale</strong>: Thay đổi kích thước của hình dạng bộ phát.</li>
+<strong>Randomize Direction (0-1)</strong>: Random các <strong>hướng hạt ngẫu nhiên</strong>. Đặt 0 để Disable, Đặt 1 để hướng hạt hoàn toàn ngẫu nhiên.</li>
   <li>
-<strong>Align to Direction</strong>: (Căn chỉnh theo hướng) Định hướng các hạt dựa trên hướng di chuyển ban đầu của chúng. Điều này có thể hữu ích nếu bạn muốn mô phỏng, chẳng hạn như các mảng sơn ô tô bay ra khỏi thân ô tô khi va chạm.</li>
+<strong>Spherize Direction (0-1)</strong>: Pha trộn các <strong>hướng của hạt</strong> theo hướng hình cầu, di chuyển ra ngoài từ tâm. Đặt 0 để Disable, Đặt 1 hướng hạt sẽ hướng ra ngoài từ tâm (hoạt động giống hệt như khi Hình dạng được đặt thành Hình cầu Sphere).</li>
   <li>
-<strong>Randomize Direction</strong>: Random các hướng hạt ngẫu nhiên. Khi được đặt thành 0, cài đặt này không có hiệu lực. Khi được đặt thành 1, hướng hạt hoàn toàn ngẫu nhiên.</li>
+<strong>Randomize Position (float+)</strong>: Di chuyển (Position) các hạt theo số lượng ngẫu nhiên, đến giá trị được chỉ định. Đặt 0 để Disable. Bất kỳ giá trị nào khác sẽ áp dụng một số <strong>tính ngẫu nhiên cho vị trí</strong> (Position) sinh sản của các hạt.</li>
   <li>
-<strong>Spherize Direction</strong>: Pha trộn các hướng của hạt theo hướng hình cầu, di chuyển ra ngoài từ tâm. Khi được đặt thành 0, cài đặt này không có hiệu lực. Khi được đặt thành 1, hướng hạt sẽ hướng ra ngoài từ tâm (hoạt động giống hệt như khi Hình dạng được đặt thành Hình cầu Sphere).</li>
-  <li>
-<strong>Randomize Position</strong>: Di chuyển (Position) các hạt theo số lượng ngẫu nhiên, đến giá trị được chỉ định. Khi giá trị này được đặt thành 0, cài đặt này không có hiệu lực. Bất kỳ giá trị nào khác sẽ áp dụng một số tính ngẫu nhiên cho vị trí (Position) sinh sản của các hạt.</li>
-  <li>
-<strong>Transform Tool for Shape</strong>: gizmo, position, rotation, scale. Sử dụng để tinh chỉnh Local Transform của Shape</li>
+<strong>[Transform Tool for Shape]</strong>: gizmo, position, rotation, scale. Sử dụng để tinh chỉnh Local Transform của Shape</li>
 </ul>
 
-<h4 id="cone">
-<a class="anchor" href="#cone" aria-hidden="true" spy-title="Cone"><span class="octicon octicon-link"></span></a>Cone</h4>
+<h4 id="cone-hình-nón">
+<a class="anchor" href="#cone-h%C3%ACnh-n%C3%B3n" aria-hidden="true" spy-title="Cone (hình nón)"><span class="octicon octicon-link"></span></a>Cone (hình nón)</h4>
 
-<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule1.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule1.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"><br>
+Phát ra các <strong>hạt từ đế hoặc thân hình nón</strong>. Các hạt <em>phân kỳ tỷ lệ với khoảng cách của chúng với <strong>đường tâm</strong></em> của hình nón.</p>
 
 <p><strong>Properties</strong>:</p>
 <ul>
   <li>
-<strong>AAA</strong>: BBBB</li>
+<strong>Angle (float:0-90)</strong>: Góc của hình nón. Góc 0 tạo ra một hình trụ trong khi góc 90 tạo ra một đĩa phẳng.</li>
   <li>
-<strong>AAA</strong>: BBBB</li>
+<strong>Radius (float)</strong>: Bán kính hình tròn của hình đó.</li>
   <li>
-<strong>AAA</strong>: BBBB</li>
+<strong>Radius Thickness (0-1)</strong>: Giá trị 0 phát ra các hạt từ bề mặt bên ngoài của hình dạng. Giá trị 1 phát ra các hạt từ toàn bộ khối lượng.</li>
   <li>
-<strong>AAA</strong>: BBBB</li>
+<strong>Length (float)</strong>: Chiều dài của hình nón. Điều này chỉ áp dụng khi thuộc tính <strong>Emit from</strong>: được đặt thành Volume.</li>
   <li>
-<strong>AAA</strong>: BBBB</li>
+<strong>Emit from (enum)</strong>: (Base or Volume) Phần của hình nón để phát ra các hạt từ: Base hoặc Volume.</li>
   <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
-  <li>
-<strong>AAA</strong>: BBBB</li>
+<strong>Texture</strong>: Một kết cấu được sử dụng để pha màu và loại bỏ các hạt.</li>
+  <li><strong>…</strong></li>
 </ul>
+
+<h4 id="box-hình-hộp">
+<a class="anchor" href="#box-h%C3%ACnh-h%E1%BB%99p" aria-hidden="true" spy-title="Box (hình hộp)"><span class="octicon octicon-link"></span></a>Box (hình hộp)</h4>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule2.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"><br>
+Phát ra các hạt từ <strong>cạnh, bề mặt hoặc thân của hình hộp</strong>. Các <strong>hạt di chuyển theo hướng thuận (Z)</strong> của vật thể phát.</p>
+
+<p><strong>Properties</strong>:</p>
+<ul>
+  <li>
+<strong>Emit from: (enum)</strong>: (Edge, Shell, or Volume.) Chọn phần của hộp để phát ra: Edge (cạnh), Shell (vỏ bọc) hoặc Volume (thể tích).</li>
+  <li>
+<strong>Texture</strong>: Một kết cấu được sử dụng để pha màu và loại bỏ các hạt.</li>
+  <li><strong>…</strong></li>
+</ul>
+
+<h4 id="mesh-meshrenderer-skinnedmeshrenderer-mesh-mode">
+<a class="anchor" href="#mesh-meshrenderer-skinnedmeshrenderer-mesh-mode" aria-hidden="true" spy-title="Mesh, MeshRenderer, SkinnedMeshRenderer (Mesh mode)"><span class="octicon octicon-link"></span></a>Mesh, MeshRenderer, SkinnedMeshRenderer (Mesh mode)</h4>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule3.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"><br>
+Phát ra các hạt từ bất kỳ hình dạng Lưới nào.</p>
+
+<p><strong>Properties</strong>:</p>
+<ul>
+  <li>
+<strong>Mesh (Inspector)</strong>: Phát ra các hạt từ bất kỳ hình dạng Lưới tùy ý nào được cung cấp thông qua Inspector.</li>
+  <li>
+<strong>MeshRenderer (Inspector)</strong>: Phát ra các hạt từ tham chiếu đến <strong>Mesh Renderer</strong> <em>của GameObject</em>.</li>
+  <li>
+<strong>SkinnedMeshRenderer (Inspector)</strong>: Phát ra các hạt từ tham chiếu đến <strong>Skinned Mesh Renderer</strong> <em>của GameObject</em>.</li>
+  <li>
+<strong>Type (enum)</strong>: Các hạt được <em>phát ra từ đâu</em>. Chọn <strong>Vertex</strong> để các hạt phát ra từ <strong>các đỉnh</strong>, <strong>Edge</strong> để các hạt phát ra <strong>từ các cạnh</strong>, hoặc <strong>Triangle</strong> để các hạt phát ra từ các <strong>hình tam giác</strong>. Mặc định là <strong>Vertex</strong>.
+    <ul>
+      <li>
+<strong>Mode</strong>: (Random, Loop, Ping-Pong, Burst Spread) kiểm soát cách các Hạt sinh ra.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Single Material (bool)</strong>: Chỉ định xem có phát ra các hạt từ một Lưới phụ cụ thể hay không (được xác định bằng số chỉ mục vật liệu). Nếu được bật, một trường số sẽ xuất hiện, cho phép bạn chỉ định số chỉ mục vật liệu.</li>
+  <li>
+<strong>Use Mesh Colors (bool)</strong>: Điều chỉnh màu hạt bằng <em>Mesh vertex colors</em> hoặc nếu chúng không tồn tại thì sử dụng Sharder Color Property (“Color“ hoặc “TintColor”) từ Material.</li>
+  <li>
+<strong>Normal Offset (float)</strong>: Khoảng cách từ bề mặt Lưới đến các hạt phát ra (theo hướng <strong>pháp tuyến</strong> <em>của bề mặt</em>)</li>
+  <li>
+<strong>Texture</strong>: Một kết cấu được sử dụng để pha màu và loại bỏ các hạt.</li>
+  <li><strong>…</strong></li>
+</ul>
+
+<h4 id="sprite-and-sprite-renderer-sprite-mode">
+<a class="anchor" href="#sprite-and-sprite-renderer-sprite-mode" aria-hidden="true" spy-title="Sprite and Sprite Renderer (Sprite mode)"><span class="octicon octicon-link"></span></a>Sprite and Sprite Renderer (Sprite mode)</h4>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModuleSprite.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"><br>
+Phát ra các hạt từ hình dạng <strong>Sprite</strong> được cung cấp qua Inspector.</p>
+
+<p><strong>Properties</strong>:</p>
+<ul>
+  <li>
+<strong>Type (enum)</strong>: Các hạt được <em>phát ra từ đâu</em>. Chọn <strong>Vertex</strong> để các hạt phát ra từ <strong>các đỉnh</strong>, <strong>Edge</strong> để các hạt phát ra <strong>từ các cạnh</strong>, hoặc <strong>Triangle</strong> để các hạt phát ra từ các <strong>hình tam giác</strong>. Mặc định là <strong>Vertex</strong>.</li>
+  <li>
+<strong>Normal Offset (float)</strong>: Khoảng cách từ bề mặt Lưới đến các hạt phát ra (theo hướng <strong>pháp tuyến</strong> <em>của bề mặt</em>)</li>
+  <li>
+<strong>Texture</strong>: Một kết cấu được sử dụng để pha màu và loại bỏ các hạt.</li>
+  <li><strong>…</strong></li>
+</ul>
+
+<h4 id="circle-hình-tròn">
+<a class="anchor" href="#circle-h%C3%ACnh-tr%C3%B2n" aria-hidden="true" spy-title="Circle (hình tròn)"><span class="octicon octicon-link"></span></a>Circle (hình tròn)</h4>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule4.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
+
+<h4 id="edge-đường-thẳng">
+<a class="anchor" href="#edge-%C4%91%C6%B0%E1%BB%9Dng-th%E1%BA%B3ng" aria-hidden="true" spy-title="Edge (đường thẳng)"><span class="octicon octicon-link"></span></a>Edge (đường thẳng)</h4>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule5.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
+
+<h4 id="donut-bánh-vòng">
+<a class="anchor" href="#donut-b%C3%A1nh-v%C3%B2ng" aria-hidden="true" spy-title="Donut (Bánh vòng)"><span class="octicon octicon-link"></span></a>Donut (Bánh vòng)</h4>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule6.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
+
+<h4 id="rectangle-hình-chữ-nhật">
+<a class="anchor" href="#rectangle-h%C3%ACnh-ch%E1%BB%AF-nh%E1%BA%ADt" aria-hidden="true" spy-title="Rectangle (Hình chữ nhật)"><span class="octicon octicon-link"></span></a>Rectangle (Hình chữ nhật)</h4>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/ShapeModule7.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"></p>
+
+<h3 id="renderer-module">
+<a class="anchor" href="#renderer-module" aria-hidden="true" spy-title="Renderer module"><span class="octicon octicon-link"></span></a>Renderer module</h3>
+
+<p><img src="https://docs.unity3d.com/2021.3/Documentation/uploads/Main/renderer-module-view.png" alt="TEXT" class="w3-image cursor-zoom" onclick="onZoomImg(this)"><br>
+Các cài đặt của mô-đun này xác định cách <strong>Hình ảnh hoặc Mesh</strong> của hạt được biến đổi (<strong>transformed</strong>), tô bóng, bị che mờ (<strong>shaded</strong>) và lấn át (<strong>overdrawn</strong>) bởi các hạt khác.</p>
+
+<p>Sử dụng Renderer module để chọn giữa một số chế độ đồ họa Billboard 2D (<strong>PHẲNG</strong>) và chế độ Lưới (<strong>3D Mesh</strong>).</p>
+
+<p><strong>Mesh 3D</strong> mang lại cho các hạt tính xác thực cao hơn khi chúng đại diện cho các GameObject rắn, chẳng hạn như đá, đồng thời cũng có thể cải thiện cảm giác về khối lượng cho các đám mây, quả cầu lửa và chất lỏng.</p>
+
+<p><strong>Billboards</strong> phù hợp với các mục đích sử dụng cụ thể:</p>
+<ul>
+  <li>Chế độ <strong>Billboard</strong> rất hữu ích cho các phần tử biểu thị volume trông giống nhau từ bất kỳ hướng nào (chẳng hạn như các đám mây).</li>
+  <li>Chế độ <strong>Horizontal Billboard</strong> rất hữu ích khi các hạt bao phủ mặt đất (chẳng hạn như chỉ báo mục tiêu và hiệu ứng phép thuật) hoặc khi chúng là những vật thể phẳng bay hoặc trôi song song với mặt đất.</li>
+  <li>Chế độ <strong>Vertical Billboard</strong> giữ cho mỗi hạt thẳng đứng và vuông góc với mặt phẳng (sàn) XZ, nhưng cho phép nó xoay quanh trục y của nó. Điều này có thể hữu ích khi bạn đang sử dụng <strong>orthographic Camera</strong> và muốn kích thước hạt luôn ổn định.</li>
+  <li>Chế độ <strong>Stretched Billboard</strong> làm nổi bật tốc độ rõ ràng của các hạt theo cách tương tự như kỹ thuật “kéo dài và ép” (<em>stretch and squash</em>) được các nhà làm phim hoạt hình truyền thống sử dụng. Lưu ý rằng ở chế độ này, các hạt được căn chỉnh đối diện với Máy ảnh và cũng được căn chỉnh theo vận tốc của chúng. Sự căn chỉnh này xảy ra bất kể giá trị của <em>Velocity Scale</em> - ngay cả khi <em>Velocity Scale</em> được đặt thành 0, các hạt trong chế độ này vẫn căn chỉnh theo vận tốc (velocity).</li>
+</ul>
+
+<p>Khi bạn sử dụng chế độ kết xuất <strong>Billboard</strong>, bạn có thể sử dụng <strong>Normal Direction</strong> để tạo bóng hình cầu trên các Billboard hình chữ nhật phẳng. Điều này có thể giúp tạo ảo giác về các hạt 3D nếu bạn sử dụng <strong>Material</strong> và áp dụng ánh sáng cho các hạt của mình.</p>
+
+<p><strong>API</strong>:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ps</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ParticleSystem</span><span class="p">&gt;();</span>
+<span class="n">psr</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">ParticleSystemRenderer</span><span class="p">&gt;();</span>
+<span class="n">psr</span><span class="p">.</span><span class="n">mesh</span> <span class="p">=</span> <span class="n">Resources</span><span class="p">.</span><span class="n">GetBuiltinResource</span><span class="p">&lt;</span><span class="n">Mesh</span><span class="p">&gt;(</span><span class="s">"Capsule.fbx"</span><span class="p">);</span>
+<span class="k">public</span> <span class="n">ParticleSystemRenderMode</span> <span class="n">renderMode</span> <span class="p">=</span> <span class="n">ParticleSystemRenderMode</span><span class="p">.</span><span class="n">Billboard</span><span class="p">;</span>
+<span class="n">psr</span><span class="p">.</span><span class="n">renderMode</span> <span class="p">=</span> <span class="n">renderMode</span><span class="p">;</span>
+<span class="n">psr</span><span class="p">.</span><span class="n">lengthScale</span> <span class="p">=</span> <span class="n">lengthScale</span><span class="p">;</span>
+<span class="n">psr</span><span class="p">.</span><span class="n">velocityScale</span> <span class="p">=</span> <span class="n">velocityScale</span><span class="p">;</span>
+<span class="c1">// More: https://docs.unity3d.com/2021.3/Documentation/ScriptReference/ParticleSystemRenderer.html</span>
+</code></pre></div></div>
+
+<p><strong>Properties</strong>:</p>
+<ul>
+  <li>
+<strong>Render Mode (enum)</strong>: Cách Unity tạo ra hình ảnh được hiển thị từ hình ảnh đồ họa (hoặc Lưới)
+    <ul>
+      <li>
+<strong>Billboard</strong>: Unity hiển thị các hạt dưới dạng biển quảng cáo (<strong>PHẲNG</strong>) và chúng hướng về hướng bạn chỉ định trong <strong>Render Alignment</strong>.
+        <ul>
+          <li>
+<strong>Normal Direction (0-1)</strong>: Độ lệch của các tiêu chuẩn ánh sáng mà Unity sử dụng cho đồ họa hạt. Giá trị 1 hướng các điểm chuẩn vào Máy ảnh, giá trị 0 hướng chúng về phía giữa màn hình.</li>
+          <li>
+<strong>Min Particle Size (float+)</strong>: Kích thước hạt nhỏ nhất (bất kể các cài đặt khác), được biểu thị bằng một phần kích thước khung nhìn.</li>
+          <li>
+<strong>Max Particle Size (float+)</strong>: Kích thước hạt lớn nhất (bất kể các cài đặt khác), được biểu thị bằng một phần kích thước khung nhìn.</li>
+          <li>
+<strong>Allow Roll (bool)</strong>: (Cho phép cuộn)Kiểm soát xem các hạt hướng về phía máy ảnh có thể xoay quanh trục Z của máy ảnh hay không. Việc tắt tính năng này có thể đặc biệt hữu ích cho VR các ứng dụng, trong đó cuộn HMD (Màn hình gắn trên đầu) có thể gây ra hiện tượng quay hạt không mong muốn cho Hệ thống hạt.</li>
+          <li>
+<strong>Shadow Bias (float)</strong>: Di chuyển bóng dọc theo hướng ánh sáng. Điều này loại bỏ các tạo tác tạo bóng (shadowing artifacts) do thể tích (volume) xấp xỉ của biển quảng cáo (Billboard) gây ra.</li>
+        </ul>
+      </li>
+      <li>
+<strong>Stretched Billboard</strong>: Các hạt hướng về phía Camera với nhiều tùy chọn mở rộng quy mô có thể được áp dụng.
+        <ul>
+          <li>
+<strong>Camera Scale (float)</strong>: Kéo giãn các hạt theo chuyển động của Camera. Đặt giá trị này thành 0 để tắt tính năng kéo dài chuyển động của Máy ảnh.</li>
+          <li>
+<strong>Velocity Scale (float)</strong>: Kéo dài các hạt tỷ lệ thuận với tốc độ của chúng. Đặt giá trị này thành 0 để tắt tính năng kéo dài dựa trên tốc độ.</li>
+          <li>
+<strong>Length Scale (float)</strong>: Kéo giãn các hạt tỷ lệ với kích thước hiện tại của chúng dọc theo hướng vận tốc của chúng. Đặt giá trị này thành 0 sẽ làm cho các hạt biến mất, có độ dài thực tế bằng 0.</li>
+          <li>
+<strong>Freeform Stretching (bool)</strong>: Cho biết liệu các hạt có nên sử dụng sự kéo dài dạng tự do hay không. Với đặc tính kéo dãn này, các hạt không trở nên mỏng khi bạn nhìn trực diện vào chúng.</li>
+          <li>
+<strong>Rotate With Stretch (bool)</strong>: Cho biết có nên xoay các hạt hay không dựa trên hướng chúng kéo dài. Điều này được thêm vào bên trên phép quay hạt khác.</li>
+        </ul>
+      </li>
+      <li>
+<strong>Horizontal Billboard</strong>: Mặt phẳng hạt song song với mặt phẳng “sàn” XX.</li>
+      <li>
+<strong>Vertical Billboard</strong>: Hạt đứng thẳng trên trục Y của thế giới nhưng quay mặt về phía Camera.</li>
+      <li>
+<strong>Mesh</strong>: Unity kết xuất hạt từ Lưới 3D (<strong>Mesh 3D</strong>) thay vì Bảng quảng cáo (<strong>PHẲNG</strong>). Có thể <strong>thêm nhiều Mesh vào List</strong> và <strong>chọn Trọng Số</strong> lựa chọn mesh.
+        <ul>
+          <li>
+<strong>Mesh Distribution (enum)</strong>: Chỉ định <strong>phương thức</strong> mà Unity sử dụng để gán ngẫu nhiên các mắt lưới cho các hạt.
+            <ul>
+              <li>
+<strong>Uniform Random</strong>: Unity gán ngẫu nhiên các mắt lưới cho các hạt với trọng số đều nhau?</li>
+              <li>
+<strong>Non-uniform Random</strong>: Unity gán ngẫu nhiên các mắt lưới cho các hạt có trọng số do người dùng xác định cho mỗi mắt lưới.</li>
+            </ul>
+          </li>
+          <li>
+<strong>Mesh Weightings (float+)</strong>: Các trọng số của Mesh 3D mà Unity sẽ lựa chọn.</li>
+        </ul>
+      </li>
+      <li>
+<strong>None</strong>: Unity không hiển thị bất kỳ hạt nào. Điều này có thể hữu ích cùng với mô-đun <strong>Trails module</strong>, nếu bạn chỉ muốn hiển thị các đường nhỏ và <strong>ẩn mọi kết xuất hạt mặc định</strong>.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Material</strong>: Vật liệu mà Unity sử dụng để hiển thị các hạt.</li>
+  <li>
+<strong>Trail Material</strong>: Vật liệu mà Unity sử dụng để hiển thị các <strong>particle trails</strong> (chỉ khả dụng khi <strong>Trails module</strong> được bật).</li>
+  <li>
+<strong>Sort Mode (enum)</strong>: Thứ tự Unity vẽ (draws) và phủ (overlays) các hạt bằng Hệ thống hạt.
+    <ul>
+      <li>
+<strong>None</strong>: Khi cài đặt này được bật, Unity sẽ không sắp xếp các hạt.</li>
+      <li>
+<strong>By Distance</strong>: Sắp xếp các hạt trong hệ thống dựa trên khoảng cách đến Camera đang hoạt động. Unity hiển thị các hạt ở gần Camera hơn trên những hạt ở xa hơn. Thứ tự của các hạt không thay đổi khi bạn xoay camera với cài đặt này.</li>
+      <li>
+<strong>Oldest in Front</strong>: Unity kết xuất các hạt tồn tại lâu nhất ở phía trước Hệ thống hạt.</li>
+      <li>
+<strong>Youngest in Front</strong>: Unity kết xuất các hạt tồn tại trong thời gian ngắn nhất ở phía trước Hệ thống hạt.</li>
+      <li>
+<strong>By Depth</strong>: Unity kết xuất các hạt dựa trên khoảng cách của chúng với mặt phẳng gần của máy ảnh. Thứ tự của các hạt có thể thay đổi khi bạn xoay camera với cài đặt này.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Sorting Fudge (float)</strong>: Sự thiên vị (bias) của thứ tự sắp xếp Hệ thống hạt. Giá trị thấp hơn làm tăng cơ hội tương đối để Unity thu hút Hệ thống hạt qua các GameObject minh bạch khác, bao gồm cả các Hệ thống hạt khác. Cài đặt này chỉ ảnh hưởng đến toàn bộ Hệ thống hạt xuất hiện trong cảnh - nó không thực hiện việc sắp xếp các hạt riêng lẻ trong một hệ thống.</li>
+  <li>
+<strong>Render Alignment (enum)</strong>: Thuộc tính này xác định hướng mà bảng quảng cáo dạng hạt (billboards) hướng về phía trước (Mesh Mode cũng có thuộc tính này).
+    <ul>
+      <li>
+<strong>View</strong>: Các hạt đối mặt với mặt phẳng Camera.</li>
+      <li>
+<strong>World</strong>: Các hạt thẳng hàng với trục thế giới.</li>
+      <li>
+<strong>Local</strong>: Các hạt căn chỉnh theo thành phần Transform GameObject của họ.</li>
+      <li>
+<strong>Facing</strong>: Các hạt hướng về vị trí trực tiếp được xác định bởi thành phần Transform trong GameObject của Camera đang hoạt động.</li>
+      <li>
+<strong>Velocity</strong>: Các hạt cùng hướng với vectơ vận tốc của chúng.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Flip (Vector3)</strong>: Phản chiếu một tỷ lệ các hạt trên các trục được chỉ định. Giá trị cao hơn sẽ lật được (Flip) nhiều hạt hơn.</li>
+  <li>
+<strong>Enable Mesh GPU Instancing (bool)</strong>: Thuộc tính này chỉ khả dụng khi sử dụng <strong>Mesh Mode</strong>. Thuộc tính này kiểm soát liệu Unity có hiển thị Hệ thống hạt bằng cách sử dụng <strong>GPU Instancing</strong> hay không. Điều này đòi hỏi phải sử dụng một <strong>shader</strong> tương thích (<strong>Material:Particles/Standard Surface</strong>).</li>
+  <li>
+<strong>Pivot (Vector3)</strong>: Sửa đổi điểm xoay trung tâm cho các hạt quay. Giá trị là hệ số nhân của kích thước hạt.</li>
+  <li>
+<strong>Visualize Pivot (bool)</strong>: Xem trước các điểm trục của hạt trong Chế độ xem Scence (Editor sẽ draw điểm Pivot trong SceneView).</li>
+  <li>
+<strong>Masking (enum)</strong>: Đặt cách các hạt được Hệ thống hạt hiển thị hoạt động khi chúng tương tác với Sprite Mặt nạ.
+    <ul>
+      <li>
+<strong>No Masking</strong>: Hệ thống hạt không tương tác với bất kỳ Mặt nạ Sprite nào trong hiện trường. Đây là tùy chọn mặc định.</li>
+      <li>
+<strong>Visible Inside Mask</strong>: Các hạt có thể nhìn thấy được ở nơi Sprite Mask phủ lên chúng, nhưng không thể nhìn thấy bên ngoài nó.</li>
+      <li>
+<strong>Visible Outside Mask</strong>: Các hạt có thể nhìn thấy bên ngoài Sprite Mask nhưng không nhìn thấy được bên trong nó. Mặt nạ Sprite ẩn các phần của hạt mà nó phủ lên.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Apply Active Color Space (bool)</strong>: Khi kết xuất trong Không gian màu tuyến tính (<em>Linear Color Space</em>), hệ thống sẽ chuyển đổi các màu hạt từ Không gian Gamma (<em>Gamma Space</em>) trước khi tải chúng lên GPU.</li>
+  <li>
+<strong>Custom Vertex Streams (bool)</strong>: Định cấu hình các thuộc tính hạt nào có sẵn trong Vertex <strong>Shader</strong> của Material. Nếu được chọn thì có thể Add thêm cái thuộc tính vào <strong>Shader</strong>.</li>
+  <li>
+<strong>Cast Shadows (enum)</strong>: Nếu thuộc tính này được bật, Hệ thống hạt sẽ tạo bóng khi Ánh sáng tạo bóng chiếu vào nó.
+    <ul>
+      <li>
+<strong>On</strong>: Bật bóng cho Hệ thống hạt này.</li>
+      <li>
+<strong>Off</strong>: Vô hiệu hóa bóng cho Hệ thống hạt này.</li>
+      <li>
+<strong>Two-Sided</strong>: Tùy chọn này cho phép đổ bóng từ hai phía của Lưới (Billboard cũng là Mesh PHẲNG). Việc loại bỏ mặt sau (Backface culling) không được tính đến khi thuộc tính này được bật.</li>
+      <li>
+<strong>Shadows Only</strong>: Chọn Chỉ bóng (Shadows) để làm cho bóng hiển thị, bản thân Lưới thì không.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Motion Vectors (enum)</strong>: Đặt xem có sử dụng vectơ chuyển động để theo dõi chuyển động trên mỗi pixel, không gian màn hình của thành phần Chuyển đổi của Hệ thống hạt này từ khung hình này sang khung hình tiếp theo hay không. <strong>Lưu ý</strong>: Không phải tất cả nền tảng đều hỗ trợ vectơ chuyển động.
+    <ul>
+      <li>
+<strong>Camera Motion Only</strong>: Chỉ sử dụng chuyển động của Camera để theo dõi chuyển động.</li>
+      <li>
+<strong>Per Object Motion</strong>: Sử dụng một thẻ cụ thể (specific pass) để theo dõi chuyển động cho Trình kết xuất này (Renderer).</li>
+      <li>
+<strong>Force No Motion</strong>: Không theo dõi chuyển động.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Receive Shadows (bool)</strong>: Quyết định xem các hạt trong hệ thống này có thể nhận bóng <strong>từ các nguồn khác</strong> hay không. Chỉ những vật liệu mờ đục mới có thể nhận được bóng.</li>
+  <li>
+<strong>Sorting Layer ID (list)</strong>: Tên của lớp sắp xếp của Trình kết xuất (kiểu như Z-Index, liên quan đến Sprites, Renderer).</li>
+  <li>
+<strong>Order in Layer (int)</strong>: Thứ tự của Trình kết xuất này trong một lớp sắp xếp (<strong>Sorting Layer</strong>, Z-Index of Z-Index).</li>
+  <li>
+<strong>Light Probes (enum)</strong>: Chế độ nội suy ánh sáng dựa trên đầu dò (Probe-based, <strong>ProbesLight probes</strong> lưu trữ thông tin về cách ánh sáng truyền qua không gian). [TODO: Off, Blend Probes, Use Proxy Volume, Custom Provided]</li>
+  <li>
+<strong>Reflection Probes (enum)</strong>: Nếu được bật (khác Off) và nếu có đầu dò phản chiếu (<em>reflection probes</em>) trong Scence, Unity sẽ chỉ định kết cấu phản chiếu (<em>reflection texture</em>) từ đầu dò phản chiếu (reflection probes) gần nhất cho GameObject này và đặt kết cấu làm biến thống nhất <em>Shader</em> tích hợp sẵn (built-in Shader).</li>
+  <li>
+<strong>Anchor Override</strong>: một Transform (cung cấp từ Inspector) xác định vị trí nội suy khi bạn sử dụng hệ thống Đầu dò ánh sáng (<strong>Light Probe</strong>) hoặc Đầu dò phản xạ (<strong>Reflection Probe</strong>).</li>
+</ul>
+
+<h3 id="noise-module">
+<a class="anchor" href="#noise-module" aria-hidden="true" spy-title="Noise module"><span class="octicon octicon-link"></span></a>Noise module</h3>
+
 
       </div>
 
