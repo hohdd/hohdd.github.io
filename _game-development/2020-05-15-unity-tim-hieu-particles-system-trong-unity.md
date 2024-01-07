@@ -428,3 +428,34 @@ psr.velocityScale = velocityScale;
 
 ### Noise module
 
+![TEXT](https://docs.unity3d.com/2021.3/Documentation/uploads/Main/PartSysNoiseModule.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+Thêm nhiễu loạn (turbulence) vào chuyển động của hạt bằng mô-đun này.
+
+Thêm Noise vào các hạt của bạn là một cách đơn giản và hiệu quả để tạo ra các patterns và hiệu ứng thú vị. Ví dụ, hãy tưởng tượng than hồng từ ngọn lửa di chuyển xung quanh như thế nào hoặc khói cuộn tròn như thế nào khi nó di chuyển. Noise tần số cao, mạnh có thể được sử dụng để mô phỏng than hồng cháy, trong khi Noise tần số thấp, nhẹ sẽ phù hợp hơn để mô phỏng hiệu ứng khói.
+
+Để kiểm soát tối đa Noise, bạn có thể bật tùy chọn **Separate Axes**. Điều này cho phép bạn kiểm soát cường độ (**strength**) và ánh xạ lại (**remapping**) trên từng trục (**axis**) một cách độc lập.
+
+**API**:
+```csharp
+ParticleSystem ps = GetComponent<ParticleSystem>();
+ParticleSystem.NoiseModule noise = ps.noise;
+noise.enabled = true;
+noise.strength = 1.0f;
+noise.quality = ParticleSystemNoiseQuality.High;
+```
+
+**Properties**:
+- **Separate Axes (bool)**: (Trục riêng biệt) Kiểm soát cường độ và ánh xạ lại độc lập trên từng trục.
+- **Strength**: (cường độ) Một đường cong (curve) xác định **mức độ ảnh hưởng của Noise** lên một hạt trong suốt vòng đời của nó. **Giá trị cao** hơn sẽ làm cho các hạt di chuyển **nhanh hơn và xa hơn**.
+- **Frequency**: Kiểm soát **tần suất** các hạt *thay đổi hướng di chuyển* của chúng và *mức độ thay đổi hướng đột ngột* đó. Giá trị thấp tạo ra tiếng ồn nhẹ nhàng, êm ái và giá trị cao tạo ra tiếng ồn thay đổi nhanh chóng.
+- **Scroll Speed**: Di chuyển trường nhiễu theo thời gian để gây ra chuyển động hạt thất thường và khó lường hơn.
+- **Damping**: (Giảm xóc) Khi được bật, cường độ (strength) tỷ lệ thuận với tần số (frequency). Việc buộc các giá trị này lại với nhau có nghĩa là Noise có thể được điều chỉnh tỷ lệ (scaled) trong khi vẫn duy trì hoạt động tương tự (same behaviour) nhưng ở kích thước (size) khác.
+- **Octaves**: (Quãng tám) Chỉ định số lượng lớp nhiễu (layers) chồng chéo (overlapping) được kết hợp để tạo ra giá trị nhiễu cuối cùng. Sử dụng nhiều lớp hơn sẽ mang lại Noise phong phú hơn, thú vị hơn nhưng làm tăng đáng kể chi phí hiệu suất (performance cost).
+- **Octave Multiplier**: (Hệ số quãng tám) Đối với mỗi lớp nhiễu bổ sung, hãy giảm cường độ (strength) theo tỷ lệ này.
+- **Octave Scale**: (Thang quãng tám) Đối với mỗi lớp nhiễu bổ sung, hãy điều chỉnh tần số (frequency) theo hệ số nhân này.
+- **Quality (enum)**: [Low, Medium, High] Cài đặt chất lượng thấp hơn sẽ giảm đáng kể chi phí hiệu suất (performance cost) nhưng cũng ảnh hưởng đến mức độ thú vị của Noise. Hãy sử dụng chất lượng thấp nhất nhưng vẫn mang lại cho bạn hành vi mong muốn.
+- **Remap (bool)**: Ánh xạ lại các giá trị nhiễu cuối cùng vào một phạm vi khác.
+    - **Remap Curve**: Đường cong mô tả cách biến đổi các giá trị nhiễu cuối cùng. Ví dụ: bạn có thể sử dụng điều này để chọn ra các phạm vi thấp hơn của trường nhiễu và bỏ qua các phạm vi cao hơn bằng cách tạo một đường cong bắt đầu ở mức cao và kết thúc ở mức 0.
+- **Position Amount**: Một hệ số nhân để kiểm soát mức độ tiếng ồn **ảnh hưởng đến vị trí** hạt.
+- **Rotation Amount**: Một hệ số nhân để kiểm soát mức độ tiếng ồn **ảnh hưởng đến chuyển động quay** của hạt, tính bằng **độ trên giây**.
+- **Size Amount**: Một hệ số nhân để kiểm soát mức độ tiếng ồn **ảnh hưởng đến kích thước** hạt.
