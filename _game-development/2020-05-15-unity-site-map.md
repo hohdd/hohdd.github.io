@@ -61,7 +61,8 @@ date: 2020-05-15 14:26:14 +0700
 
 ### Unity - Investigate
 
-- Unity - Investigate (T) - Tìm hiểu Particle System trong Unity
+- Unity - Investigate (I) - Tìm hiểu Particle System trong Unity
+- Unity - Investigate (I) - Tìm hiểu Probuilder
 
 ### Unity - Practice
 
