@@ -113,6 +113,8 @@ Vẽ 2D với các điểm (**điểm kiểm soát**), khi Enter, Probuilder s�
 
 {% msg info Bật hoặc tắt tùy chọn <strong>Flip Normals</strong> để chuyển đổi <i>xem Camera hiển thị bên trong hay bên ngoài của Lưới</i>. %}
 
+{% msg info MẸO: Chọn Face Mode > sau đó chuyển sang Edge Mode sẽ Select luôn các Cạnh bao quanh Mặt vừa chọn %}
+
 #### Cut tool
 
 Sử dụng công cụ Cut (***chỉ available trong Element Mode***) để **chia nhỏ các mặt Lưới** một cách chính xác. Để cắt một hình trên Lưới, bạn kích hoạt công cụ Cắt, cho phép bạn **xác định hình dạng cắt bằng các điểm**.
@@ -131,128 +133,320 @@ Khi bạn tạo một bề mặt mới, công cụ Cut sẽ tạo ra các cạnh
 
 {% msg info Giữ Ctrl khi Drag (kéo) hoặc Extrude (đùn) để Snapping %}
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Bevel.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Bevel (Edge) Góc xiên
-- **Edit Mode**: Edges
-- **Công dụng**: chia (các) cạnh đã chọn thành hai cạnh, với một mặt mới ở giữa.
-- **Note**: Chỉnh sửa Distance (option của Bevel) trước khi thực hiện action.
-- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Bevel Edges)
+#### Cho biết Trạng Thái
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Bevel.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Bevel (Face) Góc xiên
-- **Edit Mode**: Faces
-- **Công dụng**: thực hiện **hành động Bevel Edge** trên tất cả các cạnh của (các) mặt được chọn.
-- **Note**: Chỉnh sửa Distance (option của Bevel) trước khi thực hiện action.
-- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Bevel Edges)
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/HandleAlign_Local.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Handle (Orientation) - Hướng Gimoz
+- **Edit Mode**: ALL (Object, Vertex, Edge, Face)
+- **Công dụng**: chuyển đổi giữa ba trạng thái: **Global**, **Local**, hoặc **Normal**.
+- **Note**: Phím tắt P conflict với "Edit Prefab in context" > đổi "Edit Prefab in context" sang **Shift + P** (vì Alt+P là khóa Inspector/mở Inspector ở Window khác)
+- **Phím tắt**: **P** (Tools > ProBuilder > Interaction > Toggle Handle Orientation)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Bridge.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Bridge Edges (Edge)
-- **Edit Mode**: Edges (phải chọn 2 Cạnh)
-- **Công dụng**: tạo ra một **bề mặt mới** giữa hai cạnh được chọn.
-- **Note**: Theo mặc định, hành động này chỉ có thể kết nối hai cạnh mở (nghĩa là không có mặt nào ở mặt mở hoặc mặt tự do).
-- **Phím tắt**: Alt/Opt+B (Tools > ProBuilder > Geometry > Bridge Edges)
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_Rect_Intersect.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Rect - Elements nào sẽ được chọn?
+- **Edit Mode**: Edge + Face
+- **Công dụng**: để chọn xem lựa chọn kéo chỉ nên chọn các phần tử hoàn toàn bên trong hình chữ nhật kéo hay cả các phần tử nằm một phần bên trong hình chữ nhật kéo.
+- **Note**: Giống Orientation, Action này cho biết Stage của "**Drag To Select**", với **Complete** thì Mặt/Cạnh được chọn phải nằm hoàn toàn trong Rect (Drag), với **Intersect** thì chỉ yêu cầu có 1 phần là sẽ được chọn.
+- **Phím tắt**: N/A (Tools > ProBuilder > Interaction > Toggle Drag Rect Mode)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/CenterPivot.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Center Pivot (Object)
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_SelectHidden-ON.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select Hidden (All) - Có chọn Elements Hidden không?
+- **Edit Mode**: ALL (Object, Element)
+- **Công dụng**: để xác định xem ProBuilder chọn hay bỏ qua các phần tử ẩn khi bạn thực hiện lựa chọn kéo.
+- **Note**: Nhấn vào nút Select Hidden để chuyển đổi giữa hai trạng thái: On hoặc Off.
+- **Phím tắt**: N/A (Tools > ProBuilder > Interaction > Toggle Select Back Faces)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_ShiftDifference.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Shift (Elements) - Điều gì xảy ra khi khi sử dụng Shift
+- **Edit Mode**: Element
+- **Công dụng**: để thay đổi điều xảy ra với vùng chọn khi bạn Shift+Click vào một phần tử hoặc giữ Shift trong khi kéo-chọn.
+- **Note**: Bấm vào nút Shift để chuyển đổi giữa ba trạng thái: Thêm, Xóa hoặc Khác biệt (Add, Remove, or Difference).
+- **Phím tắt**: N/A (Tools > ProBuilder > Interaction > Toggle Drag Selection Mode)
+
+#### Lựa chọn phần tử
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_Grow.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Grow Selection (Elements) - Tăng vùng chọn
+- **Edit Mode**: Element (Vertex, Edge, Face)
+- **Công dụng**: mở rộng vùng chọn ra bên ngoài tới các mặt, cạnh hoặc đỉnh liền kề.
+- **Note**: Các Options (Restrict To Angle, Max Angle, Iterative) ảnh hưởng đến việc sẽ có bao nhiêu vùng chọn được mở rộng.
+- **Phím tắt**: Alt/Opt+G (Tools > ProBuilder > Selection > Grow Selection)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_Shrink.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Shrink Selection (Elements) - Thu hẹp vùng chọn
+- **Edit Mode**: Element
+- **Công dụng**: sẽ loại bỏ các phần tử trên chu vi của vùng chọn hiện tại.
+- **Note**: Shrink Selection thực hiện hành động ngược lại với hành động Grow Selection.
+- **Phím tắt**: Alt/Opt+Shift+G (Tools > ProBuilder > Selection > Shrink Selection)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_SelectByVertexColor.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select by Colors (Elements) - Chọn theo Màu sắc
+- **Edit Mode**: Element (Vertex, Edge, Face)
+- **Công dụng**: sẽ chọn tất cả các mặt trên đối tượng này có cùng màu đỉnh (**vertex color**) với mặt được chọn. Bạn cũng có thể mở rộng lựa chọn sang các GameObject khác nếu bạn tắt **Current Selection option** (được bật mặc định).
+- **Note**: Ngay cả khi màu của đỉnh hiện không hiển thị (ví dụ: nếu nó có Vật liệu không hiển thị màu, như *checkerboard Material*), các mặt màu vẫn được chọn.
+- **Phím tắt**: N/A (Tools > ProBuilder > Selection > Select Vertex Color)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_SelectByMaterial.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select by Material (Face) - Chọn theo Vật liệu
+- **Edit Mode**: Face
+- **Công dụng**: chọn tất cả các mặt trên đối tượng này có cùng Chất liệu với (các) mặt được chọn. Bạn cũng có thể mở rộng lựa chọn sang các GameObject khác nếu bạn tắt tùy chọn Lựa chọn hiện tại.
+- **Note**: Hành động này rất hữu ích nếu bạn **muốn thay thế tất cả Vật liệu** trên một đối tượng phức tạp.
+- **Phím tắt**: N/A (Tools > ProBuilder > Selection > Select Material)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_Loop.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select Edge Loop (Edge) - Chọn Cạnh khép kín
+- **Edit Mode**: Edge
+- **Công dụng**: sẽ chọn một vòng cạnh từ mỗi cạnh được chọn. Vòng lặp cạnh là một chuỗi các cạnh được kết nối trực tiếp.
+- **Note**: **Edge Loop** là chuỗi các cạnh được **kết nối trực tiếp**
+- **Phím tắt**: Alt/Opt+L (Tools > ProBuilder > Selection > Select Loop)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_Ring.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select Edge Ring (Edge) - Chọn Cạnh có Mặt khép kín 
+- **Edit Mode**: Edge
+- **Công dụng**: sẽ chọn một vòng từ mỗi cạnh được chọn. Vòng cạnh là một chuỗi các cạnh có chung các mặt nhưng không được kết nối trực tiếp.
+- **Note**: **Edge Ring** là chuỗi các cạnh *không kết nối trực tiếp* (các mặt chứa các Cạnh thì kết nối trực tiếp, giống vòng Nhẫn)
+- **Phím tắt**: Alt/Opt+R (Tools > ProBuilder > Selection > Select Ring)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_Loop_Face.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select Face Loop (Face) - Chọn Mặt dọc trục Z
+- **Edit Mode**: Face
+- **Công dụng**: sẽ chọn một vòng lặp Face từ mỗi Face được chọn.
+- **Note**: Các **Face loops** thường chạy dọc theo **trục Z**, trong khi các **Face Rings** thường chạy dọc theo **trục X**.
+- **Phím tắt**: Alt/Opt+L (Tools > ProBuilder > Selection > Select Loop)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_Ring_Face.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select Face Ring (Face) - Chọn Mặt dọc trục X
+- **Edit Mode**: Face
+- **Công dụng**: Chọn một Face Ring từ mỗi mặt được chọn.
+- **Note**: các **Face Rings** thường chạy dọc theo **trục X**.
+- **Phím tắt**: Alt/Opt+R (Tools > ProBuilder > Selection > Select Ring)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Selection_SelectHole.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Select Holes (Vertex + Edge) - Chọn Chu vi Lỗ (không có Mặt)
+- **Edit Mode**: Vertex + Edge
+- **Công dụng**: sẽ chọn tất cả các phần tử dọc theo ĐỈNH hoặc CẠNH mở đã chọn. Một cái **LỖ giống như một Face bị loại bỏ**.
+- **Note**: Hành động này là một phím tắt hữu ích để chọn tất cả các cạnh xung quanh một mặt bị thiếu.
+- **Phím tắt**: N/A (Tools > ProBuilder > Selection > Select Hole)
+
+##### [No Icon] Select Path (Face) - Chọn theo đường dẫn Đầu-Cuối
+- **Edit Mode**: Face
+- **Công dụng**: để **hiển thị và chọn** các mặt dựa trên một đường dẫn từ mặt Đầu-Cuối
+- **Note**: Thao tác > 1.Chọn mặt Đầu > **Giữ Ctrl+Shift** và di chuột đến Mặt Cuối > Click Mặt Cuối sẽ chọn các Mặt hiển thị lúc giữ Ctrl+Shift. Lưu ý: Hành động này chỉ khả dụng khi cửa sổ UV Editor đóng.
+- **Phím tắt**: N/A
+
+#### Thao tác với Chuột (Đùn, Kéo)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Extrude.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Extrude Edges (Edges) - Đùn Cạnh
+- **Edit Mode**: Edge
+- **Công dụng**: đẩy một cạnh mới ra khỏi mỗi cạnh được chọn, được kết nối bằng một mặt mới cho mỗi cạnh. Hành động này chỉ hoạt động trên các cạnh mở (nghĩa là một cạnh không có mặt được kết nối ở một bên). Tuy nhiên, bạn có thể ghi đè hạn chế này bằng tùy chọn Allow non-manifold actions.
+- **Note**: Hãy chọn các Cạnh sao cho Hướng Đùn nên vuông góc "tương đối" với các Cạnh. **Giữ Shift và Đùn theo hướng Axis**.
+- **Phím tắt**: Ctrl/Cmd+E (Tools > ProBuilder > Geometry > Extrude)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Extrude.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Extrude Faces (Faces) - Đùn Mặt
+- **Edit Mode**: Face
+- **Công dụng**: Tạo ra một Face mới (Đùn face được chọn).
+- **Note**: **Giữ Shift và Đùn theo hướng Axis**. Theo mặc định, mỗi mặt mới tuân theo hướng của pháp tuyến đỉnh của nó (có thể thay đổi điều này bằng tùy chọn Extrude By).
+- **Phím tắt**: Ctrl/Cmd+E (Tools > ProBuilder > Geometry > Extrude)
+
+#### Hành động cụ thể
+
+##### Nhóm Object
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/CenterPivot.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Center Pivot (Object) - Di chuyển trục xoay về Center
 - **Edit Mode**: Object
 - **Công dụng**: di chuyển điểm xoay (Pivot) của Lưới đến giữa đường viền của đối tượng.
 - **Note**: Nếu bạn có nhiều đối tượng được chọn, tất cả các đối tượng sẽ tự áp dụng riêng cho nó.
 - **Phím tắt**: N/A (Tools > ProBuilder > Object > Center Pivot)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Vert_Collapse.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Collapse Vertices (Vertex)
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_ConformNormals.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Conform Normals (Objects) - Pháp tuyến Phù hợp
+- **Edit Mode**: Object
+- **Công dụng**: đặt tất cả các **face normals** trên đối tượng được chọn theo cùng một hướng tương đối (dựa hướng **đông hơn** của tất cả các mặt tạo thành Object).
+- **Note**: Trục Z (Blue) hướng ra ngoài thì sẽ thất mặt (**giống Plane**), ngược lại sẽ TRONG SUỐT, nếu muốn chọn thì phải ra phía sau.
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Conform Face Normals)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_FlipNormals.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Flip Normals (Object) - Lật Pháp tuyến
+- **Edit Mode**: Object
+- **Công dụng**: sẽ lật các Normals của tất cả các mặt trên (các) đối tượng đã chọn.
+- **Note**: Điều này đặc biệt hữu ích nếu bạn muốn chuyển đổi hình dạng mô hình bên ngoài thành không gian bên trong.
+- **Phím tắt**: N/A (Tools > ProBuilder > Object > Flip Object Normals)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_Subdivide.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Subdivide Object (Object) - Chia nhỏ Object
+- **Edit Mode**: Object
+- **Công dụng**: chia mọi mặt trên các đối tượng được chọn, cho phép đạt được mức độ chi tiết cao hơn khi lập mô hình.
+- **Note**: Để làm điều này, đối với mỗi mặt, nó thêm một đỉnh ở giữa mỗi cạnh và nối chúng ở giữa mặt.
+- **Phím tắt**: N/A (Tools > ProBuilder > Object > Subdivide Object)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_Merge.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Merge Objects (Object) - Hợp nhất Objects
+- **Edit Mode**: Object
+- **Công dụng**: hợp nhất hai hoặc nhiều ProBuilder GameObject đã chọn thành một ProBuilder GameObject duy nhất.
+- **Note**: ***Cảnh báo***: *Nếu bạn hợp nhất hai đối tượng giao nhau*, đối tượng mới có thể có các UV chồng chéo (*overlapping UVs*).
+- **Phím tắt**: N/A (Tools > ProBuilder > Object > Merge Objects)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_Mirror.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Mirror Objects (Object) - Phản chiếu Object
+- **Edit Mode**: Object
+- **Công dụng**: tạo ra các bản sao được phản chiếu của các đối tượng. Phản chiếu (Mirroring) đặc biệt hữu ích khi bạn muốn tạo các vật phẩm đối xứng. Bạn có thể xây dựng một nửa, phản chiếu nó và sau đó hàn hai Lưới lại với nhau để có kết quả đối xứng hoàn hảo.
+- **Note**: Cách sử dụng > 1.Chọn Options (X, Y, Z; Duplicate) > 2.Click Mirror
+- **Phím tắt**: N/A (Tools > ProBuilder > Object > Mirror Objects)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_Triangulate.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Triangulate Object (Objects) - Tam giác hóa Mesh của Object
+- **Edit Mode**: Object
+- **Công dụng**: làm giảm tất cả các đa giác thành các hình tam giác cơ sở của chúng. Điều này tạo ra một diện mạo sắc nét, nhiều mặt.
+- **Note**: Lưu ý: Để làm mịn một số cạnh cứng, bạn có thể thêm và xóa các nhóm làm mịn trên các mặt của Lưới.
+- **Phím tắt**: N/A (Tools > ProBuilder > Object > Triangulate)
+
+##### Nhóm Vertex
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Vert_Collapse.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Collapse Vertices (Vertex) - Thu gọn đỉnh
 - **Edit Mode**: Vertex (đỉnh, điểm) Thu gọn các đỉnh
 - **Công dụng**: thu gọn tất cả các đỉnh được chọn về một điểm duy nhất, bất kể khoảng cách.
 - **Note**: ProBuilder sử dụng tùy chọn **Collapse To First** để quyết định thu gọn các đỉnh về **điểm trung tâm** hay đến **đỉnh được chọn đầu tiên**. (mặc định **Collapse To First** không được chọn, nghĩa là sẽ thu gọn về **điểm TRUNG TÂM**)
 - **Phím tắt**: Alt/Opt+C (Tools > ProBuilder > Geometry > Collapse Vertices)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_ConformNormals.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Conform Normals (Faces) Pháp tuyến Phù hợp
-- **Edit Mode**: Faces
-- **Công dụng**: đặt tất cả các normals (pháp tuyến face, gizmo shows) trên (các) mặt được chọn theo cùng một hướng tương đối (dựa trên hướng **đông hơn** của các mặt được chọn).
-- **Note**: Trục Z (Blue) hướng ra ngoài thì sẽ thất mặt (**giống Plane**), ngược lại sẽ TRONG SUỐT, nếu muốn chọn thì phải ra phía sau.
-- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Conform Face Normals)
-
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_ConformNormals.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Conform Normals (Objects) Pháp tuyến Phù hợp
-- **Edit Mode**: Objects
-- **Công dụng**: đặt tất cả các **face normals** trên đối tượng được chọn theo cùng một hướng tương đối (dựa hướng **đông hơn** của tất cả các mặt tạo thành Object).
-- **Note**: Trục Z (Blue) hướng ra ngoài thì sẽ thất mặt (**giống Plane**), ngược lại sẽ TRONG SUỐT, nếu muốn chọn thì phải ra phía sau.
-- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Conform Face Normals)
-
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Connect.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Connect Edges (Edges) Kết nối các cạnh
-- **Edit Mode**: Edges
-- **Công dụng**: chèn **một hoặc nhiều cạnh** để **kết nối tâm** của mỗi cạnh được chọn.
-- **Note**: Probuilder sẽ TẠO MỚI 1 (nếu có 2 trung điểm) hoặc nhiều Cạnh (nhiều trung điểm), 1:Tạo trung điểm > 2:Nối các trung điểm
-- **Phím tắt**: Alt/Opt+E (Tools > ProBuilder > Selection > Smart Connect)
-
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Connect.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Connect Vertices (Vertices) Kết nối các đỉnh
-- **Edit Mode**: Vertices
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Connect.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Connect Vertices (Vertices) - Kết nối các đỉnh
+- **Edit Mode**: Vertex
 - **Công dụng**: tạo ra một **cạnh mới** kết nối các đỉnh đã chọn.
 - **Note**: Probuilder sẽ tạo thêm các Cạnh mới và Đỉnh mới để "Neo/Chằng" các đỉnh bạn đã chọn một cách phù hợp mà vẫn đảm bảo hình học hợp lệ.
 - **Phím tắt**: Alt/Opt+E (Tools > ProBuilder > Selection > Smart Connect)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Delete.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Delete Faces (Faces) Xóa Face
-- **Edit Mode**: Faces
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/FillHole.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Fill Hole (Vertices) - Lấp Lỗ từ Đỉnh
+- **Edit Mode**: Vertex
+- **Công dụng**: tạo ra một bề mặt mới lấp đầy bất kỳ lỗ nào chạm vào các **ĐỈNH** đã chọn.
+- **Note**: Chọn một *ĐỈNH của Lỗ* (bao quanh bởi các Mặt), áp dụng Action Fill Hole để Lấp Lỗ (Fill Hole)
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Fill Hole)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Vert_Split.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Split Vertices (Vertex) - Tách 1 Đỉnh thành 2 Đỉnh
+- **Edit Mode**: Vertex
+- **Công dụng**: chia một đỉnh thành các đỉnh riêng lẻ (một đỉnh cho mỗi mặt liền kề) ***để bạn có thể di chuyển các mặt một cách độc lập***.
+- **Note**: Lưu ý: Khi một đỉnh được tách ra, các đỉnh mới được tách ra vẫn giữ nguyên vị trí.
+- **Phím tắt**: Alt/Opt+X (Tools > ProBuilder > Geometry > Split Vertices)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Vert_Weld.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Weld Vertices (Vertex) - Hàn cách đỉnh với nhau
+- **Edit Mode**: Vertex
+- **Công dụng**: hợp nhất các đỉnh đã chọn trong một khoảng cách cụ thể với nhau. Bạn có thể đặt khoảng cách này bằng tùy chọn Weld Distance.
+- **Note**: Nên duyệt qua Options trước khi thực hiện hành động.
+- **Phím tắt**: Alt/Opt+V (Tools > ProBuilder > Geometry > Weld Vertices)
+
+##### Nhóm Edge
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Bridge.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Bridge Edges (Edge) - Nối 2 Cạnh bằng một Mặt mới
+- **Edit Mode**: Edge (phải chọn 2 Cạnh)
+- **Công dụng**: tạo ra một **bề mặt mới** giữa hai cạnh được chọn.
+- **Note**: Theo mặc định, hành động này chỉ có thể kết nối hai cạnh mở (nghĩa là không có mặt nào ở mặt mở hoặc mặt tự do).
+- **Phím tắt**: Alt/Opt+B (Tools > ProBuilder > Geometry > Bridge Edges)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Connect.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Connect Edges (Edges) - Tạo Cạnh mới để kết nối các cạnh
+- **Edit Mode**: Edge
+- **Công dụng**: chèn **một hoặc nhiều cạnh** để **kết nối tâm** của mỗi cạnh được chọn.
+- **Note**: Probuilder sẽ TẠO MỚI 1 (nếu có 2 trung điểm) hoặc nhiều Cạnh (nhiều trung điểm), 1:Tạo trung điểm > 2:Nối các trung điểm
+- **Phím tắt**: Alt/Opt+E (Tools > ProBuilder > Selection > Smart Connect)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Subdivide.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Subdivide Edges (Edge) - Chia nhỏ Cạnh
+- **Edit Mode**: Edge
+- **Công dụng**: chia (các) cạnh được chọn thành nhiều cạnh.
+- **Note**: Theo mặc định, ProBuilder chia cạnh thành hai phần, nhưng trong cửa sổ Tùy chọn, bạn có thể đặt số Phân mục của riêng mình.
+- **Phím tắt**: Alt/Opt+S (Tools > ProBuilder > Geometry > Smart Subdivide)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/FillHole.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Fill Hole (Edges) - Lấp Lỗ với Cạnh
+- **Edit Mode**: Edge
+- **Công dụng**: tạo ra một bề mặt mới lấp đầy bất kỳ lỗ nào chạm vào các **CẠNH** đã chọn.
+- **Note**: Chọn một *CẠNH của Lỗ* (bao quanh bởi các Mặt), áp dụng Action Fill Hole để Lấp Lỗ (Fill Hole)
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Fill Hole)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_InsertLoop.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Insert Edge Loop (Edge) - Chèn thêm Cạnh dựa theo Edge Loop
+- **Edit Mode**: Edge
+- **Công dụng**: thêm một vòng lặp cạnh mới từ (các) cạnh đã chọn. Vòng lặp cạnh là một chuỗi các cạnh được kết nối trực tiếp. Chúng thường bao quanh một vật thể 3D và kết nối trở lại điểm gốc.
+- **Note**: Sử dụng Action này khi muốn **CẮT LÁT** một đường **qua TRUNG ĐIỂM** của *cạnh đẫ chọn*, vòng lặp cạnh này ***chạy vòng quanh và vuông góc*** với cạnh đã chọn.
+- **Phím tắt**: Alt/Opt+U (Tools > ProBuilder > Geometry > Insert Edge Loop)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Bevel.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Bevel (Edge) - Tạo Góc xiên cho Cạnh
+- **Edit Mode**: Edge
+- **Công dụng**: chia (các) cạnh đã chọn thành hai cạnh, với một mặt mới ở giữa.
+- **Note**: Chỉnh sửa Distance (option của Bevel) trước khi thực hiện action.
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Bevel Edges)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_FlipTri.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Flip Face Edge (Edge) - Lật Mặt Cạnh
+- **Edit Mode**: Edge
+- **Công dụng**: (TODO) hoán đổi hướng tam giác trên (các) mặt được chọn thành bốn cạnh. Điều này đảo ngược hướng của cạnh giữa trong một hình tứ giác. Sử dụng công cụ này để làm phẳng các đường gờ trong hình tứ giác với các góc có chiều cao khác nhau.
+- **Note**: (TODO: chưa hiểu) Lưu ý: Điều này chỉ hoạt động trên hình tứ giác (đa giác bốn cạnh).
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Flip Face Edge)
+
+##### Nhóm Face
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Bevel.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Bevel (Face) - Tạo Góc xiên cho tất cả Cạnh của Mặt
+- **Edit Mode**: Face
+- **Công dụng**: thực hiện **hành động Bevel Edge** trên tất cả các cạnh của (các) mặt được chọn.
+- **Note**: Chỉnh sửa Distance (option của Bevel) trước khi thực hiện action.
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Bevel Edges)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_ConformNormals.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Conform Normals (Faces) - Pháp tuyến Phù hợp
+- **Edit Mode**: Face
+- **Công dụng**: đặt tất cả các normals (pháp tuyến face, gizmo shows) trên (các) mặt được chọn theo cùng một hướng tương đối (dựa trên hướng **đông hơn** của các mặt được chọn).
+- **Note**: Trục Z (Blue) hướng ra ngoài thì sẽ thất mặt (**giống Plane**), ngược lại sẽ TRONG SUỐT, nếu muốn chọn thì phải ra phía sau.
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Conform Face Normals)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Delete.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Delete Faces (Faces) - Xóa Face được chọn
+- **Edit Mode**: Face
 - **Công dụng**: Xóa Faces đang được chọn
 - **Note**: Bản chất là **Delete Faces** sẽ thay thế các mặt đang được chọn.
 - **Phím tắt**: **Backspace** *trên Win* hoặc **Delete** *trên macOS* (Tools > ProBuilder > Geometry > Delete Faces)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Detach.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Detach Faces (Faces) Tách Face
-- **Edit Mode**: Faces
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Detach.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Detach Faces (Faces) - Tách Face để Đùn
+- **Edit Mode**: Face
 - **Công dụng**: tách (các) mặt đã chọn khỏi phần còn lại của Lưới.
 - **Note**: Các mặt được Detach sẽ **tạo thành một GameObject mới** tách biệt với Object cũ (Mặc định, nếu muốn là Sub-Mesh thay vì GameObject thì thay đổi *Detach Face Options*). Tất nhiên các mặt trên Object cũ sẽ trở thành **Delete Faces**
 - **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Detach Faces)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Duplicate.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Duplicate Faces (Faces) Nhân bản Face
-- **Edit Mode**: Faces
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Duplicate.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Duplicate Faces (Faces) - Nhân bản Face
+- **Edit Mode**: Face
 - **Công dụng**: sao chép từng Face đã chọn và tạo Lưới mới. (*giống Detach Faces nhưng không delete Faces*)
 - **Note**: tùy thuộc vào tùy chọn mặc định, Lưới mới sẽ là GameObject mới (default) hoặc Sub-Mesh.
 - **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Duplicate Faces)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_Export.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Export (Object) Xuất sang các định dạng khác
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_FlipNormals.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Flip Face Normals (Face) - Lật pháp tuyến Mặt
+- **Edit Mode**: Face
+- **Công dụng**: lật các Normals trên (các) Face đã chọn.
+- **Note**: Action này khác với action **Flip Normals**, mặt được Flip trong suốt và **không thấy được mặt sau**.
+- **Phím tắt**: Alt/Opt+N (Tools > ProBuilder > Geometry > Flip Face Normals)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Merge.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Merge Faces (Faces) - Hợp nhất các Mặt
+- **Edit Mode**: Face
+- **Công dụng**: hợp nhất các mặt được chọn thành một mặt duy nhất và loại bỏ mọi cạnh phân chia.
+- **Note**: Thận trọng: **Hãy cẩn thận** khi bạn hợp nhất hai mặt không được kết nối, vì điều này có thể tạo ra kết quả không mong muốn. Tốt hơn là chỉ hợp nhất các Faces khi cần thiết.
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Merge Faces)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Subdivide.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Subdivide Face (Face) - Chia nhỏ Mặt được chọn
+- **Edit Mode**: Face
+- **Công dụng**: sẽ chia tách từng Face được chọn. Để làm điều này, nó thêm một đỉnh ở giữa mỗi cạnh và nối chúng ở giữa.
+- **Note**: Điều này cho phép bạn thêm nhiều chi tiết hơn vào hình học của mình. Ngoài ra, bạn có thể sử dụng công cụ Cut để kiểm soát hình dạng chính xác của các mặt mới.
+- **Phím tắt**: Alt/Opt+S (Tools > ProBuilder > Geometry > Smart Subdivide)
+
+###### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Face_Triangulate.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Triangulate Faces (Faces) - Tam giác hóa Mặt được chọn
+- **Edit Mode**: Face
+- **Công dụng**: làm giảm các mặt được chọn thành các hình tam giác cơ sở của chúng. Điều này tạo ra một diện mạo góc cạnh, không mịn màng.
+- **Note**: Mẹo: Khi bạn tam giác hóa các bề mặt, bạn có thể làm mịn các cạnh cứng bằng cửa sổ Smooth Group Editor.
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Triangulate)
+
+#### Chức năng chung
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_ProBuilderize.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} ProBuilderize (Object) - Chuyển đổi để làm việc với ProBuilder
+- **Edit Mode**: Object
+- **Công dụng**: chuyển đổi (các) đối tượng đã chọn thành các đối tượng có thể chỉnh sửa ProBuilder.
+- **Note**: ***Nên duyệt qua các Options trước*** khi thực hiện "ProBuilderize"
+- **Phím tắt**: N/A (Tools > ProBuilder > Object > ProBuilderize)
+
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_Export.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Export (Object) - Xuất sang các định dạng khác
 - **Edit Mode**: Object
 - **Công dụng**: xuất (các) đối tượng ProBuilder đã chọn sang tệp Mô hình 3D.
 - **Note**: Các tùy chọn có sẵn tùy thuộc vào định dạng bạn chọn để Export: Copy Textures, Right Handed, Quads...
 - **Phím tắt**: N/A (Tools > ProBuilder > Export > *Export format*)
 
-#### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Edge_Extrude.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Extrude Edges (Edges) Đùn cạnh
-- **Edit Mode**: Edges
-- **Công dụng**: đẩy một cạnh mới ra khỏi mỗi cạnh được chọn, được kết nối bằng một mặt mới cho mỗi cạnh. Hành động này chỉ hoạt động trên các cạnh mở (nghĩa là một cạnh không có mặt được kết nối ở một bên). Tuy nhiên, bạn có thể ghi đè hạn chế này bằng tùy chọn Allow non-manifold actions.
-- **Note**: Hãy chọn các Cạnh sao cho Hướng Đùn nên vuông góc "tương đối" với các Cạnh. **Giữ Shift và Đùn theo hướng Axis**.
-- **Phím tắt**: Ctrl/Cmd+E (Tools > ProBuilder > Geometry > Extrude)
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Freeze_Transform.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Freeze Transform (Object) - Chuẩn hóa [(0,0,0), (0,0,0), (1,1,1)]
+- **Edit Mode**: Object
+- **Công dụng**: *đặt* **position, rotation và scale** của đối tượng đã chọn về gốc tương đối thế giới (**{0,0,0}**) mà không thay đổi bất kỳ vị trí đỉnh nào. Điều đó có nghĩa là nó đặt lại vị trí trục và xóa tất cả các giá trị Biến đổi nhưng không thay đổi kích thước, hình dạng hoặc vị trí của đối tượng trong Cảnh.
+- **Note**: Giống như đưa một Object đã biến đổi **VỀ CHUẨN [(0,0,0), (0,0,0), (1,1,1)]**
+- **Phím tắt**: N/A (Tools > ProBuilder > Object > Freeze Transform)
 
-#### ![TEXT](URL){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} AAAAAAAAAAAA
-- **Edit Mode**: AAA
-- **Công dụng**: BBB
-- **Note**: CCC
-- **Phím tắt**: TODO
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Object_LightmapUVs.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Lightmap UVs (Object) - Tạo Lightmap UV bị thiếu
+- **Edit Mode**: Object
+- **Công dụng**: tạo thủ công mọi **lightmap UVs** bị thiếu.
+- **Note**: TODO (chưa hiểu)
+- **Phím tắt**: N/A (Tools > ProBuilder > Editors > Open Lightmap UV Editor)
 
-#### ![TEXT](URL){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} AAAAAAAAAAAA
-- **Edit Mode**: AAA
-- **Công dụng**: BBB
-- **Note**: CCC
-- **Phím tắt**: TODO
+##### [No Icon] Inset (Face) - Tạo Mặt con đồng dạng với Mặt gốc
+- **Edit Mode**: Face
+- **Công dụng**: Để tạo một bộ bề mặt mới cho bề mặt hiện được chọn, bạn có thể sử dụng hành động **Extrude Faces** và **chia tỷ lệ bề mặt ép đùn**.
+- **Note**: **Inset faces** mang lại cho bạn rất nhiều sự linh hoạt để xây dựng các hình dạng phức tạp hơn.
+- **Phím tắt**: N/A
 
-#### ![TEXT](URL){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} AAAAAAAAAAAA
-- **Edit Mode**: AAA
-- **Công dụng**: BBB
-- **Note**: CCC
-- **Phím tắt**: TODO
-
-#### ![TEXT](URL){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} AAAAAAAAAAAA
-- **Edit Mode**: AAA
-- **Công dụng**: BBB
-- **Note**: CCC
-- **Phím tắt**: TODO
-
-#### ![TEXT](URL){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} AAAAAAAAAAAA
-- **Edit Mode**: AAA
-- **Công dụng**: BBB
-- **Note**: CCC
-- **Phím tắt**: TODO
-
-#### ![TEXT](URL){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} AAAAAAAAAAAA
-- **Edit Mode**: AAA
-- **Công dụng**: BBB
-- **Note**: CCC
-- **Phím tắt**: TODO
-
-#### ![TEXT](URL){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} AAAAAAAAAAAA
-- **Edit Mode**: AAA
-- **Công dụng**: BBB
-- **Note**: CCC
-- **Phím tắt**: TODO
+##### ![TEXT](https://docs.unity3d.com/Packages/com.unity.probuilder@5.1/manual/images/icons/Offset_Elements.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} Offset Elements (Elements) - Di chuyển chính xác Elements
+- **Edit Mode**: Element (Vertex, Edge, Face)
+- **Công dụng**: di chuyển (các) phần tử đã chọn theo các giá trị mặc định. Bạn có thể thay đổi các giá trị mặc định bằng Offset Settings (Option).
+- **Note**: Sử dụng **Offset Settings** cho phép bạn nhập một giá trị chính xác để di chuyển các đỉnh, cạnh và mặt. (***KHÔNG THỂ KẾT HỢP ĐƯỢC VỚI SHIFT***)
+- **Phím tắt**: N/A (Tools > ProBuilder > Geometry > Offset Elements)
