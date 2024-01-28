@@ -17,7 +17,7 @@
         "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-system-attribute-cua-unity",
         "headline": "System.Attribute của UnityEngine",
         "datePublished": "2020-05-15 14:26:14 +0700",
-        "dateModified": "2024-01-15 00:03:59 +0700",
+        "dateModified": "2024-01-28 14:46:41 +0700",
         "description": "System.Attribute của UnityEngine",
         
         "author": {
@@ -125,7 +125,7 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 2 mins read </span> · 
+      <span title="reading time">· about 3 mins read </span> · 
       
       <span>
         
@@ -145,12 +145,23 @@
 
 <p>System.Attribute là một lớp cơ sở để tạo ra các thuộc tính tùy biến cho các <strong>class, property hoặc function</strong> trong C#. Các thuộc tính này <strong>có thể thay đổi hành vi hoặc hiển thị</strong> của các thành phần trong Unity <a href="https://forum.unity.com/threads/tutorial-character-stats-aka-attributes-system.504095/" class="hvr-forward" rel="nofollow" target="_blank">(hướng dẫn từ forum unity)</a>. Đây là một số ví dụ về các System.Attribute của UnityEngine:</p>
 
+<p>•  <strong>[CreateAssetMenu]</strong>: Thuộc tính này dùng để thêm menu context ở Asset, giúp tạo các ScriptableObject Asset. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">CreateAssetMenu</span><span class="p">(</span><span class="n">menuName</span> <span class="p">=</span> <span class="s">"DongHD/Events/Game Event"</span><span class="p">)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">GameEvent</span> <span class="p">:</span> <span class="n">ScriptableObject</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+</code></pre></div></div>
+
 <p>•  <strong>[AddComponentMenu]</strong>: Thuộc tính này dùng để thêm một class kế thừa từ MonoBehaviour vào menu Components của trình soạn thảo Unity. Thuộc tính này nhận vào một chuỗi là tên của menu và tùy chọn một số nguyên là thứ tự của menu. Ví dụ:<br></p>
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">AddComponentMenu</span><span class="p">(</span><span class="s">"Custom/MyScript"</span><span class="p">,</span> <span class="m">1</span><span class="p">)]</span>
 <span class="k">public</span> <span class="k">class</span> <span class="nc">MyScript</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
     <span class="c1">// Your code here</span>
 <span class="p">}</span>
+</code></pre></div></div>
+
+<p>•  <strong>[RequireComponent]</strong>: Thuộc tính này dùng để chỉ rõ sự PHỤ THUỘC của class MonoBehaviour hiện tại vào một Component khác. Ví dụ:<br></p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">RequireComponent</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">Camera</span><span class="p">))]</span>
+<span class="p">[</span><span class="nf">AddComponentMenu</span><span class="p">(</span><span class="s">"Custom/MyScript"</span><span class="p">,</span> <span class="m">1</span><span class="p">)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">MyScript</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
 </code></pre></div></div>
 
 <p>•  <strong>[ContextMenu]</strong>: Thuộc tính này dùng để thêm một function vào menu ngữ cảnh của trình soạn thảo Unity. Thuộc tính này nhận vào một chuỗi là tên của menu. Function phải không có tham số và không trả về giá trị. Ví dụ:<br></p>

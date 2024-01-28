@@ -2,8 +2,8 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Writing a Leave Application</title>
-    <link rel="canonical" href="https://me.donghd.com/collections/english/writing-a-leave-application" />
+    <title>Tìm hiểu ScriptableObject</title>
+    <link rel="canonical" href="https://me.donghd.com/collections/game-development/unity-tim-hieu-scriptable_object" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <META NAME="ROBOTS" CONTENT="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -14,11 +14,11 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "https://me.donghd.com/collections/english/writing-a-leave-application",
-        "headline": "Writing a Leave Application",
+        "mainEntityOfPage": "https://me.donghd.com/collections/game-development/unity-tim-hieu-scriptable_object",
+        "headline": "Tìm hiểu ScriptableObject",
         "datePublished": "2020-05-15 14:26:14 +0700",
         "dateModified": "2024-01-28 14:46:41 +0700",
-        "description": "Writing a Leave Application",
+        "description": "Tìm hiểu ScriptableObject",
         
         "author": {
           "@type": "Person",
@@ -117,7 +117,7 @@
     <!-- ARTICLE -->
     <div class="w3-container">
 
-      <h2>Writing a Leave Application</h2>
+      <h2>Tìm hiểu ScriptableObject</h2>
       <span class="author">
         
         
@@ -125,12 +125,12 @@
         
       </span>
       <time datetime="2020-05-15T14:26:14+07:00" class="by-line"> · 15 May 2020 
-      <span title="reading time">· about 5 mins read </span> · 
+      <span title="reading time">· about 6 mins read </span> · 
       
       <span>
         
         
-        <a href="/pages/categories#Business_English" class="hvr-float-shadow">Business_English</a>
+        <a href="/pages/categories#Investigate" class="hvr-float-shadow">Investigate</a>
         
         
       </span>
@@ -139,108 +139,145 @@
 
       <div class="w3-section">
         <ul class="toc-nav dh-black-8 w3-animate-opacity dh-padding-right-1em">
-<li class="toc-entry toc-h2"><a href="#sick-leave" spy-toc="Sick leave">Sick leave</a></li>
-<li class="toc-entry toc-h2"><a href="#urgent-work" spy-toc="Urgent work">Urgent work</a></li>
-<li class="toc-entry toc-h2"><a href="#personal" spy-toc="Personal">Personal</a></li>
-<li class="toc-entry toc-h2"><a href="#emergency" spy-toc="Emergency">Emergency</a></li>
-<li class="toc-entry toc-h2"><a href="#bonus" spy-toc="Bonus…">Bonus…</a></li>
-</ul><h2 id="sick-leave">
-<a class="anchor" href="#sick-leave" aria-hidden="true" spy-title="Sick leave"><span class="octicon octicon-link"></span></a>Sick leave</h2>
+<li class="toc-entry toc-h2"><a href="#api--scriptableobject" spy-toc="API &gt; ScriptableObject">API &gt; ScriptableObject</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#three-pillars-of-game-engineering-modular-editable-debuggable" spy-toc="Three pillars of game engineering (Modular, Editable, Debuggable)">Three pillars of game engineering (Modular, Editable, Debuggable)</a></li>
+<li class="toc-entry toc-h3"><a href="#tips" spy-toc="Tips">Tips</a></li>
+<li class="toc-entry toc-h3"><a href="#what-are-scriptableobjects" spy-toc="What are ScriptableObjects?">What are ScriptableObjects?</a></li>
+<li class="toc-entry toc-h3"><a href="#simple-use-cases-các-trường-hợp-sử-dụng-đơn-giản" spy-toc="Simple Use Cases (các trường hợp sử dụng đơn giản)">Simple Use Cases (các trường hợp sử dụng đơn giản)</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#game-config-files" spy-toc="Game Config files">Game Config files</a></li>
+<li class="toc-entry toc-h4"><a href="#inventory" spy-toc="Inventory">Inventory</a></li>
+<li class="toc-entry toc-h4"><a href="#enemy-stats" spy-toc="Enemy stats">Enemy stats</a></li>
+<li class="toc-entry toc-h4"><a href="#audiocollection" spy-toc="AudioCollection">AudioCollection</a></li>
+<li class="toc-entry toc-h4"><a href="#make-own-events" spy-toc="Make Own Events">Make Own Events</a></li>
+<li class="toc-entry toc-h4"><a href="#runtime-sets" spy-toc="Runtime Sets">Runtime Sets</a></li>
+<li class="toc-entry toc-h4"><a href="#enums" spy-toc="Enums">Enums</a></li>
+<li class="toc-entry toc-h4"><a href="#architect-for-other-systems" spy-toc="Architect for other Systems">Architect for other Systems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h2 id="api--scriptableobject">
+<a class="anchor" href="#api--scriptableobject" aria-hidden="true" spy-title="API &gt; ScriptableObject"><span class="octicon octicon-link"></span></a>API &gt; ScriptableObject</h2>
 
-<p><strong>Subject</strong>: <em>Sick Leave Application for a Day</em></p>
+<h3 id="three-pillars-of-game-engineering-modular-editable-debuggable">
+<a class="anchor" href="#three-pillars-of-game-engineering-modular-editable-debuggable" aria-hidden="true" spy-title="Three pillars of game engineering (Modular, Editable, Debuggable)"><span class="octicon octicon-link"></span></a>Three pillars of game engineering (Modular, Editable, Debuggable)</h3>
+<ul>
+  <li>
+<strong>Modular</strong>: Mọi thứ phải theo mô-đun nhiều nhất có thể (để có thể lắp ráp), hệ thống không phụ thuộc trực tiếp vào nhau, không có tham chiếu cứng (hệ thống sẽ kém linh hoạt).
+    <ul>
+      <li>Tránh tạo ra các hệ thống phụ thuộc trực tiếp vào nhau. Ví dụ: hệ thống kho đồ phải có khả năng giao tiếp với các hệ thống khác trong trò chơi của bạn.</li>
+      <li>Thiết lập Prefabs để chúng tự hoạt động. Càng nhiều càng tốt, mọi prefab mà bạn kéo vào một cảnh phải có chức năng bên trong nó. Điều này giúp ích rất nhiều cho việc kiểm soát nguồn với các nhóm lớn hơn, trong đó các cảnh là danh sách các prefab và prefab của bạn chứa chức năng riêng lẻ. Bằng cách đó, hầu hết các đăng ký của bạn đều ở cấp độ prefab, điều này dẫn đến ít xung đột hơn trong hiện trường.</li>
+      <li>Tập trung từng thành phần vào việc giải quyết một vấn đề duy nhất. Điều này giúp việc ghép nhiều thành phần lại với nhau dễ dàng hơn để xây dựng một cái gì đó mới.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Editable</strong>: Mọi thứ đều có thể chỉnh sửa được, dev sửa được, artist chỉnh sửa được, game designer chỉnh sửa được.
+    <ul>
+      <li>Làm cho trò chơi của bạn dựa trên dữ liệu nhiều nhất có thể. Khi bạn thiết kế hệ thống trò chơi của mình giống như những cỗ máy xử lý dữ liệu dưới dạng hướng dẫn, bạn có thể thực hiện các thay đổi đối với trò chơi một cách hiệu quả, ngay cả khi trò chơi đang chạy.</li>
+      <li>Nếu các nhà thiết kế có thể ghép mọi thứ lại với nhau trong trò chơi mà không cần phải yêu cầu một tính năng rõ ràng – phần lớn nhờ vào việc triển khai các thành phần nhỏ mà mỗi thành phần chỉ làm một việc – thì họ có thể kết hợp các thành phần đó theo nhiều cách khác nhau để tìm ra lối chơi/cơ chế mới!!!</li>
+      <li>Điều quan trọng là nhóm của bạn có thể thực hiện các thay đổi đối với trò chơi trong thời gian chạy. Bạn càng có thể thay đổi trò chơi của mình trong thời gian chạy thì bạn càng có thể tìm thấy sự cân bằng và giá trị, đồng thời, nếu bạn có thể lưu lại trạng thái thời gian chạy của mình giống như Đối tượng có thể tạo tập lệnh thì bạn đang ở một nơi tuyệt vời.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Debuggable</strong>: Mọi thứ đều có thể debug.
+    <ul>
+      <li>Cái này thực sự là một trụ cột phụ cho hai cái đầu tiên. Trò chơi của bạn càng có nhiều mô-đun thì việc thử nghiệm bất kỳ phần nào của nó càng dễ dàng hơn. Trò chơi của bạn càng dễ chỉnh sửa – càng có nhiều tính năng có chế độ xem Thanh tra riêng – thì càng dễ gỡ lỗi. Đảm bảo rằng bạn có thể xem trạng thái gỡ lỗi trong Thanh tra và không bao giờ coi một tính năng đã hoàn thiện cho đến khi bạn có kế hoạch nào đó về cách gỡ lỗi nó.</li>
+    </ul>
+  </li>
+</ul>
 
-<p>Dear Mr./Mrs. {Recipient’s Name},</p>
+<p>Hãy làm giống như Component, chỉ làm một việc duy nhất, có thể tương tác với các Component khác, có thể sửa đổi dữ liệu… Chỉ việc kéo và lắp ráp các Component lại với nhau rồi thay đổi giá trị properties mà không cần code là sẽ có Game.</p>
 
-<p>I am writing this email to inform you that I will not be able to come to work tomorrow as I have a <span class="tooltip">severe <span class="tooltiptext">(Adj) dữ dội, mãnh liệt, khốc liệt, nghiêm khắc</span></span> <span class="tooltip">bout <span class="tooltiptext">(N) cơn, lần, lượt, cơn sốt</span></span> of a <span class="tooltip">migraine headache <span class="tooltiptext">(N) chứng đau nửa đầu</span></span>.</p>
+<p>Cao hơn nữa là các Prefabs, kéo vào Sence và bắt đầu sử dụng.</p>
 
-<p>Taking a day from work and resting will help me <span class="tooltip">overcome <span class="tooltiptext">(V) vượt qua, chiến thắng, ức chế</span></span> this and get back to a normal <span class="tooltip">routine <span class="tooltiptext">(N) công việc hàng ngày, thói quen</span></span> the next day. <span class="tooltip">Kindly <span class="tooltiptext">vui lòng, có lòng tốt, hảo tâm</span></span> <span class="tooltip">grant <span class="tooltiptext">(V) ban cho, bằng lòng, nhận cho</span></span> me leave for a day on {date}. In case, I need to take extra days to <span class="tooltip">recuperate <span class="tooltiptext">(V) lấy lại sức, làm cho mạnh lại, hồi phục</span></span>, I will inform you at the earliest.</p>
+<h3 id="tips">
+<a class="anchor" href="#tips" aria-hidden="true" spy-title="Tips"><span class="octicon octicon-link"></span></a>Tips</h3>
+<ul>
+  <li>[<strong>CreateAssetMenu</strong>(menuName = “DongHD/Events/Game Event”)] để thêm menu context asset để tạo asset ScriptableObject</li>
+  <li>[<strong>AddComponentMenu</strong>(“DongHD/Camera/Camera Controller”)] thêm vào đầu class, sử dụng để thêm vào menu Add Component</li>
+  <li>[<strong>RequireComponent</strong>(typeof(Camera))] thêm vào đầu class, sử dụng nếu Component bị phụ thuộc vòa một Component khác (cần có để nó hoạt động)</li>
+</ul>
 
-<p>Please <span class="tooltip">feel free <span class="tooltiptext">đừng ngại</span></span> to contact me at my personal phone number in case of any questions or <span class="tooltip">clarifications <span class="tooltiptext">(N) làm cho sáng sủa, làm cho trong, làm cho rõ, làm cho minh bạch, làm cho dễ hiểu</span></span> about <span class="tooltip">ongoing <span class="tooltiptext">đang diễn ra</span></span> work at the office.</p>
+<h3 id="what-are-scriptableobjects">
+<a class="anchor" href="#what-are-scriptableobjects" aria-hidden="true" spy-title="What are ScriptableObjects?"><span class="octicon octicon-link"></span></a>What are ScriptableObjects?</h3>
+<ul>
+  <li>ScriptableObject là một lớp Unity có thể tuần tự hóa, cho phép bạn lưu trữ số lượng lớn dữ liệu được chia sẻ độc lập với các phiên bản tập lệnh.</li>
+  <li>Việc sử dụng ScriptableObjects giúp quản lý các thay đổi và gỡ lỗi dễ dàng hơn.</li>
+  <li>Bạn có thể xây dựng mức độ giao tiếp linh hoạt giữa các hệ thống khác nhau trong trò chơi của mình để dễ quản lý hơn trong việc thay đổi và điều chỉnh chúng trong suốt quá trình sản xuất cũng như tái sử dụng các thành phần.</li>
+  <li>ScriptableObject bị thay đổi giá trị (lưu trên disk) ở Runtime, để giữ nó không đổi mỗi lần load lại Scene thì cần implement “ISerializationCallbackReceiver” và thực hiện clone dữ liệu ở OnAfterDeserialize() vào một biến khác để sử dụng giá trị của biến đó ở Runtime.</li>
+</ul>
 
-<p>Sincerely,<br>
-{Name}</p>
+<h3 id="simple-use-cases-các-trường-hợp-sử-dụng-đơn-giản">
+<a class="anchor" href="#simple-use-cases-c%C3%A1c-tr%C6%B0%E1%BB%9Dng-h%E1%BB%A3p-s%E1%BB%AD-d%E1%BB%A5ng-%C4%91%C6%A1n-gi%E1%BA%A3n" aria-hidden="true" spy-title="Simple Use Cases (các trường hợp sử dụng đơn giản)"><span class="octicon octicon-link"></span></a>Simple Use Cases (các trường hợp sử dụng đơn giản)</h3>
 
-<h2 id="urgent-work">
-<a class="anchor" href="#urgent-work" aria-hidden="true" spy-title="Urgent work"><span class="octicon octicon-link"></span></a>Urgent work</h2>
+<h4 id="game-config-files">
+<a class="anchor" href="#game-config-files" aria-hidden="true" spy-title="Game Config files"><span class="octicon octicon-link"></span></a>Game Config files</h4>
+<ul>
+  <li>Có thể sử dụng để làm các file Config Game, User Config… vì có thể lưu giá trị vào Disk</li>
+</ul>
 
-<p><strong>Subject</strong>: <em>Leave Application for a Day</em></p>
+<h4 id="inventory">
+<a class="anchor" href="#inventory" aria-hidden="true" spy-title="Inventory"><span class="octicon octicon-link"></span></a>Inventory</h4>
+<ul>
+  <li>Ok, ví dụ có một List<items> trong ScriptableObject, thêm các item vào List đó...</items>
+</li>
+  <li>ScripableObject Master List</li>
+  <li>ScripableObject per item</li>
+  <li>ScripableObject nhiều inventory trong các Scence khác nhau (VD: NPC, Player’s Inventory, Equip Screen…)</li>
+</ul>
 
-<p>Hi {Recipient’s Name},</p>
+<h4 id="enemy-stats">
+<a class="anchor" href="#enemy-stats" aria-hidden="true" spy-title="Enemy stats"><span class="octicon octicon-link"></span></a>Enemy stats</h4>
+<ul>
+  <li>Tạo một ScriptableObject để reference giá trị, clone file để kiểm tra các thử nghiệm để cân bằng game…</li>
+</ul>
 
-<p>Please <span class="tooltip">treat <span class="tooltiptext">(V) luận giải, đối đãi, nghiên cứu, điều đình</span></span> this email as an application for leave. I would like to inform you that I <span class="tooltip">require <span class="tooltiptext">(V) cần thiết, yêu cầu, cần dùng</span></span> a day of <span class="tooltip">absence <span class="tooltiptext">(N) vắng mặt, đi vắng</span></span> on {date and month}. I need to visit the bank in my hometown for some personal work, and I need to travel there as soon as possible. Clubbing my leave with the weekend enables me to get this done easily and be back by the following Monday morning.</p>
+<h4 id="audiocollection">
+<a class="anchor" href="#audiocollection" aria-hidden="true" spy-title="AudioCollection"><span class="octicon octicon-link"></span></a>AudioCollection</h4>
+<ul>
+  <li>Ok, ví dụ có một danh sách Audio, play random audio trong list đó…</li>
+</ul>
 
-<p>I am including the work plan for the day I will be taking an off to make it easier for you. Please feel free to contact me at my personal number in case of any questions or clarifications.</p>
+<h4 id="make-own-events">
+<a class="anchor" href="#make-own-events" aria-hidden="true" spy-title="Make Own Events"><span class="octicon octicon-link"></span></a>Make Own Events</h4>
+<ul>
+  <li>GameEvent
+    <ul>
+      <li>Tạo các Event riêng trong Assets (VD: ToggleIngameMenuEvt, PlayerDyingEvt…)</li>
+      <li>Tại nơi muốn Raise event này sẽ kéo reference vào biến rồi gọi hàm Raise() trên biến đó</li>
+    </ul>
+  </li>
+  <li>GameEventListener
+    <ul>
+      <li>Tại GameObject muốn xử lý một tác vụ khi có một sự kiện nào đó xảy ra sẽ được add Component này.</li>
+      <li>Tại Script trong cùng GameObject sẽ triển khai gameResponse (UnityEvent) của Component này.</li>
+      <li>Về các giá trị truyền nhận sẽ được tách riêng với các RuntimeValue (ScripableObject)</li>
+    </ul>
+  </li>
+</ul>
 
-<p>Sincerely,<br>
-{Name}</p>
+<h4 id="runtime-sets">
+<a class="anchor" href="#runtime-sets" aria-hidden="true" spy-title="Runtime Sets"><span class="octicon octicon-link"></span></a>Runtime Sets</h4>
+<ul>
+  <li>Ok, có thể implement giống như một Pool.</li>
+  <li>Có thể random pick một Enemy…</li>
+</ul>
 
-<h2 id="personal">
-<a class="anchor" href="#personal" aria-hidden="true" spy-title="Personal"><span class="octicon octicon-link"></span></a>Personal</h2>
+<h4 id="enums">
+<a class="anchor" href="#enums" aria-hidden="true" spy-title="Enums"><span class="octicon octicon-link"></span></a>Enums</h4>
+<ul>
+  <li>Enums hữu ích cho những thức không thay đổi bao giờ (VD: Đông-Tây-Nam-Bắc, Red-Yellow-Green…)</li>
+  <li>Hãy suy nghĩ đến ScripableObject trước khi quyết định sử dụng Enums</li>
+</ul>
 
-<p><strong>Subject</strong>: <em>Leave Application for a Day</em></p>
-
-<p>Dear {Recipient’s Name},</p>
-
-<p>This is to inform you that I need a leave on {date and month} as I am in the middle of shifting my apartment. I need to meet my new landlord and finalize the details of the contract. I have left a copy of the work plan with the team so that they do not run into any trouble.</p>
-
-<p>Please feel free to contact me at my personal number in case of any emergency or queries.</p>
-
-<p>Sincerely,<br>
-{Name}</p>
-
-<h2 id="emergency">
-<a class="anchor" href="#emergency" aria-hidden="true" spy-title="Emergency"><span class="octicon octicon-link"></span></a>Emergency</h2>
-
-<p><strong>Subject</strong>: <em>Emergency Leave Application for a Day</em></p>
-
-<p><span class="tooltip">Respected <span class="tooltiptext">(V) tôn trọng, kính mến, có quan hệ</span></span> Sir/Madam,</p>
-
-<p>I am writing this email to inform you that I will not be able to come into work {Date} tomorrow, as I met with an accident on my way home from the office today.</p>
-
-<p>Although it was a <span class="tooltip">minor <span class="tooltiptext">(Adj) không quan trọng, nhỏ, phụ</span></span> accident, the doctor has advised me to stay under <span class="tooltip">observation <span class="tooltiptext">(N) quan sát, sự chú ý, sự để ý, sự trinh sát, sự thăm dò</span></span> at the hospital to make sure that nothing else is wrong.</p>
-
-<p>I have emailed the team my work plan so that there is no delay in the <span class="tooltip">ongoing <span class="tooltiptext">đang diễn ra</span></span> project. I hope you will understand my situation and grant me the required leave.</p>
-
-<p>Sincerely,<br>
-{Name}</p>
-
-<h2 id="bonus">
-<a class="anchor" href="#bonus" aria-hidden="true" spy-title="Bonus…"><span class="octicon octicon-link"></span></a>Bonus…</h2>
-
-<p>I’m writing to let you know that I developed a fever last night. I hoped it would go away by this morning, but it looks like I’m still above normal temperatures. I expect to be back in the office tomorrow, given my temperature goes back to normal.”</p>
-
-<hr>
-
-<p>“I’m going to stay home today to make sure I don’t spread a cold around the office. I will work as I am able, but I’ve asked Cynthia if she can be my backup today just in case.”</p>
-
-<hr>
-
-<p>Hello,</p>
-
-<p>Thank you for reaching out. I’m away from the office today, so please expect a delay in my response. If you have an emergency, please <span class="tooltip">reach out <span class="tooltiptext">liên hệ</span></span> to my supervisor, Mary Mullins, at marym@email.com.</p>
-
-<p>I will be back in the office for regular working hours this Wednesday, 12/5.</p>
-
-<p>Thank you for your patience,</p>
-
-<p>Juan Ramos<br>
-Sr. Account Executive</p>
-
-<hr>
-
-<p>Hi Rajiv,</p>
-
-<p>I wanted to let you know as soon as possible that I will be staying home from work today. Unfortunately, I developed a stomach bug that has made it very difficult to get work done. I went to urgent care last night and was told it should subside within twenty-four hours. I do not expect to be online throughout the day.</p>
-
-<p>While I do expect to be back in the office tomorrow, I’ve asked Kelly to take over for me today in case any emergencies arise. I do have an important call scheduled with a supplier, but my account counterpart, Daniel, has agreed to manage the meeting.</p>
-
-<p>Please let me know if there are any additional steps you’d like me to take to ensure the day runs as smoothly as possible in my absence.</p>
-
-<p>Thank you for understanding,</p>
-
-<p>Flora Jones</p>
-
-<p><a href="https://www.naukri.com/blog/tag/leave-application/" class="hvr-forward" rel="nofollow" target="_blank">Tham khảo thêm về “Leave Application”</a></p>
+<h4 id="architect-for-other-systems">
+<a class="anchor" href="#architect-for-other-systems" aria-hidden="true" spy-title="Architect for other Systems"><span class="octicon octicon-link"></span></a>Architect for other Systems</h4>
+<ul>
+  <li>Scriptable Objects không nhất thiết chỉ là dữ liệu. Lấy bất kỳ hệ thống nào bạn triển khai trong MonoBehaviour và xem liệu bạn có thể chuyển việc triển khai sang ScriptableObject thay thế hay không. Thay vì có InventoryManager trên DontDestroyOnLoad MonoBehaviour, hãy thử đặt nó trên ScriptableObject.</li>
+  <li>Vì nó không bị ràng buộc với Scene nên nó không có <em>Transform</em> và không nhận được cuộc gọi <em>Update()</em> nhưng nó sẽ <strong>duy trì trạng thái giữa các lần tải Scene</strong> mà không cần bất kỳ khởi tạo đặc biệt nào.</li>
+</ul>
 
 
       </div>
