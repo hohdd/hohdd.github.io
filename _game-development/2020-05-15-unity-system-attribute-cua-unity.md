@@ -37,6 +37,12 @@ date: 2020-05-15 14:26:14 +0700
 
 System.Attribute là một lớp cơ sở để tạo ra các thuộc tính tùy biến cho các **class, property hoặc function** trong C#. Các thuộc tính này **có thể thay đổi hành vi hoặc hiển thị** của các thành phần trong Unity [(hướng dẫn từ forum unity)](https://forum.unity.com/threads/tutorial-character-stats-aka-attributes-system.504095/){:.hvr-forward rel="nofollow" target="_blank"}. Đây là một số ví dụ về các System.Attribute của UnityEngine:
 
+•  **[CreateAssetMenu]**: Thuộc tính này dùng để thêm menu context ở Asset, giúp tạo các ScriptableObject Asset. Ví dụ:<br>
+```csharp
+[CreateAssetMenu(menuName = "DongHD/Events/Game Event")]
+public class GameEvent : ScriptableObject { ... }
+```
+
 •  **[AddComponentMenu]**: Thuộc tính này dùng để thêm một class kế thừa từ MonoBehaviour vào menu Components của trình soạn thảo Unity. Thuộc tính này nhận vào một chuỗi là tên của menu và tùy chọn một số nguyên là thứ tự của menu. Ví dụ:<br>
 ```csharp
 [AddComponentMenu("Custom/MyScript", 1)]
@@ -44,6 +50,13 @@ public class MyScript : MonoBehaviour
 {
     // Your code here
 }
+```
+
+•  **[RequireComponent]**: Thuộc tính này dùng để chỉ rõ sự PHỤ THUỘC của class MonoBehaviour hiện tại vào một Component khác. Ví dụ:<br>
+```csharp
+[RequireComponent(typeof(Camera))]
+[AddComponentMenu("Custom/MyScript", 1)]
+public class MyScript : MonoBehaviour { ... }
 ```
 
 •  **[ContextMenu]**: Thuộc tính này dùng để thêm một function vào menu ngữ cảnh của trình soạn thảo Unity. Thuộc tính này nhận vào một chuỗi là tên của menu. Function phải không có tham số và không trả về giá trị. Ví dụ:<br>
