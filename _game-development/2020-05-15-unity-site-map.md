@@ -65,6 +65,7 @@ date: 2020-05-15 14:26:14 +0700
 - Unity - Investigate (I) - Tìm hiểu Probuilder
 - Unity - Investigate (I) - Tìm hiểu ProGrids
 - Unity - Investigate (I) - Tìm hiểu ScriptableObject
+- Unity - Investigate (I) - Tìm hiểu Enemy AI (Agents)
 
 ### Unity - Practice
 

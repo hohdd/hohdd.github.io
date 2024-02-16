@@ -48,7 +48,7 @@ layout: default
     </div>
   </div>
 
-	<div class="w3-section">
+	<div class="w3-section konamiHide">
     <div class="content-speech">
       {{ content | toc }}
     </div>
@@ -58,7 +58,7 @@ layout: default
 
 <!-- Xem thêm các bài viết khác cùng collection -->
 <div class="w3-padding-16"></div>
-<div class="opacity-transition-hover">
+<div class="opacity-transition-hover konamiHide">
   <h5>Xem thêm các bài viết khác cùng chủ đề</h5>
   <!-- serials -->
   {% assign serials = site.collections | where: 'isSerial', true | where: 'show', true | where: 'label', page.collection %}
