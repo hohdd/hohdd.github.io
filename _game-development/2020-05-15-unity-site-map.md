@@ -70,6 +70,8 @@ date: 2020-05-15 14:26:14 +0700
 - Unity - Investigate (I) - Tìm hiểu ProGrids
 - Unity - Investigate (I) - Tìm hiểu ScriptableObject
 - Unity - Investigate (I) - Tìm hiểu Enemy AI (Agents)
+- Unity - Investigate (I) - Tìm hiểu **tổng quan** Shaders trong Unity
+- Unity - Investigate (I) - Tìm hiểu **cơ bản** về Shaders trong Unity
 
 ### Unity - Practice
 
