@@ -23,9 +23,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Investigate # this for AMP related post
+collection: Graphic # this for AMP related post
 ### category: dùng để group collection
-category: Investigate
+category: Graphic
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
@@ -753,4 +753,80 @@ half4 frag (vertOutput i) : COLOR
 
 ### Screen shaders and image effects
 
-TODO...
+#### Screen Shaders
+[Image Effects](https://docs.unity3d.com/540/Documentation/Manual/WritingImageEffects.html){:.hvr-float-shadow rel="nofollow" target="_blank"} là các tập lệnh mà khi được gắn vào máy ảnh sẽ thay đổi kết quả hiển thị của nó. Mặc dù được trình bày dưới dạng tập lệnh C#, việc tính toán thực tế được thực hiện bằng cách sử dụng Shader. Khi Shader được sử dụng theo cách này (**xử lý hậu kỳ postprocessing**), chúng thường được gọi là **Screen Shaders**.
+
+![TEXT](/assets/img/collections/shader-bw.gif){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+```csharp
+// Ví dụ: hiệu ứng xử lý hậu kỳ (postprocessing) có thể được sử dụng để chuyển hình ảnh có màu sang thang độ xám.
+// Tên của nó bắt đầu bằng 'Hidden/' nên sẽ không xuất hiện trong menu Masterial Inspector vì Shader này không nhằm mục đích sử dụng Material và Model.
+Shader "Hidden/BWDiffuse" {
+    Properties {
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _bwBlend ("Black & White blend", Range (0, 1)) = 0
+    }
+    SubShader {
+        Pass {
+            // Shader này sẽ không làm thay đổi hình dạng, do đó không cần 'vertex function'
+            CGPROGRAM
+            #pragma vertex vert_img // “empty” vertex function
+            #pragma fragment frag
+
+            #include "UnityCG.cginc"
+
+            uniform sampler2D _MainTex;
+            uniform float _bwBlend;
+
+            // sử dụng cấu trúc tiêu chuẩn do Unity3D cung cấp là 'v2f_img'.
+            float4 frag(v2f_img i) : COLOR {
+                float4 c = tex2D(_MainTex, i.uv); // lấy màu của pixel hiện tại từ _MainTex
+                
+                float lum = c.r*.3 + c.g*.59 + c.b*.11; // tính toán phiên bản thang độ xám của 'c'.
+                float3 bw = float3( lum, lum, lum ); 
+                
+                float4 result = c;
+                result.rgb = lerp(c.rgb, bw, _bwBlend); // nội suy màu gốc và màu mới bằng cách sử dụng _bwBlend làm hệ số hòa trộn.
+                return result;
+            }
+            ENDCG
+        }
+    }
+}
+```
+
+#### Shader Postprocessing Effect
+
+Bước tiếp theo là làm cho trình đổ bóng này hoạt động như một hiệu ứng xử lý hậu kỳ.
+
+**MonoBehaviours** có một sự kiện tên là **OnRenderImage** được gọi mỗi khi khung hình mới phải được hiển thị trên máy ảnh mà chúng được gắn vào. Chúng ta có thể sử dụng sự kiện này để chỉnh sửa trước khi hiển thị trên màn hình.
+
+```csharp
+using UnityEngine;
+using System.Collections;
+
+[ExecuteInEditMode]
+public class BWEffect : MonoBehaviour {
+
+    public float intensity;
+    private Material material; // Chúng ta có thể cung cấp tài liệu trực tiếp từ Inspector, nhưng có nguy cơ tài liệu đó bị chia sẻ giữa các Instance khác của BWEffect.
+
+    // Creates a private material used to the effect
+    void Awake ()
+    {
+        material = new Material( Shader.Find("Hidden/BWDiffuse") ); // Nên cung cấp chính Shader cho tập lệnh, thay vì sử dụng tên của nó Find("Hidden/BWDiffuse")
+    }
+    
+    // Postprocess the image
+    void OnRenderImage (RenderTexture source, RenderTexture destination)
+    {
+        if (intensity == 0)
+        {
+            Graphics.Blit (source, destination); // nếu cường độ bằng 0 thì không can thiệp gì Shader và đầu ra của hiển thị
+            return; // bỏ qua việc sử dụng shader
+        }
+
+        material.SetFloat("_bwBlend", intensity); // Truyền sang Shader '_bwBlend'
+        Graphics.Blit (source, destination, material); // Hàm Blit lấy một RenderTexture nguồn, xử lý nó bằng vật liệu được cung cấp và hiển thị nó ở đích đã chỉ định. 
+    }
+}
+```

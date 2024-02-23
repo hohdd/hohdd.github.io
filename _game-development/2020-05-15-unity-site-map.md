@@ -33,16 +33,10 @@ date: 2020-05-15 14:26:14 +0700
 # ROADMAP: https://github.com/utilForever/game-developer-roadmap
 ---
 
-### Build Team
-
-- Game Designer
-
 ### Unity - Tips
-
 - Unity - Tips, Note
 
 ### Unity - Chủ đề
-
 - Unity - Chủ đề (I) - Physics: mô phỏng vật lý, gia tốc, trọng lực, va chạm
 - Unity - Chủ đề (T) - Graphics: Textures, Sprites, Render textures
 - Unity - Chủ đề (D) - Cấu trúc và thứ tự Compile của một project Unity
@@ -58,42 +52,48 @@ date: 2020-05-15 14:26:14 +0700
 - Unity - Chủ đề (D) - Cách để làm một Game trở nên thú vị
 - Unity - Chủ đề (D) - Trình tự gọi các Event Functions (Script lifecycle)
 - Unity - Chủ đề (D) - Biên dịch có điều kiện (Conditional compilation)
-
-### Unity - Package
-
-- Unity - Package (T) - Sử dụng Addressables package
-
-### Unity - Investigate
-
-- Unity - Investigate (I) - Tìm hiểu Particle System trong Unity
-- Unity - Investigate (I) - Tìm hiểu Probuilder
-- Unity - Investigate (I) - Tìm hiểu ProGrids
-- Unity - Investigate (I) - Tìm hiểu ScriptableObject
-- Unity - Investigate (I) - Tìm hiểu Enemy AI (Agents)
-- Unity - Investigate (I) - Tìm hiểu **tổng quan** Shaders trong Unity
-- Unity - Investigate (I) - Tìm hiểu **cơ bản** về Shaders trong Unity
+- Unity - Chủ đề (D) - Tất cả cách cách lấy reference của một GameObject
+- Unity - Chủ đề (D) - Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject
 
 ### Unity - Practice
-
 - Unity - Practice (D) - Project Boost
 - Unity - Practice (D) - Realistic lighting
 - Unity - Practice (T) - Luyện tập UI Toolkit
 - Unity - Practice (T) - Cách tạo Hệ thống tăng sức mạnh (Powerup System) trong Unity
 
-### Unity - Confirm
-
-- Unity - Confirm (D) - Tất cả cách cách lấy reference của một GameObject
-- Unity - Confirm (D) - Tất cả các cách tương tác, gọi hàm, truyền nhận dữ liệu giữa các GameObject
-
-### Unity - Microgame
-
-- Unity - Microgame (I) - KartingMicrogame
-
-### Tools
-
-- Photopea
-
 ### Unity - Uncategorized
-
+- Unity - Uncategorized (I) - KartingMicrogame
 - Unity - Uncategorized (D) - Getting Start: làm việc với Unity Editor (Interface)
 - Unity - Uncategorized (D) - Overview Game Development
+
+### Unity - Investigate
+- Unity - Investigate (I) - Tìm hiểu ScriptableObject
+- Unity - Investigate (I) - Tìm hiểu Enemy AI (Agents)
+
+### Unity - Package
+- Unity - Package (T) - Sử dụng Addressables package
+
+### Graphic
+- Unity - Graphic (I) - Tìm hiểu **tổng quan** Shaders trong Unity
+- Unity - Graphic (I) - Tìm hiểu **cơ bản** về Shaders trong Unity
+- Unity - Graphic (I) - Tìm hiểu **Fragment shader** trong Render
+- *Unity - Graphic (I) - Tìm hiểu **Shader Graph** của Unity (TODO)*
+- *Unity - Graphic (I) - Tìm hiểu **Vulkan** (TODO)*
+
+### 3D Model
+- Unity - 3D Model (I) - Tìm hiểu **Probuilder**
+- Unity - 3D Model (I) - Tìm hiểu **ProGrids**
+- *Unity - 3D Model (I) - Tìm hiểu **UModeler X** (TODO)*
+
+### VFX
+- Unity - VFX (I) - Tìm hiểu **Particle System** trong Unity
+- *Unity - VFX (I) - Tìm hiểu **VFX Graph** của Unity (TODO)*
+
+### Nghề phát triển game
+- Game Designer
+
+### Bổ trợ kiến thức
+- Photopea
+- *C programming (TODO)*
+- *C++ programming (TODO)*
+- *C# programming (TODO)*
