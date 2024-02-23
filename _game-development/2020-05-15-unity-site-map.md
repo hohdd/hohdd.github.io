@@ -76,7 +76,8 @@ date: 2020-05-15 14:26:14 +0700
 ### Graphic
 - Unity - Graphic (I) - Tìm hiểu **tổng quan** Shaders trong Unity
 - Unity - Graphic (I) - Tìm hiểu **cơ bản** về Shaders trong Unity
-- Unity - Graphic (I) - Tìm hiểu **Fragment shader** trong Render
+- Unity - Graphic (I) - **GLSL** (OpenGL Shading Language) và **Fragment shader** trong Render
+- *Unity - Graphic (I) - **HLSL** (High-Level Shader Language) (TODO)*
 - *Unity - Graphic (I) - Tìm hiểu **Shader Graph** của Unity (TODO)*
 - *Unity - Graphic (I) - Tìm hiểu **Vulkan** (TODO)*
 
