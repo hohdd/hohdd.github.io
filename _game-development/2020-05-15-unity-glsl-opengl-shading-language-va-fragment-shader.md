@@ -72,19 +72,20 @@ Nội dung ở đây sẽ tập trung vào việc sử dụng các pixel shader 
 - Tiện ích mở rộng tương tự **GL_GOOGLE_include_directive** và **GL_GOOGLE_cpp_style_line_directive** tồn tại để sử dụng GLSL với Vulkan và được hỗ trợ trong **trình biên dịch SPIR-V tham chiếu** (*glslang hay còn gọi là glslangValidator*).
 
 #### Compilation and execution (Biên dịch và thực thi)
-- **GLSL shaders** không phải là ứng dụng độc lập, chúng yêu cầu một ứng dụng sử dụng API OpenGL, có sẵn trên nhiều nền tảng khác nhau (ví dụ: Linux, macOS, Windows). Có các ràng buộc ngôn ngữ cho C, C++, C#, JavaScript, Delphi, Java và nhiều ngôn ngữ khác.
-- Bản thân các trình đổ bóng GLSL chỉ đơn giản **là một tập hợp các chuỗi** được *chuyển tới trình điều khiển (driver)* của nhà cung cấp phần cứng để biên dịch từ bên trong một ứng dụng bằng cách sử dụng các điểm vào (entry points) của API OpenGL. Shader có thể được tạo nhanh chóng từ bên trong ứng dụng hoặc đọc dưới dạng tệp văn bản nhưng **phải được gửi tới trình điều khiển (driver) dưới dạng chuỗi**.
-- Bộ API được sử dụng để biên dịch, liên kết và truyền tham số cho các chương trình GLSL được chỉ định trong ba **OpenGL extensions** và trở thành một phần của **OpenGL Core** kể từ OpenGL Phiên bản 2.0. API đã được mở rộng với các *geometry shaders* trong OpenGL 3.2, các *tessellation shaders* trong OpenGL 4.0 và các *compute shaders* trong OpenGL 4.3. Các API OpenGL này được tìm thấy trong các extensions sau:
+- **GLSL shaders** không phải là ứng dụng độc lập, **chúng yêu cầu một ứng dụng sử dụng API OpenGL**, *có sẵn trên nhiều nền tảng khác nhau* (ví dụ: Linux, macOS, Windows). Có các ràng buộc ngôn ngữ cho C, C++, C#, JavaScript, Delphi, Java và nhiều ngôn ngữ khác.
+- Bản thân các trình đổ bóng GLSL chỉ đơn giản **là một tập hợp các chuỗi (string)** được *chuyển tới trình điều khiển (driver)* của nhà cung cấp phần cứng để biên dịch từ bên trong một ứng dụng bằng cách sử dụng các điểm vào (entry points) của API OpenGL. Shader có thể được tạo nhanh chóng từ bên trong ứng dụng hoặc đọc dưới dạng tệp văn bản nhưng **phải được gửi tới trình điều khiển (driver) dưới dạng chuỗi**.
+- **Bộ API** được sử dụng để *biên dịch, liên kết và truyền tham số* cho các chương trình GLSL được chỉ định trong ba **OpenGL extensions (*biên dịch, liên kết và truyền tham số*)** và trở thành một phần của **OpenGL Core** kể từ OpenGL Phiên bản 2.0.
+- API đã được mở rộng với các *geometry shaders* trong OpenGL 3.2, các *tessellation shaders* trong OpenGL 4.0 và các *compute shaders* trong OpenGL 4.3. Các API OpenGL này được tìm thấy trong các extensions sau:
     + ARB vertex shader
     + ARB fragment shader
     + ARB shader objects
     + ARB geometry shader 4
     + ARB tessellation shader
     + ARB compute shader
-- GLSL shaders cũng có thể được sử dụng với Vulkan và là cách phổ biến để sử dụng trình đổ bóng trong Vulkan.
+- *GLSL shaders cũng có thể được **sử dụng với Vulkan*** và *là cách phổ biến để sử dụng trình đổ bóng* trong Vulkan.
 - GLSL shaders được *precompile trước khi sử dụng* hoặc *trong thời gian chạy* thành định *dạng mã byte nhị phân* được gọi là **SPIR-V**, thường sử dụng trình biên dịch ngoại tuyến.
 
 ### Hello GLSL
-- Function nếu không 'void' thì phải có return
-- Định nghĩa function trước khi dùng (định nghĩa ở trên, dùng ở dưới)
+- Function nếu **không 'void' thì phải có return**
+- Định nghĩa function trước khi dùng (**định nghĩa ở trên, dùng ở dưới**)
 - Có nhiều cách khởi tạo kiểu **vec4**. VD: **vec4(vec3(vec2(-0.360,0.620),0.000),1.000);**

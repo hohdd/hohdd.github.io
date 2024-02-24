@@ -47,16 +47,16 @@ Sơ đồ bên dưới thể hiện 3 Thực thể khác nhau trong quy trình r
 #### Shaders introduction: Thông tin giới thiệu về shader và thuật ngữ chính.
 - Shader là một chương trình chạy trên GPU.
 - Các loại shader: Trong Unity, shader được chia thành ba loại lớn. Bạn sử dụng mỗi danh mục cho những mục đích khác nhau và làm việc với chúng một cách khác nhau.
-    + "Shaders" là một phần của đường dẫn đồ họa là loại shader phổ biến nhất. Họ thực hiện các phép tính xác định màu của pixel trên màn hình. Trong Unity, bạn thường làm việc với loại shader này bằng cách sử dụng các đối tượng Shader .
+    + "Shaders" là một phần của đường dẫn đồ họa là loại shader phổ biến nhất. Chúng thực hiện các phép tính xác định màu của pixel trên màn hình. Trong Unity, bạn thường làm việc với loại shader này bằng cách sử dụng các đối tượng Shader .
     + "Compute shaders" thực hiện các phép tính trên GPU, bên ngoài quy trình đồ họa thông thường.
     + "Ray tracing shaders" thực hiện các phép tính liên quan đến dò tia.
 - Thuật ngữ:
-    + shader or shader program - một chương trình chạy trên GPU. Trừ khi có quy định khác, điều này có nghĩa là các chương trình đổ bóng là một phần của quy trình đồ họa.
-    + Shader object - một thể hiện của lớp Shader. Đối tượng Shader là một trình bao bọc cho các chương trình đổ bóng và các thông tin khác.
-    + ShaderLab - một ngôn ngữ dành riêng cho Unity để viết shader.
-    + Shader Graph - một công cụ tạo shader mà không cần viết mã.
-    + shader asset - một tệp có phần mở rộng .shader trong dự án Unity của bạn. Nó định nghĩa một đối tượng Shader.
-    + Shader Graph asset - một tệp trong dự án Unity của bạn. Nó định nghĩa một đối tượng Shader.
+    + *shader* or *shader program* - một chương trình chạy trên GPU. Trừ khi có quy định khác, điều này có nghĩa là các chương trình đổ bóng là một phần của quy trình đồ họa.
+    + *Shader object* - một thể hiện của lớp Shader. Đối tượng Shader là một trình bao bọc cho các chương trình đổ bóng và các thông tin khác.
+    + *ShaderLab* - một ngôn ngữ dành riêng cho Unity để viết shader.
+    + *Shader Graph* - một công cụ tạo shader mà không cần viết mã.
+    + *Shader Asset* - một tệp có phần mở rộng **.shader** trong Unity Project của bạn. *Nó định nghĩa một đối tượng Shader*.
+    + *Shader Graph Asset* - một tệp (*tạo bởi Shader Graph*) trong Unity Project của bạn. Nó định nghĩa một đối tượng Shader.
 
 #### The Shader class: Tổng quan về lớp Shader, hoạt động như một trình bao bọc cho các chương trình đổ bóng đồ họa thông thường.
 - Đối tượng Shader là một cách làm việc dành riêng cho Unity với các chương trình đổ bóng; nó là một trình bao bọc cho các chương trình đổ bóng và các thông tin khác. 

@@ -275,6 +275,13 @@ blockquote {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+a.external {
+  background-image: url(/assets/img/articles/link-external-small-ltr-progressive.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 0.857em;
+  padding-right: 1em;
+}
 .DHInput {
   outline: none;
   padding: 15px 25px;
