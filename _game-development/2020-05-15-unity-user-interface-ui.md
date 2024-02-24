@@ -265,7 +265,7 @@ myCustomElement.RegisterCallback<DetachFromPanelEvent>(e =>
     { /* do something here when element is removed from UI */ });
 ```
 
-Tham khảo thêm [Create a custom control](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-create-custom-controls.html){:.hvr-forward rel="nofollow" target="_blank"}
+Tham khảo thêm [Create a custom control](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-create-custom-controls.html){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ## Đóng gói các tài liệu UXML bằng logic
 
@@ -648,17 +648,17 @@ public class MainUI : MonoBehaviour
 
 Sau khi bạn đã nhập hình ảnh vào dự án của mình, để có kết quả trực quan nhất, bạn nên áp dụng một số cài đặt nhập nhất định cho Textures, Sprites, and Vector trước khi bạn sử dụng chúng làm nền cho thành phần trực quan trong giao diện người dùng Người xây dựng.
 
-[Các settings ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-image-import-settings.html){:.hvr-forward rel="nofollow" target="_blank"}
+[Các settings ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-image-import-settings.html){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ## USS transition và Transition events
 
 USS transition thay đổi giá trị thuộc tính trong một khoảng thời gian nhất định (tương tự như CSS transition), sử dụng để thực hiện các animation cho UI.
 
-[Xem thêm USS transition ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transitions.html){:.hvr-forward rel="nofollow" target="_blank"}
+[Xem thêm USS transition ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transitions.html){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 Transition events thông báo cho bạn về những thay đổi trong trạng thái của quá trình chuyển đổi.
 
-[Xem thêm Transition events ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transition-Events.html){:.hvr-forward rel="nofollow" target="_blank"}
+[Xem thêm Transition events ở đây](https://docs.unity3d.com/2021.3/Documentation/Manual/UIE-Transition-Events.html){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ## Tips:
 - Load UXML sẽ được object kiểu "VisualTreeAsset" => cần .Instantiate() để được "VisualElement"

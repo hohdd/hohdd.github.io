@@ -32,7 +32,7 @@ date: 2019-06-13 22:26:14 +0700
 ### Nhúng mã `code` hoặc ```code```
 ### Sử dụng class và style (style đặt sau cùng): **Kramdown**{: .w3-section .w3-margin-right #myId style="color: red"}
 ### Chèn ảnh: ![alt text](image.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
-### Chèn Link: [link](url){:.hvr-forward rel="nofollow" target="_blank"}
+### Chèn Link: [link](url){:.hvr-forward.external rel="nofollow" target="_blank"}
 ### Nguồn: https://basicenglishspeaking.com/common-expressions-english/
 ---
 

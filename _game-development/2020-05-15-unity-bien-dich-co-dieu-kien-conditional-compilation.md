@@ -81,4 +81,4 @@ public class PlatformDefines : MonoBehaviour {
 }
 ```
 
-Xem thêm: [Conditional compilation](https://docs.unity3d.com/2021.3/Documentation/Manual/PlatformDependentCompilation.html){:.hvr-forward rel="nofollow" target="_blank"}
+Xem thêm: [Conditional compilation](https://docs.unity3d.com/2021.3/Documentation/Manual/PlatformDependentCompilation.html){:.hvr-forward.external rel="nofollow" target="_blank"}

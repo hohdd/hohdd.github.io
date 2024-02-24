@@ -216,10 +216,10 @@ date: 2020-05-16 14:26:14 +0700
 - Lưu ý cấu hình Canvas ("Canvas Scaler") khi Screen bị scale ("Scale With Screen Size" có vẻ ok). Canvas Scaler, Canvas Group, 
 
 #### Reference
-- [UI Reference](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIReference.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Built-in packages](https://docs.unity3d.com/Manual/pack-build.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [UnityEvents](https://docs.unity3d.com/Manual/UnityEvents.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Hướng dẫn sử dụng C# Delegate và Event](https://o7planning.org/vi/10591/huong-dan-csharp-delegate-va-event){:.hvr-forward rel="nofollow" target="_blank"}
+- [UI Reference](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIReference.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Built-in packages](https://docs.unity3d.com/Manual/pack-build.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [UnityEvents](https://docs.unity3d.com/Manual/UnityEvents.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Hướng dẫn sử dụng C# Delegate và Event](https://o7planning.org/vi/10591/huong-dan-csharp-delegate-va-event){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 15
 
@@ -232,8 +232,8 @@ date: 2020-05-16 14:26:14 +0700
 - Thiết kế Level: LÝ DO ĐỂ HỌ CHƠI? liên tục dạy cho người chơi điều gì đó mới mẻ. Họ có thể học và tiến bộ từng level.
 
 #### Reference
-- [Raph Koster là một nhà thiết kế trò chơi kỳ cựu đã được tín nhiệm về mặt chuyên môn](https://www.raphkoster.com/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Fun and Uncertainty](http://gamewhispering.com/fun-and-uncertainty/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Raph Koster là một nhà thiết kế trò chơi kỳ cựu đã được tín nhiệm về mặt chuyên môn](https://www.raphkoster.com/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Fun and Uncertainty](http://gamewhispering.com/fun-and-uncertainty/){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 16
 
@@ -250,9 +250,9 @@ date: 2020-05-16 14:26:14 +0700
 - Khi thêm Text: có cần input (tương tác, Raycast Target) người dùng không? Text có cần hiệu ứng gì đặc biệt không (material )?
 
 #### Reference
-- [The Color Scheme Designer](http://paletton.com/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Art Puzzle](https://artpuzzle.vn/){:.hvr-forward rel="nofollow" target="_blank"}
-- [MagicaVoxel: A free lightweight GPU-based voxel art editor and interactive path tracing renderer](https://ephtracy.github.io/){:.hvr-forward rel="nofollow" target="_blank"}
+- [The Color Scheme Designer](http://paletton.com/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Art Puzzle](https://artpuzzle.vn/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [MagicaVoxel: A free lightweight GPU-based voxel art editor and interactive path tracing renderer](https://ephtracy.github.io/){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 17
 
@@ -270,9 +270,9 @@ date: 2020-05-16 14:26:14 +0700
 - Quay hướng Z về phía đối tượng "who.LookAt(What)"
 
 #### Reference
-- [Visual PathFinding.js](https://qiao.github.io/PathFinding.js/visual/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Play and Learning!](https://explorabl.es/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Visual PathFinding.js](https://qiao.github.io/PathFinding.js/visual/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Play and Learning!](https://explorabl.es/){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 18
 
@@ -297,15 +297,15 @@ date: 2020-05-16 14:26:14 +0700
 - "Phong cách học tập": Học trực quan (hình ảnh, hình dạng), Học thính giác (lắng nghe, nhịp điệu), Học tập thể chất (vận động cơ thể, cử chỉ), Học tập quan sát (quan sát hành vi của người khác)
 
 #### Reference
-- [Bloom's taxonomy (Wiki)](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy){:.hvr-forward rel="nofollow" target="_blank"}
-- [Bloom's taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Chris Argyris](https://en.wikipedia.org/wiki/Chris_Argyris){:.hvr-forward rel="nofollow" target="_blank"}
-- [Know-how](https://en.wikipedia.org/wiki/Know-how){:.hvr-forward rel="nofollow" target="_blank"}
-- [Higher-order thinking](https://en.wikipedia.org/wiki/Higher-order_thinking){:.hvr-forward rel="nofollow" target="_blank"}
-- [Kim tự tháp DIKW](https://en.wikipedia.org/wiki/DIKW_pyramid){:.hvr-forward rel="nofollow" target="_blank"}
-- [Chu kỳ học tập](https://en.wikipedia.org/wiki/Learning_cycle){:.hvr-forward rel="nofollow" target="_blank"}
-- [Phong cách học tập](https://en.wikipedia.org/wiki/Learning_styles){:.hvr-forward rel="nofollow" target="_blank"}
-- [Observational learning](https://en.wikipedia.org/wiki/Observational_learning){:.hvr-forward rel="nofollow" target="_blank"}
+- [Bloom's taxonomy (Wiki)](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Bloom's taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Chris Argyris](https://en.wikipedia.org/wiki/Chris_Argyris){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Know-how](https://en.wikipedia.org/wiki/Know-how){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Higher-order thinking](https://en.wikipedia.org/wiki/Higher-order_thinking){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Kim tự tháp DIKW](https://en.wikipedia.org/wiki/DIKW_pyramid){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Chu kỳ học tập](https://en.wikipedia.org/wiki/Learning_cycle){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Phong cách học tập](https://en.wikipedia.org/wiki/Learning_styles){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Observational learning](https://en.wikipedia.org/wiki/Observational_learning){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 19
 
@@ -323,10 +323,10 @@ date: 2020-05-16 14:26:14 +0700
 - "OnDrawGizmosSelected" có thể vẽ Cube, Sphere, WireCube, WireSphere, Mesh, Ray, Icon, Line, GUITexture, Frustum....
 
 #### Reference
-- [Circular buffer](https://en.wikipedia.org/wiki/Circular_buffer){:.hvr-forward rel="nofollow" target="_blank"}
-- [Post Processing Stack v2 overview (Built-in Render Pipeline)](https://docs.unity3d.com/Packages/com.unity.postprocessing@3.0/manual/index.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Post-processing in the Universal Render Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@10.2/manual/integration-with-post-processing.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Post-processing in the High Definition Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Post-Processing-Main.html){:.hvr-forward rel="nofollow" target="_blank"}
+- [Circular buffer](https://en.wikipedia.org/wiki/Circular_buffer){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Post Processing Stack v2 overview (Built-in Render Pipeline)](https://docs.unity3d.com/Packages/com.unity.postprocessing@3.0/manual/index.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Post-processing in the Universal Render Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@10.2/manual/integration-with-post-processing.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Post-processing in the High Definition Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Post-Processing-Main.html){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 20
 

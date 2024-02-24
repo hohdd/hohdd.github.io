@@ -146,16 +146,16 @@ Thêm thuộc tính cho biến collection trong `_config.yml`, lấy mảng coll
 {% endraw %}
 
 ## 11. Deployment
-Có thể sử dụng **Apache HTTP Server** hoặc **Google Firebase** để tự host những static file build ra. Hoặc bạn cũng có thể sử dụng **Github Page**, nó support sẵn **Jekyll**, tuy nhiên không phải versions và dependencies nào nó cũng support ([xem ở đây](https://pages.github.com/versions/){:.hvr-float-shadow rel="nofollow" target="_blank"}), trong trường hợp đó thì bạn phải tự build và push thủ công hoặc tự động với **Travis CI**. **Gitlab Page** cũng là một lựa chọn tốt.
+Có thể sử dụng **Apache HTTP Server** hoặc **Google Firebase** để tự host những static file build ra. Hoặc bạn cũng có thể sử dụng **Github Page**, nó support sẵn **Jekyll**, tuy nhiên không phải versions và dependencies nào nó cũng support ([xem ở đây](https://pages.github.com/versions/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}), trong trường hợp đó thì bạn phải tự build và push thủ công hoặc tự động với **Travis CI**. **Gitlab Page** cũng là một lựa chọn tốt.
 
-Xem hướng dẫn sử dụng Jekyll với Github Page ở đây: [Setting up a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll){:.hvr-forward rel="nofollow" target="_blank"}
+Xem hướng dẫn sử dụng Jekyll với Github Page ở đây: [Setting up a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ## 12. Usage
 - Khi viết bài có nhiều code có syntax của Liquid phải dùng `raw` và `endraw` để ko bị lỗi!
 - Có thể sử dụng cả HTML và Markdown syntax cùng một trang nhưng không được mix với nhau. Ví dụ sử dụng `<div> ... [markdown] ...</div>` là toang.
 
 ## 13. Reference
-- [Jekyll Quickstart](https://jekyllrb.com/docs/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Kramdown Quick Reference](https://kramdown.gettalong.org/quickref.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:.hvr-forward rel="nofollow" target="_blank"}
-- [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md){:.hvr-forward rel="nofollow" target="_blank"}
+- [Jekyll Quickstart](https://jekyllrb.com/docs/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Kramdown Quick Reference](https://kramdown.gettalong.org/quickref.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md){:.hvr-forward.external rel="nofollow" target="_blank"}

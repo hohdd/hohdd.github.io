@@ -143,7 +143,7 @@ Thank you for your consideration. I look forward to hearing from you.
 Sincerely,<br>
 Essie High
 
-[Nguồn tham khảo: indeed.com](https://www.indeed.com/career-advice/career-development/how-to-schedule-a-meeting-by-email){:.hvr-forward rel="nofollow" target="_blank"}
+[Nguồn tham khảo: indeed.com](https://www.indeed.com/career-advice/career-development/how-to-schedule-a-meeting-by-email){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 {% comment %}
 ## https://www.indeed.com/career-advice/career-development/how-to-schedule-a-meeting-by-email

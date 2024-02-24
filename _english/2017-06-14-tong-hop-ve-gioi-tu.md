@@ -31,7 +31,7 @@ date: 2019-06-13 22:26:14 +0700
 ### Nhúng mã `code` hoặc ```code```
 ### Sử dụng class và style (style đặt sau cùng): **Kramdown**{: .w3-section .w3-margin-right #myId style="color: red"}
 ### Chèn ảnh: ![alt text](https://picsum.photos/640/360){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
-### Chèn Link: [link](url){:.hvr-forward rel="nofollow" target="_blank"}
+### Chèn Link: [link](url){:.hvr-forward.external rel="nofollow" target="_blank"}
 ---
 ## Giới từ là gì?
 - Giới từ là những từ dùng **để diễn tả mối quan hệ** *của cụm từ đứng phía sau nó với các thành phần khác trong câu.*

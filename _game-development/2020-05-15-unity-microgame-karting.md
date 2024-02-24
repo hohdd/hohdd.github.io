@@ -99,4 +99,4 @@ public static Vector3 Lerp(Vector3 a, Vector3 b, float t)
 
 ## Mod
 
-[Karting Template](https://learn.unity.com/project/karting-template){:.hvr-forward rel="nofollow" target="_blank"}
+[Karting Template](https://learn.unity.com/project/karting-template){:.hvr-forward.external rel="nofollow" target="_blank"}

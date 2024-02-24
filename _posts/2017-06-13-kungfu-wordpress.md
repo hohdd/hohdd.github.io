@@ -6,7 +6,7 @@ sticky: false # sticky or not, apply for POST only (not COLLECTION) with includi
 exclude: false # exclude on search
 ### SEO
 title: Tổng hợp về wordpress (2020)
-description: Với việc dễ cài đặt, dễ sử dụng, dễ tùy biến nên đối tượng tiếp cận của wordpress rất rộng lớn, community rất hùng mạnh. Tính đến tháng 6 năm 2019, WordPress được sử dụng bởi 60,8% trong số tất cả các trang web có hệ thống quản lý nội dung được biết đến. Đây là 27,5% trong số 10 triệu trang web hàng đầu (theo [Wiki](https://en.wikipedia.org/wiki/WordPress){:hvr-float-shadow rel="nofollow" target="_blank"}). Đến thời điểm hiện tại (năm 2020), wordpress vẫn rất được ưu chuộng.
+description: Với việc dễ cài đặt, dễ sử dụng, dễ tùy biến nên đối tượng tiếp cận của wordpress rất rộng lớn, community rất hùng mạnh. Tính đến tháng 6 năm 2019, WordPress được sử dụng bởi 60,8% trong số tất cả các trang web có hệ thống quản lý nội dung được biết đến. Đây là 27,5% trong số 10 triệu trang web hàng đầu (theo [Wiki](https://en.wikipedia.org/wiki/WordPress){:hvr-float-shadow.external rel="nofollow" target="_blank"}). Đến thời điểm hiện tại (năm 2020), wordpress vẫn rất được ưu chuộng.
 
 ### HUMAN
 header: Tổng hợp về wordpress
@@ -32,7 +32,7 @@ date: 2020-05-15 22:26:14 +0700
 
 ## Overview
 
-Với việc dễ cài đặt, dễ sử dụng, dễ tùy biến nên đối tượng tiếp cận của wordpress rất rộng lớn, community rất hùng mạnh. Tính đến tháng 6 năm 2019, WordPress được sử dụng bởi 60,8% trong số tất cả các trang web có hệ thống quản lý nội dung được biết đến. Đây là 27,5% trong số 10 triệu trang web hàng đầu (theo [Wiki](https://en.wikipedia.org/wiki/WordPress){:hvr-float-shadow rel="nofollow" target="_blank"}). Đến thời điểm hiện tại (năm 2020), wordpress vẫn rất được ưu chuộng.
+Với việc dễ cài đặt, dễ sử dụng, dễ tùy biến nên đối tượng tiếp cận của wordpress rất rộng lớn, community rất hùng mạnh. Tính đến tháng 6 năm 2019, WordPress được sử dụng bởi 60,8% trong số tất cả các trang web có hệ thống quản lý nội dung được biết đến. Đây là 27,5% trong số 10 triệu trang web hàng đầu (theo [Wiki](https://en.wikipedia.org/wiki/WordPress){:hvr-float-shadow.external rel="nofollow" target="_blank"}). Đến thời điểm hiện tại (năm 2020), wordpress vẫn rất được ưu chuộng.
 
 Khi sử dụng wordpress chúng ta cần phải xem xét cẩn thận security của server, source code, database... bởi có nhiều lỗ hổng có thể dễ dàng bị tấn công. Do vậy cần phải update lên version mới thường xuyên, tuyệt đối không sử dụng mật khẩu mặc định (hoặc dễ đoán), cái gì không dùng, không quan trọng thì xóa đi. Cài Theme và Plugin cũng phải cân nhắc liệu có thể tin tưởng được Theme và Plugin đó hay không?
 
@@ -42,39 +42,39 @@ Chức năng chính của wordpress là quản lý các page (có 2 page đặc 
 
 Ngoài ra wordpress có thể tùy biến để thêm vô vàn các tính năng khác thông quan Plugin. Bên cạnh đó còn có Theme cũng có thể dễ dàng thay đổi và tùy biến (Menus, Widgets).
 
-Xem thêm trên [trang tài liệu của wordpress](https://wordpress.org/support/category/basic-usage/){:.hvr-float-shadow rel="nofollow" target="_blank"}
+Xem thêm trên [trang tài liệu của wordpress](https://wordpress.org/support/category/basic-usage/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ## How-to
 
 **Nguyên tắc**: không custom những thứ default/core của wordpress. Hãy viết riêng cho những gì bạn muốn bằng cách tận dụng những gì wordpress đưa cho bạn.
 
 ### Develop Themes
-- Hướng dẫn [**step-by-step** ở đây](https://developer.wordpress.org/themes/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Cần tạo file gì và tìm file nào để sửa thì phải biết về [**Template Hierarchy**](https://developer.wordpress.org/themes/basics/template-hierarchy/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Có một file quan trọng và cực độc đó là **functions.php**. Chi tiết về [**Theme Functions** ở đây](https://developer.wordpress.org/themes/basics/theme-functions/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Register menus, widgets, mổ xẻ post, page ... thì hãy xem [**Theme Functionality** ở đây](https://developer.wordpress.org/themes/functionality/){:.hvr-float-shadow rel="nofollow" target="_blank"}.
-- Nghiêm túc với Wordpress Theme thì hãy bắt đầu ở đây [**Theme Handbook**](https://developer.wordpress.org/themes/){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- Hướng dẫn [**step-by-step** ở đây](https://developer.wordpress.org/themes/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Cần tạo file gì và tìm file nào để sửa thì phải biết về [**Template Hierarchy**](https://developer.wordpress.org/themes/basics/template-hierarchy/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Có một file quan trọng và cực độc đó là **functions.php**. Chi tiết về [**Theme Functions** ở đây](https://developer.wordpress.org/themes/basics/theme-functions/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Register menus, widgets, mổ xẻ post, page ... thì hãy xem [**Theme Functionality** ở đây](https://developer.wordpress.org/themes/functionality/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}.
+- Nghiêm túc với Wordpress Theme thì hãy bắt đầu ở đây [**Theme Handbook**](https://developer.wordpress.org/themes/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Develop Plugins
-- Hướng dẫn [**Plugin Basics** ở đây](https://developer.wordpress.org/plugins/plugin-basics/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- **Hook** (**Actions** and **Filters**) là một sản phẩm "**kịch độc**" giúp Plugin của bạn tương tác với wordpress. Xem về [**Hook** ở đây](https://developer.wordpress.org/plugins/hooks/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Muốn hiểu thêm nhiều thứ khác về Plugin hãy bắt đầu ở [**Plugin Handbook**](https://developer.wordpress.org/plugins/){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- Hướng dẫn [**Plugin Basics** ở đây](https://developer.wordpress.org/plugins/plugin-basics/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- **Hook** (**Actions** and **Filters**) là một sản phẩm "**kịch độc**" giúp Plugin của bạn tương tác với wordpress. Xem về [**Hook** ở đây](https://developer.wordpress.org/plugins/hooks/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Muốn hiểu thêm nhiều thứ khác về Plugin hãy bắt đầu ở [**Plugin Handbook**](https://developer.wordpress.org/plugins/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Build Gutenberg Blocks
-- **Gutenberg Blocks** đang thay đổi cách tạo nội dung trên WordPress, nó chính thức được áp dụng từ wordpress 5.0, manh nha trước đó là  [**Gutenberg Plugin**](https://wordpress.org/plugins/gutenberg/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Để viết một **Guteberg Block** bạn có thể sử dụng 2 dạng format của **javascript** là "**ES5**" (ECMAScript 5, mì ăn liền, viết ăn luôn) và "**ESNext**" (standard version khác, cần [**JavaScript Build** với **NPM**](https://developer.wordpress.org/block-editor/tutorials/javascript/js-build-setup/){:.hvr-float-shadow rel="nofollow" target="_blank"}). Bạn nào đã quen với **React** sẽ là một lợi thế khi **Develop Gutenberg Blocks**.
+- **Gutenberg Blocks** đang thay đổi cách tạo nội dung trên WordPress, nó chính thức được áp dụng từ wordpress 5.0, manh nha trước đó là  [**Gutenberg Plugin**](https://wordpress.org/plugins/gutenberg/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Để viết một **Guteberg Block** bạn có thể sử dụng 2 dạng format của **javascript** là "**ES5**" (ECMAScript 5, mì ăn liền, viết ăn luôn) và "**ESNext**" (standard version khác, cần [**JavaScript Build** với **NPM**](https://developer.wordpress.org/block-editor/tutorials/javascript/js-build-setup/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}). Bạn nào đã quen với **React** sẽ là một lợi thế khi **Develop Gutenberg Blocks**.
 - Flow chính sẽ là:
     1. Register assets (javascript, stylesheet, dependencies)
     2. Define attributes (là object chứa properties của block trong quá trình edit, nó được lưu lại và lấy ra khi chỉnh sửa bài viết)
     3. Registering the Block (đăng ký với tên, icon, mô tả, category... **edit()**: render khi đang edit mode, **save()**: thể hiện block sẽ lưu những gì.)
-- Bạn có thể bắt đầu ở đây [**Writing Your First Block Type**](https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Hoặc nếu bạn start với **ESNext** [@wordpress/create-block](https://www.npmjs.com/package/@wordpress/create-block){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- **Block Registration, Edit and Save, Attributes** là những chủ đề quan trọng bạn cần quan tâm. Hãy xem nó ở [**Block API Reference**](https://developer.wordpress.org/block-editor/developers/block-api/){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Để giúp người dùng cấu hình Block của bạn (chỉnh sửa **Attributes**), hãy xem [**Component Reference**](https://developer.wordpress.org/block-editor/components/){:.hvr-float-shadow rel="nofollow" target="_blank"} và [**Package Reference**](https://developer.wordpress.org/block-editor/packages/){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- Bạn có thể bắt đầu ở đây [**Writing Your First Block Type**](https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Hoặc nếu bạn start với **ESNext** [@wordpress/create-block](https://www.npmjs.com/package/@wordpress/create-block){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- **Block Registration, Edit and Save, Attributes** là những chủ đề quan trọng bạn cần quan tâm. Hãy xem nó ở [**Block API Reference**](https://developer.wordpress.org/block-editor/developers/block-api/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Để giúp người dùng cấu hình Block của bạn (chỉnh sửa **Attributes**), hãy xem [**Component Reference**](https://developer.wordpress.org/block-editor/components/){:.hvr-float-shadow.external rel="nofollow" target="_blank"} và [**Package Reference**](https://developer.wordpress.org/block-editor/packages/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ## Other Reference
-- [**Icon** resource](https://developer.wordpress.org/resource/dashicons){:.hvr-float-shadow rel="nofollow" target="_blank"}
-- Khám phá **Functions, Methods, Hooks, Classes** của wordpress ở tài liệu [**Code Reference**](https://developer.wordpress.org/reference/){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- [**Icon** resource](https://developer.wordpress.org/resource/dashicons){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+- Khám phá **Functions, Methods, Hooks, Classes** của wordpress ở tài liệu [**Code Reference**](https://developer.wordpress.org/reference/){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 {% comment %}{% raw %}
 <!-- CHEAT SHEET -------------------------------------------------------------------
@@ -84,7 +84,7 @@ Xem thêm trên [trang tài liệu của wordpress](https://wordpress.org/suppor
 ### Nhúng mã `code` hoặc ```code```
 ### Sử dụng class và style (style đặt sau cùng): **Kramdown**{: .w3-section .w3-margin-right #myId style="color: red"}
 ### Chèn ảnh: ![TEXT](https://picsum.photos/1500/750){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
-### Chèn Link: [link](url){:.hvr-forward|hvr-float-shadow rel="nofollow" target="_blank"}
+### Chèn Link: [link](url){:.hvr-forward|hvr-float-shadow.external rel="nofollow" target="_blank"}
 ### Hoặc chèn ảnh và link bằng tag:
 ##### {% img "url" "TEXT" %}
 ##### {% a in/out "url" "TEXT" %}

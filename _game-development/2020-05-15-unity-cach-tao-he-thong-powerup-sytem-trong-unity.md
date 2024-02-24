@@ -81,4 +81,4 @@ public class PowerUp : MonoBehaviour
 }
 ```
 
-Tham khảo thêm: [kodeco.com](https://www.kodeco.com/191-how-to-make-a-power-up-system-in-unity){:.hvr-forward rel="nofollow" target="_blank"}
+Tham khảo thêm: [kodeco.com](https://www.kodeco.com/191-how-to-make-a-power-up-system-in-unity){:.hvr-forward.external rel="nofollow" target="_blank"}

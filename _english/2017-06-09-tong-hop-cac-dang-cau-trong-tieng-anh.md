@@ -669,7 +669,7 @@ Khi chuyển từ loại 1 sang loại 2, hoặc loại 2 sang loại 3, bạn c
 ### Sử dụng class và style (style đặt sau cùng): **Kramdown**{: .w3-section .w3-margin-right #myId style="color: red"}
 ### Chèn ảnh: ![TEXT](https://picsum.photos/640/360){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 ### Chèn SVG: ![TEXT](/assets/img/svg/04-2019/FILENAME.svg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
-### Chèn Link: [link](url){:.hvr-forward|hvr-float-shadow rel="nofollow" target="_blank"}
+### Chèn Link: [link](url){:.hvr-forward|hvr-float-shadow.external rel="nofollow" target="_blank"}
 # Layout: "w3-container" căn lề trái phải (16px padding), "w3-section" căn trên dưới (16px margin), w3-margin-left, w3-margin-right
 # Grid (placed inside w3-row/w3-content): w3-half/third/twothird/quarter/threequarter, w3-rest, w3-mobile, w3-image
 # Reponsive hide (@small 601px; @large 992px): w3-hide-small, w3-hide-medium, w3-hide-large

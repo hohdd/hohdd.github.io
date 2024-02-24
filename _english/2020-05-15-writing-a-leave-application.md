@@ -122,7 +122,7 @@ Thank you for understanding,
 
 Flora Jones
 
-[Tham khảo thêm về "Leave Application"](https://www.naukri.com/blog/tag/leave-application/){:.hvr-forward rel="nofollow" target="_blank"}
+[Tham khảo thêm về "Leave Application"](https://www.naukri.com/blog/tag/leave-application/){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 {% comment %}
 ## https://www.naukri.com/blog/one-day-leave-application/#onedayleaveapplicationpersonal

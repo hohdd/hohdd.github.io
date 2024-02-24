@@ -746,4 +746,4 @@ ts.rowMode = ParticleSystemAnimationRowMode.Random;
 
 ### Các Modules khác...
 
-Tham khảo thêm ở đây: [https://docs.unity3d.com/2021.3/Documentation/Manual/ParticleSystemModules.html](https://docs.unity3d.com/2021.3/Documentation/Manual/ParticleSystemModules.html){:.hvr-forward rel="nofollow" target="_blank"}
+Tham khảo thêm ở đây: [https://docs.unity3d.com/2021.3/Documentation/Manual/ParticleSystemModules.html](https://docs.unity3d.com/2021.3/Documentation/Manual/ParticleSystemModules.html){:.hvr-forward.external rel="nofollow" target="_blank"}

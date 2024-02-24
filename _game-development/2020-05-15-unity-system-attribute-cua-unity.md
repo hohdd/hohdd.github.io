@@ -35,7 +35,7 @@ date: 2020-05-15 14:26:14 +0700
 
 ## System.Attribute của UnityEngine
 
-System.Attribute là một lớp cơ sở để tạo ra các thuộc tính tùy biến cho các **class, property hoặc function** trong C#. Các thuộc tính này **có thể thay đổi hành vi hoặc hiển thị** của các thành phần trong Unity [(hướng dẫn từ forum unity)](https://forum.unity.com/threads/tutorial-character-stats-aka-attributes-system.504095/){:.hvr-forward rel="nofollow" target="_blank"}. Đây là một số ví dụ về các System.Attribute của UnityEngine:
+System.Attribute là một lớp cơ sở để tạo ra các thuộc tính tùy biến cho các **class, property hoặc function** trong C#. Các thuộc tính này **có thể thay đổi hành vi hoặc hiển thị** của các thành phần trong Unity [(hướng dẫn từ forum unity)](https://forum.unity.com/threads/tutorial-character-stats-aka-attributes-system.504095/){:.hvr-forward.external rel="nofollow" target="_blank"}. Đây là một số ví dụ về các System.Attribute của UnityEngine:
 
 •  **[CreateAssetMenu]**: Thuộc tính này dùng để thêm menu context ở Asset, giúp tạo các ScriptableObject Asset. Ví dụ:<br>
 ```csharp

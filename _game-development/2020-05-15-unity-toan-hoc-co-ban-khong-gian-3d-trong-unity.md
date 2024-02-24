@@ -54,9 +54,9 @@ Có một số phép toán cơ bản thường được sử dụng khi làm vi�
 - Phép **nhân** vô hướng của **ma trận với véctơ**: Phép nhân vô hướng của ma trận với véctơ là một phép toán được sử dụng để biến đổi giá trị của một véctơ.
 
 Tham khảo thêm:
-- [Toán lớp 11](https://ttgdnn-gdtxquan11.edu.vn/toan-lop-11-ly-thuyet-va-7-dang-bai-tap-chon-loc-moi-nhat-2023.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Bài Giảng Đại Số Tuyến Tính](https://www.slideshare.net/mashmallow967/bi-ging-i-s-tuyn-tnh-h-thng-long){:.hvr-forward rel="nofollow" target="_blank"}
-- [Đồ họa trong không gian ba chiều](https://123docz.net/document/628965-do-hoa-trong-khong-gian-ba-chieu.htm){:.hvr-forward rel="nofollow" target="_blank"}
+- [Toán lớp 11](https://ttgdnn-gdtxquan11.edu.vn/toan-lop-11-ly-thuyet-va-7-dang-bai-tap-chon-loc-moi-nhat-2023.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Bài Giảng Đại Số Tuyến Tính](https://www.slideshare.net/mashmallow967/bi-ging-i-s-tuyn-tnh-h-thng-long){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Đồ họa trong không gian ba chiều](https://123docz.net/document/628965-do-hoa-trong-khong-gian-ba-chieu.htm){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Ứng dụng của các phép toán về véctơ trong Unity Engine
 

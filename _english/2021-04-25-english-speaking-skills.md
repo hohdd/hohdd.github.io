@@ -32,7 +32,7 @@ date: 2019-06-13 22:26:14 +0700
 ### Nhúng mã `code` hoặc ```code```
 ### Sử dụng class và style (style đặt sau cùng): **Kramdown**{: .w3-section .w3-margin-right #myId style="color: red"}
 ### Chèn ảnh: ![alt text](image.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
-### Chèn Link: [link](url){:.hvr-forward rel="nofollow" target="_blank"}
+### Chèn Link: [link](url){:.hvr-forward.external rel="nofollow" target="_blank"}
 ### Nguồn: https://basicenglishspeaking.com/common-expressions-english/
 ---
 
@@ -97,7 +97,7 @@ Tham khảo: [Tổng quan về cấu trúc câu & Nhận biết các thành ph�
 
 ## 3. Ngữ pháp và Cấu trúc câu
 
-- [Basic English Grammar Rules With Example Sentences](https://basicenglishspeaking.com/basic-english-grammar-rules/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Basic English Grammar Rules With Example Sentences](https://basicenglishspeaking.com/basic-english-grammar-rules/){:.hvr-forward.external rel="nofollow" target="_blank"}
 - [100 Common Sentence Structures](/collections/english/100-common-sentence-structures){:.hvr-forward target="_blank"}
 
 ## 4. Luyện nói (CAKE)

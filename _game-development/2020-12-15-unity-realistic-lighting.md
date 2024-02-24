@@ -44,9 +44,9 @@ date: 2020-05-16 14:26:14 +0700
 - Các số L * a * b * cho phép thể hiện màu sắc chính xác nhất theo cách độc lập với thiết bị.
 
 #### Reference
-- [Using Basic Color Theory in Landscape and Garden Design](https://www.thespruce.com/color-theory-in-landscape-design-2132147){:.hvr-forward rel="nofollow" target="_blank"}
-- [Các chiều của màu sắc](http://www.huevaluechroma.com/){:.hvr-forward rel="nofollow" target="_blank"}
-- [7 Tips For Better Lighting in Unity](https://medium.com/@EightyLevel/7-tips-for-better-lighting-in-unity-686694892ece){:.hvr-forward rel="nofollow" target="_blank"}
+- [Using Basic Color Theory in Landscape and Garden Design](https://www.thespruce.com/color-theory-in-landscape-design-2132147){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Các chiều của màu sắc](http://www.huevaluechroma.com/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [7 Tips For Better Lighting in Unity](https://medium.com/@EightyLevel/7-tips-for-better-lighting-in-unity-686694892ece){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 2
 
@@ -77,8 +77,8 @@ date: 2020-05-16 14:26:14 +0700
 	- Culling Mask: Sử dụng tùy chọn này để loại trừ có chọn lọc các nhóm đối tượng khỏi bị ảnh hưởng bởi Ánh sáng.
 
 #### Reference
-- [Lighting tips for mobile game](https://blogs.unity3d.com/es/2020/06/15/lighting-tips-for-mobile-game-development/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Tips to get 60 fps on low-end phones](https://unity.com/how-to/advanced/optimize-lighting-mobile-games){:.hvr-forward rel="nofollow" target="_blank"}
+- [Lighting tips for mobile game](https://blogs.unity3d.com/es/2020/06/15/lighting-tips-for-mobile-game-development/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Tips to get 60 fps on low-end phones](https://unity.com/how-to/advanced/optimize-lighting-mobile-games){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 3
 
@@ -120,10 +120,10 @@ date: 2020-05-16 14:26:14 +0700
 	- Vertex (Đỉnh): là một cấu trúc dữ liệu mô tả các thuộc tính nhất định, như vị trí của một điểm trong 2D hoặc 3D không gian, hoặc nhiều điểm trên một bề mặt.
 
 #### Reference
-- [List of video games considered the best](https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best){:.hvr-forward rel="nofollow" target="_blank"}
-- [A series about controlling the movement of a character](https://catlikecoding.com/unity/tutorials/movement/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Glossary of computer graphics](https://en.wikipedia.org/wiki/Glossary_of_computer_graphics){:.hvr-forward rel="nofollow" target="_blank"}
-- [Glossary of video game terms](https://en.wikipedia.org/wiki/Glossary_of_video_game_terms){:.hvr-forward rel="nofollow" target="_blank"}
+- [List of video games considered the best](https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [A series about controlling the movement of a character](https://catlikecoding.com/unity/tutorials/movement/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Glossary of computer graphics](https://en.wikipedia.org/wiki/Glossary_of_computer_graphics){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Glossary of video game terms](https://en.wikipedia.org/wiki/Glossary_of_video_game_terms){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 4
 
@@ -162,13 +162,13 @@ date: 2020-05-16 14:26:14 +0700
 		- Phép nghịch đảo được yêu cầu để tính toán lại tọa độ thế giới từ tọa độ màn hình - ví dụ: để xác định từ vị trí con trỏ chuột của đối tượng được nhấp. Tuy nhiên, vì màn hình và chuột chỉ có hai chiều nên thứ ba vẫn chưa rõ. Do đó, một tia được chiếu tại vị trí con trỏ vào thế giới và sau đó giao của tia này với các đa giác trong thế giới được xác định.
 
 #### Reference
-- [Graphics pipeline (hình học, tọa độ, camera, phép chiếu, ánh sáng, viewport...](https://en.wikipedia.org/wiki/Graphics_pipeline){:.hvr-forward rel="nofollow" target="_blank"}
-- [Computer graphics: Concepts and principles](https://en.wikipedia.org/wiki/Computer_graphics#Concepts_and_principles){:.hvr-forward rel="nofollow" target="_blank"}
-- [Transformation matrix](https://en.wikipedia.org/wiki/Transformation_matrix){:.hvr-forward rel="nofollow" target="_blank"}
-- [Rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix){:.hvr-forward rel="nofollow" target="_blank"}
-- [Đại số tuyến tính](https://en.wikipedia.org/wiki/Linear_algebra){:.hvr-forward rel="nofollow" target="_blank"}
-- [Phép nhân ma trận](https://en.wikipedia.org/wiki/Matrix_multiplication){:.hvr-forward rel="nofollow" target="_blank"}
-- [Dot product (tích vô hướng)](https://en.wikipedia.org/wiki/Dot_product){:.hvr-forward rel="nofollow" target="_blank"}
+- [Graphics pipeline (hình học, tọa độ, camera, phép chiếu, ánh sáng, viewport...](https://en.wikipedia.org/wiki/Graphics_pipeline){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Computer graphics: Concepts and principles](https://en.wikipedia.org/wiki/Computer_graphics#Concepts_and_principles){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Transformation matrix](https://en.wikipedia.org/wiki/Transformation_matrix){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Đại số tuyến tính](https://en.wikipedia.org/wiki/Linear_algebra){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Phép nhân ma trận](https://en.wikipedia.org/wiki/Matrix_multiplication){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Dot product (tích vô hướng)](https://en.wikipedia.org/wiki/Dot_product){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 5
 
@@ -185,10 +185,10 @@ date: 2020-05-16 14:26:14 +0700
 - Four-point lighting (Chiếu sáng bốn điểm): Ánh sáng nền được đặt phía sau (các) chủ thể, trên cao hoặc thấp so với mặt đất. nó chiếu sáng các yếu tố hậu cảnh, chẳng hạn như tường hoặc phong cảnh ngoài trời. Kỹ thuật này có thể được sử dụng để loại bỏ bóng đổ bởi các yếu tố tiền cảnh lên hậu cảnh hoặc để thu hút nhiều sự chú ý hơn đến hậu cảnh.
 
 #### Reference
-- [Tại sao mọi bộ phim đều có màu cam và xanh dương](https://priceonomics.com/why-every-movie-looks-sort-of-orange-and-blue/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Three Point Lighting - Đại học Washington](https://courses.cs.washington.edu/courses/cse458/05au/reading/3point_lighting.pdf){:.hvr-forward rel="nofollow" target="_blank"}
-- [Color Hex Color Codes](https://www.color-hex.com/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Understand what colors mean](https://www.canva.com/learn/choose-right-colors-brand/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Tại sao mọi bộ phim đều có màu cam và xanh dương](https://priceonomics.com/why-every-movie-looks-sort-of-orange-and-blue/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Three Point Lighting - Đại học Washington](https://courses.cs.washington.edu/courses/cse458/05au/reading/3point_lighting.pdf){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Color Hex Color Codes](https://www.color-hex.com/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Understand what colors mean](https://www.canva.com/learn/choose-right-colors-brand/){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 6
 
@@ -208,12 +208,12 @@ date: 2020-05-16 14:26:14 +0700
 - Game online: Xếp hạng, matching, shop, Lobby (visual lobby, simple lobby), DB request, Đấu giá, bảng thông báo, chat, Messaging, Login authentication, hệ thống nhiệm vụ & missions, Máy chủ trò chơi, Clan & party, trang viên chiến, hắc bạch đại chiến, Đi quyết & Dungeon, events...
 
 #### Reference
-- [Marvelous Designer is the best solution for making, editing and reusing 3D clothes.](https://www.marvelousdesigner.com/product/overview){:.hvr-forward rel="nofollow" target="_blank"}
-- [Wrap changes the way you process 3D-scan data](https://www.russian3dscanner.com/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Autodesk MotionBuilder: 3D character animation software](https://www.autodesk.com/products/motionbuilder/overview){:.hvr-forward rel="nofollow" target="_blank"}
-- [CRYENGINE: 5% royalty applies when you ship your project. Your first $5K annual revenue per project is royalty-free.](https://www.cryengine.com/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Inspiring content and intelligent tools to create and apply materials for 3D](https://www.substance3d.com/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Silicon Studio](https://www.siliconstudio.co.jp/corporate/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Marvelous Designer is the best solution for making, editing and reusing 3D clothes.](https://www.marvelousdesigner.com/product/overview){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Wrap changes the way you process 3D-scan data](https://www.russian3dscanner.com/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Autodesk MotionBuilder: 3D character animation software](https://www.autodesk.com/products/motionbuilder/overview){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [CRYENGINE: 5% royalty applies when you ship your project. Your first $5K annual revenue per project is royalty-free.](https://www.cryengine.com/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Inspiring content and intelligent tools to create and apply materials for 3D](https://www.substance3d.com/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Silicon Studio](https://www.siliconstudio.co.jp/corporate/){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 7
 
@@ -262,11 +262,11 @@ date: 2020-05-16 14:26:14 +0700
 - Key takeaways: Pick the right scope, Make it awesome, Iterate quickly and test frequently
 
 #### Reference
-- [The Courtyard: Awesome Realtime GI on desktops and consoles](https://blogs.unity3d.com/2015/11/05/awesome-realtime-gi-on-desktops-and-consoles/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Tesseract: game bắn súng và tự tạo địa hình](http://tesseract.gg/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Chiếu sáng toàn cầu trong Unity 5](https://blogs.unity3d.com/2014/09/18/global-illumination-in-unity-5/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Best Practices for fast game design in Unity](https://www.youtube.com/watch?v=NU29QKag8a0){:.hvr-forward rel="nofollow" target="_blank"}
-- [Free Template KIT](http://unityassetcollection.com/category/templates/page/7/){:.hvr-forward rel="nofollow" target="_blank"}
+- [The Courtyard: Awesome Realtime GI on desktops and consoles](https://blogs.unity3d.com/2015/11/05/awesome-realtime-gi-on-desktops-and-consoles/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Tesseract: game bắn súng và tự tạo địa hình](http://tesseract.gg/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Chiếu sáng toàn cầu trong Unity 5](https://blogs.unity3d.com/2014/09/18/global-illumination-in-unity-5/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Best Practices for fast game design in Unity](https://www.youtube.com/watch?v=NU29QKag8a0){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Free Template KIT](http://unityassetcollection.com/category/templates/page/7/){:.hvr-forward.external rel="nofollow" target="_blank"}
 
 ### Challenge 8
 
@@ -276,6 +276,6 @@ date: 2020-05-16 14:26:14 +0700
 - Light Probes: trong môi trường ánh sáng Baked (để tăng performance) đối với những Object di chuyển, sử dụng "Light probes" để áp dụng ánh sáng (thông tin lấy từ Baked) cho Object chuyển động.
 
 #### Reference
-- [Material charts](https://docs.unity3d.com/Manual/StandardShaderMaterialCharts.html){:.hvr-forward rel="nofollow" target="_blank"}
-- [Using Light probes in Unity 3D](http://gyanendushekhar.com/2020/02/16/using-light-probes-in-unity-3d/){:.hvr-forward rel="nofollow" target="_blank"}
-- [Gyanendu Shekhar's Blog](http://gyanendushekhar.com/unity/){:.hvr-forward rel="nofollow" target="_blank"}
+- [Material charts](https://docs.unity3d.com/Manual/StandardShaderMaterialCharts.html){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Using Light probes in Unity 3D](http://gyanendushekhar.com/2020/02/16/using-light-probes-in-unity-3d/){:.hvr-forward.external rel="nofollow" target="_blank"}
+- [Gyanendu Shekhar's Blog](http://gyanendushekhar.com/unity/){:.hvr-forward.external rel="nofollow" target="_blank"}

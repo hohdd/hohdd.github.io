@@ -41,10 +41,10 @@ Sơ đồ bên dưới thể hiện 3 Thực thể khác nhau trong quy trình r
 ![TEXT](/assets/img/collections/3d-shader.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 
 - **3D Model**: là tập hợp **tọa độ các đỉnh (Vertex)**, chúng được nối với nhau tạo thành hình tam giác. Mỗi đỉnh có thể chứa một số thông tin khác như Color, Normal, UV data
-- **Material**: là phần fill vào các hình tam giác tạo bởi các Vertex. Các vật liệu khác nhau có thể chia sẻ cùng một shader. Những thông tin trong Inspector khi một Material được chọn gồm: màu **Albedo, Normal Map, Height Map, Occlusion, Emission...** [chi tiết ở đây](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- **Material**: là phần fill vào các hình tam giác tạo bởi các Vertex. Các vật liệu khác nhau có thể chia sẻ cùng một shader. Những thông tin trong Inspector khi một Material được chọn gồm: màu **Albedo, Normal Map, Height Map, Occlusion, Emission...** [chi tiết ở đây](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Mổ xẻ một shader
-- Unity3D hỗ trợ hai loại trình đổ bóng khác nhau: trình đổ bóng bề mặt ([**suface shaders**](https://docs.unity3d.com/Manual/SL-SurfaceShaders.html){:.hvr-float-shadow rel="nofollow" target="_blank"}) và trình đổ bóng đoạn và đỉnh ([**fragment and vertex shaders**](https://docs.unity3d.com/Manual/SL-ShaderPrograms.html){:.hvr-float-shadow rel="nofollow" target="_blank"}). Có một loại thứ ba, các shader chức năng cố định (**fixed function shaders**), nhưng chúng hiện đã lỗi thời và không khuyến khích sử dụng.
+- Unity3D hỗ trợ hai loại trình đổ bóng khác nhau: trình đổ bóng bề mặt ([**suface shaders**](https://docs.unity3d.com/Manual/SL-SurfaceShaders.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}) và trình đổ bóng đoạn và đỉnh ([**fragment and vertex shaders**](https://docs.unity3d.com/Manual/SL-ShaderPrograms.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}). Có một loại thứ ba, các shader chức năng cố định (**fixed function shaders**), nhưng chúng hiện đã lỗi thời và không khuyến khích sử dụng.
 - Cấu trúc mộ file Shader code như bên dưới
 
 ```csharp
@@ -355,7 +355,7 @@ Shader "Example/SimpleLambert" {
 
 #### Toon shading
 
-[Wikipadia: Cel shading](https://en.wikipedia.org/wiki/Cel_shading){:.hvr-float-shadow rel="nofollow" target="_blank"} thường được sử dụng để bắt chước phong cách của truyện tranh hoặc phim hoạt hình.
+[Wikipadia: Cel shading](https://en.wikipedia.org/wiki/Cel_shading){:.hvr-float-shadow.external rel="nofollow" target="_blank"} thường được sử dụng để bắt chước phong cách của truyện tranh hoặc phim hoạt hình.
 
 Đó là một phong cách kết xuất không mang tính chân thực, thay đổi cách ánh sáng phản chiếu trên mô hình để tạo ảo giác rằng nó được vẽ bằng tay. Để thực hiện phong cách này, chúng ta **cần thay thế mô hình chiếu sáng tiêu chuẩn** bằng một **mô hình tùy chỉnh (Lighting Model)**.
 
@@ -457,7 +457,7 @@ Shader "Custom/SolidColor" {
 
 #### Input semantics
 
-Danh sách **binding semantics** phổ biến nhất của **vertInput**. Tham khảo [Cg Manual](https://developer.download.nvidia.com/cg/Cg_3.1/Cg-3.1_April2012_ReferenceManual.pdf){:.hvr-float-shadow rel="nofollow" target="_blank"}
+Danh sách **binding semantics** phổ biến nhất của **vertInput**. Tham khảo [Cg Manual](https://developer.download.nvidia.com/cg/Cg_3.1/Cg-3.1_April2012_ReferenceManual.pdf){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 | Binding Semantics | Description
 |:-|:-:|-:
@@ -754,7 +754,7 @@ half4 frag (vertOutput i) : COLOR
 ### Screen shaders and image effects
 
 #### Screen Shaders
-[Image Effects](https://docs.unity3d.com/540/Documentation/Manual/WritingImageEffects.html){:.hvr-float-shadow rel="nofollow" target="_blank"} là các tập lệnh mà khi được gắn vào máy ảnh sẽ thay đổi kết quả hiển thị của nó. Mặc dù được trình bày dưới dạng tập lệnh C#, việc tính toán thực tế được thực hiện bằng cách sử dụng Shader. Khi Shader được sử dụng theo cách này (**xử lý hậu kỳ postprocessing**), chúng thường được gọi là **Screen Shaders**.
+[Image Effects](https://docs.unity3d.com/540/Documentation/Manual/WritingImageEffects.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"} là các tập lệnh mà khi được gắn vào máy ảnh sẽ thay đổi kết quả hiển thị của nó. Mặc dù được trình bày dưới dạng tập lệnh C#, việc tính toán thực tế được thực hiện bằng cách sử dụng Shader. Khi Shader được sử dụng theo cách này (**xử lý hậu kỳ postprocessing**), chúng thường được gọi là **Screen Shaders**.
 
 ![TEXT](/assets/img/collections/shader-bw.gif){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 ```csharp

@@ -41,7 +41,7 @@ Sơ đồ bên dưới thể hiện 3 Thực thể khác nhau trong quy trình r
 ![TEXT](/assets/img/collections/3d-shader.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 
 - **3D Model**: là tập hợp **tọa độ các đỉnh (Vertex)**, chúng được nối với nhau tạo thành hình tam giác. Mỗi đỉnh có thể chứa một số thông tin khác như Color, Normal, UV data
-- **Material**: là phần fill vào các hình tam giác tạo bởi các Vertex. Các vật liệu khác nhau có thể chia sẻ cùng một shader. Những thông tin trong Inspector khi một Material được chọn gồm: màu **Albedo, Normal Map, Height Map, Occlusion, Emission...** [chi tiết ở đây](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- **Material**: là phần fill vào các hình tam giác tạo bởi các Vertex. Các vật liệu khác nhau có thể chia sẻ cùng một shader. Những thông tin trong Inspector khi một Material được chọn gồm: màu **Albedo, Normal Map, Height Map, Occlusion, Emission...** [chi tiết ở đây](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Shaders core concepts: Các nguyên tắc cơ bản để hiểu và làm việc với trình đổ bóng trong Unity.
 #### Shaders introduction: Thông tin giới thiệu về shader và thuật ngữ chính.
@@ -225,7 +225,7 @@ Sơ đồ bên dưới thể hiện 3 Thực thể khác nhau trong quy trình r
 + Enabling and disabling shader keywords:
     - Bạn có thể bật hoặc tắt từ khóa đổ bóng. Khi bạn bật hoặc tắt từ khóa shader, shader sẽ hiển thị hành vi có điều kiện thích hợp.
     - Có hai cách để bật và tắt từ khóa shader:
-        + Sử dụng tập lệnh trong thời gian chạy hoặc trong Unity Editor xem [Using shader keywords with C# scripts](https://docs.unity3d.com/Manual/shader-keywords-scripts.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+        + Sử dụng tập lệnh trong thời gian chạy hoặc trong Unity Editor xem [Using shader keywords with C# scripts](https://docs.unity3d.com/Manual/shader-keywords-scripts.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
         + Sử dụng Inspector Material trong Unity Editor. (Shader Graph => Exposed property; hand-coded => MaterialPropertyDrawer: [Toggle], [KeywordEnum])
 
 ###### Unity’s predefined shader keywords:
@@ -273,14 +273,14 @@ Sơ đồ bên dưới thể hiện 3 Thực thể khác nhau trong quy trình r
 - Invoking compute shaders: trong C#, sử dụng hàm **ComputeShader.Dispatch(int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ)**
 
 ### Built-in shaders: Cách sử dụng các shader dựng sẵn đi kèm với Unity.
-- Xem thêm: [Standard Shader Material Inspector reference](https://docs.unity3d.com/Manual/StandardShaderMaterialParameters.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- Xem thêm: [Standard Shader Material Inspector reference](https://docs.unity3d.com/Manual/StandardShaderMaterialParameters.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Using Shader Graph: Cách sử dụng Shader Graph, một công cụ cho phép bạn tạo shader mà không cần viết mã.
-- **Shader Graph** Là một Package được cài đặt thông qua **Package Manager** Xem thêm [Shader Graph documentation](https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/index.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- **Shader Graph** Là một Package được cài đặt thông qua **Package Manager** Xem thêm [Shader Graph documentation](https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/index.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Writing shaders: Cách tạo shader bằng cách viết mã.
 - Khi bạn viết shader đối với Unity, bạn sử dụng các ngôn ngữ sau (cả 2):
-    + [HLSL in Unity (High-level shader language)](https://docs.unity3d.com/Manual/SL-ShaderPrograms.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+    + [HLSL in Unity (High-level shader language)](https://docs.unity3d.com/Manual/SL-ShaderPrograms.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
     + ShaderLab là ngôn ngữ dành riêng cho Unity, sử dụng để xác định một đối tượng Shader, hoạt động như một nơi chứa (container) các chương trình đổ bóng (shader programs)
 - Bạn không cần sử dụng các ngôn ngữ khác nhau cho các nền tảng khác nhau. Unity sẽ biên dịch mã HLSL và ShaderLab của bạn thành các ngôn ngữ khác nhau cho các API đồ họa khác nhau.
 - Có nhiều cách khác nhau để viết shader:
@@ -395,19 +395,19 @@ Pass
 ```
 
 ##### ShaderLab: commands
-- Xem [Commands for setting render state, Pass commands](https://docs.unity3d.com/Manual/shader-shaderlab-commands.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- Xem [Commands for setting render state, Pass commands](https://docs.unity3d.com/Manual/shader-shaderlab-commands.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### HLSL in Unity
 #### Thông tin
-- Đây là thông tin về sử dụng HLSL trong Unity, [về thông tin chung của HLSL xem thêm ở Microsoft](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- Đây là thông tin về sử dụng HLSL trong Unity, [về thông tin chung của HLSL xem thêm ở Microsoft](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 {% msg warning Lưu ý: Unity ban đầu sử dụng ngôn ngữ Cg, do đó tên của một số từ khóa của Unity (CGPROGRAM) và phần mở rộng tệp (**.cginc**). Unity không còn sử dụng Cg nữa nhưng những tên này vẫn được sử dụng. %}
 - Cách bạn viết các **custom shaders** trong Unity phụ thuộc vào đường dẫn kết xuất (**render pipeline**) bạn dùng:
-    + Built-in Render Pipeline: xem [Custom shader fundamentals](https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
-    + Universal Render Pipeline (URP): xem [URP: Writing custom shaders](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/writing-custom-shaders-urp.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
-    + HDRP: Bạn không nên viết chương trình Shader cho HDRP của riêng mình do tính phức tạp của mã. Thay vào đó, hãy sử dụng [**Shader Graph**](https://docs.unity3d.com/Manual/shader-graph.html){:.hvr-float-shadow rel="nofollow" target="_blank"} để tạo các đối tượng Shader mà không cần viết mã.
+    + Built-in Render Pipeline: xem [Custom shader fundamentals](https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+    + Universal Render Pipeline (URP): xem [URP: Writing custom shaders](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/writing-custom-shaders-urp.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+    + HDRP: Bạn không nên viết chương trình Shader cho HDRP của riêng mình do tính phức tạp của mã. Thay vào đó, hãy sử dụng [**Shader Graph**](https://docs.unity3d.com/Manual/shader-graph.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"} để tạo các đối tượng Shader mà không cần viết mã.
 
 #### Shader semantics, Built-in shader include files, macros, helper functions, variables, data types...
-- [Xem tài liệu Unity](https://docs.unity3d.com/Manual/SL-BuiltinMacros.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- [Xem tài liệu Unity](https://docs.unity3d.com/Manual/SL-BuiltinMacros.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Writing Surface Shaders
 - Trong Đường ống kết xuất tích hợp (**Built-in Render Pipeline**), **Surface Shaders** là một cách viết **shaders** tương tác với ánh sáng.
@@ -472,7 +472,7 @@ struct SurfaceOutput
 ##### Rendering paths in the Built-in Render Pipeline
 - Đường dẫn kết xuất (**rendering path**) là một chuỗi các thao tác liên quan đến chiếu sáng (**lighting**) và tạo bóng (**shading**).
 - Các rendering paths hiển thị khác nhau có khả năng và đặc tính hiệu suất khác nhau. Việc quyết định đường dẫn hiển thị nào phù hợp nhất cho Dự án của bạn tùy thuộc vào loại Dự án và phần cứng mục tiêu.
-- **Forward rendering path**: *Kết xuất chuyển tiếp hiển thị từng đối tượng trong một hoặc nhiều lượt, tùy thuộc vào ánh sáng ảnh hưởng đến đối tượng. Bản thân đèn cũng được xử lý khác nhau bằng Forward Rendering, tùy thuộc vào cài đặt và cường độ của chúng.* xem thêm [Unity Manual](https://docs.unity3d.com/Manual/RenderTech-ForwardRendering.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- **Forward rendering path**: *Kết xuất chuyển tiếp hiển thị từng đối tượng trong một hoặc nhiều lượt, tùy thuộc vào ánh sáng ảnh hưởng đến đối tượng. Bản thân đèn cũng được xử lý khác nhau bằng Forward Rendering, tùy thuộc vào cài đặt và cường độ của chúng.* xem thêm [Unity Manual](https://docs.unity3d.com/Manual/RenderTech-ForwardRendering.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 - **Deferred Shading rendering path**: *Khi sử dụng deferred shading, không có giới hạn về số lượng đèn có thể ảnh hưởng đến GameObject. Tất cả các đèn đều được đánh giá trên mỗi pixel, có nghĩa là tất cả chúng đều tương tác chính xác với normal maps, v.v. Ngoài ra, tất cả các đèn đều có thể có cookie và shadows. Việc tạo bóng trì hoãn có ưu điểm là chi phí xử lý ánh sáng tỷ lệ thuận với số lượng pixel ánh sáng chiếu vào. Điều này được xác định bởi kích thước của lượng ánh sáng trong Cảnh bất kể nó chiếu sáng bao nhiêu GameObject. Vì vậy, hiệu suất có thể được cải thiện bằng cách giữ đèn nhỏ. Tính năng tạo bóng trì hoãn cũng có tính nhất quán cao và có thể dự đoán được. Mặt khác, tính năng tạo bóng bị trì hoãn không hỗ trợ thực sự cho việc khử răng cưa và không thể xử lý các GameObject bán trong suốt... Hầu hết các card đồ họa PC được sản xuất sau năm 2006 đều hỗ trợ tính năng tạo bóng chậm, bắt đầu với GeForce 8xxx, Radeon X2400, Intel G45....*
 - **Vertex Lit Rendering Path**: *Đường dẫn Vertex Lit thường render từng đối tượng trong một lần, với ánh sáng từ tất cả các đèn được tính toán cho mỗi đỉnh. Đó là đường dẫn kết xuất nhanh nhất và có hỗ trợ phần cứng rộng nhất. Vì tất cả ánh sáng được tính toán ở cấp độ đỉnh nên đường dẫn hiển thị này không hỗ trợ hầu hết các hiệu ứng trên mỗi pixel: shadows, normal mapping, light cookies, và highly detailed specular highlights không được hỗ trợ.*
 
@@ -502,4 +502,4 @@ struct SurfaceOutput
 
 #### Gỡ lỗi - Debug
 - Gỡ lỗi trình đổ bóng bằng Visual Studio (*Lưu ý: Nếu bạn đang sử dụng DirectX 12, Microsoft khuyên bạn nên sử dụng **PIX** để gỡ lỗi trình đổ bóng thay vì Visual Studio.*)
-- [Xem hướng dẫn](https://docs.unity3d.com/Manual/SL-DebuggingD3D11ShadersWithVS.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+- [Xem hướng dẫn](https://docs.unity3d.com/Manual/SL-DebuggingD3D11ShadersWithVS.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}

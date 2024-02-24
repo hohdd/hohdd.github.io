@@ -90,5 +90,5 @@ Các funcions của coroutine (yield null/WaitForSeconds/WaitForFixedUpdate/WWW/
 
 ### 8. Các Event khác (Editor, Animation, Rendering, When the Object is destroyed, When quitting)
 
-Xem thêm ở đây: [Order of execution for event functions](https://docs.unity3d.com/Manual/ExecutionOrder.html){:.hvr-forward rel="nofollow" target="_blank"}
+Xem thêm ở đây: [Order of execution for event functions](https://docs.unity3d.com/Manual/ExecutionOrder.html){:.hvr-forward.external rel="nofollow" target="_blank"}
 

@@ -125,13 +125,13 @@ transform.Translate(new Vector3(horizontalInput, verticalInput, 0) * moveSpeed *
 
 ## Mobile device input
 
-Trên thiết bị di động, class "Input" cung cấp quyền truy cập vào màn hình cảm ứng, gia tốc kế và đầu vào địa lý/vị trí. Tham khảo [class "Input"](https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Input.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+Trên thiết bị di động, class "Input" cung cấp quyền truy cập vào màn hình cảm ứng, gia tốc kế và đầu vào địa lý/vị trí. Tham khảo [class "Input"](https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Input.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
-Quyền truy cập vào bàn phím trên thiết bị di động được cung cấp thông qua [Mobile Keyboard](https://docs.unity3d.com/2021.3/Documentation/Manual/MobileKeyboard.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+Quyền truy cập vào bàn phím trên thiết bị di động được cung cấp thông qua [Mobile Keyboard](https://docs.unity3d.com/2021.3/Documentation/Manual/MobileKeyboard.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Multi-touch screen
 
-Các thiết bị iPhone, iPad và iPod Touch có khả năng theo dõi tối đa năm ngón tay chạm vào màn hình cùng một lúc. Bạn có thể truy xuất trạng thái của từng ngón tay chạm vào màn hình trong khung hình cuối cùng bằng cách truy cập vào mảng thuộc tính [Input.touches](https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Input-touches.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+Các thiết bị iPhone, iPad và iPod Touch có khả năng theo dõi tối đa năm ngón tay chạm vào màn hình cùng một lúc. Bạn có thể truy xuất trạng thái của từng ngón tay chạm vào màn hình trong khung hình cuối cùng bằng cách truy cập vào mảng thuộc tính [Input.touches](https://docs.unity3d.com/2021.3/Documentation/ScriptReference/Input-touches.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 Các thiết bị Android không có giới hạn thống nhất về số lượng ngón tay mà chúng theo dõi. Thay vào đó, nó thay đổi tùy theo thiết bị và có thể là bất kỳ thao tác nào từ chạm hai lần trên thiết bị cũ đến năm ngón tay trên một số thiết bị mới hơn.
 
@@ -160,8 +160,8 @@ Trong hầu hết các trường hợp, Unity sẽ tự động xử lý việc 
 
 Manual Keyboard Handling: Sử dụng hàm ```TouchScreenKeyboard.Open()``` để mở bàn phím.
 
-Tham khảo thêm [Mobile Keyboard](https://docs.unity3d.com/2021.3/Documentation/Manual/MobileKeyboard.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+Tham khảo thêm [Mobile Keyboard](https://docs.unity3d.com/2021.3/Documentation/Manual/MobileKeyboard.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### Unity XR Input
 
-Unity hỗ trợ cho thực tế ảo , thực tế tăng cường và Windows Mixed Reality. Tham khảo [Unity XR Input](https://docs.unity3d.com/2021.3/Documentation/Manual/xr_input.html){:.hvr-float-shadow rel="nofollow" target="_blank"}
+Unity hỗ trợ cho thực tế ảo , thực tế tăng cường và Windows Mixed Reality. Tham khảo [Unity XR Input](https://docs.unity3d.com/2021.3/Documentation/Manual/xr_input.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
