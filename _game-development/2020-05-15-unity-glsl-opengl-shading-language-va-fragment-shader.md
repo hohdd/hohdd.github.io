@@ -21,6 +21,7 @@ text2speech: false # có bật chức năng Text-To-Speech hay không?
 toc: true
 mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
+glslEditor: true # nhúng glslEditor
 amp: false
 audioSetting: false # có menu để setting audio or not
 collection: Graphic # this for AMP related post
@@ -89,3 +90,32 @@ Nội dung ở đây sẽ tập trung vào việc sử dụng các pixel shader 
 - Function nếu **không 'void' thì phải có return**
 - Định nghĩa function trước khi dùng (**định nghĩa ở trên, dùng ở dưới**)
 - Có nhiều cách khởi tạo kiểu **vec4**. VD: **vec4(vec3(vec2(-0.360,0.620),0.000),1.000);**
+- Kiến trúc của **GPU yêu cầu** *dữ liệu gửi cho các thread* phải giống nhau (**uniform**) và không được thay đổi (**read only**).
+- 
+
+#### Uniform
+- Hỗ trợ hầu hết các kiểu dữ liệu cơ bản như: **float, vec2, vec3, vec4, mat2, mat3, mat4, sampler2D** và **samplerCube**.
+- Uniform được định nghĩa cùng với kiểu dữ liệu tương ứng, ở phần trên cùng của code shader, ngay sau khi quy định độ chính xác của các số thực.
+- Tên của các biến có thể thay đổi theo từng chương trình
+
+```glsl
+#ifdef GL_ES
+precision mediump float; // quy định độ chính xác của các số thực.
+#endif
+
+uniform vec2 u_resolution;  // Kích thước canvas (Rộng, cao)
+uniform vec2 u_mouse;       // Vị trí con trỏ chuột trong canvas
+uniform float u_time;       // Thời gian hiện tại tính từ lúc load xong shader
+```
+
+Phần cứng của **GPU giúp tăng tốc** các **hàm lượng giác** và **luỹ thừa**: *sin(), cos(), tan(), asin(), acos(), atan(), pow(), exp(), log(), sqrt(), abs(), sign(), floor(), ceil(), fract(), mod(), min(), max() và clamp()*. Chúng rất nhanh.
+
+<div class="codeAndCanvas" data="/assets/glsl_frag/fragcolor_sin_utime.frag"></div>
+
+#### 'gl_FragCoord' (input variable but not Uniform)
+
+Ta cũng có biến **lưu trữ giá trị input**, vec4 **gl_FragCoord**, *là toạ độ của điểm ảnh* (**pixel**) *hoặc một vùng điểm ảnh* (**screen fragment**) *mà thread này đang xử lý*. Ta biết rằng giá trị của vec4 gl_FragCoord *khác nhau giữa từng thread*, nên nó **không phải là uniform**.
+
+<div class="codeAndCanvas" data="/assets/glsl_frag/fragcoord_u_resolution.frag"></div>
+
+Trong shader ta không có nhiều cách để debug lắm bên cạnh việc thử dùng một màu rất chói để kiểm tra.

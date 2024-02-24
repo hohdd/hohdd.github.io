@@ -185,6 +185,13 @@
 		],
 		"description": "donghd.com strong text"
 	},
+	"donghd.com glsl Editor embeded": {
+		"prefix": "dhglslEditor",
+		"body": [
+		  "<div class=\"codeAndCanvas\" data=\"/assets/glsl_frag/AAAA.frag\"></div>"
+		],
+		"description": "glsl Editor embeded"
+	},
 	"donghd.com insert an image": {
 		"prefix": "dhimg",
 		"body": [
