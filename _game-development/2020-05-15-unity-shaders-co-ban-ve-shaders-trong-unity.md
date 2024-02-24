@@ -122,13 +122,22 @@ Shader "<name>"
 } //--- end Shader
 ```
 
+- Một số link để tham khảo theo cấu trúc ở trên:
+    + [Material properties](https://docs.unity3d.com/Manual/SL-Properties.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Assigning tags to a SubShader](https://docs.unity3d.com/Manual/SL-SubShaderTags.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Assigning a LOD value to a SubShader](https://docs.unity3d.com/Manual/SL-ShaderLOD.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Assigning tags to a Pass](https://docs.unity3d.com/Manual/SL-PassTags.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Specifying package requirements](https://docs.unity3d.com/Manual/SL-PackageRequirements.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [SubShader Commands, Pass Commands](https://docs.unity3d.com/Manual/shader-shaderlab-commands.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Directives in HLSL](https://docs.unity3d.com/Manual/shader-include-directives.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+
 ### How a surface shader works
 
 ![TEXT](/assets/img/collections/surface-shader.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 
-- Mô hình 3D trước tiên được chuyển đến một hàm có thể thay đổi hình dạng của nó.
-- Sau đó, nó được chuyển (cùng với thông tin khác) đến một hàm xác định "giao diện" của nó bằng cách sử dụng một số thuộc tính trực quan.
-- Cuối cùng, các thuộc tính này được mô hình chiếu sáng sử dụng để xác định mức độ ảnh hưởng của hình dạng bởi các nguồn sáng gần đó.
+- Mô hình 3D trước tiên được chuyển đến một hàm có thể thay đổi hình dạng (**Vertex**) của nó.
+- Sau đó, nó được chuyển cùng với thông tin khác (**Input**)) đến một hàm xác định "giao diện" (**Surface**) của nó bằng cách sử dụng một số thuộc tính trực quan.
+- Cuối cùng, các thuộc tính này được mô hình chiếu sáng sử dụng để xác định mức độ ảnh hưởng của hình dạng bởi các nguồn sáng gần đó (**SurfaceOutput**).
 - Kết quả có được màu RGBA của từng pixel của mô hình.
 
 ### Surface function
@@ -140,14 +149,19 @@ Nó lấy dữ liệu từ mô hình 3D làm đầu vào và xuất ra các thu�
 // Ví dụ: gán mầu trắng (White) cho Albedo
 Shader "Example/Diffuse Simple" {
     SubShader {
+      // Opaque: Là mặc định và phù hợp với các vật thể rắn thông thường không có vùng trong suốt.
       Tags { "RenderType" = "Opaque" }
 
       CGPROGRAM
-      #pragma surface surf Lambert // Line 5 specifies that the surface function for this shader is "surf" and that a "Lambertian lighting model" should be used.
+      #pragma surface surf Lambert // To specifies that the surface function for this shader is "surf" and that a "Lambertian lighting model" should be used.
       struct Input {
           float4 color : COLOR;
       };
-      void surf(Input IN, inout SurfaceOutput o) { // Hàm không sử dụng bất kỳ dữ liệu nào từ mô hình 3D gốc; mặc dù vậy, Cg/HLSL yêu cầu phải xác định cấu trúc đầu vào.
+
+      // Surface Function: phải được đặt bên trong khối SubShader chứ không phải bên trong Pass
+      // Ví vụ ở hàm này không sử dụng bất kỳ dữ liệu nào từ mô hình 3D gốc
+      // mặc dù vậy, Cg/HLSL yêu cầu phải xác định cấu trúc đầu vào.
+      void surf(Input IN, inout SurfaceOutput o) {
           o.Albedo = 1; // 1 = (1,1,1,1) = white
       }
       ENDCG
@@ -158,26 +172,41 @@ Shader "Example/Diffuse Simple" {
 ```
 
 #### Surface intput
-- Line 10: hàm **surf** không sử dụng bất kỳ dữ liệu nào từ mô hình 3D gốc; mặc dù vậy, Cg/HLSL yêu cầu phải xác định cấu trúc đầu vào.
-- Input structure: viewDir, COLOR, screenPos, worldPos, worldRefl, worldNormal...
+- Trong ví dụ ở trên, hàm **surf** không sử dụng bất kỳ dữ liệu nào từ mô hình 3D gốc; mặc dù vậy, Cg/HLSL yêu cầu phải xác định cấu trúc đầu vào.
+- Input structure:
+    + float2 uv_MainTex; // Texture > VD: o.Albedo = tex2D (_MainTex, IN.uv_MainTex).rgb;
+    + float2 uv_BumpMap; // Normal mapping > VD: o.Normal = UnpackNormal (tex2D (_BumpMap, IN.uv_BumpMap));
+    + float2 uv_Detail; // Detail Texture > VD: o.Albedo *= tex2D (_Detail, IN.uv_Detail).rgb * 2;
+    + float3 customColor; // Custom data computed per-vertex > vertex function phải có 2 param **inout appdata_full** và **out Input**. VD: *void vert (inout appdata_full v, out Input o)*
+    + half fog; // Custom Fog with Final Color Modifier > sử dụng với chỉ thị *#pragma surface surf Lambert finalcolor:**mycolor** vertex:**myvert***
+    + float4 color : COLOR; // chứa màu nội suy trên mỗi đỉnh. > VD: o.Albedo = tex2D (_MainTex, IN.uv_MainTex).rgb;
+    + float3 viewDir; // chứa hướng nhìn, để tính toán hiệu ứng Thị sai (Parallax effects), chiếu sáng vành (rim lighting), v.v.
+    + float4 screenPos; // chứa vị trí không gian màn hình cho các hiệu ứng phản chiếu hoặc không gian màn hình. Lưu ý rằng điều này không phù hợp với GrabPass; bạn cần tự mình tính toán UV tùy chỉnh bằng chức năng ComputGrabScreenPos.
+    + float3 worldPos; // chứa vị trí không gian thế giới.
+    + float3 worldRefl; // chứa vectơ phản chiếu thế giới nếu trình đổ bóng bề mặt không ghi vào o.Normal. Xem ví dụ về trình đổ bóng Reflect-Diffuse.
+    + float3 worldNormal; // chứa vectơ pháp tuyến thế giới nếu trình đổ bóng bề mặt không ghi vào o.Normal.
+    + float3 worldRefl; INTERNAL_DATA // chứa vectơ phản chiếu thế giới (reflection vector) nếu trình đổ bóng bề mặt ghi vào o.Normal.
+    + float3 worldNormal; INTERNAL_DATA // chứa vectơ pháp tuyến thế giới (normal vector) nếu trình đổ bóng bề mặt ghi vào o.Normal.
 
 ![TEXT](/assets/img/collections/shader_03.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 ```csharp
 // Ví dụ: tạo hiệu ứng (chỉ định màu White cho Albedo) phụ thuộc vào khoảng cách từ một điểm cụ thể.
 Shader "Example/Diffuse Distance" {
     Properties {
-        _MainTex ("Texture", 2D) = "white" {}
-        _Center ("Center", Vector) = (0,0,0,0) // Điểm so sánh
-        _Radius ("Radius", Float) = 0.5 // khoảng cách, phạm vi, bán kính từ Center
+        _MainTex ("Texture", 2D) = "white" {} // gán một Texture để sử dụng
+        _Center ("Center", Vector) = (0,0,0,0) // chọn 1 điểm điểm để so sánh
+        _Radius ("Radius", Float) = 0.5 // xác định khoảng cách, phạm vi, bán kính từ Center
     }
     SubShader {
-        Tags { "RenderType" = "Opaque" }
+        Tags { "RenderType" = "Opaque" } // Rendering Mode: Opaque, Cutout, Transparent, Fade
         CGPROGRAM
         #pragma surface surf Lambert // Lighting Model
         struct Input { // Input Structure
             float2 uv_MainTex;
             float3 worldPos;
         };
+
+        // lấy mẫ sampler texture, vector3, float từ Properties
         sampler2D _MainTex;
         float3 _Center;
         float _Radius;
@@ -197,6 +226,12 @@ Shader "Example/Diffuse Distance" {
     Fallback "Diffuse"
 }
 ```
+
+- Một số link tham khảo cho Surface Shader:
+    + [Surface Shader compile directives](https://docs.unity3d.com/Manual/SL-SurfaceShaders.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Surface Shader examples](https://docs.unity3d.com/Manual/SL-SurfaceShaderExamples.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Using sampler states (**sampler2D**, **SamplerState**)](https://docs.unity3d.com/Manual/SL-SamplerStates.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Texture/Sampler declaration macros (Built-in macros)](https://docs.unity3d.com/Manual/SL-BuiltinMacros.html){:.external.hvr-forward rel="nofollow" target="_blank"}
 
 #### Surface output
 ```csharp
@@ -227,11 +262,11 @@ struct SurfaceOutput
       struct Input {
           float2 uv_MainTex;
       };
-      float _Amount;
+      float _Amount; // lấy mẫu
       void vert (inout appdata_full v) { // Vertex Function
           v.vertex.xyz += v.normal * _Amount; // mở rộng các đỉnh theo hướng pháp tuyến
       }
-      sampler2D _MainTex;
+      sampler2D _MainTex; // lấy mẫu
       void surf (Input IN, inout SurfaceOutput o) { // Surface function
           o.Albedo = tex2D (_MainTex, IN.uv_MainTex).rgb; // màu từ Texture
       }
@@ -264,6 +299,7 @@ Shader "Example/SnowShader" {
         CGPROGRAM
         #pragma surface surf Lambert vertex:vert
  
+        // lấy mẫu
         sampler2D _MainTex;
         sampler2D _Bump;
         float _Snow;
@@ -305,6 +341,15 @@ Shader "Example/SnowShader" {
     FallBack "Diffuse"
 }
 ```
+
+- Một số link tham khảo cho Vertex function:
+    + [Built-in shader include files](https://docs.unity3d.com/Manual/SL-BuiltinIncludes.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Providing vertex data (position, normal, coordinate...) to vertex programs](https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Built-in shader helper functions](https://docs.unity3d.com/Manual/SL-BuiltinFunctions.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + Các hàm sử dụng trong HLSL:
+        - Được viết trong các file **.cginc** (Unity Built-in Shaders) như *UnityCG.cginc, AutoLight.cginc, Lighting.cginc, UnityShaderVariables.cginc...* VD: **UnpackNormal, WorldNormalVector...**
+        - [Intrinsic Functions (Hàm nội tại) của HLSL. VD: dot, exp, sin, cos, tan, sqrt...](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-intrinsic-functions){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Built-in shader variables (ma trận biến đổi, thông số ánh sáng, thời gian hiện tại...)](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html){:.external.hvr-forward rel="nofollow" target="_blank"}. VD: _WorldSpaceCameraPos, **_Time, _LightColor, unity_FogColor, unity_AmbientSky...**
 
 ### Lambertian model (Lighting Model)
 
@@ -454,6 +499,11 @@ Shader "Custom/SolidColor" {
     }
 }
 ```
+
+- Một số link tham khảo về HLSL (Programming guide, Semantics...)
+    + [Programming guide](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Semantics](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics){:.external.hvr-forward rel="nofollow" target="_blank"} là một chuỗi được gắn vào đầu vào hoặc đầu ra của bộ đổ bóng để truyền tải thông tin về mục đích sử dụng dự kiến ​​của một tham số.
+    + [Vertex shader input semantics (SV_Target, SV_POSITION, SV_Depth, VFACE, SV_VertexID...)](https://docs.unity3d.com/Manual/SL-ShaderSemantics.html){:.external.hvr-forward rel="nofollow" target="_blank"}
 
 #### Input semantics
 

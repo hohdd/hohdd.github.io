@@ -59,106 +59,108 @@ Sơ đồ bên dưới thể hiện 3 Thực thể khác nhau trong quy trình r
     + *Shader Graph Asset* - một tệp (*tạo bởi Shader Graph*) trong Unity Project của bạn. Nó định nghĩa một đối tượng Shader.
 
 #### The Shader class: Tổng quan về lớp Shader, hoạt động như một trình bao bọc cho các chương trình đổ bóng đồ họa thông thường.
-- Đối tượng Shader là một cách làm việc dành riêng cho Unity với các chương trình đổ bóng; nó là một trình bao bọc cho các chương trình đổ bóng và các thông tin khác. 
-- Nó cho phép bạn xác định nhiều chương trình đổ bóng trong cùng một tệp và cho Unity biết cách sử dụng chúng.
-- Đối tượng Shader chứa các chương trình đổ bóng (shader programs), hướng dẫn thay đổi cài đặt (settings) trên GPU (gọi chung là trạng thái kết xuất - render state) và thông tin cho Unity biết cách sử dụng chúng.
-- Bạn sử dụng các đối tượng Shader với vật liệu (materials) để xác định sự xuất hiện của Scene của bạn.
+- *Đối tượng Shader* là một cách làm việc dành riêng cho Unity với các chương trình đổ bóng; nó là một trình bao bọc cho các chương trình đổ bóng và các thông tin khác. 
+    + Nó cho phép bạn xác định nhiều chương trình đổ bóng trong cùng một tệp và cho Unity biết cách sử dụng chúng.
+    + Đối tượng Shader chứa các *chương trình đổ bóng (shader programs)*, để hướng dẫn thay đổi cài đặt (settings) trên GPU (gọi chung là trạng thái kết xuất - render state) và *thông tin cho Unity biết cách sử dụng chúng*.
+    + Bạn sử dụng các đối tượng Shader với vật liệu (materials) để xác định sự xuất hiện của Scene của bạn.
 - Bạn có thể tạo các đối tượng Shader theo hai cách. Mỗi loại có loại asset riêng:
-    + Bạn có thể viết mã để tạo nội dung đổ bóng, đây là tệp văn bản có phần mở rộng .shader.
-    + Bạn có thể sử dụng Biểu đồ đổ bóng (Shader Graph) để tạo nội dung Biểu đồ đổ bóng (Shader Graph asset).
+    + Bạn **có thể viết mã** để tạo nội dung đổ bóng, đây là tệp văn bản có phần mở rộng **.shader**.
+    + Bạn **có thể sử dụng Biểu đồ đổ bóng (Shader Graph)** để tạo nội dung Biểu đồ đổ bóng (**s**).
 - Bên trong một đối tượng Shader:
-    + Một đối tượng Shader có cấu trúc lồng nhau. 
-    + Nó tổ chức thông tin thành các cấu trúc được gọi là "SubShaders" và "Passes". 
-    + Nó tổ chức các chương trình đổ bóng thành các biến thể đổ bóng (shader variants).
-- Shader object: Một đối tượng Shader chứa:
-    + Thông tin về chính nó, chẳng hạn như tên của nó
-    + Một đối tượng Shader dự phòng tùy chọn mà Unity sẽ sử dụng nếu nó không thể sử dụng đối tượng này
-    + Một hoặc nhiều SubShader
-- SubShaders: SubShader cho phép bạn tách đối tượng Shader của mình thành các phần tương thích với phần cứng khác nhau, quy trình kết xuất và cài đặt thời gian chạy. Một SubShader chứa:
-    + Thông tin về phần cứng, đường dẫn kết xuất và cài đặt thời gian chạy mà SubShader này tương thích
-    + Thẻ SubShader, là cặp khóa-giá trị cung cấp thông tin về SubShader
-    + Một hoặc nhiều "Passes"
-- Passes: Một Pass chứa:
-    + Thẻ Pass, là cặp khóa-giá trị cung cấp thông tin về Pass
-    + Hướng dẫn cập nhật trạng thái render trước khi chạy các chương trình đổ bóng của nó
-    + Các chương trình đổ bóng (Shader programs), được tổ chức thành một hoặc nhiều biến thể đổ bóng (shader variants)
-- Shader variants:
-    + Các chương trình đổ bóng (shader programs) có trong một Pass được sắp xếp thành các biến thể đổ bóng (shader variants). Các biến thể này chia sẻ mã chung nhưng có chức năng khác nhau khi bật hoặc tắt một từ khóa (keyword) nhất định.
-    + Số lượng biến thể đổ bóng (shader variants) trong Pass tùy thuộc vào số lượng từ khóa (keywords) bạn xác định trong mã đổ bóng (shader code) và nền tảng đích (target platform). Mỗi Pass chứa ít nhất một biến thể (variant).
+    + Một đối tượng Shader có *cấu trúc lồng nhau*. 
+    + Nó tổ chức thông tin thành các cấu trúc được gọi là "**SubShaders**" và "**Passes**". 
+    + Nó tổ chức các *chương trình đổ bóng* thành *các biến thể đổ bóng* (**shader variants**).
+- **Shader Object**: Một đối tượng Shader chứa:
+    + Thông tin về chính nó, chẳng hạn như *tên của nó*
+    + Một *đối tượng Shader dự phòng* (**fallback**) tùy chọn mà Unity sẽ sử dụng nếu nó không thể sử dụng đối tượng này
+    + *Một hoặc nhiều SubShader*
+- **SubShaders**: SubShader cho phép bạn tách đối tượng Shader của mình thành *các phần tương thích với phần cứng khác nhau*, *quy trình kết xuất và cài đặt thời gian chạy*. Một SubShader chứa:
+    + *Thông tin về phần cứng*, đường dẫn kết xuất và cài đặt thời gian chạy *mà SubShader này tương thích*
+    + Thẻ SubShader, là **cặp Key-Value** cung cấp *thông tin về SubShader*
+    + *Một hoặc nhiều "Passes"*
+- **Passes**: Một Pass chứa:
+    + Thẻ Pass, là **cặp Key-Value** *cung cấp thông tin về Pass*
+    + *Hướng dẫn cập nhật trạng thái render trước khi chạy các chương trình shader của nó*
+    + Các chương trình đổ bóng (**Shader programs**) có trong một Pass được tổ chức thành một hoặc nhiều biến thể đổ bóng (**shader variants**)
+    + Mỗi Pass chứa ít nhất một biến thể (variant)
+- **Shader variants**:
+    + Các chương trình đổ bóng (shader programs) có trong một Pass được sắp xếp thành các biến thể đổ bóng (shader variants). Các biến thể này chia sẻ mã chung nhưng có chức năng khác nhau khi **bật (enable)** hoặc **tắt (disable)** một từ khóa (**keyword**) nhất định.
+    + Số lượng biến thể đổ bóng (shader variants) trong Pass tùy thuộc vào số lượng từ khóa (keywords) bạn xác định trong mã đổ bóng (shader code) và nền tảng đích (target platform). **Mỗi Pass chứa ít nhất một biến thể (variant)**.
 
-#### Shader assets: Thông tin về nội dung đại diện cho một phiên bản của lớp Shader.
-- Creating a new shader asset: Assets > Create > Shader
-- Import settings: Phần Cài đặt nhập của Trình kiểm tra cho phép bạn đặt họa tiết mặc định cho nội dung trình đổ bóng. Bất cứ khi nào có Vật liệu mới được tạo bằng trình đổ bóng này, các họa tiết này sẽ được gán tự động.
-- Imported object: Phần Đối tượng được nhập của Trình kiểm tra cho phép bạn xem và chỉnh sửa các cài đặt liên quan đến chính đối tượng Shader cũng như cách trình biên dịch shader xử lý nó.
-- Show generated code button: hiển thị mã mà Unity tạo từ tệp nguồn đơn giản hóa của bạn. Nếu muốn tùy chỉnh mã được tạo, bạn chỉ cần sao chép và dán mã đó vào tệp nguồn trình đổ bóng của mình.<br>![TEXT](https://docs.unity3d.com/uploads/Shaders/Inspector-Shader.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+#### Shader Assets: Thông tin về nội dung đại diện cho một phiên bản của lớp Shader.
+- **Creating** a new shader asset: *Assets > Create > Shader*
+- **Import settings**: Phần Cài đặt nhập của Trình kiểm tra cho phép bạn đặt họa tiết mặc định cho nội dung trình đổ bóng. Bất cứ khi nào có Vật liệu mới được tạo bằng trình đổ bóng này, các họa tiết này sẽ được gán tự động.
+- **Imported object**: Phần Đối tượng được nhập của **Inspector** cho phép bạn xem và chỉnh sửa các cài đặt liên quan đến chính *đối tượng Shader* cũng như *cách trình biên dịch shader xử lý nó*.
+- **Show generated code** button: hiển thị mã mà Unity tạo từ tệp nguồn đơn giản hóa của bạn. Nếu muốn tùy chỉnh mã được tạo, bạn chỉ cần sao chép và dán mã đó vào tệp nguồn trình đổ bóng của mình.<br>![TEXT](https://docs.unity3d.com/uploads/Shaders/Inspector-Shader.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 
-#### Shader compilation: Cách thức và thời điểm Unity biên dịch các shader.
-- Mỗi khi build, Unity Editor sẽ biên dịch tất cả các shader mà bản dựng của bạn yêu cầu: mọi shader variant cần thiết, cho mọi API đồ họa.
-- Khi bạn đang làm việc trong Unity Editor, Trình chỉnh sửa không biên dịch trước mọi thứ. Điều này là do việc biên dịch mọi biến thể cho mọi API đồ họa có thể mất rất nhiều thời gian. Thay vào đó, Unity Editor thực hiện điều này:
-    + Khi nhập nội dung shader, nó sẽ thực hiện một số xử lý tối thiểu (chẳng hạn như tạo Surface Shader).
-    + Khi cần hiển thị một biến thể đổ bóng (shader variant), nó sẽ kiểm tra thư mục Library/ShaderCache.
-    + Nếu nó tìm thấy một biến thể shader được biên dịch trước đó sử dụng mã nguồn giống hệt nhau thì nó sẽ sử dụng biến thể đó.
-    + Nếu không tìm thấy kết quả khớp, nó sẽ biên dịch biến thể đổ bóng cần thiết và lưu kết quả vào bộ đệm. (Lưu ý: Nếu bạn bật tính năng biên dịch trình đổ bóng không đồng bộ "Asynchronous shader compilation", nó sẽ thực hiện việc này ở chế độ nền và hiển thị trình đổ bóng giữ chỗ trong thời gian chờ đợi.)
-- Quá trình biên dịch Shader được thực hiện bằng quy trình có tên **UnityShaderCompiler**. Nhiều process **UnityShaderCompiler** có thể được khởi động (thường là một process cho mỗi lõi CPU trong máy của bạn), để việc biên dịch shader tại thời điểm xây dựng trình phát có thể được thực hiện song song. Trong khi Editor không biên dịch các shader, trình biên dịch sẽ không làm gì và không tiêu tốn tài nguyên máy tính.
-- Thư mục bộ nhớ đệm của shader có thể trở nên khá lớn nếu bạn có nhiều shader được thay đổi thường xuyên. Việc xóa thư mục này là an toàn; nó chỉ khiến Unity biên dịch lại các biến thể đổ bóng.
-- Tại thời điểm build, tất cả các biến thể đổ bóng “chưa được biên dịch” đều được biên dịch để chúng có trong dữ liệu trò chơi ngay cả khi Editor không sử dụng chúng.
-- Trình biên dịch shader khác nhau: Các nền tảng khác nhau sử dụng các trình biên dịch shader khác nhau để biên dịch chương trình shader như sau:
+#### Shader Compilation: Cách thức và thời điểm Unity biên dịch các shader.
+- Mỗi khi build, **Unity Editor sẽ biên dịch tất cả** các shader mà bản dựng của bạn yêu cầu: *mọi shader variant cần thiết, cho mọi API đồ họa*.
+- Khi bạn đang làm việc *trong Unity Editor*, Trình chỉnh sửa không biên dịch trước mọi thứ. Điều này là do việc biên dịch mọi biến thể cho mọi API đồ họa có thể mất rất nhiều thời gian. Thay vào đó, *Unity Editor thực hiện điều này*:
+    + **Khi Import** nội dung shader, nó sẽ thực hiện một số xử lý tối thiểu (chẳng hạn như **tạo Surface Shader**).
+    + **Khi cần hiển thị** một biến thể đổ bóng (shader variant), nó sẽ kiểm tra thư mục Library/**ShaderCache**.
+        - Nếu nó tìm thấy một biến thể shader được biên dịch trước đó *sử dụng mã nguồn giống hệt nhau* thì nó sẽ sử dụng biến thể đó.
+        - *Nếu không tìm thấy kết quả khớp*, nó sẽ biên dịch biến thể đổ bóng cần thiết và *lưu kết quả vào bộ đệm*. (*Lưu ý*: Nếu bạn bật tính năng biên dịch trình đổ bóng không đồng bộ "*Asynchronous shader compilation*", nó sẽ thực hiện việc này ở *chế độ nền và hiển thị trình đổ bóng giữ chỗ* trong thời gian chờ đợi.)
+- Quá trình biên dịch Shader được thực hiện bằng quy trình có tên **UnityShaderCompiler**.
+    + Để việc **biên dịch shader tại thời điểm Build** có thể được thực hiện song song, nhiều process **UnityShaderCompiler** có thể được khởi động (thường là một process cho mỗi lõi CPU trong máy của bạn).
+    + Trong khi Editor không biên dịch các shader, trình biên dịch sẽ không làm gì và không tiêu tốn tài nguyên máy tính.
+- **Thư mục bộ nhớ đệm** của shader (*Library/ShaderCache*) có thể trở nên khá lớn nếu bạn có nhiều shader được thay đổi thường xuyên. Việc xóa thư mục này là an toàn; nó chỉ khiến Unity biên dịch lại các biến thể đổ bóng.
+- **Tại thời điểm build**, tất cả các biến thể đổ bóng “chưa được biên dịch” đều được biên dịch để chúng có trong dữ liệu trò chơi ngay cả khi Editor không sử dụng chúng.
+- Trình biên dịch shader khác nhau: Các nền tảng khác nhau sử dụng các trình biên dịch shader khác nhau để biên dịch chương trình shader như sau (phần lớn sử dụng **FXC HLSL** *của Microsoft.* + **HLSLcc** dịch mã Byte sang **GLSL (*OpenGL*)** hoặc **Metal (*Apple*)** hoặc **SPIR-V (*Vulkan*)**):
     + Các nền tảng sử dụng **DirectX** sử dụng trình biên dịch **FXC HLSL** *của Microsoft.*
-    + Các nền tảng sử dụng **OpenGL** (Core & ES) sử dụng trình biên dịch **FXC HLSL** *của Microsoft*, sau đó là *dịch mã byte sang GLSL* bằng **HLSLcc**.
-    + Các nền tảng sử dụng **Metal** sử dụng trình biên dịch **FXC HLSL** *của Microsoft*, sau đó là *dịch mã byte sang Metal* bằng **HLSLcc**.
-    + Các nền tảng sử dụng **Vulkan** sử dụng trình biên dịch **FXC HLSL** *của Microsoft*, sau đó là *dịch mã byte sang SPIR-V*, sử dụng **HLSLcc**.
+    + Các nền tảng sử dụng **OpenGL** (Core & ES) sử dụng trình biên dịch **FXC HLSL** *của Microsoft*, sau đó là *dịch mã byte sang **GLSL*** bằng **HLSLcc**.
+    + Các nền tảng sử dụng **Metal** sử dụng trình biên dịch **FXC HLSL** *của Microsoft*, sau đó là *dịch mã byte sang **Metal*** bằng **HLSLcc**.
+    + Các nền tảng sử dụng **Vulkan** sử dụng trình biên dịch **FXC HLSL** *của Microsoft*, sau đó là *dịch mã byte sang **SPIR-V***, sử dụng **HLSLcc**.
     + Các nền tảng khác, chẳng hạn như **nền tảng Console**, *sử dụng trình biên dịch tương ứng của chúng.*
     + Bộ đổ bóng bề mặt (**Surface Shaders**) sử dụng **HLSL** và **MojoShader** cho bước phân tích tạo mã (code generation analysis).
-- Bạn có thể định cấu hình các cài đặt trình biên dịch đổ bóng khác nhau bằng cách sử dụng chỉ thị pragma (**pragma directives**: #pragma target 3.0, #pragma exclude_renderers vulkan...).
-- The Caching Shader Preprocessor:
-    + Quá trình biên dịch Shader bao gồm một số bước. Một trong những bước đầu tiên là tiền xử lý. Trong bước này, một chương trình được gọi là bộ tiền xử lý sẽ chuẩn bị mã nguồn đổ bóng cho trình biên dịch.
+- Bạn có thể định cấu hình các cài đặt trình biên dịch đổ bóng khác nhau bằng cách sử dụng chỉ thị pragma (**pragma directives**: *#pragma target 3.0, #pragma exclude_renderers vulkan...*).
+- The **Caching Shader Preprocessor**:
+    + Quá trình biên dịch Shader bao gồm một số bước. Một trong những bước *đầu tiên là tiền xử lý*. Trong bước này, một chương trình được gọi là bộ tiền xử lý *sẽ chuẩn bị mã nguồn đổ bóng cho trình biên dịch*.
     + Trong các phiên bản trước của Unity, Editor đã sử dụng bộ tiền xử lý do shader compiler cung cấp cho nền tảng hiện tại. Giờ đây, Unity sử dụng bộ tiền xử lý của riêng mình, còn được gọi là Bộ tiền xử lý bộ nhớ đệm (**Caching Shader Preprocessor**).
-    + Bộ tiền xử lý bộ nhớ đệm được tối ưu hóa để nhập và biên dịch bộ đổ bóng nhanh hơn. Nó hoạt động bằng cách lưu vào bộ nhớ đệm dữ liệu tiền xử lý trung gian, do đó, Editor chỉ cần phân tích cú pháp các tệp bao gồm khi nội dung của chúng thay đổi, điều này giúp việc biên dịch nhiều biến thể của cùng một trình đổ bóng hiệu quả hơn.
-- AssetBundles and shaders:
-    + Nếu bạn sử dụng AssetBundles, Unity có thể biên dịch các trình đổ bóng trùng lặp nếu bạn tham chiếu một trình đổ bóng trong hai hoặc nhiều đối tượng. Ví dụ:
-        - Material trong AssetBundle và Material trong cảnh được xây dựng tham chiếu cùng một shader.
+    + Nó *hoạt động bằng cách **lưu vào bộ nhớ đệm dữ liệu tiền xử lý trung gian***, do đó, Editor chỉ cần phân tích cú pháp các tệp bao gồm khi nội dung của chúng thay đổi, điều này giúp việc biên dịch nhiều biến thể của cùng một trình đổ bóng hiệu quả hơn.
+- **AssetBundles và shaders**:
+    + Nếu bạn sử dụng AssetBundles, Unity có thể biên dịch các **shader trùng lặp** nếu bạn tham chiếu một trình đổ bóng trong hai hoặc nhiều đối tượng. Ví dụ:
+        - Material trong AssetBundle và Material trong Scence được tham chiếu cùng một shader.
         - Nhiều AssetBundle chứa các Material tham chiếu cùng một shader bên ngoài AssetBundle.
     + Điều này có thể làm tăng mức sử dụng bộ nhớ và không gian lưu trữ của trình đổ bóng cũng như phá vỡ việc "**draw call batching**".
     + Để tránh điều này, bạn có thể sử dụng các phương pháp sau:
         - Trước tiên hãy tải một AssetBundle chứa tất cả các trình đổ bóng của bạn, sau đó tải và khởi tạo nội dung AssetBundle tham chiếu các trình đổ bóng. Xem Phần phụ thuộc của AssetBundle để biết thêm thông tin.
-        - Cấu trúc AssetBundles của bạn để giảm thiểu sự trùng lặp. Xem Sao chép nội dung để biết thêm thông tin.
-    + Bạn có thể thêm các vật liệu và bộ sưu tập biến thể đổ bóng (**shader variant collections**: *A shader variant collection is effectively a list of shader variants*) vào AssetBundle để chỉ định những biến thể đổ bóng nào cần đưa vào.
-    + Nếu bạn tạo một AssetBundle duy nhất, **một số trình đổ bóng có thể vẫn còn trong bộ nhớ ngay cả khi chúng không còn cần thiết nữa** vì bạn không thể dỡ bỏ một phần AssetBundle. Bạn có thể tránh điều này bằng cách tạo một AssetBundle riêng cho từng nhóm trình đổ bóng mà bạn sử dụng cùng nhau, ví dụ như AssetBundle 'rừng' và AssetBundle 'sa mạc'. Xem "**Managing loaded AssetBundles**", or "**Memory management in the Addressables system**" nếu bạn sử dụng Địa chỉ (**Addressables**).
-- Build time stripping (Xây dựng tước thời gian): While building the game, Unity can detect that some of the internal shader variants are not used by the game, and exclude (“strip”) them from build data.
-- Biên dịch shader không đồng bộ: là một tính năng chỉ dành cho Trình soạn thảo (Editor), có thể cải thiện quy trình làm việc của bạn khi bạn gặp các vấn đề phức tạp.
+        - Cấu trúc AssetBundles của bạn để giảm thiểu sự trùng lặp. Xem "Sao chép nội dung để biết thêm thông tin".
+    + Bạn có thể thêm các Material và bộ sưu tập biến thể đổ bóng (**shader variant collections**: *A shader variant collection is effectively a list of shader variants*) vào AssetBundle để chỉ định những biến thể đổ bóng nào cần đưa vào.
+    + Nếu bạn tạo một AssetBundle duy nhất, **một số trình đổ bóng có thể vẫn còn trong bộ nhớ ngay cả khi chúng không còn cần thiết nữa vì bạn không thể dỡ bỏ một phần AssetBundle**. Bạn có thể tránh điều này bằng cách tạo một AssetBundle riêng cho từng nhóm shader mà bạn sử dụng cùng nhau, ví dụ như AssetBundle 'rừng' và AssetBundle 'sa mạc'. Xem "**Managing loaded AssetBundles**", or "**Memory management in the Addressables system**" nếu bạn sử dụng Địa chỉ (**Addressables**).
+- Build time **stripping** (Xây dựng tước thời gian): While building the game, Unity can detect that some of the internal shader variants are not used by the game, and exclude (“strip”) them from build data.
+- Biên dịch shader không đồng bộ (**Asynchronous** shader compilation): là một tính năng chỉ dành cho Trình soạn thảo (Editor), có thể cải thiện quy trình làm việc của bạn khi bạn gặp các vấn đề phức tạp.
 
 #### Shader loading: Cách thức và thời điểm Unity tải shader.
 - Unity tải các shader đã biên dịch từ ứng dụng đã xây dựng của bạn theo cách sau:
-    + Khi Unity tải một cảnh hoặc tài nguyên thời gian chạy, nó sẽ tải tất cả trình đổ bóng đã biên dịch shader variants của cảnh hoặc tài nguyên vào bộ nhớ CPU.
-    + Theo mặc định, Unity giải nén tất cả các shader variants vào một vùng bộ nhớ CPU khác. Bạn có thể kiểm soát lượng bộ nhớ đổ bóng sử dụng trên các nền tảng khác nhau.
-    + Lần đầu tiên Unity cần kết xuất hình học bằng cách sử dụng một shader variant, Unity sẽ chuyển shader variant và dữ liệu của nó tới API đồ họa và trình điều khiển đồ họa.
-    + Trình điều khiển đồ họa (graphics driver) tạo một phiên bản dành riêng cho GPU của shader variant và tải nó lên GPU.
-- Cách tiếp cận này (hoạt động Load ở trên) đảm bảo rằng Unity và trình điều khiển đồ họa tránh xử lý và lưu trữ tất cả các biến thể đổ bóng trên GPU trước khi Unity cần chúng. Tuy nhiên, có thể thấy hiện tượng dừng khi trình điều khiển đồ họa tạo biến thể đổ bóng dành riêng cho GPU lần đầu tiên.
-- Unity lưu trữ từng shader variant dành riêng cho GPU để tránh tình trạng ngừng hoạt động khác khi Unity cần lại shader variant.
-- Unity loại bỏ hoàn toàn shader variant khỏi bộ nhớ CPU và GPU khi không còn bất kỳ đối tượng nào tham chiếu shader variant.
-- Which shaders Unity loads?
-    + Unity chỉ tải các trình đổ bóng được biên dịch tương thích với cấp độ đồ họa, phần cứng và API đồ họa của nền tảng.
-    + Nếu Unity không thể tìm thấy biến thể đổ bóng cần thiết vì bạn hoặc Unity đã loại bỏ biến thể đổ bóng khỏi ứng dụng đã xây dựng của bạn, Unity sẽ cố gắng chọn một biến thể đổ bóng tương tự. Nếu Unity không thể tìm thấy một biến thể shader tương tự, nó sẽ sử dụng shader lỗi màu đỏ tươi.
+    + Khi Unity tải một Scence hoặc tài nguyên thời gian chạy, nó sẽ **tải tất cả shader** đã biên dịch shader variants của Scence hoặc tài nguyên **vào bộ nhớ *CPU***. Theo mặc định, **Unity giải nén tất cả các shader variants** *vào một **vùng bộ nhớ CPU khác***. Bạn có thể kiểm soát lượng bộ nhớ đổ bóng sử dụng trên các nền tảng khác nhau.
+    + Ở lần đầu tiên Unity cần kết xuất hình học (**render**) bằng cách sử dụng một shader variant, Unity **sẽ chuyển** shader variant và dữ liệu của nó **tới API đồ họa và Driver đồ họa**.
+    + Trình điều khiển đồ họa (**graphics driver**) *tạo một phiên bản dành riêng cho GPU của shader variant* và **tải nó lên *GPU***.
+    
+    {% msg info <p>Cách tiếp cận này (hoạt động Load ở trên) đảm bảo rằng Unity và Driver đồ họa tránh xử lý và lưu trữ tất cả các biến thể đổ bóng trên GPU trước khi Unity cần chúng. Tuy nhiên, có thể thấy hiện tượng dừng khi trình điều khiển đồ họa tạo biến thể đổ bóng dành riêng cho GPU lần đầu tiên. Có thể khắc phục bằng "<strong>làm ấm</strong>" (<strong>Prewarming</strong>)</p><p>- Unity lưu trữ từng shader variant dành riêng cho GPU để tránh tình trạng ngừng hoạt động khác khi Unity cần lại shader variant.</p><p>- Unity loại bỏ hoàn toàn shader variant khỏi bộ nhớ CPU và GPU khi không còn bất kỳ đối tượng nào tham chiếu shader variant.</p> %}
+
+- **Which** shaders Unity loads?
+    + Unity **chỉ tải các shader** được biên dịch **tương thích** với cấp độ đồ họa, **phần cứng** và API đồ họa **của nền tảng**.
+    + Nếu Unity *không thể tìm thấy* biến thể đổ bóng cần thiết vì bạn hoặc Unity đã loại bỏ biến thể đổ bóng khỏi ứng dụng đã xây dựng của bạn, Unity sẽ *cố gắng chọn một biến thể đổ bóng tương tự*. Nếu Unity không thể tìm thấy một biến thể shader tương tự, nó sẽ sử dụng *shader lỗi màu đỏ tươi*.
     + Bạn có thể bật tính năng khớp biến thể đổ bóng nghiêm ngặt để ngăn Unity cố gắng chọn một biến thể đổ bóng tương tự.
-- How Unity selects a subshader?
-    + Nếu một **shader variant** chứa nhiều **subshaders**, Unity sẽ cố gắng chọn và sử dụng một subshaders duy nhất tương thích với tất cả các mục sau:
-        - Phần cứng của nền tảng.
-        - Mức độ chi tiết ShaderLab hiện tại (LOD).
-        - Đường dẫn kết xuất đang hoạt động (render pipeline).
-    + Unity tìm kiếm subshader tương thích đầu tiên trong số các thành phần sau theo thứ tự sau:
-        - Các subshader theo thứ tự chúng xuất hiện trong shader.
-        - Các subshader trong bất kỳ đối tượng đổ bóng dự phòng nào, theo thứ tự chúng xuất hiện trong các đối tượng đổ bóng.
+- **How** Unity selects a subshader?
+    + Nếu một **shader variant** "chứa trong" nhiều **subshaders**, Unity sẽ cố gắng chọn và sử dụng một subshaders duy nhất tương thích với tất cả các mục sau:
+        - Phần cứng của nền tảng (**hardware**).
+        - Mức độ chi tiết ShaderLab hiện tại (**LOD**).
+        - Đường dẫn kết xuất đang hoạt động (**render pipeline**).
+    + Unity tìm kiếm subshader tương thích đầu tiên trong số các thành phần sau **theo thứ tự sau**:
+        - Các subshader **theo thứ tự chúng xuất hiện** trong shader.
+        - Các subshader trong bất kỳ đối tượng đổ bóng dự phòng nào, **theo thứ tự chúng xuất hiện** trong các đối tượng đổ bóng.
         - Nếu Unity không thể tìm thấy trình đổ bóng phụ tương thích, nó sẽ sử dụng trình đổ bóng lỗi màu đỏ tươi.
         - Bạn có thể đặt subshaders tương thích với phần cứng bằng cách sử dụng thẻ ShaderLab. Xem ShaderLab: gán thẻ cho SubShader (assigning tags to a SubShader).
-- Prewarming shader variants: Để tránh tình trạng ngừng hoạt động có thể nhìn thấy vào những thời điểm cần nhiều hiệu năng, Unity có thể yêu cầu trình điều khiển đồ họa tạo bản trình bày GPU của các biến thể đổ bóng trước khi chúng cần đến lần đầu tiên. Điều này được gọi là làm ấm trước (**Prewarming**).
+- **Prewarming shader** variants: Để tránh tình trạng ngừng hoạt động có thể nhìn thấy vào những thời điểm cần nhiều hiệu năng, Unity có thể yêu cầu (*bằng C#*) Driver đồ họa **tạo bản trình bày GPU** của các biến thể đổ bóng trước khi chúng cần đến lần đầu tiên. Điều này được gọi là làm ấm trước (**Prewarming**).
     + Bạn có thể làm ấm trước (**Prewarming**) bằng những cách sau:
         - Làm ấm trước bộ sưu tập đối tượng Shader hoặc biến thể shader bằng cách sử dụng API **Experimental.Rendering.ShaderWarmup**.
         - Làm ấm trước bộ sưu tập biến thể đổ bóng bằng cách sử dụng API **ShaderVariantCollection.WarmUp**.
         - Làm ấm trước tất cả các biến thể của tất cả đối tượng Shader hiện có trong bộ nhớ bằng API **Shader.WarmupAllShaders**.
     + Bạn cũng có thể thêm các "**shader variant collections**" vào phần "**Preloaded shaders**" của cửa sổ Cài đặt đồ họa (**Graphics Settings**). Unity sử dụng API ShaderVariantCollection.WarmUp để tải và làm ấm trước các bộ sưu tập biến thể đổ bóng khi ứng dụng đã xây dựng của bạn khởi động.
 - Kiểm soát lượng bộ nhớ đổ bóng sử dụng:
-    + Trong ứng dụng đã built, Unity lưu trữ một số '**chunks**' dữ liệu biến thể trình đổ bóng nén. Mỗi đoạn chứa nhiều biến thể đổ bóng. Khi Unity tải một cảnh trong thời gian chạy, nó sẽ tải tất cả các phần của cảnh đó vào bộ nhớ CPU và giải nén chúng.
-    + Để giảm mức sử dụng bộ nhớ trên ***các nền tảng có bộ nhớ hạn chế***, bạn có thể giới hạn kích thước của các '**chunks**' và số lượng các '**chunks**' được giải nén mà Unity lưu giữ trong bộ nhớ. Để làm điều này: Player settings > Other Settings > Shader Variant Loading
+    + Trong ứng dụng đã built, Unity lưu trữ một số '**chunks**' dữ liệu biến thể trình đổ bóng nén. Mỗi đoạn chứa nhiều biến thể đổ bóng. Khi Unity tải một cảnh trong thời gian chạy (xem **Shader loading** ở trên), nó sẽ tải tất cả các phần của cảnh đó vào bộ nhớ CPU và giải nén chúng.
+    + Để giảm mức sử dụng bộ nhớ trên ***các nền tảng có bộ nhớ hạn chế***, bạn có thể giới hạn kích thước của các '**chunks**' và số lượng các '**chunks**' được giải nén mà Unity lưu giữ trong bộ nhớ. Để làm điều này: *Player settings > Other Settings > Shader Variant Loading*
 
 #### Conditionals, Branching, Shader variants, Shader keywords, Shader variant collections: Giới thiệu về các khái niệm của Shader cũng như thông tin về cách làm việc với chúng.
 ##### Conditionals in shaders
@@ -272,8 +274,14 @@ Sơ đồ bên dưới thể hiện 3 Thực thể khác nhau trong quy trình r
 - Tương tự như shader assets, compute shader assets là các tệp trong dự án của bạn. với phần mở rộng tệp .compute. Chúng được viết bằng ngôn ngữ HLSL kiểu DirectX 11
 - Invoking compute shaders: trong C#, sử dụng hàm **ComputeShader.Dispatch(int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ)**
 
-### Built-in shaders: Cách sử dụng các shader dựng sẵn đi kèm với Unity.
+### [USEFULL REFERENCE] Built-in shaders: Cách sử dụng các shader dựng sẵn đi kèm với Unity.
 - Xem thêm: [Standard Shader Material Inspector reference](https://docs.unity3d.com/Manual/StandardShaderMaterialParameters.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+
+{% msg success Phần này tham khảo quan trọng cho phần lớn nhu cầu sử dụng Standard Shader (không cần custom shader), nội dung tham khảo về: <strong>Rendering Mode, Albedo Color and Transparency, Specular, Metallic, Smoothness, Normal map (Bump mapping), Heightmap, Occlusion Map, Emission, Secondary Maps (Detail Maps) & Detail Mask, Hiệu ứng Fresnel</strong> %}
+
+![TEXT](https://docs.unity3d.com/uploads/Main/StandardShaderCalibrationChartMetallic.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+![TEXT](https://docs.unity3d.com/uploads/Main/StandardShaderCalibrationChartSpecular.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 
 ### Using Shader Graph: Cách sử dụng Shader Graph, một công cụ cho phép bạn tạo shader mà không cần viết mã.
 - **Shader Graph** Là một Package được cài đặt thông qua **Package Manager** Xem thêm [Shader Graph documentation](https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/index.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
@@ -357,6 +365,10 @@ SubShader
 }
 ```
 
+##### ShaderLab: commands
+- Xem [Commands for setting render state, Pass commands](https://docs.unity3d.com/Manual/shader-shaderlab-commands.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+
+
 ##### ShaderLab: defining a Pass
 - Pass là thành phần cơ bản của đối tượng Shader. Nó chứa các hướng dẫn để thiết lập trạng thái của GPU và các chương trình đổ bóng chạy trên GPU.
 - Các đối tượng Shader đơn giản có thể chỉ chứa một Pass duy nhất, nhưng các shader phức tạp hơn có thể chứa nhiều Pass.
@@ -393,9 +405,6 @@ Pass
     ENDCG
 }
 ```
-
-##### ShaderLab: commands
-- Xem [Commands for setting render state, Pass commands](https://docs.unity3d.com/Manual/shader-shaderlab-commands.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
 
 ### HLSL in Unity
 #### Thông tin
@@ -503,3 +512,23 @@ struct SurfaceOutput
 #### Gỡ lỗi - Debug
 - Gỡ lỗi trình đổ bóng bằng Visual Studio (*Lưu ý: Nếu bạn đang sử dụng DirectX 12, Microsoft khuyên bạn nên sử dụng **PIX** để gỡ lỗi trình đổ bóng thay vì Visual Studio.*)
 - [Xem hướng dẫn](https://docs.unity3d.com/Manual/SL-DebuggingD3D11ShadersWithVS.html){:.hvr-float-shadow.external rel="nofollow" target="_blank"}
+
+### FXC HLSL của Microsoft và HLSLcc
+
+#### FXC (Effect-Compiler Tool)
+- FXC (fxc.exe) là một công cụ ngoại tuyến để biên dịch các trình đổ bóng HLSL cho tất cả các phiên bản Direct3D. Công cụ này được đặt tại: *(SDK root)\Utilities\Bin\x86\\*
+- Syntax (cú pháp để gọi FXC.exe):
+    + Usage: ```fxc Options Filenames```
+    + Options: chỉ có 1 option bắt buộc (```/T <profile>```), các option khác là tùy chọn (```/?, /help, /compress...```), **Phân cách mỗi phần bằng dấu cách hoặc dấu hai chấm.**
+    + Filenames: Các tệp chứa (các) trình đổ bóng và/hoặc (các) hiệu ứng.
+    + Remarks: Sử dụng các tùy chọn */mergeUAVs, /matchUAVs* và */shtemplate* để align các UAV binding slots cho một chuỗi các trình đổ bóng.
+    + Profiles: Mỗi mô hình đổ bóng được gắn nhãn bằng một hồ sơ HLSL. Để biên dịch trình đổ bóng dựa trên một mô hình trình đổ bóng cụ thể, hãy chọn cấu hình trình đổ bóng thích hợp. Xem danh sách Profiles trên [Learn Microsoft](https://learn.microsoft.com/en-us/windows/win32/direct3dtools/dx-graphics-tools-fxc-syntax#profiles){:.external.hvr-forward rel="nofollow" target="_blank"}
+
+#### HLSLcc (HLSL Cross Compiler)
+- [Github > Unity-Technologies > HLSLcc](https://github.com/Unity-Technologies/HLSLcc){:.external.hvr-forward rel="nofollow" target="_blank"}
+- Thư viện này lấy mã byte DirectX làm đầu vào và dịch nó sang các ngôn ngữ sau:
+    + GLSL (OpenGL 3.2 and later)
+    + GLSL ES (OpenGL ES 2.0 and later)
+    + GLSL for Vulkan consumption (as input for Glslang to generate SPIR-V)
+    + Metal Shading Language
+- Thư viện này được sử dụng để tạo tất cả các shader trong Unity cho OpenGL, OpenGL ES 3.0+, Metal và Vulkan.
