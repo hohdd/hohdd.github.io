@@ -41,6 +41,8 @@ function documentReady() {
   try {
     if (window.localStorage.getItem('KNM_donghd')) {
       showKNM();
+    } else {
+      document.getElementById('modalUnderMaintenance').style.display='block';
     }
   } catch (error) { 
     console.log(error);
