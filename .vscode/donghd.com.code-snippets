@@ -185,12 +185,19 @@
 		],
 		"description": "donghd.com strong text"
 	},
-	"donghd.com glsl Editor embeded": {
-		"prefix": "dhglslEditor",
+	"donghd.com glsl Editor (.codeAndCanvas)": {
+		"prefix": "dhglslEditor_codeAndCanvas",
 		"body": [
 		  "<div class=\"codeAndCanvas\" data=\"/assets/glsl_frag/AAAA.frag\"></div>"
 		],
-		"description": "glsl Editor embeded"
+		"description": "glsl Editor codeAndCanvas"
+	},
+	"donghd.com glsl Editor (.simpleFunction)": {
+		"prefix": "dhglslEditor_simpleFunction",
+		"body": [
+			"<div class=\"simpleFunction\" data=\"/assets/glsl_frag/FunctionSimple.fs\"></div>"
+		],
+		"description": "glsl Editor simpleFunction"
 	},
 	"donghd.com insert an image": {
 		"prefix": "dhimg",
