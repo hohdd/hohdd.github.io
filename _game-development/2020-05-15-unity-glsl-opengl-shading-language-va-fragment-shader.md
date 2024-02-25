@@ -240,7 +240,7 @@ Trong shader ta không có nhiều cách để debug lắm bên cạnh việc th
 - **Playground**
 <div class="simpleFunction" data="/assets/glsl_frag/fs_playground_sin_cos.fs"></div>
 
-###### Tìm hiểu một số hàm cơ bản
+##### Tìm hiểu một số hàm cơ bản
 
 Các hàm này là "***hàng rào***" của chúng ta! Chúng ta đang dần thuần thục với các chuyển động 1 chiều, chỉ có lên và xuống. Sớm thôi, ta sẽ đụng tới các chiều thứ hai, ba và bốn!
 <div class="simpleFunction" data="/assets/glsl_frag/fs_simple_funcs.fs"></div>
@@ -251,10 +251,36 @@ Khi tác phẩm nghệ thuật được tạo bởi toán học thì sẽ như t
 
 - Roadmap: [The art of the Shade](https://github.com/vanrez-nez/awesome-glsl){:.external.hvr-forward rel="nofollow" target="_blank"} (tutorials, books, articles, tools, people...)
 
-###### Các hàm nâng cao
+##### Các hàm nâng cao
 - **Golan Levin** có tài liệu mô tả rất chi tiết về các hàm phức tạp khác vô cùng hữu ích:
     + [Các hàm đa thức](https://www.flong.com/archive/texts/code/shapers_poly/){:.external.hvr-forward rel="nofollow" target="_blank"}
     + [Các hàm luỹ thừa](http://www.flong.com/archive/texts/code/shapers_exp/){:.external.hvr-forward rel="nofollow" target="_blank"}
     + [Các hàm mô phỏng đường tròn và elip](http://www.flong.com/archive/texts/code/shapers_circ/){:.external.hvr-forward rel="nofollow" target="_blank"}
     + [Đường cong Bezier và các hàm tương tự](http://www.flong.com/archive/texts/code/shapers_bez/){:.external.hvr-forward rel="nofollow" target="_blank"}
+        - [Quadratic Bezier](/tools/glsl_editor#content/160414041542.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+        - [Cubic Bezier](/tools/glsl_editor#content/160414041933.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+        - [Cubic Bezier through two points](/tools/glsl_editor#content/160414041756.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+
+![TEXT](/assets/img/collections/bezier_curve.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
 - Như một đầu bếp đi thu thập các kỳ hoa dị thảo, nghệ sỹ kỹ thuật số và các lập trình viên đồ hoạ cũng sẽ có niềm yêu thích riêng với các hàm nội suy của riêng họ. [Iñigo Quiles có 1 bộ sưu tầm các hàm rất hữu ích.](http://www.iquilezles.org/www/articles/functions/functions.htm){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Impulse](/tools/glsl_editor#content/impulse.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Cubic Pulse](/tools/glsl_editor#content/cubicpulse.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Expo](/tools/glsl_editor#content/expo.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [ExpStep](/tools/glsl_editor#content/expstep.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Parabola](/tools/glsl_editor#content/parabola.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+    + [Pcurve](/tools/glsl_editor#content/pcurve.frag){:.external.hvr-forward rel="nofollow" target="_blank"}
+
+![TEXT](/assets/img/collections/inigo_quiles_funcs.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+##### Try it yourself
+
+![TEXT](/assets/img/collections/kynd.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+##### Tools
+- [GraphToy](https://graphtoy.com/){:.external.hvr-forward rel="nofollow" target="_blank"}: Một sản phẩm của Iñigo Quilez để minh hoạ các hàm GLSL trên WebGL.
+- [LYGIA Shader Library](https://lygia.xyz/){:.external.hvr-forward rel="nofollow" target="_blank"}: LYGIA là một thư viện shader gồm các chức năng có thể tái sử dụng, cho phép bạn tạo nguyên mẫu, port or ship một dự án chỉ trong vài phút.
+
+#### Màu sắc
+
+*(TODO)*
