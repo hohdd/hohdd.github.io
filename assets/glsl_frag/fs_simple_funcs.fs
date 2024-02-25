@@ -1,0 +1,9 @@
+y = mod(x,0.5); // tính phần dư của phép tính x / 0.5
+//y = fract(x); // tách phần thập phân của x
+//y = ceil(x);  // làm tròn lên
+//y = floor(x); // làm tròn xuống
+//y = sign(x);  // lấy dấu âm dương của x
+//y = abs(x);   // tính giá trị tuyệt đối của x
+//y = clamp(x,0.0,1.0); // kẹp x trong khoảng 0.0 và 1.0
+//y = min(0.0,x);   // tìm số nhỏ nhất giữa 2 số 0.0 và x
+//y = max(0.0,x);   // tìm số lớn nhất giữa 2 số 0.0 và x

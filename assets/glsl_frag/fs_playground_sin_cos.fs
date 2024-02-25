@@ -1,0 +1,10 @@
+y = sin(x);
+// y = sin(x + u_time); // Sóng đồ thị sẽ dịch chuyển dọc theo trục hoành.
+// y = sin(x * PI); // 2 chu kỳ bị co lại và lặp lại mỗi 2 đơn vị số nguyên.
+// y = sin(x * u_time); // Tần số (frequency) giữa các chu kỳ ngày càng ngắn lại. Chú ý rằng u_time càng lớn thì càng khó nhìn rõ đồ thị do các chu kỳ bị co lại rất nhiều.
+// y = sin(x) + 1.0; // Toàn bộ sóng được nâng lên (displaced) khiến cho giá trị nằm trong khoảng 0.0 và 2.0.
+// y = sin(x) * 2.0; // Biên độ (amplitude) rộng gấp đôi.
+// y = abs(sin(x + u_time)); // Trông đồ thị sẽ giống như đường đi của quả bóng nảy trên mặt đất.
+// y = fract(sin(x + u_time)); // Tách riêng phần thập phân bằng hàm fract() từ kết quả của sin(x).
+// y = ceil(sin(x + u_time)); // Làm tròn lên bằng hàm ceil() và làm tròn xuống bằng hàm floor() từ kết quả của sin(x) để có được sóng điện tử của các giá trị 1 và -1.
+// y = floor(sin(x + u_time)); // Làm tròn lên bằng hàm ceil() và làm tròn xuống bằng hàm floor() từ kết quả của sin(x) để có được sóng điện tử của các giá trị 1 và -1.
