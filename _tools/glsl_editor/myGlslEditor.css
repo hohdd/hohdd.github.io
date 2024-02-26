@@ -1,0 +1,147 @@
+/* glsl Editor */
+#glsl_editor {
+    height: 100%;
+}
+.ge_canvas_container {
+    z-index: 9990 !important;
+}
+.ge_panel {
+    position: fixed;
+    bottom: 0px;
+}
+
+/* CSS for the drawer menu */
+.drawer-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Initially hidden on the right side */
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    /* Dark mode background color */
+    color: #fff;
+    /* Text color */
+    transition: right 0.3s ease;
+    z-index: 9999 !important;
+    /* Set z-index to ensure it appears above other elements */
+    overflow-y: auto;
+    /* Enable vertical scrolling if the list is too long */
+}
+
+.drawer-menu.active {
+    left: 0; /* Show the menu */
+}
+
+.drawer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+}
+
+.drawer-menu button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
+
+/* custom scollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #444;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Custom Ext Menu Links */
+.ext-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Set z-index to ensure it appears above other elements */
+    overflow-y: auto; /* Enable vertical scrolling if the list is too long */
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.ext-menu.active {
+    display: block;
+}
+.ext-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.ext-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #555; /* Add a light border at the bottom of each item */
+}
+.ext-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.ext-menu a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+.ext-menu-close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.ext-menu-search-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
+.group-title {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff9500;
+}
+.ext-menu-group-title a {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff9500;
+    text-decoration: none;
+}
+.ext-menu-group-title a:hover {
+    text-decoration: none;
+}

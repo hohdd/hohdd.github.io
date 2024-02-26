@@ -487,6 +487,14 @@ function DHtoast(msg, milisc = 3000) {
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, milisc);
 }
 
+function limitString(string, maxLength) {
+  if (string.length > maxLength) {
+      /* Cut the string and add "..." at the end */
+      return string.substring(0, maxLength) + "...";
+  }
+  return string; /* Return the original string if it's within the limit */
+}
+
 // GLSL EDITOR ----------------------------------------------
 //  Graph plotter function take from
 //  From http://blog.hvidtfeldts.net/index.php/2011/07/plotting-high-frequency-functions-using-a-gpu/
