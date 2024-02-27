@@ -91,7 +91,6 @@ Nội dung ở đây sẽ tập trung vào việc sử dụng các pixel shader 
 - Định nghĩa function trước khi dùng (**định nghĩa ở trên, dùng ở dưới**)
 - Có nhiều cách khởi tạo kiểu **vec4**. VD: **vec4(vec3(vec2(-0.360,0.620),0.000),1.000);**
 - Kiến trúc của **GPU yêu cầu** *dữ liệu gửi cho các thread* phải giống nhau (**uniform**) và không được thay đổi (**read only**).
-- 
 
 #### Uniform
 - Hỗ trợ hầu hết các kiểu dữ liệu cơ bản như: **float, vec2, vec3, vec4, mat2, mat3, mat4, sampler2D** và **samplerCube**.
