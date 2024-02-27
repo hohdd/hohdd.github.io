@@ -1,6 +1,12 @@
 const itemsList = [
     // --- GROUP: "Inigo Quiles"
     {
+        group: "Template",
+        src: "content/simple_function.frag",
+        title: "Simple Function",
+        description: "Mẫu để kiểm tra 'Simple Function'"
+    },
+    {
         group: "Inigo Quiles",
         src: "content/impulse.frag",
         title: "Impulse",
