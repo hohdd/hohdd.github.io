@@ -282,4 +282,62 @@ Khi tác phẩm nghệ thuật được tạo bởi toán học thì sẽ như t
 
 #### Màu sắc
 
+Mỗi dòng code dưới đây đều truy cập một giá trị giống nhau trong vector:
+```c
+vec4 vector;
+// - 0 1 2 3
+// - x y z w
+// - r g b a
+// - s t p q
+vector[0] = vector.r = vector.x = vector.s;
+vector[1] = vector.g = vector.y = vector.t;
+vector[2] = vector.b = vector.z = vector.p;
+vector[3] = vector.a = vector.w = vector.q;
+```
+
+Một tính năng khác cũng tuyệt vời không kém của vector trong GLSL là các giá trị bên trong có thể được tráo đổi (swizzle) vị trí theo bất kỳ trật tự nào bạn muốn, khiến cho việc xử lý chúng dễ dàng hơn bao giờ hết.
+```c
+vec3 yellow, magenta, green;
+
+// Tạo màu vàng (1., 1., 0.)
+yellow.rg = vec2(1.0);  // Gán giá trị 1. cho kênh R và G
+yellow[2] = 0.0;        // Gán giá trị 0. cho kênh B
+
+// Tạo màu hồng (1., 0., 1.)
+magenta = yellow.rbg;   // Đảo vị trí của 2 kênh G và B
+
+// Tạo màu xanh lá (0., 1., 0.)
+green.rgb = yellow.bgb; // Lấy giá trị ở kênh B của màu vàng để gán đồng thời cho cả kênh R và B của màu xanh lá
+```
+
+#### Trộn màu
+
+![TEXT](/assets/img/collections/mix-f.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+Trong GLSL có 1 hàm rất hữu ích, đó là mix(), giúp bạn trộn 2 màu với nhau theo 1 tỉ lệ nhất định. Và tỉ lệ đó cũng nằm trong khoảng [0.0, 1.0].
+<div class="codeAndCanvas" data="/assets/glsl_frag/frag_mix_colors.frag"></div>
+
+Thử xem bạn thuần thục môn võ karate-shader đến đâu rồi nào:
+- Hãy tạo một vùng chuyển tiếp mượt mà giữa 2 màu xem sao. Hãy sử dụng nó để diễn tả một cảm giác nào đó nhé. Màu gì thì diễn tả cảm giác đó tốt nhất? Nó xuất hiện rồi biến mất như thế nào? Rồi lại thử với một cảm giác khác. Sửa code để đổi 2 màu được chọn để trộn phía trên xem sao.
+- Thay vì dùng hàm sin, hãy thử các hàm khác mà ta đã học ở chương trước xem sao
+- Robert Penner đã phát triển một series các hàm số dùng trong animation rất nổi tiếng, chúng được gọi là các easing functions, bạn có thể sử dụng ví dụ này để tham khảo và lấy cảm hứng nhưng tốt nhất là bạn tự tạo ra dải màu gradient của riêng mình.
+
+#### Gradient
+
+Hàm mix() còn nhiều vũ khí bí mật khác nữa. Thay vì truyền vào 1 số thực float để chỉ định tỉ lệ trộn 2 màu, bạn có thay nó bằng một vec3 (hoặc vec4 tuỳ vào định dạng của 2 màu gốc) để chỉ định tỉ lệ trộn màu cho từng kênh r, g, b (và cả a) riêng biệt.<br>![TEXT](/assets/img/collections/mix-vec.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+<div class="codeAndCanvas" data="/assets/glsl_frag/frag_gradient01.frag"></div>
+
+Hãy thử:
+- Tạo dải màu gradient mô phỏng cảnh hoàng hôn của William Turner
+- Chuyển qua lại giữa màu bình minh và hoàng hôn bằng cách dùng biến u_time.
+- Tạo dải màu 7 sắc cầu vồng
+- Sử dụng hàm step() để tạo nên những lá cờ sặc sỡ
+
+#### HSB (Hue, Saturation, Brightness)
+
+HSB là viết tắt của Hue (sắc độ), Saturation (độ bão hoà màu) và Brightness (hoặc Value, độ sáng), là một cách định dạng màu khác, vốn có tổ chức và dễ hiểu hơn nhiều. Hãy dành vài phút để đọc hiểu 2 hàm rgb2hsv() và hsv2rgb() trong đoạn code dưới đây.
+<div class="codeAndCanvas" data="/assets/glsl_frag/frag_hsb_spacecolor.frag"></div>
+
+##### HSB trong hệ toạ độ cực
+
 *(TODO)*

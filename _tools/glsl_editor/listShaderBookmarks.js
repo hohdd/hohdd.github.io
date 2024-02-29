@@ -7,6 +7,12 @@ const itemsList = [
         description: "Mẫu để kiểm tra 'Simple Function'"
     },
     {
+        group: "Template",
+        src: "content/tryit_function.frag",
+        title: "Try some function playground",
+        description: "Khám phá một số hàm mũ và đa thức"
+    },
+    {
         group: "Inigo Quiles",
         src: "content/impulse.frag",
         title: "Impulse",
