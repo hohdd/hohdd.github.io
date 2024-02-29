@@ -13,6 +13,8 @@ float plot(vec2 st) {
     // và trả về một giá trị nội suy giữa 0.0 và 1.0 nếu x nằm giữa edge0 và edge1.
     // abs(st.y - st.x) biểu diễn khoảng cách giữa điểm st và đường thẳng y = x.
     return smoothstep(0.02, 0.0, abs(st.y - st.x));
+    // edge0 vaf edge1 bề dầy đường thẳng
+    // abs(...) để lấy 2 phần ngoài edge0 và edge1 giống nhau, phần âm giống phần dương
 }
 
 void main() {
@@ -20,15 +22,19 @@ void main() {
     // st = screen texture
 	vec2 st = gl_FragCoord.xy/u_resolution; // chuẩn hóa giá trị (0.0-1.0)
 
-    float y = st.x;
-
-    vec3 color = vec3(y); // gán màu của cả 3 kênh RGB giống nhau
+    float y = st.x; // tách phần st.x ra y (để tạo đường thẳng y = x thể hiện bằng màu)
+    vec3 color = vec3(y); // thể hiện màu cho trục y (gán màu của cả 3 kênh RGB giống nhau)
 
     // Plot a line (pct = percentage)
-    float pct = plot(st);
+    float pct = plot(st); // --> được trọng số/hệ số theo nội dung triển khai trong hàm spot()
+    // vì smoothstep bị kẹp trong 0-1 nên pct nằm trong khoảng [0,1]
+
     // nội suy tuyến tính giữa hai màu sắc giữa 'color' và 'green vec3(0.0, 1.0, 0.0)'
     // phép nội suy tuyến tính này sử dụng giá trị của 'pct' làm trọng số
-    color = (1.0-pct)*color + pct*vec3(0.0,1.0,0.0);
+    // color = (1.0-pct)*color + pct*vec3(0.0,1.0,0.0); // BACHKUP
+    // color = 1.0 *color; // color không đổi -> y = x là một gradient từ 0->1
+    // color = 0.0 *color; // color = black (0,0,0) bất kể giá trị x
+    color = 0.364 * color; // y = a*x 
 
     // tạo một vector 4 chiều từ một vector 3 chiều kết hợp một số thực nữa dành cho chiều thứ tư
 	gl_FragColor = vec4(color,1.0);
