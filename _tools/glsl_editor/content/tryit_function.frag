@@ -15,8 +15,44 @@ float function(in float x) {
     ///////////////////////////////// --- B E G I N--- ////////////////////////////////////////////////////
     // y = 1.0 - pow(abs(x), 0.5);
     // y = 1.0 - pow(abs(x), 1.0);
-    y = 1.0 - pow(abs(x), 1.5);
-    // TODO...
+    // y = 1.0 - pow(abs(x), 1.5);
+    // y = 1.0 - pow(abs(x), 2.0);
+    // y = 1.0 - pow(abs(x), 2.5);
+    // y = 1.0 - pow(abs(x), 3.0);
+    // y = 1.0 - pow(abs(x), 3.5);
+    // y = 1.0 - pow(abs(x), 1.0 + u_time); // xem biến thiên theo thời gian
+    // y = pow(cos(PI * x / 2.0), 0.5);
+    // y = pow(cos(PI * x / 2.0), 1.0);
+    // y = pow(cos(PI * x / 2.0), 1.5);
+    // y = pow(cos(PI * x / 2.0), 2.0);
+    // y = pow(cos(PI * x / 2.0), 2.5);
+    // y = pow(cos(PI * x / 2.0), 3.0);
+    // y = pow(cos(PI * x / 2.0), 3.5);
+    // y = pow(cos(PI * x / 2.0), u_time); // xem biến thiên theo thời gian
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), 0.5);
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), 1.0);
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), 1.5);
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), 2.0);
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), 2.5);
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), 3.0);
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), 3.5);
+    // y = 1.0 - pow(abs(sin(PI * x / 2.0)), u_time); // xem biến thiên theo thời gian
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), 0.5);
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), 1.0);
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), 1.5);
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), 2.0);
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), 2.5);
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), 3.0);
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), 3.5);
+    // y = pow(min(cos(PI * x / 2.0), 1.0 - abs(x)), u_time); // xem biến thiên theo thời gian
+    // y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), 0.5);
+    // y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), 1.0);
+    // y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), 1.5);
+    // y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), 2.0);
+    // y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), 2.5);
+    // y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), 3.0);
+    // y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), 3.5);
+    y = 1.0 - pow(max(0.0, abs(x) * 2.0 - 1.0), u_time); // xem biến thiên theo thời gian
     ///////////////////////////////// --- E N D --- ////////////////////////////////////////////////////
 
     return y;

@@ -312,7 +312,7 @@ green.rgb = yellow.bgb; // Lấy giá trị ở kênh B của màu vàng để g
 
 #### Trộn màu
 
-![TEXT](/assets/img/collections/mix-f.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+<!-- ![TEXT](/assets/img/collections/mix-f.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br> -->
 Trong GLSL có 1 hàm rất hữu ích, đó là mix(), giúp bạn trộn 2 màu với nhau theo 1 tỉ lệ nhất định. Và tỉ lệ đó cũng nằm trong khoảng [0.0, 1.0].
 <div class="codeAndCanvas" data="/assets/glsl_frag/frag_mix_colors.frag"></div>
 
@@ -323,7 +323,8 @@ Thử xem bạn thuần thục môn võ karate-shader đến đâu rồi nào:
 
 #### Gradient
 
-Hàm mix() còn nhiều vũ khí bí mật khác nữa. Thay vì truyền vào 1 số thực float để chỉ định tỉ lệ trộn 2 màu, bạn có thay nó bằng một vec3 (hoặc vec4 tuỳ vào định dạng của 2 màu gốc) để chỉ định tỉ lệ trộn màu cho từng kênh r, g, b (và cả a) riêng biệt.<br>![TEXT](/assets/img/collections/mix-vec.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+Hàm mix() còn nhiều vũ khí bí mật khác nữa. Thay vì truyền vào 1 số thực float để chỉ định tỉ lệ trộn 2 màu, bạn có thay nó bằng một vec3 (hoặc vec4 tuỳ vào định dạng của 2 màu gốc) để chỉ định tỉ lệ trộn màu cho từng kênh r, g, b (và cả a) riêng biệt.<br>
+<!-- ![TEXT](/assets/img/collections/mix-vec.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"} -->
 
 <div class="codeAndCanvas" data="/assets/glsl_frag/frag_gradient01.frag"></div>
 

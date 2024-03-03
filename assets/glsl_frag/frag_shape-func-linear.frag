@@ -26,15 +26,16 @@ void main() {
     vec3 color = vec3(y); // thể hiện màu cho trục y (gán màu của cả 3 kênh RGB giống nhau)
 
     // Plot a line (pct = percentage)
-    float pct = plot(st); // --> được trọng số/hệ số theo nội dung triển khai trong hàm spot()
+    float pct = plot(st); // --> được trọng số/hệ số theo nội dung triển khai trong hàm plot()
     // vì smoothstep bị kẹp trong 0-1 nên pct nằm trong khoảng [0,1]
 
-    // nội suy tuyến tính giữa hai màu sắc giữa 'color' và 'green vec3(0.0, 1.0, 0.0)'
-    // phép nội suy tuyến tính này sử dụng giá trị của 'pct' làm trọng số
-    // color = (1.0-pct)*color + pct*vec3(0.0,1.0,0.0); // BACHKUP
     // color = 1.0 *color; // color không đổi -> y = x là một gradient từ 0->1
     // color = 0.0 *color; // color = black (0,0,0) bất kể giá trị x
-    color = 0.364 * color; // y = a*x 
+    // color = 0.364 * color; // y = a*x
+    // color = (1.0-pct)*color; // thêm pct làm trọng số
+    // color = pct*vec3(0.0,1.0,0.0); // thể hiện pct với màu green
+
+    color = (1.0-pct)*color + pct*vec3(0.0,1.0,0.0); // đường thẳng spot với màu nền có pct là trọng số
 
     // tạo một vector 4 chiều từ một vector 3 chiều kết hợp một số thực nữa dành cho chiều thứ tư
 	gl_FragColor = vec4(color,1.0);

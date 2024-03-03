@@ -6,4 +6,7 @@ const extLinksList = [
     { group: "Inigo Quiles", title: "Graph Toy", url: "https://graphtoy.com/" },
     { group: "Inigo Quiles", title: "ShaderToy", url: "https://www.shadertoy.com/" },
     { group: "Inigo Quiles", title: "Inigo Quiles on ShaderToy", url: "https://www.shadertoy.com/user/iq" },
+    // --- GROUP: "Roadmap"
+    { group: "Other", title: "The Art of the Shade", url: "https://graphtoy.com/" },
+    { group: "Other", title: "[Youtube] An introduction to Shader Art Coding", url: "https://youtu.be/f4s1h2YETNY?t=142" },
 ];

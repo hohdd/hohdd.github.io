@@ -51,6 +51,11 @@ quickNote: true
 
 <!-- Add my own menu to glsl Editor -->
 <script type="text/javascript">
+  addMenuItem(window.glslEditor.menu.el, 'ge_menu', '<i class="material-icons">settings_backup_restore</i> Default', (event) => {
+    location.reload();
+    localStorage.removeItem("glslEditor-last-content");
+    localStorage.removeItem("pdfjs.history");
+  });
   addMenuItem(window.glslEditor.menu.el, 'ge_menu', '<i class="material-icons">manage_search</i> Bookmarks', (event) => {
     toggleDrawerMenu();
   });
