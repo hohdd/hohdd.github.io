@@ -13,6 +13,12 @@ const itemsList = [
         description: "Khám phá một số hàm mũ và đa thức"
     },
     {
+        group: "DongHD",
+        src: "content/dhd/dhd_art_01.frag",
+        title: "Hoa văn 01",
+        description: "Hoa văn màu sắc animation"
+    },
+    {
         group: "Inigo Quiles",
         src: "content/impulse.frag",
         title: "Impulse",
