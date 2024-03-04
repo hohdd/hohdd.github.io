@@ -127,7 +127,11 @@ function populateExtMenuItems() {
             currentGroup = item.group;
         }
         const li = document.createElement("li");
-        li.innerHTML = `<a href="${item.url}" target="_blank">${item.title}</a>`;
+        if (item.title && item.url) {
+            li.innerHTML = `<a href="${item.url}" target="_blank">${item.title}</a>`;
+        } else if (item.title) {
+            li.innerHTML = `<span>${item.title}</span>`;
+        }
         menuContent.appendChild(li);
     });
 }

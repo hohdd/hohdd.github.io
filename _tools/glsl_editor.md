@@ -25,7 +25,7 @@ quickNote: true
 <!-- Drawer Menu -->
 <div class="drawer-menu" id="myDrawer">
   <button class="close-button" onclick="closeDrawerMenu()">Close</button>
-  <input type="text" class="search-input" placeholder="Search items..." oninput="filterItems()">
+  <input type="text" class="search-input" placeholder="Search..." oninput="filterItems()">
   <ul id="itemList">
     <!-- Items will be dynamically added here -->
   </ul>
@@ -51,7 +51,7 @@ quickNote: true
 
 <!-- Add my own menu to glsl Editor -->
 <script type="text/javascript">
-  addMenuItem(window.glslEditor.menu.el, 'ge_menu', '<i class="material-icons">settings_backup_restore</i> Default', (event) => {
+  addMenuItem(window.glslEditor.menu.el, 'ge_menu', '<i class="material-icons">restart_alt</i> Default', (event) => {
     location.reload();
     localStorage.removeItem("glslEditor-last-content");
     localStorage.removeItem("pdfjs.history");
@@ -59,12 +59,12 @@ quickNote: true
   addMenuItem(window.glslEditor.menu.el, 'ge_menu', '<i class="material-icons">manage_search</i> Bookmarks', (event) => {
     toggleDrawerMenu();
   });
-  addMenuItem(window.glslEditor.menu.el, 'ge_menu', `<i class="material-icons">link</i> Links`, (event) => {
+  addMenuItem(window.glslEditor.menu.el, 'ge_menu', `<i class="material-icons">question_mark</i> Helps`, (event) => {
     toggleMenu();
   },`
     <div class="ext-menu" id="myMenu">
       <button class="ext-menu-close-button" onclick="closeMenu()">Close</button>
-      <input type="text" class="ext-menu-search-input" placeholder="Search links..." oninput="filterExtMenuItems()">
+      <input type="text" class="ext-menu-search-input" placeholder="Search..." oninput="filterExtMenuItems()">
       <ul id="ext-menu-itemList">
       </ul>
     </div>`);
