@@ -32,7 +32,7 @@ void main() {
     // uv *= 2.0;
     // uv *= u_resolution.x / u_resolution.y;
     vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / u_resolution.y;
-    vec2 uv0 = uv;
+    vec2 uv0 = uv; // <--- thêm một lớp color thứ 2 chồng lên
     
     vec3 finalColor = vec3(0.0);
     
@@ -42,10 +42,10 @@ void main() {
         // uv = fract(uv);
         // uv -= 0.5;
         // uv = fract(uv*2.0)-0.5;
-        uv = fract(uv*1.5)-0.5;
+        uv = fract(uv*1.5)-0.5; // chia nhỏ UV làm nhiều phần lặp lại. Thay vì 2.0 thì sử dụng 1.5 để phá vỡ sự đối xứng
 
         // float d = length(uv);
-        float d = length(uv) * exp(-length(uv0));
+        float d = length(uv) * exp(-length(uv0)); // exp tăng giảm ngược line (tạo animation)
 
         vec3 color = palette(length(uv0) + i*0.4 + u_time*0.4);
 
@@ -54,10 +54,11 @@ void main() {
 
         // d = 0.02/d;
         // d = 0.01/d;
-        d = pow(0.01/d, 1.2);
+        d = pow(0.01/d, 1.2); // sử dụng pow(x) để làm nổi bật vùng đen => tăng độ nét và tương phản
+        // a/x => a giống cường độ sáng
 
         // color *= d;
-        finalColor += color * d;
+        finalColor += color * d; // tương tự vẽ đồ thị F(d) với color
     }
     
     gl_FragColor = vec4(finalColor,1.0);

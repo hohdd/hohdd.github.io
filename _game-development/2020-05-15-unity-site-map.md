@@ -80,7 +80,7 @@ date: 2020-05-15 14:26:14 +0700
 - *Unity - Graphic (I) - Tìm hiểu **GPU**
 - *Unity - Graphic (I) - **HLSL** (High-Level Shader Language) (TODO)*
 - *Unity - Graphic (I) - Tìm hiểu **Shader Graph** của Unity (TODO)*
-- *Unity - Graphic (I) - Tìm hiểu **Vulkan** (TODO)*
+- *Unity - Graphic (I) - Tìm hiểu **Vulkan**
 
 ### 3D Model
 - Unity - 3D Model (I) - Tìm hiểu **Probuilder**
@@ -98,4 +98,5 @@ date: 2020-05-15 14:26:14 +0700
 - Photopea
 - *C programming (TODO)*
 - *C++ programming (TODO)*
+- *Objective-C programming (TODO)*
 - *C# programming (TODO)*
