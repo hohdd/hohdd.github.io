@@ -451,6 +451,26 @@ Tìm và xử lý lỗi bằng công cụ hỗ trợ:
 - Thêm thông tin gỡ lỗi (Debug Info): Thêm thông tin gỡ lỗi vào mã nguồn để biết được dòng lỗi cụ thể.
 - Ghi log (Logging): Thêm lệnh ghi log để theo dõi luồng thực thi và giá trị biến.
 
+### Các loại thư viện (library) trong C
+
+Trong ngôn ngữ lập trình C, có nhiều loại thư viện phục vụ cho các mục đích khác nhau. Dưới đây là một số loại thư viện C phổ biến:
+- [Thư viện chuẩn trong C](https://hoclaptrinh.vn/tutorial/thu-vien-c-chuan){:.external.hvr-forward rel="nofollow" target="_blank"}:
+    + Bao gồm các thư viện như ```<stdio.h>, <stdlib.h>, <math.h>```, và nhiều thư viện khác.
+    + Cung cấp các hàm và hằng số chuẩn để thực hiện input/output, xử lý chuỗi, và tính toán toán học.
+- Thư viện POSIX trong C:
+    + Được sử dụng cho các ứng dụng đa nền tảng.
+    + Bao gồm các thư viện như <unistd.h> và <pthread.h>.
+- Thư viện GTK trong C:
+    + Dùng để phát triển giao diện đồ họa (GUI) cho ứng dụng.
+    + Hỗ trợ tạo các cửa sổ, nút bấm, và các thành phần giao diện khác.
+
+Tùy thuộc vào mục đích sử dụng, lập trình viên có thể lựa chọn sử dụng các thư viện phù hợp.
+
+**Tạo thư viện của riêng bạn**:
+- Để tạo thư viện mới, bạn cần viết mã nguồn cho các hàm, cấu trúc dữ liệu, và các thành phần khác mà bạn muốn đóng gói vào thư viện.
+- Sau đó, bạn có thể biên dịch mã nguồn thành tệp thư viện (thường có phần mở rộng là .a hoặc .so).
+- Cuối cùng, bạn sử dụng thư viện này trong các chương trình khác bằng cách liên kết tệp thư viện vào mã nguồn của chương trình.
+
 ### IDE, Enviroment & Debug
 
 **IDE**:

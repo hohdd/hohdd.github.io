@@ -14,7 +14,7 @@ baseurl: # /blog => ko dùng thì để trống
 permalink: /articles/:title
 markdown: kramdown
 ampdir: amp
-exclude: ["NOTE", "build-and-deploy.sh", "templates", "temp"]
+exclude: ["NOTE", "build-and-deploy.sh", "templates", "drafts", "clean", "temp"]
 
 # Collections
 collections:

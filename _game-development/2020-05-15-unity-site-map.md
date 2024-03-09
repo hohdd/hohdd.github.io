@@ -97,6 +97,6 @@ date: 2020-05-15 14:26:14 +0700
 ### Bổ trợ kiến thức
 - Photopea
 - C programming (I)
-- *C++ programming (TODO)*
+- *C++ programming (D)*
 - *Objective-C programming (TODO)*
 - *C# programming (TODO)*
