@@ -296,3 +296,22 @@ a.external {
   border-radius: 1px;
   box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
+.scrollable {
+  overflow: scroll;
+}
+/* width */
+.scrollable::-webkit-scrollbar {
+  width: 2px;
+}
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover */
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
