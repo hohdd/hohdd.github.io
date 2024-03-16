@@ -234,7 +234,9 @@
 			"|:-|:-:|-:",
 			"| Row **1** | Column *2*",
 			"| Column 1  | Row *2*",
-			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}"
+			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}",
+			"REF: https://www.tablesgenerator.com/markdown_tables",
+			"REF: https://www.markdownguide.org/extended-syntax/#tables"
 		],
 		"description": "donghd.com insert a table"
 	},
