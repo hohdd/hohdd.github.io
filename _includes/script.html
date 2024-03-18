@@ -53,6 +53,12 @@
     {% for txt in txtArrRed %}
       bodyInnerHTML = bodyInnerHTML.replace(/{{ txt }}/g, "<span class='w3-red'>{{ txt }}</span>");
     {% endfor %}
+    
+    /**Gray*/
+    {% assign txtArrGray = page.highlight_gray | split: ", " %}
+    {% for txt in txtArrGray %}
+      bodyInnerHTML = bodyInnerHTML.replace(/{{ txt }}/g, "<span class='w3-gray'>{{ txt }}</span>");
+    {% endfor %}
 
     document.body.innerHTML = bodyInnerHTML;
   }
