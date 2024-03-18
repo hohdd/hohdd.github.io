@@ -1,6 +1,11 @@
 // When document ready
 function documentReady() {
   try {
+    highlight_text_content();
+  } catch (error) { 
+    console.log(error);
+  }
+  try {
     openAudioControl();
   } catch (error) {
     console.log(error);
@@ -48,7 +53,12 @@ function documentReady() {
     console.log(error);
   }
   try {
-    loadGlslElements()
+    loadGlslElements();
+  } catch (error) { 
+    console.log(error);
+  }
+  try {
+    registerScrollToTop();
   } catch (error) { 
     console.log(error);
   }
@@ -78,55 +88,57 @@ function toggleTOC() {
   }
 }
 
-// Scroll to top
-const scrollTopBtn = document.getElementById("scrollTopBtn");
-const tocMenu = document.getElementById("tocMenu");
-// Hide menu on scroll
-var prevScrollpos = window.pageYOffset;
+function registerScrollToTop() {
+  // Scroll to top
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  const tocMenu = document.getElementById("tocMenu");
+  // Hide menu on scroll
+  var prevScrollpos = window.pageYOffset;
 
-window.onscroll = function scrollFunction() {
-  // go to top
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollTopBtn.style.display = "block";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
-
-  // hide menu on scroll
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-    if (tocMenu) tocMenu.classList.remove("opacity-transition-hover");
-    if (scrollTopBtn) scrollTopBtn.classList.remove("opacity-transition-hover");
-  } else {
-    document.getElementById("navbar").style.top = "-62px";
-    if (tocMenu) tocMenu.classList.add("opacity-transition-hover");
-    if (scrollTopBtn) scrollTopBtn.classList.add("opacity-transition-hover");
-  }
-  prevScrollpos = currentScrollPos;
-
-  // scroll indicator
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  var progressBar = document.getElementById("progressBar")
-  if (progressBar) progressBar.style.width = scrolled + "%";
-
-  //spy title
-  var titles = document.querySelectorAll('[spy-title]');
-  var tocs = document.querySelectorAll('[spy-toc]');
-  titles.forEach(title => {
-    var rect = title.getBoundingClientRect();
-    if (document.documentElement.clientHeight > rect.top) {
-      tocs.forEach(toc => {
-        if (title.hash === toc.hash) {
-          toc.classList.add("w3-border-bottom", "w3-border-red");
-        } else {
-          toc.classList.remove("w3-border-bottom", "w3-border-red");
-        }
-      });
+  window.onscroll = function scrollFunction() {
+    // go to top
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
     }
-  });
+
+    // hide menu on scroll
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+      if (tocMenu) tocMenu.classList.remove("opacity-transition-hover");
+      if (scrollTopBtn) scrollTopBtn.classList.remove("opacity-transition-hover");
+    } else {
+      document.getElementById("navbar").style.top = "-62px";
+      if (tocMenu) tocMenu.classList.add("opacity-transition-hover");
+      if (scrollTopBtn) scrollTopBtn.classList.add("opacity-transition-hover");
+    }
+    prevScrollpos = currentScrollPos;
+
+    // scroll indicator
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    var progressBar = document.getElementById("progressBar")
+    if (progressBar) progressBar.style.width = scrolled + "%";
+
+    //spy title
+    var titles = document.querySelectorAll('[spy-title]');
+    var tocs = document.querySelectorAll('[spy-toc]');
+    titles.forEach(title => {
+      var rect = title.getBoundingClientRect();
+      if (document.documentElement.clientHeight > rect.top) {
+        tocs.forEach(toc => {
+          if (title.hash === toc.hash) {
+            toc.classList.add("w3-border-bottom", "w3-border-red");
+          } else {
+            toc.classList.remove("w3-border-bottom", "w3-border-red");
+          }
+        });
+      }
+    });
+  }
 }
 
 // When the user clicks on the button, scroll to the top of the document

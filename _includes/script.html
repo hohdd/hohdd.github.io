@@ -29,3 +29,32 @@
 {% endif %}
 
 <!-- <script src="sw-register.js" async></script> -->
+  
+<!-- highlight text content -->
+{%if page.highlight_text %}
+<script>
+  function highlight_text_content() {
+    var bodyInnerHTML = document.body.innerHTML;
+
+    /**Yellow*/
+    {% assign txtArrYellow = page.highlight_yellow | split: ", " %}
+    {% for txt in txtArrYellow %}
+      bodyInnerHTML = bodyInnerHTML.replace(/{{ txt }}/g, "<span class='w3-yellow'>{{ txt }}</span>");
+    {% endfor %}
+    
+    /**Green*/
+    {% assign txtArrGreen = page.highlight_green | split: ", " %}
+    {% for txt in txtArrGreen %}
+      bodyInnerHTML = bodyInnerHTML.replace(/{{ txt }}/g, "<span class='w3-teal'>{{ txt }}</span>");
+    {% endfor %}
+    
+    /**Red*/
+    {% assign txtArrRed = page.highlight_red | split: ", " %}
+    {% for txt in txtArrRed %}
+      bodyInnerHTML = bodyInnerHTML.replace(/{{ txt }}/g, "<span class='w3-red'>{{ txt }}</span>");
+    {% endfor %}
+
+    document.body.innerHTML = bodyInnerHTML;
+  }
+</script>
+{% endif %}

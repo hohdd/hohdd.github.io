@@ -27,6 +27,12 @@ collection: Ngữ pháp
 ### category: dùng để group collection
 category: Ngữ pháp
 
+### highlight_text
+highlight_text: true
+highlight_yellow: "は, を, と, へ, で, に, が, も, の, か。"
+highlight_green: "ます, ません, ました, ませんでした, もう, まだ, いっしょ, ませんか, ましょう, から, まで, までに, ぐらい, ごろ, そして"
+highlight_red: "どうして, いくら, だれ, なん, どう, どれ, なんじ, なんさい, です, です。"
+
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2021-04-13 14:26:14 +0700
 ### permalink: /url-ghi-de-mac-dinh # cân nhắc nếu muốn dùng!
