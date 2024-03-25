@@ -6,10 +6,29 @@ priority: 4
 tool_name: For Work
 icon: "/assets/img/tools/for_work.png"
 description: For Work
-toc: true
+toc: false
 konami: true
 secondMenu: false
 ---
+
+# Sitemap M.P.T
+
+| Starts With | Descriptions | Remarks
+|-----|-----|-----|
+| daily | 3-5 mục cần xem hàng ngày | title + subTitle
+| gpt  | Template để chat với Chat-GPT | title + subTitle
+| mina  | chia thể, từ vựng, ngữ pháp, Reibun, giao tiếp | mean + vietnamese + vi_mean
+| bm | truy cập nhanh các files, note phục vụ dự án đang làm việc | proj + cat + name
+| run | Command And Run một số tools. VD: Json Editor... | name + desc
+| sc | Shortcuts: Japanese IME, Unity, VSCode, Visual Studio, PowerToys, Macbook... | appOrCat + title + subTitle
+| trans | Translate... | Sử dụng: ^trans vi/en/ja.... vi => EN + JA; en => VI + JA; ja => EN + VI
+| chat | Msg Patterns: các mẫu câu chat japanese | patVi
+| ro | Tool dịch JA sang romaji... | Sử dụng: ^ro ....
+| mem | MemRiseListFiles: từ vựng 50 bài mina, English Gramar 01-03... | title + subTitle + tag (mrminaXX, encautruccau, Unity)
+| bt | 214 Bộ thủ | title + subTitle + tag (bothuXX)
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
+
+{% comment %}
 
 # Microsoft PowerToys: Utilities to customize Windows
 - Home: https://learn.microsoft.com/en-us/windows/powertoys/
@@ -137,3 +156,5 @@ Hướng dẫn: http://doc.wox.one/en/plugin/csharp_plugin.html
 ### Office Add-ins JavaScript API reference
 - Class > Properties > Methods > Details + Examples
 - Tất cả có ở đây: https://learn.microsoft.com/en-us/javascript/api/overview?view=common-js-preview
+
+{% endcomment %}
