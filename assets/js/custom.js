@@ -64,6 +64,26 @@ function documentReady() {
   }
 }
 
+// secondMenu: true
+// secondMenuIcon: gamepad
+// secondMenuHandler: closeAllModal()
+function toggleColumnTables(arrStr) {
+  const columnArr = arrStr.split(" ");
+  document.tableHTMLCollection = document.tableHTMLCollection ? document.tableHTMLCollection : document.getElementsByTagName('table');
+  for (let tbl of document.tableHTMLCollection) {
+    let trHTMLCollection = tbl.getElementsByTagName('tr');
+    for (let tr of trHTMLCollection) {
+      for (let col of columnArr) {
+        try {
+          toggleElmDisplay(tr.childNodes[col], 'inline');
+        } catch (error) {
+          console.log(error);
+        }        
+      }
+    }
+  }
+}
+
 // Open and close Menu
 function toggleMenu() {
   if (document.getElementById("menuElm").style.display === "block") {
