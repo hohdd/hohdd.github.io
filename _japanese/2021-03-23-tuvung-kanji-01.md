@@ -30,6 +30,10 @@ collection: "Từ Vựng"
 ### category: dùng để group collection
 category: "Từ Vựng"
 
+secondMenu: true
+secondMenuIcon: gamepad
+secondMenuHandler: toggleColumnTables('1 2 5')
+
 ### highlight_text
 highlight_text: true
 highlight_yellow: " は ,  を ,  と ,  へ ,  で ,  に ,  が ,  も ,  の ,  か。,  ね。, か。"
@@ -120,3 +124,61 @@ date: 2021-04-13 14:26:14 +0700
 | 和    | なご   | なごむ   | HÒA      | hòa bình        | lúa (禾) cứ đầy mồm (口) tự khắc sẽ HÒA BÌNH (和)                              |
 | 片    | かた   | かた     | PHIẾN    | tấm, mảnh       | tớ (T ngược) có 4 (4 ngược) TẤM (片) gỗ                                        |
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
+
+## 70 - 119
+
+{% mp3 /assets/audio/jp/kanji70-119.mp3 %}
+
+| Kanji | Kun/On | Type     | Hán Việt  | Nghĩa             | Ghi nhớ |
+|-------|--------|----------|-----------|-------------------|---------|
+| 子    | こ     | こ       | TỬ        | con               | N/A     |
+| 字    | じ     | じ       | TỰ        | chữ               | N/A     |
+| 学    | まな   | まな     | HỌC       | học tập           | N/A     |
+| 厚    | あつ   | あつ     | HẬU       | bề dày            | N/A     |
+| 存    | そん   | そん     | TỒN       | tồn tại           | N/A     |
+| 在    | ざい   | ざい     | TẠI       | tồn tại           | N/A     |
+| 月    | つき   | つき     | NGUYỆT    | mặt trăng, tháng  | N/A     |
+| 有    | あ     | ゆう     | HỮU       | có                | N/A     |
+| 散    | ち     | さん     | TẢN, TÁN  | tản bộ, giải tán  | N/A     |
+| 撒    | ま     | さん     | TẢN, TÁT  | vẩy, rắc          | N/A     |
+| 絹    | きぬ   | けん     | QUYÊN     | lụa               | N/A     |
+| 背    | せ     | せ       | BỐI       | lưng              | N/A     |
+| 胃    | い     | い       | VỊ        | dạ dày            | N/A     |
+| 謂    | い     | い       | VỊ        | gọi là            | N/A     |
+| 肯    | こう   | こうてい | KHẲNG     | khẳng định        | N/A     |
+| 言    | い     | い       | NGÔN      | nói               | N/A     |
+| 信    | しん   | しん     | TÍN       | tin tưởng         | N/A     |
+| 這    | は     | はう     | GIÁ       | bò                | N/A     |
+| 午    | うま   | うま     | NGỌ       | buổi trưa         | N/A     |
+| 許    | ゆる   | ゆる     | HỨA       | cho phép          | N/A     |
+| 杵    | きね   | きね     | XỬ        | cái chày          | N/A     |
+| 牛    | うし   | うし     | NGƯU      | con bò            | N/A     |
+| 件    | けん   | けん     | KIỆN      | sự kiện           | N/A     |
+| 牢    | ろう   | ろう     | LAO       | nhà tù            | N/A     |
+| 犀    | さい   | さい     | TÊ        | tê giác           | N/A     |
+| 牡    | おす   | おす     | MẪU       | con đực           | N/A     |
+| 化    | ば     | ばける   | HÓA       | biến hóa          | N/A     |
+| 花    | はな   | はな     | HOA       | bông hoa          | N/A     |
+| 貨    | か     | か       | HÓA       | hàng hóa          | N/A     |
+| 靴    | くつ   | くつ     | NGOA      | giày              | N/A     |
+| 今    | いま   | いま     | KIM       | bây giờ           | N/A     |
+| 吟    | ぎん   | ぎん     | NGÂM      | ngâm thơ          | N/A     |
+| 含    | ふく   | ふく     | HÀM       | ngậm              | N/A     |
+| 頷    | うなず | うなず   | HẠM       | gật đầu           | N/A     |
+| 貪    | むさぼ | むさぼ   | THAM      | tham lam          | N/A     |
+| 念    | ねん   | ねん     | NIỆM      | kỉ niệm           | N/A     |
+| 捻    | ひね   | ひね     | NIỆM      | văn, xoắn         | N/A     |
+| 鯰    | なまず | なまず   | NIÊM      | cá trê            | N/A     |
+| 令    | れい   | れい     | LỆNH      | mệnh lệnh         | N/A     |
+| 冷    | ひ     | ひえる   | LÃNH      | lạnh              | N/A     |
+| 領    | りょう | りょう   | LĨNH/LÃNH | thủ lĩnh/lãnh đạo | N/A     |
+| 嶺    | れい   | れい     | LĨNH      | đỉnh núi          | N/A     |
+| 零    | れい   | れい     | LINH      | số 0              | N/A     |
+| 齢    | よわい | よわい   | LINH      | tuổi              | N/A     |
+| 鈴    | すず   | すず     | LINH      | cái chuông        | N/A     |
+| 介    | かい   | かい     | GIỚI      | giới thiệu        | N/A     |
+| 芥子  | け     | からし   | GIỚI      | hoa anh túc       | N/A     |
+| 界    | かい   | かい     | GIỚI      | thế giới          | N/A     |
+| 米    | こめ   | こめ     | MỄ        | gạo               | N/A     |
+| 迷    | まよ   | まよう   | MÊ        | lạc đường         | N/A     |
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}
