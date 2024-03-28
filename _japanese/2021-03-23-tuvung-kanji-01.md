@@ -48,6 +48,73 @@ date: 2021-04-13 14:26:14 +0700
 ### aws s3 sync . s3://donghd.com/assets/4k-words/volume-1 --acl public-read
 ---
 
+## Đặt vấn đề
+
+### Lục thư là gì?
+
+- Lục thư là từ dùng chỉ **6 phép cấu thành chữ Hán** do người đời sau căn cứ vào sự hình thành của chữ Hán, chỉnh lý mà ra: ***Tượng Hình, Chỉ sự, Hình thanh, Hội ý, Giả tá, Chuyển chú.***
+- Trong đó:
+    + **Tượng hình, Chỉ sự, Hội ý, Hình thanh**{:.w3-green} *chủ yếu là **cách tạo**{:.w3-green} thành chữ Hán*{:.w3-yellow}.
+    + **Giả tá, Chuyển chú**{:.w3-purple} *là **cách dùng**{:.w3-purple} chữ*{:.w3-yellow}.
+
+### Cấu tạo chữ Hán theo "Lục Thư"
+
+- **Tượng hình 象形**{:.w3-text-green}:
+    + Là loại chữ *vẽ theo hình thể*{:.w3-green} của vật thực tế, nét chữ quanh co, uốn lượn theo hình thể của vật thực tế.
+    + Quy tắc cấu tạo loại chữ này đơn giản, hơn nữa hầu hết những chữ này là những từ ngữ chúng ta thường sử dụng hàng ngày.
+    + Ví dụ:
+        - 口 Khẩu = mồm: nguyên thủy là hình tròn.
+        - 木 Mộc = cây: là hình một cái cây có gốc, rễ, thân, cành.
+- **Chỉ sự 指事**{:.w3-text-green} (còn gọi là Tượng sự 象事):
+    + Là phép chỉ vào sự vật mà viết ra chữ, nhìn mà xét ra ý (“*quy ước*{:.w3-green}” vì có rất nhiều động tác, hiện tượng không sao vẽ ra được).
+    + Ví dụ:
+        - 上 Thượng = **ở trên**: lấy nét ngang dài làm mốc, nét ngang ngắn ở trên ***chỉ***{:.w3-green} một vị trí ở trên...
+        - 下 Hạ = **ở dưới** : nét ngang dài làm mốc, nét ngang nhỏ ở dưới ***chỉ***{:.w3-green} một vị trí ở dưới...
+- **Hội ý 會意**{:.w3-text-green} (hay còn gọi là Tượng ý 象意):
+    + Là hợp ý của từng phần lại để hình thành nghĩa mới.
+    + Chữ Hội ý thường là một chữ có kết cấu phức hợp, gồm hai bộ phận trở lên.
+    + Ví dụ:
+        - 林 Lâm = rừng. Hai chữ 木 mộc => *ngụ ý:*{:.w3-green} nhiều cây hợp lại tạo thành rừng.
+        - 信 Tín = tin tức: gồm chữ 人nhân = người + 言 ngôn = lời nói => *ngụ ý:*{:.w3-green} lời người đến báo cho biết (tin tức).
+- **Hình thanh 形聲**{:.w3-text-green} (hay còn gọi là 象聲 Tượng thanh, 諧聲 Hài thanh):
+    + Là lấy sự làm tên, mượn thanh để hợp thành. Đây là phép thông dụng nhất để hình thành Hán tự.
+    + Chữ hình thanh gồm một phần chỉ nghĩa, một phần chỉ thanh (Trái-Phải, Trên-Dưới, Ngoài-Trong...).
+    + Ví dụ:
+        - 江 Giang = s**ông**{:.w3-green}. Gồm chữ 水 *Thủy* + 工 C**ông**{:.w3-green}
+        - 河 H**à**{:.w3-green} = sông. Gồm chữ 水 *Thủy* + 可 Kh**ả**{:.w3-green}
+        - 芳 Ph**ương**{:.w3-green} = cỏ thơm. Gồm 草 *Thảo* (thủa xưa viết là 艸) + 方 Ph**ương**{:.w3-green}
+- **Giả tá 假借 (mượn sai)**{:.w3-text-purple}:
+    + Có nghĩa là “*vay mượn*{:.w3-purple}” để ghi lại một từ trong khẩu ngữ chưa có từ tương ứng (*“tạo ra chữ mà không thêm chữ”*{:.w3-yellow}).
+    + Ví dụ:
+        - 令 **Lệnh** = như trong chữ “mệnh lệnh”, “hiệu lệnh” ==> *được mượn làm chữ “**lệnh**{:.w3-lime}” trong “**huyện lệnh**{:.w3-lime}”.*{:.w3-yellow}
+        - 道 **Đạo** = con đường. *Giả tá thành "**đạo**{:.w3-lime}" trong “**đạo lý**{:.w3-lime}”, “**đạo đức**{:.w3-lime}”*{:.w3-yellow}
+- **Chuyển chú 轉注**{:.w3-text-purple}:
+    + Giải quyết về mặt văn tự hiện tượng đồng nghĩa khác âm...
+    + Hiện tượng này được phản ánh trên văn tự bằng những cặp chữ có liên quan với nhau về mặt ý nghĩa nhưng khác nhau về mặt âm đọc và hình thể.
+    + Ví dụ:
+        - 長 Trường (dài) / Trưởng (lớn, trưởng thành). Do chữ "Trường" đọc thành "Trưởng". Hai âm *“Trường”/“Trưởng”*{:.w3-yellow} và hai nghĩa *“Dài”/“Lớn”*{:.w3-yellow} tuy đã *chuyển biến*{:.w3-purple} nhưng cùng một ý.
+        - 少 Thiểu (ít) / Thiếu (nhỏ tuổi). Do chữ “Thiểu” chuyển chú đọc thành “Thiếu”. Hai âm *“Thiểu”/“Thiếu”*{:.w3-yellow} và hai nghĩa *“ít”/“nhỏ”*{:.w3-yellow} tuy đã chuyển biến nhưng cùng một ý.
+        - 中 Trúng (bắn trúng) / Trung (ở giữa). Vốn do chữ “Trúng” chuyển chú thành “Trung”. Hai âm *“trúng”+“trung”*{:.w3-yellow} và hai nghĩa *“bắn trúng”+“ở giữa”*{:.w3-yellow} tuy đã *chuyển biến*{:.w3-purple} nhưng vẫn cùng một ý = khi bắn trúng, mũi tên ghim vào giữa cái bia.
+
+### Phương pháp học (cá nhân)
+
+- Pilot 1:
+    - Đọc (**group theo Bộ thủ chính**)
+        + Kanji > Các bộ Thủ cấu thành (đường mắt)
+        + Các đường giao nhau hay bị Chặn? (**phân tích Kanji**)
+        + Font chữ máy tính (ở **Ghi nhớ**)
+        + Nghĩa và Ghi nhớ ***+ Ví dụ***
+        + Đoán loại "Lục Thư"
+    - Nghe nhìn (**group theo Bộ thủ chính**)
+        + Kanji > Hán việt
+        + Hán việt > Kanji
+- Pilot 2:
+    - Chuẩn bị: bổ sung Ví dụ
+    - Đọc kèm Ví dụ
+    - Nghe nhìn kèm Ví dụ
+- Pilot 3:
+    - Type kèm Ví dụ
+
 ## 69 chữ kanji cơ bản
 
 {% mp3 /assets/audio/jp/69kanji-coban.mp3 %}

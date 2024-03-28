@@ -232,7 +232,7 @@
 		"body": [
 			"| Head-1 | Head-2",
 			"|:-|:-:|-:",
-			"| Row **1** | Column *2*",
+			"| Row **1**{:.w3-red} | Column *2*",
 			"| Column 1  | Row *2*",
 			"{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}",
 			"REF: https://www.tablesgenerator.com/markdown_tables",
