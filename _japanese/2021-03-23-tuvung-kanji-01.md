@@ -98,6 +98,7 @@ date: 2021-04-13 14:26:14 +0700
 
 ### Phương pháp học (cá nhân)
 
+- Thời lượng: 50/ngày > 2.5 tháng/Pilot > 1 năm (26/03)!!!???
 - Pilot 1:
     - Đọc (**group theo Bộ thủ chính**)
         + Kanji > Các bộ Thủ cấu thành (đường mắt)
@@ -109,11 +110,19 @@ date: 2021-04-13 14:26:14 +0700
         + Kanji > Hán việt
         + Hán việt > Kanji
 - Pilot 2:
-    - Chuẩn bị: bổ sung Ví dụ
+    - Chuẩn bị:
+        + hiểu quy tắc âm Latin -> JA
+        + bổ sung Ví dụ
     - Đọc kèm Ví dụ
     - Nghe nhìn kèm Ví dụ
 - Pilot 3:
-    - Type kèm Ví dụ
+    - Chuẩn bị:
+        + Tìm hiểu quy tắc chuyển âm Hán-việt sang On (Hán-Nhật)
+    - Type kèm Ví dụ + Kun/On
+- Pilot 4:
+    - Flashcards
+    - Nghe nhìn
+    - Type kèm Ví dụ + Kun/On
 
 ## 69 chữ kanji cơ bản
 

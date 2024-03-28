@@ -37,6 +37,23 @@
 // ------------------------------------------------------------------------------------>
 // {% endraw %}{% endcomment %}
 {
+	"flip card 600x750": {
+		"prefix": "dhflipcard",
+		"body": [
+		  "",
+		  "<div class=\"flip-card\">",
+		  "  <div class=\"flip-card-inner\">",
+		  "    <div class=\"flip-card-front\">",
+		  "      <img src=\"/assets/img/avatar/dongho.jpg\" alt=\"front\" style=\"width:600px;height:750px;\">",
+		  "    </div>",
+		  "    <div class=\"flip-card-back\">",
+		  "      <img src=\"/assets/img/avatar/jane.png\" alt=\"back\" style=\"width:600px;height:750px;\">",
+		  "    </div>",
+		  "  </div>",
+		  "</div>"
+		],
+		"description": "flip card 600x750"
+	},
 	"donghd.com 4000 english words": {
 		"prefix": "dh4k-words",
 		"body": [

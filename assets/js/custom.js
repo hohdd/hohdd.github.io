@@ -62,6 +62,16 @@ function documentReady() {
   } catch (error) { 
     console.log(error);
   }
+  try {
+    registerFlipable();
+  } catch (error) { 
+    console.log(error);
+  }
+  try {
+    _TEST_();
+  } catch (error) { 
+    console.log(error);
+  }
 }
 
 // secondMenu: true
@@ -671,3 +681,12 @@ function loadGlslElements() {
   }
 }
 // GLSL EDITOR ----------------------------------------------
+// BEGIN: Flippable flash cards - flip on click ----------------------------------------------
+function registerFlipable() {
+  document.querySelectorAll(".flip-card").forEach(function(element) {
+    element.addEventListener("click", function() {
+      this.classList.toggle("flipme");
+    });
+  });
+}
+// END: Flippable flash cards - flip on click ----------------------------------------------
