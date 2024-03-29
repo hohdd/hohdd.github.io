@@ -32,7 +32,7 @@ category: "Từ Vựng"
 
 secondMenu: true
 secondMenuIcon: gamepad
-secondMenuHandler: toggleColumnTables('1 2 5')
+secondMenuHandler: toggleColumnTables('1 2')
 
 ### highlight_text
 highlight_text: true
@@ -132,196 +132,263 @@ date: 2021-04-13 14:26:14 +0700
 
 ## 69 chữ kanji cơ bản
 
-{% mp3 /assets/audio/jp/69kanji-coban.mp3 %}
+{% mp3 /assets/audio/jp/kanji01/kanji1-69-coban.mp3 %}
 
-| Kanji | Kun/On | Type     | Hán Việt | Nghĩa           | Ghi nhớ                                                                        |
-|-------|--------|----------|----------|-----------------|--------------------------------------------------------------------------------|
-| 一    | ひと   | いち     | NHẤT     | một             | 1 gạch                                                                         |
-| ニ    | ふた   | に       | NHỊ      | hai             | 2 gạch                                                                         |
-| 仁    | じん   | じんあい | NHÂN     | nhân nghĩa      | người đứng (亻) số hai (二) là người NHÂN NGHĨA (仁)                           |
-| 八    | やつ   | はち     | BÁT      | tám             | cười haha (八) khi nhìn thấy số TÁM (八)                                       |
-| 六    | むつ   | ろく     | LỤC      | sáu             | đầu (亠) tám (八) đuôi SÁU (六)                                                |
-| 穴    | あな   | あな     | HUYỆT    | cái lỗ          | mái nhà (亠) có 8 (八) CÁI LỖ (穴)                                             |
-| 曰    | いわ   | いわく   | VIẾT     | nói rằng        | "phân biệt với chữ NHẬT 曰"                                                    |
-| 日    | ひ     | にち     | NHẬT     | ngày, mặt trời  | "hình mặt trời"                                                                |
-| 目    | もく   | め       | MỤC      | mắt             | "hình con mắt"                                                                 |
-| 三    | みつ   | さん     | TAM      | ba              | 3 gạch                                                                         |
-| 手    | て     | て       | THỦ      | tay             | 3 (三) thể hiện quyết (亅) tâm bằng TAY (手)                                   |
-| 毛    | は     | もうふ   | MAO      | lông            | "LÔNG (毛) ngược với TAY (手)"                                                 |
-| 十    | とお   | とお     | THẬP     | mười            | gạch ngang (一) gạch dọc (丨) ra số MƯỜI (十)                                  |
-| チ    | せん   | ち       | THIÊN    | một nghìn       | thêm 1 phẩy (丿) vào số 10 (十) là ra MỘT NGHÌN (チ)                           |
-| 土    | つち   | つち     | THỔ      | đất             | có mười (十) + 1 (一) mảnh ĐẤT (土)                                            |
-| 上    | うえ   | うえ     | THƯỢNG   | bên trên        | to (ト) nhất (一) thiên hạ là hoàng THƯỢNG (上)                                |
-| 下    | した   | した     | HẠ       | bên dưới        | có một (一) thứ rất to (ト) ở BÊN DƯỚI (下)                                    |
-| 峠    | とうげ | とうげ   | ĐÈO      | con đèo         | ngọn núi (山) bên trên (上) bên dưới (下) uốn éo thành CON ĐÈO   (峠)          |
-| 力    | ちかち | りき     | LỰC      | sức lực         | đại ka (katakana) phải có SỨC LỰC (力)                                         |
-| 刀    | かたな | かたな   | ĐAO      | kiếm            | lực (力) thừa, ĐAO (刀)                                                        |
-| 万    | まん   | まん     | VẠN      | mười nghìn      | 1 (一) con dao (力) giá MƯỜI NGHÌN (万)                                        |
-| 九    | ここの | ここのつ | CỬU      | chín            | "giống chữ 'r' (viết tay)"                                                     |
-| 丸    | まる   | まる     | HOÀN     | tròn            | số 9 (九) cắt (丶) đuôi thì HOÀN toàn là hình TRÒN (丸)                        |
-| 究    | きわ   | きゅう   | CỨU      | nghiên cứu      | đào lỗ (穴) xuống cửu (九) tuyền để NGHIÊN CỨU (究)                            |
-| 口    | くち   | くち     | KHẨU     | miệng           | "giống hình cái miệng"                                                         |
-| 回    | まわ   | まわ     | HỒI      | lần             | 2 cái miệng (口) nói liên hồi (回)                                             |
-| 向    | む     | こう     | HƯỚNG    | phương hướng    | tài phiệt (丿) ở biên giới (冂) miệng (口) kêu cứu vì mất PHƯƠNG   HƯỚNG (向)  |
-| 匹    | ひき   | ひき     | THẤT     | đếm con vật     | ĐẾM CON VẬT (匹) trong tủ đựng (匚) xem có mấy chân (儿)                       |
-| 四    | よん   | よん     | TỨ       | bốn             | người vây quanh (囗) chân chạy (儿) BỐN (四) phía                              |
-| 西    | にし   | にし     | TÂY      | phía tây        | 1 (一) trong 4 (囗) phía là PHÍA TÂY (西)                                      |
-| 洒    | しゃ   | しゃ     | SÁI      | vẩy nước        | các nước (氵) phương tây (西) có tập tục VẨY NƯỚC (洒)                         |
-| 酉    | とり   | とり     | DẬU      | giờ Dậu         | cảnh phía tây (西) đẹp nhất (一) vào GIỜ DẬU (酉)                              |
-| 酒    | きけ   | しゅ     | TỬU      | rượu            | ủ men với nước (氵) tới giờ Dậu (酉) sẽ thành RƯỢU (酒)                        |
-| 七    | なな   | なな     | THẤT     | bảy             | "giống số 7 ngược"                                                             |
-| 𠮟    | しつ   | しつ     | SẤT      | la mắng         | miệng (口) sếp cả tuần 7 (七) ngày đều LA MẮNG (𠮟) nhân   viên                |
-| 北    | きた   | きた     | BẮC      | phía BẮC        | dựa tường (丬) cười hihi (ヒヒ) nhìn về phía BẮC (北)                          |
-| 円    | えん   | えん     | VIÊN     | tiền Yên (Nhật) | ở biên giới (冂) chỉ tiêu (T ngược) tiền YÊN (円)                              |
-| 五    | いつ   | いつ     | NGŨ      | năm             | leo từ tầng (T) 1 (ユ) đến tầng 5 (五)                                         |
-| 竹    | たけ   | たけ     | TRÚC     | tre, trúc       | tiếng cười keke (ケケ) phát ra từ bụi TRÚC (竹)                                |
-| 光    | ひか   | ひか     | QUANG    | sáng            | tiểu (小) cô nương có 1 (一) cặp chân (儿) trắng SÁNG (光)                     |
-| 幌    | ほろ   | ほろ     | HOẢNG    | màn che         | lấy khăn (巾) che mặt trời (日) không cho ánh sáng (光) lọt vào   MÀN CHE (幌) |
-| 当    | とう   | とう     | ĐƯƠNG    | đương nhiên     | tiểu (小) cô nương! Em (彐) ĐƯƠNG NHIÊN (当) rất xinh đẹp!                     |
-| 社    | やしろ | やしろ   | XÃ       | xã hội          | chỉ thị (礻) cúng thổ (土) địa cho XÃ HỘI (社) phát triển                      |
-| 気    | き     | き       | KHÍ      | không khí       | khí (气) mà mọi người đều mê (メ) là KHÔNG KHÍ (気)                            |
-| 汽    | き     | き       | KHÍ      | hơi nước        | nước (氵) chuyển sang thể KHÍ (气) gọi là HƠI NƯỚC (汽)                        |
-| 左    | ひだり | ひだり   | TẢ       | bên trái        | bé NA (ナ) vận công (工) bằng tay TRÁI (左)                                    |
-| 佐    | さ     | さ       | TÁ       | phụ tá          | người đứng (亻) bên trái (左) là người PHỤ TÁ (佐)                             |
-| 右    | みぎ   | みぎ     | HỮU      | bên phải        | bé Na (ナ) miệng (口) nói toàn điều PHẢI (右)                                  |
-| 石    | いし   | いし     | THẠCH    | đá              | ĐÁ (石) thì phải (右) nhẵn nhụi (không có dấu)                                 |
-| 岩    | いわ   | いわ     | NHAM     | nham thạch      | núi (山) đá (石) hình thành từ NHAM THẠCH (岩)                                 |
-| 拓    | たく   | たく     | THÁC     | khai thác       | tay (扌) đạp đá (石) để KHAI THÁC (拓)                                         |
-| 妬    | ねた   | ねたむ   | ĐỐ       | đó kỵ           | phụ nữ (女) ném đá (石) nhau do ĐỐ KỴ (妬)                                     |
-| 年    | とし   | とし     | NIÊN     | năm             | nằm (Nhân nằm) suốt 14 năm (年)                                                |
-| 降    | お     | おりる   | GIÁNG    | xuống           | Bồ (阝) sau (夂) 14 năm (年) bị GIÁNG (降) chức                                |
-| 麦    | むぎ   | むぎ     | MẠCH     | lúa mạch        | ông vua lòi đầu (主) truy (夂) tìm LÚA MẠCH (麦)                               |
-| 面    | めん   | めん     | DIỆN     | mặt             | trên MẶT (面) thích nhất (一) là miệng (口) của mình (自)                      |
-| 麵    | めん   | めん     | MIẾN     | mì sợi          | lúa mạch (麥 (麦)) được ép 2 mặt (面) thành MÌ SỢI (麵)                        |
-| 人    | ひと   | ひと     | NHÂN     | người           | "người (人) đang đội nón"                                                      |
-| 入    | はい   | はいる   | NHẬP     | vào             | "nhập (入) ngược với nhân (人)"???                                             |
-| 込    | こ     | こむ     | VU       | đông đúc        | nhập (入) hàng phải đi xa (廴) nơi ĐÔNG ĐÚC (込)                               |
-| 大    | おお   | おお     | ĐẠI      | to lớn          | 1 (一) người (人) TO LỚN (大)                                                  |
-| 犬    | いぬ   | いぬ     | KHUYỂN   | con chó         | CHÓ (犬) to (大) thường có đốm lưỡi (丶)                                       |
-| 太    | ふと   | ふと     | THÁI     | béo             | To (大) + lủng lẳng (丶) = BÉO (太)                                            |
-| 天    | てん   | てん     | THIÊN    | trời            | 1 (一) thứ to (大) nhất là TRỜI (天)                                           |
-| 矢    | や     | や       | THỈ      | mũi tên         | MŨI TÊN (矢) bắn (丿) lên trời (天)                                            |
-| 夫    | おつと | ふう     | PHU      | chồng           | CHỒNG (夫) cao hơn trời (天) (vì có thêm dấu)                                  |
-| 失    | うしな | うしな   | THẤT     | thất bại        | bị cắm sừng (丿) là người chồng (夫) THẤT BẠI (失). "có đầu   khác THỈ (矢)"   |
-| 和    | なご   | なごむ   | HÒA      | hòa bình        | lúa (禾) cứ đầy mồm (口) tự khắc sẽ HÒA BÌNH (和)                              |
-| 片    | かた   | かた     | PHIẾN    | tấm, mảnh       | tớ (T ngược) có 4 (4 ngược) TẤM (片) gỗ                                        |
+| Kanji | Kun/On | Type     | Hán Việt | Nghĩa           |
+|-------|--------|----------|----------|-----------------|
+| 一    | ひと   | いち     | NHẤT     | một             |
+| ニ    | ふた   | に       | NHỊ      | hai             |
+| 仁    | じん   | じんあい | NHÂN     | nhân nghĩa      |
+| 八    | やつ   | はち     | BÁT      | tám             |
+| 六    | むつ   | ろく     | LỤC      | sáu             |
+| 穴    | あな   | あな     | HUYỆT    | cái lỗ          |
+| 曰    | いわ   | いわく   | VIẾT     | nói rằng        |
+| 日    | ひ     | にち     | NHẬT     | ngày, mặt trời  |
+| 目    | もく   | め       | MỤC      | mắt             |
+| 三    | みつ   | さん     | TAM      | ba              |                   |
+| 手    | て     | て       | THỦ      | tay             |
+| 毛    | は     | もうふ   | MAO      | lông            |
+| 十    | とお   | とお     | THẬP     | mười            |
+| チ    | せん   | ち       | THIÊN    | một nghìn       |
+| 土    | つち   | つち     | THỔ      | đất             |
+| 上    | うえ   | うえ     | THƯỢNG   | bên trên        |
+| 下    | した   | した     | HẠ       | bên dưới        |
+| 峠    | とうげ | とうげ   | ĐÈO      | con đèo         |
+| 力    | ちかち | りき     | LỰC      | sức lực         |
+| 刀    | かたな | かたな   | ĐAO      | kiếm            |
+| 万    | まん   | まん     | VẠN      | mười nghìn      |
+| 九    | ここの | ここのつ | CỬU      | chín            |
+| 丸    | まる   | まる     | HOÀN     | tròn            |
+| 究    | きわ   | きゅう   | CỨU      | nghiên cứu      |
+| 口    | くち   | くち     | KHẨU     | miệng           |
+| 回    | まわ   | まわ     | HỒI      | lần             |
+| 向    | む     | こう     | HƯỚNG    | phương hướng    |
+| 匹    | ひき   | ひき     | THẤT     | đếm con vật     |
+| 四    | よん   | よん     | TỨ       | bốn             |
+| 西    | にし   | にし     | TÂY      | phía tây        |
+| 洒    | しゃ   | しゃ     | SÁI      | vẩy nước        |
+| 酉    | とり   | とり     | DẬU      | giờ Dậu         |
+| 酒    | きけ   | しゅ     | TỬU      | rượu            |
+| 七    | なな   | なな     | THẤT     | bảy             |
+| 𠮟    | しつ   | しつ     | SẤT      | la mắng         | 
+| 北    | きた   | きた     | BẮC      | phía BẮC        |
+| 円    | えん   | えん     | VIÊN     | tiền Yên (Nhật) |
+| 五    | いつ   | いつ     | NGŨ      | năm             |
+| 竹    | たけ   | たけ     | TRÚC     | tre, trúc       |
+| 光    | ひか   | ひか     | QUANG    | sáng            |
+| 幌    | ほろ   | ほろ     | HOẢNG    | màn che         |
+| 当    | とう   | とう     | ĐƯƠNG    | đương nhiên     |
+| 社    | やしろ | やしろ   | XÃ       | xã hội          |
+| 気    | き     | き       | KHÍ      | không khí       |
+| 汽    | き     | き       | KHÍ      | hơi nước        |
+| 左    | ひだり | ひだり   | TẢ       | bên trái        |
+| 佐    | さ     | さ       | TÁ       | phụ tá          |
+| 右    | みぎ   | みぎ     | HỮU      | bên phải        |
+| 石    | いし   | いし     | THẠCH    | đá              |
+| 岩    | いわ   | いわ     | NHAM     | nham thạch      |
+| 拓    | たく   | たく     | THÁC     | khai thác       |
+| 妬    | ねた   | ねたむ   | ĐỐ       | đó kỵ           |
+| 年    | とし   | とし     | NIÊN     | năm             |
+| 降    | お     | おりる   | GIÁNG    | xuống           |
+| 麦    | むぎ   | むぎ     | MẠCH     | lúa mạch        |
+| 面    | めん   | めん     | DIỆN     | mặt             |
+| 麵    | めん   | めん     | MIẾN     | mì sợi          |
+| 人    | ひと   | ひと     | NHÂN     | người           |
+| 入    | はい   | はいる   | NHẬP     | vào             |
+| 込    | こ     | こむ     | VU       | đông đúc        |
+| 大    | おお   | おお     | ĐẠI      | to lớn          |
+| 犬    | いぬ   | いぬ     | KHUYỂN   | con chó         |
+| 太    | ふと   | ふと     | THÁI     | béo             |
+| 天    | てん   | てん     | THIÊN    | trời            |
+| 矢    | や     | や       | THỈ      | mũi tên         |
+| 夫    | おつと | ふう     | PHU      | chồng           |
+| 失    | うしな | うしな   | THẤT     | thất bại        |
+| 和    | なご   | なごむ   | HÒA      | hòa bình        |
+| 片    | かた   | かた     | PHIẾN    | tấm, mảnh       |
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
 
 ## 70 - 119
 
-{% mp3 /assets/audio/jp/kanji70-119.mp3 %}
+{% mp3 /assets/audio/jp/kanji01/kanji70-119.mp3 %}
 
-| Kanji | Kun/On | Type     | Hán Việt  | Nghĩa             | Ghi nhớ |
-|-------|--------|----------|-----------|-------------------|---------|
-| 子    | こ     | こ       | TỬ        | con               | N/A     |
-| 字    | じ     | じ       | TỰ        | chữ               | N/A     |
-| 学    | まな   | まな     | HỌC       | học tập           | N/A     |
-| 厚    | あつ   | あつ     | HẬU       | bề dày            | N/A     |
-| 存    | そん   | そん     | TỒN       | tồn tại           | N/A     |
-| 在    | ざい   | ざい     | TẠI       | tồn tại           | N/A     |
-| 月    | つき   | つき     | NGUYỆT    | mặt trăng, tháng  | N/A     |
-| 有    | あ     | ゆう     | HỮU       | có                | N/A     |
-| 散    | ち     | さん     | TẢN, TÁN  | tản bộ, giải tán  | N/A     |
-| 撒    | ま     | さん     | TẢN, TÁT  | vẩy, rắc          | N/A     |
-| 絹    | きぬ   | けん     | QUYÊN     | lụa               | N/A     |
-| 背    | せ     | せ       | BỐI       | lưng              | N/A     |
-| 胃    | い     | い       | VỊ        | dạ dày            | N/A     |
-| 謂    | い     | い       | VỊ        | gọi là            | N/A     |
-| 肯    | こう   | こうてい | KHẲNG     | khẳng định        | N/A     |
-| 言    | い     | い       | NGÔN      | nói               | N/A     |
-| 信    | しん   | しん     | TÍN       | tin tưởng         | N/A     |
-| 這    | は     | はう     | GIÁ       | bò                | N/A     |
-| 午    | うま   | うま     | NGỌ       | buổi trưa         | N/A     |
-| 許    | ゆる   | ゆる     | HỨA       | cho phép          | N/A     |
-| 杵    | きね   | きね     | XỬ        | cái chày          | N/A     |
-| 牛    | うし   | うし     | NGƯU      | con bò            | N/A     |
-| 件    | けん   | けん     | KIỆN      | sự kiện           | N/A     |
-| 牢    | ろう   | ろう     | LAO       | nhà tù            | N/A     |
-| 犀    | さい   | さい     | TÊ        | tê giác           | N/A     |
-| 牡    | おす   | おす     | MẪU       | con đực           | N/A     |
-| 化    | ば     | ばける   | HÓA       | biến hóa          | N/A     |
-| 花    | はな   | はな     | HOA       | bông hoa          | N/A     |
-| 貨    | か     | か       | HÓA       | hàng hóa          | N/A     |
-| 靴    | くつ   | くつ     | NGOA      | giày              | N/A     |
-| 今    | いま   | いま     | KIM       | bây giờ           | N/A     |
-| 吟    | ぎん   | ぎん     | NGÂM      | ngâm thơ          | N/A     |
-| 含    | ふく   | ふく     | HÀM       | ngậm              | N/A     |
-| 頷    | うなず | うなず   | HẠM       | gật đầu           | N/A     |
-| 貪    | むさぼ | むさぼ   | THAM      | tham lam          | N/A     |
-| 念    | ねん   | ねん     | NIỆM      | kỉ niệm           | N/A     |
-| 捻    | ひね   | ひね     | NIỆM      | văn, xoắn         | N/A     |
-| 鯰    | なまず | なまず   | NIÊM      | cá trê            | N/A     |
-| 令    | れい   | れい     | LỆNH      | mệnh lệnh         | N/A     |
-| 冷    | ひ     | ひえる   | LÃNH      | lạnh              | N/A     |
-| 領    | りょう | りょう   | LĨNH/LÃNH | thủ lĩnh/lãnh đạo | N/A     |
-| 嶺    | れい   | れい     | LĨNH      | đỉnh núi          | N/A     |
-| 零    | れい   | れい     | LINH      | số 0              | N/A     |
-| 齢    | よわい | よわい   | LINH      | tuổi              | N/A     |
-| 鈴    | すず   | すず     | LINH      | cái chuông        | N/A     |
-| 介    | かい   | かい     | GIỚI      | giới thiệu        | N/A     |
-| 芥子  | け     | からし   | GIỚI      | hoa anh túc       | N/A     |
-| 界    | かい   | かい     | GIỚI      | thế giới          | N/A     |
-| 米    | こめ   | こめ     | MỄ        | gạo               | N/A     |
-| 迷    | まよ   | まよう   | MÊ        | lạc đường         | N/A     |
+| Kanji | Kun/On | Type     | Hán Việt  | Nghĩa             |
+|-------|--------|----------|-----------|-------------------|
+| 子    | こ     | こ       | TỬ        | con               |
+| 字    | じ     | じ       | TỰ        | chữ               |
+| 学    | まな   | まな     | HỌC       | học tập           |
+| 厚    | あつ   | あつ     | HẬU       | bề dày            |
+| 存    | そん   | そん     | TỒN       | tồn tại           |
+| 在    | ざい   | ざい     | TẠI       | tồn tại           |
+| 月    | つき   | つき     | NGUYỆT    | mặt trăng, tháng  |
+| 有    | あ     | ゆう     | HỮU       | có                |
+| 散    | ち     | さん     | TẢN, TÁN  | tản bộ, giải tán  |
+| 撒    | ま     | さん     | TẢN, TÁT  | vẩy, rắc          |
+| 絹    | きぬ   | けん     | QUYÊN     | lụa               |
+| 背    | せ     | せ       | BỐI       | lưng              |
+| 胃    | い     | い       | VỊ        | dạ dày            |
+| 謂    | い     | い       | VỊ        | gọi là            |
+| 肯    | こう   | こうてい | KHẲNG     | khẳng định        |
+| 言    | い     | い       | NGÔN      | nói               |
+| 信    | しん   | しん     | TÍN       | tin tưởng         |
+| 這    | は     | はう     | GIÁ       | bò                |
+| 午    | うま   | うま     | NGỌ       | buổi trưa         |
+| 許    | ゆる   | ゆる     | HỨA       | cho phép          |
+| 杵    | きね   | きね     | XỬ        | cái chày          |
+| 牛    | うし   | うし     | NGƯU      | con bò            |
+| 件    | けん   | けん     | KIỆN      | sự kiện           |
+| 牢    | ろう   | ろう     | LAO       | nhà tù            |
+| 犀    | さい   | さい     | TÊ        | tê giác           |
+| 牡    | おす   | おす     | MẪU       | con đực           |
+| 化    | ば     | ばける   | HÓA       | biến hóa          |
+| 花    | はな   | はな     | HOA       | bông hoa          |
+| 貨    | か     | か       | HÓA       | hàng hóa          |
+| 靴    | くつ   | くつ     | NGOA      | giày              |
+| 今    | いま   | いま     | KIM       | bây giờ           |
+| 吟    | ぎん   | ぎん     | NGÂM      | ngâm thơ          |
+| 含    | ふく   | ふく     | HÀM       | ngậm              |
+| 頷    | うなず | うなず   | HẠM       | gật đầu           |
+| 貪    | むさぼ | むさぼ   | THAM      | tham lam          |
+| 念    | ねん   | ねん     | NIỆM      | kỉ niệm           |
+| 捻    | ひね   | ひね     | NIỆM      | văn, xoắn         |
+| 鯰    | なまず | なまず   | NIÊM      | cá trê            |
+| 令    | れい   | れい     | LỆNH      | mệnh lệnh         |
+| 冷    | ひ     | ひえる   | LÃNH      | lạnh              |
+| 領    | りょう | りょう   | LĨNH/LÃNH | thủ lĩnh/lãnh đạo |
+| 嶺    | れい   | れい     | LĨNH      | đỉnh núi          |
+| 零    | れい   | れい     | LINH      | số 0              |
+| 齢    | よわい | よわい   | LINH      | tuổi              |
+| 鈴    | すず   | すず     | LINH      | cái chuông        |
+| 介    | かい   | かい     | GIỚI      | giới thiệu        |
+| 芥    | け     | からし   | GIỚI      | hoa anh túc       |
+| 界    | かい   | かい     | GIỚI      | thế giới          |
+| 米    | こめ   | こめ     | MỄ        | gạo               |
+| 迷    | まよ   | まよう   | MÊ        | lạc đường         |
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}
 
 ## 120 - 171
 
-{% mp3 /assets/audio/jp/kanji120-171.mp3 %}
+{% mp3 /assets/audio/jp/kanji01/kanji120-171.mp3 %}
 
-| Kanji | Kun/On | Type     | Hán Việt | Nghĩa           | Ghi nhớ |
-|-------|--------|----------|----------|-----------------|---------|
-| 謎    | なぞ   | なぞ     | MÊ       | điều bí ẩn      | N/A     |
-| 来    | く     | くる     | LAI      | tương lai       | N/A     |
-| 奥    | おく   | おく     | ÁO       | trong cùng      | N/A     |
-| 襖    | ふすま | ふすま   | ÁO       | tấm cửa kéo     | N/A     |
-| 継    | つ     | つぐ     | KẾ       | thừa kế         | N/A     |
-| 断    | ことわ | ことわる | ĐOẠN     | đoạn tuyệt      | N/A     |
-| 歯    | は     | は       | XỈ       | răng            | N/A     |
-| 嚙    | か     | かむ     | GIẢO     | cắn, nhai       | N/A     |
-| 籾    | もみ   | もみ     | GẠO      | thóc            | N/A     |
-| 菊    | きく   | きく     | CÚC      | hoa cúc         | N/A     |
-| 粥    | かゆ   | かゆ     | CHÚC     | cháo            | N/A     |
-| 申    | もう   | もう     | THÂN     | gọi tên         | N/A     |
-| 神    | かみ   | かみ     | THẦN     | thần thánh      | N/A     |
-| 榊    | さかき | さかき   | THẦN     | cây Sakaki      | N/A     |
-| 伸    | め     | しん     | THÂN     | duỗi thẳng      | N/A     |
-| 紳    | しん   | しんし   | THÂN     | đàn ông         | N/A     |
-| 木    | き     | き       | MỘC      | cây, gỗ         | N/A     |
-| 林    | はやし | はやし   | LÂM      | rừng thưa       | N/A     |
-| 森    | もり   | もり     | SÂM      | rừng rậm        | N/A     |
-| 休    | やす   | やす     | HƯU      | nghỉ ngơi       | N/A     |
-| 本    | もと   | もと     | BẢN/BỔN  | gốc             | N/A     |
-| 体    | からだ | からだ   | THỂ      | cơ thể          | N/A     |
-| 鉢    | はち   | はち     | BÁT      | cái bát         | N/A     |
-| 栄    | さか   | さか     | VINH     | vinh quang      | N/A     |
-| 杉    | すぎ   | すぎ     | SAM      | cây liễu sam    | N/A     |
-| 杏    | あんず | あんず   | HẠNH     | quả mơ          | N/A     |
-| 呆    | ほう   | ほう     | NGỐC     | kẻ ngốc         | N/A     |
-| 保    | たも   | たも     | BẢO      | bảo vệ          | N/A     |
-| 褒    | ほめる | ほめる   | BAO      | khen ngợi       | N/A     |
-| 染    | そめる | そめる   | NHIỄM    | nhiễm độc       | N/A     |
-| 条    | じょう | じょう   | ĐIỀU     | điều kiện       | N/A     |
-| 斗    | と     | ほくと   | ĐẤU/ĐẨU  | cái đấu/Bắc Đẩu | N/A     |
-| 科    | か     | かがく   | KHOA     | khoa học        | N/A     |
-| 料    | りょう | りょう   | LIỆU     | dự liệu         | N/A     |
-| 音    | おと   | おと     | ÂM       | âm thanh        | N/A     |
-| 暗    | くら   | くらい   | ÁM       | tối             | N/A     |
-| 闇    | やみ   | やみ     | ÁM       | u ám            | N/A     |
-| 意    | い     | いけん   | Ý        | ý kiến          | N/A     |
-| 億    | おく   | おく     | ỨC       | 100 triệu       | N/A     |
-| 憶    | おく   | きおく   | ỨC       | ký ức           | N/A     |
-| 臆    | おく   | おくする | ỨC       | rụt rè          | N/A     |
-| 章    | しょう | しょう   | CHƯƠNG   | chương hồi      | N/A     |
-| 障    | さわ   | さわる   | CHƯỚNG   | chướng ngại     | N/A     |
-| 彰    | しょう | しょう   | CHƯƠNG   | rực rỡ          | N/A     |
-| 水    | みず   | みず     | THỦY     | nước            | N/A     |
-| 氷    | こおり | こおり   | BĂNG     | đá              | N/A     |
-| 永    | なが   | ながい   | VĨNH     | vĩnh cửu        | N/A     |
-| 泳    | およ   | およぐ   | VỊNH     | bơi             | N/A     |
-| 詠    | よむ   | えいたん | VỊNH     | ngâm thơ        | N/A     |
-| 火    | ひ     | ひ       | HỎA      | lửa             | N/A     |
-| 灰    | はい   | はい     | HÔI      | tro             | N/A     |
-| 炭    | すみ   | すみ     | THAN     | than            | N/A     |
+| Kanji | Kun/On | Type     | Hán Việt | Nghĩa           |
+|-------|--------|----------|----------|-----------------|
+| 謎    | なぞ   | なぞ     | MÊ       | điều bí ẩn      |
+| 来    | く     | くる     | LAI      | tương lai       |
+| 奥    | おく   | おく     | ÁO       | trong cùng      |
+| 襖    | ふすま | ふすま   | ÁO       | tấm cửa kéo     |
+| 継    | つ     | つぐ     | KẾ       | thừa kế         |
+| 断    | ことわ | ことわる | ĐOẠN     | đoạn tuyệt      |
+| 歯    | は     | は       | XỈ       | răng            |
+| 嚙    | か     | かむ     | GIẢO     | cắn, nhai       |
+| 籾    | もみ   | もみ     | GẠO      | thóc            |
+| 菊    | きく   | きく     | CÚC      | hoa cúc         |
+| 粥    | かゆ   | かゆ     | CHÚC     | cháo            |
+| 申    | もう   | もう     | THÂN     | gọi tên         |
+| 神    | かみ   | かみ     | THẦN     | thần thánh      |
+| 榊    | さかき | さかき   | THẦN     | cây Sakaki      |
+| 伸    | め     | しん     | THÂN     | duỗi thẳng      |
+| 紳    | しん   | しんし   | THÂN     | đàn ông         |
+| 木    | き     | き       | MỘC      | cây, gỗ         |
+| 林    | はやし | はやし   | LÂM      | rừng thưa       |
+| 森    | もり   | もり     | SÂM      | rừng rậm        |
+| 休    | やす   | やす     | HƯU      | nghỉ ngơi       |
+| 本    | もと   | もと     | BẢN/BỔN  | gốc             |
+| 体    | からだ | からだ   | THỂ      | cơ thể          |
+| 鉢    | はち   | はち     | BÁT      | cái bát         |
+| 栄    | さか   | さか     | VINH     | vinh quang      |
+| 杉    | すぎ   | すぎ     | SAM      | cây liễu sam    |
+| 杏    | あんず | あんず   | HẠNH     | quả mơ          |
+| 呆    | ほう   | ほう     | NGỐC     | kẻ ngốc         |
+| 保    | たも   | たも     | BẢO      | bảo vệ          |
+| 褒    | ほめる | ほめる   | BAO      | khen ngợi       |
+| 染    | そめる | そめる   | NHIỄM    | nhiễm độc       |
+| 条    | じょう | じょう   | ĐIỀU     | điều kiện       |
+| 斗    | と     | ほくと   | ĐẤU/ĐẨU  | cái đấu/Bắc Đẩu |
+| 科    | か     | かがく   | KHOA     | khoa học        |
+| 料    | りょう | りょう   | LIỆU     | dự liệu         |
+| 音    | おと   | おと     | ÂM       | âm thanh        |
+| 暗    | くら   | くらい   | ÁM       | tối             |
+| 闇    | やみ   | やみ     | ÁM       | u ám            |
+| 意    | い     | いけん   | Ý        | ý kiến          |
+| 億    | おく   | おく     | ỨC       | 100 triệu       |
+| 憶    | おく   | きおく   | ỨC       | ký ức           |
+| 臆    | おく   | おくする | ỨC       | rụt rè          |
+| 章    | しょう | しょう   | CHƯƠNG   | chương hồi      |
+| 障    | さわ   | さわる   | CHƯỚNG   | chướng ngại     |
+| 彰    | しょう | しょう   | CHƯƠNG   | rực rỡ          |
+| 水    | みず   | みず     | THỦY     | nước            |
+| 氷    | こおり | こおり   | BĂNG     | đá              |
+| 永    | なが   | ながい   | VĨNH     | vĩnh cửu        |
+| 泳    | およ   | およぐ   | VỊNH     | bơi             |
+| 詠    | よむ   | えいたん | VỊNH     | ngâm thơ        |
+| 火    | ひ     | ひ       | HỎA      | lửa             |
+| 灰    | はい   | はい     | HÔI      | tro             |
+| 炭    | すみ   | すみ     | THAN     | than            |
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
 
+## 172 - 231
+
+{% mp3 /assets/audio/jp/kanji01/kanji172-231.mp3 %}
+
+| Kanji | Kun/On | Type       | Hán Việt | Nghĩa            |
+|-------|--------|------------|----------|------------------|
+| 立    | た     | たつ       | LẬP      | đứng             |
+| 位    | くらい | くらい     | VỊ       | vị trí           |
+| 泣    | な     | なく       | KHẤP     | khóc             |
+| 粒    | つぶ   | つぶ       | LẠP      | hạt              |
+| 拉    | ら     | らち       | LẠP      | lôi kéo          |
+| 笠    | かさ   | かさ       | LẠP      | cái nón          |
+| 舌    | した   | した       | THIỆT    | cái lưỡi         |
+| 話    | はなし | はなし     | THOẠI    | hội thoại        |
+| 活    | いきる | いきる     | HOẠT     | hoạt động        |
+| 闊    | かつ   | うかつ     | KHOÁT    | bất cần          |
+| 括    | くく   | くくり     | QUÁT     | bao quát         |
+| 乱    | みだ   | みだれる   | LOẠN     | hỗn loạn         |
+| 筈    | はず   | はず       | QUÁT     | chắc chắn        |
+| 作    | つく   | つくる     | TÁC      | sáng tác         |
+| 昨    | さく   | さくねん   | TẠC      | hôm qua          |
+| 酢    | す     | すめし     | TẠC      | giấm             |
+| 搾    | しぼ   | しぼる     | TRÁ      | ép               |
+| 詐    | さ     | さぎ       | TRÁ      | dối trá          |
+| 問    | もん   | もん       | MÔN      | cổng             |
+| 閑    | かん   | あんかん   | NHÀN     | nhàn rỗi         |
+| 聞    | き     | きこえる   | VĂN      | nghe             |
+| 問    | とい   | とい       | VẤN      | hỏi              |
+| 開    | ひら   | ひらく     | KHAI     | mở               |
+| 閉    | し     | しめる     | BẾ       | đóng             |
+| 閃    | ひらめ | ひらめく   | THIỂM    | tia sáng         |
+| 間    | あいだ | あいだ     | GIAN     | thời gian        |
+| 簡    | かん   | かんたん   | GIẢN     | đơn giản         |
+| 潤    | うるお | うるおう   | NHUẬN    | lợi nhuận        |
+| 欄    | らん   | らん       | LAN      | lan can          |
+| 蘭    | らん   | らん       | LAN      | hoa lan          |
+| 爛    | ただ   | ただれ     | LẠN      | rực rỡ           |
+| 及    | およ   | およぶ     | CẬP      | phổ cập          |
+| 級    | きゅう | しょきゅう | CẤP      | cấp độ           |
+| 吸    | す     | すう       | HẤP      | hô hấp           |
+| 扱    | あつか | あつかい   | TRÁP     | đối xử           |
+| 汲    | く     | きゅう     | CẤP      | múc nước         |
+| 王    | おう   | おう       | VƯƠNG    | vua              |
+| 全    | ぜん   | ぜんぶ     | TOÀN     | toàn bộ          |
+| 金    | きん   | きん       | KIM      | tiền,vàng        |
+| 玉    | たま   | たま       | NGỌC     | viên ngọc        |
+| 宝    | たから | たから     | BẢO      | bảo vật          |
+| 国    | くに   | くに       | QUỐC     | quốc gia         |
+| 谷    | たに   | たに       | CỐC      | thung lũng       |
+| 欲    | ほ     | ほしい     | DỤC      | dục vọng         |
+| 浴    | あびる | あびる     | DỤC      | tắm              |
+| 容    | よう   | ないよう   | DUNG     | nội dung         |
+| 溶    | と     | とける     | DUNG     | dung dịch        |
+| 俗    | ぞく   | ぞくに     | TỤC      | phong tục        |
+| 裕    | ゆう   | ゆうふく   | DỤ       | giàu có          |
+| 丈    | たけ   | たけ       | TRƯỢNG   | trượng phu       |
+| 杖    | つえ   | つえ       | TRƯỢNG   | cây gậy          |
+| 史    | し     | しがく     | SỬ       | lịch sử          |
+| 吏    | り     | かんり     | LẠI      | quan lại         |
+| 使    | つか   | つかう     | SỬ/SỨ    | sử dụng/thiên sứ |
+| 台    | だい   | だい       | ĐÀI      | vũ đài           |
+| 始    | はじ   | はじめる   | THỦY     | bắt đầu          |
+| 冶    | じ     | かじ       | DÃ       | thợ rèn          |
+| 治    | なお   | なおる     | TRỊ      | trị liệu         |
+| 怠    | なま   | なまける   | ĐÃI      | lười biếng       |
+| 胎    | たい   | たいじ     | THAI     | bào thai         |
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
