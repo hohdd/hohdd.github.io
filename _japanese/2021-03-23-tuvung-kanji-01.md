@@ -62,23 +62,25 @@ date: 2021-04-13 14:26:14 +0700
 - **Tượng hình 象形**{:.w3-text-green}:
     + Là loại chữ *vẽ theo hình thể*{:.w3-green} của vật thực tế, nét chữ quanh co, uốn lượn theo hình thể của vật thực tế.
     + Quy tắc cấu tạo loại chữ này đơn giản, hơn nữa hầu hết những chữ này là những từ ngữ chúng ta thường sử dụng hàng ngày.
+    + Thường sẽ là *1 bộ phận*{:.w3-light-green}
     + Ví dụ:
         - 口 Khẩu = mồm: nguyên thủy là hình tròn.
         - 木 Mộc = cây: là hình một cái cây có gốc, rễ, thân, cành.
 - **Chỉ sự 指事**{:.w3-text-green} (còn gọi là Tượng sự 象事):
     + Là phép chỉ vào sự vật mà viết ra chữ, nhìn mà xét ra ý (“*quy ước*{:.w3-green}” vì có rất nhiều động tác, hiện tượng không sao vẽ ra được).
+    + Thường sẽ là *1\* bộ phận (nhiều bộ thủ kết hợp chỉ sự...)*{:.w3-light-green}
     + Ví dụ:
         - 上 Thượng = **ở trên**: lấy nét ngang dài làm mốc, nét ngang ngắn ở trên ***chỉ***{:.w3-green} một vị trí ở trên...
         - 下 Hạ = **ở dưới** : nét ngang dài làm mốc, nét ngang nhỏ ở dưới ***chỉ***{:.w3-green} một vị trí ở dưới...
 - **Hội ý 會意**{:.w3-text-green} (hay còn gọi là Tượng ý 象意):
     + Là hợp ý của từng phần lại để hình thành nghĩa mới.
-    + Chữ Hội ý thường là một chữ có kết cấu phức hợp, gồm hai bộ phận trở lên.
+    + Chữ Hội ý thường là một chữ có kết cấu phức hợp, *gồm hai bộ phận trở lên*{:.w3-light-green}.
     + Ví dụ:
         - 林 Lâm = rừng. Hai chữ 木 mộc => *ngụ ý:*{:.w3-green} nhiều cây hợp lại tạo thành rừng.
         - 信 Tín = tin tức: gồm chữ 人nhân = người + 言 ngôn = lời nói => *ngụ ý:*{:.w3-green} lời người đến báo cho biết (tin tức).
 - **Hình thanh 形聲**{:.w3-text-green} (hay còn gọi là 象聲 Tượng thanh, 諧聲 Hài thanh):
     + Là lấy sự làm tên, mượn thanh để hợp thành. Đây là phép thông dụng nhất để hình thành Hán tự.
-    + Chữ hình thanh gồm một phần chỉ nghĩa, một phần chỉ thanh (Trái-Phải, Trên-Dưới, Ngoài-Trong...).
+    + Chữ hình thanh gồm một *phần chỉ nghĩa*{:.w3-light-green}, một *phần chỉ thanh*{:.w3-light-green} (Trái-Phải, Trên-Dưới, Ngoài-Trong...).
     + Ví dụ:
         - 江 Giang = s**ông**{:.w3-green}. Gồm chữ 水 *Thủy* + 工 C**ông**{:.w3-green}
         - 河 H**à**{:.w3-green} = sông. Gồm chữ 水 *Thủy* + 可 Kh**ả**{:.w3-green}
@@ -105,7 +107,9 @@ date: 2021-04-13 14:26:14 +0700
         + Các đường giao nhau hay bị Chặn? (**phân tích Kanji**)
         + Font chữ máy tính (ở **Ghi nhớ**)
         + Nghĩa và Ghi nhớ ***+ Ví dụ***
+        + Dự đoán mức độ phổ biến (sử dụng) của kanji
         + Đoán loại "Lục Thư"
+        + Xong mỗi group thì ôn tập nhanh group đó (trong mỗi group còn có sub-group cũng áp dụng tương tự)
     - Nghe nhìn (**group theo Bộ thủ chính**)
         + Kanji > Hán việt
         + Hán việt > Kanji
@@ -123,6 +127,8 @@ date: 2021-04-13 14:26:14 +0700
     - Flashcards
     - Nghe nhìn
     - Type kèm Ví dụ + Kun/On
+- pilot 5:
+    - Ôn tập lại với Lục Thư
 
 ## 69 chữ kanji cơ bản
 
@@ -258,3 +264,64 @@ date: 2021-04-13 14:26:14 +0700
 | 米    | こめ   | こめ     | MỄ        | gạo               | N/A     |
 | 迷    | まよ   | まよう   | MÊ        | lạc đường         | N/A     |
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-blue/green/orange/indigo}
+
+## 120 - 171
+
+{% mp3 /assets/audio/jp/kanji120-171.mp3 %}
+
+| Kanji | Kun/On | Type     | Hán Việt | Nghĩa           | Ghi nhớ |
+|-------|--------|----------|----------|-----------------|---------|
+| 謎    | なぞ   | なぞ     | MÊ       | điều bí ẩn      | N/A     |
+| 来    | く     | くる     | LAI      | tương lai       | N/A     |
+| 奥    | おく   | おく     | ÁO       | trong cùng      | N/A     |
+| 襖    | ふすま | ふすま   | ÁO       | tấm cửa kéo     | N/A     |
+| 継    | つ     | つぐ     | KẾ       | thừa kế         | N/A     |
+| 断    | ことわ | ことわる | ĐOẠN     | đoạn tuyệt      | N/A     |
+| 歯    | は     | は       | XỈ       | răng            | N/A     |
+| 嚙    | か     | かむ     | GIẢO     | cắn, nhai       | N/A     |
+| 籾    | もみ   | もみ     | GẠO      | thóc            | N/A     |
+| 菊    | きく   | きく     | CÚC      | hoa cúc         | N/A     |
+| 粥    | かゆ   | かゆ     | CHÚC     | cháo            | N/A     |
+| 申    | もう   | もう     | THÂN     | gọi tên         | N/A     |
+| 神    | かみ   | かみ     | THẦN     | thần thánh      | N/A     |
+| 榊    | さかき | さかき   | THẦN     | cây Sakaki      | N/A     |
+| 伸    | め     | しん     | THÂN     | duỗi thẳng      | N/A     |
+| 紳    | しん   | しんし   | THÂN     | đàn ông         | N/A     |
+| 木    | き     | き       | MỘC      | cây, gỗ         | N/A     |
+| 林    | はやし | はやし   | LÂM      | rừng thưa       | N/A     |
+| 森    | もり   | もり     | SÂM      | rừng rậm        | N/A     |
+| 休    | やす   | やす     | HƯU      | nghỉ ngơi       | N/A     |
+| 本    | もと   | もと     | BẢN/BỔN  | gốc             | N/A     |
+| 体    | からだ | からだ   | THỂ      | cơ thể          | N/A     |
+| 鉢    | はち   | はち     | BÁT      | cái bát         | N/A     |
+| 栄    | さか   | さか     | VINH     | vinh quang      | N/A     |
+| 杉    | すぎ   | すぎ     | SAM      | cây liễu sam    | N/A     |
+| 杏    | あんず | あんず   | HẠNH     | quả mơ          | N/A     |
+| 呆    | ほう   | ほう     | NGỐC     | kẻ ngốc         | N/A     |
+| 保    | たも   | たも     | BẢO      | bảo vệ          | N/A     |
+| 褒    | ほめる | ほめる   | BAO      | khen ngợi       | N/A     |
+| 染    | そめる | そめる   | NHIỄM    | nhiễm độc       | N/A     |
+| 条    | じょう | じょう   | ĐIỀU     | điều kiện       | N/A     |
+| 斗    | と     | ほくと   | ĐẤU/ĐẨU  | cái đấu/Bắc Đẩu | N/A     |
+| 科    | か     | かがく   | KHOA     | khoa học        | N/A     |
+| 料    | りょう | りょう   | LIỆU     | dự liệu         | N/A     |
+| 音    | おと   | おと     | ÂM       | âm thanh        | N/A     |
+| 暗    | くら   | くらい   | ÁM       | tối             | N/A     |
+| 闇    | やみ   | やみ     | ÁM       | u ám            | N/A     |
+| 意    | い     | いけん   | Ý        | ý kiến          | N/A     |
+| 億    | おく   | おく     | ỨC       | 100 triệu       | N/A     |
+| 憶    | おく   | きおく   | ỨC       | ký ức           | N/A     |
+| 臆    | おく   | おくする | ỨC       | rụt rè          | N/A     |
+| 章    | しょう | しょう   | CHƯƠNG   | chương hồi      | N/A     |
+| 障    | さわ   | さわる   | CHƯỚNG   | chướng ngại     | N/A     |
+| 彰    | しょう | しょう   | CHƯƠNG   | rực rỡ          | N/A     |
+| 水    | みず   | みず     | THỦY     | nước            | N/A     |
+| 氷    | こおり | こおり   | BĂNG     | đá              | N/A     |
+| 永    | なが   | ながい   | VĨNH     | vĩnh cửu        | N/A     |
+| 泳    | およ   | およぐ   | VỊNH     | bơi             | N/A     |
+| 詠    | よむ   | えいたん | VỊNH     | ngâm thơ        | N/A     |
+| 火    | ひ     | ひ       | HỎA      | lửa             | N/A     |
+| 灰    | はい   | はい     | HÔI      | tro             | N/A     |
+| 炭    | すみ   | すみ     | THAN     | than            | N/A     |
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
+
