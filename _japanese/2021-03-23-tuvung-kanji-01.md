@@ -133,6 +133,77 @@ date: 2021-04-13 14:26:14 +0700
 ## 69 chữ kanji cơ bản
 
 {% mp3 /assets/audio/jp/kanji01/kanji1-69-coban.mp3 %}
+{% comment %}
+NHẤT, là một.
+NHỊ, là hai.
+NHÂN, là nhân nghĩa.
+BÁT, là tám.
+LỤC, là sáu.
+HUYỆT, là cái lỗ.
+VIẾT, là nói rằng.
+NHẬT, là ngày, mặt trời.
+MỤC, là mắt.
+TAM, là ba.
+THỦ, là tay.
+MAO, là lông.
+THẬP, là mười.
+THIÊN, là một nghìn.
+THỔ, là đất.
+THƯỢNG, là bên trên.
+HẠ, là bên dưới.
+ĐÈO, là con đèo.
+LỰC, là sức lực.
+ĐAO, là kiếm.
+VẠN, là mười nghìn.
+CỬU, là chín.
+HOÀN, là tròn.
+CỨU, là nghiên cứu.
+KHẨU, là miệng.
+HỒI, là lần.
+HƯỚNG, là phương hướng.
+THẤT, là đếm con vật.
+TỨ, là bốn.
+TÂY, là phía tây.
+SÁI, là vẩy nước.
+DẬU, là giờ Dậu.
+TỬU, là rượu.
+THẤT, là bảy.
+SẤT, là la mắng.
+BẮC, là phía BẮC.
+VIÊN, là tiền Yên (Nhật).
+NGŨ, là năm.
+TRÚC, là tre, trúc.
+QUANG, là sáng.
+HOẢNG, là màn che.
+ĐƯƠNG, là đương nhiên.
+XÃ, là xã hội.
+KHÍ, là không khí.
+KHÍ, là hơi nước.
+TẢ, là bên trái.
+TÁ, là phụ tá.
+HỮU, là bên phải.
+THẠCH, là đá.
+NHAM, là nham thạch.
+THÁC, là khai thác.
+ĐỐ, là đó kỵ.
+NIÊN, là năm.
+GIÁNG, là xuống.
+MẠCH, là lúa mạch.
+DIỆN, là mặt.
+MIẾN, là mì sợi.
+NHÂN, là người.
+NHẬP, là vào.
+VU, là đông đúc.
+ĐẠI, là to lớn.
+KHUYỂN, là con chó.
+THÁI, là béo.
+THIÊN, là trời.
+THỈ, là mũi tên.
+PHU, là chồng.
+THẤT, là thất bại.
+HÒA, là hòa bình.
+PHIẾN, là tấm, mảnh.
+{% endcomment %}
 
 | Kanji | Kun/On | Type     | Hán Việt | Nghĩa           |
 |-------|--------|----------|----------|-----------------|
@@ -210,6 +281,58 @@ date: 2021-04-13 14:26:14 +0700
 ## 70 - 119
 
 {% mp3 /assets/audio/jp/kanji01/kanji70-119.mp3 %}
+{% comment %}
+TỬ, là con.
+TỰ, là chữ.
+HỌC, là học tập.
+HẬU, là bề dày.
+TỒN, là tồn tại.
+TẠI, là tồn tại.
+NGUYỆT, là mặt trăng, tháng.
+HỮU, là có.
+TẢN, TÁN, là tản bộ, giải tán.
+TẢN, TÁT, là vẩy, rắc.
+QUYÊN, là lụa.
+BỐI, là lưng.
+VỊ, là dạ dày.
+VỊ, là gọi là.
+KHẲNG, là khẳng định.
+NGÔN, là nói.
+TÍN, là tin tưởng.
+GIÁ, là bò.
+NGỌ, là buổi trưa.
+HỨA, là cho phép.
+XỬ, là cái chày.
+NGƯU, là con bò.
+KIỆN, là sự kiện.
+LAO, là nhà tù.
+TÊ, là tê giác.
+MẪU, là con đực.
+HÓA, là biến hóa.
+HOA, là bông hoa.
+HÓA, là hàng hóa.
+NGOA, là giày.
+KIM, là bây giờ.
+NGÂM, là ngâm thơ.
+HÀM, là ngậm.
+HẠM, là gật đầu.
+THAM, là tham lam.
+NIỆM, là kỉ niệm.
+NIỆM, là văn, xoắn.
+NIÊM, là cá trê.
+LỆNH, là mệnh lệnh.
+LÃNH, là lạnh.
+LĨNH hoặc LÃNH, là thủ lĩnh hoặc lãnh đạo.
+LĨNH, là đỉnh núi.
+LINH, là số 0.
+LINH, là tuổi.
+LINH, là cái chuông.
+GIỚI, là giới thiệu.
+GIỚI, là hoa anh túc.
+GIỚI, là thế giới.
+MỄ, là gạo.
+MÊ, là lạc đường.
+{% endcomment %}
 
 | Kanji | Kun/On | Type     | Hán Việt  | Nghĩa             |
 |-------|--------|----------|-----------|-------------------|
@@ -268,6 +391,60 @@ date: 2021-04-13 14:26:14 +0700
 ## 120 - 171
 
 {% mp3 /assets/audio/jp/kanji01/kanji120-171.mp3 %}
+{% comment %}
+MÊ, là điều bí ẩn.
+LAI, là tương lai.
+ÁO, là trong cùng.
+ÁO, là tấm cửa kéo.
+KẾ, là thừa kế.
+ĐOẠN, là đoạn tuyệt.
+XỈ, là răng.
+GIẢO, là cắn, nhai.
+GẠO, là thóc.
+CÚC, là hoa cúc.
+CHÚC, là cháo.
+THÂN, là gọi tên.
+THẦN, là thần thánh.
+THẦN, là cây Sakaki.
+THÂN, là duỗi thẳng.
+THÂN, là đàn ông.
+MỘC, là cây, gỗ.
+LÂM, là rừng thưa.
+SÂM, là rừng rậm.
+HƯU, là nghỉ ngơi.
+BẢN/BỔN, là gốc.
+THỂ, là cơ thể.
+BÁT, là cái bát.
+VINH, là vinh quang.
+SAM, là cây liễu sam.
+HẠNH, là quả mơ.
+NGỐC, là kẻ ngốc.
+BẢO, là bảo vệ.
+BAO, là khen ngợi.
+NHIỄM, là nhiễm độc.
+ĐIỀU, là điều kiện.
+ĐẤU/ĐẨU, là cái đấu/Bắc Đẩu.
+KHOA, là khoa học.
+LIỆU, là dự liệu.
+ÂM, là âm thanh.
+ÁM, là tối.
+ÁM, là u ám.
+Ý, là ý kiến.
+ỨC, là 100 triệu.
+ỨC, là ký ức.
+ỨC, là rụt rè.
+CHƯƠNG, là chương hồi.
+CHƯỚNG, là chướng ngại.
+CHƯƠNG, là rực rỡ.
+THỦY, là nước.
+BĂNG, là đá.
+VĨNH, là vĩnh cửu.
+VỊNH, là bơi.
+VỊNH, là ngâm thơ.
+HỎA, là lửa.
+HÔI, là tro.
+THAN, là than.
+{% endcomment %}
 
 | Kanji | Kun/On | Type     | Hán Việt | Nghĩa           |
 |-------|--------|----------|----------|-----------------|
@@ -328,6 +505,68 @@ date: 2021-04-13 14:26:14 +0700
 ## 172 - 231
 
 {% mp3 /assets/audio/jp/kanji01/kanji172-231.mp3 %}
+{% comment %}
+LẬP, là đứng.
+VỊ, là vị trí.
+KHẤP, là khóc.
+LẠP, là hạt.
+LẠP, là lôi kéo.
+LẠP, là cái nón.
+THIỆT, là cái lưỡi.
+THOẠI, là hội thoại.
+HOẠT, là hoạt động.
+KHOÁT, là bất cẩn.
+QUÁT, là bao quát.
+LOẠN, là hỗn loạn.
+QUÁT, là chắc chắn.
+TÁC, là sáng tác.
+TẠC, là hôm qua.
+TẠC, là giấm.
+TRÁ, là ép.
+TRÁ, là dối trá.
+MÔN, là cổng.
+NHÀN, là nhàn rỗi.
+VĂN, là nghe.
+VẤN, là hỏi.
+KHAI, là mở.
+BẾ, là đóng.
+THIỂM, là tia sáng.
+GIAN, là thời gian.
+GIẢN, là đơn giản.
+NHUẬN, là lợi nhuận.
+LAN, là lan can.
+LAN, là hoa lan.
+LẠN, là rực rỡ.
+CẬP, là phổ cập.
+CẤP, là cấp độ.
+HẤP, là hô hấp.
+TRÁP, là đối xử.
+CẤP, là múc nước.
+VƯƠNG, là vua.
+TOÀN, là toàn bộ.
+KIM, là tiền,vàng.
+NGỌC, là viên ngọc.
+BẢO, là bảo vật.
+QUỐC, là quốc gia.
+CỐC, là thung lũng.
+DỤC, là dục vọng.
+DỤC, là tắm.
+DUNG, là nội dung.
+DUNG, là dung dịch.
+TỤC, là phong tục.
+DỤ, là giàu có.
+TRƯỢNG, là trượng phu.
+TRƯỢNG, là cây gậy.
+SỬ, là lịch sử.
+LẠI, là quan lại.
+SỬ hoặc SỨ, là Sử dụng hoặc Thiên sứ.
+ĐÀI, là vũ đài.
+THỦY, là bắt đầu.
+DÃ, là thợ rèn.
+TRỊ, là trị liệu.
+ĐÃI, là lười biếng.
+THAI, là bào thai.
+{% endcomment %}
 
 | Kanji | Kun/On | Type       | Hán Việt | Nghĩa            |
 |-------|--------|------------|----------|------------------|
@@ -340,7 +579,7 @@ date: 2021-04-13 14:26:14 +0700
 | 舌    | した   | した       | THIỆT    | cái lưỡi         |
 | 話    | はなし | はなし     | THOẠI    | hội thoại        |
 | 活    | いきる | いきる     | HOẠT     | hoạt động        |
-| 闊    | かつ   | うかつ     | KHOÁT    | bất cần          |
+| 闊    | かつ   | うかつ     | KHOÁT    | bất cẩn          |
 | 括    | くく   | くくり     | QUÁT     | bao quát         |
 | 乱    | みだ   | みだれる   | LOẠN     | hỗn loạn         |
 | 筈    | はず   | はず       | QUÁT     | chắc chắn        |
