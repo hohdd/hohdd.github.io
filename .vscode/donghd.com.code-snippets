@@ -37,6 +37,25 @@
 // ------------------------------------------------------------------------------------>
 // {% endraw %}{% endcomment %}
 {
+	"dhkanji generator": {
+		"prefix": "dhkanji",
+		"body": [
+		  "## AAA - BBB",
+		  "",
+		  "{% mp3 /assets/audio/jp/kanji01/kanjiAAAAA-BBBB.mp3 %}",
+		  "{% comment %}",
+		  "{% endcomment %}",
+		  "",
+		  "| Head-1 | Head-2",
+		  "|:-|:-:|-:",
+		  "| Row **1**{:.w3-red} | Column *2*",
+		  "| Column 1  | Row *2*",
+		  "{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}",
+		  "REF: https://www.tablesgenerator.com/markdown_tables",
+		  "REF: https://www.markdownguide.org/extended-syntax/#tables"
+		],
+		"description": "dhkanji generator"
+	},
 	"flip card 600x750": {
 		"prefix": "dhflipcard",
 		"body": [

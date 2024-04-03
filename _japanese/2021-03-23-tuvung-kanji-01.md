@@ -631,3 +631,393 @@ THAI, là bào thai.
 | 怠    | なま   | なまける   | ĐÃI      | lười biếng       |
 | 胎    | たい   | たいじ     | THAI     | bào thai         |
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
+
+## 232 - 291
+
+{% mp3 /assets/audio/jp/kanji01/kanji232-291.mp3 %}
+{% comment %}
+ĐÃI, là hầu như.
+ĐÀI, là rêu.
+DI, là kẹo.
+THỦ, là thủ tướng.
+ĐẠO, là con đường.
+ĐẠO, là chỉ đạo.
+BỐI, là con sò, bảo bối.
+PHỤ, là thua.
+BẠI, là thất bại.
+MÃI, là mua.
+CHẤT, là chất lượng.
+BÁI, là hát.
+TẮC, là quy tắc.
+TRẮC, là phía.
+TRẮC, là đo đạc.
+VIÊN, là nhân viên.
+TỔN, là tổn hại.
+VẬN, là vần điệu.
+SINH, là học sinh.
+TÍNH, là tính cách.
+TÍNH, là họ.
+SINH, là hy sinh.
+TINH, là ngôi sao.
+TỈNH, là thức tỉnh.
+SẢN, là sinh sản.
+TÁT, là Bồ tát.
+LONG, là hưng thịnh.
+TỰ, là chùa.
+THỜI, là thời gian.
+THÌ, là gieo, rắc.
+TRÌ, là cầm, nắm.
+THI, là thơ.
+THỊ, là người hầu, samurai.
+ĐÃI, là đợi.
+ĐẶC, là đặc biệt.
+ĐẲNG, là bình đẳng.
+KỈ, là bản thân.
+KỈ, là thế kỷ.
+KÍ, là nhật ký.
+KỊ, là đố kỵ.
+PHI, là phi tần.
+KHỞI, là thức dậy.
+CẢI, là cải cách.
+PHỐI, là phân phối.
+PHÓ, là phó giám đốc.
+PHÚC, là hạnh phúc.
+PHÚC, là chiều rộng.
+PHÚ, là phú hào.
+CHI, là chi nhánh.
+CHI, là tay chân.
+CHI, là cành cây.
+KĨ, là kỹ thuật.
+KĨ, là kỹ nghệ.
+KÌ, là phân nhánh.
+VĂN, là văn học.
+VĂN, là hoa văn.
+VĂN, là con muỗi.
+NGƯ, là cá.
+NGƯ, là ngư dân.
+TÔ, là tía tô.
+{% endcomment %}
+
+| Kanji | Kun/On | Type       | Hán Việt | Nghĩa            |
+|-----|--------|------------|------|--------------------|
+| 殆  | ほとん | ほとんど   | ĐÃI  | hầu như            |
+| 苔  | こけ   | こけ       | ĐÀI  | rêu                |
+| 飴  | あめ   | あめ       | DI   | kẹo                |
+| 首  | くび   | くび       | THỦ  | thủ tướng          |
+| 道  | みち   | みち       | ĐẠO  | con đường          |
+| 導  | みちび | みちびく   | ĐẠO  | chỉ đạo            |
+| 貝  | かい   | かい       | BỐI  | con sò, bảo bối    |
+| 負  | ま     | まける     | PHỤ  | thua               |
+| 敗  | やぶ   | やぶれる   | BẠI  | thất bại           |
+| 買  | か     | かう       | MÃI  | mua                |
+| 質  | しつ   | ひんしつ   | CHẤT | chất lượng         |
+| 唄  | うた   | うた       | BÁI  | hát                |
+| 則  | のっと | のっとる   | TẮC  | quy tắc            |
+| 側  | そば   | そば       | TRẮC | phía               |
+| 測  | はか   | はかる     | TRẮC | đo đạc             |
+| 員  | いん   | しゃいん   | VIÊN | nhân viên          |
+| 損  | そこ   | そこなう   | TỔN  | tổn hại            |
+| 韻  | いん   | いんぶん   | VẬN  | vần điệu           |
+| 生  | なま   | なま       | SINH | học sinh           |
+| 性  | せい   | せいかく   | TÍNH | tính cách          |
+| 姓  | せい   | せいめい   | TÍNH | họ                 |
+| 牲  | せい   | ぎせい     | SINH | hy sinh            |
+| 星  | ほし   | ほし       | TINH | ngôi sao           |
+| 醒  | さ     | さめる     | TỈNH | thức tỉnh          |
+| 産  | う     | うむ       | SẢN  | sinh sản           |
+| 薩  | さつ   | ぼさつ     | TÁT  | Bồ tát             |
+| 隆  | りゅう | りゅうせい | LONG | hưng thịnh         |
+| N/A | N/A    | N/A        | TỰ   | chùa               |
+| N/A | N/A    | N/A        | THỜI | thời gian          |
+| N/A | N/A    | N/A        | THÌ  | gieo, rắc          |
+| N/A | N/A    | N/A        | TRÌ  | cầm, nắm           |
+| N/A | N/A    | N/A        | THI  | thơ                |
+| N/A | N/A    | N/A        | THỊ  | người hầu, samurai |
+| N/A | N/A    | N/A        | ĐÃI  | đợi                |
+| N/A | N/A    | N/A        | ĐẶC  | đặc biệt           |
+| N/A | N/A    | N/A        | ĐẲNG | bình đẳng          |
+| N/A | N/A    | N/A        | KỈ   | bản thân           |
+| N/A | N/A    | N/A        | KỈ   | thế kỷ             |
+| N/A | N/A    | N/A        | KÍ   | nhật ký            |
+| N/A | N/A    | N/A        | KỊ   | đố kỵ              |
+| N/A | N/A    | N/A        | PHI  | phi tần            |
+| N/A | N/A    | N/A        | KHỞI | thức dậy           |
+| N/A | N/A    | N/A        | CẢI  | cải cách           |
+| N/A | N/A    | N/A        | PHỐI | phân phối          |
+| N/A | N/A    | N/A        | PHÓ  | phó giám đốc       |
+| N/A | N/A    | N/A        | PHÚC | hạnh phúc          |
+| N/A | N/A    | N/A        | PHÚC | chiều rộng         |
+| N/A | N/A    | N/A        | PHÚ  | phú hào            |
+| N/A | N/A    | N/A        | CHI  | chi nhánh          |
+| N/A | N/A    | N/A        | CHI  | tay chân           |
+| N/A | N/A    | N/A        | CHI  | cành cây           |
+| N/A | N/A    | N/A        | KĨ   | kỹ thuật           |
+| N/A | N/A    | N/A        | KĨ   | kỹ nghệ            |
+| N/A | N/A    | N/A        | KÌ   | phân nhánh         |
+| N/A | N/A    | N/A        | VĂN  | văn học            |
+| N/A | N/A    | N/A        | VĂN  | hoa văn            |
+| N/A | N/A    | N/A        | VĂN  | con muỗi           |
+| N/A | N/A    | N/A        | NGƯ  | cá                 |
+| N/A | N/A    | N/A        | NGƯ  | ngư dân            |
+| N/A | N/A    | N/A        | TÔ   | tía tô             |
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
+
+## 292 - 351
+
+{% mp3 /assets/audio/jp/kanji01/kanji292-351.mp3 %}
+{% comment %}
+VŨ, là mưa.
+LÔI, là sấm sét.
+LÔI, là nụ hoa.
+ĐIỆN, là dòng điện.
+TUYẾT, là bông tuyết.
+TUYẾT, là cá tuyết.
+GIỌT, là giọt.
+LẬU, là rò rỉ.
+TƯƠNG hoặc TƯỚNG, là tương tự hoặc thủ tướng.
+TƯƠNG, là cái hộp.
+TƯỞNG, là tưởng tượng.
+SƯƠNG, là sương muối.
+HỢP, là thích hợp.
+THẬP, là thu thập.
+CẤP, là cung cấp.
+ĐÁP, là đáp án.
+ĐÁP, là đáp lên.
+THÁP, là cái tháp.
+MÃNH, là cái đĩa.
+HUYẾT, là máu.
+CHÚNG, là quần chúng.
+MẠNH, là tháng đầu mùa.
+MÃNH, là mãnh liệt.
+DIÊM, là muối.
+ÔN, là ôn hòa, ấm.
+ÍCH, là lợi ích.
+DẬT, là tràn đầy.
+THÂN, là người thân.
+TÂN, là mới.
+TÂN, là củi.
+TRUNG, là trung tâm.
+TRÙNG, là côn trùng.
+TRUNG, là trung thực.
+TRỌNG, là trọng tài.
+TRÙNG, là rộng lớn.
+XUYẾN, là xiên.
+HOẠN, là bệnh hoạn.
+BÁN, là một nửa.
+BẠN, là bạn đời.
+BẠN, là bờ ruộng.
+PHÁN, là phán đoán.
+BÁN, là bó buộc.
+NGHIỆM, là thí nghiệm.
+HIỂM, là nguy hiểm.
+KIỆM, là tiết kiệm.
+KIỂM, là kiểm tra.
+KIẾM, là kiếm đạo.
+KIỀM, là xà phòng.
+BÌ, là da.
+BÌ, là mệt mỏi.
+BỈ, là anh ấy.
+BỊ, là bị hại.
+BA, là sóng.
+BÀ, là bà già.
+PHÁ, là phá rách.
+PHI, là vạch ra.
+SĨ, là binh sĩ.
+SĨ, là công việc.
+CHÍ, là ý chí.
+CHÍ, là tạp chí.
+{% endcomment %}
+
+| Kun/On | Type | Hán Việt    | Nghĩa              |
+|--------|------|-------------|--------------------|
+| N/A    | N/A  | VŨ          | mưa                |
+| N/A    | N/A  | LÔI         | sấm sét            |
+| N/A    | N/A  | LÔI         | nụ hoa             |
+| N/A    | N/A  | ĐIỆN        | dòng điện          |
+| N/A    | N/A  | TUYẾT       | bông tuyết         |
+| N/A    | N/A  | TUYẾT       | cá tuyết           |
+| N/A    | N/A  | GIỌT        | giọt               |
+| N/A    | N/A  | LẬU         | rò rỉ              |
+| N/A    | N/A  | TƯƠNG/TƯỚNG | tương tự/thủ tướng |
+| N/A    | N/A  | TƯƠNG       | cái hộp            |
+| N/A    | N/A  | TƯỞNG       | tưởng tượng        |
+| N/A    | N/A  | SƯƠNG       | sương muối         |
+| N/A    | N/A  | HỢP         | thích hợp          |
+| N/A    | N/A  | THẬP        | thu thập           |
+| N/A    | N/A  | CẤP         | cung cấp           |
+| N/A    | N/A  | ĐÁP         | đáp án             |
+| N/A    | N/A  | ĐÁP         | đáp lên            |
+| N/A    | N/A  | THÁP        | cái tháp           |
+| N/A    | N/A  | MÃNH        | cái đĩa            |
+| N/A    | N/A  | HUYẾT       | máu                |
+| N/A    | N/A  | CHÚNG       | quần chúng         |
+| N/A    | N/A  | MẠNH        | tháng đầu mùa      |
+| N/A    | N/A  | MÃNH        | mãnh liệt          |
+| N/A    | N/A  | DIÊM        | muối               |
+| N/A    | N/A  | ÔN          | ôn hòa, ấm         |
+| N/A    | N/A  | ÍCH         | lợi ích            |
+| N/A    | N/A  | DẬT         | tràn đầy           |
+| N/A    | N/A  | THÂN        | người thân         |
+| N/A    | N/A  | TÂN         | mới                |
+| N/A    | N/A  | TÂN         | củi                |
+| N/A    | N/A  | TRUNG       | trung tâm          |
+| N/A    | N/A  | TRÙNG       | côn trùng          |
+| N/A    | N/A  | TRUNG       | trung thực         |
+| N/A    | N/A  | TRỌNG       | trọng tài          |
+| N/A    | N/A  | TRÙNG       | rộng lớn           |
+| N/A    | N/A  | XUYẾN       | xiên               |
+| N/A    | N/A  | HOẠN        | bệnh hoạn          |
+| N/A    | N/A  | BÁN         | một nửa            |
+| N/A    | N/A  | BẠN         | bạn đời            |
+| N/A    | N/A  | BẠN         | bờ ruộng           |
+| N/A    | N/A  | PHÁN        | phán đoán          |
+| N/A    | N/A  | BÁN         | bó buộc            |
+| N/A    | N/A  | NGHIỆM      | thí nghiệm         |
+| N/A    | N/A  | HIỂM        | nguy hiểm          |
+| N/A    | N/A  | KIỆM        | tiết kiệm          |
+| N/A    | N/A  | KIỂM        | kiểm tra           |
+| N/A    | N/A  | KIẾM        | kiếm đạo           |
+| N/A    | N/A  | KIỀM        | xà phòng           |
+| N/A    | N/A  | BÌ          | da                 |
+| N/A    | N/A  | BÌ          | mệt mỏi            |
+| N/A    | N/A  | BỈ          | anh ấy             |
+| N/A    | N/A  | BỊ          | bị hại             |
+| N/A    | N/A  | BA          | sóng               |
+| N/A    | N/A  | BÀ          | bà già             |
+| N/A    | N/A  | PHÁ         | phá rách           |
+| N/A    | N/A  | PHI         | vạch ra            |
+| N/A    | N/A  | SĨ          | binh sĩ            |
+| N/A    | N/A  | SĨ          | công việc          |
+| N/A    | N/A  | CHÍ         | ý chí              |
+| N/A    | N/A  | CHÍ         | tạp chí            |
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
+
+## 352 - 411
+
+{% mp3 /assets/audio/jp/kanji01/kanji352-411.mp3 %}
+{% comment %}
+MẪU, là mẹ.
+MÔI, là dâu tây.
+MỖI, là mỗi ngày.
+HẢI, là biển.
+HỐI, là hối hận.
+MAI, là cây mơ.
+VŨ, là coi thường.
+MẪN, là mẫn cảm.
+PHỒN, là phồn thịnh.
+TÂM, là trái tim.
+TÂM, là cái lõi.
+SỈ, là xấu hổ.
+ỨNG, là phản ứng.
+TẤT, là tất yếu.
+BÍ, là bí mật.
+BÍ, là tiết ra.
+MẬT, là bí mật.
+MẬT, là mật ong.
+PHƯƠNG, là bốn phương.
+PHƯƠNG, là mùi thơm.
+PHƯƠNG, là mỡ.
+PHƯƠNG, là phương hại.
+PHƯỜNG, là phố phường.
+PHƯỞNG, là dệt vải.
+PHÒNG, là phòng chống.
+PHÒNG, là căn phòng.
+PHỎNG, là phỏng vấn.
+PHÓNG, là giải phóng.
+PHỎNG, là mô phỏng.
+BÀNG, là bên cạnh.
+BÁNG, là phỉ báng.
+PHU, là trải, lát.
+KÍCH, là kích thích.
+NGẠO, là kiêu ngạo.
+HỮU, là bạn.
+BẠT, là rút ra.
+TRƯỜNG, là công trường.
+THƯƠNG, là bị thương.
+TRÀNG, là đại tràng.
+THANG, là nước nóng.
+DƯƠNG, là mặt trời.
+DƯƠNG, là tuyên dương.
+DƯƠNG, là viêm loét.
+SƯỚNG, là sướng.
+HẬU, là sau.
+ẢO, là ảo tưởng.
+ẤU, là thơ ấu.
+ẢO, là hờn, dỗi.
+PHÂN hoặc PHẬN, là phân chia hoặc bộ phận.
+PHÂN, là phân tâm.
+PHÂN, là bầu không khí.
+PHẤN, là bột.
+BẦN, là nghèo.
+BỒN, là cái khay.
+BAN hoặc PHÂN, là ban bố.
+QUẢ, là quả phụ.
+THÁI, là hái.
+THÁI, là rau.
+THÁI, là hái.
+THÁI, là sắc thái.
+{% endcomment %}
+
+| Kanji | Kun/On | Type | Hán Việt  | Nghĩa             |
+|-------|--------|------|-----------|-------------------|
+| N/A   | N/A    | N/A  | MẪU       | mẹ                |
+| N/A   | N/A    | N/A  | MÔI       | dâu tây           |
+| N/A   | N/A    | N/A  | MỖI       | mỗi ngày          |
+| N/A   | N/A    | N/A  | HẢI       | biển              |
+| N/A   | N/A    | N/A  | HỐI       | hối hận           |
+| N/A   | N/A    | N/A  | MAI       | cây mơ            |
+| N/A   | N/A    | N/A  | VŨ        | coi thường        |
+| N/A   | N/A    | N/A  | MẪN       | mẫn cảm           |
+| N/A   | N/A    | N/A  | PHỒN      | phồn thịnh        |
+| N/A   | N/A    | N/A  | TÂM       | trái tim          |
+| N/A   | N/A    | N/A  | TÂM       | cái lõi           |
+| N/A   | N/A    | N/A  | SỈ        | xấu hổ            |
+| N/A   | N/A    | N/A  | ỨNG       | phản ứng          |
+| N/A   | N/A    | N/A  | TẤT       | tất yếu           |
+| N/A   | N/A    | N/A  | BÍ        | bí mật            |
+| N/A   | N/A    | N/A  | BÍ        | tiết ra           |
+| N/A   | N/A    | N/A  | MẬT       | bí mật            |
+| N/A   | N/A    | N/A  | MẬT       | mật ong           |
+| N/A   | N/A    | N/A  | PHƯƠNG    | bốn phương        |
+| N/A   | N/A    | N/A  | PHƯƠNG    | mùi thơm          |
+| N/A   | N/A    | N/A  | PHƯƠNG    | mỡ                |
+| N/A   | N/A    | N/A  | PHƯƠNG    | phương hại        |
+| N/A   | N/A    | N/A  | PHƯỜNG    | phố phường        |
+| N/A   | N/A    | N/A  | PHƯỞNG    | dệt vải           |
+| N/A   | N/A    | N/A  | PHÒNG     | phòng chống       |
+| N/A   | N/A    | N/A  | PHÒNG     | căn phòng         |
+| N/A   | N/A    | N/A  | PHỎNG     | phỏng vấn         |
+| N/A   | N/A    | N/A  | PHÓNG     | giải phóng        |
+| N/A   | N/A    | N/A  | PHỎNG     | mô phỏng          |
+| N/A   | N/A    | N/A  | BÀNG      | bên cạnh          |
+| N/A   | N/A    | N/A  | BÁNG      | phỉ báng          |
+| N/A   | N/A    | N/A  | PHU       | trải, lát         |
+| N/A   | N/A    | N/A  | KÍCH      | kích thích        |
+| N/A   | N/A    | N/A  | NGẠO      | kiêu ngạo         |
+| N/A   | N/A    | N/A  | HỮU       | bạn               |
+| N/A   | N/A    | N/A  | BẠT       | rút ra            |
+| N/A   | N/A    | N/A  | TRƯỜNG    | công trường       |
+| N/A   | N/A    | N/A  | THƯƠNG    | bị thương         |
+| N/A   | N/A    | N/A  | TRÀNG     | đại tràng         |
+| N/A   | N/A    | N/A  | THANG     | nước nóng         |
+| N/A   | N/A    | N/A  | DƯƠNG     | mặt trời          |
+| N/A   | N/A    | N/A  | DƯƠNG     | tuyên dương       |
+| N/A   | N/A    | N/A  | DƯƠNG     | viêm loét         |
+| N/A   | N/A    | N/A  | SƯỚNG     | sướng             |
+| N/A   | N/A    | N/A  | HẬU       | sau               |
+| N/A   | N/A    | N/A  | ẢO        | ảo tưởng          |
+| N/A   | N/A    | N/A  | ẤU        | thơ ấu            |
+| N/A   | N/A    | N/A  | ẢO        | hờn, dỗi          |
+| N/A   | N/A    | N/A  | PHÂN/PHẬN | phân chia/bộ phận |
+| N/A   | N/A    | N/A  | PHÂN      | phân tâm          |
+| N/A   | N/A    | N/A  | PHÂN      | bầu không khí     |
+| N/A   | N/A    | N/A  | PHẤN      | bột               |
+| N/A   | N/A    | N/A  | BẦN       | nghèo             |
+| N/A   | N/A    | N/A  | BỒN       | cái khay          |
+| N/A   | N/A    | N/A  | BAN/PHÂN  | ban bố            |
+| N/A   | N/A    | N/A  | QUẢ       | quả phụ           |
+| N/A   | N/A    | N/A  | THÁI      | hái               |
+| N/A   | N/A    | N/A  | THÁI      | rau               |
+| N/A   | N/A    | N/A  | THÁI      | hái               |
+| N/A   | N/A    | N/A  | THÁI      | sắc thái          |
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
