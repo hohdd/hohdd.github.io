@@ -135,7 +135,7 @@ date: 2021-04-13 14:26:14 +0700
 1. Nhìn xem chữ kanji theo **HƯỚNG**{:.w3-green} nào? (Trái->Phải, Trên->Dưới, Trong->Ngoài, TopLeft->BottomRight)
 2. Từ **HƯỚNG**{:.w3-green} nhìn xem nó là **BỘ**{:.w3-orange} nào? (人亻彳儿 Nhân, 扌Thủ-Tay, 女 Nữ, 幺 Yêu, 糸 糹纟 Mịch, 衣 (衤) Y-Áo, 目 月 日 田 毋 白MỤC-NGUYỆT-NHẬT-ĐIỀN-VÔ-BẠCH, 艹(艸)廾 THẢO-CỦNG, 罒罓网 Võng, 阝邑 Ấp-Bồ, 口 Khẩu, 音 舌 頁(页) ÂM-THIỆT-HIỆT, 礻示 Thị, 刀 力 勹 ĐAO-LỰC-BAO, 亠 宀 冖 ĐẦU-MIÊN-MỊCH, 广 疒 NGHIÊM-NẠCH, 冫氵(水) BĂNG-THỦY, 火(灬) 爪 HỎA-TRẢO , 金 Kim, 竹 Trúc, 木 米 禾 MỘC-MỄ-HÒA, 立穴 LẬP-HUYỆT, 辶(辵) 廴 SƯỚC-DẪN ...)
 3. HÁN VIỆT > Nghĩa > **Liên quan**{:.w3-yellow} giữa các BỘ trong CẤU TẠO (*chỉ sự, hình thanh...*{:.w3-yellow})
-4. Gợi nhớ: **Keep it simple**{:.w3-aqua}, Ghép nghĩa với *"Là-Làm-Không-Đừng, Vì-Do-Nên-Sẽ-Thì, Bằng-Đều-Được-Chỉ-Ra-Rất-Vẫn-Vào..."*
+4. Gợi nhớ: **Keep it simple**{:.w3-aqua}, Ghép nghĩa với *"Là-Làm-Có-Không-Đừng-Cùng, Mang-Đi-Với-Ở, Vì-Do-Nên-Sẽ-Thì, Bằng-Đều-Được-Chỉ-Ra-Rất-Vẫn-Vào..."*
 5. **Hình ảnh**{:.w3-red} gợi nhớ *(độc lạ, ấn tượng, màu sắc, âm thanh)...*
 
 ## 69 chữ kanji cơ bản
