@@ -105,7 +105,7 @@ date: 2020-05-15 14:26:14 +0700
             - **TriggerEvent** (*class*) : *MonoBehaviour* > Raise một sự kiện khi va chạm kích hoạt
         - **Singleton**
             - **AbstractSingleton\<T\>** (*abstract class*) : *MonoBehaviour* where T : *Component* > Cung cấp các chức năng cơ bản của một singleton cho các lớp dẫn xuất của nó.
-        - **StateMachine**
+        - [**StateMachine**](https://unity.com/how-to/develop-modular-flexible-codebase-state-programming-pattern#understanding-states-and-state-machines){:.external.hvr-forward rel="nofollow" target="_blank"} ([game programming patterns](https://unity.com/resources/level-up-your-code-with-game-programming-patterns){:.external.hvr-forward rel="nofollow" target="_blank"})
             - **IState** (*interface*) > *Trạng thái* của máy trạng thái. Gồm các thuộc tính: *void Enter(), IEnumerator Execute(), Exit(), void RemoveLink(ILink link), void RemoveAllLinks(), bool ValidateLinks(out IState nextState), void EnableLinks(), void DisableLinks()*
             - **ILink** (*interface*) > Các *liên kết chuyển tiếp kết nối các trạng thái* của máy trạng thái với nhau. Gồm các thuộc tính: *bool Validate(out IState nextState), void Enable(), void Disable()*
             - **AbstractState** (*abstract class*) : *IState* > cung cấp các chức năng chung cho các trạng thái của máy trạng thái. Gồm các thuộc tính: *Name, m_Links...*
