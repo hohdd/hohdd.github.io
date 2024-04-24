@@ -159,14 +159,3 @@ date: 2020-05-15 14:26:14 +0700
 
 ![TEXT](/assets/img/collections/stylized-topology-universal-01.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
 ![TEXT](/assets/img/collections/stylized-topology-universal-02.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
-
-## Reference
-- [3D Modeling Fundamentals (1. Tài liệu tham khảo > 2. Tỷ lệ > 3. Đơn giản hóa)](https://www.ebalstudios.com/blog/3d-modeling-fundamentals){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [3D Modeling Artifacts - Flow Check Reflection Map - Zebra Stripe Diagnostic](https://www.ebalstudios.com/blog/3d-modeling-artifacts-flow-check-reflection-map){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [Polygon Modeling Practical Basics](https://www.ebalstudios.com/blog/polygon-modeling-basics){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [Hard Surface Cheat Sheets by JS Mussi](https://s3.amazonaws.com/kajabi-storefronts-production/file-uploads/sites/106766/themes/2153408233/downloads/530013a-07a-0e84-176e-0a41fbbafe6_Hard_Surface_Cheat_Sheets.pdf){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [Turbosquid Training](https://resources.turbosquid.com/training/){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [Pinterest - Polygon modeling](https://www.pinterest.com/search/pins/?q=Polygon%20modeling){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [CG 101: 28 Bài học vỡ lòng về Thiết Kế Đồ Họa 3D cho người mới bắt đầu](https://lamphimquangcao.tv/cg-101-28-bai-hoc-vo-long-ve-thiet-ke-hoa-3d-cho-nguoi-moi-bat-dau/){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [8 Tips for Clean Topology in Blender](https://cgcookie.com/posts/guide-to-clean-topology){:.external.hvr-forward rel="nofollow" target="_blank"}
-- [9 dự án 3D Blender đơn giản dành cho người mới bắt đầu](https://cgcookie.com/posts/9-simple-blender-projects-for-beginners){:.external.hvr-forward rel="nofollow" target="_blank"}

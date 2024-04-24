@@ -23,9 +23,9 @@ mermaid: false
 highlight: true # để thêm màu mè cho <pre> CODE </pre>
 amp: false
 audioSetting: false # có menu để setting audio or not
-collection: Bổ trợ kiến thức # this for AMP related post
+collection: Blender # this for AMP related post
 ### category: dùng để group collection
-category: Bổ trợ kiến thức
+category: Blender
 
 ### highlight_text
 highlight_text: true
