@@ -63,9 +63,11 @@ date: 2020-05-15 14:26:14 +0700
 	- Select all: **A**{:.w3-text-red}. Select none: **Alt-A**{:.w3-text-red}
 	- Invert selection: “**Ctrl-I**{:.w3-text-red}”
 - **Mesh Flow**:
-	- Đùn: **E**{:.w3-text-red}(x,y,z), Scale: **S**{:.w3-text-red}(x,y,z), Rotate: **R**{:.w3-text-red}(x,y,z), Grap: **G**{:.w3-text-red}, Inset: **I**{:.w3-text-red}, Bevel: **B**{:.w3-text-red}, Fill: **F**{:.w3-text-red}, Knife: **K**{:.w3-text-red}, Split: **At-M**{:.w3-text-red}, Merge: **M**{:.w3-text-red}
+	- Đùn: **E**{:.w3-text-red}(x,y,z), Scale: **S**{:.w3-text-red}(x,y,z), Rotate: **R**{:.w3-text-red}(x,y,z), Grap: **G**{:.w3-text-red}(x,y,z), Inset: **I**{:.w3-text-red}, Bevel: **B**{:.w3-text-red}, Fill: **F**{:.w3-text-red}, Knife: **K**{:.w3-text-red}, Split: **At-M**{:.w3-text-red}, Merge: **M**{:.w3-text-red}
+	- **Alt-E**{:.w3-text-red} để hiện thêm *nhiều tùy chọn **Extrude*** (Đùn), trong đó "Extrude Individual Faces" để Đùn từng Face riêng biệt dọc theo Normal của nó.
 	- Slide Edges: **G G**{:.w3-text-red}, Slide Vertex: **Shift-V**{:.w3-text-red}, LoopCut: **Ctrl-R**{:.w3-text-red}, **Shift-Ctrl-R**{:.w3-text-red} (thêm 2 vòng cạnh 2 bên cạnh đã chọn), Clone: **Shift-D**{:.w3-text-red} hoặc **Alt+D** (**Linked**)
 	- Đùn Vertex đến vị trí chuột phải: **Ctrl-RMB**
+	- **Shift-Alt-S** To Sphere (*Mesh > Transform > To Sphere...*) để làm tròn edges đang chọn.
 	- Rip Vertices: **V** (rạch lưới), Rip Vertices and Fill: **Alt-V**{:.w3-text-red} (rạch rồi nối luôn)
 	- Triangulate Faces: **Ctrl-T**{:.w3-text-red} (chuyển mặt được chọn thành tam giác)
 	- Triangles to Quads: **Alt-J**{:.w3-text-red} (chuyển mặt tam giác được chọn thành tứ giác)
@@ -81,6 +83,8 @@ date: 2020-05-15 14:26:14 +0700
 	- **Shift-RMB**{:.w3-text-red} để thay đổi vị trí Cursor
 	- **Shift-C**{:.w3-text-red} để reset Cursor về (0,0,0)
 	- **Shift-S**{:.w3-text-red} để hiện Menu Tròn về Cursor
+	- **Shift-TAB**{:.w3-text-red} để hiện Menu Tròn về Chế độ tương tác với đối tượng
+	- **.**{:.w3-text-red}(dot) để hiện Menu Tròn về ĐIỂM TỰA cho xoay/scale (**cần phân biệt với Origin Point**)
 	- **Isolate**: **Shift-H**{:.w3-text-red} (Hide). Un-hide items: **Alt-H**{:.w3-text-red}
 	- **Tools**:
 		- Bend (bẻ cong): **Shift-W** (*xoay vòng cung giữa con trỏ chuột và con trỏ 3D*)
