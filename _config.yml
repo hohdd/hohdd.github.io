@@ -25,6 +25,16 @@ collections:
   tools:
     output: true
   # BEGIN serials
+  cg-artwork:
+    output: true
+    # "isSerial" và "show" để filter
+    isSerial: true
+    show: true
+    # phải có "/collections/" vì đã được hardcore URL trong "categories" và đường dẫn đến "search.json" trong INDEX
+    permalink: /collections/cg-artwork/:title
+    # thumbnail: "/path/to/image.jpg"
+    title: "CG Artwork"
+    description: "Tổng hợp các ghi chép về CG Artwork :)"
   game-development:
     output: true
     # "isSerial" và "show" để filter

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Game Development
+title: CG Artwork
 robots: NOINDEX, FOLLOW
 draft: true
 ---
@@ -45,13 +45,36 @@ draft: true
   {% endfor %}
 </div>
 
+{% comment %}
+
+<div class="w3-row">
+  <!-- serials -->
+  {% assign serials = site.collections | where: 'isSerial', true | where: 'show', true | where: 'label', page.collection %}
+  {% for serial in serials %}
+  <div class="opacity-transition-hover">
+    <h5>{{ serial.title }}</h5>
+    <div>{{ serial.description }}</div>
+  </div>
+  <ul class="w3-ul">
+  {% for doc in serial.docs %}
+    {% if doc.draft != true %}
+    <!-- {{ doc.date | date_to_string }} -->
+    <a href="{{ site.baseurl }}{{doc.url}}" class="hvr-forward"><li><span></span>{{doc.title}} · {{ doc.content | reading_time }}</li></a>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
+
+{% endcomment %}
+
 <script src="/assets/js/search-custom.min.js" type="text/javascript"></script>
 <script>
 	(function() {
     JSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-			json: '/collections/game-development/search.json'
+			json: '/collections/cg-artwork/search.json'
     })
 	})();
 </script>
