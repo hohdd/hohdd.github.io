@@ -1,4 +1,4 @@
-<span id="audio-txt-2-speech">🔊 Speech</span>
+<span id="audio-txt-2-speech" class="cursor-pointer">🔊 Speech</span>
 <select id="voice-select"></select>
 <script>
     const voiceSelect = document.getElementById("voice-select");
@@ -71,6 +71,7 @@
     }
 
     audioBtn.addEventListener("click", () => {
+        console.log('audio-txt-2-speech > CLICKED...');
         isPlayingTxt2Speech = !isPlayingTxt2Speech;
         if (isPlayingTxt2Speech) {
             let text = getBlogText();

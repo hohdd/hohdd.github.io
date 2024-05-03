@@ -11,10 +11,10 @@
                 <p id="qModalAnswerMsg" class="w3-panel" style="display: none;"><span class="w3-red">Không đúng rôi! thử lại đi...</span></p>
                 <hr>
                 <p class="w3-panel">
-                    <button class="material-icons w3-btn w3-border" id="qModalAudioControlEl" onclick="qModalAudioControlPlay()" title="Play the sound">play_arrow</button>
+                    <button class="material-icons w3-btn w3-border" id="qModalAudioControlEl" onclick="qModalAudioControlPlay()" title="Play the sound" disabled>play_arrow</button>
                     <button class="material-icons w3-btn w3-border" id="qModalResetQuizEl" onclick="qModalResetQuiz()" title="Reset the quiz">cached</button>
-                    <button class="material-icons w3-btn w3-border" id="qModalGiveUpAndShowAnswerEl" onclick="qModalGiveUpAndShowAnswer()" title="Give up...">close</button>
-                    <button class="w3-btn w3-white w3-border" onclick="clearFormTextArea()" title="Clear the textarea">Clear</button>
+                    <button class="material-icons w3-btn w3-border" id="qModalGiveUpAndShowAnswerEl" onclick="qModalGiveUpAndShowAnswer()" title="Give up...">bolt</button>
+                    <button class="w3-btn w3-white w3-border" onclick="clearFormTextArea()" title="Clear the textarea" disabled>Clear</button>
                 </p>
                 <p id="qModalSentenceTypeArea" class="w3-panel">
                     <textarea id="sentenceTypeAreaId" style="margin: 0px;width: 100%;height: 99px;" onkeyup="qModalTxtAreaOnkeyup()"></textarea>

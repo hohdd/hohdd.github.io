@@ -1,7 +1,12 @@
 <script src="/assets/js/quote-api.js" type="text/javascript" async></script>
 <script src="/assets/js/custom.js" type="text/javascript" async></script>
 <script src="/assets/js/custom_test.js" type="text/javascript" async></script>
+{% if page.mathjax %}
+  {% include mathjax.html %}
+{% endif %}
+{% if page.embquiz %}
 <script src="/assets/js/qmodal.js" type="text/javascript" async></script>
+{% endif %}
 {% if page.mermaid %}
 <style>
 @media only screen and (max-width: 768px) {

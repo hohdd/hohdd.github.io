@@ -1,3 +1,9 @@
+//--------------------------------------------------------------------
+// Quiz Modal (support training)
+// Chỉ có sẵn trong các bài viết Collection
+// Workflows: 1. Chọn text > 2. Nhấn Q > các text sẽ được xáo trộn > click theo thứ tự để ghép thành câu (Task 1: làm Quiz hoàn thành câu...) > typing...
+// TODO: thêm setting Enable/Disable ở bài viết + Audio...
+//--------------------------------------------------------------------
 function performQuiz(selectedTxt) {
     /* Handle audio source */
     window.qModalSelectedText = selectedTxt.replace(/(\r\n|\n|\r)/gm, "");

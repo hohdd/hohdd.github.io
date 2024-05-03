@@ -25,6 +25,16 @@ collections:
   tools:
     output: true
   # BEGIN serials
+  music-theory:
+    output: true
+    # "isSerial" và "show" để filter
+    isSerial: true
+    show: true
+    # phải có "/collections/" vì đã được hardcore URL trong "categories" và đường dẫn đến "search.json" trong INDEX
+    permalink: /collections/music-theory/:title
+    # thumbnail: "/path/to/image.jpg"
+    title: "Music Theory"
+    description: "Tổng hợp các ghi chép về Music Theory :)"
   cg-artwork:
     output: true
     # "isSerial" và "show" để filter
