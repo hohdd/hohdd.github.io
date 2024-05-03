@@ -1,3 +1,6 @@
+//--------------------------------------------------------------------
+// Sửa đổi title (của browser) thay bằng ngẫu nhiên một Quote
+//--------------------------------------------------------------------
 function getQuoteRand() {
     return quoteArr[Math.floor(Math.random() * quoteArr.length)];
 }
