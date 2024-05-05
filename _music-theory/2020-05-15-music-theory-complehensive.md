@@ -39,6 +39,48 @@ date: 2020-05-15 14:26:14 +0700
 ---
 ## Music Theory Complehensive
 
+### Khởi động
+
+#### Nốt nhạc (Note)
+- Hầu hết tất cả những bản nhạc bạn từng nghe được tạo thành bởi chỉ *12 nốt nhạc (Từ Do tới Si, tính cả nốt trắng và đen trên piano)*.<br>![TEXT](/assets/img/collections/12notes-piano.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+- Các nốt nhạc được ký hiệu bởi những chữ cái từ A-G như sau:
+    - Do – C
+    - Re – D
+    - Mi – E
+    - Fa – F
+    - Sol – G
+    - La – A
+    - Si – B
+- Trên đàn piano sẽ có nhiều đoạn từ **Do** (C) đến **Si** (B) (mỗi đoạn được gọi là **1 quãng tám**). Vậy để phân biệt chính xác vị trí từng nốt, người ta sẽ đánh số thứ tự cho từng quãng như hình bên dưới, với phím **C4** nằm giữa đàn (còn gọi là **Middle C**).<br>![TEXT](/assets/img/collections/quang-giong-1.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+#### Trường độ của nốt nhạc (Duration)
+- Trường độ là giá trị thời gian của âm thanh.
+- Trong nhạc lý, độ dài của âm thanh được quy định bằng các nốt nhạc với những hình dạng khác nhau.
+- Nốt nhạc có 2 bộ phận:
+    - Thân nốt nhạc: Là một hình tròn rỗng hoặc đặc ruột. Phần này để xác định vị trí cao độ của âm thanh.
+    - Đuôi và dấu móc của nốt nhạc: Đuôi nốt nhạc là một vạch thẳng đứng, phần này để xác định độ dài khác nhau của âm thanh, đuôi nốt nhạc có thể quay lên hoặc quay xuống. Dấu móc luôn nằm ở bên phải của đuôi nốt.
+- Hình nốt và giá trị độ dài tương đối giữa các hình nốt:<br>![TEXT](/assets/img/collections/notes.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+    - Mối tương quan độ dài giữa chúng là: nốt đứng trước có giá trị gấp đôi nốt đứng sau.
+    - Nếu: Nốt tròn = 4 đơn vị đo độ dài (đv/nhịp), thì các nốt còn lại sẽ có giá trị như sau:
+        - Nốt trắng = 2 đv
+        - **Nốt đen = 1 đv**
+        - Nốt móc đơn = 1/2 đv
+        - Nốt móc kép = 1/4 đv
+        - Nốt móc ba = 1/8 đv
+        - Nốt móc bốn = 1/16 đv
+    - Nốt nhạc chỉ biểu hiện mối tương quan về thời gian trong điều kiện cùng một tốc độ chuyển động (cùng **tempo – nhịp bài hát**).<br>![TEXT](/assets/img/collections/rhythm_tree_1.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+    - Nếu nốt nhạc có **dấu chấm phía sau**, *bạn cần cộng thêm 1/2 trường độ của nốt đó*. Ví dụ nốt trắng có 1 chấm = 2+1 = 3 đv; nốt đen có 1 chấm = 1+1,5 = 2,5 đv.<br>![TEXT](/assets/img/collections/image-1.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+#### Số chỉ nhịp
+
+![TEXT](/assets/img/collections/so-chi-nhip.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+#### Cung (Step/ Whole step/ Whole tone/ Tone)
+- Về định nghĩa trong nhạc lý, **Cung (step/tone)** có thể xem *là đơn vị đếm cao độ* trong âm nhạc.
+    - Ví dụ khi bạn học toán, “một đơn vị đếm” là khoảng cách giữa từng số với nhau. Bạn hiểu rằng “số 2″ cách “số 1″ một đơn vị. ”Số 3″ cách “số 1″ hai đơn vị. Âm thanh cũng vậy, bạn sẽ có cảm giác nốt Re có âm thanh cao hơn nốt Do. Nhưng làm cách nào để biết nốt Re cao hơn nốt Do cụ thể là bao nhiêu? Nốt Mi sẽ cao hơn nốt Do bao nhiêu? Khoảng cách về cao độ mà chúng ta bàn ở trên sẽ được đếm bằng “cung”. Nghĩa là nốt Re sẽ cao hơn nốt Do 1 cung. Nốt Mi cao hơn nốt Do 2 cung.
+- Nửa cung (Half-step/Semitone): Sau khi bạn đã hiểu cung là gì, hãy đi tiếp đến khái niệm “nửa cung”, đây được xem là đơn vị đếm cao độ ở mức nhỏ nhất trong âm nhạc.
+- TODO: [reference](https://seami.vn/kien-thuc-nhac-ly-co-ban-cho-nguoi-moi-bat-dau/){:.external.hvr-forward rel="nofollow" target="_blank"}
+
 ### Part 1: The Symbols of Music
 
 #### Pitch Class là gì?
