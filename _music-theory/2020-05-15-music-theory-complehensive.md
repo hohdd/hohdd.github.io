@@ -44,6 +44,14 @@ date: 2020-05-15 14:26:14 +0700
 #### Nốt nhạc (Note)
 - Hầu hết tất cả những bản nhạc bạn từng nghe được tạo thành bởi chỉ *12 nốt nhạc (Từ Do tới Si, tính cả nốt trắng và đen trên piano)*.<br>![TEXT](/assets/img/collections/12notes-piano.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 - Trên đàn piano sẽ có nhiều đoạn từ **Do** (C) đến **Si** (B) (mỗi đoạn được gọi là **1 quãng tám**). Vậy để phân biệt chính xác vị trí từng nốt, người ta sẽ đánh số thứ tự cho từng quãng như hình bên dưới, với phím **C4** nằm giữa đàn (còn gọi là **Middle C**).<br>![TEXT](/assets/img/collections/quang-giong-1.png){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>![TEXT](/assets/img/collections/e824212b71e5ac7d00bfed7abbd54453.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+- Các note từ **C2 đến C5**
+<br>![TEXT](/assets/img/collections/note-c.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+<br>![TEXT](/assets/img/collections/note-d.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+<br>![TEXT](/assets/img/collections/note-e.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+<br>![TEXT](/assets/img/collections/note-f.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+<br>![TEXT](/assets/img/collections/note-g.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+<br>![TEXT](/assets/img/collections/note-a.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+<br>![TEXT](/assets/img/collections/note-b.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
 
 #### Trường độ của nốt nhạc (Duration)
 - Trường độ là giá trị thời gian của âm thanh.<br>![TEXT](/assets/img/collections/notes.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
