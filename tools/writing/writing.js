@@ -1,5 +1,11 @@
 window.toolbarItemsOps = [
     [{
+        name: 'clearEditText',
+        tooltip: 'Clear Edit Text',
+        command: 'clearEditText',
+        text: '',
+        className: 'clearEditTextBtn'
+    }, {
         name: 'openItem',
         tooltip: 'Open FM',
         command: 'openFMCommand',
@@ -10,7 +16,13 @@ window.toolbarItemsOps = [
     ['ul', 'ol', 'task', 'indent', 'outdent'],
     ['table', 'image', 'link'],
     ['code', 'codeblock'],
-    ['scrollSync'],
+    ['scrollSync', {
+        name: 'copyResult',
+        tooltip: 'Copy Result',
+        command: 'copyResult',
+        text: '',
+        className: 'copyResultBtn'
+    }],
 ];
 
 window.currentFileId = window.localStorage.getItem('Writing_currentFileId');
@@ -127,6 +139,21 @@ function closeFMCmd() {
     document.getElementById('fileManagerModal').style.display = 'none';
 }
 
+function clearEditTextFunc() {
+    window.editor.setMarkdown('');
+}
+function copyResultFunc() {
+    try {
+        let mdPreview = window.editor.getEditorElements().mdPreview;
+        mdPreview.select();
+        document.execCommand("copy");
+        // TODO....
+    } catch (error) {
+        console.log(error);
+    }
+    console.log(window.editor.getEditorElements());
+}
+
 renderFileList();
 window.savedWritingMarkdown = window.localStorage.getItem('WritingMarkdown_' + window.currentFileId);
 
@@ -143,6 +170,16 @@ window.onload = function () {
         'markdown',
         'openFMCommand',
         openFMCmd
+    );
+    window.editor.addCommand(
+        'markdown',
+        'clearEditText',
+        clearEditTextFunc
+    );
+    window.editor.addCommand(
+        'markdown',
+        'copyResult',
+        copyResultFunc
     );
     window.editor.on('change', processChange);
 };
