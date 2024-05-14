@@ -11,7 +11,7 @@ quickNote: true
 ---
 <link rel="stylesheet" href="/tools/kanji_sieutoc/kanji.css" />
 
-<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16" id="currentGroupTitle">月 (NGUYỆT - mặt trăng)</div>
+<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16" id="currentGroupTitle"></div>
 
 <div class="container">
     <div class="left-sidebar scrollable" id="leftSidebar">
