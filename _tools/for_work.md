@@ -24,9 +24,22 @@ secondMenu: false
 | trans | Translate... | Sử dụng: ^trans vi/en/ja.... vi => EN + JA; en => VI + JA; ja => EN + VI
 | chat | Msg Patterns: các mẫu câu chat japanese | patVi
 | ro | Tool dịch JA sang romaji... | Sử dụng: ^ro ....
+| **kj** | 2511 Kanji | tìm theo: Page, No, CatGroup, Kanji, HanViet, Vietnamese, HintRemember
 | mem | MemRiseListFiles: từ vựng 50 bài mina, English Gramar 01-03... | title + subTitle + tag (mrminaXX, encautruccau, Unity)
 | bt | 214 Bộ thủ | title + subTitle + tag (bothuXX)
 {:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}
+
+# Thêm một memrise
+
+- 1) Tạo thư mục (trong VS202X) chứa file json data trong "/Data/MemRise" (DongHD.csproj sẽ tự động add ItemGroup)
+- 2) Copy file json vào thư mục vừa tạo (Explorer)
+- 3) Tạo mới một Model trong "Models.cs" (tất cả đang để trong 1 file, properties dựa theo file JSON)
+- 4) Trong "/Prompts" tạo thêm một Prompt mới (nên clone từ một Prompt có sẵn và sửa)
+- 5) ```List<Result> Search(string searchStr)``` là hàm chính cần làm việc (xuất phát từ **"Main.cs" > thêm Init > thêm Query > thêm getAll**, hãy thêm theo thứ tự...)
+- 6) Sau khi xong thì tắt M.P.T > Build Solution (các file sẽ được tự động copy vào M.P.T) > Bật M.P.T để kiểm tra...
+- 7) Hãy lưu ý đến JSON format (validate JSON) khi Parse Int->String sẽ lỗi nếu KIỂU DỮ LIỆU tróng Model và JSON không khớp
+- 8) Thêm bổ sung vào "HelperChanPrompt" và Ghi chép lại trong này (Sitemap M.P.T) như là thủ tục release
+
 
 {% comment %}
 
