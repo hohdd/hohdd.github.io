@@ -29,7 +29,7 @@ category: Blender
 
 ### highlight_text
 highlight_text: true
-highlight_yellow: "LMB, RMB"
+highlight_yellow: "LMB, RMB, The 1% Strategy"
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
@@ -62,10 +62,12 @@ date: 2020-05-15 14:26:14 +0700
 	- Chọn LOOP_Đỉnh-Cạnh-Mặt: **Alt + Click**{:.w3-text-red}
 	- Select all: **A**{:.w3-text-red}. Select none: **Alt-A**{:.w3-text-red}
 	- Invert selection: “**Ctrl-I**{:.w3-text-red}”
+	- Cicle Select: **C**{:.w3-text-red}
+	- Ring Select: **Ctrl-Alt-LMB**{:.w3-text-red} chọn cùng hướng canh/mặt được chọn
 - **Mesh Flow**:
 	- Đùn: **E**{:.w3-text-red}(x,y,z), Scale: **S**{:.w3-text-red}(x,y,z), Rotate: **R**{:.w3-text-red}(x,y,z), Grap: **G**{:.w3-text-red}(x,y,z), Inset: **I**{:.w3-text-red}, Bevel: **B**{:.w3-text-red}, Fill: **F**{:.w3-text-red}, Knife: **K**{:.w3-text-red}, Split: **At-M**{:.w3-text-red}, Merge: **M**{:.w3-text-red}
 	- **Alt-E**{:.w3-text-red} để hiện thêm *nhiều tùy chọn **Extrude*** (Đùn), trong đó "Extrude Individual Faces" để Đùn từng Face riêng biệt dọc theo Normal của nó.
-	- Slide Edges: **G G**{:.w3-text-red}, Slide Vertex: **Shift-V**{:.w3-text-red}, LoopCut: **Ctrl-R**{:.w3-text-red}, **Shift-Ctrl-R**{:.w3-text-red} (thêm 2 vòng cạnh 2 bên cạnh đã chọn), Clone: **Shift-D**{:.w3-text-red} hoặc **Alt+D** (**Linked**)
+	- Slide Edges: **G G**{:.w3-text-red}, Slide Vertex: **Shift-V**{:.w3-text-red} (*GG cũng áp dụng cho Vertex, khi GG phải có cạnh để trượt...*{:.w3-yellow}), LoopCut: **Ctrl-R**{:.w3-text-red}, **Shift-Ctrl-R**{:.w3-text-red} (thêm 2 vòng cạnh 2 bên cạnh đã chọn), Clone: **Shift-D**{:.w3-text-red} hoặc **Alt+D** (**Linked**)
 	- Đùn Vertex đến vị trí chuột phải: **Ctrl-RMB**
 	- **Shift-Alt-S** To Sphere (*Mesh > Transform > To Sphere...*) để làm tròn edges đang chọn.
 	- Rip Vertices: **V** (rạch lưới), Rip Vertices and Fill: **Alt-V**{:.w3-text-red} (rạch rồi nối luôn)
@@ -79,6 +81,7 @@ date: 2020-05-15 14:26:14 +0700
 		- **Shift-Z**{:.w3-text-red} toggle Solid vs Wireframe (Wireframe included X-Ray)
 		- **Alt-Z**{:.w3-text-red} toggle X-Ray
 		- **Z**{:.w3-text-red} để hiện Menu Tròn về Viewport Shading
+	- **Ctrl-Alt-Q**: toggle Quad view (*Top-Font-Right-Perspective*)
 - **Support**:
 	- **Shift-RMB**{:.w3-text-red} để thay đổi vị trí Cursor
 	- **Shift-C**{:.w3-text-red} để reset Cursor về (0,0,0)
@@ -93,6 +96,11 @@ date: 2020-05-15 14:26:14 +0700
 - **Optimize/Review**:
 	- Kiểm tra Normal (*Mesh Edit Mode > then toggle Normal Options...*)
 	- Kiểm tra trùng lặp vô tình (*bật auto merge nếu 2 Vertex có cùng location*)
+
+{% comment %}
+https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
+{% endcomment %}
+- [**The Hard Surface 1% Strategy...**](/collections/cg-artwork/blender-the-hard-surface-1-percent-strategy){:.w3-yellow.external.hvr-forward rel="nofollow" target="_blank"}
 
 ### 3D Fox Character Modeling (20')
 

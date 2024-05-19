@@ -50,7 +50,7 @@ date: 2020-05-15 14:26:14 +0700
 - IK (Inverse Kinematics):
 	- IK là viết tắt của Inverse Kinematics (động học ngược).
 	- Đây là phần thú vị! *IK giúp bạn **điều khiển phần cuối của chuỗi khớp** (ví dụ: **ngón tay, chân**{:.w3-text-red}) mà không cần xác định tư thế của từng khớp con.*
-	- Ví dụ: Nếu bạn muốn nhân vật nắm một cái gì đó, bạn chỉ cần kéo tay của nhân vật đến vị trí mong muốn. Thuật toán IK sẽ tự động tính toán tư thế của các khớp con để đạt được điểm đó.
+	- Ví dụ: **Bạn chọn khớp cuối cùng (điều khiển) rồi chọn bao nhiêu khớp Constrainsts**. Thuật toán IK sẽ tự động tính toán tư thế của các khớp con để đạt được điểm đó.
 	- Điều này giúp bạn tạo ra các hành động tự nhiên và linh hoạt hơn cho nhân vật của mình.
 	- Trong Blender, bạn có thể áp dụng IK bằng cách:
 		1. Chọn khớp cuối của chuỗi khớp.

@@ -37,6 +37,19 @@
 // ------------------------------------------------------------------------------------>
 // {% endraw %}{% endcomment %}
 {
+	"tạo một danh sách ordered list": {
+		"prefix": "dhlonumber",
+		"body": [
+		  "<div class=\"w3-card w3-leftbar w3-border-green w3-pale-green w3-panel\">",
+		  "	<ol>",
+		  "		<li>11111</li>",
+		  "		<li>22222 <strong>STRONG</strong> <i>ITALIC</i></li>",
+		  "		<li>3333</li>",
+		  "	</ol>",
+		  "</div>"
+		],
+		"description": "tạo một danh sách ordered list"
+	},
 	"dhkanji generator": {
 		"prefix": "dhkanji",
 		"body": [
