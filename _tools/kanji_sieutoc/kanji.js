@@ -27,6 +27,7 @@ function createStateChangeListener(xhr, callback) {
 const dataSet = {};
 let menuData = [];
 let tableData = [];
+let activeItemMenu = null;
 
 const currentCatGroup_KEY = 'DongHD_Kanji_currentCatGroup';
 let currentCatGroup = localStorage.getItem(currentCatGroup_KEY);
@@ -37,17 +38,37 @@ function renderLeftSidebar(data) {
     leftSidebar.innerHTML = "";
     data.forEach(item => {
         const menuItem = document.createElement("div");
-        menuItem.classList.add("menu-item");
+        if (currentCatGroup === item) {
+            activeItemMenu = menuItem.classList.add('menu-item-active');
+        } else {
+            menuItem.classList.add('menu-item');
+        }
         let groupMeta = dataSet[item]['groupMeta'];
-        menuItem.textContent = `${groupMeta.GroupKJ} (${groupMeta.GroupHV} - ${groupMeta.GroupVN})`;
+        menuItem.textContent = `[${groupMeta.No}] ${groupMeta.GroupKJ} (${groupMeta.GroupHV} - ${groupMeta.GroupVN})`;
         leftSidebar.appendChild(menuItem);
         menuItem.addEventListener("click", () => renderMainContent(item));
     });
+
+    if (activeItemMenu) {
+        // activeItemMenu.scrollIntoView();
+        scrollToElm(activeItemMenu);
+    }
+}
+function scrollToElm(elm){
+    // var topPos = document.getElementById('leftSidebar').offsetTop;
+    // elm.scrollTop = topPos-10;
+
+    // const innerDivPos = document.querySelector('#leftSidebar > div:nth-child(1)').offsetTop;
+    // elm.scrollTo({ top: innerDivPos, behavior: 'smooth' })
+    
+    const innerDivPos = elm.offsetTop;
+    document.getElementById('leftSidebar').scrollTo({ top: innerDivPos, behavior: 'smooth' })
 }
 
 /* Hàm render bảng dữ liệu */
 function renderMainContent(CatGroup) {
-    localStorage.setItem(currentCatGroup_KEY, CatGroup);
+    currentCatGroup = CatGroup;
+    localStorage.setItem(currentCatGroup_KEY, currentCatGroup);
 
     /* Set title */
     let _groupMeta = dataSet[CatGroup]['groupMeta'];
@@ -84,6 +105,8 @@ function renderMainContent(CatGroup) {
     table.appendChild(thead);
     table.appendChild(tbody);
     mainContent.appendChild(table);
+    
+    renderLeftSidebar(menuData); // re-make left sidebar for new active item
 }
 
 /* Khởi tạo ban đầu */

@@ -14,7 +14,7 @@ quickNote: true
 <div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16" id="currentGroupTitle"></div>
 
 <div class="container">
-    <div class="left-sidebar scrollable" id="leftSidebar">
+    <div class="left-sidebar kj-scrollable" id="leftSidebar">
         <!-- Danh sách menu sẽ được tạo bằng JavaScript -->
     </div>
     <div class="main-content scrollable" id="mainContent">
