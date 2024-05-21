@@ -1,15 +1,6 @@
 /* Utils */
-var _$JSONLoader = {
-    load: load
-}
 function getXHR() {
     return window.XMLHttpRequest ? new window.XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP')
-}
-function load(location, callback) {
-    const xhr = getXHR()
-    xhr.open('GET', location, true)
-    xhr.onreadystatechange = createStateChangeListener(xhr, callback)
-    xhr.send()
 }
 function createStateChangeListener(xhr, callback) {
     return function () {
@@ -22,6 +13,20 @@ function createStateChangeListener(xhr, callback) {
         }
     }
 }
+function load(location, callback) {
+    const xhr = getXHR()
+    xhr.open('GET', location, true)
+    xhr.onreadystatechange = createStateChangeListener(xhr, callback)
+    xhr.send()
+}
+var _$JSONLoader = {
+    load: load
+}
+
+const btnHTML = `
+<span class="material-icons w3-button w3-border w3-border-blue" onclick="preMainContent()" title="Next">skip_previous</span>
+<span class="material-icons w3-button w3-border w3-border-blue" onclick="nextMainContent()" title="Next">skip_next</span>
+`
 
 /* Danh sách các Dữ liệu */
 const dataSet = {};
@@ -44,6 +49,7 @@ function renderLeftSidebar(data) {
             menuItem.classList.add('menu-item');
         }
         let groupMeta = dataSet[item]['groupMeta'];
+        menuItem.classList.add(`${groupMeta.BookNo}`);
         menuItem.textContent = `[${groupMeta.No}] ${groupMeta.GroupKJ} (${groupMeta.GroupHV} - ${groupMeta.GroupVN})`;
         leftSidebar.appendChild(menuItem);
         menuItem.addEventListener("click", () => renderMainContent(item));
@@ -72,7 +78,7 @@ function renderMainContent(CatGroup) {
 
     /* Set title */
     let _groupMeta = dataSet[CatGroup]['groupMeta'];
-    document.getElementById('currentGroupTitle').textContent = `${_groupMeta.GroupKJ} (${_groupMeta.GroupHV} - ${_groupMeta.GroupVN})`;
+    document.getElementById('currentGroupTitle').textContent = `[${_groupMeta.BookNo}][${_groupMeta.Page}] ${_groupMeta.GroupKJ} (${_groupMeta.GroupHV} - ${_groupMeta.GroupVN})`;
 
     const mainContent = document.getElementById("mainContent");
     mainContent.innerHTML = "";
@@ -96,6 +102,10 @@ function renderMainContent(CatGroup) {
         const row = document.createElement("tr");
         headers.forEach(header => {
             const cell = document.createElement("td");
+            cell.classList.add(`main-td-${header}`);
+            if (header == 'Typing' || header == 'Hiragana') {
+                cell.style.display = 'none';
+            }
             cell.textContent = rowData[header];
             row.appendChild(cell);
         });
@@ -105,6 +115,12 @@ function renderMainContent(CatGroup) {
     table.appendChild(thead);
     table.appendChild(tbody);
     mainContent.appendChild(table);
+
+    // thêm button Pre + Next
+    const btnElm = document.createElement("div");
+    btnElm.classList.add('w3-panel');
+    btnElm.innerHTML = btnHTML;
+    mainContent.appendChild(btnElm);
     
     renderLeftSidebar(menuData); // re-make left sidebar for new active item
 }
@@ -118,10 +134,11 @@ _$JSONLoader.load('/tools/kanji_sieutoc/MERGE_ALL_KANJI.json', function (err, js
         if (dataSet[obj.CatGroup]) {
             dataSet[obj.CatGroup]['objList'].push(obj);
         } else {
-            dataSet[obj.CatGroup] = {
+            let _tmpObj = {
                 groupMeta: obj,
                 objList: [obj]
-            }
+            };
+            dataSet[obj.CatGroup] = _tmpObj;
         }
     });
     // console.log(dataSet);
@@ -135,3 +152,33 @@ _$JSONLoader.load('/tools/kanji_sieutoc/MERGE_ALL_KANJI.json', function (err, js
         renderMainContent(menuData[0]);
     }
 })
+
+function toggleDisplay(className) {
+    var cols = document.getElementsByClassName(className);
+    for(i = 0; i < cols.length; i++) {
+        let _elm = cols[i];
+      if (_elm.style.display) {
+        _elm.style.display = '';
+      } else {
+        _elm.style.display = 'none';
+      }
+    }
+}
+function nextMainContent() {
+    let currentIndex = menuData.indexOf(currentCatGroup);
+    ++currentIndex;
+    if (currentIndex < menuData.length) {
+        renderMainContent(menuData[currentIndex]);
+    } else {
+        renderMainContent(menuData[0]);
+    }
+}
+function preMainContent() {
+    let currentIndex = menuData.indexOf(currentCatGroup);
+    --currentIndex;
+    if (currentIndex < 0) {
+        renderMainContent(menuData[menuData.length - 1]);
+    } else {
+        renderMainContent(menuData[currentIndex]);
+    }
+}
