@@ -21,6 +21,15 @@
     flex: 3;
 }
 
+.Book01 {
+    background-color: #dffde9;
+}
+.Book02 {
+    background-color: #fdfadf;
+}
+.Book03 {
+    background-color: #f7dffd;
+}
 .menu-item {
     padding: 10px;
     border-bottom: 1px solid #e2e2e2;
@@ -41,7 +50,7 @@
 
 .menu-item-active:hover {
     background-color: #cfc554;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 table {

@@ -8,6 +8,12 @@ icon: "/assets/img/tools/kanji_2511.png"
 description: Kanji Siêu Tốc
 konami: true
 quickNote: true
+secondMenu: true
+secondMenuIcon: toys
+secondMenuHandler: toggleDisplay('main-td-Typing')
+thirdMenu: true
+thirdMenuIcon: extension
+thirdMenuHandler: toggleDisplay('main-td-Hiragana')
 ---
 <link rel="stylesheet" href="/tools/kanji_sieutoc/kanji.css" />
 
