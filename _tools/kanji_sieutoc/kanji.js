@@ -78,7 +78,7 @@ function renderMainContent(CatGroup) {
 
     /* Set title */
     let _groupMeta = dataSet[CatGroup]['groupMeta'];
-    document.getElementById('currentGroupTitle').textContent = `${_groupMeta.GroupKJ} (${_groupMeta.GroupHV} - ${_groupMeta.GroupVN})`;
+    document.getElementById('currentGroupTitle').textContent = `[${_groupMeta.BookNo}][${_groupMeta.Page}] ${_groupMeta.GroupKJ} (${_groupMeta.GroupHV} - ${_groupMeta.GroupVN})`;
 
     const mainContent = document.getElementById("mainContent");
     mainContent.innerHTML = "";
