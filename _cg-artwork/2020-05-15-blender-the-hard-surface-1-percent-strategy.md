@@ -76,6 +76,11 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 - **ĐỐI XỨNG XUYÊN TÂM**: Edit Mode > Mesh > Symmetrize để áp dụng mesh đối xứng (**lưu ý cần Apply Rotation trước**): Edit mode > select all (A) > Symmetrize và chọn trục và hướng đối xứng xuyên tâm
 - **Method** của các **Modifier** ảnh hưởng (**phạm vi áp dụng**) tùy thuộc vào **Angle, Weight, Vertex Group**... (**chức năng Select** cũng có tùy chọn Select theo: Sharp Edges, Similar...)
 - Từng bước xử lý overlap, xem vấn đề nó nằm ở đâu (duplicate egde/vertex? trùng line connect?), biết được nó do đâu mà có? để giải quyết (xóa bỏ duplicate, move line connect ra một vị trí khác, weight edge...)
+- Blender Addon: [PowerSave](https://app.gumroad.com/d/0adc72e4b778ffdc3ae9a9d438dbecda){:.external.hvr-forward rel="nofollow" target="_blank"}, [Screencast Keys](https://github.com/nutti/Screencast-Keys){:.external.hvr-forward rel="nofollow" target="_blank"}
+- Sau khu Boolean xong bấm **Shift-2** để ẩn cả object boolean và collection cutter
+- **Rotate** (**R**) phụ thuộc vào **Tranform Pivot Point** đang là gì (*3D cursor, Individual Origins, Median Point...*)
+- **Instances** (*Vertices, Faces, Collection*) là một cách nhanh chóng để thêm cùng một hình học (**same geometry**) vào một cảnh nhiều lần mà **không cần sao chép dữ liệu cơ bản**. *Menu: Add > Collection Instance*. Có thể chuyển một Instance thành Real ([Make Instances Real](https://docs.blender.org/manual/en/latest/scene_layout/object/editing/apply.html#bpy-ops-object-duplicates-make-real){:.external.hvr-forward rel="nofollow" target="_blank"})
+- Để tận dụng một Cutter (ví dụ Cắt trên + Cắt dưới), nếu Shift-D thì không ăn Boolean đang có sẵn > trước khi duplicate thì chuyển Edit Mode > Select All (A) > Shift-D > kéo đến vị trí khác cần cắt, việc này bản chất là duplicate Hình học của Object Cutter chứ không tạo một Object khác (sẽ không giữ được boolean)
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel">
 	<ol>
