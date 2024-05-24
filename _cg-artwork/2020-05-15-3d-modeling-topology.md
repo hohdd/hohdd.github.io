@@ -159,3 +159,34 @@ date: 2020-05-15 14:26:14 +0700
 
 ![TEXT](/assets/img/collections/stylized-topology-universal-01.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
 ![TEXT](/assets/img/collections/stylized-topology-universal-02.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}<br>
+
+### Quad topology tips
+
+![TEXT](/assets/img/collections/hSAuU1EY8xg.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+### How to use Ngons
+
+#### The Star
+
+- Lưu ý một số khác biệt và một số đặc điểm riêng của từng loại đa giác khi chia nhỏ:
+    - Hình tam giác có mật độ hình học cao hơn ở tâm của chúng.
+    - Các hình tứ giác có mật độ hình học đồng đều nhất.
+    - NGONS có mật độ hình học thưa thớt hơn ở gần trung tâm của chúng - NGON càng có nhiều mặt thì sự chênh lệch này càng nhiều.<br>![TEXT](/assets/img/collections/subdivision_level.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+#### Gravity
+
+- Quads là đường cơ sở tiêu chuẩn cho cấu trúc liên kết với lực đẩy (Push) cân bằng và kéo (Pull) từ các cạnh giữa các đỉnh. Đây là mức trung bình cơ bản Gravity (trọng lực) trong một lưới đa giác.<br>![TEXT](/assets/img/collections/ngons-01.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+- Các đỉnh nơi có nhiều cạnh kết nối, hoặc "Poles" (Cực) thêm nhiều cạnh hơn vào hỗn hợp, thêm “Pull” (kéo) hơn, tạo ra sự “Positive” (tích cực) mất cân bằng, số lượng trên mức trung bình “Pull” (kéo) trọng lực trung bình của lưới đa giác. Quan sát mức trung bình như thế nào hướng và số lượng của các cạnh được kết nối với đỉnh cực này xác định phương hướng và sức mạnh của nó "Pulled" (đã kéo)<br>![TEXT](/assets/img/collections/ngons-02.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+- NGONS là một void, sự vắng mặt của các cạnh. chúng thể hiện sự mất cân bằng 'Negative' (tiêu cực) hoặc
+dưới mức trung bình của "Pull" (kéo), quan sát hai đỉnh này bị kéo đi như thế nào từ trung tâm của NGON theo các cạnh được gắn liền với chúng.<br>![TEXT](/assets/img/collections/ngons-03.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+#### Balance
+
+- Để một đỉnh được coi là cân bằng mỗi cạnh được kết nối với nó phải được phản chiếu đối xứng trên toàn bộ
+đỉnh. Tiếp tuyến tại đó cạnh nối với đỉnh phải được nhân đôi và chiều dài của cạnh được kết nối với đỉnh cũng phải giống nhau ở mỗi bên.<br>![TEXT](/assets/img/collections/ngons-04.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+- Để một phần cấu trúc liên kết được coi là cân bằng, mọi đỉnh bên trong miếng vá phải được cân bằng và
+mỗi đỉnh nối với đỉnh đó cũng phải cân đối.<br>![TEXT](/assets/img/collections/ngons-05.jpg){:.w3-image.cursor-zoom onclick="onZoomImg(this)"}
+
+[Xem thêm chi tiết ở đây...](https://www.artstation.com/artwork/0n93EV){:.external.hvr-forward rel="nofollow" target="_blank"}
+
+[Hãy luyện tập...](https://www.artstation.com/artwork/mYVE1){:.external.hvr-forward rel="nofollow" target="_blank"}

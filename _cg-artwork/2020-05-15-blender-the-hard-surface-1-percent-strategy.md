@@ -81,6 +81,16 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 - **Rotate** (**R**) phụ thuộc vào **Tranform Pivot Point** đang là gì (*3D cursor, Individual Origins, Median Point...*)
 - **Instances** (*Vertices, Faces, Collection*) là một cách nhanh chóng để thêm cùng một hình học (**same geometry**) vào một cảnh nhiều lần mà **không cần sao chép dữ liệu cơ bản**. *Menu: Add > Collection Instance*. Có thể chuyển một Instance thành Real ([Make Instances Real](https://docs.blender.org/manual/en/latest/scene_layout/object/editing/apply.html#bpy-ops-object-duplicates-make-real){:.external.hvr-forward rel="nofollow" target="_blank"})
 - Để tận dụng một Cutter (ví dụ Cắt trên + Cắt dưới), nếu Shift-D thì không ăn Boolean đang có sẵn > trước khi duplicate thì chuyển Edit Mode > Select All (A) > Shift-D > kéo đến vị trí khác cần cắt, việc này bản chất là duplicate Hình học của Object Cutter chứ không tạo một Object khác (sẽ không giữ được boolean)
+- Mặc định **CTRL** sẽ kích hoạt **snaping** trong khi *transform (G:move, R:rotate, S:scale)* kể cả khi magnetic icon is disabled.
+- **Mirror Modifier**: có thể hình dung *X = -x đến +x, X = -y đến +y, Z = -z đến +z*. *Cần Apply Rotation trước khi Mirror (giống Apply Scale trước khi Bevel)*{:.w3-yellow}
+- **Join (J)** *khác với* **Fill (F)**, đều có thể nối 2 Vertice nhưng **Join (J)** tạo "**kết nối**" (*connect mesh*). *Không nên để một "connect line" ở giữa 1 cạnh (Bevel có thể làm overlap mesh)*. **Fill (F)** cũng có thể sử dụng để **loại bỏ các cạnh trong một mặt phẳng**. **Scale '0'**{:.w3-yellow} để làm phẳng 1 hoặc nhiều mặt theo một Axis (*cần đảm bảo Pivot Point đang là Individual*)
+- **Thao tác không dứt khoát** sẽ làm xuất hiện các Vertice, Faces, Edges **trùng lặp** khi E rồi hủy...
+- **Ctrl-R** sẽ không toàn vẹn nếu các mặt có số đỉnh không đồng đều > sử dụng **Knife (K)** thay thế: **K** (*Knife*) -> **C** (*Cut through*) -> **A** (*Angle contrain:30 độ*)
+- Khi "**ăn cắp hình học**" cần phải check **Normal Orientation** (*lỗi newbie thường găp*{:.w3-yellow}). Khi chức năng hoạt động không như mong đợi > **checklist**: *1.Kiểm tra Orientation, 2.Kiểm tra Wirefame (kiểm tra duplicate), 3.Kiểm tra transform (Scale...Origin...Pivot Points)*{:.w3-yellow}
+- Fix **Duplicate** với **Merge (M)** *by Distance* (select all). Có thể xem kết quả ở thanh Status Bar. *Áp dụng để làm sạch lưới khi sang bước tiếp theo (Material, Rigging...)*{:.w3-yellow}
+- Fix **Normal Orientation**: trong Edit Mode > Select All > **Alt-N (Normal)** > **Recaculate outside**{:.w3-yellow}...
+- Khi **thêm Object** *phải ở chế độ* **Object Mode**
+
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel">
 	<ol>
