@@ -90,7 +90,14 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 - Fix **Duplicate** với **Merge (M)** *by Distance* (select all). Có thể xem kết quả ở thanh Status Bar. *Áp dụng để làm sạch lưới khi sang bước tiếp theo (Material, Rigging...)*{:.w3-yellow}
 - Fix **Normal Orientation**: trong Edit Mode > Select All > **Alt-N (Normal)** > **Recaculate outside**{:.w3-yellow}...
 - Khi **thêm Object** *phải ở chế độ* **Object Mode**
-
+- *Làm sạch lưới*{:.w3-yellow}: **A (select all) > X (delete) > Litmited Dissolve** (hủy Đỉnh và Cạnh nhưng giới hạn bởi góc độ và hình học bao quanh)
+- *Overlap là các mặt lưới trùng lên nhau*{:.w3-yellow} (ví dụ 2 Bevel bị chồng mép ngoài... hoặc là một cạnh Connect bị cố định vị trí khi Bevel...). **Bevel Modifier** có các tùy chọn "**Clamp Overlap**" và "**Loop Side**" để clean các lỗi này.
+- **Shift-B** để chọn *vùng Zoom-In*{:.w3-yellow}
+- Plan/Face có thể M at Center để **tạo điểm** > **Convert To Curve** > **Tạo độ dày** với *Properties.Geometry.Bevel.Round.Depth* > **Convert To Mesh**.
+- Nối 2 mặt (vòng cạnh) bằng **Bridge Edge Loops** (*Segments*) hoặc **LoopTools.Bridge** (*Numbers of Cuts*). *Điều kiện là phải Join (Ctrl-J) 2 Object lại với nhau (nếu thuộc về 2 Object riêng biệt)*{:.w3-yellow}
+- **Tạo nối chữ T**: 2 hình **trụ 6 cạnh** > Xóa mặt nằm ngang > chỉnh sao cho **vòng cạnh 2 mặt bằng nhau** > **Bridge** > Ctrl-1 (**Subdivision**) > Ctrl-R (Egde Loop) để scope vùng (giữ cạnh)
+- [TRICK] tạo các **mặt đai ốc**: Chọn template (đỉnh cách đỉnh) > **Ctrl-Shift+Numpad(+) để thêm vùng chọn dựa trên pattern hiện tại > Ctrl-Shift-B (Bevel cho Vertices) > LoopTools.Circle > Extrude > Scale > Face Mode > Fill (F)**
+- [TRICK] **Sử dụng Empty** (Cube) để **làm Parent** của một Object khác (Horn-Sừng), những gì áp dụng cho Parent ảnh hưởng đến Child có thể áp dụng với Empty Cube (ví dụ: Mirror, Transform) sẽ dễ dàng hơn với một nhóm phức tạp (Horn-Sừng)
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel">
 	<ol>
