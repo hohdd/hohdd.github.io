@@ -98,6 +98,12 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 - **Tạo nối chữ T**: 2 hình **trụ 6 cạnh** > Xóa mặt nằm ngang > chỉnh sao cho **vòng cạnh 2 mặt bằng nhau** > **Bridge** > Ctrl-1 (**Subdivision**) > Ctrl-R (Egde Loop) để scope vùng (giữ cạnh)
 - [TRICK] tạo các **mặt đai ốc**: Chọn template (đỉnh cách đỉnh) > **Ctrl-Shift+Numpad(+) để thêm vùng chọn dựa trên pattern hiện tại > Ctrl-Shift-B (Bevel cho Vertices) > LoopTools.Circle > Extrude > Scale > Face Mode > Fill (F)**
 - [TRICK] **Sử dụng Empty** (Cube) để **làm Parent** của một Object khác (Horn-Sừng), những gì áp dụng cho Parent ảnh hưởng đến Child có thể áp dụng với Empty Cube (ví dụ: Mirror, Transform) sẽ dễ dàng hơn với một nhóm phức tạp (Horn-Sừng)
+- [Poly Haven](https://polyhaven.com/all){:.external.hvr-forward rel="nofollow" target="_blank"}: cung cấp Assets (HDRIs, Textures, Models) Free (CC0)... (nếu có điều kiện thì mua Add-on ủng hộ)
+- Sử dụng [**Node Wrangler**](https://docs.blender.org/manual/en/4.1/addons/node/node_wrangler.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"} > **Ctrl-T** (*Add Texture Setup*) để Viewport Sharding **Material Preview** *giống hệt với*{:.w3-yellow} **Rendered** cho thuận tiện sửa Material giống với lúc Rendered (*Material Preview sẽ nhanh hơn Rendered*)
+- **Material có thể Copy-Paste** trong menu Material (**Copy to Selected Object**...)
+- **C** để chọn (*Circle Select*), **Shift-C** để loại bỏ, cuộn chuột giữa để tăng giảm bán kính Circle Select. Hữu ích khi select Đỉnh/Cạnh/Mặt
+- Hình tam giác không thể **UỐN cong**! **Vấn đề Shading trên Surface** xảy ra khi Quads hoặc NGONS có **các đỉnh không nằm trên cùng một mặt phẳng**! *Scale '0'*{:.w3-yellow} có thể làm phẳng một Face nên có thể fix được vấn đề này...
+- Fix lỗi Sharding "**butterfly**{:.w3-yellow}" (hình cánh bướm) khi *Mirror Modifier*: **1.Bỏ "Harden Normals"** trong Bevel, **2.chọn "Face Strength" là "Affected"** trong Bevel, **3.Thêm "Weighted Normals"** và tích **chọn "Face Influence"** rồi **tăng Weight lên 100**.
 
 <div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel">
 	<ol>

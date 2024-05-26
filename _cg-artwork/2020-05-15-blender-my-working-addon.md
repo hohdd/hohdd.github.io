@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: "Blender Main Add-on (My Working Add-on)"
-description: "Blender Main Add-on (My Working Add-on)"
+title: "Blender Main Add-on (My Working Add-on) and Assets Resources"
+description: "Blender Main Add-on (My Working Add-on) and Assets Resources"
 
 ### HUMAN
-header: "Blender Main Add-on (My Working Add-on)"
+header: "Blender Main Add-on (My Working Add-on) and Assets Resources"
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
@@ -44,6 +44,11 @@ date: 2020-05-15 14:26:14 +0700
 - [Bool Tool](https://docs.blender.org/manual/en/4.1/addons/object/bool_tools.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"}
 - [Add Mesh: Extra Objects](https://docs.blender.org/manual/en/4.1/addons/add_mesh/mesh_extra_objects.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"}
 - [Add Curve: Extra Objects](https://docs.blender.org/manual/en/4.1/addons/add_curve/extra_objects.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"}
+- [Bolt Factory (Bu lông - Đai ốc)](https://docs.blender.org/manual/en/4.1/addons/add_mesh/boltfactory.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"}
 - [Rigify](https://docs.blender.org/manual/en/4.1/addons/rigging/rigify/index.html){:.external.hvr-forward rel="nofollow" target="_blank"}
 
 ## Paid
+- [Hard Ops/Boxcutter](https://blendermarket.com/products/hard-ops--boxcutter-ultimate-bundle){:.external.hvr-forward rel="nofollow" target="_blank"}
+
+#  Assets Resources
+- [Poly Haven](https://polyhaven.com/all){:.external.hvr-forward rel="nofollow" target="_blank"}: cung cấp Assets (HDRIs, Textures, Models) Free (CC0)...
