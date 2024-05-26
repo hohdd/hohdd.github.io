@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: "Blender Screen & Object"
-description: "Blender Screen & Object"
+title: "Blender Main Add-on (My Working Add-on)"
+description: "Blender Main Add-on (My Working Add-on)"
 
 ### HUMAN
-header: "Blender Screen & Object"
+header: "Blender Main Add-on (My Working Add-on)"
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
@@ -28,14 +28,22 @@ collection: Blender # this for AMP related post
 category: Blender
 
 ### highlight_text
-highlight_text: true
-highlight_yellow: "đơn giản hóa, Đơn giản hóa, Đơn Giản Hóa"
+# highlight_text: true
+# highlight_yellow: "đơn giản hóa, Đơn giản hóa, Đơn Giản Hóa"
 
 ### Date nếu không có sẽ lấy từ tên file theo format "YEAR-MONTH-DAY-title.md"
 date: 2020-05-15 14:26:14 +0700
 ### permalink: /url-ghi-de-mac-dinh # cân nhắc nếu muốn dùng!
 # ROADMAP: https://github.com/utilForever/game-developer-roadmap
 ---
-## [Blender Screen & Object](https://docs.blender.org/manual/en/latest/scene_layout/object/introduction.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+# Blender Main Add-on (My Working Add-on)
 
-TODO
+## Free
+- [PowerSave](https://bonjorno7.gumroad.com/l/powersave){:.external.hvr-forward rel="nofollow" target="_blank"}
+- [Screencast Keys](https://github.com/nutti/Screencast-Keys){:.external.hvr-forward rel="nofollow" target="_blank"}
+- [Bool Tool](https://docs.blender.org/manual/en/4.1/addons/object/bool_tools.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"}
+- [Add Mesh: Extra Objects](https://docs.blender.org/manual/en/4.1/addons/add_mesh/mesh_extra_objects.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"}
+- [Add Curve: Extra Objects](https://docs.blender.org/manual/en/4.1/addons/add_curve/extra_objects.html?utm_source=blender-4.1.0){:.external.hvr-forward rel="nofollow" target="_blank"}
+- [Rigify](https://docs.blender.org/manual/en/4.1/addons/rigging/rigify/index.html){:.external.hvr-forward rel="nofollow" target="_blank"}
+
+## Paid

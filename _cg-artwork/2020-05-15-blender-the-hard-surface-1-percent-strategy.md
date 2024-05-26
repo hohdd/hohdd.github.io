@@ -64,36 +64,36 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 		- Nếu nhìn không ổn thì có thể do thứ tự Modifier (**thứ tự rất quan trọng**), hãy sắp xếp Boolean xong rồi mới đến Bevel sau đó.
 		- Tuy cùng là Boolean Modifier và chọn Object nhưng sử dụng Tool và Manual bằng một cách nào đó đang khác nhau
 	- tùy chọn Geometry > Clamp Overlap để tránh Overlap nhưng góc vát bị loại bỏ => ưu tiên để lại góc vát (Bevel) nhưng sẽ có Overlap xảy ra > *để fix Overlap thì Modifier sẽ chọn* **Solver là Fast thay vì Exact**
-- Boolean Modifier nếu object áp dụng Boolean đã có hình hài đầy đủ (nhưng vẫn phụ thuộc vào object khác, ví dụ: Union, Cutter) thì **có thể ẩn Object đã Union (H) và Cutters đi** (nhưng khi di chuyển sẽ phải kèm theo chúng hoặc sẽ cần Apply Modifer luôn)
-	- Để di chuyển Object đã apply modifier kèm "phụ thuộc" của nó (object Union hoặc Cutters) > **Set Parent**{:.w3-text-red}: parent cần chọn cuối cùng > **Ctrl-P hoặc menu:Object > Parent**{:.w3-text-red} (*Alt-P để un-parent*). Tất nhiên nếu keep reference (collection) và khi điều chỉnh parent object sẽ tốn performance (giật)
+- Boolean Modifier nếu object áp dụng Boolean đã có hình hài đầy đủ (nhưng vẫn phụ thuộc vào object khác, ví dụ: Union, Cutter) thì **có thể ẩn Object đã Union (H) và** **Cutters**{:.w3-yellow} **đi** (nhưng khi di chuyển sẽ phải kèm theo chúng hoặc sẽ cần Apply Modifer luôn)
+	- Để di chuyển Object đã apply modifier kèm "phụ thuộc" của nó (object Union hoặc Cutters) > **Set Parent**{:.w3-text-red}: *parent cần chọn cuối cùng*{:.w3-yellow} > **Ctrl-P hoặc menu:Object > Parent**{:.w3-text-red} (*Alt-P để un-parent*). Tất nhiên nếu keep reference (collection) và khi điều chỉnh parent object sẽ tốn performance (giật)
 	- Trường hợp muốn tách riêng object data (ví dụ 1 object bị slide thành 2 phần nhưng Blender vẫn đang sử dụng chung data) => vào Object Data > tạo bản sao (icon số lượng object dùng chung data, bên cạnh Fake User, để ý tên: chọn object sau khác tên để tách bản sao sẽ được 2 tên trùng với tên object)
-	- **Lỗi surface** khi cả boolean object và toán tử đều "Shape Smooth by Angle" => giải quyết bằng cách flip normal của object toán tử boolean! => ko ổn, bị đảo normal, khi sửa lại thì vẫn bị => sẽ không làm Smooth object dùng để cắt, *khi Apply Modifier sẽ Smooth kết quả sau cũng được! (kết quả thế nào thì sau khi apply đều có thể toggle Smooth để fix!)*{:.w3-yellow}
+	- **Lỗi surface** khi cả boolean object và toán tử đều "Shape Smooth by Angle" => *thay đổi của version 4.1 > chỉ Shape Smooth + sử dụng kèm 3 Modifiers (1.Bevel nhỏ, 2.Smooth by Angle, 3.Weighted Normal...)*{:.w3-yellow}
 	- Có thể sử dụng Boolean cho object boolean (toán tử boolean)
-	- "**Ăn cắp hình học**{:.w3-text-red}" có thể nhanh chóng tạo được object toán tử boolean.
+	- "**Ăn cắp hình học**{:.w3-text-red}" có thể nhanh chóng tạo được object toán tử boolean. Hoặc tạo hình học cho 1 lớp vỏ, 1 miếng ốp với **Solidify**.
 - Di chuyển một object lên bề mặt một object => **bật Snap Face + Align Rotation to Target**.
-	- Để S/G/E theo hướng XYZ local (khi object bị nghiêng, không còn theo XYZ của world) thì **ZZ, XX, YY**{:.w3-yellow}
+	- Để S/G/E theo hướng **XYZ local**{:.w3-yellow} (khi object bị nghiêng, không còn theo XYZ của world) thì **ZZ, XX, YY**{:.w3-yellow}
 - **Auto Merge Vertices** ở góc trên cùng bên phải (4.1) trong option có thể cài đặt **Threshold**, chỉ gần chọn Edit.Vertice rồi G và nhả, nó sẽ so sánh threahold với khoảng cách từ vị trí thả đến các Vertice lân cận, nếu nhỏ hơn thì nó sẽ merge vào vị trí gần nhất. Hoặc **Merge.At Center** cũng có thể áp dụng cho các Vertices.
-- **ĐỐI XỨNG XUYÊN TÂM**: Edit Mode > Mesh > Symmetrize để áp dụng mesh đối xứng (**lưu ý cần Apply Rotation trước**): Edit mode > select all (A) > Symmetrize và chọn trục và hướng đối xứng xuyên tâm
+- **ĐỐI XỨNG XUYÊN TÂM**: Edit Mode > Mesh > Symmetrize để áp dụng mesh đối xứng (**lưu ý cần Apply Rotation trước**{:.w3-yellow}): Edit mode > select all (A) > Symmetrize và chọn trục và hướng đối xứng xuyên tâm
 - **Method** của các **Modifier** ảnh hưởng (**phạm vi áp dụng**) tùy thuộc vào **Angle, Weight, Vertex Group**... (**chức năng Select** cũng có tùy chọn Select theo: Sharp Edges, Similar...)
-- Từng bước xử lý overlap, xem vấn đề nó nằm ở đâu (duplicate egde/vertex? trùng line connect?), biết được nó do đâu mà có? để giải quyết (xóa bỏ duplicate, move line connect ra một vị trí khác, weight edge...)
-- Blender Addon: [PowerSave](https://app.gumroad.com/d/0adc72e4b778ffdc3ae9a9d438dbecda){:.external.hvr-forward rel="nofollow" target="_blank"}, [Screencast Keys](https://github.com/nutti/Screencast-Keys){:.external.hvr-forward rel="nofollow" target="_blank"}
-- Sau khu Boolean xong bấm **Shift-2** để ẩn cả object boolean và collection cutter
+- *Từng bước*{:.w3-yellow} xử lý overlap, *xem vấn đề nó nằm ở đâu*{:.w3-yellow} (duplicate egde/vertex? trùng line connect?), biết được nó do đâu mà có? để giải quyết (xóa bỏ duplicate, move line connect ra một vị trí khác, weight edge...)
+- Blender Addon: [PowerSave](https://app.gumroad.com/d/0adc72e4b778ffdc3ae9a9d438dbecda){:.external.hvr-forward rel="nofollow" target="_blank"}, [Screencast Keys](https://github.com/nutti/Screencast-Keys){:.external.hvr-forward rel="nofollow" target="_blank"} ... (TODO: cần làm 1 page note về sử dụng các addon "Main Add-on"...)
+- Sau khu Boolean xong bấm **Shift-2** để ẩn cả object boolean và collection cutter. (Shift-1: ẩn collection vị trí 1, Shift-2: ẩn collection vị trí 2...)
 - **Rotate** (**R**) phụ thuộc vào **Tranform Pivot Point** đang là gì (*3D cursor, Individual Origins, Median Point...*)
 - **Instances** (*Vertices, Faces, Collection*) là một cách nhanh chóng để thêm cùng một hình học (**same geometry**) vào một cảnh nhiều lần mà **không cần sao chép dữ liệu cơ bản**. *Menu: Add > Collection Instance*. Có thể chuyển một Instance thành Real ([Make Instances Real](https://docs.blender.org/manual/en/latest/scene_layout/object/editing/apply.html#bpy-ops-object-duplicates-make-real){:.external.hvr-forward rel="nofollow" target="_blank"})
 - Để tận dụng một Cutter (ví dụ Cắt trên + Cắt dưới), nếu Shift-D thì không ăn Boolean đang có sẵn > trước khi duplicate thì chuyển Edit Mode > Select All (A) > Shift-D > kéo đến vị trí khác cần cắt, việc này bản chất là duplicate Hình học của Object Cutter chứ không tạo một Object khác (sẽ không giữ được boolean)
-- Mặc định **CTRL** sẽ kích hoạt **snaping** trong khi *transform (G:move, R:rotate, S:scale)* kể cả khi magnetic icon is disabled.
-- **Mirror Modifier**: có thể hình dung *X = -x đến +x, X = -y đến +y, Z = -z đến +z*. *Cần Apply Rotation trước khi Mirror (giống Apply Scale trước khi Bevel)*{:.w3-yellow}
+- Mặc định *[**CTRL** sẽ kích hoạt **snaping**]*{:.w3-yellow} trong khi *transform (G:move, R:rotate, S:scale)* kể cả khi magnetic icon is disabled.
+- **Mirror Modifier**: có thể hình dung *X = -x đến +x, X = -y đến +y, Z = -z đến +z*. *Cần Apply Rotation trước khi Mirror (giống Apply Scale trước khi Bevel)*{:.w3-yellow.w3-text-red}
 - **Join (J)** *khác với* **Fill (F)**, đều có thể nối 2 Vertice nhưng **Join (J)** tạo "**kết nối**" (*connect mesh*). *Không nên để một "connect line" ở giữa 1 cạnh (Bevel có thể làm overlap mesh)*. **Fill (F)** cũng có thể sử dụng để **loại bỏ các cạnh trong một mặt phẳng**. **Scale '0'**{:.w3-yellow} để làm phẳng 1 hoặc nhiều mặt theo một Axis (*cần đảm bảo Pivot Point đang là Individual*)
-- **Thao tác không dứt khoát** sẽ làm xuất hiện các Vertice, Faces, Edges **trùng lặp** khi E rồi hủy...
-- **Ctrl-R** sẽ không toàn vẹn nếu các mặt có số đỉnh không đồng đều > sử dụng **Knife (K)** thay thế: **K** (*Knife*) -> **C** (*Cut through*) -> **A** (*Angle contrain:30 độ*)
-- Khi "**ăn cắp hình học**" cần phải check **Normal Orientation** (*lỗi newbie thường găp*{:.w3-yellow}). Khi chức năng hoạt động không như mong đợi > **checklist**: *1.Kiểm tra Orientation, 2.Kiểm tra Wirefame (kiểm tra duplicate), 3.Kiểm tra transform (Scale...Origin...Pivot Points)*{:.w3-yellow}
+- **Thao tác không dứt khoát** sẽ làm xuất hiện các Vertice, Faces, Edges **trùng lặp** khi E rồi hủy... (sử dụng Mesh Machine có thể nhanh chóng Clean Mesh và nhiều tiện ích khác... hoặc Fix Duplicate với **Merge (M) by Distance** (select all)...)
+- **Ctrl-R** sẽ "không toàn vẹn" nếu các mặt có số đỉnh không đồng đều (*Edge không loop*) > sử dụng **Knife (K)** thay thế: **K** (*Knife*) -> **C** (*Cut through*) -> **A** (*Angle contrain:30 độ*)
+- Khi "**ăn cắp hình học**" cần phải check **Normal Orientation** (*lỗi newbie thường găp*{:.w3-yellow}). Khi chức năng hoạt động không như mong đợi > **checklist**: *1.Kiểm tra Orientation, 2.Kiểm tra Wirefame (kiểm tra duplicate), 3.Kiểm tra transform (Scale...Origin...Pivot Points)*{:.w3-yellow} (**HINT**: *đã hỏi trên group discord...*)
 - Fix **Duplicate** với **Merge (M)** *by Distance* (select all). Có thể xem kết quả ở thanh Status Bar. *Áp dụng để làm sạch lưới khi sang bước tiếp theo (Material, Rigging...)*{:.w3-yellow}
 - Fix **Normal Orientation**: trong Edit Mode > Select All > **Alt-N (Normal)** > **Recaculate outside**{:.w3-yellow}...
 - Khi **thêm Object** *phải ở chế độ* **Object Mode**
-- *Làm sạch lưới*{:.w3-yellow}: **A (select all) > X (delete) > Litmited Dissolve** (hủy Đỉnh và Cạnh nhưng giới hạn bởi góc độ và hình học bao quanh)
-- *Overlap là các mặt lưới trùng lên nhau*{:.w3-yellow} (ví dụ 2 Bevel bị chồng mép ngoài... hoặc là một cạnh Connect bị cố định vị trí khi Bevel...). **Bevel Modifier** có các tùy chọn "**Clamp Overlap**" và "**Loop Side**" để clean các lỗi này.
-- **Shift-B** để chọn *vùng Zoom-In*{:.w3-yellow}
-- Plan/Face có thể M at Center để **tạo điểm** > **Convert To Curve** > **Tạo độ dày** với *Properties.Geometry.Bevel.Round.Depth* > **Convert To Mesh**.
+- *Làm sạch lưới*{:.w3-yellow}: **A (select all) > X (delete) > Litmited Dissolve** (hủy Đỉnh và Cạnh nhưng giới hạn bởi góc độ và hình học bao quanh, *cần kiểm tra cẩn thận vì nó có thể loại bỏ một số Cạnh không mong muốn...*)
+- *Overlap là các mặt lưới trùng lên nhau*{:.w3-yellow} (ví dụ 2 Bevel bị chồng mép ngoài... hoặc là một cạnh Connect bị cố định vị trí khi Bevel...). **Bevel Modifier** có các tùy chọn "**Clamp Overlap**" và "**Loop Side**" để tự động tránh các lỗi này (*khi điều tra hoặc muốn full controll thì nên bỏ 2 tùy chọn này*).
+- **Shift-B** để chọn *vùng Zoom-In*{:.w3-yellow.w3-text-red}
+- Plan/Face có thể M at Center để **tạo điểm** > **Convert To Curve** > **Tạo độ dày** với *Properties.Geometry.Bevel.Round.Depth* > **Convert To Mesh**... > *Subdivide, Subdivision Modifier, Bevel tạo thêm Đỉnh, Proportional Editing, LoopTools.Relax...*{:.w3-yellow}
 - Nối 2 mặt (vòng cạnh) bằng **Bridge Edge Loops** (*Segments*) hoặc **LoopTools.Bridge** (*Numbers of Cuts*). *Điều kiện là phải Join (Ctrl-J) 2 Object lại với nhau (nếu thuộc về 2 Object riêng biệt)*{:.w3-yellow}
 - **Tạo nối chữ T**: 2 hình **trụ 6 cạnh** > Xóa mặt nằm ngang > chỉnh sao cho **vòng cạnh 2 mặt bằng nhau** > **Bridge** > Ctrl-1 (**Subdivision**) > Ctrl-R (Egde Loop) để scope vùng (giữ cạnh)
 - [TRICK] tạo các **mặt đai ốc**: Chọn template (đỉnh cách đỉnh) > **Ctrl-Shift+Numpad(+) để thêm vùng chọn dựa trên pattern hiện tại > Ctrl-Shift-B (Bevel cho Vertices) > LoopTools.Circle > Extrude > Scale > Face Mode > Fill (F)**
@@ -104,6 +104,8 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 		<li>Tạo boolean (quy trình làm việc không phá hủy)</li>
 		<li>Boolean Cleanup (sau khi được Apply sẽ cần phải tìm geometry overlaps để clean)</li>
 	</ol>
+</div>
+<div class="w3-card w3-leftbar w3-border-green w3-pale-green w3-panel">
 	<ol>
 		<li>Tạo toán tử boolean: object để Boolean (Obj toán tử)</li>
 		<li>Thực hiện boolean: chuyển Object Mode chọn Obj toán tử > Shift chọn vật thể cần Boolean > <strong>Ctrl-Shift-B</strong> hoặc <strong>Ctrl -+*/</strong> </li>
@@ -111,7 +113,7 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 	</ol>
 </div>
 
-- *How can we get clean shading when we run Booleans on curved surfaces?*{:.w3-yellow} Bí quyết là làm cho Boolean bị cô lập chặt chẽ đến mức hầu như không thể nhận thấy được các tạo tác tạo bóng.
+- *How can we get clean shading when we run Booleans on curved surfaces?*{:.w3-yellow} Bí quyết là làm cho Boolean bị cô lập chặt chẽ đến mức hầu như không thể nhận thấy được các tạo tác tạo bóng (*dùng Edge Loops để cô lập*).
 	- Sử dụng Bevel và Subdivision
 	- Tạo 2 Egde loop để chặn đường sáng bên trên và bên dưới đường boolean
 	- **Di chuyển/Hợp nhất** các đỉnh chồng chéo: Merge các điểm ở gần (**M > At Center**), kéo xa điểm gần trùng nhau sao cho miệng đường cong là các lưới Quads (trượt cạnh **G G**, trượt đỉnh **Shift-V**), Dissolve Edge **Ctrl-X**. *Phải cẩn thận để không di chuyển các đỉnh giữ độ cong đi quá xa!*{:.w3-yellow}
@@ -123,7 +125,7 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 - Dealing with Boolean and Bevels:
 	- Cách làm thủ công và tốn thời gian là kéo các Vertex (giao nhau) trên bề mặt cong lại gần đường gấp boolean (vẫn giữ Edge), chặn Top-Bottom để cô lập vùng boolean
 	- Loại bỏ hết các overlap khi bevel có thể sẽ mất thời gian => không dùng Bevel, lúc Render sẽ sử dụng INPUT Bevel (lúc này sẽ không bị ảnh hưởng overlap của geometry)
-	- Sử dụng **Modifier Transfer Data** (*giải pháp cuối cùng khi xung quanh không có nhiều Mesh...*)
+	- Sử dụng **Modifier Transfer Data** (*bề mặt phẳng tuyệt đối vì copy từ object khác... phù hợp khi xung quanh không có nhiều Mesh, mesh xung quanh đai ốc quá thưa...*)
 	- Sử dụng **Quad Remesher** Blender Add-on
 	- Sử dụng **Offset Cut** và **Boolean Cleanup** của **MACHIN3**
 	- [**Sử dụng USD**](https://blendermarket.com/creators/machin3){:.external.hvr-forward rel="nofollow" target="_blank"}: 120$ = Meshmachine + Decalmachine + Machin3Tools + Curvemachine
@@ -135,5 +137,5 @@ https://www.blenderbros.com/ dhnec / 1.....a@ /MyLibrary
 		- *Stack đúng là*{:.w3-yellow}: **Boolean > Bevel > Smooth by Angle > Weighted Normal**
 
 ### Shading and design considerations
-- Avoid tránh Overlap issue khi move, boolean (cut, diffirence, union)...
-- Bevel chọn số lượng segment (số mặt trên Bevel) sao cho nếu muốn giảm level poly thì sẽ không bị ảnh hưởng => luôn chọn segment là SỐ CHẴN (nhìn ở status bar khi kéo Bevel).
+- Avoid **tránh trước (dự đoán trước)**{:.w3-yellow.w3-text-red} việc Overlap issue khi move, boolean (cut, diffirence, union)...
+- Bevel chọn số lượng segment (số mặt trên Bevel) sao cho nếu muốn giảm level poly thì sẽ không bị ảnh hưởng => **luôn chọn segment là SỐ CHẴN**{:.w3-yellow.w3-text-red} (nhìn ở status bar khi kéo Bevel).
