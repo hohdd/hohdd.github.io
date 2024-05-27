@@ -328,11 +328,11 @@ a.external {
   /* Remove this if you don't want the 3D effect */
   /* perspective: 1000px; */
   
-  /* &:hover{
-    .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-  } */
+  /* &:hover{ */
+    /* .flip-card-inner { */
+      /* transform: rotateY(180deg); */
+    /* } */
+  /* } */
 }
 
 /* This container is needed to position the front and back side */
@@ -347,9 +347,9 @@ a.external {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-/* .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-} */
+/* .flip-card:hover .flip-card-inner { */
+  /* transform: rotateY(180deg); */
+/* } */
 .flipme .flip-card-inner {
   transform: rotateY(180deg);
 }
