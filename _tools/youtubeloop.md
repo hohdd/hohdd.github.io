@@ -2,7 +2,7 @@
 layout: default
 robots: NOINDEX, NOFOLLOW
 # info
-priority: 1
+priority: 2
 tool_name: Youtube Loop
 icon: "/assets/img/tools/youtube_loop_512x512.png"
 description: Youtube Loop

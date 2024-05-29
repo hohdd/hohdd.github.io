@@ -2,7 +2,7 @@
 layout: default
 robots: NOINDEX, NOFOLLOW
 # info
-priority: 1
+priority: 3
 tool_name: Reading
 icon: "/assets/img/tools/reading_512x512.png"
 description: Reading

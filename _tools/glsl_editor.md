@@ -2,7 +2,7 @@
 layout: compress
 robots: NOINDEX, NOFOLLOW
 # info
-priority: 1
+priority: 3
 tool_name: GLSL Editor
 icon: "/assets/img/tools/glsl_editor_400x400.png"
 description: GLSL Editor
