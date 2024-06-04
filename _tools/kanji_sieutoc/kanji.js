@@ -159,8 +159,14 @@ function toggleDisplay(className) {
         let _elm = cols[i];
       if (_elm.style.display) {
         _elm.style.display = '';
+        if (className === 'main-td-HintRemember') {
+            document.needToCallToggleExceptKanjiNext = false;
+        }
       } else {
         _elm.style.display = 'none';
+        if (className === 'main-td-HintRemember') {
+            document.needToCallToggleExceptKanjiNext = true;
+        }
       }
     }
 }
@@ -173,8 +179,16 @@ function toggleExceptKanji() {
     // toggleDisplay('main-td-Typing');
     // toggleDisplay('main-td-Hiragana');
 
-    toggleDisplay('main-td-HanViet');
-    toggleDisplay('main-td-Vietnamese');
+    // optionCheckboxHanViet | optionCheckboxMeaning
+    const optionCheckboxHanViet = document.getElementById('optionCheckboxHanViet').checked;
+    const optionCheckboxMeaning = document.getElementById('optionCheckboxMeaning').checked;
+
+    if (! optionCheckboxHanViet) {
+        toggleDisplay('main-td-HanViet');
+    }
+    if (! optionCheckboxMeaning) {
+        toggleDisplay('main-td-Vietnamese');
+    }
     toggleDisplay('main-td-HintRemember');
 }
 function nextMainContent() {
@@ -185,6 +199,11 @@ function nextMainContent() {
     } else {
         renderMainContent(menuData[0]);
     }
+
+    // check and call toggleExceptKanji();
+    if (document.needToCallToggleExceptKanjiNext) {
+        toggleExceptKanji();
+    }
 }
 function preMainContent() {
     let currentIndex = menuData.indexOf(currentCatGroup);
@@ -193,5 +212,10 @@ function preMainContent() {
         renderMainContent(menuData[menuData.length - 1]);
     } else {
         renderMainContent(menuData[currentIndex]);
+    }
+
+    // check and call toggleExceptKanji();
+    if (document.needToCallToggleExceptKanjiNext) {
+        toggleExceptKanji();
     }
 }
