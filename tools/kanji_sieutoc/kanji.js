@@ -164,6 +164,19 @@ function toggleDisplay(className) {
       }
     }
 }
+function toggleTypingAndOnKun() {
+    toggleDisplay('main-td-Typing');
+    toggleDisplay('main-td-Hiragana');
+}
+function toggleExceptKanji() {
+    /* ["Kanji", "HanViet", "Vietnamese", "Typing", "Hiragana", "HintRemember"] */
+    // toggleDisplay('main-td-Typing');
+    // toggleDisplay('main-td-Hiragana');
+
+    toggleDisplay('main-td-HanViet');
+    toggleDisplay('main-td-Vietnamese');
+    toggleDisplay('main-td-HintRemember');
+}
 function nextMainContent() {
     let currentIndex = menuData.indexOf(currentCatGroup);
     ++currentIndex;
