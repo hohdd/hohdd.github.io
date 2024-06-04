@@ -441,6 +441,24 @@ var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'Arr
 var current = 0;
 
 var keyHandler = function (event) {
+  // key combinations to call thirdMenu, secondMenu, quickNote
+  // ctrlKey, altKey, shiftKey
+  try {
+    if (event.altKey && event.key === '1') {
+      eval(`${document.thirdFuncName}`);
+    } else if (event.altKey && event.key === '2') {
+      eval(`${document.secondFuncName}`);
+    } else if (event.altKey && event.key === '3') {
+      eval(openMemo());
+    } else if (event.altKey && event.key === '4') {
+      eval(openAudioSettings());
+    } else if (event.altKey && event.key === '5') {
+      eval(toggleMenu());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
   // BEGIN - if [Q]uery
   if (['q', 'Q'].indexOf(event.key) >= 0) {
     var selectedTxt = getSelectionText();

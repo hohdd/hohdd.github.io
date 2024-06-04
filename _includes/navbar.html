@@ -12,9 +12,11 @@
         <div class="w3-right" >
             {% if page.thirdMenu %}
             <span class="material-icons w3-button" onclick="{% if page.thirdMenuHandler %}{{ page.thirdMenuHandler }}{% else %}thirdMenuHandler(){% endif %}">{% if page.thirdMenuIcon %}{{ page.thirdMenuIcon }}{% else %}settings{% endif %}</span>
+            <script>document.thirdFuncName = '{{ page.thirdMenuHandler }}';</script>
             {% endif%}
             {% if page.secondMenu %}
             <span class="material-icons w3-button" onclick="{% if page.secondMenuHandler %}{{ page.secondMenuHandler }}{% else %}secondMenuHandler(){% endif %}">{% if page.secondMenuIcon %}{{ page.secondMenuIcon }}{% else %}settings{% endif %}</span>
+            <script>document.secondFuncName = '{{ page.secondMenuHandler }}';</script>
             {% endif%}
             {% if page.quickNote %}
             <span class="material-icons w3-button" onclick="openMemo()">create</span>
