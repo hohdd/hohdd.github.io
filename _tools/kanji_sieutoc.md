@@ -10,10 +10,10 @@ konami: true
 quickNote: true
 secondMenu: true
 secondMenuIcon: toys
-secondMenuHandler: toggleDisplay('main-td-Typing')
+secondMenuHandler: toggleTypingAndOnKun()
 thirdMenu: true
 thirdMenuIcon: extension
-thirdMenuHandler: toggleDisplay('main-td-Hiragana')
+thirdMenuHandler: toggleExceptKanji()
 ---
 <link rel="stylesheet" href="/tools/kanji_sieutoc/kanji.css" />
 
