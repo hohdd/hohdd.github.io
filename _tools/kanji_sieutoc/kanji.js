@@ -151,6 +151,9 @@ _$JSONLoader.load('/tools/kanji_sieutoc/MERGE_ALL_KANJI.json', function (err, js
     } else {
         renderMainContent(menuData[0]);
     }
+
+    // set quiz data
+    initQuizData(json);
 })
 
 function toggleDisplay(className) {
@@ -229,3 +232,144 @@ function preMainContent() {
         console.log(error);
     }
 }
+
+//---------------------- QUIZ: Begin ---------------------------//
+let quizIsPlaying = false; // Auto Play
+
+const quizMinNo = 1;
+const quizMaxNo = 2511;
+const quizPauseIcon = 'pause';
+const quizPlayIcon = 'play_arrow';
+
+const currentQuizNo_KEY = 'DongHD_Quiz_currentNo';
+let quizCurrentNo = localStorage.getItem(currentQuizNo_KEY);
+quizCurrentNo = quizCurrentNo ? Number(quizCurrentNo) : 1;
+
+const quizKanjiTxtElm = document.getElementById('quizKanjiTxtId');
+const quizTypingHiraganaTxtElm = document.getElementById('quizTypingHiraganaTxtId');
+const quizHanVietAndMeaningTxtElm = document.getElementById('quizHanVietAndMeaningTxtId');
+const quizGroupIndicatorTxtElm = document.getElementById('quizGroupIndicatorTxtId');
+const quizHintRememberTxtElm = document.getElementById('quizHintRememberTxtId');
+
+const quizPlayOrPauseBtnIconElm = document.getElementById('quizPlayOrPauseBtnIcon');
+
+const quizIntervalDelayInput = document.getElementById('quizIntervalDelay');
+const quizCurrentNoIndicatorInput = document.getElementById('quizCurrentNoIndicator');
+
+quizPlayOrPauseBtnIcon
+
+const quizDataSet = {};
+let currentItemQuiz = {};
+
+function initQuizData(jsonData) {
+    jsonData.forEach(obj => {
+        quizDataSet[obj.No] = obj;
+    });
+
+    // init display
+    currentItemQuiz = quizDataSet[quizCurrentNo];
+    displayContentQuiz();
+    setNoIndicator(quizCurrentNo);
+}
+function displayContentQuiz() {
+    quizKanjiTxtElm.textContent = currentItemQuiz.Kanji;
+    quizTypingHiraganaTxtElm.textContent = `${currentItemQuiz.Typing} (${currentItemQuiz.Hiragana})`;
+    quizGroupIndicatorTxtElm.textContent = `[GROUP: ${currentItemQuiz.GroupKJ} ${currentItemQuiz.GroupHV} ${currentItemQuiz.GroupVN}]`;
+    quizHanVietAndMeaningTxtElm.textContent = `${currentItemQuiz.HanViet} - ${currentItemQuiz.Vietnamese}`;
+    quizHintRememberTxtElm.textContent = `[${quizCurrentNo}] ${currentItemQuiz.HintRemember}`;
+}
+function quizPreItem() {
+    --quizCurrentNo;
+    quizCurrentNo = quizCurrentNo < quizMinNo ? quizMaxNo : quizCurrentNo;
+    currentItemQuiz = quizDataSet[quizCurrentNo];
+    displayContentQuiz();
+    localStorage.setItem(currentQuizNo_KEY, quizCurrentNo);
+    setNoIndicator(quizCurrentNo);
+}
+function quizNextItem() {
+    ++quizCurrentNo;
+    quizCurrentNo = quizCurrentNo > quizMaxNo ? 1 : quizCurrentNo;
+    currentItemQuiz = quizDataSet[quizCurrentNo];
+    displayContentQuiz();
+    localStorage.setItem(currentQuizNo_KEY, quizCurrentNo);
+    setNoIndicator(quizCurrentNo);
+}
+
+let quizIntervIdRef;
+let quizProgressFlag = 0;
+function quizPlayOrPause() {
+    // đổi trạng thái và icon (play_arrow | pause)
+    quizIsPlaying = !quizIsPlaying;
+    quizPlayOrPauseBtnIconElm.textContent = quizIsPlaying ? quizPauseIcon : quizPlayIcon;
+
+    // thiết lập ẩn hiện
+    toggleQuizItemDisplay(); // chắc chắn sẽ HIDE khi bắt đầu play
+
+    // Interval
+    clearInterval(quizIntervIdRef);
+    if (quizIsPlaying) {
+        let quizIntervalDelayInputValue = quizIntervalDelayInput.value;
+        quizIntervalDelayInputValue = quizIntervalDelayInputValue ? quizIntervalDelayInputValue : 1000;
+        quizIntervIdRef = setInterval(() => {
+            ++quizProgressFlag;
+            switch (quizProgressFlag) {
+                // sử dụng 'visibility' thay vì 'display' để giữ chỗ...
+                case 1:
+                    quizTypingHiraganaTxtElm.style.visibility = ''; // show
+                    break;
+                case 2:
+                    quizGroupIndicatorTxtElm.style.visibility = ''; // show
+                    break;
+                case 3:
+                    quizHanVietAndMeaningTxtElm.style.visibility = ''; // show
+                    break;
+                case 4:
+                    quizHintRememberTxtElm.style.visibility = ''; // show
+                    break;
+                case 5:
+                    quizProgressFlag = 0; // reset
+                    quizNextItem(); // next
+                    toggleQuizItemDisplay(); // HIDE on next
+                    break;
+            
+                default:
+                    break;
+            }
+        }, quizIntervalDelayInputValue);
+    } else {
+        // reset progress
+        quizProgressFlag = 0;
+        // sử dụng 'visibility' thay vì 'display' để giữ chỗ...
+        quizTypingHiraganaTxtElm.style.visibility = ''; // show
+        quizGroupIndicatorTxtElm.style.visibility = ''; // show
+        quizHanVietAndMeaningTxtElm.style.visibility = ''; // show
+        quizHintRememberTxtElm.style.visibility = ''; // show
+    }
+}
+function toggleQuizItemDisplay() {
+    toggleDisplayElement(quizTypingHiraganaTxtElm);
+    toggleDisplayElement(quizGroupIndicatorTxtElm);
+    toggleDisplayElement(quizHanVietAndMeaningTxtElm);
+    toggleDisplayElement(quizHintRememberTxtElm);
+}
+function toggleDisplayElement(elm) {
+    // sử dụng 'visibility' thay vì 'display' để giữ chỗ...
+    if (elm.style.visibility) {
+        // elm.style.display = '';
+        elm.style.visibility = '';
+    } else {
+        // elm.style.display = 'none';
+        elm.style.visibility = 'hidden';
+    }
+}
+function setNoIndicator(num) {
+    quizCurrentNoIndicatorInput.value = num;
+}
+function goToNoClicked() {
+    let num = quizCurrentNoIndicatorInput.value;
+    quizCurrentNo = num;
+    currentItemQuiz = quizDataSet[quizCurrentNo];
+    displayContentQuiz();
+    localStorage.setItem(currentQuizNo_KEY, quizCurrentNo);
+}
+//---------------------- QUIZ: End ---------------------------//
