@@ -72,6 +72,11 @@ function documentReady() {
   } catch (error) { 
     console.log(error);
   }
+  try {
+    registerPushNotification();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // secondMenu: true

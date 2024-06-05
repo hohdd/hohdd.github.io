@@ -33,6 +33,7 @@ thirdMenuHandler: toggleExceptKanji()
     </div>
 </div>
 
+<!-- Quiz Flashcard -->
 <div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Quiz Flashcard</div>
 <div class="w3-container">
     <div class="w3-panel w3-pale-yellow w3-border">
@@ -49,4 +50,21 @@ thirdMenuHandler: toggleExceptKanji()
     <span><input class="w3-button w3-border w3-border-blue" type="number" step="1" min="1" max="2511" id="quizCurrentNoIndicator"></span>
     <span class="material-icons w3-button w3-border w3-border-blue" onclick="goToNoClicked()" title="Next">input</span>
 </div>
+
+<!-- Push Notification (require 'quizDataSet') -->
+<div class="w3-container">
+    <h3>Notifications</h3>
+    <div class="w3-panel w3-sand w3-border" style="display: none" id="notificationElms">
+        <h1 id="notiKanjiTxtId">信</h1>
+        <small id="notiTypingHiraganaTxtId">しん (shin)</small>
+        <small id="notiGroupIndicatorTxtId">言 (NGÔN - nói)</small>
+        <h3 id="notiHanVietAndMeaningTxtId">TÍN - tin tưởng</h3>
+        <h5 id="notiHintRememberTxtId">NGƯỜI ĐỨNG NÓI sẽ được TIN TƯỞNG</h5>
+    </div>
+    <span class="material-icons w3-button w3-border w3-border-blue" onclick="notiPlayOrPause()" title="Play or Pause" id="notiPlayOrPauseBtnIcon">play_arrow</span>
+    <span><input class="w3-button w3-border w3-border-blue" type="number" step="500" min="10000" max="7200000" value="1800000" id="notiIntervalDelay"></span>
+    <span class="w3-button w3-border w3-border-blue" id="notiCountIndicator" onclick="pushNow()">...</span>
+    <span class="w3-button w3-border w3-border-blue" id="notiKanjiIndicator" onclick="toggleNotificationElms()">...</span>
+</div>
+
 <script src="/tools/kanji_sieutoc/kanji.js" type="text/javascript"></script>

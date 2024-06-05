@@ -1,3 +1,4 @@
+//---------------------- Main Content: Begin ---------------------------//
 /* Utils */
 function getXHR() {
     return window.XMLHttpRequest ? new window.XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP')
@@ -233,6 +234,8 @@ function preMainContent() {
     }
 }
 
+//---------------------- Main Content: End ---------------------------//
+
 //---------------------- QUIZ: Begin ---------------------------//
 let quizIsPlaying = false; // Auto Play
 
@@ -373,3 +376,108 @@ function goToNoClicked() {
     localStorage.setItem(currentQuizNo_KEY, quizCurrentNo);
 }
 //---------------------- QUIZ: End ---------------------------//
+
+//---------------------- Push Notification: Begin ---------------------------//
+function registerPushNotification() {
+    // Request desktop notifications permission on page load
+    if (!Notification) {
+      console.log('Desktop notifications are not available in your browser.');
+      return;
+    }
+    if (Notification.permission !== 'granted') {
+      Notification.requestPermission();
+    }
+}
+function showNotification(titleStr, bodyStr, imageUrl) {
+    if (Notification.permission !== 'granted') {
+      Notification.requestPermission();
+    } else {
+      const options = {
+        body: bodyStr,
+        dir: 'ltr',
+        image: imageUrl,
+      };
+      const notification = new Notification(titleStr, options);
+
+      notification.onclick = function () {
+        // clicked...
+        try {
+            notiPlayOrPause(); // turn off...
+        } catch (error) {
+            console.log(error);
+        }
+      };
+    }
+}
+function randNum(min = 1, max = 2511) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+const notificationElms = document.getElementById('notificationElms');
+function toggleNotificationElms() {
+    if (notificationElms.style.display) {
+        notificationElms.style.display = '';
+    } else {
+        notificationElms.style.display = 'none';
+    }
+}
+
+const notiKanjiTxtElm = document.getElementById('notiKanjiTxtId');
+const notiTypingHiraganaTxtElm = document.getElementById('notiTypingHiraganaTxtId');
+const notiGroupIndicatorTxtElm = document.getElementById('notiGroupIndicatorTxtId');
+const notiHanVietAndMeaningTxtElm = document.getElementById('notiHanVietAndMeaningTxtId');
+const notiHintRememberTxtElm = document.getElementById('notiHintRememberTxtId');
+
+const notiPlayOrPauseBtnIconElm = document.getElementById('notiPlayOrPauseBtnIcon');
+
+const notiIntervalDelayInput = document.getElementById('notiIntervalDelay');
+const notiCountIndicatorElm = document.getElementById('notiCountIndicator');
+
+const notiKanjiIndicatorElm = document.getElementById('notiKanjiIndicator');
+
+let currentNoNoti = 1;
+let notificationCount = 0;
+let currentItemNoti;
+
+function displayContentNotification() {
+    if (currentItemNoti) {
+        notiKanjiTxtElm.textContent = currentItemNoti.Kanji;
+        notiTypingHiraganaTxtElm.textContent = `${currentItemNoti.Typing} (${currentItemNoti.Hiragana})`;
+        notiGroupIndicatorTxtElm.textContent = `[GROUP: ${currentItemNoti.GroupKJ} ${currentItemNoti.GroupHV} ${currentItemNoti.GroupVN}]`;
+        notiHanVietAndMeaningTxtElm.textContent = `${currentItemNoti.HanViet} - ${currentItemNoti.Vietnamese}`;
+        notiHintRememberTxtElm.textContent = `[${currentNoNoti}] ${currentItemNoti.HintRemember}`;
+    
+        notiCountIndicatorElm.textContent = `${notificationCount}`;
+        notiKanjiIndicatorElm.textContent = currentItemNoti.Kanji;
+    }
+}
+
+let notiIntervIdRef;
+let notiIsPlaying = false;
+function notiPlayOrPause() {
+    // đổi trạng thái và icon (play_arrow | pause)
+    notiIsPlaying = !notiIsPlaying;
+    notiPlayOrPauseBtnIconElm.textContent = notiIsPlaying ? quizPauseIcon : quizPlayIcon;
+
+    // Interval
+    clearInterval(notiIntervIdRef);
+    if (notiIsPlaying) {
+        let notiIntervalDelayInputValue = notiIntervalDelayInput.value;
+        notiIntervalDelayInputValue = notiIntervalDelayInputValue ? notiIntervalDelayInputValue : 1800000;
+        notiIntervIdRef = setInterval(() => {
+            pushNow();
+        }, notiIntervalDelayInputValue);
+    }
+}
+function pushNow() {
+    // random item
+    ++notificationCount;
+    currentNoNoti = randNum();
+    currentItemNoti = quizDataSet[currentNoNoti];
+    displayContentNotification();
+    // push
+    showNotification(
+        `[${currentNoNoti}] ${currentItemNoti.HintRemember}`,
+        `${currentItemNoti.Kanji} (${currentItemNoti.HanViet} - ${currentItemNoti.Vietnamese}) ${currentItemNoti.Typing} (${currentItemNoti.Hiragana})`
+    );
+}
+//---------------------- Push Notification: End ---------------------------//
