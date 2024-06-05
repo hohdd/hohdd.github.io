@@ -201,8 +201,13 @@ function nextMainContent() {
     }
 
     // check and call toggleExceptKanji();
-    if (document.needToCallToggleExceptKanjiNext) {
-        toggleExceptKanji();
+    try {
+        if (document.needToCallToggleExceptKanjiNext) {
+            toggleExceptKanji();
+        }
+        topFunction(); // Go To Top
+    } catch (error) {
+        console.log(error);
     }
 }
 function preMainContent() {
@@ -215,7 +220,12 @@ function preMainContent() {
     }
 
     // check and call toggleExceptKanji();
-    if (document.needToCallToggleExceptKanjiNext) {
-        toggleExceptKanji();
+    try {
+        if (document.needToCallToggleExceptKanjiNext) {
+            toggleExceptKanji();
+        }
+        topFunction(); // Go To Top
+    } catch (error) {
+        console.log(error);
     }
 }

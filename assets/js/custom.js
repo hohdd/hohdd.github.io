@@ -454,6 +454,10 @@ var keyHandler = function (event) {
       eval(openAudioSettings());
     } else if (event.altKey && event.key === '5') {
       eval(toggleMenu());
+    } else if (event.altKey && event.key === 'a') {
+      eval(preMainContent());
+    } else if (event.altKey && event.key === 's') {
+      eval(nextMainContent());
     }
   } catch (error) {
     console.log(error);
