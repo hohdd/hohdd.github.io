@@ -239,8 +239,8 @@ function preMainContent() {
 //---------------------- QUIZ: Begin ---------------------------//
 let quizIsPlaying = false; // Auto Play
 
-const quizMinNo = 1;
-const quizMaxNo = 2511;
+let quizMinNo = 1;
+let quizMaxNo = 2511;
 const quizPauseIcon = 'pause';
 const quizPlayIcon = 'play_arrow';
 
@@ -259,10 +259,59 @@ const quizPlayOrPauseBtnIconElm = document.getElementById('quizPlayOrPauseBtnIco
 const quizIntervalDelayInput = document.getElementById('quizIntervalDelay');
 const quizCurrentNoIndicatorInput = document.getElementById('quizCurrentNoIndicator');
 
+const quizFromNoInput = document.getElementById('quizFromNo');
+const quizToNoInput = document.getElementById('quizToNo');
+
 quizPlayOrPauseBtnIcon
 
 const quizDataSet = {};
 let currentItemQuiz = {};
+
+function getUpdatedMinMax() {
+    quizMinNo = quizFromNoInput.value ? quizFromNoInput.value : 1;
+    quizMaxNo = quizToNoInput.value ? quizToNoInput.value : 2511;
+}
+eval(getUpdatedMinMax());
+
+// Sample data for options
+var optData = [
+    // { optionTxt: "Option 01", optionVal: { fromVal: "value1", toVal: "value2" } },
+    // { optionTxt: "Option 02", optionVal: { fromVal: "value3", toVal: "value4" } }
+    // Add more options here if needed
+];
+// Function to append options to the select tag
+function appendOptions() {
+    var select = document.getElementById("mySelect");
+    for (var i = 0; i < optData.length; i++) {
+        var option = document.createElement("option");
+        option.value = JSON.stringify(optData[i].optionVal);
+        option.text = optData[i].optionTxt;
+        select.appendChild(option);
+    }
+}
+_$JSONLoader.load('/tools/kanji_sieutoc/list_page.json', function (err, json) {
+    if (err) {
+        throwError('failed to get JSON (/tools/kanji_sieutoc/list_page.json)')
+    }
+    optData = json;
+    // Call the function to append options
+    appendOptions();
+});
+
+// Function to handle option change
+function onChangeOpt() {
+    var select = document.getElementById("mySelect");
+    var selectedOption = select.options[select.selectedIndex];
+    var optionTxt = selectedOption.text;
+    var optionVal = JSON.parse(selectedOption.value);
+
+    // Example: Log the selected option text and value
+    console.log("Selected option text:", optionTxt);
+    console.log("Selected option value:", optionVal);
+    quizFromNoInput.value = optionVal.fromVal;
+    quizToNoInput.value = optionVal.toVal;
+    getUpdatedMinMax();
+}
 
 function initQuizData(jsonData) {
     jsonData.forEach(obj => {
@@ -282,6 +331,8 @@ function displayContentQuiz() {
     quizHintRememberTxtElm.textContent = `[${quizCurrentNo}] ${currentItemQuiz.HintRemember}`;
 }
 function quizPreItem() {
+    getUpdatedMinMax();
+
     --quizCurrentNo;
     quizCurrentNo = quizCurrentNo < quizMinNo ? quizMaxNo : quizCurrentNo;
     currentItemQuiz = quizDataSet[quizCurrentNo];
@@ -290,15 +341,17 @@ function quizPreItem() {
     setNoIndicator(quizCurrentNo);
 }
 function quizNextItem() {
+    getUpdatedMinMax();
+
     ++quizCurrentNo;
-    quizCurrentNo = quizCurrentNo > quizMaxNo ? 1 : quizCurrentNo;
+    quizCurrentNo = quizCurrentNo > quizMaxNo ? quizMinNo : quizCurrentNo;
     currentItemQuiz = quizDataSet[quizCurrentNo];
     displayContentQuiz();
     localStorage.setItem(currentQuizNo_KEY, quizCurrentNo);
     setNoIndicator(quizCurrentNo);
 }
 
-let quizIntervIdRef;
+let quizIntervIdRef = undefined;
 let quizProgressFlag = 0;
 function quizPlayOrPause() {
     // đổi trạng thái và icon (play_arrow | pause)
@@ -330,6 +383,9 @@ function quizPlayOrPause() {
                     quizHintRememberTxtElm.style.visibility = ''; // show
                     break;
                 case 5:
+                    // do nothing
+                    break;
+                case 6:
                     quizProgressFlag = 0; // reset
                     quizNextItem(); // next
                     toggleQuizItemDisplay(); // HIDE on next
