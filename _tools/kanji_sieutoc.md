@@ -47,8 +47,15 @@ thirdMenuHandler: toggleExceptKanji()
     <span class="material-icons w3-button w3-border w3-border-blue" onclick="quizPlayOrPause()" title="Play or Pause" id="quizPlayOrPauseBtnIcon">play_arrow</span>
     <span class="material-icons w3-button w3-border w3-border-blue" onclick="quizNextItem()" title="Next">skip_next</span>
     <span><input class="w3-button w3-border w3-border-blue" type="number" step="500" min="500" max="3000" value="1000" id="quizIntervalDelay"></span>
-    <span><input class="w3-button w3-border w3-border-blue" type="number" step="1" min="1" max="2511" id="quizCurrentNoIndicator"></span>
-    <span class="material-icons w3-button w3-border w3-border-blue" onclick="goToNoClicked()" title="Next">input</span>
+    <span><input class="w3-button w3-border w3-border-blue" type="number" step="1" min="1" max="2511" value="1" id="quizFromNo"></span>
+    <span><input class="w3-button w3-border w3-border-blue" type="number" step="1" min="1" max="2511" value="2511" id="quizToNo"></span>
+    <div class="w3-section">
+        <span><input class="w3-button w3-border w3-border-blue" type="number" step="1" min="1" max="2511" id="quizCurrentNoIndicator"></span>
+        <span class="material-icons w3-button w3-border w3-border-blue" onclick="goToNoClicked()" title="Next">input</span>
+        <select class="w3-button w3-border w3-border-blue" id="mySelect" onchange="onChangeOpt()">
+            <option value="" disabled selected>Choose your option</option>
+        </select>
+    </div>
 </div>
 
 <!-- Push Notification (require 'quizDataSet') -->
