@@ -524,8 +524,8 @@ document.addEventListener('keydown', keyHandler, false);
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     documentReady();
-    var randQuote = getQuoteRand();
-    document.title = `[${randQuote.author}] ${randQuote.quote}`;
+    // var randQuote = getQuoteRand();
+    // document.title = `[${randQuote.author}] ${randQuote.quote}`;
   }
 }
 function _documentReady_() {
