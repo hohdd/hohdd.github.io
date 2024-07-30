@@ -77,6 +77,78 @@ date: 2021-04-13 14:26:14 +0700
 			- Câu khẳng định [BỎ NA + ĐÁT TÀ]: Tính từ (bỏ đuôi な)  + だった. Ví dụ: しずかだった (Shizuka datta)
 			- Câu phủ định [BỎ NA, JẠ NA KẠT TÀ]: Tính từ (bỏ đuôi な)   + じゃなかった. Ví dụ: しずかじゃなかった (Shizuka janakatta)
 
+# Các cặp tính từ trái nghĩa
+
+## 1) Cặp tính từ đuôi “い” trái nghĩa
+
+### Các cặp tính từ trái nghĩa về kích thước, số lượng
+- [*ĐẠI - TIỂU*{:.w3-yellow}] 大きい (ōkii) - lớn >< 小さい (chīsai) - nhỏ
+- [*TRƯỜNG/TRƯỞNG - ĐOẢN*{:.w3-yellow}] 長い (nagai) - dài >< 短い (mijikai) - ngắn
+- [*CAO - ĐÊ*{:.w3-yellow}] 高い (takai) - cao >< 低い (hikui) - thấp
+- [*ĐA - THIẾU/THIỂU*{:.w3-yellow}] 多い (ōi) - nhiều >< 少ない (sukunaī) - ít
+
+### Các cặp tính từ trái nghĩa về trạng thái, cảm giác
+- [*NHIỆT - LÃNH*{:.w3-yellow}] 熱い (atsui) - nóng >< 冷たい (tsumetai) - lạnh
+- [*NOÃN - LÃNH*{:.w3-yellow}] 暖かい (atatakai) - ấm >< 冷たい (tsumetai) - lạnh
+- [*MINH - ÁM*{:.w3-yellow}] 明るい (akarui) - sáng >< 暗い (kuraī) - tối
+- [*đẹp - bẩn*{:.w3-yellow}] きれい (kirei) - đẹp >< 汚い (kitanai) - bẩn
+- [*TÂN - CỔ*{:.w3-yellow}] 新しい (atarashii) - mới >< 古い (furui) - cũ
+- [*TRỌNG - KHINH*{:.w3-yellow}] 重い (omoi) - nặng >< 軽い (karui) - nhẹ
+- [*NHU- NGẠNH*{:.w3-yellow}] 柔らかい (yawarakai) - mềm >< 硬い (katai) - cứng
+- [*TỐC - TRÌ*{:.w3-yellow}] 速い (hayai) - nhanh >< 遅い (osoi) - chậm
+- [*GIẢN ĐƠN - NAN*{:.w3-yellow}] 簡単 (kantan) - dễ >< 難しい (muzukashii) - khó
+- [*LẠC/NHẠC - chán*{:.w3-yellow}] 楽しい (tanoshii) - vui >< つまらない (tsumannai) - chán
+- [*HI - BI*{:.w3-yellow}] 嬉しい (ureshii) - vui >< 悲しい (kanashī) - buồn
+- [*NGUYÊN KHÍ - BÌ*{:.w3-yellow}] 元気 (genki) - khỏe >< 疲れる (tsukareru) - mệt
+- [*HẢO - HIỀM*{:.w3-yellow}] 好き (suki) - thích >< 嫌い (kirai) - ghét
+
+### Các cặp tính từ trái nghĩa về tính chất
+- [*HẬU - BẠC*{:.w3-yellow}] 厚い (atsui) - dày >< 薄い (usui) - mỏng
+- [*QUẢNG - HIỆP*{:.w3-yellow}] 広い (hiroi) - rộng >< 狭い (semai) - hẹp
+- [*THÂM - THIỂN*{:.w3-yellow}] 深い (fukai) - sâu >< 浅い (asai) - nông
+- [*CƯỜNG/CƯỠNG - NHƯỢC*{:.w3-yellow}] 強い (tsuyoi) - mạnh >< 弱い (yowai) - yếu
+
+### Các cặp tính từ trái nghĩa khác
+- [*CHÍNH - GIAN VI*{:.w3-yellow}] 正しい (tadashii) - đúng >< 間違っている (machigatte iru) - sai
+- [*AN TOÀN - NGUY HIỂM*{:.w3-yellow}] 安全 (anzen) - an toàn >< 危険 (kiken) - nguy hiểm
+- [*TĨNH - ồn ào*{:.w3-yellow}] 静か (shizuka) - yên tĩnh >< うるさい (urusai) - ồn ào
+- Lưu ý: Một số tính từ có thể có nhiều từ trái nghĩa tùy thuộc vào ngữ cảnh.
+
+## 2) Cặp tính từ đuôi “な” trái nghĩa
+
+### Các cặp tính từ trái ngược nhau về tính chất
+- [*đẹp - bẩn*{:.w3-yellow}] きれい (kirei) - đẹp >< きたない (kitanai) - bẩn
+- [*TÂN - CỔ*{:.w3-yellow}] 新しい (atarashii) - mới >< 古い (furui) - cũ
+- [*CAO - AN*{:.w3-yellow}] 高い (takai) - đắt >< 安い (yasui) - rẻ
+- [*ĐẠI - TIỂU*{:.w3-yellow}] 大きい (ōkii) - lớn >< 小さい (chīsai) - nhỏ
+- [*TRƯỜNG/TRƯỞNG - ĐOẢN*{:.w3-yellow}] 長い (nagai) - dài >< 短い (mijikai) - ngắn
+- [*TRỌNG - KHINH*{:.w3-yellow}] 重い (omoi) - nặng >< 軽い (karui) - nhẹ
+- [*HẬU - BẠC*{:.w3-yellow}] 厚い (atsui) - dày >< 薄い (usui) - mỏng
+- [*QUẢNG - HIỆP*{:.w3-yellow}] 広い (hiroi) - rộng >< 狭い (semai) - hẹp
+- [*THÂM - THIỂN*{:.w3-yellow}] 深い (fukai) - sâu >< 浅い (asai) - nông
+- [*CƯỜNG/CƯỠNG - NHƯỢC*{:.w3-yellow}] 強い (tsuyoi) - mạnh >< 弱い (yowai) - yếu
+- [*NHU - NGẠNH*{:.w3-yellow}] 柔らかい (yawarakai) - mềm >< 硬い (katai) - cứng
+- [*NHIỆT - LÃNH*{:.w3-yellow}] 熱い (atsui) - nóng >< 冷たい (tsumetai) - lạnh
+- [*MINH - ÁM*{:.w3-yellow}] 明るい (akarui) - sáng >< 暗い (kuraī) - tối
+- [*LẠC/NHẠC - chán*{:.w3-yellow}] 楽しい (tanoshii) - vui >< つまらない (tsumannai) - chán
+- [*HI - BI*{:.w3-yellow}] 嬉しい (ureshii) - vui >< 悲しい (kanashī) - buồn
+- [*NGUYÊN KHÍ - BÌ*{:.w3-yellow}] 元気 (genki) - khỏe >< 疲れる (tsukareru) - mệt
+- [*HẢO - HIỀM*{:.w3-yellow}] 好き (suki) - thích >< 嫌い (kirai) - ghét
+- [*CHÍNH - GIAN VI*{:.w3-yellow}] 正しい (tadashii) - đúng >< 間違っている (machigatte iru) - sai
+- [*AN TOÀN - NGUY HIỂM*{:.w3-yellow}] 安全 (anzen) - an toàn >< 危険 (kiken) - nguy hiểm
+- [*TĨNH - ồn ào*{:.w3-yellow}] 静か (shizuka) - yên tĩnh >< うるさい (urusai) - ồn ào
+
+### Các cặp tính từ trái ngược nhau về trạng thái, cảm giác
+- [*HỮU DANH - VÔ DANH*{:.w3-yellow}] 有名 (yūmei) - nổi tiếng >< 無名 (mumei) - vô danh
+- [*GIẢN ĐƠN - NAN*{:.w3-yellow}] 簡単 (kantan) - dễ >< 難しい (muzukashii) - khó
+- [*THÂN THIẾT - VÔ ÁI TƯỞNG*{:.w3-yellow}] 親切 (shinsetsu) - tử tế >< 無愛想 (buaisō) - lạnh lùng
+- [*THÂN THIẾT - VÔ TÌNH*{:.w3-yellow}] 親切 (shinsetsu) - tử tế >< 無情 (mujō) - vô tình
+- [*TÍCH CỰC ĐÍCH - TIÊU CỰC ĐÍCH*{:.w3-yellow}] 積極的 (sekkyokuteki) - tích cực >< 消極的 (shōkyokuteki) - tiêu cực
+- [*KHẲNG ĐỊNH ĐÍCH - PHỦ ĐỊNH ĐÍCH*{:.w3-yellow}] 肯定的 (kouteiteki) - khẳng định >< 否定的 (hiteiteki) - phủ định
+
+### Lưu ý
+- Một số tính từ có thể có nhiều từ trái nghĩa tùy thuộc vào ngữ cảnh.
+
 # Bảng tổng hợp tính từ trong tiếng Nhật
 
 ## 1) Bảng tính từ đuôi “い”
