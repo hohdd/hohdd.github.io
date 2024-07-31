@@ -107,3 +107,233 @@ date: 2021-04-13 14:26:14 +0700
 	+ Vては　いけません。 Cấm … Không được phép.. VD: かわに　ごみを　すてては　いけません。 Không được vứt rác xuống sông.
 
 ## DS Động từ phổ biến nhất
+
+{% mp3 /assets/audio/jp/ja-224-dong-tu-tieng-nhat.mp3 %}
+
+| STT 	| Verb 	| Kanji 	| Vietnamese 	| Hiragana 	|
+|---	|---	|---	|---	|---	|
+| 1 	| あびる 	| N/A 	| tắm 	| abiru 	|
+| 2 	| かける 	| N/A 	| treo, dựng 	| kakeru 	|
+| 3 	| かける 	| N/A 	| gọi (điện) 	| kakeru 	|
+| 4 	| かぶる 	| N/A 	| đội (nón, mũ) 	| kaburu 	|
+| 5 	| つける 	| N/A 	| bật (điện) 	| tsukeru 	|
+| 6 	| やる 	| N/A 	| làm 	| yaru 	|
+| 7 	| ちがう 	| N/A 	| khác với 	| chigau 	|
+| 8 	| ひく 	| 引く 	| kéo 	| hiku 	|
+| 9 	| のむ 	| 飲む 	| uống 	| nomu 	|
+| 10 	| およぐ 	| 泳ぐ 	| bơi 	| oyogu 	|
+| 11 	| おす 	| 押す 	| ấn 	| osu 	|
+| 12 	| あう 	| 会う 	| gặp gỡ 	| au 	|
+| 13 	| あく 	| 開く 	| mở 	| aku 	|
+| 14 	| あける 	| 開ける 	| mở 	| akeru 	|
+| 15 	| おぼえる 	| 覚える 	| ghi nhớ 	| oboeru 	|
+| 16 	| かえる 	| 帰る 	| quay về, về nhà 	| kaeru 	|
+| 17 	| おきる 	| 起きる 	| thức dậy 	| okiru 	|
+| 18 	| すう 	| 吸う 	| hút (thuốc lá) 	| sū 	|
+| 19 	| おしえる 	| 教える 	| dạy bảo 	| oshieru 	|
+| 20 	| まがる 	| 曲る 	| rẽ, gấp khúc 	| magaru 	|
+| 21 	| つとめる 	| 勤める 	| làm việc 	| tsutomeru 	|
+| 22 	| みせる 	| 見せる 	| cho xem (show) 	| miseru 	|
+| 23 	| みる 	| 見る 	| nhìn, xem, quan sát 	| miru 	|
+| 24 	| いう 	| 言う 	| nói 	| iu 	|
+| 25 	| よぶ 	| 呼ぶ 	| gọi 	| yobu 	|
+| 26 	| いく/ゆく 	| 行く 	| đi 	| iku / yuku 	|
+| 27 	| ふる 	| 降る 	| rơi (mưa, tuyết) 	| furu 	|
+| 28 	| こまる 	| 困る 	| gặp rắc rối 	| komaru 	|
+| 29 	| さす 	| 差す 	| bật (ô), chỉ (tay) 	| sasu 	|
+| 30 	| すわる 	| 座る 	| ngồi xuống 	| suwaru 	|
+| 31 	| さく 	| 咲く 	| nở (hoa) 	| saku 	|
+| 32 	| つくる 	| 作る 	| làm ra, tạo ra 	| tsukuru 	|
+| 33 	| とる 	| 撮る 	| chụp ảnh 	| toru 	|
+| 34 	| つかう 	| 使う 	| sử dụng 	| tsukau 	|
+| 35 	| とまる 	| 止まる 	| dừng lại 	| tomaru 	|
+| 36 	| しぬ 	| 死ぬ 	| chết 	| shinu 	|
+| 37 	| もつ 	| 持つ 	| cầm, nắm 	| motsu 	|
+| 38 	| かりる 	| 借リる 	| mượn 	| kariru 	|
+| 39 	| とる 	| 取る 	| lấy 	| toru 	|
+| 40 	| おわる 	| 終る 	| kết thúc 	| owaru 	|
+| 41 	| ならう 	| 習う 	| học 	| narau 	|
+| 42 	| すむ 	| 住む 	| sinh sống 	| sumu 	|
+| 43 	| でかける 	| 出かける 	| đi ra ngoài 	| de kakeru 	|
+| 44 	| だす 	| 出す 	| đưa ra 	| dasu 	|
+| 45 	| かく 	| 書く 	| viết 	| kaku 	|
+| 46 	| きえる 	| 消える 	| tắt, mất 	| kieru 	|
+| 47 	| けす 	| 消す 	| tắt 	| kesu 	|
+| 48 	| のる 	| 乗る 	| lên (tàu xe) 	| noru 	|
+| 49 	| たべる 	| 食べる 	| ăn 	| taberu 	|
+| 50 	| ねる 	| 寝る 	| ngủ 	| neru 	|
+| 51 	| ふく 	| 吹く 	| thổi (gió) 	| fuku 	|
+| 52 	| うまれる 	| 生まれる 	| được sinh ra 	| umareru 	|
+| 53 	| きる 	| 切る 	| cắt 	| kiru 	|
+| 54 	| あらう 	| 洗う 	| rửa 	| arau 	|
+| 55 	| はしる 	| 走る 	| chạy 	| hashiru 	|
+| 56 	| まつ 	| 待つ 	| đợi 	| matsu 	|
+| 57 	| かす 	| 貸す 	| cho mượn 	| kasu 	|
+| 58 	| ぬぐ 	| 脱ぐ 	| cởi (quần áo) 	| nugu 	|
+| 59 	| ひく 	| 弾く 	| đánh (ghita, đàn) 	| hiku 	|
+| 60 	| しる 	| 知る 	| biết 	| shiru 	|
+| 61 	| おく 	| 置く 	| đặt, để 	| oku 	|
+| 62 	| つく 	| 着く 	| đến 	| tsuku 	|
+| 63 	| きる 	| 着る 	| mặc 	| kiru 	|
+| 64 	| しめる 	| 締める 	| buộc, trói 	| shimeru 	|
+| 65 	| はる 	| 貼る 	| dán 	| haru 	|
+| 66 	| わたす 	| 渡す 	| giao cho, trao cho 	| watasu 	|
+| 67 	| わたる 	| 渡る 	| đi qua 	| wataru 	|
+| 68 	| のぼる 	| 登る 	| chèo, leo 	| noboru 	|
+| 69 	| こたえる 	| 答える 	| trả lời 	| kotaeru 	|
+| 70 	| はたらく 	| 働く 	| làm việc 	| hataraku 	|
+| 71 	| よむ 	| 読む 	| đọc 	| yomu 	|
+| 72 	| はいる 	| 入る 	| đi vào 	| wa iru 	|
+| 73 	| いれる 	| 入れる 	| cho vào, đặt vào 	| ireru 	|
+| 74 	| かう 	| 買う 	| mua 	| kau 	|
+| 75 	| うる 	| 売る 	| bán 	| uru 	|
+| 76 	| つかれる 	| 疲れる 	| mệt mỏi 	| tsukareru 	|
+| 77 	| とぶ 	| 飛ぶ 	| bay (fly) 	| tobu 	|
+| 78 	| わかる 	| 分かる 	| hiểu, nhận ra 	| wakaru 	|
+| 79 	| きく 	| 聞く 	| nghe, hỏi 	| kiku 	|
+| 80 	| ならべる 	| 並べる 	| xếp hàng 	| naraberu 	|
+| 81 	| しめる 	| 閉める 	| đóng lại 	| shimeru 	|
+| 82 	| かえす 	| 返す 	| trở lại 	| kaesu 	|
+| 83 	| あるく 	| 歩く 	| đi bộ, đi dạo 	| aruku 	|
+| 84 	| わすれる 	| 忘れる 	| quên 	| wasureru 	|
+| 85 	| みがく 	| 磨く 	| chải (răng) 	| migaku 	|
+| 86 	| なくす 	| 無くす 	| mất 	| nakusu 	|
+| 87 	| なく 	| 鳴く 	| hót, kêu, hú 	| naku 	|
+| 88 	| はなす 	| 話す 	| nói 	| hanasu 	|
+| 89 	| あう 	| 合う 	| hợp, phù hợp 	| au 	|
+| 90 	| あやまる 	| 謝る 	| xin lỗi 	| ayamaru 	|
+| 91 	| いきる 	| 生きる 	| sống 	| ikiru 	|
+| 92 	| いじめる 	| N/A 	| trêu trọc, bắt nạt 	| ijimeru 	|
+| 93 	| いのる 	| 祈る 	| cầu nguyện 	| inoru 	|
+| 94 	| うえる 	| 植える 	| trồng 	| ueru 	|
+| 95 	| うかがう 	| N/A 	| thăm hỏi 	| ukagau 	|
+| 96 	| うける 	| 受ける 	| nhận 	| ukeru 	|
+| 97 	| うごく 	| 動く 	| di chuyển 	| ugoku 	|
+| 98 	| うつ 	| 打つ 	| đánh 	| utsu 	|
+| 99 	| うつす 	| 写す 	| chép lại, chụp ảnh 	| utsusu 	|
+| 100 	| えらぶ 	| 選ぶ 	| chọn 	| erabu 	|
+| 101 	| おくる 	| 送る 	| gửi 	| okuru 	|
+| 102 	| おこす 	| 起こす 	| đánh thức 	| okosu 	|
+| 103 	| おこなう 	| 行う 	| diễn ra, tổ chức 	| okonau 	|
+| 104 	| おこる 	| 怒る 	| nổi giận 	| okoru 	|
+| 105 	| おちる 	| 落ちる 	| rơi, thả rơi 	| ochiru 	|
+| 106 	| おとす 	| 落す 	| thả rơi 	| otosu 	|
+| 107 	| おどる 	| 踊る 	| nhảy 	| odoru 	|
+| 108 	| おどろく 	| 驚く 	| ngạc nhiên 	| odoroku 	|
+| 109 	| おもいだす 	| 思い出す 	| nhớ 	| omoidasu 	|
+| 110 	| おもう 	| 思う 	| nghĩ 	| omō 	|
+| 111 	| おりる 	| 下りる 	| đi xuống, hạ xuống 	| oriru 	|
+| 112 	| おる 	| 折る 	| bẻ, gấp 	| oru 	|
+| 113 	| おれる 	| 折れる 	| bị bẻ, bị gấp 	| oreru 	|
+| 114 	| かえる 	| 変える 	| biến đổi 	| kaeru 	|
+| 115 	| かける 	| 掛ける 	| treo 	| kakeru 	|
+| 116 	| かざる 	| 飾る 	| trang trí 	| kazaru 	|
+| 117 	| かたづける 	| 片付ける 	| dọn dẹp 	| katazukeru 	|
+| 118 	| かっ 	| 勝つ 	| thắng 	| ka 	|
+| 119 	| かむ 	| 噛む 	| cắn, nhai 	| kamu 	|
+| 120 	| かよう 	| 通う 	| để đi làm, thông, xuyên qua 	| kayō 	|
+| 121 	| かわる 	| 変わる 	| thay đổi 	| kawaru 	|
+| 122 	| かんがえる 	| 考える 	| suy nghĩ 	| kangaeru 	|
+| 123 	| がんばる 	| 頑張る 	| cố gắng, nỗ lực 	| ganbaru 	|
+| 124 	| きこえる 	| 聞こえる 	| có thể nghe được 	| kikoeru 	|
+| 125 	| きまる 	| 決る 	| được quyết định 	| kimaru 	|
+| 126 	| きめる 	| 決める 	| quyết định 	| kimeru 	|
+| 127 	| くださる 	| N/A 	| cung cấp cho 	| kudasaru 	|
+| 128 	| くらべる 	| 比べる 	| so sánh 	| kuraberu 	|
+| 129 	| こむ 	| 込む 	| đông đúc 	| komu 	|
+| 130 	| ごらんになる 	| N/A 	| xem, nhìn (kính ngữ) 	| goran ni naru 	|
+| 131 	| こわす 	| 壊す 	| làm hư hỏng, phá vỡ 	| kowasu 	|
+| 132 	| こわれる 	| 壊れる 	| bị hư hỏng 	| kowareru 	|
+| 133 	| さがす 	| 探す 	| tìm kiếm 	| sagasu 	|
+| 134 	| さわぐ 	| 騒ぐ 	| làm ồn 	| sawagu 	|
+| 135 	| さわる 	| 触る 	| sờ, tiếp xúc 	| sawaru 	|
+| 136 	| しかる 	| N/A 	| la mắng 	| shikaru 	|
+| 137 	| しらせる 	| 知らせる 	| thông báo 	| shiraseru 	|
+| 138 	| しらべる 	| 調べる 	| tìm hiểu, điều tra 	| shiraberu 	|
+| 139 	| すぎる 	| 過ぎる 	| vượt quá 	| sugiru 	|
+| 140 	| すく 	| N/A 	| trở nên trống rỗng 	| suku 	|
+| 141 	| すすむ 	| 進む 	| tiến bộ 	| susumu 	|
+| 142 	| すてる 	| 捨てる 	| vứt đi 	| suteru 	|
+| 143 	| すべる 	| 滑る 	| trượt 	| suberu 	|
+| 144 	| すむ 	| 済む 	| kết thúc, hoàn thành 	| sumu 	|
+| 145 	| そだてる 	| 育てる 	| nuôi dưỡng 	| sodateru 	|
+| 146 	| たおれる 	| 倒れる 	| ngã, đổ, rơi xuống 	| taoreru 	|
+| 147 	| たす 	| 足す 	| thêm 	| tasu 	|
+| 148 	| たずねる 	| 訪ねる 	| viếng thăm, ghé thăm 	| tazuneru 	|
+| 149 	| たずねる 	| 尋ねる 	| thăm hỏi, thăm viếng 	| tazuneru 	|
+| 150 	| たてる 	| 立てる 	| thành lập 	| tateru 	|
+| 151 	| たてる 	| 建てる 	| xây dựng 	| tateru 	|
+| 152 	| たのしむ 	| 楽む 	| vui mừng 	| tanoshimu 	|
+| 153 	| たリる 	| 足リる 	| đủ 	| tariru 	|
+| 154 	| つかまえる 	| 捕まえる 	| nắm lấy, bắt lấy 	| tsukamaeru 	|
+| 155 	| つたえる 	| 伝える 	| truyền đạt 	| tsutaeru 	|
+| 156 	| つづく 	| 続く 	| tiếp tục 	| tsuzuku 	|
+| 157 	| つづける 	| 続ける 	| làm tiếp tục 	| tsuzukeru 	|
+| 158 	| つつむ 	| 包む 	| gói, bao bọc 	| tsutsumu 	|
+| 159 	| つる 	| 釣る 	| câu cá 	| tsuru 	|
+| 160 	| つれる 	| 連れる 	| dẫn dắt 	| tsureru 	|
+| 161 	| てつだう 	| 手伝う 	| giúp đỡ 	| tetsudau 	|
+| 162 	| とおる 	| 通る 	| đi qua 	| tōru 	|
+| 163 	| なおす 	| 直す 	| sửa chữa 	| naosu 	|
+| 164 	| なおる 	| 直る 	| được sửa chữa 	| naoru 	|
+| 165 	| なおる 	| 治る 	| được chữa bệnh 	| naoru 	|
+| 166 	| なくなる 	| 無くなる 	| biến mất 	| nakunaru 	|
+| 167 	| なくなる 	| 亡くなる 	| chết 	| nakunaru 	|
+| 168 	| なげる 	| 投げる 	| ném, bỏ đi 	| nageru 	|
+| 169 	| なさる 	| N/A 	| làm (kính ngữ) 	| nasaru 	|
+| 170 	| にげる 	| 逃げる 	| trốn, chạy trốn 	| nigeru 	|
+| 171 	| ぬすむ 	| 盜む 	| ăn cắp, ăn trộm 	| nusumu 	|
+| 172 	| ぬる 	| 塗る 	| sơn 	| nuru 	|
+| 173 	| ぬれる 	| N/A 	| bị ướt 	| nureru 	|
+| 174 	| ねむる 	| 眠る 	| ngủ 	| nemuru 	|
+| 175 	| のこる 	| 残る 	| còn lại, xót lại 	| nokoru 	|
+| 176 	| はこぶ 	| 運ぶ 	| vận chuyển 	| hakobu 	|
+| 177 	| はじめる 	| 始める 	| bắt đầu 	| hajimeru 	|
+| 178 	| はらう 	| 払う 	| trả, chi 	| harau 	|
+| 179 	| ひえる 	| 冷える 	| lạnh đi, nguội đi 	| hieru 	|
+| 180 	| ひかる 	| 光る 	| chiếu sáng 	| hikaru 	|
+| 181 	| ひっこす 	| 引っ越す 	| dọn nhà, chuyển nhà 	| hikkosu 	|
+| 182 	| ひらく 	| 開く 	| mở 	| hiraku 	|
+| 183 	| ひろう 	| 拾う 	| nhặt, lượm 	| hirō 	|
+| 184 	| ふえる 	| 増える 	| tăng lên 	| fueru 	|
+| 185 	| ふとる 	| 太る 	| vỗ béo, mập 	| futoru 	|
+| 186 	| ふむ 	| 踏む 	| đạp 	| fumu 	|
+| 187 	| ほめる 	| N/A 	| khen ngợi 	| homeru 	|
+| 188 	| まける 	| 負ける 	| thua 	| makeru 	|
+| 189 	| まにあう 	| 間に合う 	| đến kịp giờ 	| maniau 	|
+| 190 	| みえる 	| 見える 	| có thể thấy 	| mieru 	|
+| 191 	| みつかる 	| 見つかる 	| được tìm thấy 	| mitsukaru 	|
+| 192 	| みつける 	| 見つける 	| bắt gặp, trông thấy 	| mitsukeru 	|
+| 193 	| むかえる 	| 迎える 	| đón 	| mukaeru 	|
+| 194 	| むかう 	| 向かう 	| hướng về, hướng tới 	| mukau 	|
+| 195 	| めしあがる 	| 召し上がる 	| ăn (kính ngữ) 	| meshiagaru 	|
+| 196 	| もうす 	| 申す 	| nói 	| mōsu 	|
+| 197 	| もどる 	| 戻る 	| trở lại 	| modoru 	|
+| 198 	| もらう 	| N/A 	| nhận 	| morau 	|
+| 199 	| やく 	| 焼く 	| nướng 	| yaku 	|
+| 200 	| やくにたつ 	| 役に立つ 	| có ích 	| yaku ni tatsu 	|
+| 201 	| やける 	| 焼ける 	| sém, nướng, rán 	| yakeru 	|
+| 202 	| やせる 	| N/A 	| giảm cân, gầy 	| yaseru 	|
+| 203 	| やむ 	| N/A 	| dừng lại (mưa) 	| yamu 	|
+| 204 	| やめる 	| 止める 	| dừng lại 	| yameru 	|
+| 205 	| よごれる 	| 汚れる 	| bẩn 	| yogoreru 	|
+| 206 	| よる 	| 寄る 	| ghé qua 	| yoru 	|
+| 207 	| よろこぶ 	| 喜ぶ 	| vui mừng 	| yorokobu 	|
+| 208 	| わかす 	| 沸かす 	| đun sôi 	| wakasu 	|
+| 209 	| わかれる 	| 別れる 	| chia tay 	| wakareru 	|
+| 210 	| かわをむく 	| 皮をむく 	| gọt vỏ, lột da 	| kawa o muku 	|
+| 211 	| にる 	| 煮る 	| ninh, kho (nấu nướng) 	| niru 	|
+| 212 	| ゆでる 	| N/A 	| luộc 	| yuderu 	|
+| 213 	| いためる 	| N/A 	| xào 	| itameru 	|
+| 214 	| むす 	| 蒸す 	| hấp 	| musu 	|
+| 215 	| まぜる 	| 混せる 	| trộn lên (pha trộn) 	| mazeru 	|
+| 216 	| こげる 	| N/A 	| bị cháy, bị bỏng 	| kogeru 	|
+| 217 	| できあがる 	| N/A 	| đã xong 	| deki agaru 	|
+| 218 	| こぼす 	| N/A 	| làm đổ, bị tràn 	| kobosu 	|
+| 219 	| こぼれる 	| N/A 	| bị đổ, bị tràn 	| koboreru 	|
+| 220 	| ほす 	| 干す 	| phơi 	| hosu 	|
+| 221 	| かわく 	| 乾く 	| khô 	| kawaku 	|
+| 222 	| たまる 	| N/A 	| bị chất đầy lại (tích trữ) 	| tamaru 	|
+| 223 	| ためる 	| N/A 	| chất đầy (tiết kiệm) 	| tameru 	|
+| 224 	| ぬらす 	| N/A 	| làm ướt 	| nurasu 	|
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-indigo}

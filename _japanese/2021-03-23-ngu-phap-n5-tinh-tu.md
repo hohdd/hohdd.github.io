@@ -81,6 +81,8 @@ date: 2021-04-13 14:26:14 +0700
 
 ## 1) Cặp tính từ đuôi **“い”**{:.w3-yellow} trái nghĩa
 
+{% mp3 /assets/audio/jp/ja-tinhtu-trai-nghia-duoi-i.mp3 %}
+
 ### Các cặp tính từ trái nghĩa về kích thước, số lượng
 - [*ĐẠI - TIỂU*{:.w3-yellow}] 大きい (ōkii) - lớn >< 小さい (chīsai) - nhỏ
 - [*TRƯỜNG/TRƯỞNG - ĐOẢN*{:.w3-yellow}] 長い (nagai) - dài >< 短い (mijikai) - ngắn
@@ -115,6 +117,8 @@ date: 2021-04-13 14:26:14 +0700
 - Lưu ý: Một số tính từ có thể có nhiều từ trái nghĩa tùy thuộc vào ngữ cảnh.
 
 ## 2) Cặp tính từ đuôi **“な”**{:.w3-green} trái nghĩa
+
+{% mp3 /assets/audio/jp/ja-tinhtu-trai-nghia-duoi-na.mp3 %}
 
 ### Các cặp tính từ trái ngược nhau về tính chất
 - [*đẹp - bẩn*{:.w3-green}] きれい (kirei) - đẹp >< きたない (kitanai) - bẩn
