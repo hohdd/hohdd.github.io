@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: Số đếm - Thứ Ngày Tháng - Thời điểm - Mùa
-description: Số đếm - Thứ Ngày Tháng - Thời điểm - Mùa
+title: Số đếm - Ngày Tháng - Lượng từ
+description: Số đếm - Ngày Tháng - Lượng từ
 
 ### HUMAN
-header: Số đếm - Thứ Ngày Tháng - Thời điểm - Mùa
+header: Số đếm - Ngày Tháng - Lượng từ
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400

@@ -28,7 +28,7 @@ collection: Ngữ pháp
 category: Ngữ pháp
 
 ### highlight_text
-highlight_text: true
+# highlight_text: true
 highlight_yellow: "じゃない, だった, じゃなかった, だ"
 highlight_green: "くない, かった, くなかった"
 highlight_red: "じゃありません, でした"
@@ -48,14 +48,14 @@ date: 2021-04-13 14:26:14 +0700
 - Ví dụ: あおい: Màu xanh, あかるい: Sáng sủa, あたらしい: Mới, あやしい: Kỳ lạ/kỳ quái, おおきい: lớn
 - Cách chia tính từ đuôi い(-i)
 	- Trong câu mang tính chất lịch sự
-		+ Thì hiện tại:
-			- Câu khẳng định [GIỮ I, ĐỀ SỰ]: Chủ ngữ + は + Tính từ đuôi い + です。 Ví dụ: おおきいです。
-			- Câu phủ định [BỎ I, KỰ NAI]: Chủ ngữ + は + Tính từ đuôi い (bỏ い) + くない + です。
-		+ Thì quá khứ:
-			- Câu khẳng định [BỎ I, KÁT TÀ]: Chủ ngữ + は + Tính từ đuôi い (bỏ い) + かった + です。 Ví dụ: おおきかったです。
-			- Câu phủ định [BỎ I, KƯ NA KÁT TÀ]: Chủ ngữ + は + Tính từ đuôi い (bỏ い) + くなかった + です。 Ví dụ: おおきくなかったです。
-	- Trong dạng câu thông thường:
-		+ Khi nói với bạn bè, người thân, người quen, không cần thêm đuôi “です”.
+		+ *Thì hiện tại*{:.w3-yellow}:
+			- Câu khẳng định [**GIỮ I, ĐỀ SỰ**{:.w3-yellow}]: Chủ ngữ + は + Tính từ đuôi い + です。 Ví dụ: おおきいです。
+			- Câu phủ định [**BỎ I, KỰ NAI**{:.w3-yellow}]: Chủ ngữ + は + Tính từ đuôi い (bỏ い) + くない + です。
+		+ *Thì quá khứ*{:.w3-green}:
+			- Câu khẳng định [**BỎ I, KÁT TÀ**{:.w3-green}]: Chủ ngữ + は + Tính từ đuôi い (bỏ い) + かった + です。 Ví dụ: おおきかったです。
+			- Câu phủ định [**BỎ I, KƯ NA KÁT TÀ**{:.w3-green}]: Chủ ngữ + は + Tính từ đuôi い (bỏ い) + くなかった + です。 Ví dụ: おおきくなかったです。
+	- *Trong dạng câu thông thường*{:.w3-indigo}:
+		+ Khi nói với bạn bè, người thân, người quen, *không cần thêm đuôi “です”*{:.w3-indigo}.
 
 ## 2) Tính từ đuôi “な” trong tiếng Nhật
 - Tính từ đuôi な(-na): Là những tính từ kết thúc bằng âm tiết な(-na).
@@ -63,23 +63,23 @@ date: 2021-04-13 14:26:14 +0700
 - Chú ý: Có một số số tính từ đuôi な kết thúc bằng âm tiết い. Ví dụ きれいな:đẹp/sạch, ゆうめいな:nổi tiếng, きらいな:Ghét...Vì thế chúng ta phải học thuộc để tránh nhầm lẫn.
 - Cách chia tính từ đuôi な(-na)
 	- Trong câu mang tính chất lịch sự
+		+ *Thì hiện tại*{:.w3-yellow}:
+			- Câu khẳng định [**BỎ NA, ĐỀ SỰ**{:.w3-yellow}]: Tính từ (bỏ đuôi な) + です. Ví dụ: しずかです - yên tĩnh.
+			- Câu phủ định [**BỎ NA, JẠ ARI MA SÊN**{:.w3-yellow}]: Tính từ (bỏ đuôi な) + じゃありません. Ví dụ: しずかじゃありません - không yên tĩnh.
+		+ *Thì quá khứ*{:.w3-green}:
+			- Câu khẳng định [**BỎ NA, ĐỀ SHI TẠ**{:.w3-green}]: Tính từ (bỏ đuôi な)  + でした. Ví dụ: しずかでした - (đã) yên tĩnh.
+			- Câu phủ định [**BỎ NA, JẠ ARI MA SÊN ĐỀ SHI TẠ**{:.w3-green}]: Tính từ (bỏ đuôi な) + じゃありませんでした. Ví dụ: しずかじゃありませんでした - (đã) không yên tĩnh.
+	- *Trong dạng câu thông thường*{:.w3-indigo}
 		+ Thì hiện tại:
-			- Câu khẳng định [BỎ NA, ĐỀ SỰ]: Tính từ (bỏ đuôi な) + です. Ví dụ: しずかです - yên tĩnh.
-			- Câu phủ định [BỎ NA, JẠ ARI MA SÊN]: Tính từ (bỏ đuôi な) + じゃありません. Ví dụ: しずかじゃありません - không yên tĩnh.
+			- Câu khẳng định [*BỎ NA + ĐA*{:.w3-indigo}]: Tính từ (bỏ đuôi な)  + だ. Ví dụ: しずかだ (Shizuka da)
+			- Câu phủ định [*BỎ NA + JẠ NAI*{:.w3-indigo}]: Tính từ (bỏ đuôi な)  + じゃない. Ví dụ: しずかじゃない (Shizuka janai)
 		+ Thì quá khứ:
-			- Câu khẳng định [BỎ NA, ĐỀ SHI TẠ]: Tính từ (bỏ đuôi な)  + でした. Ví dụ: しずかでした - (đã) yên tĩnh.
-			- Câu phủ định [BỎ NA, JẠ ARI MA SÊN ĐỀ SHI TẠ]: Tính từ (bỏ đuôi な) + じゃありませんでした. Ví dụ: しずかじゃありませんでした - (đã) không yên tĩnh.
-	- Trong dạng câu thông thường
-		+ Thì hiện tại:
-			- Câu khẳng định [BỎ NA + ĐA]: Tính từ (bỏ đuôi な)  + だ. Ví dụ: しずかだ (Shizuka da)
-			- Câu phủ định [BỎ NA + JẠ NAI]: Tính từ (bỏ đuôi な)  + じゃない. Ví dụ: しずかじゃない (Shizuka janai)
-		+ Thì quá khứ:
-			- Câu khẳng định [BỎ NA + ĐÁT TÀ]: Tính từ (bỏ đuôi な)  + だった. Ví dụ: しずかだった (Shizuka datta)
-			- Câu phủ định [BỎ NA, JẠ NA KẠT TÀ]: Tính từ (bỏ đuôi な)   + じゃなかった. Ví dụ: しずかじゃなかった (Shizuka janakatta)
+			- Câu khẳng định [*BỎ NA + ĐÁT TÀ*{:.w3-indigo}]: Tính từ (bỏ đuôi な)  + だった. Ví dụ: しずかだった (Shizuka datta)
+			- Câu phủ định [*BỎ NA, JẠ NA KẠT TÀ*{:.w3-indigo}]: Tính từ (bỏ đuôi な)   + じゃなかった. Ví dụ: しずかじゃなかった (Shizuka janakatta)
 
 # Các cặp tính từ trái nghĩa
 
-## 1) Cặp tính từ đuôi “い” trái nghĩa
+## 1) Cặp tính từ đuôi **“い”**{:.w3-yellow} trái nghĩa
 
 ### Các cặp tính từ trái nghĩa về kích thước, số lượng
 - [*ĐẠI - TIỂU*{:.w3-yellow}] 大きい (ōkii) - lớn >< 小さい (chīsai) - nhỏ
@@ -114,37 +114,37 @@ date: 2021-04-13 14:26:14 +0700
 - [*TĨNH - ồn ào*{:.w3-yellow}] 静か (shizuka) - yên tĩnh >< うるさい (urusai) - ồn ào
 - Lưu ý: Một số tính từ có thể có nhiều từ trái nghĩa tùy thuộc vào ngữ cảnh.
 
-## 2) Cặp tính từ đuôi “な” trái nghĩa
+## 2) Cặp tính từ đuôi **“な”**{:.w3-green} trái nghĩa
 
 ### Các cặp tính từ trái ngược nhau về tính chất
-- [*đẹp - bẩn*{:.w3-yellow}] きれい (kirei) - đẹp >< きたない (kitanai) - bẩn
-- [*TÂN - CỔ*{:.w3-yellow}] 新しい (atarashii) - mới >< 古い (furui) - cũ
-- [*CAO - AN*{:.w3-yellow}] 高い (takai) - đắt >< 安い (yasui) - rẻ
-- [*ĐẠI - TIỂU*{:.w3-yellow}] 大きい (ōkii) - lớn >< 小さい (chīsai) - nhỏ
-- [*TRƯỜNG/TRƯỞNG - ĐOẢN*{:.w3-yellow}] 長い (nagai) - dài >< 短い (mijikai) - ngắn
-- [*TRỌNG - KHINH*{:.w3-yellow}] 重い (omoi) - nặng >< 軽い (karui) - nhẹ
-- [*HẬU - BẠC*{:.w3-yellow}] 厚い (atsui) - dày >< 薄い (usui) - mỏng
-- [*QUẢNG - HIỆP*{:.w3-yellow}] 広い (hiroi) - rộng >< 狭い (semai) - hẹp
-- [*THÂM - THIỂN*{:.w3-yellow}] 深い (fukai) - sâu >< 浅い (asai) - nông
-- [*CƯỜNG/CƯỠNG - NHƯỢC*{:.w3-yellow}] 強い (tsuyoi) - mạnh >< 弱い (yowai) - yếu
-- [*NHU - NGẠNH*{:.w3-yellow}] 柔らかい (yawarakai) - mềm >< 硬い (katai) - cứng
-- [*NHIỆT - LÃNH*{:.w3-yellow}] 熱い (atsui) - nóng >< 冷たい (tsumetai) - lạnh
-- [*MINH - ÁM*{:.w3-yellow}] 明るい (akarui) - sáng >< 暗い (kuraī) - tối
-- [*LẠC/NHẠC - chán*{:.w3-yellow}] 楽しい (tanoshii) - vui >< つまらない (tsumannai) - chán
-- [*HI - BI*{:.w3-yellow}] 嬉しい (ureshii) - vui >< 悲しい (kanashī) - buồn
-- [*NGUYÊN KHÍ - BÌ*{:.w3-yellow}] 元気 (genki) - khỏe >< 疲れる (tsukareru) - mệt
-- [*HẢO - HIỀM*{:.w3-yellow}] 好き (suki) - thích >< 嫌い (kirai) - ghét
-- [*CHÍNH - GIAN VI*{:.w3-yellow}] 正しい (tadashii) - đúng >< 間違っている (machigatte iru) - sai
-- [*AN TOÀN - NGUY HIỂM*{:.w3-yellow}] 安全 (anzen) - an toàn >< 危険 (kiken) - nguy hiểm
-- [*TĨNH - ồn ào*{:.w3-yellow}] 静か (shizuka) - yên tĩnh >< うるさい (urusai) - ồn ào
+- [*đẹp - bẩn*{:.w3-green}] きれい (kirei) - đẹp >< きたない (kitanai) - bẩn
+- [*TÂN - CỔ*{:.w3-green}] 新しい (atarashii) - mới >< 古い (furui) - cũ
+- [*CAO - AN*{:.w3-green}] 高い (takai) - đắt >< 安い (yasui) - rẻ
+- [*ĐẠI - TIỂU*{:.w3-green}] 大きい (ōkii) - lớn >< 小さい (chīsai) - nhỏ
+- [*TRƯỜNG/TRƯỞNG - ĐOẢN*{:.w3-green}] 長い (nagai) - dài >< 短い (mijikai) - ngắn
+- [*TRỌNG - KHINH*{:.w3-green}] 重い (omoi) - nặng >< 軽い (karui) - nhẹ
+- [*HẬU - BẠC*{:.w3-green}] 厚い (atsui) - dày >< 薄い (usui) - mỏng
+- [*QUẢNG - HIỆP*{:.w3-green}] 広い (hiroi) - rộng >< 狭い (semai) - hẹp
+- [*THÂM - THIỂN*{:.w3-green}] 深い (fukai) - sâu >< 浅い (asai) - nông
+- [*CƯỜNG/CƯỠNG - NHƯỢC*{:.w3-green}] 強い (tsuyoi) - mạnh >< 弱い (yowai) - yếu
+- [*NHU - NGẠNH*{:.w3-green}] 柔らかい (yawarakai) - mềm >< 硬い (katai) - cứng
+- [*NHIỆT - LÃNH*{:.w3-green}] 熱い (atsui) - nóng >< 冷たい (tsumetai) - lạnh
+- [*MINH - ÁM*{:.w3-green}] 明るい (akarui) - sáng >< 暗い (kuraī) - tối
+- [*LẠC/NHẠC - chán*{:.w3-green}] 楽しい (tanoshii) - vui >< つまらない (tsumannai) - chán
+- [*HI - BI*{:.w3-green}] 嬉しい (ureshii) - vui >< 悲しい (kanashī) - buồn
+- [*NGUYÊN KHÍ - BÌ*{:.w3-green}] 元気 (genki) - khỏe >< 疲れる (tsukareru) - mệt
+- [*HẢO - HIỀM*{:.w3-green}] 好き (suki) - thích >< 嫌い (kirai) - ghét
+- [*CHÍNH - GIAN VI*{:.w3-green}] 正しい (tadashii) - đúng >< 間違っている (machigatte iru) - sai
+- [*AN TOÀN - NGUY HIỂM*{:.w3-green}] 安全 (anzen) - an toàn >< 危険 (kiken) - nguy hiểm
+- [*TĨNH - ồn ào*{:.w3-green}] 静か (shizuka) - yên tĩnh >< うるさい (urusai) - ồn ào
 
 ### Các cặp tính từ trái ngược nhau về trạng thái, cảm giác
-- [*HỮU DANH - VÔ DANH*{:.w3-yellow}] 有名 (yūmei) - nổi tiếng >< 無名 (mumei) - vô danh
-- [*GIẢN ĐƠN - NAN*{:.w3-yellow}] 簡単 (kantan) - dễ >< 難しい (muzukashii) - khó
-- [*THÂN THIẾT - VÔ ÁI TƯỞNG*{:.w3-yellow}] 親切 (shinsetsu) - tử tế >< 無愛想 (buaisō) - lạnh lùng
-- [*THÂN THIẾT - VÔ TÌNH*{:.w3-yellow}] 親切 (shinsetsu) - tử tế >< 無情 (mujō) - vô tình
-- [*TÍCH CỰC ĐÍCH - TIÊU CỰC ĐÍCH*{:.w3-yellow}] 積極的 (sekkyokuteki) - tích cực >< 消極的 (shōkyokuteki) - tiêu cực
-- [*KHẲNG ĐỊNH ĐÍCH - PHỦ ĐỊNH ĐÍCH*{:.w3-yellow}] 肯定的 (kouteiteki) - khẳng định >< 否定的 (hiteiteki) - phủ định
+- [*HỮU DANH - VÔ DANH*{:.w3-green}] 有名 (yūmei) - nổi tiếng >< 無名 (mumei) - vô danh
+- [*GIẢN ĐƠN - NAN*{:.w3-green}] 簡単 (kantan) - dễ >< 難しい (muzukashii) - khó
+- [*THÂN THIẾT - VÔ ÁI TƯỞNG*{:.w3-green}] 親切 (shinsetsu) - tử tế >< 無愛想 (buaisō) - lạnh lùng
+- [*THÂN THIẾT - VÔ TÌNH*{:.w3-green}] 親切 (shinsetsu) - tử tế >< 無情 (mujō) - vô tình
+- [*TÍCH CỰC ĐÍCH - TIÊU CỰC ĐÍCH*{:.w3-green}] 積極的 (sekkyokuteki) - tích cực >< 消極的 (shōkyokuteki) - tiêu cực
+- [*KHẲNG ĐỊNH ĐÍCH - PHỦ ĐỊNH ĐÍCH*{:.w3-green}] 肯定的 (kouteiteki) - khẳng định >< 否定的 (hiteiteki) - phủ định
 
 ### Lưu ý
 - Một số tính từ có thể có nhiều từ trái nghĩa tùy thuộc vào ngữ cảnh.

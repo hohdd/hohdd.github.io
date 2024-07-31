@@ -5,11 +5,11 @@ draft: false # public or not
 sticky: false # sticky or not, apply for POST only (not COLLECTION) with including thumbnailImg
 exclude: false # exclude on search
 ### SEO
-title: Tự động từ （じどうし） và Tha động từ （たどうし）
-description: Tự động từ （じどうし） và Tha động từ （たどうし）
+title: Tự động từ và Tha động từ
+description: Tự động từ và Tha động từ
 
 ### HUMAN
-header: Tự động từ （じどうし） và Tha động từ （たどうし）
+header: Tự động từ và Tha động từ
 # coverImg: /assets/img/articles/demo/girl_hat.jpg # size: 1068x703 | 900x500 | 600x400
 # effect: true # use img-sepia?
 # thumbnailImg: /assets/img/articles/demo/940-900x500-grayscale.jpg # size: 900x500 | 600x400
