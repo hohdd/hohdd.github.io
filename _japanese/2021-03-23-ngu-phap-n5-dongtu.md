@@ -52,22 +52,34 @@ date: 2021-04-13 14:26:14 +0700
 - 3) Động từ **Nhóm III (*bất quy tắc*)**{:.w3-yellow}: Chỉ bao gồm 2 động từ là *くる(đến)*{:.w3-yellow} và *する(làm)*{:.w3-yellow}
 
 ### **Thể Vます**{:.w3-orange}/Lịch sự (い/え/します): Được sử dụng khi chúng ta nói chuyện với những người hơn tuổi, cấp trên, hoặc những người chúng ta mới quen biết. Trang trọng hơn nữa thì là Kính Ngữ.
-- 1) Động từ **Nhóm I**{:.w3-orange}: là những động từ có âm cuối thuộc **cột い**{:.w3-orange}
-- 2) Động từ **Nhóm II**{:.w3-orange}: là những động từ có âm cuối thuộc **cột え VÀ *9 trường hợp đặc biệt***{:.w3-orange} kết thúc bằng đuôi い (đặc điểm nhóm I) nhưng thuộc nhóm II:
-	1. おきます(thức dậy)
-	2. みます(xem)
-	3. できます(có thể)
-	4. きます(mặc)
-	5. たります(đầy đủ)
-	6. かります(mượn)
-	7. います(có, ở)
-	8. あびます(tắm)
-	9. おります(xuống xe)
-- 3) Động từ **Nhóm III**: là các *Danh động từ します (thường là danh từ có hai chữ Kanji) VÀ 1 trường hợp đặc biệt là きます (đến)*{:.w3-orange}
+- 1) Động từ **Nhóm I**{:.w3-orange}:
+	+ là những động từ có âm cuối thuộc **cột い**{:.w3-orange}. [*Chuyển đuôi [-う] (u) → thành đuôi [-い] (i) + ます (masu). VD: かく　(kaku) →　かきます (Kakimasu): Viết*]
+	+ **Chuyển đổi từ Vる**: Chuyển đuôi [-う] (u) → thành *đuôi [-い] (i) + ます (masu)*{:.w3-orange}. VD: かく　(kaku) →　かきます (Kakimasu): Viết
+	+ **Chuyển sang Vる**: bỏ 「ます 」, chuyển âm cuối từ hàng 「い」sang hàng 「う」. VD: とります　(chụp,lấy) → とる
+- 2) Động từ **Nhóm II**{:.w3-orange}:
+	+ là những động từ có âm cuối thuộc **cột え VÀ *9 trường hợp đặc biệt***{:.w3-orange} kết thúc bằng đuôi い (đặc điểm nhóm I) nhưng thuộc nhóm II.
+	+ 9 trường hợp đặc biệt:
+		1. おきます(thức dậy)
+		2. できます(có thể)
+		3. きます(mặc)
+		4. たります(đầy đủ) ...quần áo
+		5. かります(mượn) ...tiền
+		6. おります(xuống xe)
+		7. みます(xem)
+		8. います(có, ở) ...ở đâu
+		9. あびます(tắm) ...tắm được
+	+ **Chuyển đổi từ Vる**: *Bỏ đuổi -る + ます (masu)*{:.w3-orange}. VD: たべる (taberu) → たべます (tabemasu): ăn
+	+ **Chuyển sang Vる**: bỏ 「ます 」, chuyển âm cuối từ hàng 「い」sang hàng 「う」(nếu có). VD: たべます(ăn) → たべる.
+- 3) Động từ **Nhóm III**:
+	+ là các *Danh động từ します (thường là danh từ có hai chữ Kanji) VÀ 1 trường hợp đặc biệt là きます (đến)*{:.w3-orange}
+	+ **Chuyển đổi từ Vる** (bất quy tắc): くる → *きます(đến)*{:.w3-orange}, する → *します(làm)*{:.w3-orange}
+	+ **Chuyển sang Vる**: きます（đến) → くる. します(làm) → する.
+{% comment %}
 - 4) Chuyển đổi từ Vる:
 	- **Nhóm 1**{:.w3-orange}: Chuyển đuôi [-う] (u) → thành *đuôi [-い] (i) + ます (masu)*{:.w3-orange}. VD: かく　(kaku) →　かきます (Kakimasu): Viết
 	- **Nhóm 2**: *Bỏ đuổi -る + ます (masu)*{:.w3-orange}. VD: たべる (taberu) → たべます (tabemasu): ăn
 	- **Nhóm 3**{:.w3-orange} (bất quy tắc): くる → *きます(đến)*{:.w3-orange}, する → *します(làm)*{:.w3-orange}
+{% endcomment %}
 
 ### **Thể Vない**{:.w3-green} (nai): là những động từ kết thúc bằng ない. Có nghĩa phủ định là Không (làm gì đó).
 - 1) Động từ **Nhóm I**{:.w3-green}:
@@ -75,28 +87,34 @@ date: 2021-04-13 14:26:14 +0700
 	+ Những động từ *kết thúc CÓ VẦN う　(u)*{:.w3-green}: Chuyển う　(u) → *vần あ (a) tương ứng + ない(nai)*{:.w3-green}. VD: あそぶ　(asobu) →　あそばない(asobanai) : Không Chơi
 	+ Chú ý (*đặc biệt*{:.w3-green}): *ある(aru): Có　→　ない　(nai): Không có*{:.w3-green}.
 - 2) Động từ **Nhóm II**{:.w3-green}: *bỏ [-る] (ru) và sau đó + ない(nai)*{:.w3-green}. VD: たべる　(taberu)→　たべない (tabenai): Không ăn
-- 3) Động từ **Nhóm III** (*bất quy tắc*{:.w3-green}): くる　kuru →　*こない(konai): Không đến*{:.w3-green}, する (suru)　→　*しない(shinai): Không làm*{:.w3-green}
+- 3) Động từ **Nhóm III** (*bất quy tắc*{:.w3-green}):
+	+ くる　kuru →　*こない(konai): Không đến*{:.w3-green}
+	+ する (suru)　→　*しない(shinai): Không làm*{:.w3-green}
 
 ### **Thể Vた**{:.w3-blue} (ta): được dùng để diễn đạt những hành động, sự việc xảy ra ở trong quá khứ, nó mang hàm ý là đã (làm cái gì đó).
 - 1) Động từ **Nhóm I**{:.w3-blue}:
 	+ Những động từ có đuôi là く: Chuyển đuổi　く　→　*いた(ita)*{:.w3-blue}. VD: かく　(kaku): Viết →　 かいた (kaita)
 	+ Những động từ có đuôi là ぐ　→　Chuyển đuổi　ぐ　→　*いだ　(ida)*{:.w3-blue}. VD: いそぐ(isogu): Gấp, khẩn trương →　 いそいだ(isoida)
 	+ Những động từ có đuôi là す: Chuyển đuôi す →　 *した(shita)*{:.w3-blue}. VD: はなす(hanasu): Nói chuyện →　 はなした(hanashita)
-	+ Những động từ có đuôi là　*む、ぶ、ぬ*{:.w3-blue}: Chuyển đuôi む、ぶ、ぬ: →　*んだ(nda)*{:.w3-blue}. VD: よむ(yomu): Đọc →　よんだ(yonda)
-	+ Những động từ có đuôi là *う、る、つ*{:.w3-blue}： Chuyển đuổi　う、る、つ　→　*った(tta)*{:.w3-blue}. VD: まつ(matsu): đợi, chờ →　まった(matta)
+	+ Những động từ có đuôi là　*む、ぶ、ぬ (mu, bu, nu)*{:.w3-blue}: Chuyển đuôi む、ぶ、ぬ: →　*んだ(nda)*{:.w3-blue}. VD: よむ(yomu): Đọc →　よんだ(yonda)
+	+ Những động từ có đuôi là *う、る、つ (u, ru, tsu)*{:.w3-blue}： Chuyển đuổi　う、る、つ　→　*った(tta)*{:.w3-blue}. VD: まつ(matsu): đợi, chờ →　まった(matta)
 - 2) Động từ **Nhóm II**{:.w3-blue}: *Bỏ đuôi る　+ た*{:.w3-blue}. VD: みせる: Cho xem →　みせた
-- 3) Động từ **Nhóm III** (bất quy tắc): くる →　*きた(đến)*{:.w3-blue}, する →　*した(làm)*{:.w3-blue}
+- 3) Động từ **Nhóm III** (bất quy tắc):
+	+ くる →　*きた(đến)*{:.w3-blue}
+	+ する →　*した(làm)*{:.w3-blue}
 
 ### **Thể Vて**{:.w3-indigo} (te): là một trong những thể phổ biến trong ngôn ngữ giao tiếp mà người Nhật thường hay sử dụng trong đời sống.
 - 1) Động từ **Nhóm I**{:.w3-indigo}:
-	+ Những động từ có đuôi là く: Chuyển đuổi　く　→　*いて(ite)*{:.w3-indigo}. VD: かく　(kaku): Viết →　 かいて (kaite)
+	+ Những động từ có đuôi là く (**ku**{:.w3-indigo}): Chuyển đuổi　く　→　*いて(ite)*{:.w3-indigo}. VD: かく　(kaku): Viết →　 かいて (kaite)
 	+ Chú ý: いく　(iku): Đi →　いって Đây là trường hợp đặc biệt nên không theo quy tắc.
-	+ Những động từ có đuôi là す: Chuyển đuôi す →　 *して(shite)*{:.w3-indigo}. VD: はなす(hanasu): Nói chuyện →　 はなして(hanashite)
-	+ Những động từ có đuôi là ぐ　→　Chuyển đuổi　ぐ　→　*いで(ide)*{:.w3-indigo}. VD: いそぐ(isogu): Gấp/Khẩn trương →　 いそいで(isoide)
-	+ Những động từ có đuôi là　む、ぶ、ぬ: Chuyển đuôi む、ぶ、ぬ: →　*んで(nde)*{:.w3-indigo}. VD: よむ(yomu): Đọc →　よんで(yonda)
-	+ Những động từ có đuôi là う、る、つ ： Chuyển đuổi　う、る、つ　→　*って(tte)*{:.w3-indigo}. VD: だまる: Câm/Im lặng　→　だまって
+	+ Những động từ có đuôi là す (**su**{:.w3-indigo}): Chuyển đuôi す →　 *して(shite)*{:.w3-indigo}. VD: はなす(hanasu): Nói chuyện →　 はなして(hanashite)
+	+ Những động từ có đuôi là ぐ (**gu**{:.w3-indigo})　→　Chuyển đuổi　ぐ　→　*いで(ide)*{:.w3-indigo}. VD: いそぐ(isogu): Gấp/Khẩn trương →　 いそいで(isoide)
+	+ Những động từ có đuôi là　む、ぶ、ぬ (**mu, bu, nu**{:.w3-indigo}): Chuyển đuôi む、ぶ、ぬ: →　*んで(nde)*{:.w3-indigo}. VD: よむ(yomu): Đọc →　よんで(yonda)
+	+ Những động từ có đuôi là う、る、つ (**u, ru, tsu**{:.w3-indigo})： Chuyển đuổi　う、る、つ　→　*って(tte)*{:.w3-indigo}. VD: だまる: Câm/Im lặng　→　だまって
 - 2) Động từ **Nhóm II**{:.w3-indigo}: *Bỏ đuôi る　+ て*{:.w3-indigo}. VD: みせる: Cho xem →　みせて
-- 3) Động từ **Nhóm III**{:.w3-indigo} (bất quy tắc): くる　→　*きて (đến)*{:.w3-indigo}, する　→　*して (làm)*{:.w3-indigo}
+- 3) Động từ **Nhóm III**{:.w3-indigo} (bất quy tắc):
+	+ くる　→　*きて (đến)*{:.w3-indigo}
+	+ する　→　*して (làm)*{:.w3-indigo}
 - 4) Một số cấu trúc thể て(te)
 	+ Vてください: Hãy, đề nghị, yêu cầu ai đó làm gì. VD: ちょっと まってください。 Hãy chờ một chút
 	+ V1て,V2て…Vます／Vました。 Nối câu và Liệt kê các hành động theo đúng trình tự thời gian. VD: まいあさ　わたしは　６じにおきて、　あさごはんをたべて、　がっこうへいきます。 Hàng sáng tôi dậy lúc 6 giờ, ăn sáng, đến trường.
@@ -105,6 +123,69 @@ date: 2021-04-13 14:26:14 +0700
 	+ まだ　Vていません Vẫn chưa.. diễn tả hành động chưa hoàn thành. VD: わたしは　レポートを　まだかいていません。 Tôi vẫn chưa viết báo cáo.
 	+ Vてもいいですか？　Xin phép làm một công việc gì đó. VD: かえってもいいですか？ Tôi về có được không?
 	+ Vては　いけません。 Cấm … Không được phép.. VD: かわに　ごみを　すてては　いけません。 Không được vứt rác xuống sông.
+
+## DS 55 cặp Động từ "trái nghĩa"
+
+{% mp3 /assets/audio/jp/ja-55-cap-dongtu-trainghia-tieng-nhat.mp3 %}
+
+| Kanji 01 	| Kana 02 	| VN 01 	| Kanji 02 	| Kana 02 	| VN 02 	|
+|---	|---	|---	|---	|---	|---	|
+| {% tooltip 喋る [NÓI CHUYỆN bằng MIỆNG với THẾ GIỚI CÂY] %} 	| しゃべる 	| nói chuyện, trò chuyện 	| 黙る 	| だまる 	| im lặng, không nói 	|
+| **{% tooltip 問う [đứng dưới CỔNG mở MIỆNG HỎI] %}**{:.w3-yellow} 	| とう 	| hỏi 	| 答える 	| こたえる 	| trả lời 	|
+| 続く 	| つづく 	| tiếp tục 	| 絶える 	| たえる 	| dừng 	|
+| 似る 	| にる 	| giống nhau, tương tự 	| 違う 	| ちがう 	| khác, khác biệt 	|
+| 賛成する 	| さんせいする 	| đồng ý, tán thành 	| 反対する 	| はんたいする 	| chống lại, phản đối 	|
+| 合う 	| あう 	| gặp gỡ 	| 別れる 	| わかれる 	| chia ly, chia tay 	|
+| 得る 	| える 	| đạt được, nhận được 	| 失う 	| うしなう 	| làm mất, thua, thất bại 	|
+| 好む 	| このむ 	| thích 	| 嫌う 	| きらう 	| ghét 	|
+| 攻める 	| せめる 	| tấn công 	| 防ぐ 	| ふせぐ 	| ngăn chặn, phòng chống 	|
+| 昇る 	| のぼる 	| mọc lên, tăng lên, nổi lên 	| 沈む 	| しずむ 	| lặn, chìm 	|
+| 咲く 	| さく 	| nở (hoa) 	| 萎む 	| しぼむ 	| tàn, héo đi (hoa) 	|
+| 立つ 	| たつ 	| đứng 	| 座る 	| すわる 	| ngồi 	|
+| **{% tooltip 掘る [KHAI QUẬT thì thấy TAY người đã KHUẤT] %}**{:.w3-yellow} 	| ほる 	| đào 	| 埋める 	| うめる 	| lấp 	|
+| 覚える 	| おぼえる 	| ghi nhớ, học thuộc 	| 忘れる 	| わすれる 	| quên 	|
+| 与える 	| あたえる 	| cho, đưa cho 	| **{% tooltip 奪う [càng LỚN CHIM càng cảm thấy THỐN vì không được tự ĐỊNH ĐOẠT số phận] %}**{:.w3-yellow} 	| しばう 	| trộm 	|
+| 迎える 	| むかえる 	| đón tiếp, chào mừng 	| 送る 	| おくる 	| tiễn (đưa tiễn), cho, biếu 	|
+| 乾く 	| かわく 	| khô 	| 濡れる 	| ぬれる 	| ướt 	|
+| 始める 	| はじめる 	| bắt đầu 	| 済ます 	| すます 	| kết thúc, hoàn thành 	|
+| 喜ぶ 	| よろこぶ 	| vui sướng, vui mừng 	| 悲しむ 	| かなしむ 	| đau buồn 	|
+| 笑う 	| わらう 	| cười 	| 泣く 	| なく 	| khóc 	|
+| 入れる 	| いれる 	| đưa vào, đặt trong 	| 出す 	| だす 	| lấy ra, đưa ra 	|
+| 苛める 	| いじめる 	| bắt nạt, trêu chọc 	| 庇う 	| かばう 	| bảo vệ 	|
+| 温める 	| あたためる 	| làm nóng, ấm lên 	| 冷やす 	| ひやす 	| làm lạnh, làm mát 	|
+| 壊す 	| こわす 	| làm hỏng, phá vỡ 	| 直す 	| なおす 	| sửa chữa 	|
+| 歩く 	| あるく 	| đi bộ, đi dạo 	| 走る 	| はしる 	| chạy 	|
+| 寝る 	| ねる 	| ngủ 	| 起きる 	| おきる 	| dậy, thức dậy 	|
+| 離れる 	| はなれる 	| tách rời, tách khỏi 	| 合う 	| あう 	| hợp lại 	|
+| 広がる 	| ひろがる 	| lây lan, lan rộng 	| 狭まる 	| せばまる 	| trở lên hẹp, bé 	|
+| **{% tooltip 発つ [cầm BÁT 2 CHÂN XUẤT PHÁT] %}**{:.w3-yellow} 	| たつ 	| xuất phát, khởi hành 	| 着く 	| つく 	| đến nơi 	|
+| 点ける 	| つける 	| bật 	| 消す 	| けす 	| tắt, tẩy xóa 	|
+| 満ちる 	| みちる 	| đầy 	| 欠ける 	| かける 	| thiếu 	|
+| 当たる 	| あたる 	| đánh (hit) 	| 外れる 	| はずれる 	| lệch, đi tắt 	|
+| 伸ばす 	| のばす 	| kéo dãn, kéo dài 	| 縮める 	| ちぢめる 	| co lại, thu nhỏ lại 	|
+| 早める 	| はやめる 	| đẩy nhanh 	| 延ばす 	| のばす 	| trì khoãn, mở rộng, gia hạn 	|
+| 膨らむ 	| ふくらむ 	| phồng lên, sưng lên 	| 萎む 	| しぼむ 	| xẹp xuống, héo đi 	|
+| 拾う 	| ひろう 	| nhặt 	| 捨てる 	| すてる 	| vứt, vứt bỏ 	|
+| 上げる 	| あげる 	| nâng lên, tăng lên 	| 下げる 	| さげる 	| hạ xuống, giảm xuống 	|
+| 履く 	| はく 	| mặc 	| 脱ぐ 	| ぬぐ 	| cởi 	|
+| 乗る 	| のる 	| lên xe, leo lên 	| 降りる 	| おりる 	| xuống xe, rời đi 	|
+| 掛ける 	| かける 	| nhân 	| 割る 	| わる 	| chia 	|
+| 見せる 	| みせる 	| cho xem, trình diễn 	| 隠す 	| かくす 	| giấu đi, ẩn đi 	|
+| 生きる 	| いきる 	| sống 	| 死ぬ 	| しぬ 	| chết 	|
+| 借りる 	| かりる 	| vay mượn 	| **{% tooltip 貸す [THỜI ĐẠI bây giờ có BẢO BỐI đừng nên CHO VAY] %}**{:.w3-yellow} 	| かす 	| cho vay, cho mượn 	|
+| 晴れる 	| はれる 	| trời nắng 	| 曇る 	| くもる 	| trời râm 	|
+| 切る 	| きる 	| cắt 	| 貼る 	| はる 	| dán 	|
+| **{% tooltip 勝つ [NGUYỆT múa 2 NGỌN LỬA thật LỰC để ăn mừng CHIẾN THẮNG] %}**{:.w3-yellow} 	| かつ 	| thắng 	| 隠す 	| かくす 	| giấu đi, ẩn đi 	|
+| 動く 	| うごく 	| di chuyển 	| 止まる 	| とまる 	| dừng lại 	|
+| 入る 	| はいる 	| vào, đi vào 	| 出る 	| でる 	| ra, đi ra 	|
+| 売る 	| うる 	| bán 	| 買う 	| かう 	| mua 	|
+| 褒める 	| ほめる 	| khen ngợi 	| 𠮟る 	| しかる 	| la mắng 	|
+| 行く 	| いく 	| đi 	| 来る 	| くる 	| đến 	|
+| 開ける 	| あける 	| mở 	| 閉める 	| しめる 	| đóng 	|
+| 遅れる 	| おくれる 	| chậm trễ 	| 早まる 	| はやまる 	| vội vàng, tăng tốc 	|
+| 込む 	| こむ 	| đông đúc 	| **{% tooltip 空く [ở dưới CÁI LỖ CÔNG NHÂN thiếu KHÔNG KHÍ] %}**{:.w3-yellow} 	| すく 	| vắng vẻ 	|
+| あげる 	| あげる 	| cho, đưa cho 	| もらう 	| もらう 	| lấy, nhận lấy 	|
+{:.w3-table-all.w3-hoverable.w3-card-4.w3-section.th-orange}
 
 ## DS Động từ phổ biến nhất
 
