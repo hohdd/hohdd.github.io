@@ -1,6 +1,6 @@
 # Site settings
 title: "Mr.Winter - Trang web cá nhân của Đông Hồ."
-description: Vâng, đây là một website cá nhân của Đông Hồ ^_^
+description: Một website cá nhân của Đông Hồ ^_^
 url: "https://me.donghd.com"
 author:
   name: "Đông Hồ"
@@ -110,6 +110,7 @@ collections:
 # Plugins
 plugins:
   - jekyll-paginate-v2
+  # - jekyll-furigana
   # - jekyll-pwa-plugin
 
 # TOC Configuration

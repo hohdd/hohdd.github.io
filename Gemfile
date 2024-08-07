@@ -18,6 +18,7 @@ gem 'nokogiri', '~> 1.6', '>= 1.10.9'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-paginate-v2", "~> 3.0.0"
+  gem "jekyll-furigana", "~> 1.0"
   # gem "jekyll-pwa-plugin", "~> 2.2.3"
 end
 
