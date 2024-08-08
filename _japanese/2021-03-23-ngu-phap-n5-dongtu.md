@@ -42,7 +42,7 @@ date: 2021-04-13 14:26:14 +0700
 
 ## Thể động từ
 
-### **Thể Vる**{:.w3-yellow}/Từ điển/Nguyên mẫu (う/る): Là thể cơ bản (động từ gốc) của động từ. Thể Vる (thể từ điển) cũng được sử dụng nhiều hơn trong hội thoại hàng ngày.
+### **Thể Vる**{:.w3-yellow}/Từ điển/Nguyên mẫu (**う/る**{:.w3-yellow}): Là thể cơ bản (động từ gốc) của động từ. Thể Vる (thể từ điển) cũng được sử dụng nhiều hơn trong hội thoại hàng ngày.
 - 1) Động từ **Nhóm I**{:.w3-yellow}: là các động từ kết thúc bởi các **đuôi う (u)**{:.w3-yellow} (chiếm khoảng 70% động từ trong tiếng Nhật):
 	+ Đuôi う (u): [-う] (u), [-く] (ku) + [-ぐ] (gu),[-す] (su), [-つ] (tsu), [-ぬ] (nu), [-ぶ] (bu), [-む] (mu), [-る] (ru).
 	+ Chú ý: Những động từ kết thúc bằng [-る] (ru) nhưng đứng trước nó là âm /a/, /u/,/i/,/o/ thì sẽ thuộc động từ nhóm 1, ví dụ như: わかる: hiểu, lý giải; つくる: làm, chế tạo; しる: biết, のぼる: leo, leo trèo.
@@ -51,7 +51,7 @@ date: 2021-04-13 14:26:14 +0700
 	+ Ngoài ra có một số động từ kết thúc bằng “iru” thuộc nhóm 2: みる: xem, おりる: xuống　(tàu/xe), あびる: tắm, きる: mặc, たりる: đủ, おきる: thức, おちる: rơi, すぎる: qua, とじる: Nhắm (mắt)/đóng/gập, いる: có, かりる: mượn, できる: có thể
 - 3) Động từ **Nhóm III (*bất quy tắc*)**{:.w3-yellow}: Chỉ bao gồm 2 động từ là *くる(đến)*{:.w3-yellow} và *する(làm)*{:.w3-yellow}
 
-### **Thể Vます**{:.w3-orange}/Lịch sự (い/え/します): Được sử dụng khi chúng ta nói chuyện với những người hơn tuổi, cấp trên, hoặc những người chúng ta mới quen biết. Trang trọng hơn nữa thì là Kính Ngữ.
+### **Thể Vます**{:.w3-orange}/Lịch sự (**い/え/します**{:.w3-orange}): Được sử dụng khi chúng ta nói chuyện với những người hơn tuổi, cấp trên, hoặc những người chúng ta mới quen biết. Trang trọng hơn nữa thì là Kính Ngữ.
 - 1) Động từ **Nhóm I**{:.w3-orange}:
 	+ là những động từ có âm cuối thuộc **cột い**{:.w3-orange}. [*Chuyển đuôi [-う] (u) → thành đuôi [-い] (i) + ます (masu). VD: かく　(kaku) →　かきます (Kakimasu): Viết*]
 	+ **Chuyển đổi từ Vる**: Chuyển đuôi [-う] (u) → thành *đuôi [-い] (i) + ます (masu)*{:.w3-orange}. VD: かく　(kaku) →　かきます (Kakimasu): Viết
@@ -84,34 +84,34 @@ date: 2021-04-13 14:26:14 +0700
 ### **Thể Vない**{:.w3-green} (nai): là những động từ kết thúc bằng ない. Có nghĩa phủ định là Không (làm gì đó).
 - 1) Động từ **Nhóm I**{:.w3-green}:
 	+ Những động từ *kết thúc bằng [-う] (u)*{:.w3-green} ： Chuyển [-う] (u) →　*[-わ] (wa) + ない(nai)*{:.w3-green}. VD: いう　(iu) →　いわない　(iwanai): Không nói
-	+ Những động từ *kết thúc CÓ VẦN う　(u)*{:.w3-green}: Chuyển う　(u) → *vần あ (a) tương ứng + ない(nai)*{:.w3-green}. VD: あそぶ　(asobu) →　あそばない(asobanai) : Không Chơi
+	+ Những động từ *kết thúc CÓ VẦN う　(u)*{:.w3-green}: Chuyển う　(u) → *vần あ (a) tương ứng + ない(nai)*{:.w3-green}. VD: あそぶ　(asob**u**{:.w3-green}) →　あそばない(asob**anai**{:.w3-green}) : Không Chơi
 	+ Chú ý (*đặc biệt*{:.w3-green}): *ある(aru): Có　→　ない　(nai): Không có*{:.w3-green}.
-- 2) Động từ **Nhóm II**{:.w3-green}: *bỏ [-る] (ru) và sau đó + ない(nai)*{:.w3-green}. VD: たべる　(taberu)→　たべない (tabenai): Không ăn
+- 2) Động từ **Nhóm II**{:.w3-green}: *bỏ [-る] (ru) và sau đó + ない(nai)*{:.w3-green}. VD: たべる　(tabe**ru**{:.w3-green})→　たべない (tabe**nai**{:.w3-green}): Không ăn
 - 3) Động từ **Nhóm III** (*bất quy tắc*{:.w3-green}):
 	+ くる　kuru →　*こない(konai): Không đến*{:.w3-green}
 	+ する (suru)　→　*しない(shinai): Không làm*{:.w3-green}
 
 ### **Thể Vた**{:.w3-blue} (ta): được dùng để diễn đạt những hành động, sự việc xảy ra ở trong quá khứ, nó mang hàm ý là đã (làm cái gì đó).
 - 1) Động từ **Nhóm I**{:.w3-blue}:
-	+ Những động từ có đuôi là く: Chuyển đuổi　く　→　*いた(ita)*{:.w3-blue}. VD: かく　(kaku): Viết →　 かいた (kaita)
-	+ Những động từ có đuôi là ぐ　→　Chuyển đuổi　ぐ　→　*いだ　(ida)*{:.w3-blue}. VD: いそぐ(isogu): Gấp, khẩn trương →　 いそいだ(isoida)
-	+ Những động từ có đuôi là す: Chuyển đuôi す →　 *した(shita)*{:.w3-blue}. VD: はなす(hanasu): Nói chuyện →　 はなした(hanashita)
-	+ Những động từ có đuôi là　*む、ぶ、ぬ (mu, bu, nu)*{:.w3-blue}: Chuyển đuôi む、ぶ、ぬ: →　*んだ(nda)*{:.w3-blue}. VD: よむ(yomu): Đọc →　よんだ(yonda)
-	+ Những động từ có đuôi là *う、る、つ (u, ru, tsu)*{:.w3-blue}： Chuyển đuổi　う、る、つ　→　*った(tta)*{:.w3-blue}. VD: まつ(matsu): đợi, chờ →　まった(matta)
-- 2) Động từ **Nhóm II**{:.w3-blue}: *Bỏ đuôi る　+ た*{:.w3-blue}. VD: みせる: Cho xem →　みせた
+	+ Những động từ có đuôi là く: Chuyển đuổi　く　→　*いた(ita)*{:.w3-blue}. VD: かく　(ka**ku**{:.w3-blue}): Viết →　 かいた (ka**ita**{:.w3-blue})
+	+ Những động từ có đuôi là ぐ　→　Chuyển đuổi　ぐ　→　*いだ　(ida)*{:.w3-blue}. VD: いそぐ(iso**gu**{:.w3-blue}): Gấp, khẩn trương →　 いそいだ(iso**ida**{:.w3-blue})
+	+ Những động từ có đuôi là す: Chuyển đuôi す →　 *した(shita)*{:.w3-blue}. VD: はなす(hana**su**{:.w3-blue}): Nói chuyện →　 はなした(hana**shita**{:.w3-blue})
+	+ Những động từ có đuôi là　*む、ぶ、ぬ (mu, bu, nu)*{:.w3-blue}: Chuyển đuôi む、ぶ、ぬ: →　*んだ(nda)*{:.w3-blue}. VD: よむ(yo**mu**{:.w3-blue}): Đọc →　よんだ(yo**nda**{:.w3-blue})
+	+ Những động từ có đuôi là *う、る、つ (u, ru, tsu)*{:.w3-blue}： Chuyển đuổi　う、る、つ　→　*った(tta)*{:.w3-blue}. VD: まつ(ma**tsu**): đợi, chờ →　まった(ma**tta**{:.w3-blue})
+- 2) Động từ **Nhóm II**{:.w3-blue}: *Bỏ đuôi る　+ た*{:.w3-blue}. VD: みせる (mise**ru**{:.w3-blue}): Cho xem →　みせた (mise**ta**{:.w3-blue})
 - 3) Động từ **Nhóm III** (bất quy tắc):
 	+ くる →　*きた(đến)*{:.w3-blue}
 	+ する →　*した(làm)*{:.w3-blue}
 
 ### **Thể Vて**{:.w3-indigo} (te): là một trong những thể phổ biến trong ngôn ngữ giao tiếp mà người Nhật thường hay sử dụng trong đời sống.
 - 1) Động từ **Nhóm I**{:.w3-indigo}:
-	+ Những động từ có đuôi là く (**ku**{:.w3-indigo}): Chuyển đuổi　く　→　*いて(ite)*{:.w3-indigo}. VD: かく　(kaku): Viết →　 かいて (kaite)
+	+ Những động từ có đuôi là く (**ku**{:.w3-indigo}): Chuyển đuổi　く　→　*いて(ite)*{:.w3-indigo}. VD: かく　(ka**ku**{:.w3-indigo}): Viết →　 かいて (ka**ite**{:.w3-indigo})
 	+ Chú ý: いく　(iku): Đi →　いって Đây là trường hợp đặc biệt nên không theo quy tắc.
-	+ Những động từ có đuôi là す (**su**{:.w3-indigo}): Chuyển đuôi す →　 *して(shite)*{:.w3-indigo}. VD: はなす(hanasu): Nói chuyện →　 はなして(hanashite)
-	+ Những động từ có đuôi là ぐ (**gu**{:.w3-indigo})　→　Chuyển đuổi　ぐ　→　*いで(ide)*{:.w3-indigo}. VD: いそぐ(isogu): Gấp/Khẩn trương →　 いそいで(isoide)
-	+ Những động từ có đuôi là　む、ぶ、ぬ (**mu, bu, nu**{:.w3-indigo}): Chuyển đuôi む、ぶ、ぬ: →　*んで(nde)*{:.w3-indigo}. VD: よむ(yomu): Đọc →　よんで(yonda)
-	+ Những động từ có đuôi là う、る、つ (**u, ru, tsu**{:.w3-indigo})： Chuyển đuổi　う、る、つ　→　*って(tte)*{:.w3-indigo}. VD: だまる: Câm/Im lặng　→　だまって
-- 2) Động từ **Nhóm II**{:.w3-indigo}: *Bỏ đuôi る　+ て*{:.w3-indigo}. VD: みせる: Cho xem →　みせて
+	+ Những động từ có đuôi là す (**su**{:.w3-indigo}): Chuyển đuôi す →　 *して(shite)*{:.w3-indigo}. VD: はなす(hana**su**{:.w3-indigo}): Nói chuyện →　 はなして(hana**shite**{:.w3-indigo})
+	+ Những động từ có đuôi là ぐ (**gu**{:.w3-indigo})　→　Chuyển đuổi　ぐ　→　*いで(ide)*{:.w3-indigo}. VD: いそぐ(iso**gu**{:.w3-indigo}): Gấp/Khẩn trương →　 いそいで(iso**ide**{:.w3-indigo})
+	+ Những động từ có đuôi là　む、ぶ、ぬ (**mu, bu, nu**{:.w3-indigo}): Chuyển đuôi む、ぶ、ぬ: →　*んで(nde)*{:.w3-indigo}. VD: よむ(yo**mu**): Đọc →　よんで(yo**nda**{:.w3-indigo})
+	+ Những động từ có đuôi là う、る、つ (**u, ru, tsu**{:.w3-indigo})： Chuyển đuổi　う、る、つ　→　*って(tte)*{:.w3-indigo}. VD: だまる (dama**ru**{:.w3-indigo}): Câm/Im lặng　→　だまって (dama**tte**{:.w3-indigo})
+- 2) Động từ **Nhóm II**{:.w3-indigo}: *Bỏ đuôi る　+ て*{:.w3-indigo}. VD: みせる (mise**ru**{:.w3-indigo}): Cho xem →　みせて (mise**te**{:.w3-indigo})
 - 3) Động từ **Nhóm III**{:.w3-indigo} (bất quy tắc):
 	+ くる　→　*きて (đến)*{:.w3-indigo}
 	+ する　→　*して (làm)*{:.w3-indigo}
