@@ -23,7 +23,7 @@ toc: true
 mermaid: false
 highlight: false # để thêm màu mè cho <pre> CODE </pre>
 amp: false
-audioSetting: false # có menu để setting audio or not
+audioSetting: true # có menu để setting audio or not
 # this for AMP related post
 collection: Kaiwa
 ### category: dùng để group collection

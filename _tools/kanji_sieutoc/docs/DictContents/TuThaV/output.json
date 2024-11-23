@@ -1,0 +1,627 @@
+{
+    "倒": {
+        "Kanji": "倒",
+        "TuDongTu": "倒れます(tự V) = たおれます - đổ",
+        "ThaDongTu": "倒します(tha V) = たおします - làm đổ, hạ gục"
+    },
+    "起": {
+        "Kanji": "起",
+        "TuDongTu": "起きます/起こります(tự V) = おきます / おこります - thức dậy, xảy ra",
+        "ThaDongTu": "起こります(tha V) = おこります - đánh thức, dựng lên, gây ra"
+    },
+    "乾": {
+        "Kanji": "乾",
+        "TuDongTu": "乾きます(tự V) = かわきます",
+        "ThaDongTu": "乾かします(tha V) = かわかします - làm khô"
+    },
+    "決": {
+        "Kanji": "決",
+        "TuDongTu": "決まります(tự V) = きまります - được quyết định, (thời gian, địa điểm...) nhất định",
+        "ThaDongTu": "決めます(tha V) = きめます quyết định"
+    },
+    "写": {
+        "Kanji": "写",
+        "TuDongTu": "写ります(tự V) = うつります - được chụp, được chiếu",
+        "ThaDongTu": "写します(tha V) = うつします - chụp, sao chép"
+    },
+    "見": {
+        "Kanji": "見",
+        "TuDongTu": "見えます(tự V) = みえます - nhìn thấy, có thể nhìn thấy",
+        "ThaDongTu": "見ます(tha V) = みます - xem, nhìn"
+    },
+    "捕": {
+        "Kanji": "捕",
+        "TuDongTu": "捕まります(tự V) = つかまります - bị bắt, nắm, giữ",
+        "ThaDongTu": "捕まえます(tha V) = つかまえます - bắt, tóm"
+    },
+    "乗": {
+        "Kanji": "乗",
+        "TuDongTu": "乗ります(tự V) = のります - lên (tàu, xe), cưỡi (ngựa)",
+        "ThaDongTu": "乗せます(tha V) = のせます - cho lên, chở đi, cho đi nhờ, chất lên, chồng lên"
+    },
+    "降": {
+        "Kanji": "降",
+        "TuDongTu": "降ります/下ります(tự V) = おります - xuống (tàu, xe, núi), nhận được (sự cho phép, chứng chỉ, lương hưu ...)",
+        "ThaDongTu": "降ろします/下ろします(tha V) = おろします - cho xuống (tàu, xe), hạ xuống, rút tiền"
+    },
+    "直": {
+        "Kanji": "直",
+        "TuDongTu": "直ります(tự V) = なおります - được sửa",
+        "ThaDongTu": "直します(tha V) = なおします - sửa, chữa, chỉnh lại"
+    },
+    "治": {
+        "Kanji": "治",
+        "TuDongTu": "治ります(tự V) = なおります - khỏi (bệnh), lành (vết thương)",
+        "ThaDongTu": "治します(tha V) = なおします - chữa trị, phục hồi"
+    },
+    "亡": {
+        "Kanji": "亡",
+        "TuDongTu": "亡くなります(tự V) = なくなります - qua đời (từ nói tránh của 死にます)",
+        "ThaDongTu": "亡くします(tha V) = なくします - mất (ai đó)"
+    },
+    "生": {
+        "Kanji": "生",
+        "TuDongTu": "汚れます(tự V) = よごれます - vấy bẩn, bị bẩn",
+        "ThaDongTu": "生やします(tha V) = はやします - nuôi, chăm, mọc (râu)"
+    },
+    "間": {
+        "Kanji": "間",
+        "TuDongTu": "慣れます(tự V) = (に)なれます - quen với, quen",
+        "ThaDongTu": "間違えます(tha V) = まちがえます - sai, nhầm, mắc lỗi"
+    },
+    "掛": {
+        "Kanji": "掛",
+        "TuDongTu": "掛かります(tự V) = かかります - được phủ lên, tiêu tốn, vướng vào, gây ra, khởi động, khóa [chìa khóa ~] [鍵が～]",
+        "ThaDongTu": "掛けます(tha V) = かけます - phủ lên, lấy thời gian của ai đó, bắt đầu, phép nhân, ngồi xuống [ghế] [椅子に～]"
+    },
+    "動": {
+        "Kanji": "動",
+        "TuDongTu": "動きます(tự V) = うごきます - di chuyển, cử động, chuyển động",
+        "ThaDongTu": "動かします(tha V) = うごかします - di chuyển, cử động, vận hành, làm lay động"
+    },
+    "離": {
+        "Kanji": "離",
+        "TuDongTu": "離れます(tự V) = はなれます - tránh xa, cách xa",
+        "ThaDongTu": "離します(tha V) = はなします - rời xa, cách"
+    },
+    "ぶ": {
+        "Kanji": "ぶ",
+        "TuDongTu": "ぶつかります(tự V) = đâm, va chạm, mâu thuẫn, xung đột",
+        "ThaDongTu": "ぶつけます(tha V) = đâm mạnh, đụng vào"
+    },
+    "こ": {
+        "Kanji": "こ",
+        "TuDongTu": "こぼれます(tự V) = bị đổ, bị tràn",
+        "ThaDongTu": "こぼします(tha V) = làm đổ, làm tràn"
+    },
+    "片": {
+        "Kanji": "片",
+        "TuDongTu": "片付きます(tự V) = かたづきます - được dọn dẹp ngăn nắp, gọn gàng, được giải quyết",
+        "ThaDongTu": "片付けます(tha V) = かたづけます - dọn dẹp, giải quyết"
+    },
+    "無": {
+        "Kanji": "無",
+        "TuDongTu": "無くなります(tự V) = なくなります - bị mất, hết",
+        "ThaDongTu": "無くします(tha V) = なくします - làm mất, đánh mất"
+    },
+    "残": {
+        "Kanji": "残",
+        "TuDongTu": "残ります(tự V) = のこります - còn lại, sót lại",
+        "ThaDongTu": "残します(tha V) = のこします - còn lại, để lại"
+    },
+    "む": {
+        "Kanji": "む",
+        "TuDongTu": "むけます(tự V) = bong tróc, lột ra",
+        "ThaDongTu": "むきます(tha V) = bóc, gọt, lột"
+    },
+    "積": {
+        "Kanji": "積",
+        "TuDongTu": "積もります(tự V) = つもります - tích trữ, chồng chất lên",
+        "ThaDongTu": "積みます(tha V) = つみます - chất lên, tích lũy"
+    },
+    "空": {
+        "Kanji": "空",
+        "TuDongTu": "空きます(tự V) = あきます - trống, rỗng",
+        "ThaDongTu": "空けます(tha V) = あけます - làm rỗng, để trống, đục lỗ"
+    },
+    "下": {
+        "Kanji": "下",
+        "TuDongTu": "下がります(tự V) = さがります - giảm xuống, lùi lại",
+        "ThaDongTu": "下げます(tha V) = さげます - hạ bớt, giảm đi, thu dọn"
+    },
+    "冷": {
+        "Kanji": "冷",
+        "TuDongTu": "冷めます(tự V) = さめます - bị lạnh, bị nguội đi, mất đam mê",
+        "ThaDongTu": "冷ます(tha V) = さます - làm lạnh, làm nguội"
+    },
+    "燃": {
+        "Kanji": "燃",
+        "TuDongTu": "燃えます(tự V) = もえます - cháy được",
+        "ThaDongTu": "燃やします(tha V) = もやします - đốt cháy, cháy cùng (đam mê)"
+    },
+    "沸": {
+        "Kanji": "沸",
+        "TuDongTu": "沸きます(tự V) = わきます - sôi, (bồn tám) sẵn sàng, sôi động lên",
+        "ThaDongTu": "沸かします(tha V) = わかします - đun sôi, chuẩn bị (bồn tắm), sôi động"
+    },
+    "鳴": {
+        "Kanji": "鳴",
+        "TuDongTu": "鳴ります(tự V) = なります - reo, kêu, hót, vang",
+        "ThaDongTu": "鳴らします(tha V) = ならします - làm phát ra tiếng kêu, bấm (còi)"
+    },
+    "役": {
+        "Kanji": "役",
+        "TuDongTu": "役立ちます/役に立ちます(tự V) = (に)やくだちます /(が) やくにたちます - hữu ích",
+        "ThaDongTu": "役立てます/役に立てます(tha V) = (に)やくだてます /(の) やくにたてます - ứng dụng, đưa vào sử dụng"
+    },
+    "温": {
+        "Kanji": "温",
+        "TuDongTu": "温まります/暖まります(tự V) = あたたまります - ấm lên",
+        "ThaDongTu": "温めます/暖めます(tha V) = あたためます - làm ấm, hâm nóng"
+    },
+    "高": {
+        "Kanji": "高",
+        "TuDongTu": "高まります(tự V) = たかまります - tăng lên, tăng cao",
+        "ThaDongTu": "高めます(tha V) = たかめます - làm cho tăng lên, nâng cao"
+    },
+    "強": {
+        "Kanji": "強",
+        "TuDongTu": "強まります(tự V) = つよまります - mạnh lên",
+        "ThaDongTu": "強めます(tha V) = 強めます - làm mạnh lên, tăng cường"
+    },
+    "弱": {
+        "Kanji": "弱",
+        "TuDongTu": "弱まります(tự V) = よわまります - yếu đi, suy giảm",
+        "ThaDongTu": "弱めます(tha V) = よわめます - làm suy yếu"
+    },
+    "広": {
+        "Kanji": "広",
+        "TuDongTu": "広がります(tự V) = ひろがります - rộng, lan rộng, mở rộng",
+        "ThaDongTu": "広げます(tha V) = ひろげます - mở rộng, trải rộng, dang rộng"
+    },
+    "深": {
+        "Kanji": "深",
+        "TuDongTu": "深まります(tự V) = ふかまります - sâu",
+        "ThaDongTu": "深めます(tha V) = ふかめます - làm sâu đậm hơn, tăng cường (kiến thức...), thắt chặt (mối quan hệ)"
+    },
+    "届": {
+        "Kanji": "届",
+        "TuDongTu": "届きます(tự V) = とどきます - được giao đến, chạm tới, với tới",
+        "ThaDongTu": "届けます(tha V) = とどけます - giao đến, chuyển đến, đến trình báo"
+    },
+    "近": {
+        "Kanji": "近",
+        "TuDongTu": "近づきます(tự V) = ちかづきます - lại gần, đến gần",
+        "ThaDongTu": "近づけます(tha V) = ちかづけます - mang, đưa đến gần"
+    },
+    "合": {
+        "Kanji": "合",
+        "TuDongTu": "合います(tự V) = あいます - hợp, khớp, vừa (cỡ)",
+        "ThaDongTu": "合わせます(tha V) = あわせる - cùng nhau, hợp"
+    },
+    "当": {
+        "Kanji": "当",
+        "TuDongTu": "当たります(tự V) = あたります - bị đánh trúng, trúng (xổ số)",
+        "ThaDongTu": "当てます(tha V) = あてます - đúng, trúng, chạm"
+    },
+    "似": {
+        "Kanji": "似",
+        "TuDongTu": "似ます(tự V) = にます - giống, tương tự",
+        "ThaDongTu": "似せます(tha V) = にせます - bắt chước, mô phỏng"
+    },
+    "分": {
+        "Kanji": "分",
+        "TuDongTu": "分かれます(tự V) = わかれます - chia, phân chia",
+        "ThaDongTu": "分けります(tha V) = わけります - bỏ rơi, chia, tách"
+    },
+    "足": {
+        "Kanji": "足",
+        "TuDongTu": "足ります(tự V) = たります - đủ",
+        "ThaDongTu": "足します(tha V) = たします - thêm vào, cộng thêm, bổ sung"
+    },
+    "増": {
+        "Kanji": "増",
+        "TuDongTu": "増えます(tự V) = ふえます - tăng lên, gia tăng",
+        "ThaDongTu": "増やします(tha V) = ふやします - làm tăng lên"
+    },
+    "減": {
+        "Kanji": "減",
+        "TuDongTu": "減ります(tự V) = へります - giảm xuống",
+        "ThaDongTu": "減らします(tha V) = へらします - làm giảm, cắt giảm"
+    },
+    "変": {
+        "Kanji": "変",
+        "TuDongTu": "変わります(tự V) = かわります - thay đổi, biến đổi",
+        "ThaDongTu": "変えます(tha V) = かえます - đổi, thay đổi"
+    },
+    "替": {
+        "Kanji": "替",
+        "TuDongTu": "替わります/代わります/換わります(tự V) = かわります - thay đổi, thay thế",
+        "ThaDongTu": "替えます/代えます/換えます(tha V) = かえます - thay thế, thế chỗ, đổi"
+    },
+    "返": {
+        "Kanji": "返",
+        "TuDongTu": "返ります(tự V) = かえります - trả lại",
+        "ThaDongTu": "返します(tha V) = かえします - trả lại"
+    },
+    "助": {
+        "Kanji": "助",
+        "TuDongTu": "助かります(tự V) = たすかります - được cứu giúp, đỡ quá, may quá",
+        "ThaDongTu": "助けます(tha V) = たすけます - cứu, giúp đỡ"
+    },
+    "刺": {
+        "Kanji": "刺",
+        "TuDongTu": "刺さります(tự V) = ささります - mắc, kẹt, đâm",
+        "ThaDongTu": "刺します(tha V) = さします - đâm, chích"
+    },
+    "隠": {
+        "Kanji": "隠",
+        "TuDongTu": "隠れます(tự V) = かくれます - trốn, ẩn nấp",
+        "ThaDongTu": "隠します(tha V) = かくします - giấu giếm, che giấu"
+    },
+    "埋": {
+        "Kanji": "埋",
+        "TuDongTu": "埋まります(tự V) = うまります - bao bọc, che giấu, che đậy",
+        "ThaDongTu": "埋めます(tha V) = うめます - bị chôn, lấp"
+    },
+    "詰": {
+        "Kanji": "詰",
+        "TuDongTu": "詰まります(tự V) = つまります - chất đầy, chặt, tắc, bít, gần lại",
+        "ThaDongTu": "詰めます(tha V) = つめます - chất đầy, nhét vào, rút ngắn (khoảng cách)"
+    },
+    "飛": {
+        "Kanji": "飛",
+        "TuDongTu": "飛びます(tự V) = とびます - bay, bay mất",
+        "ThaDongTu": "飛ばします(tha V) = とばします - bắn, phóng, làm bay, bỏ qua"
+    },
+    "慣": {
+        "Kanji": "慣",
+        "TuDongTu": "立ちます(tự V) = たちます - đứng, đứng lên, dựng lên",
+        "ThaDongTu": "慣らします(tha V) = ならします - làm cho quen"
+    },
+    "立": {
+        "Kanji": "立",
+        "TuDongTu": "建ちます(tự V) = たちます - được xây dựng",
+        "ThaDongTu": "立てます(tha V) = たてます - dựng đứng, lập nên (kế hoạch)"
+    },
+    "建": {
+        "Kanji": "建",
+        "TuDongTu": "育ちます(tự V) = そだちます - lớn lên, phát triển, được đào tạo",
+        "ThaDongTu": "建てます(tha V) = たてます - xây dựng"
+    },
+    "育": {
+        "Kanji": "育",
+        "TuDongTu": "生えます(tự V) = はえます - mọc, sinh sôi, phát triển",
+        "ThaDongTu": "育てます(tha V) = そだてます - nuôi dưỡng, nuôi lớn, chăm sóc (hoa)"
+    },
+    "汚": {
+        "Kanji": "汚",
+        "TuDongTu": "壊れます(tự V) = こわれます - hỏng, bị hỏng",
+        "ThaDongTu": "汚します(tha V) = よごします - làm bẩn"
+    },
+    "壊": {
+        "Kanji": "壊",
+        "TuDongTu": "割れます(tự V) = われます - vỡ, nứt",
+        "ThaDongTu": "壊します(tha V) = こわします - làm hỏng, gây hại"
+    },
+    "割": {
+        "Kanji": "割",
+        "TuDongTu": "折れます(tự V) = おれます - bị bẻ gãy",
+        "ThaDongTu": "割ります(tha V) = わります - làm vỡ, chia"
+    },
+    "折": {
+        "Kanji": "折",
+        "TuDongTu": "破れます(tự V) = やぶれます - bị rách",
+        "ThaDongTu": "折ります(tha V) = おります - bẻ gãy, gập lại"
+    },
+    "破": {
+        "Kanji": "破",
+        "TuDongTu": "曲がります(tự V) = まがります - rẽ, cong",
+        "ThaDongTu": "破ります(tha V) = やぶります - làm rách, phá vỡ (kỉ lục)"
+    },
+    "曲": {
+        "Kanji": "曲",
+        "TuDongTu": "外れます(tự V) = はずれます - tuột ra, rời ra",
+        "ThaDongTu": "曲げます(tha V) = まげます - bẻ cong, uốn cong"
+    },
+    "外": {
+        "Kanji": "外",
+        "TuDongTu": "揺れます(tự V) = ゆれます - dao động, lung lay",
+        "ThaDongTu": "外します(tha V) = はずします - rời, tháo ra, sai lệch"
+    },
+    "揺": {
+        "Kanji": "揺",
+        "TuDongTu": "流れます(tự V) = ながれます - chảy, trôi, lan ra",
+        "ThaDongTu": "揺らします(tha V) = ゆらします - rung lắc, làm lung lay"
+    },
+    "流": {
+        "Kanji": "流",
+        "TuDongTu": "濡れます(tự V) = ぬれます - ướt, dính",
+        "ThaDongTu": "流します(tha V) = ながします - làm cho chảy ra"
+    },
+    "濡": {
+        "Kanji": "濡",
+        "TuDongTu": "覚めます(tự V) = さめます - tỉnh giấc",
+        "ThaDongTu": "濡らします(tha V) = 濡らします - làm ướt, làm ẩm"
+    },
+    "覚": {
+        "Kanji": "覚",
+        "TuDongTu": "進みます(tự V) = すすみます - tiến lên, tiến cấp, tiến triển",
+        "ThaDongTu": "覚まします(tha V) = さまします - đánh thức, làm cho tỉnh"
+    },
+    "進": {
+        "Kanji": "進",
+        "TuDongTu": "通ります(tự V) = とおります - thông qua, đi qua",
+        "ThaDongTu": "進めます(tha V) = すすめます - tiến lên, tiến hành, nhanh"
+    },
+    "過": {
+        "Kanji": "過",
+        "TuDongTu": "過ぎます(tự V) = すぎます - quá, đi qua",
+        "ThaDongTu": "過ごします(tha V) = すごします - trải qua, dành (thời gian)"
+    },
+    "移": {
+        "Kanji": "移",
+        "TuDongTu": "移ります(tự V) = うつります - chuyển, lây",
+        "ThaDongTu": "移します(tha V) = うつします - làm di chuyển, làm lây nhiễm"
+    },
+    "寄": {
+        "Kanji": "寄",
+        "TuDongTu": "寄ります(tự V) = (に) よります - ghé vào, ghé qua, lệch sang, chệch sang",
+        "ThaDongTu": "寄せます(tha V) = (に) よせます - ghé vào, tạt vào"
+    },
+    "向": {
+        "Kanji": "向",
+        "TuDongTu": "向きます(tự V) = (が／を) むきます - hướng, thích hợp, dành cho",
+        "ThaDongTu": "向けます(tha V) = (が／を) むけます - hướng về, quay về phía, hướng tới (đối tượng)"
+    },
+    "済": {
+        "Kanji": "済",
+        "TuDongTu": "済みます(tự V) = すみます - hoàn thành, kết thúc, xong",
+        "ThaDongTu": "済ませます／済ます(tha V) = すませます／すます - kết thúc, cũng xong"
+    },
+    "伝": {
+        "Kanji": "伝",
+        "TuDongTu": "伝わります(tự V) = つたわります - lan truyền, được truyền",
+        "ThaDongTu": "伝えます(tha V) = つたえます - truyền, truyền đạt lại"
+    },
+    "続": {
+        "Kanji": "続",
+        "TuDongTu": "続きます(tự V) = つづきます - tiếp tục, theo",
+        "ThaDongTu": "続けます(tha V) = つづけます - tiếp tục, liên tiếp kéo dài"
+    },
+    "繋": {
+        "Kanji": "繋",
+        "TuDongTu": "繋がります(tự V) = つながります - được kết nối, dẫn tới",
+        "ThaDongTu": "繋ぎます(tha V) = つなぎます - kết nối"
+    },
+    "伸": {
+        "Kanji": "伸",
+        "TuDongTu": "伸びます(tự V) = のびます - dài, giãn ra, vượt",
+        "ThaDongTu": "伸ばします(tha V) = のばします - nuôi dài, tăng"
+    },
+    "延": {
+        "Kanji": "延",
+        "TuDongTu": "延びます(tự V) = のびます - bị trì hoãn, kéo dài",
+        "ThaDongTu": "延ばします(tha V) = のばします - làm hoãn lại, kéo dài"
+    },
+    "重": {
+        "Kanji": "重",
+        "TuDongTu": "重なります(tự V) = かさなります - lồng vào nhau, chồng chất",
+        "ThaDongTu": "重ねます(tha V) = かさねます - lồng vào nhau, chồng chất"
+    },
+    "載": {
+        "Kanji": "載",
+        "TuDongTu": "載ります(tự V) = のります - lên, vừa",
+        "ThaDongTu": "載せます(tha V) = のせます - để lên, đặt lên, đăng tải"
+    },
+    "揃": {
+        "Kanji": "揃",
+        "TuDongTu": "揃います(tự V) = そろいます - tụ tập, thu thập, hợp, hòa hợp",
+        "ThaDongTu": "揃えます(tha V) = そろえます - tập hợp, chuẩn bị, sắp xếp, hợp"
+    },
+    "ま": {
+        "Kanji": "ま",
+        "TuDongTu": "まとまります(tự V) = tổng hợp, thống nhất",
+        "ThaDongTu": "まとめます(tha V) = tập hợp, gom lại, sắp xếp"
+    },
+    "付": {
+        "Kanji": "付",
+        "TuDongTu": "付きます(tự V) = つきます - dính, gắn, có được, ngấm vào, đính kèm",
+        "ThaDongTu": "付けます(tha V) = つけます - bôi, phết, biết, gắng, đính kèm, viết"
+    },
+    "溜": {
+        "Kanji": "溜",
+        "TuDongTu": "溜まります(tự V) = たまります - lưu trữ, tích tụ",
+        "ThaDongTu": "溜めます(tha V) = ためます - tích, dồn lại"
+    },
+    "混": {
+        "Kanji": "混",
+        "TuDongTu": "混ざります／交ざります(tự V) = まざります - trộn vào",
+        "ThaDongTu": "混ぜます／交ぜます(tha V) = まぜます - trộn, khuấy"
+    },
+    "解": {
+        "Kanji": "解",
+        "TuDongTu": "解けます／溶けます(tự V) = とけます - giải quyết, tan",
+        "ThaDongTu": "解きます／溶きます／溶かします(tha V) = ときます／とかします - giải quyết, tan"
+    },
+    "含": {
+        "Kanji": "含",
+        "TuDongTu": "含みます(tự V) = ふくみます - bao gồm, chứa",
+        "ThaDongTu": "含めます(tha V) = ふくめます - bao gồm"
+    },
+    "切": {
+        "Kanji": "切",
+        "TuDongTu": "切れます(tự V) = きれます - cắt, hết, hết hạn, đứt",
+        "ThaDongTu": "切らします(tha V) = きらします - dùng hết, cạn kiệt"
+    },
+    "抜": {
+        "Kanji": "抜",
+        "TuDongTu": "抜けます(tự V) = ぬけます - tháo, tuột, thiếu, rụng (tóc), thủng lốp",
+        "ThaDongTu": "抜きます(tha V) = ぬきます - lấy ra, nhổ, cho qua, bỏ, thư giãn (cơ thể)"
+    },
+    "現": {
+        "Kanji": "現",
+        "TuDongTu": "現れます(tự V) = あらわれます - xuất hiện, hiện ra",
+        "ThaDongTu": "現します(tha V) = あらわします - làm hiện ra"
+    },
+    "表": {
+        "Kanji": "表",
+        "TuDongTu": "表れます(tự V) = あらわれます - biểu hiện",
+        "ThaDongTu": "表します(tha V) = あらわします - biểu thị, biểu lộ"
+    },
+    "散": {
+        "Kanji": "散",
+        "TuDongTu": "散ります(tự V) = ちります - rơi, tàn",
+        "ThaDongTu": "散らします(tha V) = ちらします - làm rụng, bay tứ tung"
+    },
+    "炊": {
+        "Kanji": "炊",
+        "TuDongTu": "炊けます(tự V) = たけます - được nấu",
+        "ThaDongTu": "炊きます(tha V) = たきます - nấu cơm"
+    },
+    "煮": {
+        "Kanji": "煮",
+        "TuDongTu": "煮えます(tự V) = にえます - ninh, hầm",
+        "ThaDongTu": "煮ます(tha V) = にます - ninh, nấu"
+    },
+    "焼": {
+        "Kanji": "焼",
+        "TuDongTu": "焼けます(tự V) = やけます - được nướng, được rán",
+        "ThaDongTu": "焼きます(tha V) = やきます - nướng, rán"
+    },
+    "集": {
+        "Kanji": "集",
+        "TuDongTu": "集まります(tự V) = あつまります - Tập trung, tập hợp",
+        "ThaDongTu": "集めます(tha V) = あつめます - sưu tầm, thu thập"
+    },
+    "落": {
+        "Kanji": "落",
+        "TuDongTu": "落ちます(tự V) = おちます - rơi",
+        "ThaDongTu": "落とします(tha V) = おとします - đánh rơi, làm rơi"
+    },
+    "取": {
+        "Kanji": "取",
+        "TuDongTu": "取れます(tự V) = とれます - đứt, sứt",
+        "ThaDongTu": "取ります(tha V) = とります - lấy, lấy cắp, xin [nghỉ], thêm [tuổi]"
+    },
+    "並": {
+        "Kanji": "並",
+        "TuDongTu": "並びます(tự V) = ならびます - xếp hàng",
+        "ThaDongTu": "並べます(tha V) = ならべます - sắp xếp"
+    },
+    "上": {
+        "Kanji": "上",
+        "TuDongTu": "上がります(tự V) = あがります - tăng, tăng lên",
+        "ThaDongTu": "上げます(tha V) = あげます - làm tăng, nâng lên"
+    },
+    "売": {
+        "Kanji": "売",
+        "TuDongTu": "売れます(tự V) = うれます - bán chạy, được bán",
+        "ThaDongTu": "売ります(tha V) = うります - bán"
+    },
+    "入": {
+        "Kanji": "入",
+        "TuDongTu": "入ります(tự V) = (に)はいります - vào",
+        "ThaDongTu": "入れます(tha V) = いれます - cho vào, bỏ vào"
+    },
+    "終": {
+        "Kanji": "終",
+        "TuDongTu": "終わります(tự V) = おわります - kết thúc",
+        "ThaDongTu": "終えます(tha V) = おえます - kết thúc"
+    },
+    "戻": {
+        "Kanji": "戻",
+        "TuDongTu": "戻ります(tự V) = もどります - quay lại, trở lại",
+        "ThaDongTu": "戻します(tha V) = もどします - để lại vị trí ban đầu"
+    },
+    "始": {
+        "Kanji": "始",
+        "TuDongTu": "始まります(tự V) = はじまいます - bắt đầu",
+        "ThaDongTu": "始めます(tha V) = はじめます - bắt đầu"
+    },
+    "開": {
+        "Kanji": "開",
+        "TuDongTu": "開きます(tự V) = あきます - mở (cửa)",
+        "ThaDongTu": "開けます(tha V) = あけます - mở (cửa, cửa sổ)"
+    },
+    "閉": {
+        "Kanji": "閉",
+        "TuDongTu": "閉まります(tự V) = しまります - đóng (cửa)",
+        "ThaDongTu": "閉めます(tha V) = しめます - đóng (cửa sổ, cửa)"
+    },
+    "点": {
+        "Kanji": "点",
+        "TuDongTu": "点きます(tự V) = つきます - bật (điện, điều hòa)",
+        "ThaDongTu": "点けます(tha V) = つけます - bật (điện, điều hòa)"
+    },
+    "消": {
+        "Kanji": "消",
+        "TuDongTu": "消えます(tự V) = きえます - tắt (điện, điều hòa)",
+        "ThaDongTu": "消します(tha V) = けします - tắt (điện, điều hòa)"
+    },
+    "気": {
+        "Kanji": "気",
+        "TuDongTu": "気が付きます(tự V) = (に)きがつきます - để ý, nhận ra, chú ý",
+        "ThaDongTu": "気を付けます(tha V) = きをつけます - chú ý, cẩn thận"
+    },
+    "止": {
+        "Kanji": "止",
+        "TuDongTu": "止まります(tự V) = とまります - dừng, đỗ (ô tô)",
+        "ThaDongTu": "止めます(tha V) = とめます - dừng, đỗ (ô tô)"
+    },
+    "出": {
+        "Kanji": "出",
+        "TuDongTu": "出ます(tự V) = でます - ra, tham gia(に)",
+        "ThaDongTu": "出します(tha V) = だします - lấy ra, rút (tiền), đổ rác"
+    },
+    "回": {
+        "Kanji": "回",
+        "TuDongTu": "回ります(tự V) = まわります - vặn, quay, xoay vòng",
+        "ThaDongTu": "回します(tha V) = まわします - vặn (núm)"
+    },
+    "擦": {
+        "Kanji": "擦",
+        "TuDongTu": "擦れます(tự V) = すれます - mòn, bị mài mòn.",
+        "ThaDongTu": "擦ります(tha V) = すります - cọ xát, chà sát"
+    },
+    "逃": {
+        "Kanji": "逃",
+        "TuDongTu": "逃げます(tự V) = にげます - chạy trốn, bỏ chạy",
+        "ThaDongTu": "逃がします(tha V) = 逃がします - để mất, để tuột mất (cơ hội), thả (con mèo ra)"
+    },
+    "脱": {
+        "Kanji": "脱",
+        "TuDongTu": "脱げます(tự V) = ぬげます - cởi ra, tuột (giày)",
+        "ThaDongTu": "脱ぎます(tha V) = ぬぎます - cởi (quần áo, giầy)"
+    },
+    "渡": {
+        "Kanji": "渡",
+        "TuDongTu": "渡ります(tự V) = わたります - qua, đi qua",
+        "ThaDongTu": "渡します(tha V) = わたします - đưa cho, giao cho"
+    },
+    "寝": {
+        "Kanji": "寝",
+        "TuDongTu": "寝ます(tự V) = ねます - ngủ",
+        "ThaDongTu": "寝かせます(tha V) = ねかせます - cho ngủ, bắt ngủ"
+    },
+    "叶": {
+        "Kanji": "叶",
+        "TuDongTu": "叶います(tự V) = かないます - thành hiện thực, được thực hiện (ước mơ)",
+        "ThaDongTu": "叶えます(tha V) = かなえます - đáp ứng nguyện vọng, yêu cầu"
+    },
+    "遅": {
+        "Kanji": "遅",
+        "TuDongTu": "遅れます(tự V) = (に)おくれます chậm, trễ, muộn",
+        "ThaDongTu": "遅らせます(tha V) = おくらせます - lùi lại (thời gian), trì hoãn, làm chậm"
+    },
+    "聞": {
+        "Kanji": "聞",
+        "TuDongTu": "聞こえます(tự V) = きこえます - nghe thấy, có thể nghe thấy",
+        "ThaDongTu": "聞きます(tha V) = ききます nghe, hỏi [giáo viên]"
+    },
+    "込": {
+        "Kanji": "込",
+        "TuDongTu": "込みます(tự V) = こみます đông đúc, tắc (đường)",
+        "ThaDongTu": "込めます(tha V) = こめます - nhồi nhét, tống vào, dồn"
+    }
+}

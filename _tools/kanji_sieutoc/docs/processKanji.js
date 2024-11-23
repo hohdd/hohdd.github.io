@@ -2,13 +2,49 @@
     NOTE:
         - File kanji_bank_1.json và kanji_bank_2.json được lấy nguyên gốc của "Từ Điển Hán Nôm"
         - Kết hợp với dữ liệu từ MERGE_ALL_KANJI.json
+        - Cần kết hợp cả dữ liệu của MimiKara và Tự ĐT-Tha ĐT
     RESULT:
         - out_vn_DongHD_20240514.zip là output sẵn sàng sử dụng trong Yomitan
         - out_vn_ORIGINAL.zip là nguyên gốc của "Từ Điển Hán Nôm"
         - out_en.zip là nguyên gốc của out_en trong "KanjiDictVN" (Gitlab)
+    CẤU TRÚC DỮ LIỆU:
+        [
+            [
+                "㝡",
+                "tối",
+                "",
+                "",
+                [],
+                {
+                    "Strokes": "11",
+                    "Radical": "miên 宀 (+8 nét)",
+                    "PenStrokes": "丶丶フ一丨丨一一一フ丶",
+                    "Shape": "⿱宀取",
+                    "Unicode": "U+3761"
+                }
+            ],
+            [...]
+            ...
+        ]
+        -------
+         {
+            "BookNo": "Book01",
+            "Page": "No70-119",
+            "No": 83,
+            "CatGroup": "HN01_03",
+            "GroupKJ": "月",
+            "GroupHV": "NGUYỆT",
+            "GroupVN": "mặt trăng",
+            "Kanji": "謂",
+            "Typing": "いわく",
+            "Hiragana": "iwaku",
+            "HanViet": "VỊ",
+            "Vietnamese": "gọi là",
+            "HintRemember": "bác sỹ NÓI về bệnh DẠ DÀY GỌI LÀ chuẩn đoán"
+        }
 */
 
-/* Utils */
+/* ----- Utils ----- */
 var _$JSONLoader = {
     load: load
 }
@@ -32,10 +68,49 @@ function createStateChangeListener(xhr, callback) {
         }
     }
 }
+/* ----- END Utils ----- */
 
+/* ----- Khai báo biến ----- */
 let hacknaoData;
 let kanjiBank;
 const dataSetHN = {};
+const exceptKanji = [];
+
+/* ----- Functions ----- */
+function handleKanjiBank() {
+    _$JSONLoader.load('/tools/kanji_sieutoc/docs/kanji_bank_1.json', function (err1, json1) {
+        if (err1) {
+            console.error('failed to get JSON (kanji_bank_X.json)');
+        }
+        kanjiBank = json1;
+        console.log('-------kanjiBank-------');
+        console.log(kanjiBank);
+        console.log('==================');
+        console.log('[kanjiBank is done...]');
+
+        // await
+        setTimeout(() => {
+            handleKanjiHN();
+        }, 2000);
+    });
+}
+
+function handleKanjiHN() {
+    _$JSONLoader.load('/tools/kanji_sieutoc/MERGE_ALL_KANJI.json', function (err2, json2) {
+        if (err2) {
+            console.error('failed to get JSON (MERGE_ALL_KANJI.json)');
+        }
+        hacknaoData = json2;
+        console.log('-------hacknaoData-------');
+        console.log(hacknaoData);
+        console.log('==================');
+        console.log('[hacknaoData is done...]');
+
+        setTimeout(() => {
+            handleDataAfterFetching();
+        }, 2000);
+    });
+}
 
 function handleDataAfterFetching() {
     // thu thập vào dataSet
@@ -64,11 +139,11 @@ function handleDataAfterFetching() {
                 // Meaning
                 objKanjiBank[4].unshift('-----');
                 objKanjiBank[4].unshift(`${objHN['HintRemember']}`);
-                if (objKanjiBank[5]['Shape']) {
-                    objKanjiBank[4].unshift(`[${objKanjiBank[5]['Shape']}][${objHN['Typing']} - ${objHN['Hiragana']}]`);
-                } else {
-                    objKanjiBank[4].unshift(`[${objHN['Typing']} - ${objHN['Hiragana']}]`);
-                }
+                // if (objKanjiBank[5]['Shape']) {
+                //     objKanjiBank[4].unshift(`[${objKanjiBank[5]['Shape']}][${objHN['Typing']} - ${objHN['Hiragana']}]`);
+                // } else {
+                //     objKanjiBank[4].unshift(`[${objHN['Typing']} - ${objHN['Hiragana']}]`);
+                // }
                 objKanjiBank[4].unshift(`${objHN['HanViet']} (${objHN['Vietnamese']}) [${objHN['No']} - ${objHN['Kanji']}]`);
 
                 // objKanjiBank[4].push(`No: ${objHN['No']} - ${objHN['Kanji']}`);
@@ -89,41 +164,6 @@ function handleDataAfterFetching() {
     navigator.clipboard.writeText(rs);
     document.getElementById("myTextarea").value = rs;
     console.log('[Done!]');
-}
-
-function handleKanjiHN() {
-    _$JSONLoader.load('/tools/kanji_sieutoc/MERGE_ALL_KANJI.json', function (err2, json2) {
-        if (err2) {
-            console.error('failed to get JSON (MERGE_ALL_KANJI.json)');
-        }
-        hacknaoData = json2;
-        console.log('-------hacknaoData-------');
-        console.log(hacknaoData);
-        console.log('==================');
-        console.log('[hacknaoData is done...]');
-
-        setTimeout(() => {
-            handleDataAfterFetching();
-        }, 2000);
-    });
-}
-
-function handleKanjiBank() {
-    _$JSONLoader.load('/tools/kanji_sieutoc/docs/kanji_bank_1.json', function (err1, json1) {
-        if (err1) {
-            console.error('failed to get JSON (kanji_bank_X.json)');
-        }
-        kanjiBank = json1;
-        console.log('-------kanjiBank-------');
-        console.log(kanjiBank);
-        console.log('==================');
-        console.log('[kanjiBank is done...]');
-
-        // await
-        setTimeout(() => {
-            handleKanjiHN();
-        }, 2000);
-    });
 }
 
 // it may take about 30 minutes to finish
