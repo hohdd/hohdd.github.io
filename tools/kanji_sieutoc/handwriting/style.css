@@ -1,0 +1,33 @@
+
+.kanji-canvas-container {
+    position: relative;
+}
+.kanji-canvas {
+    /* sử dụng w3-card */
+    /* border: burlywood;
+    border-style: double; */
+    width: 100%;
+    cursor: pointer;
+}
+.kanji-canvas-controls {
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+.kanji-canvas-candidates {
+    font-size: 32px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px 10px;
+    min-height: 60px;
+}
+.tooltip .tooltiptext {
+    font-size: small; /* giảm size mặc định */
+}
+@media screen and (max-width: 600px) { /* mobile friendly */
+    .mobi-hide {
+      display: none;
+    }
+}
