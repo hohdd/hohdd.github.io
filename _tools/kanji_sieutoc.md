@@ -16,7 +16,21 @@ thirdMenuIcon: extension
 thirdMenuHandler: toggleExceptKanji()
 ---
 <link rel="stylesheet" href="/tools/kanji_sieutoc/kanji.css" />
+<link rel="stylesheet" href="/tools/kanji_sieutoc/handwriting/style.css" />
 
+<!-- Handwriting Recognition -->
+<div class="w3-card kanji-canvas-container">
+    <canvas id="can" class="kanji-canvas" width="1068" height="360"></canvas>
+    <div class="kanji-canvas-controls">
+        <span class="material-icons w3-button" onclick="KanjiCanvas.erase('can')">delete</span>
+        <span class="material-icons w3-button" onclick="KanjiCanvas.deleteLast('can')">undo</span>
+        <span class="material-icons w3-button" onclick="recognizeClick()">search</span>
+    </div>
+    <div id="candidateList" class="kanji-canvas-candidates"></div>
+</div>
+
+
+<!-- Book -->
 <div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">
     <input class="w3-check" type="checkbox" checked="checked" id="optionCheckboxHanViet">
     <label>Hán Việt</label>
@@ -25,7 +39,7 @@ thirdMenuHandler: toggleExceptKanji()
     <span class="w3-margin-left w3-wide w3-text-brown" id="currentGroupTitle"></span>
 </div>
 <div class="container">
-    <div class="left-sidebar kj-scrollable" id="leftSidebar">
+    <div class="left-sidebar kj-scrollable mobi-hide" id="leftSidebar">
         <!-- Danh sách menu sẽ được tạo bằng JavaScript -->
     </div>
     <div class="main-content scrollable" id="mainContent">
@@ -59,7 +73,7 @@ thirdMenuHandler: toggleExceptKanji()
 </div>
 
 <!-- Push Notification (require 'quizDataSet') -->
-<div class="w3-container">
+<div class="w3-container mobi-hide">
     <h3>Notifications</h3>
     <div class="w3-panel w3-sand w3-border" style="display: none" id="notificationElms">
         <h1 id="notiKanjiTxtId">信</h1>
@@ -75,3 +89,9 @@ thirdMenuHandler: toggleExceptKanji()
 </div>
 
 <script src="/tools/kanji_sieutoc/kanji.js" type="text/javascript"></script>
+
+<script src="/tools/kanji_sieutoc/handwriting/kanji-canvas.min.js"></script>
+<script src="/tools/kanji_sieutoc/handwriting/ref-patterns.js"></script>
+<script src="/tools/kanji_sieutoc/handwriting/handwriting.js"></script>
+<!--<script>KanjiCanvas.init('can');</script>-->
+<script>initPlus();</script>

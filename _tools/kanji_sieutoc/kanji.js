@@ -31,6 +31,7 @@ const btnHTML = `
 
 /* Danh sách các Dữ liệu */
 const dataSet = {};
+const handwritingMatchDict = {};
 let menuData = [];
 let tableData = [];
 let activeItemMenu = null;
@@ -141,6 +142,15 @@ _$JSONLoader.load('/tools/kanji_sieutoc/MERGE_ALL_KANJI.json', function (err, js
             };
             dataSet[obj.CatGroup] = _tmpObj;
         }
+
+        // add for handwriting match
+        const toolTipStr = `${obj.HanViet} (${obj.Vietnamese}) ${obj.HintRemember}`;
+        const toolTipHTML = `<span class="tooltip">${obj.Kanji}<span class="tooltiptext">${toolTipStr}</span></span>`;
+        handwritingMatchDict[obj.Kanji] = {
+            toolTipStr: toolTipStr,
+            toolTipHTML: toolTipHTML,
+            objItem: [obj]
+        };
     });
     // console.log(dataSet);
     menuData = Object.keys(dataSet);
