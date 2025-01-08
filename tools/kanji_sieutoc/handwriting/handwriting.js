@@ -6,10 +6,10 @@ function recognizeWithDebounce() {
         recognizeClick();
     }, 1000);
 }
-document.getElementById('can')?.addEventListener("mouseup", function (e) {
-    KanjiCanvas.findxy('up', e, 'can');
-    recognizeWithDebounce();
-}, false);
+// document.getElementById('can')?.addEventListener("mouseup", function (e) {
+//     KanjiCanvas.findxy('up', e, 'can');
+//     recognizeWithDebounce();
+// }, false);
 function recognizeClick() {
     // move current to history
     document.getElementById('historyList').innerHTML = handleOutStr(document.recognizeOutStr);
