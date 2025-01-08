@@ -22,11 +22,13 @@ thirdMenuHandler: toggleExceptKanji()
 <div class="w3-card kanji-canvas-container">
     <canvas id="can" class="kanji-canvas" width="1068" height="360"></canvas>
     <div class="kanji-canvas-controls">
-        <span class="material-icons w3-button" onclick="KanjiCanvas.erase('can')">delete</span>
+        <span class="material-icons w3-button" onclick="eraseClick()">delete</span>
         <span class="material-icons w3-button" onclick="KanjiCanvas.deleteLast('can')">undo</span>
         <span class="material-icons w3-button" onclick="recognizeClick()">search</span>
     </div>
     <div id="candidateList" class="kanji-canvas-candidates"></div>
+    <br>
+    <div id="historyList" class="kanji-canvas-candidates"></div>
 </div>
 
 
