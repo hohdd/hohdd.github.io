@@ -2,7 +2,7 @@
 layout: default
 robots: NOINDEX, NOFOLLOW
 # info
-priority: 1
+priority: 2
 tool_name: Grid Toggle Count
 icon: "/assets/img/tools/grid_toggle_count.png"
 description: Grid Toggle Count

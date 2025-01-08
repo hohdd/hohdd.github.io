@@ -115,6 +115,22 @@ module Jekyll
       end
     end
 
+    # Hide tag
+    class RenderHideTag < Liquid::Tag
+      Syntax = /^(.+)/
+      def initialize(tag_name, markup, tokens)
+        super
+        if markup =~ Syntax then
+            @text = $1
+        else
+            raise "[Hide Tag] Syntax not match!"
+        end
+      end
+      def render(context)
+        "<span class='ShowOnHoldContainer' onclick='toggleVisibilityChildren(this)'><span class='ShowOnHold'>#{@text}</span></span>"
+      end
+    end
+
     # Strong tag
     class RenderStrongTag < Liquid::Tag
       Syntax = /^(.+)/
@@ -154,5 +170,6 @@ Liquid::Template.register_tag('tooltip', Jekyll::RenderTooltipTag)
 Liquid::Template.register_tag('a', Jekyll::RenderLinkTag)
 Liquid::Template.register_tag('msg', Jekyll::RenderMsgTag)
 Liquid::Template.register_tag('u', Jekyll::RenderUnderlineTag)
+Liquid::Template.register_tag('hide', Jekyll::RenderHideTag)
 Liquid::Template.register_tag('strong', Jekyll::RenderStrongTag)
 Liquid::Template.register_tag('mark', Jekyll::RenderHighlightTag)

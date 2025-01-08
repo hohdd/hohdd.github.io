@@ -17,3 +17,11 @@
 .dh-unnecessary {
     display: none;
 }
+.ShowOnHoldContainer {
+    border-style: dotted;
+    border-color: burlywood;
+    cursor: pointer;
+}
+.ShowOnHold {
+    visibility: hidden;
+}

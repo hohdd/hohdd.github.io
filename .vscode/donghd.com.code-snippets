@@ -337,6 +337,13 @@
 		],
 		"description": "donghd.com insert an mp3 player"
 	},
+	"donghd.com insert an Hide span and then show on click": {
+		"prefix": "dhhide",
+		"body": [
+			"{% hide TEXT %}"
+		],
+		"description": "donghd.com insert an Hide span and then show on click"
+	},
 	"donghd.com hover classes": {
 		"prefix": "dhhover",
 		"body": [

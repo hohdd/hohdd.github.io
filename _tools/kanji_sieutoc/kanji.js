@@ -80,7 +80,8 @@ function renderMainContent(CatGroup) {
 
     /* Set title */
     let _groupMeta = dataSet[CatGroup]['groupMeta'];
-    document.getElementById('currentGroupTitle').textContent = `[${_groupMeta.BookNo}][${_groupMeta.Page}] ${_groupMeta.GroupKJ} (${_groupMeta.GroupHV} - ${_groupMeta.GroupVN})`;
+    // document.getElementById('currentGroupTitle').textContent = `[${_groupMeta.BookNo}][${_groupMeta.Page}] ${_groupMeta.GroupKJ} <b>(${_groupMeta.GroupHV} - ${_groupMeta.GroupVN})</b>`;
+    document.getElementById('currentGroupTitle').innerHTML = `[${_groupMeta.BookNo}][${_groupMeta.Page}] ${_groupMeta.GroupKJ} (<span class="ShowOnHoldContainer" onclick="toggleVisibilityChildren(this)"><span class="ShowOnHold">${_groupMeta.GroupHV} - ${_groupMeta.GroupVN}</span></span>)`;
 
     const mainContent = document.getElementById("mainContent");
     mainContent.innerHTML = "";
@@ -108,7 +109,12 @@ function renderMainContent(CatGroup) {
             if (header == 'Typing' || header == 'Hiragana') {
                 cell.style.display = 'none';
             }
-            cell.textContent = rowData[header];
+            // cell.textContent = rowData[header];
+            if (header !== 'Kanji') {
+                cell.innerHTML = `<span class="ShowOnHoldContainer" onclick="toggleVisibilityChildren(this)"><span class="ShowOnHold">${rowData[header]}</span></span>`;
+            } else {
+                cell.textContent = rowData[header];
+            }
             row.appendChild(cell);
         });
         tbody.appendChild(row);
@@ -219,7 +225,7 @@ function nextMainContent() {
         if (document.needToCallToggleExceptKanjiNext) {
             toggleExceptKanji();
         }
-        topFunction(); // Go To Top
+        topFunction('currentGroupTitle'); // Go To 'currentGroupTitle' element
     } catch (error) {
         console.log(error);
     }
@@ -547,3 +553,11 @@ function pushNow() {
     );
 }
 //---------------------- Push Notification: End ---------------------------//
+
+function showHideBtnClick() {
+    // ShowOnHold
+    const elements = document.querySelectorAll('.ShowOnHold');
+    elements.forEach(element => {
+        element.style.visibility = element.style.visibility === 'hidden' ? 'visible' : 'hidden';
+    });
+}

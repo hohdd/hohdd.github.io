@@ -2,7 +2,7 @@
 layout: tool
 robots: NOINDEX, NOFOLLOW
 # info
-priority: 1
+priority: 2
 tool_name: Memo search
 icon: "/assets/img/tools/memo_search_512x512.png"
 description: Memo Search

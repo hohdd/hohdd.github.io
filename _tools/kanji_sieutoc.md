@@ -90,6 +90,8 @@ thirdMenuHandler: toggleExceptKanji()
     <span class="w3-button w3-border w3-border-blue" id="notiKanjiIndicator" onclick="toggleNotificationElms()">...</span>
 </div>
 
+<button onclick="showHideBtnClick()" title="Show/Hide" id="showHideBtn" class="w3-btn w3-border w3-border-blue w3-white opacity-transition-hover" style="display: block;">Toggle</button>
+
 <script src="/tools/kanji_sieutoc/kanji.js" type="text/javascript"></script>
 
 <script src="/tools/kanji_sieutoc/handwriting/kanji-canvas.min.js"></script>

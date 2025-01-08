@@ -105,3 +105,9 @@ table tr td:nth-child(2) {
 .kj-scrollable::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+#showHideBtn {
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+}

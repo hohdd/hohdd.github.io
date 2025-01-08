@@ -3,7 +3,5 @@ layout: default
 ---
 <div class="w3-padding-32"></div>
 <div class="w3-section">
-    {{ content }}
-
-    {% if page.toc %}{{ content | toc }}{% endif %}
+    {% if page.toc %}{{ content | toc }}{% else %}{{ content }}{% endif %}
 </div>
