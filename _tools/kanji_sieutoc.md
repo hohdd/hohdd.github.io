@@ -50,8 +50,8 @@ thirdMenuHandler: toggleExceptKanji()
 </div>
 
 <!-- Quiz Flashcard -->
-<div class="w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Quiz Flashcard</div>
-<div class="w3-container">
+<div class="dh-unnecessary w3-card w3-leftbar w3-border-blue w3-pale-blue w3-panel w3-padding-16">Quiz Flashcard</div>
+<div class="dh-unnecessary w3-container">
     <div class="w3-panel w3-pale-yellow w3-border">
         <h1 id="quizKanjiTxtId">言</h1>
         <small id="quizTypingHiraganaTxtId">い (is)</small>
@@ -75,7 +75,7 @@ thirdMenuHandler: toggleExceptKanji()
 </div>
 
 <!-- Push Notification (require 'quizDataSet') -->
-<div class="w3-container mobi-hide">
+<div class="dh-unnecessary w3-container mobi-hide">
     <h3>Notifications</h3>
     <div class="w3-panel w3-sand w3-border" style="display: none" id="notificationElms">
         <h1 id="notiKanjiTxtId">信</h1>
