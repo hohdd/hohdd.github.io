@@ -145,7 +145,7 @@ _$JSONLoader.load('/tools/kanji_sieutoc/MERGE_ALL_KANJI.json', function (err, js
 
         // add for handwriting match
         const toolTipStr = `${obj.HanViet} (${obj.Vietnamese}) ${obj.HintRemember}`;
-        const toolTipHTML = `<span class="tooltip">${obj.Kanji}<span class="tooltiptext">${toolTipStr}</span></span>`;
+        const toolTipHTML = `<span class="tooltip" onclick="kanjiRecognizeSpanClick('${obj.CatGroup}')">${obj.Kanji}<span class="tooltiptext">${toolTipStr}</span></span>`;
         handwritingMatchDict[obj.Kanji] = {
             toolTipStr: toolTipStr,
             toolTipHTML: toolTipHTML,

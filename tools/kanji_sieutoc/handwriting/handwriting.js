@@ -21,6 +21,9 @@ function eraseClick() {
     // document.getElementById('historyList').innerHTML = '';
     KanjiCanvas.erase('can');
 }
+function kanjiRecognizeSpanClick(catGroupStr) {
+    renderMainContent(catGroupStr);
+}
 
 function handleOutStr(str) {
     if (str) {
