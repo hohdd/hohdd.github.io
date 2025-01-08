@@ -30,4 +30,7 @@
     .mobi-hide {
       display: none;
     }
+    .kanji-canvas {
+        height: 400px;
+    }
 }

@@ -11,18 +11,28 @@ document.getElementById('can')?.addEventListener("mouseup", function (e) {
     recognizeWithDebounce();
 }, false);
 function recognizeClick() {
-    const outStr = KanjiCanvas.recognize('can');
-    document.getElementById('candidateList').innerHTML = handleOutStr(outStr);
+    // move current to history
+    document.getElementById('historyList').innerHTML = handleOutStr(document.recognizeOutStr);
+    document.recognizeOutStr = KanjiCanvas.recognize('can');
+    // update candidate list
+    document.getElementById('candidateList').innerHTML = handleOutStr(document.recognizeOutStr);
+}
+function eraseClick() {
+    // document.getElementById('historyList').innerHTML = '';
+    KanjiCanvas.erase('can');
 }
 
 function handleOutStr(str) {
-    const words = str.split(' ');
-    const wrappedWords = words.map(word => {
-        return word.trim();
-    }).map(word => {
-        return matchKanjiOut(word);
-    });
-    return wrappedWords.join(' ');
+    if (str) {
+        const words = str.split(' ');
+        const wrappedWords = words.map(word => {
+            return word.trim();
+        }).map(word => {
+            return matchKanjiOut(word);
+        });
+        return wrappedWords.join(' ');
+    }
+    return '';
 }
 function matchKanjiOut(kanjiStr) {
     const outMatching = handwritingMatchDict[kanjiStr];
