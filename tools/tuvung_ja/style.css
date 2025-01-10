@@ -3,3 +3,6 @@
     bottom: 1em;
     left: 1em;
 }
+.tooltip .tooltiptext {
+    font-size: small; /* giảm size mặc định */
+}
