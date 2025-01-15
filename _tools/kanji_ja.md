@@ -3,9 +3,9 @@ layout: tool
 robots: NOINDEX, NOFOLLOW
 # info
 priority: 1
-tool_name: Kanji Siêu Tốc
+tool_name: Kanji JA
 icon: "/assets/img/tools/kanji_2511.png"
-description: Kanji Siêu Tốc
+description: Kanji JA
 konami: true
 quickNote: true
 secondMenu: true
