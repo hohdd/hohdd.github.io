@@ -20,10 +20,10 @@ toc: true
 
 ### Nhóm 1
 - Nhận dạng:
-    - Âm cuối thuộc {% hide cột い %} (ます) hoặc cột {% hide cột う %} (Từ điển)
+    - Âm cuối thuộc {% hide cột い %} (ます) hoặc {% hide cột う %} (Từ điển)
     - Dễ nhầm:
         - Âm cuối hàng R (る / り): nhìn る nhưng là nhóm 1 ({% hide VD: 切る - きります, 知る - しります %})
-        - Âm cuối hàn S (す / し): nhìn します nhưng là nhóm 1 ({% hide VD: 消す - けします, 出す - だします %})
+        - Âm cuối hàng S (す / し): nhìn します nhưng là nhóm 1 ({% hide VD: 消す - けします, 出す - だします %})
     - Đuôi động từ thể ます:{% hide 1.います [Imasu] %} {% hide 2.きます [Kimasu] %} {% hide 3.ぎます [Gimasu] %} {% hide 4.します [Shimasu] %} {% hide 5.ちます [Chimasu] %} {% hide 6.にます [Nimasu] %} {% hide 7.びます (thiếu HI?) [Bimasu] %} {% hide 8.みます [Mimasu] %} {% hide 9.ります [Rimasu] %}
     - Đuôi động từ thể Từ điển: {% hide 1.う %} {% hide 2.く %} {% hide 3.ぐ %} {% hide 4.す %} {% hide 5.つ %} {% hide 6.ぬ %} {% hide 7.ぶ (thiếu HI?) %} {% hide 8.む %} {% hide 9.る %}
 - Chuyển đổi:
@@ -58,25 +58,25 @@ toc: true
 ### Nhóm 2
 - Nhận dạng:
     - Âm cuối thuộc {% hide cột え %} VÀ {% hide 9+ trường hợp đặc biệt kết thúc bằng đuôi い (đặc điểm nhóm I) nhưng thuộc nhóm II %}
-        1. {% tooltip KHỞI [sáng THỨC DẬY CHẠY 2 vòng] %} 起きます(おき.ます): thức dậy
-        2. {% tooltip KIẾN [kiến NHÌN bằng MẮT CHÂN CHẠY rất nhanh] %} 見ます(み.ます): nhìn, xem
-        3. {% tooltip GIÁNG [Bồ sau 14 năm bị GIÁNG chức] %} 降ります(おり.ます): xuống (tàu xe)
-        4. {% tooltip CƯ [XÁC CHẾT tìm mộ CỔ để CƯ TRÚ] %} 居ます(い.ます): có, ở (người, con vật, không phải đồ vật)
-        5. {% tooltip TÚC [CHÂN đá tung MỒM HẠ NHÂN] %} 足ります(たり.ます): đầy đủ
-        6. {% tooltip DỤC [NƯỚC trong CỐC dùng để TẮM] %} 浴びます(あび.ます): tắm
-        7. {% tooltip TÁ [NGƯỜI NGÀY XƯA VAY MƯỢN mình] %} 借ります(かり.ます): mượn, vay
-        8. {% tooltip XUẤT [bị 2 ngọn NÚI đè nên không thể XUẤT ra được] %} {% tooltip LAI [1 loại GẠO mới sẽ ra đời trong TƯƠNG LAI] %} 出来ます(で.き.ます): có thể, được xây, hoàn thành
-        9. {% tooltip TRƯỚC [CON DÊ MẮT nhìn MẶC đồ] %} 着ます(き.ます): mặc (áo, mũ, kính, phần bên trên thắt lưng)
+        1. {% tooltip KHỞI [sáng THỨC DẬY CHẠY 2 vòng] %} 起きます({% hide おき.ます %}): thức dậy
+        2. {% tooltip KIẾN [kiến NHÌN bằng MẮT CHÂN CHẠY rất nhanh] %} 見ます({% hide み.ます %}): nhìn, xem
+        3. {% tooltip GIÁNG [Bồ sau 14 năm bị GIÁNG chức] %} 降ります({% hide おり.ます %}): xuống (tàu xe)
+        4. {% tooltip CƯ [XÁC CHẾT tìm mộ CỔ để CƯ TRÚ] %} 居ます({% hide い.ます %}): có, ở (người, con vật, không phải đồ vật)
+        5. {% tooltip TÚC [CHÂN đá tung MỒM HẠ NHÂN] %} 足ります({% hide たり.ます %}): đầy đủ
+        6. {% tooltip DỤC [NƯỚC trong CỐC dùng để TẮM] %} 浴びます({% hide あび.ます %}): tắm
+        7. {% tooltip TÁ [NGƯỜI NGÀY XƯA VAY MƯỢN mình] %} 借ります({% hide かり.ます %}): mượn, vay
+        8. {% tooltip XUẤT [bị 2 ngọn NÚI đè nên không thể XUẤT ra được] %} {% tooltip LAI [1 loại GẠO mới sẽ ra đời trong TƯƠNG LAI] %} 出来ます({% hide で.き.ます %}): có thể, được xây, hoàn thành
+        9. {% tooltip TRƯỚC [CON DÊ MẮT nhìn MẶC đồ] %} 着ます({% hide き.ます %}): mặc (áo, mũ, kính, phần bên trên thắt lưng)
     - Đặc biệt: {% hide かえる (kaeru) %}: về, về nhà ({% hide kết thúc bằng “eru” nhưng là động từ nhóm 1 %})
 - Chuyển đổi:
-    - Bỏ đuổi {% hide -る %} + ます
+    - Bỏ đuôi {% hide -る %} + ます
     - Bỏ đuôi {% hide -ます %} + る
 - Thể ない (phủ định dạng ngắn):
-    - Bỏ đuổi {% hide -る / -ます %} + ない
+    - Bỏ đuôi {% hide -る / -ます %} + ない
 - Thể た (quá khứ):
-    - Bỏ đuổi {% hide -る / -ます %} + た
+    - Bỏ đuôi {% hide -る / -ます %} + た
 - Thể た:
-    - Bỏ đuổi {% hide -る / -ます %} + て
+    - Bỏ đuôi {% hide -る / -ます %} + て
 
 ### Nhóm 3
 - Nhận dạng:
@@ -91,7 +91,7 @@ toc: true
     - きます hoặc くる: đến →　{% hide きた(kita) %}: Đã đến
     - します hoặc する: làm →　{% hide した(shita) %}: Đã làm
     - N + します/する : làm N ({% hide danh động từ, thường gồm 2+ kanji %}) →　{% hide N + した(shita): Đã làm N %}
-- Thể た:
+- Thể て:
     - きます hoặc くる: đến　→　{% hide きて (đến) %}
     - します hoặc する: làm　→　{% hide して (làm) %}
     - N + します/する : làm N ({% hide danh động từ, thường gồm 2+ kanji %})　→　{% hide N + して (làm N) %}
@@ -129,7 +129,7 @@ toc: true
         - **Nhóm 1**: cột {% hide -う/-い %} sang cột {% hide -あ(**a**) %}, sau đó {% hide thêm đuôi **れる** %}. [{% hide **-'あ'れる('a'reru)** %}]. VD: {% tooltip (1) [書く (kaku - viết) → 書かれる (kakareru - bị viết)] %} {% tooltip (2) [話す (hanasu - nói) → 話される (hanasareru - bị nói)] %} {% tooltip (3) [待つ (matsu - đợi) → 待たれる (matareru - bị đợi)] %}
         - **Nhóm 2**: ({% hide **Giống với** *Thể khả năng* %}) Bỏ {% hide đuôi る/ます %} rồi {% hide thêm られる(**rareru**) %}. [{% hide **-られる(rareru**) %}]. VD: {% tooltip (1) [食べる (tabe*ru* - ăn) → 食べ**られる** (tabe**rareru** - có thể ăn)] %} {% tooltip (2) [見る (mi*ru*) → 見**られる** (mi**rareru**)] %} {% tooltip (3) [起きる (oki*ru*) → 起き**られる** (oki**rareru**)] %}
         - **Nhóm 3**:
-            - くる (kuru - đến) → {% hide こられる %} ({% hide **korareru** %} - bị đến)
+            - くる (kuru - đến) → {% hide こられる %} ({% hide **korareru** %} - bị đến) [{% hide *cũng **giống** như くる của Thể Khả Năng* %}]
             - する (suru - làm) → {% hide される %} ({% hide **sareru** %} - bị làm)
 
 ## Tính từ
@@ -143,7 +143,7 @@ toc: true
         - Phủ định
             - MẪU: Chủ ngữ + は + {% hide Adj(bỏ い) %} + {% hide くない(**Kunai**) %} + {% hide です %}。
             - RÚT GỌN: none, có thể {% hide bỏ 「です」giống thể khẳng định ở trên %}
-    - Tương lai
+    - Quá khứ
         - Khẳng định:
             - MẪU: Chủ ngữ + は + {% hide Adj(bỏ い) %} + {% hide かった(**Katta**) %} + {% hide です %}。
             - RÚT GỌN: none, có thể {% hide bỏ 「です」giống thể khẳng định ở trên %}
@@ -158,7 +158,7 @@ toc: true
         - Phủ định:
             - MẪU: Chủ ngữ + は + {% hide Adj(bỏ な) %} + {% hide じゃ ありません %} {% hide HOẶC %} {% hide では ありません %}。[{% hide **Ja Arimasen** / **DeWa Arimasen** %}]
             - RÚT GỌN ({% hide hay dùng trong hội thoại %}): {% hide 「じゃ ありません」 %} là {% hide 「じゃない(**Ja Nai**)」 %}; {% hide 「では ありません」 %} là {% hide 「では ない(**DeWa Nai**)」 %}. ({% hide **DeWa Nai** lịch sự hơn **Ja Nai** %})
-    - Tương lai
+    - Quá khứ
         - Khẳng định:
             - MẪU: Chủ ngữ + は + {% hide Adj(bỏ な) %} + {% hide でした(**Deshita**) %}。
             - RÚT GỌN: {% hide Cách nói thân mật %} (hay dùng trong hội thoại) của {% hide 「でした」 %} là {% hide 「だった(**Datta**)」 %}
@@ -167,7 +167,8 @@ toc: true
             - RÚT GỌN: Cách nói ngắn ({% hide hay dùng trong hội thoại %}) của {% hide 「じゃ ありませんでした」 %} là {% hide 「じゃ なかった(**Ja NaKatta**)」 %}; {% hide 「では ありませんでした」 %} là {% hide 「では なかった(**DeWa NaKatta**)」 %}. ({% hide **DeWa NaKatta** lịch sự hơn **Ja NaKatta** %})
 
 ### Tính từ khi kết hợp với Noun và Verb
-- Tính từ đứng trước Noun theo cấu trúc: Tính từ い/な ({% hide giữ nguyên い/な %}) + {% hide Noun %}
+- Tính từ đứng trước Noun:
+    - Cấu trúc: Tính từ い/な ({% hide giữ nguyên い/な %}) + {% hide Noun %}
 - Tính từ đứng trước Verb ({% hide đóng vai trò Trạng từ %}) {% hide để bổ nghĩa cho Verb %}:
     - Tính từ い ({% hide **bỏ い** %}) + {% hide **く** %} + {% hide Verb %}. ({% hide Verb vẫn chia thì, chia thể như bình thường %})
     - Tính từ な ({% hide **bỏ な** %}) + {% hide **に** %} + {% hide Verb %}. ({% hide Verb vẫn chia thì, chia thể như bình thường %})
