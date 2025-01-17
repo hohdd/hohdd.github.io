@@ -12,6 +12,14 @@ toc: true
 <link rel="stylesheet" href="/tools/tuvung_ja/style.css" />
 <script src="/tools/tuvung_ja/scripts.js"></script>
 
+<!-- simple table modal -->
+<div id="simpleTableModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-left w3-card-4">
+        <span onclick="document.getElementById('simpleTableModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <div id="modal_content"></div>
+    </div>
+</div>
+
 <button onclick="showHideBtnClick()" title="Show/Hide" id="showHideBtn" class="w3-btn w3-border w3-border-blue w3-white" style="display: block;">Toggle</button>
 
 # Note
@@ -634,6 +642,8 @@ toc: true
 - mang đến {% hide  持(も)って来(き)ます  %} {% hide  TRÌ LAI  %} {% hide  [TAY lên CHÙA CẦM theo lễ vật][1 loại GẠO mới sẽ ra đời trong TƯƠNG LAI]  %} {% hide  NHÓM 3 (きます)  %}
 
 # Các cặp Động từ “trái nghĩa”
+
+<button class="w3-btn w3-indigo" onclick="createTableFromShowOnHold()">Simple Table</button>
 
 | {% tooltip TỰ:nói chuyện, trò chuyện [THA:none; (Chủ ngữ) は/が 喋る (Chủ ngữ + wa/ga + shaberu). と (to): nói chuyện cùng.] %} {% hide   喋る  %} {% hide  (しゃべ.る(shabe.ru))  %} {% tooltip [ĐIỆP] [NÓI CHUYỆN bằng MIỆNG với THẾ GIỚI CÂY] %}	| {% tooltip TỰ:im lặng, không nói [THA:none; (Chủ ngữ + wa/ga + damaru). に (ni): có thể đi sau nguyên nhân hoặc điều kiện khiến ai đó im lặng.] %} {% hide   黙る    %} {% hide   (だま.る(dama.ru))  %} {% tooltip [MẶC] [IM LẶNG đi! Đang ĐEN như CHÓ đây!] %}	|
 | {% tooltip THA:hỏi [TỰ:none, ～を Hỏi/chất vấn về cái gì đó; ～に Hỏi/ chất vấn ai đó; ～と Hỏi/chất vấn như thế nào] %} {% hide  問う  %} {% hide   ( と.う(to.u) )    %} {% tooltip [VẤN] [đứng dưới CỔNG mở MIỆNG HỎI] %}	| {% tooltip TỰ/THA:trả lời [Tự/Tha tùy ngữ cảnh (ĐT đặc biệt); thường đi với trợ từ に (ni) để chỉ đối tượng được trả lời; ～に Trả lời (cái gì/ai đó)]   %} {% hide   答える  %} {% hide  ( こた.える(kota.eru) )  %} {% tooltip [ĐÁP] [TRÚC là người THÍCH HỢP đưa ra ĐÁP ÁN] %}	|
