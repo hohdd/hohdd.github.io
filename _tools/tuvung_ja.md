@@ -643,7 +643,9 @@ toc: true
 
 # Các cặp Động từ “trái nghĩa”
 
-<button class="w3-btn w3-indigo" onclick="createTableFromShowOnHold()">Simple Table</button>
+<button class="w3-btn w3-indigo" onclick="createTableFromShowOnHold()">Simple (1)</button>
+<button class="w3-btn w3-indigo" onclick="createTableFromShowOnHold(2)">Simple (2)</button>
+<button class="w3-btn w3-indigo" onclick="createTableFromShowOnHold(3)">Simple (3)</button>
 
 | {% tooltip TỰ:nói chuyện, trò chuyện [THA:none; (Chủ ngữ) は/が 喋る (Chủ ngữ + wa/ga + shaberu). と (to): nói chuyện cùng.] %} {% hide   喋る  %} {% hide  (しゃべ.る(shabe.ru))  %} {% tooltip [ĐIỆP] [NÓI CHUYỆN bằng MIỆNG với THẾ GIỚI CÂY] %}	| {% tooltip TỰ:im lặng, không nói [THA:none; (Chủ ngữ + wa/ga + damaru). に (ni): có thể đi sau nguyên nhân hoặc điều kiện khiến ai đó im lặng.] %} {% hide   黙る    %} {% hide   (だま.る(dama.ru))  %} {% tooltip [MẶC] [IM LẶNG đi! Đang ĐEN như CHÓ đây!] %}	|
 | {% tooltip THA:hỏi [TỰ:none, ～を Hỏi/chất vấn về cái gì đó; ～に Hỏi/ chất vấn ai đó; ～と Hỏi/chất vấn như thế nào] %} {% hide  問う  %} {% hide   ( と.う(to.u) )    %} {% tooltip [VẤN] [đứng dưới CỔNG mở MIỆNG HỎI] %}	| {% tooltip TỰ/THA:trả lời [Tự/Tha tùy ngữ cảnh (ĐT đặc biệt); thường đi với trợ từ に (ni) để chỉ đối tượng được trả lời; ～に Trả lời (cái gì/ai đó)]   %} {% hide   答える  %} {% hide  ( こた.える(kota.eru) )  %} {% tooltip [ĐÁP] [TRÚC là người THÍCH HỢP đưa ra ĐÁP ÁN] %}	|
