@@ -76,6 +76,10 @@ function createTableFromShowOnHold(opt) {
 
         const showOnHoldElements = cell.querySelectorAll(".ShowOnHold");
         const hanvietElement = cell.childNodes[7];
+        const hintElement = cell.childNodes[9]; // const hintElement = cell.querySelectorAll("span")[9];
+        const hintElement2 = cell.childNodes[8];
+        const hintElement3 = cell.childNodes[7];
+        const hintElement4 = cell.childNodes[6];
 
         const newCell = newRow.insertCell();
 
@@ -95,6 +99,26 @@ function createTableFromShowOnHold(opt) {
               newCell.appendChild(element.cloneNode(true));
               // newCell.appendChild(element);
             });
+            break;
+          case 4:
+            newCell.appendChild(showOnHoldElements[0].cloneNode(true));
+            if (hintElement) {
+              const newSpan = document.createElement("span");
+              newSpan.textContent = hintElement.textContent;
+              newCell.appendChild(newSpan);
+            } else if (hintElement2) {
+              const newSpan = document.createElement("span");
+              newSpan.textContent = hintElement2.textContent;
+              newCell.appendChild(newSpan);
+            } else if (hintElement3) {
+              const newSpan = document.createElement("span");
+              newSpan.textContent = hintElement3.textContent;
+              newCell.appendChild(newSpan);
+            } else if (hintElement4) {
+              const newSpan = document.createElement("span");
+              newSpan.textContent = hintElement4.textContent;
+              newCell.appendChild(newSpan);
+            }
             break;
         
           default:
