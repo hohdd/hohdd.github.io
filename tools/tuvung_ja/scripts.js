@@ -41,7 +41,7 @@ function setBackgroundColorForShowOnHold() {
 }
 
 // tạo thêm một bảng ngắn gọn
-function createTableFromShowOnHold() {
+function createTableFromShowOnHold(opt) {
     // Tìm bảng gốc
     const oldTable = document.getElementById("dongtu_trainghia");
     if (!oldTable) {
@@ -73,14 +73,41 @@ function createTableFromShowOnHold() {
       for (let j = 0; j < oldTable.rows[i].cells.length; j++) {
         const cell = oldTable.rows[i].cells[j];
         const showOnHoldElement = cell.querySelector(".ShowOnHold");
+
+        const showOnHoldElements = cell.querySelectorAll(".ShowOnHold");
+        const hanvietElement = cell.childNodes[7];
+
         const newCell = newRow.insertCell();
-        if (showOnHoldElement) {
-          newCell.textContent = showOnHoldElement.textContent;
+
+        switch (opt) {
+          case 2:
+            showOnHoldElements.forEach(element => {
+              newCell.appendChild(element.cloneNode(true));
+              // newCell.appendChild(element);
+            });
+            break;
+          case 3:
+            if (hanvietElement) {
+              newCell.appendChild(hanvietElement.cloneNode(true));
+              // newCell.appendChild(hanvietElement);
+            }
+            showOnHoldElements.forEach(element => {
+              newCell.appendChild(element.cloneNode(true));
+              // newCell.appendChild(element);
+            });
+            break;
+        
+          default:
+            if (showOnHoldElement) {
+              newCell.textContent = showOnHoldElement.textContent;
+            }
+            break;
         }
       }
     }
   
     // Thêm bảng mới vào modal
+    modalContent.innerHTML = '';
     modalContent.appendChild(newTable);
 
     // hiển thị modal
