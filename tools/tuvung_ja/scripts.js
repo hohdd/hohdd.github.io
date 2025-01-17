@@ -18,6 +18,7 @@ function showHideBtnClick() {
     });
 }
 
+// đánh dấu HIGHLIGHTED_TEXT bằng JS
 function setBackgroundColorForShowOnHold() {
     // Giả sử bảng của bạn có ID là "myTable"
     // const table = document.querySelector('body > div.w3-content.w3-panel.w3-animate-opacity-slow > main > div.w3-section > table');
@@ -37,4 +38,51 @@ function setBackgroundColorForShowOnHold() {
         showOnHoldElement.style.backgroundColor = "yellow";
       }
     });
+}
+
+// tạo thêm một bảng ngắn gọn
+function createTableFromShowOnHold() {
+    // Tìm bảng gốc
+    const oldTable = document.getElementById("dongtu_trainghia");
+    if (!oldTable) {
+      console.error("Không tìm thấy bảng 'dongtu_trainghia'");
+      return;
+    }
+  
+    // Tạo bảng mới
+    const newTable = document.createElement("table");
+    newTable.id = "new_table";
+    // newTable.classList.add("w3-table-all w3-hoverable w3-card-4 w3-section th-orange");
+    // newTable.classList.add(["w3-table-all", "w3-hoverable", "w3-card-4", "w3-section", "th-orange"]);
+    newTable.classList.add("w3-table-all");
+    newTable.classList.add("w3-hoverable");
+    newTable.classList.add("w3-card-4");
+    newTable.classList.add("w3-section");
+    newTable.classList.add("th-orange");
+  
+    // Tìm phần tử chứa modal
+    const modalContent = document.getElementById("modal_content");
+    if (!modalContent) {
+      console.error("Không tìm thấy phần tử 'modal_content'");
+      return;
+    }
+  
+    // Lặp qua các hàng và cột của bảng gốc
+    for (let i = 0; i < oldTable.rows.length; i++) {
+      const newRow = newTable.insertRow();
+      for (let j = 0; j < oldTable.rows[i].cells.length; j++) {
+        const cell = oldTable.rows[i].cells[j];
+        const showOnHoldElement = cell.querySelector(".ShowOnHold");
+        const newCell = newRow.insertCell();
+        if (showOnHoldElement) {
+          newCell.textContent = showOnHoldElement.textContent;
+        }
+      }
+    }
+  
+    // Thêm bảng mới vào modal
+    modalContent.appendChild(newTable);
+
+    // hiển thị modal
+    document.getElementById('simpleTableModal').style.display='block';
 }
