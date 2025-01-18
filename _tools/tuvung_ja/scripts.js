@@ -85,10 +85,11 @@ function createTableFromShowOnHold(opt) {
 
         switch (opt) {
           case 2:
-            showOnHoldElements.forEach(element => {
-              newCell.appendChild(element.cloneNode(true));
-              // newCell.appendChild(element);
-            });
+            // showOnHoldElements.forEach(element => {
+            //   newCell.appendChild(element.cloneNode(true));
+            //   // newCell.appendChild(element);
+            // });
+            newCell.appendChild(showOnHoldElements[1].cloneNode(true));
             break;
           case 3:
             if (hanvietElement) {
@@ -119,11 +120,18 @@ function createTableFromShowOnHold(opt) {
               newSpan.textContent = hintElement4.textContent;
               newCell.appendChild(newSpan);
             }
+            const cloneElm = showOnHoldElements[1].cloneNode(true);
+            cloneElm.style.fontWeight = 'bold';
+            newCell.appendChild(cloneElm);
             break;
         
           default:
             if (showOnHoldElement) {
               newCell.textContent = showOnHoldElement.textContent;
+            }
+            if (hanvietElement) {
+              newCell.appendChild(hanvietElement.cloneNode(true));
+              // newCell.appendChild(hanvietElement);
             }
             break;
         }
