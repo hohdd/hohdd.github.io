@@ -1,0 +1,30 @@
+body {
+  /* margin: 0;
+  overflow: hidden; /* Ngăn cuộn trang */
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+}
+  
+#control-panner {
+  position: fixed; /* absolute; */
+  /* right: 0; */
+  /* top: 0; */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* 1/3 màn hình bên phải */
+  height: 33.33%;
+  background-color: rgba(0, 0, 0, 0.1); /* Màu nền trong suốt để dễ nhìn */
+  cursor: crosshair; /* Thay đổi con trỏ chuột */
+}
+  
+pre {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* overflow: auto;  Nếu nội dung pre quá lớn, có thể thêm scrollbar */
+  white-space: pre-wrap; /* Cho phép nội dung xuống dòng nếu cần */
+  background-color: rgba(0, 0, 0, 0.1); /* Màu nền trong suốt để dễ nhìn */
+}
