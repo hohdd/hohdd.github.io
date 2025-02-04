@@ -431,4 +431,26 @@
 		],
 		"description": "donghd.com post template"
 	},
+	"Mindmap Template": {
+	  "prefix": "dhmindmap",
+	  "body": [
+		"<!--trackpad-->",
+		"<div id='control-panner'></div>",
+		"<!--mindmap content-->",
+		"<!-- REF:https://mermaid.js.org/syntax/mindmap.html#syntax -->",
+		"<pre id='mindmap-canvas' class='mermaid' >",
+		"mindmap",
+		"root((mindmap))",
+		"  Level 1",
+		"  ::icon(fa fa-book)",
+		"  Level 1",
+		"    Level 2",
+		"</pre>",
+		"",
+		"<!--text content-->",
+		"<p>aaaa</p>",
+		"<p>aaaa</p>"
+	  ],
+	  "description": "Mindmap Template"
+	}
 }

@@ -21,6 +21,14 @@
 <script type="text/javascript" src="/assets/js/mermaid.8.5.0.min.js" async></script>
 {% endif %}
 
+{% if page.mindmap %}
+<link href="/assets/css/mindmap.css" rel="stylesheet" media="all">
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+</script>
+<script src="/assets/js/mindmap.js" type="text/javascript" async></script>
+{% endif %}
+
 {% if page.highlight %}
 <link href="/assets/css/tango-highlight.css" rel="stylesheet" media="all">
 {% endif %}
