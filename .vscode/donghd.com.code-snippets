@@ -37,6 +37,99 @@
 // ------------------------------------------------------------------------------------>
 // {% endraw %}{% endcomment %}
 {
+	"Sequence Diagrams Template": {
+	  "prefix": "dhsequenceDiagram",
+	  "body": [
+		"<!--Sequence Diagrams content-->",
+		"<!-- REF:https://mermaid.js.org/syntax/sequenceDiagram.html -->",
+		"<!-- Người tham gia: participant Alice, actor Alice, participant A as Alice  -->",
+		"<!-- Luồng và Tin nhắn: [Actor][Arrow][Actor]:Message text, Ví dụ: Alice->>Bob: Hello Bob, how are you ?  -->",
+		"<!-- Các loại luồng: LIỀN:-, CHẤM:--, Xác định mũi tên: KHÔNG:>, CÓ:>>, DEL:x -->",
+		"<!-- Group/Box: box COLOR NAME ... end, với COLOR = Aqua, Purple, transparent, rgb(33,66,99), rgba(33,66,99,0.5) -->",
+		"<!-- Activate: activate [Actor], ví dụ: activate John (có thể thêm hậu tố '+' ngay sau mũi tên thay cho 'active')  -->",
+		"<!-- Deactivate: deactivate [Actor], ví dụ: deactivate John (có thể thêm hậu tố '-' ngay sau mũi tên thay cho 'deactivate')  -->",
+		"<!-- Xếp chồng Activate: có thể xếp chồng nhiều Activate theo luồng tuần tự -->",
+		"<!-- Ghi chú: Note [ right of | left of | over ] [Actor]: note content, có thể 'Note over [Actor1],[Actor2]' ví dụ: Note over Alice,John -->",
+		"<!-- Xuống dòng: có thể thêm ngắt dòng vào Ghi chú và Tin nhắn với <br/>  -->",
+		"<!-- Vòng lặp: loop TITLE ... end  -->",
+		"<!-- Kiểu Alt (if-else-option): alt TITLE ... else TITLE ... end opt TITLE ... end  -->",
+		"<!-- Hành động diễn ra Song song: par TITLE ... and TITLE ... and TITLE ... end, Có thể LỒNG NHAU Hành động diễn ra Song song -->",
+		"<!-- Khu vực quan trọng: critical TITLE ... option TITLE ... option TITLE ... end -->",
+		"<!-- Phá vỡ: break TITLE ... end (thường được sử dụng để mô hình hóa các trường hợp ngoại lệ) -->",
+		"<!-- Làm nổi bật nền/khu vực: rect COLOR ... end, với COLOR = rgb(0, 255, 0), rgba(0, 0, 255, .1) -->",
+		"<!-- Chuỗi số: Có thể lấy số thứ tự được gắn vào mỗi mũi tên trong sơ đồ, JAVASCRIPT: mermaid.initialize({ sequence: { showSequenceNumbers: true } }); -->",
+		"<!-- Actor Menu (link): Có thể có các menu bật lên chứa các liên kết khi click vào Actor: link <actor>: <link-label> @ <link-url> -->",
+		"<!-- Actor Menu (links - nâng cao với cú pháp json): links <actor>: {\"Dashboard\": \"URL\", \"Wiki\": \"URL\"}  -->",
+		"<pre class='mermaid' >",
+		"sequenceDiagram",
+		"  %% bình luận bắt đầu với 2 dấu %",
+		"  Alice->>John: Hello John, how are you?",
+		"  John-->>Alice: Great!",
+		"  Alice-)John: See you later!",
+		"  links Alice: {\"About\": \"#about\", \"Services\": \"#services\"}",
+		"  links John: {\"About\": \"#about\", \"Services\": \"#services\"}",
+		"</pre>",
+	  ],
+	  "description": "Sequence Diagrams Template"
+	},
+	"Flowchart Template": {
+	  "prefix": "dhflowchart",
+	  "body": [
+		"<!--Flowchart content-->",
+		"<!-- REF:https://mermaid.js.org/syntax/flowchart.html -->",
+		"<!-- CHEATSET (Hướng sơ đồ) -->",
+		"<!-- TD/TB - Từ trên xuống dưới (TopDown/TopBotoom) -->",
+		"<!-- BT - Từ dưới lên trên -->",
+		"<!-- LR - Từ trái sang phải -->",
+		"<!-- CHEATSET (Hình dạng nút) -->",
+		"<!-- (cạnh tròn nhẹ), ([cạnh tròn mạnh]), [[chương trình con]], [(hình trụ Database)] -->",
+		"<!-- ((vòng tròn đơn)), (((vòng tròn đôi))), >label], {hình thoi}, {{lục giác}} -->",
+		"<!-- [/hình bình hành/], [\\hình bình hành ngược\\], [/hình thang\\], [\\hình thang ngược/] -->",
+		"<!-- ...tham khảo REF để sử dụng hình ảnh nâng cao: <ID>@{ shape: SHAPE, label: \"LABEL\" } -->",
+		"<!-- CHEATSET (Liên kết giữa các nút) -->",
+		"<!-- có đầu mũi tên: LIỀN: A-->B, CHẤM BI:A-.->B, ĐỘ DÀY:A==>B, VÔ HÌNH:A~~~B  -->",
+		"<!-- có text ở giữa: == text ==>, -. text .->, A-- text -->B  -->",
+		"<!-- chuỗi liên kết: A -- text --> B -- text2 --> C, a --> b & c--> d, A & B--> C & D  -->",
+		"<!-- mũi tên đặc biệt: A --o B, A --x B, A o--o B, B <--> C, C x--x D -->",
+		"<!-- CHEATSET (Đồ thị con) -->",
+		"<!-- subgraph TITLE, subgraph TITLE ... end, subgraph TITLE direction TB... end -->",
+		"<!-- CHEATSET (Sự tương tác) -->",
+		"<!-- click nodeId call funCallback() với window.funCallback = function () {...} trong javascript -->",
+		"<!-- CHEATSET (Style) -->",
+		"<!-- style id1 fill:#f9f,stroke:#333,stroke-width:4px,color:#fff,stroke-dasharray: 5 5 -->",
+		"<!-- Định nghĩa class: classDef className fill:#f9f,stroke:#333,stroke-width:4px; (có thể đưa ra file.css và link tên vào đây -->",
+		"<!-- Sử dụng class: A:::someclass --> B với classDef someclass fill:#f96 -->",
+		"<pre class='mermaid' >",
+		"flowchart LR",
+		"   %% comment bắt đầu với 2 dấu %",
+		"   A@{ shape: dbl-circ, label: \"Stop\" }",
+		"</pre>"
+	  ],
+	  "description": "Flowchart Template"
+	},
+	"Mindmap Template": {
+	  "prefix": "dhmindmap",
+	  "body": [
+		"<!--Mindmap content-->",
+		"<!-- REF:https://mermaid.js.org/syntax/mindmap.html#syntax -->",
+		"<!-- Cheatset: [\"`breakline`\"], )cloud(, ))bang((, ((circle)), (rounded square), [square] -->",
+		"<!-- Mapping: thêm ở cuối: ^NUMBER => đánh dấu ở content: *item-1*{:#match-NUMBER} -->",
+		"<pre id='mindmap-canvas' class='mermaid' >",
+		"mindmap",
+		"root)mindmap(",
+		"  ((Level 1 circle ^1))",
+		"  ))Level 1 bang ^2((",
+		"    [\"`Level 2 ^3",
+		"(breakline)`\"]",
+		"</pre>",
+		"",
+		"<!--text content-->",
+		"- *match-1*{:#match-1}",
+		"- *match-2*{:#match-2}",
+		"- *match-1*{:#match-3}"
+	  ],
+	  "description": "Mindmap Template"
+	},
 	"tạo một danh sách ordered list": {
 		"prefix": "dhlonumber",
 		"body": [
@@ -430,27 +523,5 @@
 			"---"
 		],
 		"description": "donghd.com post template"
-	},
-	"Mindmap Template": {
-	  "prefix": "dhmindmap",
-	  "body": [
-		"<!--trackpad-->",
-		"<div id='control-panner'></div>",
-		"<!--mindmap content-->",
-		"<!-- REF:https://mermaid.js.org/syntax/mindmap.html#syntax -->",
-		"<pre id='mindmap-canvas' class='mermaid' >",
-		"mindmap",
-		"root((mindmap))",
-		"  Level 1",
-		"  ::icon(fa fa-book)",
-		"  Level 1",
-		"    Level 2",
-		"</pre>",
-		"",
-		"<!--text content-->",
-		"<p>aaaa</p>",
-		"<p>aaaa</p>"
-	  ],
-	  "description": "Mindmap Template"
 	}
 }

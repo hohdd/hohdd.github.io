@@ -8,6 +8,20 @@
 </div>
 {% endif%}
 
+<!-- mindmap -->
+{% if page.mindmap %}
+<div class="mindmapShowHide" onclick="mindmapShowHide()">
+  <div title="Show/Hide" class="w3-btn w3-border w3-border-blue w3-white">
+    Mindmap
+  </div>
+</div>
+<div class="trackpadShowHide" onclick="trackpadShowHide()">
+  <div title="Show/Hide" class="w3-btn w3-border w3-border-blue w3-white">
+    Trackpad
+  </div>
+</div>
+{% endif%}
+
 <!-- Audio Control -->
 <div id="audioControlGroup" class="w3-animate-opacity">
   <p>
