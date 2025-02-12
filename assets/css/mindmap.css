@@ -17,9 +17,12 @@ body {
   height: 33.33%;
   background-color: rgba(0, 0, 0, 0.1); /* Màu nền trong suốt để dễ nhìn */
   cursor: crosshair; /* Thay đổi con trỏ chuột */
+
+  /* mặc định sẽ ẩn */
+  display: none;
 }
   
-pre {
+#mindmap-canvas {
   position: absolute;
   left: 0;
   top: 0;
