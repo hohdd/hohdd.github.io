@@ -1,10 +1,10 @@
 ---
 layout: compress
 ---
+{% comment %} ------------------------------ SEACH COLLECTIONS in Collections Page và đầu mỗi bài viết ------------------------------ {% endcomment %}
 [
-
   {% comment %} ------------------------------ BEGIN COLLECTIONS ------------------------------ {% endcomment %}
-  {% assign serials = site.collections | where: 'isSerial', true | where: 'show', true %}
+  {% assign serials = site.collections | where: 'isSerial', true | where: 'exclude', false %}
   {% if serials.size > 0 %}
     {% for serial in serials %}
 

@@ -1,6 +1,7 @@
 ---
 layout: compress
 ---
+{% comment %} ------------------------------ SEARCH ALL ở index.html và 404 page ------------------------------ {% endcomment %}
 [
   {% comment %} ------------------------------ BEGIN POST ------------------------------ {% endcomment %}
   {% assign posts = site.posts | where: 'draft', false  | where: 'exclude', false %}
@@ -18,7 +19,7 @@ layout: compress
   {% comment %} ------------------------------ END POST ------------------------------ {% endcomment %}
 
   {% comment %} ------------------------------ BEGIN COLLECTIONS ------------------------------ {% endcomment %}
-  {% assign serials = site.collections | where: 'isSerial', true | where: 'show', true %}
+  {% assign serials = site.collections | where: 'isSerial', true | where: 'exclude', false %}
   {% if serials.size > 0 %}
     {% for serial in serials %}
 

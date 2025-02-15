@@ -1,3 +1,22 @@
+# # Explain: This plugin generates AMP pages for each post in the site. It uses a custom layout called amp.html.
+# # Usage: Add this file to your _plugins directory in your Jekyll site. Create a new layout called amp.html in your _layouts directory.
+# # Note: You can customize the layout to your liking. The layout should include the following code:
+# # <!DOCTYPE html>
+# # <html ⚡ lang="{{ page.lang | default: site.lang | default: "en" }}">
+# # <head>
+# #   <meta charset="utf-8">
+# #   <title>{{ page.title }}</title>
+# #   <link rel="canonical" href="{{ page.canonical_url }}">
+# #   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+# #   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+# #   <script async src="https://cdn.ampproject.org/v0.js"></script>
+# # </head>
+# # <body>
+# #   {{ content }}
+# # </body>
+# # </html>
+# # You can also customize the AMP layout in the plugin file itself. The layout is defined in the AmpPost class.
+# # REF: https://github.com/juusaw/amp-jekyll/
 # module Jekyll
 #     # Defines the base class of AMP posts
 #     class AmpPost < Jekyll::Page

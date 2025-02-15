@@ -92,8 +92,10 @@ layout: default
 	})();
 </script>
 
+{% if page.embquiz %}
 <!-- [Q]uiz with selected text -->
 {% include quiz-with-selected-text.html %}
+{% endif %}
 
 {% comment %}
 <!-- FB -->

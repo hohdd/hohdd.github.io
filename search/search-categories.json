@@ -1,8 +1,8 @@
 ---
 layout: compress
 ---
+{% comment %} ------------------------------ SEARCH POSTS chỉ có trong Archives Page ------------------------------ {% endcomment %}
 [
-
   {% comment %} ------------------------------ BEGIN POST ------------------------------ {% endcomment %}
   {% assign posts = site.posts | where: 'draft', false  | where: 'exclude', false %}
   {% if posts.size > 0 %}

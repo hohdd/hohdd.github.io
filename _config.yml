@@ -1,5 +1,5 @@
 # Site settings
-title: "Mr.Winter - Trang web cá nhân của Đông Hồ."
+title: "Mr.Winter"
 description: Một website cá nhân của Đông Hồ ^_^
 url: "https://me.donghd.com"
 author:
@@ -14,7 +14,7 @@ baseurl: # /blog => ko dùng thì để trống
 permalink: /articles/:title
 markdown: kramdown
 ampdir: amp
-exclude: ["NOTE", "build-and-deploy.sh", "templates", "drafts", "clean", "temp"]
+exclude: ["NOTE", "build-and-deploy_v2.sh", "build-and-deploy.sh", "templates", "drafts", "clean", "temp"]
 
 # Collections
 collections:
@@ -110,8 +110,6 @@ collections:
 # Plugins
 plugins:
   - jekyll-paginate-v2
-  # - jekyll-furigana
-  # - jekyll-pwa-plugin
 
 # TOC Configuration
 toc:
@@ -195,21 +193,43 @@ pagination:
   # Without file extension
   # indexpage: 'index'
 
-############################################################
-
-# Jekyll PWA Plugin: https://github.com/lavas-project/jekyll-pwa
-# pwa:
-#   enabled: false # Optional
-#   sw_src_filepath: service-worker.js # Optional
-#   sw_dest_filename: service-worker.js # Optional
-#   dest_js_directory: js # Required
-#   precache_recent_posts_num: 5 # Optional
-#   precache_glob_directory: / # Optional
-#   precache_glob_patterns: # Optional
-#     - "{js,css,fonts,img}/**/*.{js,css,eot,svg,ttf,woff,jpg,png,gif}"
-#     - index.html
-#     - search.json
-#     - "{pages,authors}/**"
-#   precache_glob_ignores: # Optional
-#     - sw-register.js
-#     - "fonts/**/*"
+defaults:
+  - scope:
+      path: "" # Áp dụng cho tất cả các tệp
+      # type: "posts" # Áp dụng cho kiểu posts
+    values:
+      ### Ghi đè mỗi khi viết bài
+      layout: "post"
+      header: "HUMAN: title trong content" # không có header sẽ lấy title (admin page) và cũng là document.title
+      category: "Chưa phân loại" # lựa chọn MỘT category phù hợp (chỉ MỘT)
+      ### Các tùy chọn có thể bật
+      toc: false # Table of content (TOC mặc định false)
+      embquiz: false # Chỉ có sẵn trong collections và mindmap vì đi kèm include quiz-with-selected-text.html
+      mermaid: false # có sử dụng mermaid không? (sequenceDiagram, flowchart, mindmap)
+      mindmap: false # yêu cầu mermaid cũng là true
+      highlight: false # thêm màu mè cho code
+      audioSetting: false # trên navbar có hiển thị audioSetting ko?
+      quickNote: false # trên navbar có hiển thị quickNote ko?
+      highlight_text: false # highlight text băng JS, khi TRUE đi kèm với highlight_yellow, highlight_green, highlight_red, highlight_gray
+      glslEditor: false # nhúng glslEditor trong bài viết
+      mathjax: false # nhúng ký tự toán học
+      sticky: false # đưa bài viết hiển thị ngoài home
+      exclude: false # không bao gồm trong kết quả tìm kiếm và sitemap. Tìm kiếm đang có ở index, 404, collection page, collection post, archives.
+      ### Menu phụ thêm trên navbar
+      secondMenu: false
+      secondMenuIcon: "gamepad" # material icon, đi kèm secondMenu: true
+      secondMenuHandler: "toggleColumnTables('1 2')" # đi kèm secondMenu: true
+      thirdMenu: false
+      thirdMenuIcon: "extension" # material icon, đi kèm thirdMenu: true
+      thirdMenuHandler: "toggleExceptKanji()" # đi kèm thirdMenu: true
+      ### Gần như là không bao giờ sử dụng/thay đổi
+      author: "Dong Ho"
+      date: "2017-06-13 22:26:14 +0700"
+      konami: true # mặc định true (chỉ có tác dụng trên tools để control ẩn/hiện trên page tools.html
+      # categories: "cat01 cat02" # tách nhau bởi dấu cách, ko sử dụng dấu ngoặc kép được nên phải viết liền.
+      # coverImg: "/assets/img/articles/demo/girl_hat.jpg" # Ảnh cover đầu bài viết. Áp dụng cho posts/collections/mindmap với size: 1068x703 | 900x500 | 600x400
+      # effect: true # sử dụng hiệu ứng "w3-image img-sepia"? đi kèm với coverImg
+      # thumbnailImg: "https://picsum.photos/900/500?grayscale" # Ảnh thumbnailImg ở trang home, chỉ có tác dụng nếu sticky true
+      ### Thuộc tính khác không liên quan, chỉ liệt kê mang tính tổng hợp
+      # show: true # page.show sử dụng để quyết định show trong menu hay không. Tương tụ data.menu nhưng không còn dùng
+      # collections.isSerial & collections.show trong _config.yml là để nhóm các bài viết collections trong page Collections và index.md trong mỗi Collection

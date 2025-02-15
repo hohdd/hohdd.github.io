@@ -1,8 +1,10 @@
 # require 'nokogiri'
 # require 'fastimage'
 
+# # This module contains filters for Jekyll that are used to convert HTML content to AMP HTML content.
 # module Jekyll
 #   module AmpFilter
+#     # Filter for HTML 'img' elements.
 #     def remove_attribute_toc(input)
 #       doc = Nokogiri::HTML.fragment(input);
 
@@ -15,6 +17,7 @@
 #       doc.to_s
 #     end
 
+#     # Filter for HTML 'audio' elements.
 #     def change_audio_elements(input)
 #       doc = Nokogiri::HTML.fragment(input);
 
@@ -26,6 +29,7 @@
 #       doc.to_s
 #     end
 
+#     # Filter for inserting domain to all links and images
 #     def amp_insert_domain(input)
 #       doc = Nokogiri::HTML.fragment(input);
 #       domain = "https://me.donghd.com"
