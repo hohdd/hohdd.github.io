@@ -21,7 +21,7 @@ layout: compress
     {% if serials.size > 0 %}
         {% for serial in serials %}
 
-        {% assign docs = serial.docs | where: 'draft', false %}
+        {% assign docs = serial.docs | where: 'draft', false | where: 'exclude', false %}
         {% if docs.size > 0 %}
 
             {% for doc in docs %}
